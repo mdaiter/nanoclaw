@@ -1,0 +1,2069 @@
+{
+  "framework": "ImageCaptureCore",
+  "functions": {
+    "ICButtonTypeMail": {
+      "name": "ICButtonTypeMail",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICButtonTypeMail(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICTransportTypeProximity": {
+      "name": "ICTransportTypeProximity",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICTransportTypeProximity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICTransportTypeTCPIP": {
+      "name": "ICTransportTypeTCPIP",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICTransportTypeTCPIP(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ICDidInstallNewImageCaptureSoftware": {
+      "name": "_ICDidInstallNewImageCaptureSoftware",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ _ICDidInstallNewImageCaptureSoftware(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICDeleteFailed": {
+      "name": "ICDeleteFailed",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICDeleteFailed(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICCameraDeviceCanDeleteAllFiles": {
+      "name": "ICCameraDeviceCanDeleteAllFiles",
+      "framework": "ImageCaptureCore",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ICCameraDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ICCameraDeviceCanDeleteAllFiles(ICCameraDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICRawExtension": {
+      "name": "ICRawExtension",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICRawExtension(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICStatusCodeKey": {
+      "name": "ICStatusCodeKey",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICStatusCodeKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICDeleteSuccessful": {
+      "name": "ICDeleteSuccessful",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICDeleteSuccessful(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICStatusNotificationKey": {
+      "name": "ICStatusNotificationKey",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICStatusNotificationKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICTransportTypeUSB": {
+      "name": "ICTransportTypeUSB",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICTransportTypeUSB(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ICInitialize": {
+      "name": "_ICInitialize",
+      "framework": "ImageCaptureCore",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ _ICInitialize(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ICScannerStatusRequestsOverviewScan"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICDeviceLocationDescriptionFireWire": {
+      "name": "ICDeviceLocationDescriptionFireWire",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICDeviceLocationDescriptionFireWire(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICTransportTypeMassStorage": {
+      "name": "ICTransportTypeMassStorage",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICTransportTypeMassStorage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICCameraDeviceCanSyncClock": {
+      "name": "ICCameraDeviceCanSyncClock",
+      "framework": "ImageCaptureCore",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ICCameraDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ICCameraDeviceCanSyncClock(ICCameraDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICEnumerationPrioritizeSpeed": {
+      "name": "ICEnumerationPrioritizeSpeed",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICEnumerationPrioritizeSpeed(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICCameraDeviceSupportsHEIF": {
+      "name": "ICCameraDeviceSupportsHEIF",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICCameraDeviceSupportsHEIF(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICDeleteErrorCanceled": {
+      "name": "ICDeleteErrorCanceled",
+      "framework": "ImageCaptureCore",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ICDeleteErrorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ICDeleteErrorCanceled(ICDeleteErrorRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICButtonTypeScan": {
+      "name": "ICButtonTypeScan",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICButtonTypeScan(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICSavedFilename": {
+      "name": "ICSavedFilename",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICSavedFilename(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICScannerStatusWarmingUp": {
+      "name": "ICScannerStatusWarmingUp",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICScannerStatusWarmingUp(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICMetadataBrevity": {
+      "name": "ICMetadataBrevity",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICMetadataBrevity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ICCreateCGColorSpace": {
+      "name": "_ICCreateCGColorSpace",
+      "framework": "ImageCaptureCore",
+      "return_type": "_ICRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_ICRef _ICCreateCGColorSpace(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_ICRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_ICCreateDeviceMatchingDeviceID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICAuthorizationStatusNotDetermined": {
+      "name": "ICAuthorizationStatusNotDetermined",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICAuthorizationStatusNotDetermined(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ICDidRemoveLegacyDevice": {
+      "name": "_ICDidRemoveLegacyDevice",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ _ICDidRemoveLegacyDevice(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ICSetSharingPreferences": {
+      "name": "_ICSetSharingPreferences",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_ICRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _ICSetSharingPreferences(_ICRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICButtonTypeCopy": {
+      "name": "ICButtonTypeCopy",
+      "framework": "ImageCaptureCore",
+      "return_type": "ICButtonTypeRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ICButtonTypeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "ICButtonTypeRef/*?*/ ICButtonTypeCopy(ICButtonTypeRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "ICButtonTypeRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICLocalizedStatusNotificationKey": {
+      "name": "ICLocalizedStatusNotificationKey",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICLocalizedStatusNotificationKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICEnumerationChronologicalOrder": {
+      "name": "ICEnumerationChronologicalOrder",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICEnumerationChronologicalOrder(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ICIsValidDevice": {
+      "name": "_ICIsValidDevice",
+      "framework": "ImageCaptureCore",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_ICRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _ICIsValidDevice(_ICRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICDeviceLocationDescriptionUSB": {
+      "name": "ICDeviceLocationDescriptionUSB",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICDeviceLocationDescriptionUSB(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICTransportTypeBluetooth": {
+      "name": "ICTransportTypeBluetooth",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICTransportTypeBluetooth(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICCameraDeviceCanTakePicture": {
+      "name": "ICCameraDeviceCanTakePicture",
+      "framework": "ImageCaptureCore",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ICCameraDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ICCameraDeviceCanTakePicture(ICCameraDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICDeviceLocationDescriptionBluetooth": {
+      "name": "ICDeviceLocationDescriptionBluetooth",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICDeviceLocationDescriptionBluetooth(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICStatusSoftwareInstallation": {
+      "name": "ICStatusSoftwareInstallation",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICStatusSoftwareInstallation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICDeviceCanEjectOrDisconnect": {
+      "name": "ICDeviceCanEjectOrDisconnect",
+      "framework": "ImageCaptureCore",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ICDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ICDeviceCanEjectOrDisconnect(ICDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICDeviceLocationDescriptionMassStorage": {
+      "name": "ICDeviceLocationDescriptionMassStorage",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICDeviceLocationDescriptionMassStorage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICTruncateAfterSuccessfulDownload": {
+      "name": "ICTruncateAfterSuccessfulDownload",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICTruncateAfterSuccessfulDownload(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ICStartReceivingSharingPreferences": {
+      "name": "_ICStartReceivingSharingPreferences",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ _ICStartReceivingSharingPreferences(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICCameraDeviceCanDeleteOneFile": {
+      "name": "ICCameraDeviceCanDeleteOneFile",
+      "framework": "ImageCaptureCore",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ICCameraDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ICCameraDeviceCanDeleteOneFile(ICCameraDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICCameraDeviceSupportsPLRUUID": {
+      "name": "ICCameraDeviceSupportsPLRUUID",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICCameraDeviceSupportsPLRUUID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICEnumerationPrioritizeTethering": {
+      "name": "ICEnumerationPrioritizeTethering",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICEnumerationPrioritizeTethering(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICImageSourceShouldCache": {
+      "name": "ICImageSourceShouldCache",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICImageSourceShouldCache(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICOverwrite": {
+      "name": "ICOverwrite",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICOverwrite(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICSavedAncillaryFiles": {
+      "name": "ICSavedAncillaryFiles",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICSavedAncillaryFiles(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICDeleteErrorReadOnly": {
+      "name": "ICDeleteErrorReadOnly",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICDeleteErrorReadOnly(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICSaveAsFilename": {
+      "name": "ICSaveAsFilename",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICSaveAsFilename(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICDeleteCanceled": {
+      "name": "ICDeleteCanceled",
+      "framework": "ImageCaptureCore",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ICDeleteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ICDeleteCanceled(ICDeleteRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ICDidFindLegacyDevice": {
+      "name": "_ICDidFindLegacyDevice",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ _ICDidFindLegacyDevice(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ICImageCaptureGetScannerButtonMappingPreference": {
+      "name": "_ICImageCaptureGetScannerButtonMappingPreference",
+      "framework": "ImageCaptureCore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_ICImageCaptureRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _ICImageCaptureGetScannerButtonMappingPreference(_ICImageCaptureRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICAuthorizationStatusRestricted": {
+      "name": "ICAuthorizationStatusRestricted",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICAuthorizationStatusRestricted(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICCameraDeviceSupportsApplePTP": {
+      "name": "ICCameraDeviceSupportsApplePTP",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICCameraDeviceSupportsApplePTP(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICDownloadSidecarFiles": {
+      "name": "ICDownloadSidecarFiles",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICDownloadSidecarFiles(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICDeleteErrorDeviceMissing": {
+      "name": "ICDeleteErrorDeviceMissing",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICDeleteErrorDeviceMissing(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICButtonTypePrint": {
+      "name": "ICButtonTypePrint",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICButtonTypePrint(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICScannerStatusRequestsOverviewScan": {
+      "name": "ICScannerStatusRequestsOverviewScan",
+      "framework": "ImageCaptureCore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ ICScannerStatusRequestsOverviewScan(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_ICInitialize"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICScannerStatusWarmUpDone": {
+      "name": "ICScannerStatusWarmUpDone",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICScannerStatusWarmUpDone(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICButtonTypeWeb": {
+      "name": "ICButtonTypeWeb",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICButtonTypeWeb(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICButtonTypeTransfer": {
+      "name": "ICButtonTypeTransfer",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICButtonTypeTransfer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICErrorDomain": {
+      "name": "ICErrorDomain",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICCameraDeviceCanReceiveFile": {
+      "name": "ICCameraDeviceCanReceiveFile",
+      "framework": "ImageCaptureCore",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ICCameraDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ICCameraDeviceCanReceiveFile(ICCameraDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICDeleteAfterSuccessfulDownload": {
+      "name": "ICDeleteAfterSuccessfulDownload",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICDeleteAfterSuccessfulDownload(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICCameraDeviceCanTakePictureUsingShutterReleaseOnCamera": {
+      "name": "ICCameraDeviceCanTakePictureUsingShutterReleaseOnCamera",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICCameraDeviceCanTakePictureUsingShutterReleaseOnCamera(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICDeleteErrorFileMissing": {
+      "name": "ICDeleteErrorFileMissing",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICDeleteErrorFileMissing(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICImageSourceThumbnailMaxPixelSize": {
+      "name": "ICImageSourceThumbnailMaxPixelSize",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICImageSourceThumbnailMaxPixelSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICTransportTypeExFAT": {
+      "name": "ICTransportTypeExFAT",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICTransportTypeExFAT(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICADevicesFrameworkPath": {
+      "name": "ICADevicesFrameworkPath",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICADevicesFrameworkPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICDownloadsDirectoryURL": {
+      "name": "ICDownloadsDirectoryURL",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICDownloadsDirectoryURL(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICTransportTypeFireWire": {
+      "name": "ICTransportTypeFireWire",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICTransportTypeFireWire(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ICImageCaptureSetScannerButtonMappingPreference": {
+      "name": "_ICImageCaptureSetScannerButtonMappingPreference",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_ICImageCaptureRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _ICImageCaptureSetScannerButtonMappingPreference(_ICImageCaptureRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICAuthorizationStatusAuthorized": {
+      "name": "ICAuthorizationStatusAuthorized",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICAuthorizationStatusAuthorized(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICMetadataBrevityEssential": {
+      "name": "ICMetadataBrevityEssential",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICMetadataBrevityEssential(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICUTTypeRaw": {
+      "name": "ICUTTypeRaw",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICUTTypeRaw(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICCameraDeviceCanAcceptPTPCommands": {
+      "name": "ICCameraDeviceCanAcceptPTPCommands",
+      "framework": "ImageCaptureCore",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ICCameraDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ICCameraDeviceCanAcceptPTPCommands(ICCameraDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ICCreateDeviceMatchingDeviceID": {
+      "name": "_ICCreateDeviceMatchingDeviceID",
+      "framework": "ImageCaptureCore",
+      "return_type": "_ICRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_ICRef _ICCreateDeviceMatchingDeviceID(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_ICRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_ICCreateCGColorSpace"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICRunLoopMode": {
+      "name": "ICRunLoopMode",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICRunLoopMode(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ICAuthorizationStatusDenied": {
+      "name": "ICAuthorizationStatusDenied",
+      "framework": "ImageCaptureCore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ImageCaptureCore"
+        }
+      ],
+      "signature": "void/*?*/ ICAuthorizationStatusDenied(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "gpu_compute": [
+      "ICCameraDeviceCanAcceptPTPCommands"
+    ],
+    "video_processing": [
+      "ICADevicesFrameworkPath"
+    ],
+    "image_processing": [
+      "ICImageSourceShouldCache",
+      "ICImageSourceThumbnailMaxPixelSize",
+      "_ICDidInstallNewImageCaptureSoftware",
+      "_ICImageCaptureGetScannerButtonMappingPreference",
+      "_ICImageCaptureSetScannerButtonMappingPreference"
+    ],
+    "cryptography": [
+      "_ICSetSharingPreferences",
+      "_ICStartReceivingSharingPreferences"
+    ],
+    "neural_network": [
+      "ICDeviceCanEjectOrDisconnect"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

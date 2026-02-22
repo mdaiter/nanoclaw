@@ -1,0 +1,1608 @@
+{
+  "framework": "NetFS",
+  "functions": {
+    "NetFSCopyNormalizedURLString": {
+      "name": "NetFSCopyNormalizedURLString",
+      "framework": "NetFS",
+      "return_type": "NetFSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetFSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NetFSRef/*?*/ NetFSCopyNormalizedURLString(NetFSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NetFSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NetFSCopyURLForRemountingVolume",
+        "NetFSCopyHostAndPort",
+        "NetFSCopyURLForRemountingVolumeURL"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_CancelAsyncMount": {
+      "name": "netfs_CancelAsyncMount",
+      "framework": "NetFS",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "netfs_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool netfs_CancelAsyncMount(netfs_Ref *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_Mount": {
+      "name": "netfs_Mount",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ netfs_Mount(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSSetURLApprovalState": {
+      "name": "NetFSSetURLApprovalState",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetFSRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NetFSSetURLApprovalState(NetFSRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RemountInfoQueryInterface": {
+      "name": "RemountInfoQueryInterface",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ RemountInfoQueryInterface(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_CreateSessionRef": {
+      "name": "netfs_CreateSessionRef",
+      "framework": "NetFS",
+      "return_type": "netfs_Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "netfs_Ref netfs_CreateSessionRef(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "netfs_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "netfs_CreateURL"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_ConnectToServerSync": {
+      "name": "netfs_ConnectToServerSync",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ netfs_ConnectToServerSync(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MountURLWithAuthentication": {
+      "name": "MountURLWithAuthentication",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ MountURLWithAuthentication(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_OpenSession": {
+      "name": "netfs_OpenSession",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ netfs_OpenSession(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_Cancel": {
+      "name": "netfs_Cancel",
+      "framework": "NetFS",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "netfs_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool netfs_Cancel(netfs_Ref *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_EnumerateShares": {
+      "name": "netfs_EnumerateShares",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ netfs_EnumerateShares(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSMountURLAsync": {
+      "name": "NetFSMountURLAsync",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ NetFSMountURLAsync(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSGetURLApprovalState": {
+      "name": "NetFSGetURLApprovalState",
+      "framework": "NetFS",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetFSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ NetFSGetURLApprovalState(NetFSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSMountURLCancel": {
+      "name": "NetFSMountURLCancel",
+      "framework": "NetFS",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetFSMountURLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool NetFSMountURLCancel(NetFSMountURLRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSCopyURLForRemountingVolume": {
+      "name": "NetFSCopyURLForRemountingVolume",
+      "framework": "NetFS",
+      "return_type": "NetFSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetFSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NetFSRef/*?*/ NetFSCopyURLForRemountingVolume(NetFSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NetFSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NetFSCopyNormalizedURLString",
+        "NetFSCopyHostAndPort",
+        "NetFSCopyURLForRemountingVolumeURL"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSLogToMessageTracer": {
+      "name": "NetFSLogToMessageTracer",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ NetFSLogToMessageTracer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSInterface_AddRef": {
+      "name": "NetFSInterface_AddRef",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ NetFSInterface_AddRef(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSQueryInterface": {
+      "name": "NetFSQueryInterface",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ NetFSQueryInterface(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSGetMountInfo": {
+      "name": "NetFSGetMountInfo",
+      "framework": "NetFS",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetFSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ NetFSGetMountInfo(NetFSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_log_message_tracer_result": {
+      "name": "netfs_log_message_tracer_result",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ netfs_log_message_tracer_result(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_MountURLWithAuthenticationSync": {
+      "name": "netfs_MountURLWithAuthenticationSync",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ netfs_MountURLWithAuthenticationSync(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetCompleteMountURL": {
+      "name": "GetCompleteMountURL",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ GetCompleteMountURL(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_log_message_tracer": {
+      "name": "netfs_log_message_tracer",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ netfs_log_message_tracer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetURLRemountInfo": {
+      "name": "GetURLRemountInfo",
+      "framework": "NetFS",
+      "return_type": "void *",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GetURLRemountInfo(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_log_message_tracer_scheme": {
+      "name": "netfs_log_message_tracer_scheme",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ netfs_log_message_tracer_scheme(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_ConnectToServerAsync": {
+      "name": "netfs_ConnectToServerAsync",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ netfs_ConnectToServerAsync(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MountCompleteURL": {
+      "name": "MountCompleteURL",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ MountCompleteURL(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSMountURLWithAuthenticationSync": {
+      "name": "NetFSMountURLWithAuthenticationSync",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ NetFSMountURLWithAuthenticationSync(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_GetServerInfo": {
+      "name": "netfs_GetServerInfo",
+      "framework": "NetFS",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "netfs_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ netfs_GetServerInfo(netfs_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFS_CreateInterface": {
+      "name": "NetFS_CreateInterface",
+      "framework": "NetFS",
+      "return_type": "NetFS_Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NetFS_Ref NetFS_CreateInterface(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NetFS_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSUnmountHomeDirectory": {
+      "name": "NetFSUnmountHomeDirectory",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ NetFSUnmountHomeDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_log_message_tracer_executable_name": {
+      "name": "netfs_log_message_tracer_executable_name",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ netfs_log_message_tracer_executable_name(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSCFStringtoCString": {
+      "name": "NetFSCFStringtoCString",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ NetFSCFStringtoCString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetURLRemountInfoSize": {
+      "name": "GetURLRemountInfoSize",
+      "framework": "NetFS",
+      "return_type": "uint32_t",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ GetURLRemountInfoSize(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "XPCSetPlugInStateQueryInterface": {
+      "name": "XPCSetPlugInStateQueryInterface",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "XPCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ XPCSetPlugInStateQueryInterface(XPCRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_log_message_tracer_auth_type": {
+      "name": "netfs_log_message_tracer_auth_type",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ netfs_log_message_tracer_auth_type(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_CloseSession": {
+      "name": "netfs_CloseSession",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ netfs_CloseSession(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSCopyHostAndPort": {
+      "name": "NetFSCopyHostAndPort",
+      "framework": "NetFS",
+      "return_type": "NetFSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetFSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NetFSRef/*?*/ NetFSCopyHostAndPort(NetFSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NetFSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NetFSCopyNormalizedURLString",
+        "NetFSCopyURLForRemountingVolume",
+        "NetFSCopyURLForRemountingVolumeURL"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSMountHomeDirectoryWithAuthentication": {
+      "name": "NetFSMountHomeDirectoryWithAuthentication",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ NetFSMountHomeDirectoryWithAuthentication(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "UnmountServerURL": {
+      "name": "UnmountServerURL",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ UnmountServerURL(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_log_message_tracer_automounted": {
+      "name": "netfs_log_message_tracer_automounted",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ netfs_log_message_tracer_automounted(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "Set3rdPartyLibraryLoadToBeInProcess": {
+      "name": "Set3rdPartyLibraryLoadToBeInProcess",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "void *",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ Set3rdPartyLibraryLoadToBeInProcess(void * *ref, void * *value)",
+      "verb": "read",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_CreateURL": {
+      "name": "netfs_CreateURL",
+      "framework": "NetFS",
+      "return_type": "netfs_Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "netfs_Ref netfs_CreateURL(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "netfs_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "netfs_CreateSessionRef"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSGetMountInfoByFSID": {
+      "name": "NetFSGetMountInfoByFSID",
+      "framework": "NetFS",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetFSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ NetFSGetMountInfoByFSID(NetFSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_ParseURL": {
+      "name": "netfs_ParseURL",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ netfs_ParseURL(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSGetSupportedSchemes": {
+      "name": "NetFSGetSupportedSchemes",
+      "framework": "NetFS",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetFSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ NetFSGetSupportedSchemes(NetFSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetURLFromURLRemountInfo": {
+      "name": "GetURLFromURLRemountInfo",
+      "framework": "NetFS",
+      "return_type": "void *",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GetURLFromURLRemountInfo(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSMountURLSync": {
+      "name": "NetFSMountURLSync",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ NetFSMountURLSync(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PremountHomeDirectoryWithAuthentication": {
+      "name": "PremountHomeDirectoryWithAuthentication",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ PremountHomeDirectoryWithAuthentication(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MountServerURL": {
+      "name": "MountServerURL",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ MountServerURL(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSCopyURLForRemountingVolumeURL": {
+      "name": "NetFSCopyURLForRemountingVolumeURL",
+      "framework": "NetFS",
+      "return_type": "NetFSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetFSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NetFSRef/*?*/ NetFSCopyURLForRemountingVolumeURL(NetFSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NetFSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NetFSCopyNormalizedURLString",
+        "NetFSCopyURLForRemountingVolume",
+        "NetFSCopyHostAndPort"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_log_message_tracer_result_on_fail": {
+      "name": "netfs_log_message_tracer_result_on_fail",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ netfs_log_message_tracer_result_on_fail(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSInterface_Release": {
+      "name": "NetFSInterface_Release",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetFSInterface_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void NetFSInterface_Release(NetFSInterface_Ref *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SetSystemLibraryLoadToBeInProcess": {
+      "name": "SetSystemLibraryLoadToBeInProcess",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ SetSystemLibraryLoadToBeInProcess(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSClearAllURLApprovals": {
+      "name": "NetFSClearAllURLApprovals",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ NetFSClearAllURLApprovals(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetFSMountURLProbe": {
+      "name": "NetFSMountURLProbe",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ NetFSMountURLProbe(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "netfs_MountURLWithAuthenticationAsync": {
+      "name": "netfs_MountURLWithAuthenticationAsync",
+      "framework": "NetFS",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetFS"
+        }
+      ],
+      "signature": "void/*?*/ netfs_MountURLWithAuthenticationAsync(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "netfs_EnumerateShares"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}
