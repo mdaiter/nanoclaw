@@ -1,0 +1,292 @@
+{
+  "framework": "ROCm",
+  "type_aliases": [
+    ["hipStream_t", "void *"],
+    ["hipblasHandle_t", "void *"],
+    ["hipfftHandle", "int"],
+    ["hipblasStatus_t", "int"],
+    ["hipblasOperation_t", "int"],
+    ["hipError_t", "int"],
+    ["hipfftResult", "int"],
+    ["hipfftType", "int"],
+    ["hipfftReal", "float"],
+    ["hipfftComplex", "float2"],
+    ["hipMemcpyKind", "int"]
+  ],
+  "entries": [
+    {
+      "name": "hipblasCreate",
+      "verb": "create",
+      "capabilities": ["rocm_blas_gemm", "gpu_compute"],
+      "params": [
+        ["handle", "hipblasHandle_t", true]
+      ],
+      "return_type": "hipblasStatus_t",
+      "signature": "hipblasStatus_t hipblasCreate(hipblasHandle_t *handle)",
+      "input_formats": [],
+      "output_formats": ["hipblasHandle_t"],
+      "notes": "Create hipBLAS context handle. Cache this — one per GPU.",
+      "async_pattern": false
+    },
+    {
+      "name": "hipblasSgemm",
+      "verb": "multiply",
+      "capabilities": ["rocm_blas_gemm", "gpu_compute", "matrix_multiply"],
+      "params": [
+        ["handle", "hipblasHandle_t", false],
+        ["transa", "hipblasOperation_t", false],
+        ["transb", "hipblasOperation_t", false],
+        ["m", "int", false],
+        ["n", "int", false],
+        ["k", "int", false],
+        ["alpha", "float", true],
+        ["A", "float", true],
+        ["lda", "int", false],
+        ["B", "float", true],
+        ["ldb", "int", false],
+        ["beta", "float", true],
+        ["C", "float", true],
+        ["ldc", "int", false]
+      ],
+      "return_type": "hipblasStatus_t",
+      "signature": "hipblasStatus_t hipblasSgemm(hipblasHandle_t handle, hipblasOperation_t transa, hipblasOperation_t transb, int m, int n, int k, const float *alpha, const float *A, int lda, const float *B, int ldb, const float *beta, float *C, int ldc)",
+      "input_formats": ["float32_matrix"],
+      "output_formats": ["float32_matrix"],
+      "notes": "Single-precision GEMM on AMD GPU. C = alpha * op(A) * op(B) + beta * C. HIP mirrors CUDA cublasSgemm API.",
+      "async_pattern": true
+    },
+    {
+      "name": "hipblasDgemm",
+      "verb": "multiply",
+      "capabilities": ["rocm_blas_gemm", "gpu_compute", "matrix_multiply"],
+      "params": [
+        ["handle", "hipblasHandle_t", false],
+        ["transa", "hipblasOperation_t", false],
+        ["transb", "hipblasOperation_t", false],
+        ["m", "int", false],
+        ["n", "int", false],
+        ["k", "int", false],
+        ["alpha", "double", true],
+        ["A", "double", true],
+        ["lda", "int", false],
+        ["B", "double", true],
+        ["ldb", "int", false],
+        ["beta", "double", true],
+        ["C", "double", true],
+        ["ldc", "int", false]
+      ],
+      "return_type": "hipblasStatus_t",
+      "signature": "hipblasStatus_t hipblasDgemm(hipblasHandle_t handle, hipblasOperation_t transa, hipblasOperation_t transb, int m, int n, int k, const double *alpha, const double *A, int lda, const double *B, int ldb, const double *beta, double *C, int ldc)",
+      "input_formats": ["float64_matrix"],
+      "output_formats": ["float64_matrix"],
+      "notes": "Double-precision GEMM on AMD GPU. Same interface as hipblasSgemm but FP64.",
+      "async_pattern": true
+    },
+    {
+      "name": "hipblasDestroy",
+      "verb": "destroy",
+      "capabilities": ["rocm_blas_gemm"],
+      "params": [
+        ["handle", "hipblasHandle_t", false]
+      ],
+      "return_type": "hipblasStatus_t",
+      "signature": "hipblasStatus_t hipblasDestroy(hipblasHandle_t handle)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Destroy hipBLAS handle.",
+      "async_pattern": false
+    },
+    {
+      "name": "hipfftPlan1d",
+      "verb": "plan",
+      "capabilities": ["rocm_fft"],
+      "params": [
+        ["plan", "hipfftHandle", true],
+        ["nx", "int", false],
+        ["type", "hipfftType", false],
+        ["batch", "int", false]
+      ],
+      "return_type": "hipfftResult",
+      "signature": "hipfftResult hipfftPlan1d(hipfftHandle *plan, int nx, hipfftType type, int batch)",
+      "input_formats": [],
+      "output_formats": ["hipfftHandle"],
+      "notes": "Create 1D FFT plan. ROCm equivalent of cufftPlan1d.",
+      "async_pattern": false
+    },
+    {
+      "name": "hipfftExecR2C",
+      "verb": "transform",
+      "capabilities": ["rocm_fft", "gpu_compute"],
+      "params": [
+        ["plan", "hipfftHandle", false],
+        ["idata", "hipfftReal", true],
+        ["odata", "hipfftComplex", true]
+      ],
+      "return_type": "hipfftResult",
+      "signature": "hipfftResult hipfftExecR2C(hipfftHandle plan, hipfftReal *idata, hipfftComplex *odata)",
+      "input_formats": ["float32_array"],
+      "output_formats": ["complex64_array"],
+      "notes": "Real-to-complex FFT on AMD GPU. ROCm equivalent of cufftExecR2C.",
+      "async_pattern": true
+    },
+    {
+      "name": "hipfftExecC2C",
+      "verb": "transform",
+      "capabilities": ["rocm_fft", "gpu_compute"],
+      "params": [
+        ["plan", "hipfftHandle", false],
+        ["idata", "hipfftComplex", true],
+        ["odata", "hipfftComplex", true],
+        ["direction", "int", false]
+      ],
+      "return_type": "hipfftResult",
+      "signature": "hipfftResult hipfftExecC2C(hipfftHandle plan, hipfftComplex *idata, hipfftComplex *odata, int direction)",
+      "input_formats": ["complex64_array"],
+      "output_formats": ["complex64_array"],
+      "notes": "Complex-to-complex FFT on AMD GPU. ROCm equivalent of cufftExecC2C.",
+      "async_pattern": true
+    },
+    {
+      "name": "hipfftDestroy",
+      "verb": "destroy",
+      "capabilities": ["rocm_fft"],
+      "params": [
+        ["plan", "hipfftHandle", false]
+      ],
+      "return_type": "hipfftResult",
+      "signature": "hipfftResult hipfftDestroy(hipfftHandle plan)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Destroy FFT plan.",
+      "async_pattern": false
+    },
+    {
+      "name": "hipMalloc",
+      "verb": "allocate",
+      "capabilities": ["gpu_memory", "rocm_blas_gemm"],
+      "params": [
+        ["ptr", "void", true],
+        ["size", "size_t", false]
+      ],
+      "return_type": "hipError_t",
+      "signature": "hipError_t hipMalloc(void** ptr, size_t size)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Allocate device memory on AMD GPU. ROCm equivalent of cudaMalloc.",
+      "async_pattern": false
+    },
+    {
+      "name": "hipMemcpy",
+      "verb": "transfer",
+      "capabilities": ["gpu_memory", "rocm_blas_gemm"],
+      "params": [
+        ["dst", "void", true],
+        ["src", "void", true],
+        ["count", "size_t", false],
+        ["kind", "hipMemcpyKind", false]
+      ],
+      "return_type": "hipError_t",
+      "signature": "hipError_t hipMemcpy(void* dst, const void* src, size_t count, hipMemcpyKind kind)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Copy memory between host and device. ROCm equivalent of cudaMemcpy.",
+      "async_pattern": false
+    },
+    {
+      "name": "hipFree",
+      "verb": "free",
+      "capabilities": ["gpu_memory"],
+      "params": [
+        ["ptr", "void", true]
+      ],
+      "return_type": "hipError_t",
+      "signature": "hipError_t hipFree(void* ptr)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Free device memory on AMD GPU. ROCm equivalent of cudaFree.",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [
+    {
+      "framework": "ROCm",
+      "group": "HipBlasGemm",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "hipblasCreate",
+          "role": "Create",
+          "args_hint": "&handle",
+          "returns": "hipblasStatus_t",
+          "notes": "Create hipBLAS handle. Do this once at startup, not per call."
+        },
+        {
+          "order": 1,
+          "function": "hipblasSgemm",
+          "role": "Use",
+          "args_hint": "handle, HIPBLAS_OP_N, HIPBLAS_OP_N, m, n, k, &alpha, A, lda, B, ldb, &beta, C, ldc",
+          "returns": "hipblasStatus_t",
+          "notes": "Single-precision matrix multiply on AMD GPU."
+        },
+        {
+          "order": 2,
+          "function": "hipblasDestroy",
+          "role": "Destroy",
+          "args_hint": "handle",
+          "returns": "hipblasStatus_t",
+          "notes": "Destroy hipBLAS handle."
+        }
+      ],
+      "constants": [
+        {"name": "HIPBLAS_OP_N", "value": "111", "source": "hipblas.h"},
+        {"name": "HIPBLAS_OP_T", "value": "112", "source": "hipblas.h"},
+        {"name": "HIPBLAS_STATUS_SUCCESS", "value": "0", "source": "hipblas.h"}
+      ],
+      "validated": true,
+      "iterations": 100,
+      "recipe": "#include <hipblas/hipblas.h>\n#include <hip/hip_runtime.h>\n#include <stdio.h>\n\n#define HIPBLAS_CHECK(call) { hipblasStatus_t err = call; if (err != HIPBLAS_STATUS_SUCCESS) { fprintf(stderr, \"hipBLAS error %d at %s:%d\\n\", err, __FILE__, __LINE__); exit(1); } }\n#define HIP_CHECK(call) { hipError_t err = call; if (err != hipSuccess) { fprintf(stderr, \"HIP error: %s at %s:%d\\n\", hipGetErrorString(err), __FILE__, __LINE__); exit(1); } }\n\nstatic hipblasHandle_t g_hipblas = nullptr;\nvoid ensure_hipblas() {\n    if (!g_hipblas) {\n        HIPBLAS_CHECK(hipblasCreate(&g_hipblas));\n    }\n}\n\nvoid gpu_sgemm(const float* A, const float* B, float* C,\n               int m, int n, int k, float alpha, float beta) {\n    ensure_hipblas();\n    HIPBLAS_CHECK(hipblasSgemm(g_hipblas, HIPBLAS_OP_N, HIPBLAS_OP_N,\n                               n, m, k,\n                               &alpha, B, n, A, k, &beta, C, n));\n}"
+    },
+    {
+      "framework": "ROCm",
+      "group": "HipFftR2C",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "hipfftPlan1d",
+          "role": "Create",
+          "args_hint": "&plan, n, HIPFFT_R2C, 1",
+          "returns": "hipfftResult",
+          "notes": "Create 1D real-to-complex FFT plan."
+        },
+        {
+          "order": 1,
+          "function": "hipfftExecR2C",
+          "role": "Use",
+          "args_hint": "plan, d_input, d_output",
+          "returns": "hipfftResult",
+          "notes": "Execute real-to-complex FFT on AMD GPU."
+        },
+        {
+          "order": 2,
+          "function": "hipfftDestroy",
+          "role": "Destroy",
+          "args_hint": "plan",
+          "returns": "hipfftResult",
+          "notes": "Destroy FFT plan when done."
+        }
+      ],
+      "constants": [
+        {"name": "HIPFFT_SUCCESS", "value": "0", "source": "hipfft.h"},
+        {"name": "HIPFFT_R2C", "value": "42", "source": "hipfft.h"},
+        {"name": "HIPFFT_C2R", "value": "44", "source": "hipfft.h"},
+        {"name": "HIPFFT_C2C", "value": "41", "source": "hipfft.h"}
+      ],
+      "validated": true,
+      "iterations": 100,
+      "recipe": "#include <hipfft/hipfft.h>\n#include <hip/hip_runtime.h>\n#include <stdio.h>\n\n#define HIPFFT_CHECK(call) { hipfftResult e = call; if (e != HIPFFT_SUCCESS) { fprintf(stderr, \"hipFFT error %d at %s:%d\\n\", e, __FILE__, __LINE__); exit(1); } }\n\nvoid gpu_rfft(const float* input, hipfftComplex* output, int n) {\n    hipfftHandle plan;\n    HIPFFT_CHECK(hipfftPlan1d(&plan, n, HIPFFT_R2C, 1));\n    float* d_input;\n    hipfftComplex* d_output;\n    hipMalloc(&d_input, n * sizeof(float));\n    hipMalloc(&d_output, (n/2+1) * sizeof(hipfftComplex));\n    hipMemcpy(d_input, input, n * sizeof(float), hipMemcpyHostToDevice);\n    HIPFFT_CHECK(hipfftExecR2C(plan, d_input, d_output));\n    hipMemcpy(output, d_output, (n/2+1) * sizeof(hipfftComplex), hipMemcpyDeviceToHost);\n    hipfftDestroy(plan);\n    hipFree(d_input);\n    hipFree(d_output);\n}"
+    }
+  ],
+  "cross_link": true
+}

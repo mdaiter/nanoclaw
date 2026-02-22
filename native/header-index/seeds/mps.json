@@ -1,0 +1,651 @@
+{
+  "framework": "MetalPerformanceShaders",
+  "type_aliases": [],
+  "entries": [
+    {
+      "name": "MPSImageHistogram",
+      "verb": "compute",
+      "capabilities": [
+        "gpu_histogram"
+      ],
+      "params": [
+        [
+          "device",
+          "id<MTLDevice>",
+          false
+        ],
+        [
+          "histogramInfo",
+          "MPSImageHistogramInfo",
+          true
+        ]
+      ],
+      "return_type": "MPSImageHistogram *",
+      "signature": "[[MPSImageHistogram alloc] initWithDevice:histogramInfo:]",
+      "input_formats": [
+        "MTLTexture"
+      ],
+      "output_formats": [
+        "MTLBuffer"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "MPSCNNBatchNormalization",
+      "verb": "normalize",
+      "capabilities": [
+        "gpu_norm"
+      ],
+      "params": [
+        [
+          "device",
+          "id<MTLDevice>",
+          false
+        ],
+        [
+          "dataSource",
+          "id<MPSCNNBatchNormalizationDataSource>",
+          false
+        ]
+      ],
+      "return_type": "MPSCNNBatchNormalization *",
+      "signature": "[[MPSCNNBatchNormalization alloc] initWithDevice:dataSource:]",
+      "input_formats": [
+        "MPSImage"
+      ],
+      "output_formats": [
+        "MPSImage"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "MPSMatrixSolveTriangular",
+      "verb": "solve",
+      "capabilities": [
+        "gpu_solve"
+      ],
+      "params": [
+        [
+          "device",
+          "id<MTLDevice>",
+          false
+        ],
+        [
+          "right",
+          "bool",
+          false
+        ],
+        [
+          "upper",
+          "bool",
+          false
+        ],
+        [
+          "transpose",
+          "bool",
+          false
+        ],
+        [
+          "unit",
+          "bool",
+          false
+        ],
+        [
+          "order",
+          "NSUInteger",
+          false
+        ],
+        [
+          "numberOfRightHandSides",
+          "NSUInteger",
+          false
+        ],
+        [
+          "alpha",
+          "double",
+          false
+        ]
+      ],
+      "return_type": "MPSMatrixSolveTriangular *",
+      "signature": "[[MPSMatrixSolveTriangular alloc] initWithDevice:right:upper:transpose:unit:order:numberOfRightHandSides:alpha:]",
+      "input_formats": [
+        "MPSMatrix"
+      ],
+      "output_formats": [
+        "MPSMatrix"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "MPSImageDFT",
+      "verb": "transform",
+      "capabilities": [
+        "gpu_fft"
+      ],
+      "params": [
+        [
+          "device",
+          "id<MTLDevice>",
+          false
+        ],
+        [
+          "transformWidth",
+          "NSUInteger",
+          false
+        ],
+        [
+          "transformHeight",
+          "NSUInteger",
+          false
+        ],
+        [
+          "real",
+          "bool",
+          false
+        ]
+      ],
+      "return_type": "MPSImageDFT *",
+      "signature": "[[MPSImageDFT alloc] initWithDevice:transformWidth:transformHeight:real:]",
+      "input_formats": [
+        "MTLTexture"
+      ],
+      "output_formats": [
+        "MTLTexture"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "MPSMatrixVectorMultiplication",
+      "verb": "multiply",
+      "capabilities": [
+        "gpu_matmul"
+      ],
+      "params": [
+        [
+          "device",
+          "id<MTLDevice>",
+          false
+        ],
+        [
+          "transpose",
+          "bool",
+          false
+        ],
+        [
+          "rows",
+          "NSUInteger",
+          false
+        ],
+        [
+          "columns",
+          "NSUInteger",
+          false
+        ],
+        [
+          "alpha",
+          "double",
+          false
+        ],
+        [
+          "beta",
+          "double",
+          false
+        ]
+      ],
+      "return_type": "MPSMatrixVectorMultiplication *",
+      "signature": "[[MPSMatrixVectorMultiplication alloc] initWithDevice:transpose:rows:columns:alpha:beta:]",
+      "input_formats": [
+        "MPSMatrix",
+        "MPSVector"
+      ],
+      "output_formats": [
+        "MPSVector"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "MPSCNNConvolution",
+      "verb": "convolve",
+      "capabilities": [
+        "gpu_conv"
+      ],
+      "params": [
+        [
+          "device",
+          "id<MTLDevice>",
+          false
+        ],
+        [
+          "weights",
+          "id<MPSCNNConvolutionDataSource>",
+          false
+        ]
+      ],
+      "return_type": "MPSCNNConvolution *",
+      "signature": "[[MPSCNNConvolution alloc] initWithDevice:weights:]",
+      "input_formats": [
+        "MPSImage"
+      ],
+      "output_formats": [
+        "MPSImage"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "MPSMatrixMultiplication",
+      "verb": "multiply",
+      "capabilities": [
+        "gpu_matmul"
+      ],
+      "params": [
+        [
+          "device",
+          "id<MTLDevice>",
+          false
+        ],
+        [
+          "transposeLeft",
+          "bool",
+          false
+        ],
+        [
+          "transposeRight",
+          "bool",
+          false
+        ],
+        [
+          "resultRows",
+          "NSUInteger",
+          false
+        ],
+        [
+          "resultColumns",
+          "NSUInteger",
+          false
+        ],
+        [
+          "interiorColumns",
+          "NSUInteger",
+          false
+        ],
+        [
+          "alpha",
+          "double",
+          false
+        ],
+        [
+          "beta",
+          "double",
+          false
+        ]
+      ],
+      "return_type": "MPSMatrixMultiplication *",
+      "signature": "[[MPSMatrixMultiplication alloc] initWithDevice:transposeLeft:transposeRight:resultRows:resultColumns:interiorColumns:alpha:beta:]",
+      "input_formats": [
+        "MPSMatrix"
+      ],
+      "output_formats": [
+        "MPSMatrix"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "MPSMatrixDecompositionLU",
+      "verb": "decompose",
+      "capabilities": [
+        "gpu_solve"
+      ],
+      "params": [
+        [
+          "device",
+          "id<MTLDevice>",
+          false
+        ],
+        [
+          "rows",
+          "NSUInteger",
+          false
+        ],
+        [
+          "columns",
+          "NSUInteger",
+          false
+        ]
+      ],
+      "return_type": "MPSMatrixDecompositionLU *",
+      "signature": "[[MPSMatrixDecompositionLU alloc] initWithDevice:rows:columns:]",
+      "input_formats": [
+        "MPSMatrix"
+      ],
+      "output_formats": [
+        "MPSMatrix"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "MPSImageLanczosScale",
+      "verb": "scale",
+      "capabilities": [
+        "gpu_image_scale"
+      ],
+      "params": [
+        [
+          "device",
+          "id<MTLDevice>",
+          false
+        ]
+      ],
+      "return_type": "MPSImageLanczosScale *",
+      "signature": "[[MPSImageLanczosScale alloc] initWithDevice:]",
+      "input_formats": [
+        "MTLTexture"
+      ],
+      "output_formats": [
+        "MTLTexture"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "MPSCNNPoolingMax",
+      "verb": "pool",
+      "capabilities": [
+        "gpu_pool"
+      ],
+      "params": [
+        [
+          "device",
+          "id<MTLDevice>",
+          false
+        ],
+        [
+          "kernelWidth",
+          "NSUInteger",
+          false
+        ],
+        [
+          "kernelHeight",
+          "NSUInteger",
+          false
+        ],
+        [
+          "strideInPixelsX",
+          "NSUInteger",
+          false
+        ],
+        [
+          "strideInPixelsY",
+          "NSUInteger",
+          false
+        ]
+      ],
+      "return_type": "MPSCNNPoolingMax *",
+      "signature": "[[MPSCNNPoolingMax alloc] initWithDevice:kernelWidth:kernelHeight:strideInPixelsX:strideInPixelsY:]",
+      "input_formats": [
+        "MPSImage"
+      ],
+      "output_formats": [
+        "MPSImage"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "MPSImageBilinearScale",
+      "verb": "scale",
+      "capabilities": [
+        "gpu_image_scale"
+      ],
+      "params": [
+        [
+          "device",
+          "id<MTLDevice>",
+          false
+        ]
+      ],
+      "return_type": "MPSImageBilinearScale *",
+      "signature": "[[MPSImageBilinearScale alloc] initWithDevice:]",
+      "input_formats": [
+        "MTLTexture"
+      ],
+      "output_formats": [
+        "MTLTexture"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "MPSImageConvolution",
+      "verb": "convolve",
+      "capabilities": [
+        "gpu_image_convolve"
+      ],
+      "params": [
+        [
+          "device",
+          "id<MTLDevice>",
+          false
+        ],
+        [
+          "kernelWidth",
+          "NSUInteger",
+          false
+        ],
+        [
+          "kernelHeight",
+          "NSUInteger",
+          false
+        ],
+        [
+          "weights",
+          "const float",
+          true
+        ]
+      ],
+      "return_type": "MPSImageConvolution *",
+      "signature": "[[MPSImageConvolution alloc] initWithDevice:kernelWidth:kernelHeight:weights:]",
+      "input_formats": [
+        "MTLTexture"
+      ],
+      "output_formats": [
+        "MTLTexture"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "MPSImageGaussianBlur",
+      "verb": "convolve",
+      "capabilities": [
+        "gpu_image_convolve"
+      ],
+      "params": [
+        [
+          "device",
+          "id<MTLDevice>",
+          false
+        ],
+        [
+          "sigma",
+          "float",
+          false
+        ]
+      ],
+      "return_type": "MPSImageGaussianBlur *",
+      "signature": "[[MPSImageGaussianBlur alloc] initWithDevice:sigma:]",
+      "input_formats": [
+        "MTLTexture"
+      ],
+      "output_formats": [
+        "MTLTexture"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "MPSCNNPoolingAverage",
+      "verb": "pool",
+      "capabilities": [
+        "gpu_pool"
+      ],
+      "params": [
+        [
+          "device",
+          "id<MTLDevice>",
+          false
+        ],
+        [
+          "kernelWidth",
+          "NSUInteger",
+          false
+        ],
+        [
+          "kernelHeight",
+          "NSUInteger",
+          false
+        ],
+        [
+          "strideInPixelsX",
+          "NSUInteger",
+          false
+        ],
+        [
+          "strideInPixelsY",
+          "NSUInteger",
+          false
+        ]
+      ],
+      "return_type": "MPSCNNPoolingAverage *",
+      "signature": "[[MPSCNNPoolingAverage alloc] initWithDevice:kernelWidth:kernelHeight:strideInPixelsX:strideInPixelsY:]",
+      "input_formats": [
+        "MPSImage"
+      ],
+      "output_formats": [
+        "MPSImage"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "MPSRayIntersector",
+      "verb": "intersect",
+      "capabilities": [
+        "gpu_raytrace"
+      ],
+      "params": [
+        [
+          "device",
+          "id<MTLDevice>",
+          false
+        ]
+      ],
+      "return_type": "MPSRayIntersector *",
+      "signature": "[[MPSRayIntersector alloc] initWithDevice:]",
+      "input_formats": [
+        "MPSRayOriginMinDistanceDirectionMaxDistance"
+      ],
+      "output_formats": [
+        "MPSIntersectionDistancePrimitiveIndexCoordinates"
+      ],
+      "notes": "",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [
+    {
+      "framework": "MetalPerformanceShaders",
+      "group": "MpsImageResize",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "MTLCreateSystemDefaultDevice",
+          "role": "Create",
+          "args_hint": "",
+          "returns": "id",
+          "notes": "get Metal device"
+        },
+        {
+          "order": 1,
+          "function": "initWithDevice:",
+          "role": "Init",
+          "args_hint": "device",
+          "returns": "id",
+          "notes": "create MPSImageBilinearScale"
+        },
+        {
+          "order": 2,
+          "function": "encodeToCommandBuffer:sourceTexture:destinationTexture:",
+          "role": "Use",
+          "args_hint": "commandBuffer, sourceTexture, destTexture",
+          "returns": "void",
+          "notes": "encode resize operation"
+        },
+        {
+          "order": 3,
+          "function": "commit",
+          "role": "Use",
+          "args_hint": "",
+          "returns": "void",
+          "notes": "submit to GPU"
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 100,
+      "recipe": "# MPS Image Resize via PyObjC\nimport objc\nfrom Foundation import NSBundle\nfrom Metal import MTLCreateSystemDefaultDevice\n\ndevice = MTLCreateSystemDefaultDevice()\nMPS = NSBundle.bundleWithPath_('/System/Library/Frameworks/MetalPerformanceShaders.framework')\nobjc.loadBundle('MetalPerformanceShaders', bundle_path=MPS.bundlePath(), module_globals=globals())\nscaler = MPSImageBilinearScale.alloc().initWithDevice_(device)\ncmdQueue = device.newCommandQueue()\ncmdBuf = cmdQueue.commandBuffer()\nscaler.encodeToCommandBuffer_sourceTexture_destinationTexture_(cmdBuf, srcTex, dstTex)\ncmdBuf.commit()\ncmdBuf.waitUntilCompleted()"
+    },
+    {
+      "framework": "MetalPerformanceShaders",
+      "group": "MpsMatrixMultiply",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "MTLCreateSystemDefaultDevice",
+          "role": "Create",
+          "args_hint": "",
+          "returns": "id",
+          "notes": "get Metal device"
+        },
+        {
+          "order": 1,
+          "function": "initWithDevice:transposeLeft:transposeRight:resultRows:resultColumns:interiorColumns:alpha:beta:",
+          "role": "Init",
+          "args_hint": "device, transposeLeft, transposeRight, M, N, K, alpha, beta",
+          "returns": "id",
+          "notes": "create MPSMatrixMultiplication"
+        },
+        {
+          "order": 2,
+          "function": "encodeToCommandBuffer:leftMatrix:rightMatrix:resultMatrix:",
+          "role": "Use",
+          "args_hint": "commandBuffer, leftMatrix, rightMatrix, resultMatrix",
+          "returns": "void",
+          "notes": "encode matmul"
+        },
+        {
+          "order": 3,
+          "function": "commit",
+          "role": "Use",
+          "args_hint": "",
+          "returns": "void",
+          "notes": "submit to GPU"
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 100,
+      "recipe": "# MPS Matrix Multiply via PyObjC\nimport objc\nimport numpy as np\nfrom Metal import MTLCreateSystemDefaultDevice\n\ndevice = MTLCreateSystemDefaultDevice()\nobjc.loadBundle('MetalPerformanceShaders', bundle_path='/System/Library/Frameworks/MetalPerformanceShaders.framework', module_globals=globals())\nmm = MPSMatrixMultiplication.alloc().initWithDevice_transposeLeft_transposeRight_resultRows_resultColumns_interiorColumns_alpha_beta_(device, False, False, M, N, K, 1.0, 0.0)\ncmdQueue = device.newCommandQueue()\ncmdBuf = cmdQueue.commandBuffer()\nmm.encodeToCommandBuffer_leftMatrix_rightMatrix_resultMatrix_(cmdBuf, leftMat, rightMat, resultMat)\ncmdBuf.commit()\ncmdBuf.waitUntilCompleted()"
+    }
+  ],
+  "cross_link": true
+}

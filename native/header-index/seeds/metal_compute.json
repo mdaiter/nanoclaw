@@ -1,0 +1,128 @@
+{
+  "framework": "Metal",
+  "type_aliases": [],
+  "entries": [
+    {
+      "name": "MTLCreateSystemDefaultDevice",
+      "verb": "create",
+      "capabilities": [
+        "gpu_compute",
+        "metal_init"
+      ],
+      "params": [],
+      "return_type": "id<MTLDevice>",
+      "signature": "id<MTLDevice> MTLCreateSystemDefaultDevice(void)",
+      "input_formats": [],
+      "output_formats": [
+        "MTLDevice"
+      ],
+      "notes": "Get the default Metal GPU device. Returns nil on systems without Metal.",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [
+    {
+      "framework": "Metal",
+      "group": "MetalDispatchHarness",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "MTLCreateSystemDefaultDevice",
+          "role": "Create",
+          "args_hint": "",
+          "returns": "id<MTLDevice>",
+          "notes": "Get default Metal device. Cache this \u2014 one per process."
+        },
+        {
+          "order": 1,
+          "function": "newCommandQueue",
+          "role": "Create",
+          "args_hint": "",
+          "returns": "id<MTLCommandQueue>",
+          "notes": "Create command queue from device. Cache this too."
+        },
+        {
+          "order": 2,
+          "function": "newLibraryWithSource:options:error:",
+          "role": "Create",
+          "args_hint": "MSL source string, nil, &error",
+          "returns": "id<MTLLibrary>",
+          "notes": "Compile Metal Shading Language source at runtime. Cache the compiled library."
+        },
+        {
+          "order": 3,
+          "function": "newComputePipelineStateWithFunction:error:",
+          "role": "Create",
+          "args_hint": "kernel function from library, &error",
+          "returns": "id<MTLComputePipelineState>",
+          "notes": "Create compute pipeline from compiled kernel. Cache for reuse."
+        },
+        {
+          "order": 4,
+          "function": "newBufferWithBytesNoCopy:length:options:deallocator:",
+          "role": "Use",
+          "args_hint": "numpy.ctypes.data, byte_count, MTLResourceStorageModeShared, None",
+          "returns": "id<MTLBuffer>",
+          "notes": "Wrap existing numpy memory as Metal buffer \u2014 zero-copy on unified memory (M1/M2/M3). Avoids CPU\u2192GPU transfer entirely."
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "import numpy as np\nfrom Foundation import NSString\nfrom Metal import MTLCreateSystemDefaultDevice, MTLResourceStorageModeShared\n\nclass MetalDispatch:\n    \"\"\"Reusable Metal compute dispatch harness.\n    Compiles MSL source once, caches pipeline. Wraps numpy arrays as\n    zero-copy Metal buffers on Apple Silicon unified memory.\n\n    Usage:\n        gpu = MetalDispatch(msl_source, kernel_name='my_kernel')\n        out = np.empty(...)\n        gpu.run(buffers=[src_array, out], constants={'width': np.uint32(W)},\n                grid=(W, H, 1), threadgroup=(16, 16, 1))\n    \"\"\"\n    def __init__(self, msl_src, kernel_name):\n        self.device = MTLCreateSystemDefaultDevice()\n        self.queue = self.device.newCommandQueue()\n        lib, err = self.device.newLibraryWithSource_options_error_(\n            NSString.stringWithString_(msl_src), None, None)\n        if err: raise RuntimeError(f'Metal compile: {err}')\n        func = lib.newFunctionWithName_(kernel_name)\n        if func is None: raise RuntimeError(f'Kernel {kernel_name!r} not found')\n        self.pipeline, err = self.device.newComputePipelineStateWithFunction_error_(func, None)\n        if err: raise RuntimeError(f'Pipeline: {err}')\n\n    def run(self, buffers, constants=None, grid=(1,1,1), threadgroup=None):\n        \"\"\"Dispatch a compute kernel.\n        buffers: list of numpy arrays (wrapped zero-copy as Metal buffers).\n        constants: dict of {index: np.array} for setBytes constants.\n        grid: (x, y, z) total threads.\n        threadgroup: (x, y, z) threads per group (auto if None).\"\"\"\n        cmd = self.queue.commandBuffer()\n        enc = cmd.computeCommandEncoder()\n        enc.setComputePipelineState_(self.pipeline)\n        for i, arr in enumerate(buffers):\n            arr = np.ascontiguousarray(arr)\n            buf = self.device.newBufferWithBytesNoCopy_length_options_deallocator_(\n                arr.ctypes.data, arr.nbytes, MTLResourceStorageModeShared, None)\n            enc.setBuffer_offset_atIndex_(buf, 0, i)\n        if constants:\n            for idx, val in constants.items():\n                enc.setBytes_length_atIndex_(val.ctypes.data, val.nbytes, idx)\n        if threadgroup is None:\n            tg = min(self.pipeline.maxTotalThreadsPerThreadgroup(), 256)\n            threadgroup = (tg, 1, 1)\n        enc.dispatchThreads_threadsPerThreadgroup_(grid, threadgroup)\n        enc.endEncoding()\n        cmd.commit()\n        cmd.waitUntilCompleted()"
+    },
+    {
+      "framework": "Metal",
+      "group": "MetalKernelSnippets",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "kernel_bilinear_resize",
+          "role": "Use",
+          "args_hint": "uchar4 src, uchar4 dst, src_w, src_h, dst_w, dst_h",
+          "returns": "void",
+          "notes": "MSL snippet: bilinear resize for 4-channel uint8 images. Compose with other snippets in one kernel."
+        },
+        {
+          "order": 1,
+          "function": "kernel_bgra_to_rgb_float",
+          "role": "Use",
+          "args_hint": "uchar4 src, float3 dst",
+          "returns": "void",
+          "notes": "MSL snippet: convert BGRA uint8 to RGB float32 with /255 scaling."
+        },
+        {
+          "order": 2,
+          "function": "kernel_normalize_chw",
+          "role": "Use",
+          "args_hint": "float3 pixel, float dst_chw, mean[3], invstd[3]",
+          "returns": "void",
+          "notes": "MSL snippet: normalize RGB float to CHW layout with mean/std. Write to planar output."
+        },
+        {
+          "order": 3,
+          "function": "kernel_parallel_reduce",
+          "role": "Use",
+          "args_hint": "device const float *input, device float *output, uint n",
+          "returns": "void",
+          "notes": "MSL snippet: parallel reduction (sum/min/max) using threadgroup shared memory. Generic \u2014 works for any float array, not just images."
+        },
+        {
+          "order": 4,
+          "function": "kernel_elementwise_fma",
+          "role": "Use",
+          "args_hint": "device const float *a, device const float *b, device float *out, float scale, float bias, uint n",
+          "returns": "void",
+          "notes": "MSL snippet: element-wise fused multiply-add: out[i] = a[i] * scale + b[i] + bias. Generic compute pattern for vector math on GPU."
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "# \u2500\u2500 Metal Shading Language kernel building blocks \u2500\u2500\n# Compose these snippets into a single `kernel void` function.\n# Each snippet handles one stage. Chain them to fuse operations\n# and avoid intermediate buffers.\n#\n# The MetalDispatch harness (above) handles device init, buffer\n# wrapping, and dispatch. You only write the MSL kernel.\n\nRESIZE_BILINEAR_MSL = '''\n// Bilinear resize: sample src at fractional coords for dst pixel.\n// Input: device const uchar4 *src (buffer 0)\n// Output: writes to local float4 variable `pixel`\nfloat sx = float(gid.x) * float(src_w) / float(dst_w);\nfloat sy = float(gid.y) * float(src_h) / float(dst_h);\nuint x0 = uint(sx), y0 = uint(sy);\nuint x1 = min(x0+1, src_w-1), y1 = min(y0+1, src_h-1);\nfloat fx = sx - float(x0), fy = sy - float(y0);\nfloat4 p00 = float4(src[y0*src_w+x0]);\nfloat4 p10 = float4(src[y0*src_w+x1]);\nfloat4 p01 = float4(src[y1*src_w+x0]);\nfloat4 p11 = float4(src[y1*src_w+x1]);\nfloat4 pixel = mix(mix(p00, p10, fx), mix(p01, p11, fx), fy);\n'''\n\nBGRA_TO_RGB_FLOAT_MSL = '''\n// BGRA\u2192RGB float conversion (assumes `pixel` is float4 in BGRA order)\nfloat r = pixel.z / 255.0f;  // R from BGRA[2]\nfloat g = pixel.y / 255.0f;  // G from BGRA[1]\nfloat b = pixel.x / 255.0f;  // B from BGRA[0]\n'''\n\nNORMALIZE_CHW_MSL = '''\n// ImageNet normalize + write to CHW planar layout.\n// mean/invstd are constant buffer floats.\n// dst is device float* in CHW order: [C * H * W]\nuint n = dst_w * dst_h;\nuint idx = gid.y * dst_w + gid.x;\ndst[0*n + idx] = (r - mean_r) * invstd_r;\ndst[1*n + idx] = (g - mean_g) * invstd_g;\ndst[2*n + idx] = (b - mean_b) * invstd_b;\n'''\n\n# \u2500\u2500 Generic compute snippets (not image-specific) \u2500\u2500\n\nPARALLEL_REDUCE_MSL = '''\n// Parallel reduction using threadgroup shared memory.\n// Works for sum, min, max \u2014 change the op on the marked line.\n// Launch with: grid=(n,1,1), threadgroup=(256,1,1)\nthreadgroup float shared[256];\nuint tid = thread_position_in_threadgroup.x;\nuint gid_x = thread_position_in_grid.x;\nshared[tid] = (gid_x < n) ? input[gid_x] : 0.0f;\nthreadgroup_barrier(mem_flags::mem_threadgroup);\nfor (uint s = 128; s > 0; s >>= 1) {\n    if (tid < s) {\n        shared[tid] += shared[tid + s];  // change to min()/max() as needed\n    }\n    threadgroup_barrier(mem_flags::mem_threadgroup);\n}\nif (tid == 0) {\n    output[threadgroup_position_in_grid.x] = shared[0];\n}\n'''\n\nELEMENTWISE_FMA_MSL = '''\n// Element-wise fused multiply-add: out[i] = a[i] * scale + b[i] + bias\n// Generic vector math \u2014 use for normalize, scale+offset, weighted sum, etc.\n// Launch with: grid=(n,1,1), threadgroup=(256,1,1)\nuint i = thread_position_in_grid.x;\nif (i < n) {\n    out[i] = a[i] * scale + b[i] + bias;\n}\n'''\n\n# \u2500\u2500 Example: compose image snippets into a fused kernel \u2500\u2500\ndef build_resize_normalize_kernel(mean=(0.485,0.456,0.406), std=(0.229,0.224,0.225)):\n    \"\"\"Build a single MSL kernel that fuses resize + color convert + normalize.\n    Returns MSL source string ready for MetalDispatch.\"\"\"\n    invstd = [1.0/s for s in std]\n    return f'''\n    #include <metal_stdlib>\n    using namespace metal;\n    kernel void fused_resize_normalize(\n        device const uchar4 *src [[buffer(0)]],\n        device float *dst        [[buffer(1)]],\n        constant uint &src_w     [[buffer(2)]],\n        constant uint &src_h     [[buffer(3)]],\n        constant uint &dst_w     [[buffer(4)]],\n        constant uint &dst_h     [[buffer(5)]],\n        uint2 gid [[thread_position_in_grid]]\n    ) {{\n        if (gid.x >= dst_w || gid.y >= dst_h) return;\n        {RESIZE_BILINEAR_MSL}\n        {BGRA_TO_RGB_FLOAT_MSL}\n        // Normalize with baked-in constants\n        uint n = dst_w * dst_h;\n        uint idx = gid.y * dst_w + gid.x;\n        dst[0*n + idx] = (r - {mean[0]}f) * {invstd[0]}f;\n        dst[1*n + idx] = (g - {mean[1]}f) * {invstd[1]}f;\n        dst[2*n + idx] = (b - {mean[2]}f) * {invstd[2]}f;\n    }}\n    '''"
+    }
+  ],
+  "cross_link": false
+}

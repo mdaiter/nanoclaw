@@ -1,0 +1,284 @@
+{
+  "framework": "CUDA",
+  "type_aliases": [
+    ["cudnnHandle_t", "struct cudnnContext *"],
+    ["cudnnStatus_t", "int"],
+    ["cudnnTensorDescriptor_t", "struct cudnnTensorStruct *"],
+    ["cudnnFilterDescriptor_t", "struct cudnnFilterStruct *"],
+    ["cudnnConvolutionDescriptor_t", "struct cudnnConvolutionStruct *"],
+    ["cudnnPoolingDescriptor_t", "struct cudnnPoolingStruct *"],
+    ["cudnnActivationDescriptor_t", "struct cudnnActivationStruct *"],
+    ["cudnnBatchNormMode_t", "int"],
+    ["cudnnDataType_t", "int"],
+    ["cudnnTensorFormat_t", "int"],
+    ["cudnnConvolutionFwdAlgo_t", "int"],
+    ["cudnnNanPropagation_t", "int"]
+  ],
+  "entries": [
+    {
+      "name": "cudnnCreate",
+      "verb": "create",
+      "capabilities": ["cudnn_init"],
+      "params": [
+        ["handle", "cudnnHandle_t", true]
+      ],
+      "return_type": "cudnnStatus_t",
+      "signature": "cudnnStatus_t cudnnCreate(cudnnHandle_t *handle)",
+      "input_formats": [],
+      "output_formats": ["cudnnHandle_t"],
+      "notes": "Create cuDNN handle. One per GPU context.",
+      "async_pattern": false
+    },
+    {
+      "name": "cudnnConvolutionForward",
+      "verb": "convolve",
+      "capabilities": ["cudnn_conv", "gpu_compute"],
+      "params": [
+        ["handle", "cudnnHandle_t", false],
+        ["alpha", "float", true],
+        ["xDesc", "cudnnTensorDescriptor_t", false],
+        ["x", "void", true],
+        ["wDesc", "cudnnFilterDescriptor_t", false],
+        ["w", "void", true],
+        ["convDesc", "cudnnConvolutionDescriptor_t", false],
+        ["algo", "cudnnConvolutionFwdAlgo_t", false],
+        ["workSpace", "void", true],
+        ["workSpaceSizeInBytes", "size_t", false],
+        ["beta", "float", true],
+        ["yDesc", "cudnnTensorDescriptor_t", false],
+        ["y", "void", true]
+      ],
+      "return_type": "cudnnStatus_t",
+      "signature": "cudnnStatus_t cudnnConvolutionForward(cudnnHandle_t handle, const void *alpha, const cudnnTensorDescriptor_t xDesc, const void *x, const cudnnFilterDescriptor_t wDesc, const void *w, const cudnnConvolutionDescriptor_t convDesc, cudnnConvolutionFwdAlgo_t algo, void *workSpace, size_t workSpaceSizeInBytes, const void *beta, const cudnnTensorDescriptor_t yDesc, void *y)",
+      "input_formats": ["float32_tensor", "float16_tensor"],
+      "output_formats": ["float32_tensor", "float16_tensor"],
+      "notes": "Forward convolution. Replaces torch.nn.Conv2d forward pass. Uses Tensor Cores on Volta+.",
+      "async_pattern": true
+    },
+    {
+      "name": "cudnnBatchNormalizationForwardInference",
+      "verb": "normalize",
+      "capabilities": ["cudnn_batchnorm", "gpu_compute"],
+      "params": [
+        ["handle", "cudnnHandle_t", false],
+        ["mode", "cudnnBatchNormMode_t", false],
+        ["alpha", "float", true],
+        ["beta", "float", true],
+        ["xDesc", "cudnnTensorDescriptor_t", false],
+        ["x", "void", true],
+        ["yDesc", "cudnnTensorDescriptor_t", false],
+        ["y", "void", true],
+        ["bnScaleBiasMeanVarDesc", "cudnnTensorDescriptor_t", false],
+        ["bnScale", "void", true],
+        ["bnBias", "void", true],
+        ["estimatedMean", "void", true],
+        ["estimatedVariance", "void", true],
+        ["epsilon", "double", false]
+      ],
+      "return_type": "cudnnStatus_t",
+      "signature": "cudnnStatus_t cudnnBatchNormalizationForwardInference(cudnnHandle_t handle, cudnnBatchNormMode_t mode, const void *alpha, const void *beta, const cudnnTensorDescriptor_t xDesc, const void *x, const cudnnTensorDescriptor_t yDesc, void *y, const cudnnTensorDescriptor_t bnScaleBiasMeanVarDesc, const void *bnScale, const void *bnBias, const void *estimatedMean, const void *estimatedVariance, double epsilon)",
+      "input_formats": ["float32_tensor"],
+      "output_formats": ["float32_tensor"],
+      "notes": "BatchNorm inference. Replaces torch.nn.BatchNorm2d forward.",
+      "async_pattern": true
+    },
+    {
+      "name": "cudnnPoolingForward",
+      "verb": "pool",
+      "capabilities": ["cudnn_pool", "gpu_compute"],
+      "params": [
+        ["handle", "cudnnHandle_t", false],
+        ["poolingDesc", "cudnnPoolingDescriptor_t", false],
+        ["alpha", "float", true],
+        ["xDesc", "cudnnTensorDescriptor_t", false],
+        ["x", "void", true],
+        ["beta", "float", true],
+        ["yDesc", "cudnnTensorDescriptor_t", false],
+        ["y", "void", true]
+      ],
+      "return_type": "cudnnStatus_t",
+      "signature": "cudnnStatus_t cudnnPoolingForward(cudnnHandle_t handle, const cudnnPoolingDescriptor_t poolingDesc, const void *alpha, const cudnnTensorDescriptor_t xDesc, const void *x, const void *beta, const cudnnTensorDescriptor_t yDesc, void *y)",
+      "input_formats": ["float32_tensor"],
+      "output_formats": ["float32_tensor"],
+      "notes": "Max/avg pooling. Replaces torch.nn.MaxPool2d/AvgPool2d.",
+      "async_pattern": true
+    },
+    {
+      "name": "cudnnActivationForward",
+      "verb": "activate",
+      "capabilities": ["cudnn_activation", "gpu_compute"],
+      "params": [
+        ["handle", "cudnnHandle_t", false],
+        ["activationDesc", "cudnnActivationDescriptor_t", false],
+        ["alpha", "float", true],
+        ["xDesc", "cudnnTensorDescriptor_t", false],
+        ["x", "void", true],
+        ["beta", "float", true],
+        ["yDesc", "cudnnTensorDescriptor_t", false],
+        ["y", "void", true]
+      ],
+      "return_type": "cudnnStatus_t",
+      "signature": "cudnnStatus_t cudnnActivationForward(cudnnHandle_t handle, cudnnActivationDescriptor_t activationDesc, const void *alpha, const cudnnTensorDescriptor_t xDesc, const void *x, const void *beta, const cudnnTensorDescriptor_t yDesc, void *y)",
+      "input_formats": ["float32_tensor"],
+      "output_formats": ["float32_tensor"],
+      "notes": "ReLU, sigmoid, tanh. Replaces torch.relu etc.",
+      "async_pattern": true
+    },
+    {
+      "name": "cudnnSoftmaxForward",
+      "verb": "softmax",
+      "capabilities": ["cudnn_softmax", "gpu_compute"],
+      "params": [
+        ["handle", "cudnnHandle_t", false],
+        ["alpha", "float", true],
+        ["xDesc", "cudnnTensorDescriptor_t", false],
+        ["x", "void", true],
+        ["beta", "float", true],
+        ["yDesc", "cudnnTensorDescriptor_t", false],
+        ["y", "void", true]
+      ],
+      "return_type": "cudnnStatus_t",
+      "signature": "cudnnStatus_t cudnnSoftmaxForward(cudnnHandle_t handle, cudnnSoftmaxAlgorithm_t algo, cudnnSoftmaxMode_t mode, const void *alpha, const cudnnTensorDescriptor_t xDesc, const void *x, const void *beta, const cudnnTensorDescriptor_t yDesc, void *y)",
+      "input_formats": ["float32_tensor"],
+      "output_formats": ["float32_tensor"],
+      "notes": "Softmax. Replaces torch.softmax.",
+      "async_pattern": true
+    },
+    {
+      "name": "cudnnConvolutionBiasActivationForward",
+      "verb": "fused_conv",
+      "capabilities": ["cudnn_conv", "cudnn_activation", "gpu_compute", "kernel_fusion"],
+      "params": [
+        ["handle", "cudnnHandle_t", false],
+        ["alpha1", "float", true],
+        ["xDesc", "cudnnTensorDescriptor_t", false],
+        ["x", "void", true],
+        ["wDesc", "cudnnFilterDescriptor_t", false],
+        ["w", "void", true],
+        ["convDesc", "cudnnConvolutionDescriptor_t", false],
+        ["algo", "cudnnConvolutionFwdAlgo_t", false],
+        ["workSpace", "void", true],
+        ["workSpaceSizeInBytes", "size_t", false],
+        ["alpha2", "float", true],
+        ["zDesc", "cudnnTensorDescriptor_t", false],
+        ["z", "void", true],
+        ["biasDesc", "cudnnTensorDescriptor_t", false],
+        ["bias", "void", true],
+        ["activationDesc", "cudnnActivationDescriptor_t", false],
+        ["yDesc", "cudnnTensorDescriptor_t", false],
+        ["y", "void", true]
+      ],
+      "return_type": "cudnnStatus_t",
+      "signature": "cudnnStatus_t cudnnConvolutionBiasActivationForward(cudnnHandle_t handle, const void *alpha1, const cudnnTensorDescriptor_t xDesc, const void *x, const cudnnFilterDescriptor_t wDesc, const void *w, const cudnnConvolutionDescriptor_t convDesc, cudnnConvolutionFwdAlgo_t algo, void *workSpace, size_t workSpaceSizeInBytes, const void *alpha2, const cudnnTensorDescriptor_t zDesc, const void *z, const cudnnTensorDescriptor_t biasDesc, const void *bias, const cudnnActivationDescriptor_t activationDesc, const cudnnTensorDescriptor_t yDesc, void *y)",
+      "input_formats": ["float32_tensor", "float16_tensor"],
+      "output_formats": ["float32_tensor", "float16_tensor"],
+      "notes": "Fused conv+bias+activation. Single kernel \u2014 eliminates 2 memory roundtrips vs separate ops.",
+      "async_pattern": true
+    },
+    {
+      "name": "cudnnDestroy",
+      "verb": "destroy",
+      "capabilities": ["cudnn_init"],
+      "params": [
+        ["handle", "cudnnHandle_t", false]
+      ],
+      "return_type": "cudnnStatus_t",
+      "signature": "cudnnStatus_t cudnnDestroy(cudnnHandle_t handle)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Destroy cuDNN handle.",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [
+    {
+      "framework": "CUDA",
+      "group": "CudnnConvForward",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "cudnnCreate",
+          "role": "Create",
+          "args_hint": "&handle",
+          "returns": "cudnnStatus_t",
+          "notes": "Create cuDNN handle. Do this once at startup."
+        },
+        {
+          "order": 1,
+          "function": "cudnnCreateTensorDescriptor / cudnnCreateFilterDescriptor / cudnnCreateConvolutionDescriptor",
+          "role": "Create",
+          "args_hint": "&xDesc, &yDesc, &wDesc, &convDesc",
+          "returns": "cudnnStatus_t",
+          "notes": "Create and configure tensor, filter, and convolution descriptors for the forward pass."
+        },
+        {
+          "order": 2,
+          "function": "cudnnConvolutionForward",
+          "role": "Use",
+          "args_hint": "handle, &alpha, xDesc, x, wDesc, w, convDesc, algo, ws, wsSize, &beta, yDesc, y",
+          "returns": "cudnnStatus_t",
+          "notes": "Execute forward convolution. Select CUDNN_CONVOLUTION_FWD_ALGO_IMPLICIT_PRECOMP_GEMM for Tensor Core path."
+        },
+        {
+          "order": 3,
+          "function": "cudnnDestroy",
+          "role": "Destroy",
+          "args_hint": "handle",
+          "returns": "cudnnStatus_t",
+          "notes": "Destroy cuDNN handle at process shutdown."
+        }
+      ],
+      "constants": [
+        {"name": "CUDNN_STATUS_SUCCESS", "value": "0", "source": "cudnn.h"},
+        {"name": "CUDNN_TENSOR_NCHW", "value": "0", "source": "cudnn.h"},
+        {"name": "CUDNN_DATA_FLOAT", "value": "0", "source": "cudnn.h"},
+        {"name": "CUDNN_CROSS_CORRELATION", "value": "1", "source": "cudnn.h"},
+        {"name": "CUDNN_TENSOR_OP_MATH", "value": "1", "source": "cudnn.h"},
+        {"name": "CUDNN_CONVOLUTION_FWD_ALGO_IMPLICIT_PRECOMP_GEMM", "value": "1", "source": "cudnn.h"}
+      ],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "#include <cudnn.h>\n#include <cuda_runtime.h>\n#include <stdio.h>\n\n#define CUDNN_CHECK(call) { cudnnStatus_t e = call; if (e != CUDNN_STATUS_SUCCESS) { fprintf(stderr, \"cuDNN error %d at %s:%d\\n\", e, __FILE__, __LINE__); exit(1); } }\n\nstatic cudnnHandle_t g_cudnn = nullptr;\nvoid ensure_cudnn() {\n    if (!g_cudnn) CUDNN_CHECK(cudnnCreate(&g_cudnn));\n}\n\n// Conv2d forward: NCHW float32, uses Tensor Cores when available\nvoid gpu_conv2d(const float* input, const float* filter, float* output,\n                int N, int C, int H, int W, int K, int R, int S,\n                int pad, int stride) {\n    ensure_cudnn();\n    cudnnTensorDescriptor_t xDesc, yDesc;\n    cudnnFilterDescriptor_t wDesc;\n    cudnnConvolutionDescriptor_t convDesc;\n    CUDNN_CHECK(cudnnCreateTensorDescriptor(&xDesc));\n    CUDNN_CHECK(cudnnCreateTensorDescriptor(&yDesc));\n    CUDNN_CHECK(cudnnCreateFilterDescriptor(&wDesc));\n    CUDNN_CHECK(cudnnCreateConvolutionDescriptor(&convDesc));\n    CUDNN_CHECK(cudnnSetTensor4dDescriptor(xDesc, CUDNN_TENSOR_NCHW, CUDNN_DATA_FLOAT, N, C, H, W));\n    CUDNN_CHECK(cudnnSetFilter4dDescriptor(wDesc, CUDNN_DATA_FLOAT, CUDNN_TENSOR_NCHW, K, C, R, S));\n    CUDNN_CHECK(cudnnSetConvolution2dDescriptor(convDesc, pad, pad, stride, stride, 1, 1, CUDNN_CROSS_CORRELATION, CUDNN_DATA_FLOAT));\n    CUDNN_CHECK(cudnnSetConvolutionMathType(convDesc, CUDNN_TENSOR_OP_MATH));\n    int outN, outC, outH, outW;\n    CUDNN_CHECK(cudnnGetConvolution2dForwardOutputDim(convDesc, xDesc, wDesc, &outN, &outC, &outH, &outW));\n    CUDNN_CHECK(cudnnSetTensor4dDescriptor(yDesc, CUDNN_TENSOR_NCHW, CUDNN_DATA_FLOAT, outN, outC, outH, outW));\n    cudnnConvolutionFwdAlgo_t algo = CUDNN_CONVOLUTION_FWD_ALGO_IMPLICIT_PRECOMP_GEMM;\n    size_t wsSize = 0;\n    CUDNN_CHECK(cudnnGetConvolutionForwardWorkspaceSize(g_cudnn, xDesc, wDesc, convDesc, yDesc, algo, &wsSize));\n    void* ws = nullptr;\n    if (wsSize > 0) cudaMalloc(&ws, wsSize);\n    float alpha = 1.0f, beta = 0.0f;\n    CUDNN_CHECK(cudnnConvolutionForward(g_cudnn, &alpha, xDesc, input, wDesc, filter, convDesc, algo, ws, wsSize, &beta, yDesc, output));\n    if (ws) cudaFree(ws);\n    cudnnDestroyTensorDescriptor(xDesc);\n    cudnnDestroyTensorDescriptor(yDesc);\n    cudnnDestroyFilterDescriptor(wDesc);\n    cudnnDestroyConvolutionDescriptor(convDesc);\n}"
+    },
+    {
+      "framework": "CUDA",
+      "group": "CudnnFusedConvBiasAct",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "cudnnCreate",
+          "role": "Create",
+          "args_hint": "&handle",
+          "returns": "cudnnStatus_t",
+          "notes": "Create cuDNN handle and descriptors for fused op."
+        },
+        {
+          "order": 1,
+          "function": "cudnnConvolutionBiasActivationForward",
+          "role": "Use",
+          "args_hint": "handle, &alpha1, xDesc, x, wDesc, w, convDesc, algo, ws, wsSize, &alpha2, zDesc, z, biasDesc, bias, actDesc, yDesc, y",
+          "returns": "cudnnStatus_t",
+          "notes": "Fused conv+bias+activation in a single kernel. Eliminates 2 memory roundtrips vs separate conv, bias add, and activation."
+        },
+        {
+          "order": 2,
+          "function": "cudnnDestroy",
+          "role": "Destroy",
+          "args_hint": "handle",
+          "returns": "cudnnStatus_t",
+          "notes": "Destroy cuDNN handle at shutdown."
+        }
+      ],
+      "constants": [
+        {"name": "CUDNN_ACTIVATION_RELU", "value": "1", "source": "cudnn.h"},
+        {"name": "CUDNN_CONVOLUTION_FWD_ALGO_IMPLICIT_PRECOMP_GEMM", "value": "1", "source": "cudnn.h"}
+      ],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "#include <cudnn.h>\n#include <cuda_runtime.h>\n#include <stdio.h>\n\n#define CUDNN_CHECK(call) { cudnnStatus_t e = call; if (e != CUDNN_STATUS_SUCCESS) { fprintf(stderr, \"cuDNN error %d at %s:%d\\n\", e, __FILE__, __LINE__); exit(1); } }\n\nstatic cudnnHandle_t g_cudnn = nullptr;\nvoid ensure_cudnn() {\n    if (!g_cudnn) CUDNN_CHECK(cudnnCreate(&g_cudnn));\n}\n\n// Fused conv + bias + ReLU: single kernel, no intermediate memory traffic\nvoid gpu_conv2d_bias_relu(const float* input, const float* filter,\n                          const float* bias, float* output,\n                          int N, int C, int H, int W, int K, int R, int S,\n                          int pad, int stride) {\n    ensure_cudnn();\n    cudnnTensorDescriptor_t xDesc, yDesc, biasDesc, zDesc;\n    cudnnFilterDescriptor_t wDesc;\n    cudnnConvolutionDescriptor_t convDesc;\n    cudnnActivationDescriptor_t actDesc;\n    CUDNN_CHECK(cudnnCreateTensorDescriptor(&xDesc));\n    CUDNN_CHECK(cudnnCreateTensorDescriptor(&yDesc));\n    CUDNN_CHECK(cudnnCreateTensorDescriptor(&biasDesc));\n    CUDNN_CHECK(cudnnCreateTensorDescriptor(&zDesc));\n    CUDNN_CHECK(cudnnCreateFilterDescriptor(&wDesc));\n    CUDNN_CHECK(cudnnCreateConvolutionDescriptor(&convDesc));\n    CUDNN_CHECK(cudnnCreateActivationDescriptor(&actDesc));\n    CUDNN_CHECK(cudnnSetTensor4dDescriptor(xDesc, CUDNN_TENSOR_NCHW, CUDNN_DATA_FLOAT, N, C, H, W));\n    CUDNN_CHECK(cudnnSetFilter4dDescriptor(wDesc, CUDNN_DATA_FLOAT, CUDNN_TENSOR_NCHW, K, C, R, S));\n    CUDNN_CHECK(cudnnSetConvolution2dDescriptor(convDesc, pad, pad, stride, stride, 1, 1, CUDNN_CROSS_CORRELATION, CUDNN_DATA_FLOAT));\n    CUDNN_CHECK(cudnnSetConvolutionMathType(convDesc, CUDNN_TENSOR_OP_MATH));\n    int outN, outC, outH, outW;\n    CUDNN_CHECK(cudnnGetConvolution2dForwardOutputDim(convDesc, xDesc, wDesc, &outN, &outC, &outH, &outW));\n    CUDNN_CHECK(cudnnSetTensor4dDescriptor(yDesc, CUDNN_TENSOR_NCHW, CUDNN_DATA_FLOAT, outN, outC, outH, outW));\n    CUDNN_CHECK(cudnnSetTensor4dDescriptor(zDesc, CUDNN_TENSOR_NCHW, CUDNN_DATA_FLOAT, outN, outC, outH, outW));\n    CUDNN_CHECK(cudnnSetTensor4dDescriptor(biasDesc, CUDNN_TENSOR_NCHW, CUDNN_DATA_FLOAT, 1, K, 1, 1));\n    CUDNN_CHECK(cudnnSetActivationDescriptor(actDesc, CUDNN_ACTIVATION_RELU, CUDNN_NOT_PROPAGATE_NAN, 0.0));\n    cudnnConvolutionFwdAlgo_t algo = CUDNN_CONVOLUTION_FWD_ALGO_IMPLICIT_PRECOMP_GEMM;\n    size_t wsSize = 0;\n    CUDNN_CHECK(cudnnGetConvolutionForwardWorkspaceSize(g_cudnn, xDesc, wDesc, convDesc, yDesc, algo, &wsSize));\n    void* ws = nullptr;\n    if (wsSize > 0) cudaMalloc(&ws, wsSize);\n    float alpha1 = 1.0f, alpha2 = 0.0f;\n    CUDNN_CHECK(cudnnConvolutionBiasActivationForward(g_cudnn, &alpha1, xDesc, input, wDesc, filter, convDesc, algo, ws, wsSize, &alpha2, zDesc, output, biasDesc, bias, actDesc, yDesc, output));\n    if (ws) cudaFree(ws);\n    cudnnDestroyTensorDescriptor(xDesc);\n    cudnnDestroyTensorDescriptor(yDesc);\n    cudnnDestroyTensorDescriptor(biasDesc);\n    cudnnDestroyTensorDescriptor(zDesc);\n    cudnnDestroyFilterDescriptor(wDesc);\n    cudnnDestroyConvolutionDescriptor(convDesc);\n    cudnnDestroyActivationDescriptor(actDesc);\n}"
+    }
+  ],
+  "cross_link": true
+}

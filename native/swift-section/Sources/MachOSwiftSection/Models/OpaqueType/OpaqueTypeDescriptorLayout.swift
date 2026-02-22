@@ -1,0 +1,2 @@
+public protocol OpaqueTypeDescriptorLayout: ContextDescriptorLayout {}
+

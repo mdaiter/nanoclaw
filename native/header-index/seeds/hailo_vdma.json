@@ -1,0 +1,379 @@
+{
+  "framework": "Hailo_VDMA",
+  "type_aliases": [],
+  "entries": [
+    {
+      "name": "EnableChannels",
+      "verb": "enable",
+      "capabilities": [
+        "dma_transfer"
+      ],
+      "params": [
+        [
+          "channels_bitmap_per_engine",
+          "[u32; 3]",
+          false
+        ],
+        [
+          "enable_timestamps_measure",
+          "u8",
+          false
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(fd, 0x800D7600, EnableChannelsIn *)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Enable VDMA channels per engine bitmap.",
+      "async_pattern": false
+    },
+    {
+      "name": "DisableChannels",
+      "verb": "disable",
+      "capabilities": [
+        "dma_transfer"
+      ],
+      "params": [
+        [
+          "channels_bitmap_per_engine",
+          "[u32; 3]",
+          false
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(fd, 0x800C7601, DisableChannelsIn *)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Disable VDMA channels per engine bitmap.",
+      "async_pattern": false
+    },
+    {
+      "name": "FwControl",
+      "verb": "control",
+      "capabilities": [
+        "firmware_control"
+      ],
+      "params": [
+        [
+          "expected_md5",
+          "[u8; 16]",
+          false
+        ],
+        [
+          "buffer_len",
+          "u32",
+          false
+        ],
+        [
+          "buffer",
+          "[u8; 1500]",
+          false
+        ],
+        [
+          "timeout_ms",
+          "u32",
+          false
+        ],
+        [
+          "cpu_id",
+          "u32",
+          false
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(fd, 0xC5F86E00, FwControlIn *) -> FwControlOut",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Mailbox entry point for firmware control commands.",
+      "async_pattern": false
+    },
+    {
+      "name": "DescListRelease",
+      "verb": "destroy",
+      "capabilities": [
+        "dma_buffer"
+      ],
+      "params": [
+        [
+          "desc_handle",
+          "u64",
+          false
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(fd, 0x80087608, DescListReleaseIn *)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Free a descriptor list handle.",
+      "async_pattern": false
+    },
+    {
+      "name": "DescListCreate",
+      "verb": "create",
+      "capabilities": [
+        "dma_buffer"
+      ],
+      "params": [
+        [
+          "desc_count",
+          "u64",
+          false
+        ],
+        [
+          "desc_page_size",
+          "u16",
+          false
+        ],
+        [
+          "is_circular",
+          "u8",
+          false
+        ]
+      ],
+      "return_type": "u64",
+      "signature": "int ioctl(fd, 0xC0207607, DescListCreateIn *) -> desc_handle, dma_address",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Allocate a descriptor list for transfers.",
+      "async_pattern": false
+    },
+    {
+      "name": "BufferMap",
+      "verb": "map",
+      "capabilities": [
+        "dma_buffer"
+      ],
+      "params": [
+        [
+          "user_address",
+          "u64",
+          false
+        ],
+        [
+          "size",
+          "u64",
+          false
+        ],
+        [
+          "data_direction",
+          "u32",
+          false
+        ],
+        [
+          "buffer_type",
+          "u32",
+          false
+        ]
+      ],
+      "return_type": "u64",
+      "signature": "int ioctl(fd, 0xC0287604, BufferMapIn *) -> mapped_handle",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Pin and map a user buffer for DMA descriptors.",
+      "async_pattern": false
+    },
+    {
+      "name": "BufferUnmap",
+      "verb": "unmap",
+      "capabilities": [
+        "dma_buffer"
+      ],
+      "params": [
+        [
+          "mapped_handle",
+          "u64",
+          false
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(fd, 0x80087605, BufferUnmapIn *)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Release a previously mapped buffer handle.",
+      "async_pattern": false
+    },
+    {
+      "name": "LaunchTransfer",
+      "verb": "launch",
+      "capabilities": [
+        "dma_transfer"
+      ],
+      "params": [
+        [
+          "engine_index",
+          "u8",
+          false
+        ],
+        [
+          "channel_index",
+          "u8",
+          false
+        ],
+        [
+          "desc_handle",
+          "u64",
+          false
+        ],
+        [
+          "buffers_count",
+          "u8",
+          false
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(fd, 0x80E8760D, LaunchTransferParams *)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Kick a descriptor list on the specified engine/channel.",
+      "async_pattern": false
+    },
+    {
+      "name": "InterruptsWait",
+      "verb": "wait",
+      "capabilities": [
+        "dma_interrupt"
+      ],
+      "params": [
+        [
+          "channels_bitmap_per_engine",
+          "[u32; 3]",
+          false
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(fd, 0xC1307602, InterruptsWaitPayload *)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Wait for interrupt masks across engines.",
+      "async_pattern": false
+    },
+    {
+      "name": "DescListProgram",
+      "verb": "program",
+      "capabilities": [
+        "dma_transfer"
+      ],
+      "params": [
+        [
+          "buffer_handle",
+          "u64",
+          false
+        ],
+        [
+          "buffer_size",
+          "u64",
+          false
+        ],
+        [
+          "desc_handle",
+          "u64",
+          false
+        ],
+        [
+          "channel_index",
+          "u8",
+          false
+        ],
+        [
+          "should_bind",
+          "u8",
+          false
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(fd, 0x80407609, DescListProgramIn *)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Program descriptors with buffer bindings.",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [
+    {
+      "framework": "Hailo_VDMA",
+      "group": "VDMA_INIT",
+      "prerequisites": [
+        {
+          "kind": "FrameworkLoad",
+          "path": "hailo",
+          "reason": "Hailo kernel module must be loaded"
+        },
+        {
+          "kind": "DevicePath",
+          "path": "/dev/hailo-vdma",
+          "reason": "VDMA device node"
+        }
+      ],
+      "steps": [
+        {
+          "order": 0,
+          "function": "EnableChannels",
+          "role": "Init",
+          "args_hint": "channels_bitmap_per_engine=[bitmask; 3]",
+          "returns": "0 on success",
+          "notes": "Enable DMA channels for selected engines"
+        },
+        {
+          "order": 1,
+          "function": "BufferMap",
+          "role": "Create",
+          "args_hint": "user_address, size, direction, buffer_type",
+          "returns": "mapped_handle",
+          "notes": "Pin user buffer for DMA"
+        },
+        {
+          "order": 2,
+          "function": "DescListCreate",
+          "role": "Create",
+          "args_hint": "desc_count, page_size, is_circular",
+          "returns": "desc_handle, dma_address",
+          "notes": "Allocate descriptor list"
+        },
+        {
+          "order": 3,
+          "function": "DescListProgram",
+          "role": "Use",
+          "args_hint": "buffer_handle, desc_handle, channel_index",
+          "returns": "0 on success",
+          "notes": "Program descriptors with buffer layout"
+        },
+        {
+          "order": 4,
+          "function": "LaunchTransfer",
+          "role": "Use",
+          "args_hint": "engine_index, channel_index, desc_handle",
+          "returns": "0 on success",
+          "notes": "Start DMA transfer on engine/channel"
+        },
+        {
+          "order": 5,
+          "function": "InterruptsWait",
+          "role": "Query",
+          "args_hint": "channels_bitmap_per_engine masks",
+          "returns": "irq_data",
+          "notes": "Block until transfer completes"
+        }
+      ],
+      "constants": [
+        {
+          "name": "MAX_VDMA_ENGINES",
+          "value": "3",
+          "source": "hailort driver headers"
+        },
+        {
+          "name": "MAX_CHANNELS_PER_ENGINE",
+          "value": "32",
+          "source": "hailort driver headers"
+        },
+        {
+          "name": "FW_CONTROL_BUFFER_LEN",
+          "value": "1500",
+          "source": "hailort driver headers"
+        }
+      ],
+      "validated": true,
+      "iterations": 0
+    }
+  ],
+  "cross_link": true
+}

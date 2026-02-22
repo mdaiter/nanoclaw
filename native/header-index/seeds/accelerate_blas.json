@@ -1,0 +1,846 @@
+{
+  "framework": "Accelerate",
+  "type_aliases": [
+    [
+      "CBLAS_TRANSPOSE",
+      "int"
+    ],
+    [
+      "vDSP_Stride",
+      "ssize_t"
+    ],
+    [
+      "vDSP_Length",
+      "size_t"
+    ],
+    [
+      "CBLAS_UPLO",
+      "int"
+    ],
+    [
+      "CBLAS_ORDER",
+      "int"
+    ],
+    [
+      "CBLAS_DIAG",
+      "int"
+    ],
+    [
+      "CBLAS_SIDE",
+      "int"
+    ]
+  ],
+  "entries": [
+    {
+      "name": "cblas_sdot",
+      "verb": "dot",
+      "capabilities": [
+        "blas_dot"
+      ],
+      "params": [
+        [
+          "N",
+          "int",
+          false
+        ],
+        [
+          "X",
+          "const float",
+          true
+        ],
+        [
+          "incX",
+          "int",
+          false
+        ],
+        [
+          "Y",
+          "const float",
+          true
+        ],
+        [
+          "incY",
+          "int",
+          false
+        ]
+      ],
+      "return_type": "float",
+      "signature": "float cblas_sdot(int N, const float *X, int incX, const float *Y, int incY)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Dot product. BLAS level 1. Replaces np.dot (vector case). NEON SIMD.",
+      "async_pattern": false
+    },
+    {
+      "name": "cblas_dgemm",
+      "verb": "multiply",
+      "capabilities": [
+        "blas_gemm"
+      ],
+      "params": [
+        [
+          "Order",
+          "CBLAS_ORDER",
+          false
+        ],
+        [
+          "TransA",
+          "CBLAS_TRANSPOSE",
+          false
+        ],
+        [
+          "TransB",
+          "CBLAS_TRANSPOSE",
+          false
+        ],
+        [
+          "M",
+          "int",
+          false
+        ],
+        [
+          "N",
+          "int",
+          false
+        ],
+        [
+          "K",
+          "int",
+          false
+        ],
+        [
+          "alpha",
+          "double",
+          false
+        ],
+        [
+          "A",
+          "const double",
+          true
+        ],
+        [
+          "lda",
+          "int",
+          false
+        ],
+        [
+          "B",
+          "const double",
+          true
+        ],
+        [
+          "ldb",
+          "int",
+          false
+        ],
+        [
+          "beta",
+          "double",
+          false
+        ],
+        [
+          "C",
+          "double",
+          true
+        ],
+        [
+          "ldc",
+          "int",
+          false
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void cblas_dgemm(CBLAS_ORDER, CBLAS_TRANSPOSE, CBLAS_TRANSPOSE, int M, int N, int K, double alpha, const double *A, int lda, const double *B, int ldb, double beta, double *C, int ldc)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Double-precision GEMM. Replaces np.matmul (float64). Uses AMX on M-series.",
+      "async_pattern": false
+    },
+    {
+      "name": "sgesvd_",
+      "verb": "decompose",
+      "capabilities": [
+        "lapack_decompose"
+      ],
+      "params": [
+        [
+          "jobu",
+          "char",
+          true
+        ],
+        [
+          "jobvt",
+          "char",
+          true
+        ],
+        [
+          "m",
+          "int",
+          true
+        ],
+        [
+          "n",
+          "int",
+          true
+        ],
+        [
+          "a",
+          "float",
+          true
+        ],
+        [
+          "lda",
+          "int",
+          true
+        ],
+        [
+          "s",
+          "float",
+          true
+        ],
+        [
+          "u",
+          "float",
+          true
+        ],
+        [
+          "ldu",
+          "int",
+          true
+        ],
+        [
+          "vt",
+          "float",
+          true
+        ],
+        [
+          "ldvt",
+          "int",
+          true
+        ],
+        [
+          "work",
+          "float",
+          true
+        ],
+        [
+          "lwork",
+          "int",
+          true
+        ],
+        [
+          "info",
+          "int",
+          true
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void sgesvd_(char *jobu, char *jobvt, int *m, int *n, float *a, int *lda, float *s, float *u, int *ldu, float *vt, int *ldvt, float *work, int *lwork, int *info)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "SVD: A=USV^T. Replaces np.linalg.svd. LAPACK driver routine.",
+      "async_pattern": false
+    },
+    {
+      "name": "vDSP_mmul",
+      "verb": "multiply",
+      "capabilities": [
+        "vdsp_matmul"
+      ],
+      "params": [
+        [
+          "__A",
+          "const float",
+          true
+        ],
+        [
+          "__IA",
+          "vDSP_Stride",
+          false
+        ],
+        [
+          "__B",
+          "const float",
+          true
+        ],
+        [
+          "__IB",
+          "vDSP_Stride",
+          false
+        ],
+        [
+          "__C",
+          "float",
+          true
+        ],
+        [
+          "__IC",
+          "vDSP_Stride",
+          false
+        ],
+        [
+          "__M",
+          "vDSP_Length",
+          false
+        ],
+        [
+          "__N",
+          "vDSP_Length",
+          false
+        ],
+        [
+          "__P",
+          "vDSP_Length",
+          false
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void vDSP_mmul(const float *__A, vDSP_Stride __IA, const float *__B, vDSP_Stride __IB, float *__C, vDSP_Stride __IC, vDSP_Length __M, vDSP_Length __N, vDSP_Length __P)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "vDSP matrix multiply. C[M×N] = A[M×P] × B[P×N]. Alternative to cblas_sgemm for simple cases.",
+      "async_pattern": false
+    },
+    {
+      "name": "vDSP_meanv",
+      "verb": "reduce",
+      "capabilities": [
+        "vdsp_reduce"
+      ],
+      "params": [
+        [
+          "__A",
+          "const float",
+          true
+        ],
+        [
+          "__IA",
+          "vDSP_Stride",
+          false
+        ],
+        [
+          "__C",
+          "float",
+          true
+        ],
+        [
+          "__N",
+          "vDSP_Length",
+          false
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void vDSP_meanv(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Length __N)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Mean of vector elements. *C = (Σ A[i])/N. Replaces np.mean. NEON SIMD.",
+      "async_pattern": false
+    },
+    {
+      "name": "cblas_sscal",
+      "verb": "scale",
+      "capabilities": [
+        "blas_scale"
+      ],
+      "params": [
+        [
+          "N",
+          "int",
+          false
+        ],
+        [
+          "alpha",
+          "float",
+          false
+        ],
+        [
+          "X",
+          "float",
+          true
+        ],
+        [
+          "incX",
+          "int",
+          false
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void cblas_sscal(int N, float alpha, float *X, int incX)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "X *= alpha. BLAS level 1. Replaces x *= scalar. In-place NEON SIMD.",
+      "async_pattern": false
+    },
+    {
+      "name": "cblas_saxpy",
+      "verb": "add",
+      "capabilities": [
+        "blas_axpy"
+      ],
+      "params": [
+        [
+          "N",
+          "int",
+          false
+        ],
+        [
+          "alpha",
+          "float",
+          false
+        ],
+        [
+          "X",
+          "const float",
+          true
+        ],
+        [
+          "incX",
+          "int",
+          false
+        ],
+        [
+          "Y",
+          "float",
+          true
+        ],
+        [
+          "incY",
+          "int",
+          false
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void cblas_saxpy(int N, float alpha, const float *X, int incX, float *Y, int incY)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Y += alpha*X. BLAS level 1. Replaces y += alpha * x vectorized add. NEON SIMD.",
+      "async_pattern": false
+    },
+    {
+      "name": "vDSP_fft_zrip",
+      "verb": "transform",
+      "capabilities": [
+        "vdsp_fft"
+      ],
+      "params": [
+        [
+          "__Setup",
+          "FFTSetup",
+          false
+        ],
+        [
+          "__C",
+          "DSPSplitComplex",
+          true
+        ],
+        [
+          "__IC",
+          "vDSP_Stride",
+          false
+        ],
+        [
+          "__Log2N",
+          "vDSP_Length",
+          false
+        ],
+        [
+          "__Direction",
+          "FFTDirection",
+          false
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void vDSP_fft_zrip(FFTSetup __Setup, DSPSplitComplex *__C, vDSP_Stride __IC, vDSP_Length __Log2N, FFTDirection __Direction)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "In-place real FFT. Replaces np.fft.rfft. Split-complex format. Radix-2.",
+      "async_pattern": false
+    },
+    {
+      "name": "vDSP_sve",
+      "verb": "reduce",
+      "capabilities": [
+        "vdsp_reduce"
+      ],
+      "params": [
+        [
+          "__A",
+          "const float",
+          true
+        ],
+        [
+          "__IA",
+          "vDSP_Stride",
+          false
+        ],
+        [
+          "__C",
+          "float",
+          true
+        ],
+        [
+          "__N",
+          "vDSP_Length",
+          false
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void vDSP_sve(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Length __N)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Sum of vector elements. *C = Σ A[i]. Replaces np.sum. NEON SIMD with pairwise reduction.",
+      "async_pattern": false
+    },
+    {
+      "name": "cblas_snrm2",
+      "verb": "norm",
+      "capabilities": [
+        "blas_norm"
+      ],
+      "params": [
+        [
+          "N",
+          "int",
+          false
+        ],
+        [
+          "X",
+          "const float",
+          true
+        ],
+        [
+          "incX",
+          "int",
+          false
+        ]
+      ],
+      "return_type": "float",
+      "signature": "float cblas_snrm2(int N, const float *X, int incX)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Euclidean norm. BLAS level 1. Replaces np.linalg.norm. NEON SIMD.",
+      "async_pattern": false
+    },
+    {
+      "name": "cblas_sgemm",
+      "verb": "multiply",
+      "capabilities": [
+        "blas_gemm"
+      ],
+      "params": [
+        [
+          "Order",
+          "CBLAS_ORDER",
+          false
+        ],
+        [
+          "TransA",
+          "CBLAS_TRANSPOSE",
+          false
+        ],
+        [
+          "TransB",
+          "CBLAS_TRANSPOSE",
+          false
+        ],
+        [
+          "M",
+          "int",
+          false
+        ],
+        [
+          "N",
+          "int",
+          false
+        ],
+        [
+          "K",
+          "int",
+          false
+        ],
+        [
+          "alpha",
+          "float",
+          false
+        ],
+        [
+          "A",
+          "const float",
+          true
+        ],
+        [
+          "lda",
+          "int",
+          false
+        ],
+        [
+          "B",
+          "const float",
+          true
+        ],
+        [
+          "ldb",
+          "int",
+          false
+        ],
+        [
+          "beta",
+          "float",
+          false
+        ],
+        [
+          "C",
+          "float",
+          true
+        ],
+        [
+          "ldc",
+          "int",
+          false
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void cblas_sgemm(CBLAS_ORDER, CBLAS_TRANSPOSE, CBLAS_TRANSPOSE, int M, int N, int K, float alpha, const float *A, int lda, const float *B, int ldb, float beta, float *C, int ldc)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Single-precision GEMM. C = alpha*A*B + beta*C. Replaces np.matmul (float32). Uses AMX on M-series.",
+      "async_pattern": false
+    },
+    {
+      "name": "sgesv_",
+      "verb": "solve",
+      "capabilities": [
+        "lapack_solve"
+      ],
+      "params": [
+        [
+          "n",
+          "int",
+          true
+        ],
+        [
+          "nrhs",
+          "int",
+          true
+        ],
+        [
+          "a",
+          "float",
+          true
+        ],
+        [
+          "lda",
+          "int",
+          true
+        ],
+        [
+          "ipiv",
+          "int",
+          true
+        ],
+        [
+          "b",
+          "float",
+          true
+        ],
+        [
+          "ldb",
+          "int",
+          true
+        ],
+        [
+          "info",
+          "int",
+          true
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void sgesv_(int *n, int *nrhs, float *a, int *lda, int *ipiv, float *b, int *ldb, int *info)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Solve AX=B via LU. Replaces np.linalg.solve (float32). LAPACK driver routine.",
+      "async_pattern": false
+    },
+    {
+      "name": "vDSP_vadd",
+      "verb": "add",
+      "capabilities": [
+        "vdsp_elementwise"
+      ],
+      "params": [
+        [
+          "__A",
+          "const float",
+          true
+        ],
+        [
+          "__IA",
+          "vDSP_Stride",
+          false
+        ],
+        [
+          "__B",
+          "const float",
+          true
+        ],
+        [
+          "__IB",
+          "vDSP_Stride",
+          false
+        ],
+        [
+          "__C",
+          "float",
+          true
+        ],
+        [
+          "__IC",
+          "vDSP_Stride",
+          false
+        ],
+        [
+          "__N",
+          "vDSP_Length",
+          false
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void vDSP_vadd(const float *__A, vDSP_Stride __IA, const float *__B, vDSP_Stride __IB, float *__C, vDSP_Stride __IC, vDSP_Length __N)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "C[i] = A[i] + B[i]. Vectorized element-wise add. Replaces np.add. NEON SIMD.",
+      "async_pattern": false
+    },
+    {
+      "name": "vDSP_vmul",
+      "verb": "multiply",
+      "capabilities": [
+        "vdsp_elementwise"
+      ],
+      "params": [
+        [
+          "__A",
+          "const float",
+          true
+        ],
+        [
+          "__IA",
+          "vDSP_Stride",
+          false
+        ],
+        [
+          "__B",
+          "const float",
+          true
+        ],
+        [
+          "__IB",
+          "vDSP_Stride",
+          false
+        ],
+        [
+          "__C",
+          "float",
+          true
+        ],
+        [
+          "__IC",
+          "vDSP_Stride",
+          false
+        ],
+        [
+          "__N",
+          "vDSP_Length",
+          false
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void vDSP_vmul(const float *__A, vDSP_Stride __IA, const float *__B, vDSP_Stride __IB, float *__C, vDSP_Stride __IC, vDSP_Length __N)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "C[i] = A[i] * B[i]. Vectorized element-wise multiply. Replaces np.multiply. NEON SIMD.",
+      "async_pattern": false
+    },
+    {
+      "name": "spotrf_",
+      "verb": "decompose",
+      "capabilities": [
+        "lapack_decompose"
+      ],
+      "params": [
+        [
+          "uplo",
+          "char",
+          true
+        ],
+        [
+          "n",
+          "int",
+          true
+        ],
+        [
+          "a",
+          "float",
+          true
+        ],
+        [
+          "lda",
+          "int",
+          true
+        ],
+        [
+          "info",
+          "int",
+          true
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void spotrf_(char *uplo, int *n, float *a, int *lda, int *info)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Cholesky factorization A=LL^T. Replaces scipy.linalg.cholesky. LAPACK computational routine.",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [
+    {
+      "framework": "Accelerate",
+      "group": "cblas_sgemm",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "cblas_sgemm",
+          "role": "Use",
+          "args_hint": "CBLAS_ORDER Order, CBLAS_TRANSPOSE TransA, CBLAS_TRANSPOSE TransB, int M, int N, int K, float alpha, const float *A, int lda, const float *B, int ldb, float beta, float *C, int ldc",
+          "returns": "void",
+          "notes": ""
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "import ctypes, numpy as np\n_acc = ctypes.CDLL('/System/Library/Frameworks/Accelerate.framework/Accelerate')\n\ndef cblas_sgemm_multiply(A, B):\n    # A: float32 (M,K), B: float32 (K,N) \u2192 C: float32 (M,N)\n    # C = 1.0 * A @ B + 0.0 * C\n    M, K = A.shape\n    N = B.shape[1]\n    C = np.zeros((M, N), dtype=np.float32)\n    A = np.ascontiguousarray(A, dtype=np.float32)\n    B = np.ascontiguousarray(B, dtype=np.float32)\n    _acc.cblas_sgemm.restype = None\n    # CblasRowMajor=101, CblasNoTrans=111\n    _acc.cblas_sgemm(\n        ctypes.c_int(101), ctypes.c_int(111), ctypes.c_int(111),\n        ctypes.c_int(M), ctypes.c_int(N), ctypes.c_int(K),\n        ctypes.c_float(1.0),\n        A.ctypes.data_as(ctypes.POINTER(ctypes.c_float)), ctypes.c_int(K),\n        B.ctypes.data_as(ctypes.POINTER(ctypes.c_float)), ctypes.c_int(N),\n        ctypes.c_float(0.0),\n        C.ctypes.data_as(ctypes.POINTER(ctypes.c_float)), ctypes.c_int(N))\n    return C\n"
+    },
+    {
+      "framework": "Accelerate",
+      "group": "cblas_dgemm",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "cblas_dgemm",
+          "role": "Use",
+          "args_hint": "CBLAS_ORDER Order, CBLAS_TRANSPOSE TransA, CBLAS_TRANSPOSE TransB, int M, int N, int K, double alpha, const double *A, int lda, const double *B, int ldb, double beta, double *C, int ldc",
+          "returns": "void",
+          "notes": ""
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "import ctypes, numpy as np\n_acc = ctypes.CDLL('/System/Library/Frameworks/Accelerate.framework/Accelerate')\n\ndef cblas_dgemm_multiply(A, B):\n    # A: float64 (M,K), B: float64 (K,N) \u2192 C: float64 (M,N)\n    M, K = A.shape\n    N = B.shape[1]\n    C = np.zeros((M, N), dtype=np.float64)\n    A = np.ascontiguousarray(A, dtype=np.float64)\n    B = np.ascontiguousarray(B, dtype=np.float64)\n    _acc.cblas_dgemm.restype = None\n    _acc.cblas_dgemm(\n        ctypes.c_int(101), ctypes.c_int(111), ctypes.c_int(111),\n        ctypes.c_int(M), ctypes.c_int(N), ctypes.c_int(K),\n        ctypes.c_double(1.0),\n        A.ctypes.data_as(ctypes.POINTER(ctypes.c_double)), ctypes.c_int(K),\n        B.ctypes.data_as(ctypes.POINTER(ctypes.c_double)), ctypes.c_int(N),\n        ctypes.c_double(0.0),\n        C.ctypes.data_as(ctypes.POINTER(ctypes.c_double)), ctypes.c_int(N))\n    return C\n"
+    }
+  ],
+  "cross_link": true
+}

@@ -1,0 +1,17 @@
+import MemberwiseInit
+import Demangling
+import MachOSwiftSection
+import Utilities
+
+@MemberwiseInit(.public)
+public struct FunctionDefinition: Sendable {
+    public let node: Node
+    public let name: String
+    public let kind: FunctionKind
+    public let symbol: DemangledSymbol
+    public let isGlobalOrStatic: Bool
+    public let methodDescriptor: MethodDescriptorWrapper?
+    public let offset: Int?
+
+    public var isOverride: Bool { methodDescriptor?.isMethodOverride ?? false }
+}

@@ -1,0 +1,305 @@
+{
+  "framework": "IOSurface",
+  "type_aliases": [
+    [
+      "kern_return_t",
+      "int32_t"
+    ],
+    [
+      "mach_port_t",
+      "uint32_t"
+    ],
+    [
+      "OSType",
+      "uint32_t"
+    ],
+    [
+      "IOSurfaceRef",
+      "void *"
+    ],
+    [
+      "IOSurfaceLockOptions",
+      "uint32_t"
+    ],
+    [
+      "CFDictionaryRef",
+      "void *"
+    ]
+  ],
+  "entries": [
+    {
+      "name": "IOSurfaceGetHeight",
+      "verb": "query",
+      "capabilities": [
+        "surface_zerocopy"
+      ],
+      "params": [
+        [
+          "buffer",
+          "IOSurfaceRef",
+          false
+        ]
+      ],
+      "return_type": "size_t",
+      "signature": "size_t IOSurfaceGetHeight(IOSurfaceRef buffer)",
+      "input_formats": [
+        "IOSurface"
+      ],
+      "output_formats": [],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "IOSurfaceLookupFromMachPort",
+      "verb": "lookup",
+      "capabilities": [
+        "surface_zerocopy"
+      ],
+      "params": [
+        [
+          "port",
+          "mach_port_t",
+          false
+        ]
+      ],
+      "return_type": "IOSurfaceRef",
+      "signature": "IOSurfaceRef IOSurfaceLookupFromMachPort(mach_port_t port)",
+      "input_formats": [
+        "mach_port"
+      ],
+      "output_formats": [
+        "IOSurface"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "IOSurfaceGetBytesPerRow",
+      "verb": "query",
+      "capabilities": [
+        "surface_zerocopy"
+      ],
+      "params": [
+        [
+          "buffer",
+          "IOSurfaceRef",
+          false
+        ]
+      ],
+      "return_type": "size_t",
+      "signature": "size_t IOSurfaceGetBytesPerRow(IOSurfaceRef buffer)",
+      "input_formats": [
+        "IOSurface"
+      ],
+      "output_formats": [],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "IOSurfaceGetBaseAddress",
+      "verb": "query",
+      "capabilities": [
+        "surface_zerocopy"
+      ],
+      "params": [
+        [
+          "buffer",
+          "IOSurfaceRef",
+          false
+        ]
+      ],
+      "return_type": "void *",
+      "signature": "void * IOSurfaceGetBaseAddress(IOSurfaceRef buffer)",
+      "input_formats": [
+        "IOSurface"
+      ],
+      "output_formats": [
+        "raw_pixels"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "IOSurfaceLock",
+      "verb": "lock",
+      "capabilities": [
+        "surface_zerocopy"
+      ],
+      "params": [
+        [
+          "buffer",
+          "IOSurfaceRef",
+          false
+        ],
+        [
+          "options",
+          "IOSurfaceLockOptions",
+          false
+        ],
+        [
+          "seed",
+          "uint32_t",
+          true
+        ]
+      ],
+      "return_type": "kern_return_t",
+      "signature": "kern_return_t IOSurfaceLock(IOSurfaceRef buffer, IOSurfaceLockOptions options, uint32_t *seed)",
+      "input_formats": [
+        "IOSurface"
+      ],
+      "output_formats": [],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "IOSurfaceUnlock",
+      "verb": "unlock",
+      "capabilities": [
+        "surface_zerocopy"
+      ],
+      "params": [
+        [
+          "buffer",
+          "IOSurfaceRef",
+          false
+        ],
+        [
+          "options",
+          "IOSurfaceLockOptions",
+          false
+        ],
+        [
+          "seed",
+          "uint32_t",
+          true
+        ]
+      ],
+      "return_type": "kern_return_t",
+      "signature": "kern_return_t IOSurfaceUnlock(IOSurfaceRef buffer, IOSurfaceLockOptions options, uint32_t *seed)",
+      "input_formats": [
+        "IOSurface"
+      ],
+      "output_formats": [],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "IOSurfaceCreate",
+      "verb": "create",
+      "capabilities": [
+        "surface_zerocopy"
+      ],
+      "params": [
+        [
+          "properties",
+          "CFDictionaryRef",
+          true
+        ]
+      ],
+      "return_type": "IOSurfaceRef",
+      "signature": "IOSurfaceRef IOSurfaceCreate(CFDictionaryRef properties)",
+      "input_formats": [
+        "CFDictionary"
+      ],
+      "output_formats": [
+        "IOSurface"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "IOSurfaceGetPixelFormat",
+      "verb": "query",
+      "capabilities": [
+        "surface_zerocopy"
+      ],
+      "params": [
+        [
+          "buffer",
+          "IOSurfaceRef",
+          false
+        ]
+      ],
+      "return_type": "OSType",
+      "signature": "OSType IOSurfaceGetPixelFormat(IOSurfaceRef buffer)",
+      "input_formats": [
+        "IOSurface"
+      ],
+      "output_formats": [
+        "FourCC"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "IOSurfaceGetAllocSize",
+      "verb": "query",
+      "capabilities": [
+        "surface_zerocopy"
+      ],
+      "params": [
+        [
+          "buffer",
+          "IOSurfaceRef",
+          false
+        ]
+      ],
+      "return_type": "size_t",
+      "signature": "size_t IOSurfaceGetAllocSize(IOSurfaceRef buffer)",
+      "input_formats": [
+        "IOSurface"
+      ],
+      "output_formats": [],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "IOSurfaceGetWidth",
+      "verb": "query",
+      "capabilities": [
+        "surface_zerocopy"
+      ],
+      "params": [
+        [
+          "buffer",
+          "IOSurfaceRef",
+          false
+        ]
+      ],
+      "return_type": "size_t",
+      "signature": "size_t IOSurfaceGetWidth(IOSurfaceRef buffer)",
+      "input_formats": [
+        "IOSurface"
+      ],
+      "output_formats": [],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "IOSurfaceCreateMachPort",
+      "verb": "create",
+      "capabilities": [
+        "surface_zerocopy"
+      ],
+      "params": [
+        [
+          "buffer",
+          "IOSurfaceRef",
+          false
+        ]
+      ],
+      "return_type": "mach_port_t",
+      "signature": "mach_port_t IOSurfaceCreateMachPort(IOSurfaceRef buffer)",
+      "input_formats": [
+        "IOSurface"
+      ],
+      "output_formats": [
+        "mach_port"
+      ],
+      "notes": "",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [],
+  "cross_link": true
+}

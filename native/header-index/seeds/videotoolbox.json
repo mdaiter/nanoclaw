@@ -1,0 +1,748 @@
+{
+  "framework": "VideoToolbox",
+  "type_aliases": [
+    [
+      "CFAllocatorRef",
+      "void *"
+    ],
+    [
+      "CVPixelBufferRef",
+      "void *"
+    ],
+    [
+      "CVImageBufferRef",
+      "void *"
+    ],
+    [
+      "OSStatus",
+      "int32_t"
+    ],
+    [
+      "Boolean",
+      "bool"
+    ],
+    [
+      "CFDictionaryRef",
+      "void *"
+    ],
+    [
+      "VTCompressionSessionRef",
+      "void *"
+    ],
+    [
+      "IOSurfaceRef",
+      "void *"
+    ],
+    [
+      "CMTime",
+      "int64_t"
+    ],
+    [
+      "CMSampleBufferRef",
+      "void *"
+    ],
+    [
+      "CVReturn",
+      "int32_t"
+    ],
+    [
+      "CMVideoFormatDescriptionRef",
+      "void *"
+    ],
+    [
+      "VTPixelTransferSessionRef",
+      "void *"
+    ],
+    [
+      "VTDecompressionSessionRef",
+      "void *"
+    ]
+  ],
+  "entries": [
+    {
+      "name": "VTCompressionSessionCompleteFrames",
+      "verb": "flush",
+      "capabilities": [
+        "video_encode"
+      ],
+      "params": [
+        [
+          "session",
+          "VTCompressionSessionRef",
+          false
+        ],
+        [
+          "completeUntilPresentationTimeStamp",
+          "CMTime",
+          false
+        ]
+      ],
+      "return_type": "OSStatus",
+      "signature": "OSStatus VTCompressionSessionCompleteFrames(VTCompressionSessionRef, CMTime)",
+      "input_formats": [],
+      "output_formats": [
+        "CMSampleBuffer"
+      ],
+      "notes": "",
+      "async_pattern": true
+    },
+    {
+      "name": "VTPixelTransferSessionCreate",
+      "verb": "create",
+      "capabilities": [
+        "video_transcode"
+      ],
+      "params": [
+        [
+          "allocator",
+          "CFAllocatorRef",
+          true
+        ],
+        [
+          "pixelTransferSessionOut",
+          "VTPixelTransferSessionRef",
+          true
+        ]
+      ],
+      "return_type": "OSStatus",
+      "signature": "OSStatus VTPixelTransferSessionCreate(CFAllocatorRef, VTPixelTransferSessionRef *)",
+      "input_formats": [
+        "CVPixelBuffer"
+      ],
+      "output_formats": [
+        "CVPixelBuffer"
+      ],
+      "notes": "",
+      "async_pattern": true
+    },
+    {
+      "name": "VTPixelTransferSessionTransferImage",
+      "verb": "transform",
+      "capabilities": [
+        "video_transcode"
+      ],
+      "params": [
+        [
+          "session",
+          "VTPixelTransferSessionRef",
+          false
+        ],
+        [
+          "from",
+          "CVPixelBufferRef",
+          false
+        ],
+        [
+          "to",
+          "CVPixelBufferRef",
+          false
+        ]
+      ],
+      "return_type": "OSStatus",
+      "signature": "OSStatus VTPixelTransferSessionTransferImage(VTPixelTransferSessionRef, CVPixelBufferRef, CVPixelBufferRef)",
+      "input_formats": [
+        "CVPixelBuffer"
+      ],
+      "output_formats": [
+        "CVPixelBuffer"
+      ],
+      "notes": "",
+      "async_pattern": true
+    },
+    {
+      "name": "VTCompressionSessionCreate",
+      "verb": "create",
+      "capabilities": [
+        "video_transcode",
+        "video_compress"
+      ],
+      "params": [
+        [
+          "allocator",
+          "CFAllocatorRef",
+          true
+        ],
+        [
+          "width",
+          "int32_t",
+          false
+        ],
+        [
+          "height",
+          "int32_t",
+          false
+        ],
+        [
+          "codecType",
+          "CMVideoCodecType",
+          false
+        ],
+        [
+          "encoderSpecification",
+          "CFDictionaryRef",
+          true
+        ],
+        [
+          "sourceImageBufferAttributes",
+          "CFDictionaryRef",
+          true
+        ],
+        [
+          "compressedDataAllocator",
+          "CFAllocatorRef",
+          true
+        ],
+        [
+          "outputCallback",
+          "VTCompressionOutputCallback",
+          false
+        ],
+        [
+          "outputCallbackRefCon",
+          "void",
+          true
+        ],
+        [
+          "compressionSessionOut",
+          "VTCompressionSessionRef",
+          true
+        ]
+      ],
+      "return_type": "OSStatus",
+      "signature": "OSStatus VTCompressionSessionCreate(CFAllocatorRef, int32_t, int32_t, CMVideoCodecType, CFDictionaryRef, CFDictionaryRef, CFAllocatorRef, VTCompressionOutputCallback, void *, VTCompressionSessionRef *)",
+      "input_formats": [
+        "CVPixelBuffer",
+        "CMVideoCodecType"
+      ],
+      "output_formats": [
+        "CMSampleBuffer",
+        "H264",
+        "HEVC"
+      ],
+      "notes": "",
+      "async_pattern": true
+    },
+    {
+      "name": "VTDecompressionSessionWaitForAsynchronousFrames",
+      "verb": "sync",
+      "capabilities": [
+        "video_decode"
+      ],
+      "params": [
+        [
+          "session",
+          "VTDecompressionSessionRef",
+          false
+        ]
+      ],
+      "return_type": "OSStatus",
+      "signature": "OSStatus VTDecompressionSessionWaitForAsynchronousFrames(VTDecompressionSessionRef)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "",
+      "async_pattern": true
+    },
+    {
+      "name": "VTCompressionSessionEncodeFrame",
+      "verb": "encode",
+      "capabilities": [
+        "video_encode",
+        "video_compress"
+      ],
+      "params": [
+        [
+          "session",
+          "VTCompressionSessionRef",
+          false
+        ],
+        [
+          "imageBuffer",
+          "CVImageBufferRef",
+          false
+        ],
+        [
+          "presentationTimeStamp",
+          "CMTime",
+          false
+        ],
+        [
+          "duration",
+          "CMTime",
+          false
+        ],
+        [
+          "frameProperties",
+          "CFDictionaryRef",
+          true
+        ],
+        [
+          "sourceFrameRefCon",
+          "void",
+          true
+        ],
+        [
+          "infoFlagsOut",
+          "VTEncodeInfoFlags",
+          true
+        ]
+      ],
+      "return_type": "OSStatus",
+      "signature": "OSStatus VTCompressionSessionEncodeFrame(VTCompressionSessionRef, CVImageBufferRef, CMTime, CMTime, CFDictionaryRef, void *, VTEncodeInfoFlags *)",
+      "input_formats": [
+        "CVPixelBuffer"
+      ],
+      "output_formats": [
+        "CMSampleBuffer",
+        "H264",
+        "HEVC"
+      ],
+      "notes": "",
+      "async_pattern": true
+    },
+    {
+      "name": "VTDecompressionSessionFinishDelayedFrames",
+      "verb": "flush",
+      "capabilities": [
+        "video_decode"
+      ],
+      "params": [
+        [
+          "session",
+          "VTDecompressionSessionRef",
+          false
+        ]
+      ],
+      "return_type": "OSStatus",
+      "signature": "OSStatus VTDecompressionSessionFinishDelayedFrames(VTDecompressionSessionRef)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "",
+      "async_pattern": true
+    },
+    {
+      "name": "VTDecompressionSessionCreate",
+      "verb": "create",
+      "capabilities": [
+        "video_transcode",
+        "video_decode"
+      ],
+      "params": [
+        [
+          "allocator",
+          "CFAllocatorRef",
+          true
+        ],
+        [
+          "videoFormatDescription",
+          "CMVideoFormatDescriptionRef",
+          true
+        ],
+        [
+          "videoDecoderSpecification",
+          "CFDictionaryRef",
+          true
+        ],
+        [
+          "destinationImageBufferAttributes",
+          "CFDictionaryRef",
+          true
+        ],
+        [
+          "outputCallback",
+          "VTDecompressionOutputCallbackRecord",
+          true
+        ],
+        [
+          "decompressionSessionOut",
+          "VTDecompressionSessionRef",
+          true
+        ]
+      ],
+      "return_type": "OSStatus",
+      "signature": "OSStatus VTDecompressionSessionCreate(CFAllocatorRef, CMVideoFormatDescriptionRef, CFDictionaryRef, CFDictionaryRef, const VTDecompressionOutputCallbackRecord *, VTDecompressionSessionRef *)",
+      "input_formats": [
+        "CMSampleBuffer",
+        "H264",
+        "HEVC"
+      ],
+      "output_formats": [
+        "CVPixelBuffer"
+      ],
+      "notes": "",
+      "async_pattern": true
+    },
+    {
+      "name": "VTIsHardwareDecodeSupported",
+      "verb": "query",
+      "capabilities": [
+        "video_decode"
+      ],
+      "params": [
+        [
+          "codecType",
+          "CMVideoCodecType",
+          false
+        ]
+      ],
+      "return_type": "Boolean",
+      "signature": "Boolean VTIsHardwareDecodeSupported(CMVideoCodecType codecType)",
+      "input_formats": [
+        "CMVideoCodecType"
+      ],
+      "output_formats": [],
+      "notes": "",
+      "async_pattern": true
+    },
+    {
+      "name": "VTDecompressionSessionInvalidate",
+      "verb": "destroy",
+      "capabilities": [
+        "video_decode"
+      ],
+      "params": [
+        [
+          "session",
+          "VTDecompressionSessionRef",
+          false
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void VTDecompressionSessionInvalidate(VTDecompressionSessionRef)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "",
+      "async_pattern": true
+    },
+    {
+      "name": "CVPixelBufferLockBaseAddress",
+      "verb": "lock",
+      "capabilities": [
+        "video_decode"
+      ],
+      "params": [
+        [
+          "pixelBuffer",
+          "CVPixelBufferRef",
+          false
+        ],
+        [
+          "lockFlags",
+          "CVPixelBufferLockFlags",
+          false
+        ]
+      ],
+      "return_type": "CVReturn",
+      "signature": "CVReturn CVPixelBufferLockBaseAddress(CVPixelBufferRef pixelBuffer, CVPixelBufferLockFlags lockFlags)",
+      "input_formats": [
+        "CVPixelBuffer"
+      ],
+      "output_formats": [],
+      "notes": "",
+      "async_pattern": true
+    },
+    {
+      "name": "CMSampleBufferCreateReady",
+      "verb": "create",
+      "capabilities": [
+        "video_decode",
+        "video_encode"
+      ],
+      "params": [
+        [
+          "allocator",
+          "CFAllocatorRef",
+          true
+        ],
+        [
+          "dataBuffer",
+          "CMBlockBufferRef",
+          false
+        ],
+        [
+          "formatDescription",
+          "CMFormatDescriptionRef",
+          false
+        ],
+        [
+          "numSamples",
+          "CMItemCount",
+          false
+        ],
+        [
+          "numSampleTimingEntries",
+          "CMItemCount",
+          false
+        ],
+        [
+          "sampleTimingArray",
+          "const CMSampleTimingInfo",
+          true
+        ],
+        [
+          "numSampleSizeEntries",
+          "CMItemCount",
+          false
+        ],
+        [
+          "sampleSizeArray",
+          "const size_t",
+          true
+        ],
+        [
+          "sampleBufferOut",
+          "CMSampleBufferRef",
+          true
+        ]
+      ],
+      "return_type": "OSStatus",
+      "signature": "OSStatus CMSampleBufferCreateReady(CFAllocatorRef, CMBlockBufferRef, CMFormatDescriptionRef, CMItemCount, CMItemCount, const CMSampleTimingInfo *, CMItemCount, const size_t *, CMSampleBufferRef *)",
+      "input_formats": [
+        "CMBlockBuffer",
+        "CMFormatDescription"
+      ],
+      "output_formats": [
+        "CMSampleBuffer"
+      ],
+      "notes": "",
+      "async_pattern": true
+    },
+    {
+      "name": "VTDecompressionSessionDecodeFrame",
+      "verb": "decode",
+      "capabilities": [
+        "video_decode"
+      ],
+      "params": [
+        [
+          "session",
+          "VTDecompressionSessionRef",
+          false
+        ],
+        [
+          "sampleBuffer",
+          "CMSampleBufferRef",
+          false
+        ],
+        [
+          "decodeFlags",
+          "VTDecodeFrameFlags",
+          false
+        ],
+        [
+          "sourceFrameRefCon",
+          "void",
+          true
+        ],
+        [
+          "infoFlagsOut",
+          "VTDecodeInfoFlags",
+          true
+        ]
+      ],
+      "return_type": "OSStatus",
+      "signature": "OSStatus VTDecompressionSessionDecodeFrame(VTDecompressionSessionRef, CMSampleBufferRef, VTDecodeFrameFlags, void *, VTDecodeInfoFlags *)",
+      "input_formats": [
+        "CMSampleBuffer",
+        "H264",
+        "HEVC"
+      ],
+      "output_formats": [
+        "CVPixelBuffer"
+      ],
+      "notes": "",
+      "async_pattern": true
+    },
+    {
+      "name": "CVPixelBufferGetIOSurface",
+      "verb": "query",
+      "capabilities": [
+        "surface_zerocopy",
+        "video_decode"
+      ],
+      "params": [
+        [
+          "pixelBuffer",
+          "CVPixelBufferRef",
+          false
+        ]
+      ],
+      "return_type": "IOSurfaceRef",
+      "signature": "IOSurfaceRef CVPixelBufferGetIOSurface(CVPixelBufferRef pixelBuffer)",
+      "input_formats": [
+        "CVPixelBuffer"
+      ],
+      "output_formats": [
+        "IOSurface"
+      ],
+      "notes": "",
+      "async_pattern": true
+    },
+    {
+      "name": "CMVideoFormatDescriptionCreateFromH264ParameterSets",
+      "verb": "create",
+      "capabilities": [
+        "video_decode"
+      ],
+      "params": [
+        [
+          "allocator",
+          "CFAllocatorRef",
+          true
+        ],
+        [
+          "parameterSetCount",
+          "size_t",
+          false
+        ],
+        [
+          "parameterSetPointers",
+          "const uint8_t *const",
+          true
+        ],
+        [
+          "parameterSetSizes",
+          "const size_t",
+          true
+        ],
+        [
+          "NALUnitHeaderLength",
+          "int",
+          false
+        ],
+        [
+          "formatDescriptionOut",
+          "CMFormatDescriptionRef",
+          true
+        ]
+      ],
+      "return_type": "OSStatus",
+      "signature": "OSStatus CMVideoFormatDescriptionCreateFromH264ParameterSets(CFAllocatorRef, size_t, const uint8_t *const *, const size_t *, int, CMFormatDescriptionRef *)",
+      "input_formats": [
+        "H264_SPS",
+        "H264_PPS"
+      ],
+      "output_formats": [
+        "CMVideoFormatDescription"
+      ],
+      "notes": "",
+      "async_pattern": true
+    },
+    {
+      "name": "VTCompressionSessionPrepareToEncodeFrames",
+      "verb": "configure",
+      "capabilities": [
+        "video_encode"
+      ],
+      "params": [
+        [
+          "session",
+          "VTCompressionSessionRef",
+          false
+        ]
+      ],
+      "return_type": "OSStatus",
+      "signature": "OSStatus VTCompressionSessionPrepareToEncodeFrames(VTCompressionSessionRef)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "",
+      "async_pattern": true
+    }
+  ],
+  "protocols": [
+    {
+      "framework": "VideoToolbox",
+      "group": "VtDecompressSession",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "VTDecompressionSessionCreate",
+          "role": "Create",
+          "args_hint": "allocator, videoFormatDescription, videoDecoderSpecification, destinationImageBufferAttributes, outputCallback, decompressionSessionOut",
+          "returns": "int32_t",
+          "notes": "create hardware decoder session"
+        },
+        {
+          "order": 1,
+          "function": "VTDecompressionSessionDecodeFrame",
+          "role": "Use",
+          "args_hint": "session, sampleBuffer, decodeFlags, sourceFrameRefCon, infoFlagsOut",
+          "returns": "int32_t",
+          "notes": "decode one frame"
+        },
+        {
+          "order": 2,
+          "function": "VTDecompressionSessionWaitForAsynchronousFrames",
+          "role": "Use",
+          "args_hint": "session",
+          "returns": "int32_t",
+          "notes": "wait for async decode"
+        },
+        {
+          "order": 3,
+          "function": "VTDecompressionSessionInvalidate",
+          "role": "Destroy",
+          "args_hint": "session",
+          "returns": "void",
+          "notes": "tear down decoder"
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 1,
+      "recipe": "import ctypes\nimport ctypes.util\nvt = ctypes.CDLL(ctypes.util.find_library('VideoToolbox'))\ncm = ctypes.CDLL(ctypes.util.find_library('CoreMedia'))\ncv = ctypes.CDLL(ctypes.util.find_library('CoreVideo'))\n# Create format description from H.264 SPS/PPS\nfmt_desc = ctypes.c_void_p()\n# Create decompression session\nsession = ctypes.c_void_p()\nstatus = vt.VTDecompressionSessionCreate(None, fmt_desc, None, None, None, ctypes.byref(session))\nassert status == 0\n# Decode frames...\nvt.VTDecompressionSessionDecodeFrame(session, sample_buf, 0, None, None)\nvt.VTDecompressionSessionWaitForAsynchronousFrames(session)\nvt.VTDecompressionSessionInvalidate(session)"
+    },
+    {
+      "framework": "VideoToolbox",
+      "group": "VtCompressSession",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "VTCompressionSessionCreate",
+          "role": "Create",
+          "args_hint": "allocator, width, height, codecType, encoderSpecification, sourceImageBufferAttributes, compressedDataAllocator, outputCallback, outputCallbackRefCon, compressionSessionOut",
+          "returns": "int32_t",
+          "notes": "create hardware encoder session"
+        },
+        {
+          "order": 1,
+          "function": "VTCompressionSessionPrepareToEncodeFrames",
+          "role": "Init",
+          "args_hint": "session",
+          "returns": "int32_t",
+          "notes": "prepare encoder pipeline"
+        },
+        {
+          "order": 2,
+          "function": "VTCompressionSessionEncodeFrame",
+          "role": "Use",
+          "args_hint": "session, imageBuffer, presentationTimeStamp, duration, frameProperties, sourceFrameRefCon, infoFlagsOut",
+          "returns": "int32_t",
+          "notes": "encode one frame"
+        },
+        {
+          "order": 3,
+          "function": "VTCompressionSessionCompleteFrames",
+          "role": "Use",
+          "args_hint": "session, completeUntilPresentationTimeStamp",
+          "returns": "int32_t",
+          "notes": "flush pending frames"
+        },
+        {
+          "order": 4,
+          "function": "VTCompressionSessionInvalidate",
+          "role": "Destroy",
+          "args_hint": "session",
+          "returns": "void",
+          "notes": "tear down encoder"
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 1,
+      "recipe": "import ctypes\nimport ctypes.util\nvt = ctypes.CDLL(ctypes.util.find_library('VideoToolbox'))\n# Create compression session (H.264, 1920x1080)\nsession = ctypes.c_void_p()\nkCMVideoCodecType_H264 = 0x61766331  # 'avc1'\nstatus = vt.VTCompressionSessionCreate(None, 1920, 1080, kCMVideoCodecType_H264, None, None, None, None, None, ctypes.byref(session))\nassert status == 0\nvt.VTCompressionSessionPrepareToEncodeFrames(session)\n# Encode frames...\nvt.VTCompressionSessionEncodeFrame(session, pixel_buffer, pts, duration, None, None, None)\nvt.VTCompressionSessionCompleteFrames(session, 0)\nvt.VTCompressionSessionInvalidate(session)"
+    }
+  ],
+  "cross_link": true
+}

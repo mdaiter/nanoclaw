@@ -1,0 +1,237 @@
+{
+  "framework": "kperf",
+  "type_aliases": [],
+  "entries": [
+    {
+      "name": "kpc_set_counting",
+      "verb": "configure",
+      "capabilities": [
+        "hw_counters"
+      ],
+      "params": [
+        [
+          "classes",
+          "uint32_t",
+          false
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int kpc_set_counting(uint32_t classes)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Enable counting for given class mask. Requires root.",
+      "async_pattern": false
+    },
+    {
+      "name": "kpc_get_counting",
+      "verb": "query",
+      "capabilities": [
+        "hw_counters"
+      ],
+      "params": [],
+      "return_type": "uint32_t",
+      "signature": "uint32_t kpc_get_counting(void)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Get currently enabled counter class mask.",
+      "async_pattern": false
+    },
+    {
+      "name": "kpc_get_config",
+      "verb": "query",
+      "capabilities": [
+        "hw_counters"
+      ],
+      "params": [
+        [
+          "classes",
+          "uint32_t",
+          false
+        ],
+        [
+          "config",
+          "uint64_t",
+          true
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int kpc_get_config(uint32_t classes, uint64_t *config)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Read current PMU counter configuration into buffer.",
+      "async_pattern": false
+    },
+    {
+      "name": "kpc_set_config",
+      "verb": "configure",
+      "capabilities": [
+        "hw_counters"
+      ],
+      "params": [
+        [
+          "classes",
+          "uint32_t",
+          false
+        ],
+        [
+          "config",
+          "uint64_t",
+          true
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int kpc_set_config(uint32_t classes, uint64_t *config)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Set PMU counter configuration. Requires root or dtrace_proc entitlement.",
+      "async_pattern": false
+    },
+    {
+      "name": "kpc_get_thread_counters",
+      "verb": "read",
+      "capabilities": [
+        "hw_counters"
+      ],
+      "params": [
+        [
+          "tid",
+          "unsigned int",
+          false
+        ],
+        [
+          "buf_count",
+          "unsigned int",
+          false
+        ],
+        [
+          "buf",
+          "uint64_t",
+          true
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int kpc_get_thread_counters(unsigned int tid, unsigned int buf_count, uint64_t *buf)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Read per-thread PMU counters. tid=0 for current thread. Returns counter values in buf.",
+      "async_pattern": false
+    },
+    {
+      "name": "kpc_get_counter_count",
+      "verb": "query",
+      "capabilities": [
+        "hw_counters"
+      ],
+      "params": [
+        [
+          "classes",
+          "uint32_t",
+          false
+        ]
+      ],
+      "return_type": "uint32_t",
+      "signature": "uint32_t kpc_get_counter_count(uint32_t classes)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Get number of counters for given class mask. FIXED=0x01, CONFIGURABLE=0x02, POWER=0x04, RAWPMU=0x08.",
+      "async_pattern": false
+    },
+    {
+      "name": "kpc_get_cpu_counters",
+      "verb": "read",
+      "capabilities": [
+        "hw_counters"
+      ],
+      "params": [
+        [
+          "all_cpus",
+          "bool",
+          false
+        ],
+        [
+          "classes",
+          "uint32_t",
+          false
+        ],
+        [
+          "buf",
+          "int",
+          true
+        ],
+        [
+          "values",
+          "uint64_t",
+          true
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int kpc_get_cpu_counters(bool all_cpus, uint32_t classes, int *buf, uint64_t *values)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Read per-CPU PMU counters. all_cpus=true reads all cores.",
+      "async_pattern": false
+    },
+    {
+      "name": "kpc_force_all_ctrs_set",
+      "verb": "configure",
+      "capabilities": [
+        "hw_counters"
+      ],
+      "params": [
+        [
+          "val",
+          "int",
+          false
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int kpc_force_all_ctrs_set(int val)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Force-acquire all PMU counters (val=1) or release (val=0). Preempts other users.",
+      "async_pattern": false
+    },
+    {
+      "name": "kpc_get_config_count",
+      "verb": "query",
+      "capabilities": [
+        "hw_counters"
+      ],
+      "params": [
+        [
+          "classes",
+          "uint32_t",
+          false
+        ]
+      ],
+      "return_type": "uint32_t",
+      "signature": "uint32_t kpc_get_config_count(uint32_t classes)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Get number of configurable counters for given class mask.",
+      "async_pattern": false
+    },
+    {
+      "name": "kpc_force_all_ctrs_get",
+      "verb": "query",
+      "capabilities": [
+        "hw_counters"
+      ],
+      "params": [
+        [
+          "val_out",
+          "int",
+          true
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int kpc_force_all_ctrs_get(int *val_out)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Check if all counters are force-acquired.",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [],
+  "cross_link": true
+}

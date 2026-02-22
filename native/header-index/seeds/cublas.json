@@ -1,0 +1,426 @@
+{
+  "framework": "CUDA",
+  "type_aliases": [
+    [
+      "cublasHandle_t",
+      "struct cublasContext *"
+    ],
+    [
+      "cublasStatus_t",
+      "int"
+    ],
+    [
+      "cublasOperation_t",
+      "int"
+    ],
+    [
+      "cudaStream_t",
+      "struct CUstream_st *"
+    ]
+  ],
+  "entries": [
+    {
+      "name": "cublasSgemm",
+      "verb": "multiply",
+      "capabilities": [
+        "blas_gemm",
+        "gpu_compute",
+        "matrix_multiply"
+      ],
+      "params": [
+        [
+          "handle",
+          "cublasHandle_t",
+          false
+        ],
+        [
+          "transa",
+          "cublasOperation_t",
+          false
+        ],
+        [
+          "transb",
+          "cublasOperation_t",
+          false
+        ],
+        [
+          "m",
+          "int",
+          false
+        ],
+        [
+          "n",
+          "int",
+          false
+        ],
+        [
+          "k",
+          "int",
+          false
+        ],
+        [
+          "alpha",
+          "float",
+          true
+        ],
+        [
+          "A",
+          "float",
+          true
+        ],
+        [
+          "lda",
+          "int",
+          false
+        ],
+        [
+          "B",
+          "float",
+          true
+        ],
+        [
+          "ldb",
+          "int",
+          false
+        ],
+        [
+          "beta",
+          "float",
+          true
+        ],
+        [
+          "C",
+          "float",
+          true
+        ],
+        [
+          "ldc",
+          "int",
+          false
+        ]
+      ],
+      "return_type": "cublasStatus_t",
+      "signature": "cublasStatus_t cublasSgemm(cublasHandle_t handle, cublasOperation_t transa, cublasOperation_t transb, int m, int n, int k, const float *alpha, const float *A, int lda, const float *B, int ldb, const float *beta, float *C, int ldc)",
+      "input_formats": [
+        "float32_matrix"
+      ],
+      "output_formats": [
+        "float32_matrix"
+      ],
+      "notes": "Single-precision GEMM on GPU. C = alpha * op(A) * op(B) + beta * C. Auto-uses Tensor Cores on Volta+ with CUBLAS_TENSOR_OP_MATH. Only beneficial for matrices >= 64x64; smaller matrices are faster on CPU.",
+      "async_pattern": true
+    },
+    {
+      "name": "cublasDgemm",
+      "verb": "multiply",
+      "capabilities": [
+        "blas_gemm",
+        "gpu_compute",
+        "matrix_multiply"
+      ],
+      "params": [
+        [
+          "handle",
+          "cublasHandle_t",
+          false
+        ],
+        [
+          "transa",
+          "cublasOperation_t",
+          false
+        ],
+        [
+          "transb",
+          "cublasOperation_t",
+          false
+        ],
+        [
+          "m",
+          "int",
+          false
+        ],
+        [
+          "n",
+          "int",
+          false
+        ],
+        [
+          "k",
+          "int",
+          false
+        ],
+        [
+          "alpha",
+          "double",
+          true
+        ],
+        [
+          "A",
+          "double",
+          true
+        ],
+        [
+          "lda",
+          "int",
+          false
+        ],
+        [
+          "B",
+          "double",
+          true
+        ],
+        [
+          "ldb",
+          "int",
+          false
+        ],
+        [
+          "beta",
+          "double",
+          true
+        ],
+        [
+          "C",
+          "double",
+          true
+        ],
+        [
+          "ldc",
+          "int",
+          false
+        ]
+      ],
+      "return_type": "cublasStatus_t",
+      "signature": "cublasStatus_t cublasDgemm(cublasHandle_t handle, cublasOperation_t transa, cublasOperation_t transb, int m, int n, int k, const double *alpha, const double *A, int lda, const double *B, int ldb, const double *beta, double *C, int ldc)",
+      "input_formats": [
+        "float64_matrix"
+      ],
+      "output_formats": [
+        "float64_matrix"
+      ],
+      "notes": "Double-precision GEMM on GPU. Same interface as Sgemm but FP64. Tensor Core acceleration on A100+ (FP64 Tensor Cores).",
+      "async_pattern": true
+    },
+    {
+      "name": "cublasSnrm2",
+      "verb": "norm",
+      "capabilities": [
+        "gpu_vector_math",
+        "vector_math",
+        "gpu_compute"
+      ],
+      "params": [
+        [
+          "handle",
+          "cublasHandle_t",
+          false
+        ],
+        [
+          "n",
+          "int",
+          false
+        ],
+        [
+          "x",
+          "float",
+          true
+        ],
+        [
+          "incx",
+          "int",
+          false
+        ],
+        [
+          "result",
+          "float",
+          true
+        ]
+      ],
+      "return_type": "cublasStatus_t",
+      "signature": "cublasStatus_t cublasSnrm2(cublasHandle_t handle, int n, const float *x, int incx, float *result)",
+      "input_formats": [
+        "float32_array"
+      ],
+      "output_formats": [
+        "float32_scalar"
+      ],
+      "notes": "Euclidean norm (L2) of a vector. result = sqrt(sum(x[i]^2)). Only beneficial for vectors > 10K elements.",
+      "async_pattern": false
+    },
+    {
+      "name": "cublasCreate",
+      "verb": "create",
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "params": [
+        [
+          "handle",
+          "cublasHandle_t",
+          true
+        ]
+      ],
+      "return_type": "cublasStatus_t",
+      "signature": "cublasStatus_t cublasCreate(cublasHandle_t *handle)",
+      "input_formats": [],
+      "output_formats": [
+        "cublasHandle_t"
+      ],
+      "notes": "Create cuBLAS context handle. Cache this \u2014 one per GPU. Creating/destroying per call is a performance bug.",
+      "async_pattern": false
+    },
+    {
+      "name": "cublasSgemmStridedBatched",
+      "verb": "multiply",
+      "capabilities": [
+        "blas_gemm",
+        "gpu_compute",
+        "matrix_multiply"
+      ],
+      "params": [
+        [
+          "handle",
+          "cublasHandle_t",
+          false
+        ],
+        [
+          "transa",
+          "cublasOperation_t",
+          false
+        ],
+        [
+          "transb",
+          "cublasOperation_t",
+          false
+        ],
+        [
+          "m",
+          "int",
+          false
+        ],
+        [
+          "n",
+          "int",
+          false
+        ],
+        [
+          "k",
+          "int",
+          false
+        ],
+        [
+          "alpha",
+          "float",
+          true
+        ],
+        [
+          "A",
+          "float",
+          true
+        ],
+        [
+          "lda",
+          "int",
+          false
+        ],
+        [
+          "strideA",
+          "long long",
+          false
+        ],
+        [
+          "B",
+          "float",
+          true
+        ],
+        [
+          "ldb",
+          "int",
+          false
+        ],
+        [
+          "strideB",
+          "long long",
+          false
+        ],
+        [
+          "beta",
+          "float",
+          true
+        ],
+        [
+          "C",
+          "float",
+          true
+        ],
+        [
+          "ldc",
+          "int",
+          false
+        ],
+        [
+          "strideC",
+          "long long",
+          false
+        ],
+        [
+          "batchCount",
+          "int",
+          false
+        ]
+      ],
+      "return_type": "cublasStatus_t",
+      "signature": "cublasStatus_t cublasSgemmStridedBatched(cublasHandle_t handle, cublasOperation_t transa, cublasOperation_t transb, int m, int n, int k, const float *alpha, const float *A, int lda, long long strideA, const float *B, int ldb, long long strideB, const float *beta, float *C, int ldc, long long strideC, int batchCount)",
+      "input_formats": [
+        "float32_matrix_batch"
+      ],
+      "output_formats": [
+        "float32_matrix_batch"
+      ],
+      "notes": "Batched GEMM \u2014 computes batchCount independent matrix multiplies in one launch. Ideal for many small matrices (e.g., per-point covariance computation in SLAM). Much more efficient than launching batchCount individual Sgemm calls.",
+      "async_pattern": true
+    }
+  ],
+  "protocols": [
+    {
+      "framework": "CUDA",
+      "group": "CublasInit",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "cublasCreate",
+          "role": "Create",
+          "args_hint": "&handle",
+          "returns": "cublasStatus_t",
+          "notes": "Create cuBLAS handle. Do this once at startup, not per call."
+        },
+        {
+          "order": 1,
+          "function": "cublasSetMathMode",
+          "role": "Init",
+          "args_hint": "handle, CUBLAS_TENSOR_OP_MATH",
+          "returns": "cublasStatus_t",
+          "notes": "Enable Tensor Core math on Volta+. Uses TF32 on Ampere for ~8x throughput on FP32 inputs."
+        },
+        {
+          "order": 2,
+          "function": "cublasSetStream",
+          "role": "Init",
+          "args_hint": "handle, stream",
+          "returns": "cublasStatus_t",
+          "notes": "Bind handle to a CUDA stream for async execution. Required for overlapping compute and transfer."
+        }
+      ],
+      "constants": [
+        {"name": "CUBLAS_OP_N", "value": "0", "source": "cublas_v2.h"},
+        {"name": "CUBLAS_OP_T", "value": "1", "source": "cublas_v2.h"},
+        {"name": "CUBLAS_TENSOR_OP_MATH", "value": "1", "source": "cublas_v2.h"}
+      ],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "#include <cublas_v2.h>\n#include <cuda_runtime.h>\n#include <stdio.h>\n\n#define CUBLAS_CHECK(call) { cublasStatus_t err = call; if (err != CUBLAS_STATUS_SUCCESS) { fprintf(stderr, \"cuBLAS error %d at %s:%d\\n\", err, __FILE__, __LINE__); exit(1); } }\n#define CUDA_CHECK(call) { cudaError_t err = call; if (err != cudaSuccess) { fprintf(stderr, \"CUDA error: %s at %s:%d\\n\", cudaGetErrorString(err), __FILE__, __LINE__); exit(1); } }\n\n// One-time init \u2014 cache these for the lifetime of the process\nstatic cublasHandle_t g_cublas = nullptr;\nvoid ensure_cublas() {\n    if (!g_cublas) {\n        CUBLAS_CHECK(cublasCreate(&g_cublas));\n        CUBLAS_CHECK(cublasSetMathMode(g_cublas, CUBLAS_TENSOR_OP_MATH));\n    }\n}\n\n// GEMM wrapper: C = alpha * A * B + beta * C\nvoid gpu_sgemm(const float* A, const float* B, float* C,\n               int m, int n, int k, float alpha, float beta) {\n    ensure_cublas();\n    CUBLAS_CHECK(cublasSgemm(g_cublas, CUBLAS_OP_N, CUBLAS_OP_N,\n                             n, m, k,  // note: column-major order\n                             &alpha, B, n, A, k, &beta, C, n));\n}"
+    }
+  ],
+  "cross_link": true
+}

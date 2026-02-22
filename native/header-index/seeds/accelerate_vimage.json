@@ -1,0 +1,461 @@
+{
+  "framework": "Accelerate",
+  "type_aliases": [
+    [
+      "vImage_Flags",
+      "uint32_t"
+    ],
+    [
+      "vImage_Buffer",
+      "void"
+    ],
+    [
+      "vImagePixelCount",
+      "size_t"
+    ],
+    [
+      "Pixel_8888",
+      "uint32_t"
+    ],
+    [
+      "vImage_Error",
+      "ssize_t"
+    ],
+    [
+      "const vImage_Buffer *",
+      "const void *"
+    ]
+  ],
+  "entries": [
+    {
+      "name": "vImageBuffer_Init",
+      "verb": "init",
+      "capabilities": [
+        "image_init",
+        "image_buffer"
+      ],
+      "params": [
+        [
+          "buf",
+          "vImage_Buffer",
+          true
+        ],
+        [
+          "height",
+          "vImagePixelCount",
+          false
+        ],
+        [
+          "width",
+          "vImagePixelCount",
+          false
+        ],
+        [
+          "pixelBits",
+          "uint32_t",
+          false
+        ],
+        [
+          "flags",
+          "vImage_Flags",
+          false
+        ]
+      ],
+      "return_type": "vImage_Error",
+      "signature": "vImage_Error vImageBuffer_Init(vImage_Buffer *, vImagePixelCount, vImagePixelCount, uint32_t, vImage_Flags)",
+      "input_formats": [],
+      "output_formats": [
+        "vImage_Buffer"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "vImageScale_Planar8",
+      "verb": "scale",
+      "capabilities": [
+        "image_scale",
+        "image_transform"
+      ],
+      "params": [
+        [
+          "src",
+          "vImage_Buffer",
+          true
+        ],
+        [
+          "dest",
+          "vImage_Buffer",
+          true
+        ],
+        [
+          "tempBuffer",
+          "void",
+          true
+        ],
+        [
+          "flags",
+          "vImage_Flags",
+          false
+        ]
+      ],
+      "return_type": "vImage_Error",
+      "signature": "vImage_Error vImageScale_Planar8(const vImage_Buffer *, const vImage_Buffer *, void *, vImage_Flags)",
+      "input_formats": [
+        "Planar8",
+        "vImage_Buffer"
+      ],
+      "output_formats": [
+        "Planar8",
+        "vImage_Buffer"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "vImageConvert_ARGB8888toRGB888",
+      "verb": "convert",
+      "capabilities": [
+        "image_color_convert",
+        "image_convert",
+        "image_transform"
+      ],
+      "params": [
+        [
+          "src",
+          "vImage_Buffer",
+          true
+        ],
+        [
+          "dest",
+          "vImage_Buffer",
+          true
+        ],
+        [
+          "flags",
+          "vImage_Flags",
+          false
+        ]
+      ],
+      "return_type": "vImage_Error",
+      "signature": "vImage_Error vImageConvert_ARGB8888toRGB888(const vImage_Buffer *, const vImage_Buffer *, vImage_Flags)",
+      "input_formats": [
+        "ARGB8888",
+        "vImage_Buffer"
+      ],
+      "output_formats": [
+        "RGB888",
+        "vImage_Buffer"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "vImageRotate_ARGB8888",
+      "verb": "rotate",
+      "capabilities": [
+        "image_rotate",
+        "image_transform"
+      ],
+      "params": [
+        [
+          "src",
+          "vImage_Buffer",
+          true
+        ],
+        [
+          "dest",
+          "vImage_Buffer",
+          true
+        ],
+        [
+          "tempBuffer",
+          "void",
+          true
+        ],
+        [
+          "angleInRadians",
+          "float",
+          false
+        ],
+        [
+          "backColor",
+          "Pixel_8888",
+          true
+        ],
+        [
+          "flags",
+          "vImage_Flags",
+          false
+        ]
+      ],
+      "return_type": "vImage_Error",
+      "signature": "vImage_Error vImageRotate_ARGB8888(const vImage_Buffer *, const vImage_Buffer *, void *, float, Pixel_8888, vImage_Flags)",
+      "input_formats": [
+        "ARGB8888",
+        "vImage_Buffer"
+      ],
+      "output_formats": [
+        "ARGB8888",
+        "vImage_Buffer"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "vImageMatrixMultiply_ARGB8888ToPlanar8",
+      "verb": "grayscale",
+      "capabilities": [
+        "image_color_convert",
+        "image_transform"
+      ],
+      "params": [
+        [
+          "src",
+          "vImage_Buffer",
+          true
+        ],
+        [
+          "dest",
+          "vImage_Buffer",
+          true
+        ],
+        [
+          "matrix",
+          "int16_t",
+          true
+        ],
+        [
+          "divisor",
+          "int32_t",
+          false
+        ],
+        [
+          "pre_bias",
+          "int16_t",
+          true
+        ],
+        [
+          "post_bias",
+          "int32_t",
+          false
+        ],
+        [
+          "flags",
+          "vImage_Flags",
+          false
+        ]
+      ],
+      "return_type": "vImage_Error",
+      "signature": "vImage_Error vImageMatrixMultiply_ARGB8888ToPlanar8(const vImage_Buffer *, const vImage_Buffer *, const int16_t[4], int32_t, const int16_t *, int32_t, vImage_Flags)",
+      "input_formats": [
+        "ARGB8888",
+        "vImage_Buffer"
+      ],
+      "output_formats": [
+        "Planar8",
+        "vImage_Buffer"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "vImageScale_ARGB8888",
+      "verb": "scale",
+      "capabilities": [
+        "image_scale",
+        "image_transform"
+      ],
+      "params": [
+        [
+          "src",
+          "vImage_Buffer",
+          true
+        ],
+        [
+          "dest",
+          "vImage_Buffer",
+          true
+        ],
+        [
+          "tempBuffer",
+          "void",
+          true
+        ],
+        [
+          "flags",
+          "vImage_Flags",
+          false
+        ]
+      ],
+      "return_type": "vImage_Error",
+      "signature": "vImage_Error vImageScale_ARGB8888(const vImage_Buffer *, const vImage_Buffer *, void *, vImage_Flags)",
+      "input_formats": [
+        "ARGB8888",
+        "vImage_Buffer"
+      ],
+      "output_formats": [
+        "ARGB8888",
+        "vImage_Buffer"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "vImageConvolve_ARGB8888",
+      "verb": "convolve",
+      "capabilities": [
+        "image_convolve",
+        "image_transform"
+      ],
+      "params": [
+        [
+          "src",
+          "vImage_Buffer",
+          true
+        ],
+        [
+          "dest",
+          "vImage_Buffer",
+          true
+        ],
+        [
+          "tempBuffer",
+          "void",
+          true
+        ],
+        [
+          "roiX",
+          "vImagePixelCount",
+          false
+        ],
+        [
+          "roiY",
+          "vImagePixelCount",
+          false
+        ],
+        [
+          "kernel",
+          "int16_t",
+          true
+        ],
+        [
+          "kernel_height",
+          "uint32_t",
+          false
+        ],
+        [
+          "kernel_width",
+          "uint32_t",
+          false
+        ],
+        [
+          "divisor",
+          "int32_t",
+          false
+        ],
+        [
+          "backgroundColor",
+          "Pixel_8888",
+          true
+        ],
+        [
+          "flags",
+          "vImage_Flags",
+          false
+        ]
+      ],
+      "return_type": "vImage_Error",
+      "signature": "vImage_Error vImageConvolve_ARGB8888(const vImage_Buffer *, const vImage_Buffer *, void *, vImagePixelCount, vImagePixelCount, const int16_t *, uint32_t, uint32_t, int32_t, const Pixel_8888, vImage_Flags)",
+      "input_formats": [
+        "ARGB8888",
+        "vImage_Buffer"
+      ],
+      "output_formats": [
+        "ARGB8888",
+        "vImage_Buffer"
+      ],
+      "notes": "",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [
+    {
+      "framework": "Accelerate",
+      "group": "vImageScale_ARGB8888",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "vImageScale_ARGB8888",
+          "role": "Use",
+          "args_hint": "const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, vImage_Flags flags",
+          "returns": "vImage_Error",
+          "notes": "Scale/resize a 4-channel 8-bit image. src/dest are vImage_Buffer {data: void*, height: size_t, width: size_t, rowBytes: size_t}. tempBuffer: NULL (auto-allocate). flags: 0 (kvImageNoFlags)."
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "import ctypes, numpy as np, cv2\n_acc = ctypes.CDLL('/System/Library/Frameworks/Accelerate.framework/Accelerate')\nclass vImage_Buffer(ctypes.Structure):\n    _fields_ = [('data',ctypes.c_void_p),('height',ctypes.c_size_t),\n               ('width',ctypes.c_size_t),('rowBytes',ctypes.c_size_t)]\n\ndef vimage_resize(img, W, H):\n    # img: numpy uint8 (h,w,3) BGR from cv2. Pad to 4ch for ARGB8888.\n    # Use cv2.cvtColor for BGRA packing (SIMD-accelerated, ~58x faster than np.dstack).\n    bgra = cv2.cvtColor(img, cv2.COLOR_BGR2BGRA)\n    dst = np.zeros((H, W, 4), dtype=np.uint8)\n    src_buf = vImage_Buffer(bgra.ctypes.data, bgra.shape[0], bgra.shape[1], bgra.strides[0])\n    dst_buf = vImage_Buffer(dst.ctypes.data, H, W, W * 4)\n    _acc.vImageScale_ARGB8888.restype = ctypes.c_ssize_t\n    _acc.vImageScale_ARGB8888(ctypes.byref(src_buf), ctypes.byref(dst_buf), None, ctypes.c_uint32(0))\n    return dst[:,:,:3]  # strip alpha back to 3ch"
+    },
+    {
+      "framework": "Accelerate",
+      "group": "vImageConvolve_ARGB8888",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "vImageConvolve_ARGB8888",
+          "role": "Use",
+          "args_hint": "const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, vImagePixelCount roiX, vImagePixelCount roiY, const int16_t *kernel, uint32_t kernel_height, uint32_t kernel_width, int32_t divisor, const Pixel_8888 backgroundColor, vImage_Flags flags",
+          "returns": "vImage_Error",
+          "notes": "Convolve a 4ch 8-bit image with an int16 kernel (blur, sharpen, edge detect). roiX/roiY: 0 (full image). kernel: flat int16_t[kH*kW]. divisor: sum(kernel). backgroundColor: uint8[4] zeros. flags: 8 (kvImageEdgeExtend)."
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "def vimage_gaussian_blur(img, kW, kH, sigma):\n    # Build Gaussian kernel as int16\n    ax = np.arange(kW) - kW // 2\n    ay = np.arange(kH) - kH // 2\n    xx, yy = np.meshgrid(ax, ay)\n    kern_f = np.exp(-(xx**2 + yy**2) / (2 * sigma**2))\n    kern_f /= kern_f.sum()\n    scale = min(32000 / kern_f.max(), 32767)\n    kern_i = np.round(kern_f * scale).astype(np.int16)\n    divisor = int(kern_i.sum())\n    bgra = cv2.cvtColor(img, cv2.COLOR_BGR2BGRA)\n    dst = np.zeros_like(bgra)\n    src_buf = vImage_Buffer(bgra.ctypes.data, bgra.shape[0], bgra.shape[1], bgra.strides[0])\n    dst_buf = vImage_Buffer(dst.ctypes.data, dst.shape[0], dst.shape[1], dst.strides[0])\n    bg = (ctypes.c_uint8 * 4)(0,0,0,0)\n    _acc.vImageConvolve_ARGB8888.restype = ctypes.c_ssize_t\n    _acc.vImageConvolve_ARGB8888(\n        ctypes.byref(src_buf), ctypes.byref(dst_buf), None,\n        ctypes.c_size_t(0), ctypes.c_size_t(0),\n        kern_i.ctypes.data_as(ctypes.POINTER(ctypes.c_int16)),\n        ctypes.c_uint32(kH), ctypes.c_uint32(kW),\n        ctypes.c_int32(divisor), bg, ctypes.c_uint32(8))\n    return dst[:,:,:3]"
+    },
+    {
+      "framework": "Accelerate",
+      "group": "vImageConvert_ARGB8888toRGB888",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "vImageConvert_ARGB8888toRGB888",
+          "role": "Use",
+          "args_hint": "const vImage_Buffer *src, const vImage_Buffer *dest, vImage_Flags flags",
+          "returns": "vImage_Error",
+          "notes": "Convert 4-channel ARGB8888 to 3-channel RGB888 (drop alpha). For BGR→Gray use vImageMatrixMultiply_ARGB8888ToPlanar8 instead."
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "def vimage_argb_to_rgb(img4ch):\n    # img4ch: numpy uint8 (h,w,4). Drops alpha → (h,w,3).\n    dst = np.zeros((img4ch.shape[0], img4ch.shape[1], 3), dtype=np.uint8)\n    src_buf = vImage_Buffer(img4ch.ctypes.data, img4ch.shape[0], img4ch.shape[1], img4ch.strides[0])\n    dst_buf = vImage_Buffer(dst.ctypes.data, dst.shape[0], dst.shape[1], dst.shape[1] * 3)\n    _acc.vImageConvert_ARGB8888toRGB888.restype = ctypes.c_ssize_t\n    _acc.vImageConvert_ARGB8888toRGB888(ctypes.byref(src_buf), ctypes.byref(dst_buf), ctypes.c_uint32(0))\n    return dst"
+    },
+    {
+      "framework": "Accelerate",
+      "group": "vImageMatrixMultiply_ARGB8888ToPlanar8",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "vImageMatrixMultiply_ARGB8888ToPlanar8",
+          "role": "Use",
+          "args_hint": "const vImage_Buffer *src, const vImage_Buffer *dest, const int16_t matrix[4], int32_t divisor, const int16_t *pre_bias, int32_t post_bias, vImage_Flags flags",
+          "returns": "vImage_Error",
+          "notes": "Convert 4ch image to 1ch grayscale via matrix multiply. matrix[4]: per-channel weights in source order (BGRA if padded from BGR). divisor: sum of RGB weights. pre_bias: NULL. post_bias: divisor/2 for rounding."
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "def vimage_bgr2gray(img):\n    # BT.601: Y = 0.114*B + 0.587*G + 0.299*R\n    bgra = cv2.cvtColor(img, cv2.COLOR_BGR2BGRA)\n    h, w = img.shape[:2]\n    dst = np.zeros((h, w), dtype=np.uint8)\n    src_buf = vImage_Buffer(bgra.ctypes.data, h, w, w * 4)\n    dst_buf = vImage_Buffer(dst.ctypes.data, h, w, w)\n    matrix = (ctypes.c_int16 * 4)(114, 587, 299, 0)  # BGRA order\n    _acc.vImageMatrixMultiply_ARGB8888ToPlanar8.restype = ctypes.c_ssize_t\n    _acc.vImageMatrixMultiply_ARGB8888ToPlanar8(\n        ctypes.byref(src_buf), ctypes.byref(dst_buf),\n        matrix, ctypes.c_int32(1000), None, ctypes.c_int32(500),\n        ctypes.c_uint32(0))\n    return dst"
+    }
+  ],
+  "cross_link": true
+}

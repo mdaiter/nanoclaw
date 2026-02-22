@@ -1,0 +1,154 @@
+{
+  "framework": "CoreML",
+  "type_aliases": [
+    ["MLModel", "void *"],
+    ["MLMultiArray", "void *"],
+    ["MLFeatureProvider", "void *"],
+    ["MLPredictionOptions", "void *"]
+  ],
+  "entries": [
+    {
+      "name": "ct.models.MLModel",
+      "verb": "load",
+      "capabilities": ["coreml_load"],
+      "params": [["path", "str", false]],
+      "return_type": "MLModel",
+      "signature": "coremltools.models.MLModel(path: str) -> MLModel",
+      "input_formats": [".mlmodel", ".mlpackage"],
+      "output_formats": ["MLModel"],
+      "notes": "Load a CoreML model from .mlmodel or .mlpackage. Uses ANE/GPU/CPU automatically.",
+      "async_pattern": false
+    },
+    {
+      "name": "MLModel.predict",
+      "verb": "predict",
+      "capabilities": ["coreml_predict", "ml_inference"],
+      "params": [["input_data", "dict", false]],
+      "return_type": "dict",
+      "signature": "MLModel.predict(input_data: dict) -> dict",
+      "input_formats": ["dict", "numpy.ndarray", "PIL.Image"],
+      "output_formats": ["dict"],
+      "notes": "Run inference. Dispatches to ANE (Neural Engine), GPU (Metal), or CPU based on model ops. For vision models: input is typically {'image': PIL.Image}.",
+      "async_pattern": false
+    },
+    {
+      "name": "ct.converters.convert",
+      "verb": "convert",
+      "capabilities": ["coreml_convert"],
+      "params": [
+        ["model", "object", false],
+        ["source", "str", false],
+        ["convert_to", "str", false]
+      ],
+      "return_type": "MLModel",
+      "signature": "coremltools.convert(model, source='auto', convert_to='mlprogram') -> MLModel",
+      "input_formats": ["torch.nn.Module", "tf.keras.Model", "onnx"],
+      "output_formats": [".mlpackage"],
+      "notes": "Convert PyTorch/TF/ONNX to CoreML. mlprogram format required for ANE. compute_units='ALL' enables ANE.",
+      "async_pattern": false
+    },
+    {
+      "name": "ct.models.MLModel.make_predictions",
+      "verb": "batch_predict",
+      "capabilities": ["coreml_predict", "coreml_batch"],
+      "params": [
+        ["input_data", "list", false],
+        ["batch_size", "int", false]
+      ],
+      "return_type": "list",
+      "signature": "MLModel.predict(input_data: list[dict]) -> list[dict]",
+      "input_formats": ["list[dict]"],
+      "output_formats": ["list[dict]"],
+      "notes": "Batch inference. More efficient than repeated single predict calls.",
+      "async_pattern": false
+    },
+    {
+      "name": "ct.utils.coreml_predict",
+      "verb": "predict",
+      "capabilities": ["coreml_predict"],
+      "params": [
+        ["model_path", "str", false],
+        ["input_data", "dict", false]
+      ],
+      "return_type": "dict",
+      "signature": "coremltools.utils.coreml_predict(model_path: str, input_data: dict) -> dict",
+      "input_formats": [".mlmodel", ".mlpackage", "dict"],
+      "output_formats": ["dict"],
+      "notes": "One-shot load + predict utility. Convenient but slower for repeated calls (no model caching).",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [
+    {
+      "framework": "CoreML",
+      "group": "coreml_predict",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "ct.models.MLModel",
+          "role": "Create",
+          "args_hint": "path: str",
+          "returns": "MLModel",
+          "notes": "Load model from .mlmodel/.mlpackage"
+        },
+        {
+          "order": 1,
+          "function": "MLModel.predict",
+          "role": "Use",
+          "args_hint": "input_data: dict",
+          "returns": "dict",
+          "notes": "Run inference"
+        }
+      ],
+      "constants": [
+        {
+          "name": "ct.ComputeUnit.ALL",
+          "value": "ALL",
+          "source": "coremltools"
+        },
+        {
+          "name": "ct.ComputeUnit.CPU_AND_GPU",
+          "value": "CPU_AND_GPU",
+          "source": "coremltools"
+        },
+        {
+          "name": "ct.ComputeUnit.CPU_ONLY",
+          "value": "CPU_ONLY",
+          "source": "coremltools"
+        }
+      ],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "import coremltools as ct\nimport numpy as np\n\ndef coreml_predict(model_path, input_dict):\n    # Load CoreML model (uses ANE/GPU/CPU automatically)\n    model = ct.models.MLModel(model_path, compute_units=ct.ComputeUnit.ALL)\n    # Run inference\n    result = model.predict(input_dict)\n    return result\n\n# Example: image classification\n# from PIL import Image\n# img = Image.open('cat.jpg').resize((224, 224))\n# result = coreml_predict('resnet50.mlpackage', {'image': img})\n# print(result['classLabel'])"
+    },
+    {
+      "framework": "CoreML",
+      "group": "coreml_convert",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "ct.converters.convert",
+          "role": "Use",
+          "args_hint": "model: torch.nn.Module, convert_to: str = 'mlprogram'",
+          "returns": "MLModel",
+          "notes": "Convert PyTorch model to CoreML"
+        },
+        {
+          "order": 1,
+          "function": "MLModel.save",
+          "role": "Use",
+          "args_hint": "path: str",
+          "returns": "None",
+          "notes": "Save .mlpackage to disk"
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "import coremltools as ct\nimport torch\n\ndef convert_pytorch_to_coreml(model, example_input, output_path):\n    # model: torch.nn.Module in eval mode\n    # example_input: torch.Tensor with correct shape\n    model.eval()\n    traced = torch.jit.trace(model, example_input)\n    mlmodel = ct.convert(\n        traced,\n        inputs=[ct.TensorType(shape=example_input.shape)],\n        convert_to='mlprogram',\n        compute_units=ct.ComputeUnit.ALL,\n    )\n    mlmodel.save(output_path)\n    return mlmodel"
+    }
+  ],
+  "cross_link": true
+}

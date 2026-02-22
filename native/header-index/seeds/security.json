@@ -1,0 +1,170 @@
+{
+  "framework": "Security",
+  "type_aliases": [
+    [
+      "OSStatus",
+      "int32_t"
+    ],
+    [
+      "Boolean",
+      "bool"
+    ],
+    [
+      "CFErrorRef",
+      "void *"
+    ],
+    [
+      "CFDataRef",
+      "void *"
+    ],
+    [
+      "SecKeyAlgorithm",
+      "void *"
+    ],
+    [
+      "CFAllocatorRef",
+      "void *"
+    ],
+    [
+      "CFDictionaryRef",
+      "void *"
+    ],
+    [
+      "SecCertificateRef",
+      "void *"
+    ],
+    [
+      "SecKeyRef",
+      "void *"
+    ]
+  ],
+  "entries": [
+    {
+      "name": "SecKeyCreateRandomKey",
+      "verb": "generate",
+      "capabilities": [
+        "crypto_sign"
+      ],
+      "params": [
+        [
+          "parameters",
+          "CFDictionaryRef",
+          false
+        ],
+        [
+          "error",
+          "CFErrorRef",
+          true
+        ]
+      ],
+      "return_type": "SecKeyRef",
+      "signature": "SecKeyRef SecKeyCreateRandomKey(CFDictionaryRef parameters, CFErrorRef *error)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Generate asymmetric key pair (RSA, ECDSA, Ed25519). Can use Secure Enclave.",
+      "async_pattern": false
+    },
+    {
+      "name": "SecKeyCreateSignature",
+      "verb": "sign",
+      "capabilities": [
+        "crypto_sign"
+      ],
+      "params": [
+        [
+          "key",
+          "SecKeyRef",
+          false
+        ],
+        [
+          "algorithm",
+          "SecKeyAlgorithm",
+          false
+        ],
+        [
+          "dataToSign",
+          "CFDataRef",
+          false
+        ],
+        [
+          "error",
+          "CFErrorRef",
+          true
+        ]
+      ],
+      "return_type": "CFDataRef",
+      "signature": "CFDataRef SecKeyCreateSignature(SecKeyRef key, SecKeyAlgorithm algorithm, CFDataRef dataToSign, CFErrorRef *error)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Create digital signature. Uses Secure Enclave for key storage if available.",
+      "async_pattern": false
+    },
+    {
+      "name": "SecKeyVerifySignature",
+      "verb": "verify",
+      "capabilities": [
+        "crypto_sign"
+      ],
+      "params": [
+        [
+          "key",
+          "SecKeyRef",
+          false
+        ],
+        [
+          "algorithm",
+          "SecKeyAlgorithm",
+          false
+        ],
+        [
+          "signedData",
+          "CFDataRef",
+          false
+        ],
+        [
+          "signature",
+          "CFDataRef",
+          false
+        ],
+        [
+          "error",
+          "CFErrorRef",
+          true
+        ]
+      ],
+      "return_type": "Boolean",
+      "signature": "Boolean SecKeyVerifySignature(SecKeyRef key, SecKeyAlgorithm algorithm, CFDataRef signedData, CFDataRef signature, CFErrorRef *error)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Verify digital signature. Hardware-accelerated on Apple Silicon.",
+      "async_pattern": false
+    },
+    {
+      "name": "SecCertificateCreateWithData",
+      "verb": "create",
+      "capabilities": [
+        "crypto_sign"
+      ],
+      "params": [
+        [
+          "allocator",
+          "CFAllocatorRef",
+          true
+        ],
+        [
+          "data",
+          "CFDataRef",
+          false
+        ]
+      ],
+      "return_type": "SecCertificateRef",
+      "signature": "SecCertificateRef SecCertificateCreateWithData(CFAllocatorRef allocator, CFDataRef data)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Parse X.509 certificate from DER data.",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [],
+  "cross_link": true
+}

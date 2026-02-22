@@ -1,0 +1,543 @@
+{
+  "framework": "CommonCrypto",
+  "type_aliases": [
+    [
+      "CCAlgorithm",
+      "uint32_t"
+    ],
+    [
+      "CCRNGStatus",
+      "int32_t"
+    ],
+    [
+      "CCOperation",
+      "uint32_t"
+    ],
+    [
+      "CCOptions",
+      "uint32_t"
+    ],
+    [
+      "CCCryptorStatus",
+      "int32_t"
+    ],
+    [
+      "CCHmacAlgorithm",
+      "uint32_t"
+    ],
+    [
+      "CC_LONG",
+      "uint32_t"
+    ],
+    [
+      "CCCryptorRef",
+      "void *"
+    ]
+  ],
+  "entries": [
+    {
+      "name": "CCCryptorFinal",
+      "verb": "finalize",
+      "capabilities": [
+        "crypto_cipher"
+      ],
+      "params": [
+        [
+          "cryptorRef",
+          "CCCryptorRef",
+          false
+        ],
+        [
+          "dataOut",
+          "void",
+          true
+        ],
+        [
+          "dataOutAvailable",
+          "size_t",
+          false
+        ],
+        [
+          "dataOutMoved",
+          "size_t",
+          true
+        ]
+      ],
+      "return_type": "CCCryptorStatus",
+      "signature": "CCCryptorStatus CCCryptorFinal(CCCryptorRef cryptorRef, void *dataOut, size_t dataOutAvailable, size_t *dataOutMoved)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Finalize cipher operation. Handles padding for block ciphers.",
+      "async_pattern": false
+    },
+    {
+      "name": "CCKeyDerivationPBKDF",
+      "verb": "derive",
+      "capabilities": [
+        "crypto_kdf"
+      ],
+      "params": [
+        [
+          "algorithm",
+          "CCPBKDFAlgorithm",
+          false
+        ],
+        [
+          "password",
+          "char",
+          true
+        ],
+        [
+          "passwordLen",
+          "size_t",
+          false
+        ],
+        [
+          "salt",
+          "uint8_t",
+          true
+        ],
+        [
+          "saltLen",
+          "size_t",
+          false
+        ],
+        [
+          "prf",
+          "CCPseudoRandomAlgorithm",
+          false
+        ],
+        [
+          "rounds",
+          "uint",
+          false
+        ],
+        [
+          "derivedKey",
+          "uint8_t",
+          true
+        ],
+        [
+          "derivedKeyLen",
+          "size_t",
+          false
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int CCKeyDerivationPBKDF(CCPBKDFAlgorithm algorithm, const char *password, size_t passwordLen, const uint8_t *salt, size_t saltLen, CCPseudoRandomAlgorithm prf, uint rounds, uint8_t *derivedKey, size_t derivedKeyLen)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "PBKDF2 key derivation. Maps from OpenSSL PKCS5_PBKDF2_HMAC.",
+      "async_pattern": false
+    },
+    {
+      "name": "CCCryptorUpdate",
+      "verb": "update",
+      "capabilities": [
+        "crypto_cipher"
+      ],
+      "params": [
+        [
+          "cryptorRef",
+          "CCCryptorRef",
+          false
+        ],
+        [
+          "dataIn",
+          "void",
+          true
+        ],
+        [
+          "dataInLength",
+          "size_t",
+          false
+        ],
+        [
+          "dataOut",
+          "void",
+          true
+        ],
+        [
+          "dataOutAvailable",
+          "size_t",
+          false
+        ],
+        [
+          "dataOutMoved",
+          "size_t",
+          true
+        ]
+      ],
+      "return_type": "CCCryptorStatus",
+      "signature": "CCCryptorStatus CCCryptorUpdate(CCCryptorRef cryptorRef, const void *dataIn, size_t dataInLength, void *dataOut, size_t dataOutAvailable, size_t *dataOutMoved)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Process data through cipher. Streaming — call multiple times for large payloads.",
+      "async_pattern": false
+    },
+    {
+      "name": "CC_SHA256",
+      "verb": "hash",
+      "capabilities": [
+        "crypto_hash"
+      ],
+      "params": [
+        [
+          "data",
+          "void",
+          true
+        ],
+        [
+          "len",
+          "CC_LONG",
+          false
+        ],
+        [
+          "md",
+          "unsigned char",
+          true
+        ]
+      ],
+      "return_type": "unsigned char *",
+      "signature": "unsigned char *CC_SHA256(const void *data, CC_LONG len, unsigned char *md)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "One-shot SHA-256. Uses Apple Silicon SHA extensions for hardware acceleration.",
+      "async_pattern": false
+    },
+    {
+      "name": "CCCryptorCreate",
+      "verb": "create",
+      "capabilities": [
+        "crypto_cipher"
+      ],
+      "params": [
+        [
+          "op",
+          "CCOperation",
+          false
+        ],
+        [
+          "alg",
+          "CCAlgorithm",
+          false
+        ],
+        [
+          "options",
+          "CCOptions",
+          false
+        ],
+        [
+          "key",
+          "void",
+          true
+        ],
+        [
+          "keyLength",
+          "size_t",
+          false
+        ],
+        [
+          "iv",
+          "void",
+          true
+        ],
+        [
+          "cryptorRef",
+          "CCCryptorRef",
+          true
+        ]
+      ],
+      "return_type": "CCCryptorStatus",
+      "signature": "CCCryptorStatus CCCryptorCreate(CCOperation op, CCAlgorithm alg, CCOptions options, const void *key, size_t keyLength, const void *iv, CCCryptorRef *cryptorRef)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Create symmetric cipher context. Uses Apple's hardware AES engine on Apple Silicon.",
+      "async_pattern": false
+    },
+    {
+      "name": "CCCrypt",
+      "verb": "encrypt",
+      "capabilities": [
+        "crypto_cipher"
+      ],
+      "params": [
+        [
+          "op",
+          "CCOperation",
+          false
+        ],
+        [
+          "alg",
+          "CCAlgorithm",
+          false
+        ],
+        [
+          "options",
+          "CCOptions",
+          false
+        ],
+        [
+          "key",
+          "void",
+          true
+        ],
+        [
+          "keyLength",
+          "size_t",
+          false
+        ],
+        [
+          "iv",
+          "void",
+          true
+        ],
+        [
+          "dataIn",
+          "void",
+          true
+        ],
+        [
+          "dataInLength",
+          "size_t",
+          false
+        ],
+        [
+          "dataOut",
+          "void",
+          true
+        ],
+        [
+          "dataOutAvailable",
+          "size_t",
+          false
+        ],
+        [
+          "dataOutMoved",
+          "size_t",
+          true
+        ]
+      ],
+      "return_type": "CCCryptorStatus",
+      "signature": "CCCryptorStatus CCCrypt(CCOperation op, CCAlgorithm alg, CCOptions options, const void *key, size_t keyLength, const void *iv, const void *dataIn, size_t dataInLength, void *dataOut, size_t dataOutAvailable, size_t *dataOutMoved)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "One-shot encrypt/decrypt. Simpler API for single-buffer operations.",
+      "async_pattern": false
+    },
+    {
+      "name": "CCHmacInit",
+      "verb": "init",
+      "capabilities": [
+        "crypto_hmac"
+      ],
+      "params": [
+        [
+          "ctx",
+          "CCHmacContext",
+          true
+        ],
+        [
+          "algorithm",
+          "CCHmacAlgorithm",
+          false
+        ],
+        [
+          "key",
+          "void",
+          true
+        ],
+        [
+          "keyLength",
+          "size_t",
+          false
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void CCHmacInit(CCHmacContext *ctx, CCHmacAlgorithm algorithm, const void *key, size_t keyLength)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Initialize streaming HMAC context.",
+      "async_pattern": false
+    },
+    {
+      "name": "CCRandomGenerateBytes",
+      "verb": "generate",
+      "capabilities": [
+        "crypto_random"
+      ],
+      "params": [
+        [
+          "bytes",
+          "void",
+          true
+        ],
+        [
+          "count",
+          "size_t",
+          false
+        ]
+      ],
+      "return_type": "CCRNGStatus",
+      "signature": "CCRNGStatus CCRandomGenerateBytes(void *bytes, size_t count)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Cryptographically secure random bytes. Maps from OpenSSL RAND_bytes.",
+      "async_pattern": false
+    },
+    {
+      "name": "CC_SHA512",
+      "verb": "hash",
+      "capabilities": [
+        "crypto_hash"
+      ],
+      "params": [
+        [
+          "data",
+          "void",
+          true
+        ],
+        [
+          "len",
+          "CC_LONG",
+          false
+        ],
+        [
+          "md",
+          "unsigned char",
+          true
+        ]
+      ],
+      "return_type": "unsigned char *",
+      "signature": "unsigned char *CC_SHA512(const void *data, CC_LONG len, unsigned char *md)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "One-shot SHA-512. Hardware-accelerated on Apple Silicon.",
+      "async_pattern": false
+    },
+    {
+      "name": "CCHmac",
+      "verb": "hmac",
+      "capabilities": [
+        "crypto_hmac"
+      ],
+      "params": [
+        [
+          "algorithm",
+          "CCHmacAlgorithm",
+          false
+        ],
+        [
+          "key",
+          "void",
+          true
+        ],
+        [
+          "keyLength",
+          "size_t",
+          false
+        ],
+        [
+          "data",
+          "void",
+          true
+        ],
+        [
+          "dataLength",
+          "size_t",
+          false
+        ],
+        [
+          "macOut",
+          "void",
+          true
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void CCHmac(CCHmacAlgorithm algorithm, const void *key, size_t keyLength, const void *data, size_t dataLength, void *macOut)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "One-shot HMAC. Uses hardware SHA for the inner hash.",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [
+    {
+      "framework": "CommonCrypto",
+      "group": "CC_SHA256",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "CC_SHA256",
+          "role": "Use",
+          "args_hint": "const void *data, CC_LONG len, unsigned char *md",
+          "returns": "unsigned char *",
+          "notes": ""
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "import ctypes\n\n_cc = ctypes.CDLL('/usr/lib/libSystem.B.dylib')\n\ndef cc_sha256(data):\n    # data: bytes → 32-byte SHA-256 digest\n    md = (ctypes.c_ubyte * 32)()\n    _cc.CC_SHA256.restype = ctypes.c_void_p\n    _cc.CC_SHA256(data, ctypes.c_uint32(len(data)), md)\n    return bytes(md)\n"
+    },
+    {
+      "framework": "CommonCrypto",
+      "group": "CC_SHA512",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "CC_SHA512",
+          "role": "Use",
+          "args_hint": "const void *data, CC_LONG len, unsigned char *md",
+          "returns": "unsigned char *",
+          "notes": ""
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "import ctypes\n\n_cc = ctypes.CDLL('/usr/lib/libSystem.B.dylib')\n\ndef cc_sha512(data):\n    # data: bytes → 64-byte SHA-512 digest\n    md = (ctypes.c_ubyte * 64)()\n    _cc.CC_SHA512.restype = ctypes.c_void_p\n    _cc.CC_SHA512(data, ctypes.c_uint32(len(data)), md)\n    return bytes(md)\n"
+    },
+    {
+      "framework": "CommonCrypto",
+      "group": "CCHmac",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "CCHmac",
+          "role": "Use",
+          "args_hint": "CCHmacAlgorithm algorithm, const void *key, size_t keyLength, const void *data, size_t dataLength, void *macOut",
+          "returns": "void",
+          "notes": ""
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "import ctypes\n\n_cc = ctypes.CDLL('/usr/lib/libSystem.B.dylib')\n\ndef cc_hmac_sha256(key, data):\n    # key: bytes, data: bytes → 32-byte HMAC-SHA256\n    # kCCHmacAlgSHA256 = 2\n    mac = (ctypes.c_ubyte * 32)()\n    _cc.CCHmac(ctypes.c_uint32(2), key, ctypes.c_size_t(len(key)),\n               data, ctypes.c_size_t(len(data)), mac)\n    return bytes(mac)\n"
+    },
+    {
+      "framework": "CommonCrypto",
+      "group": "CCCrypt_AES_CBC",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "CCCrypt",
+          "role": "Use",
+          "args_hint": "CCOperation op, CCAlgorithm alg, CCOptions options, const void *key, size_t keyLength, const void *iv, const void *dataIn, size_t dataInLength, void *dataOut, size_t dataOutAvailable, size_t *dataOutMoved",
+          "returns": "CCCryptorStatus",
+          "notes": "One-shot AES-CBC encrypt/decrypt"
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "import ctypes\n\n_cc = ctypes.CDLL('/usr/lib/libSystem.B.dylib')\n\ndef cc_aes_cbc_encrypt(key, iv, plaintext):\n    # key: 16/24/32 bytes, iv: 16 bytes, plaintext: bytes\n    # kCCEncrypt=0, kCCAlgorithmAES=0, kCCOptionPKCS7Padding=1\n    out_len = len(plaintext) + 16  # padding headroom\n    out = (ctypes.c_ubyte * out_len)()\n    moved = ctypes.c_size_t(0)\n    status = _cc.CCCrypt(\n        ctypes.c_uint32(0), ctypes.c_uint32(0), ctypes.c_uint32(1),\n        key, ctypes.c_size_t(len(key)),\n        iv,\n        plaintext, ctypes.c_size_t(len(plaintext)),\n        out, ctypes.c_size_t(out_len),\n        ctypes.byref(moved))\n    if status != 0:\n        raise RuntimeError(f'CCCrypt failed: {status}')\n    return bytes(out[:moved.value])\n"
+    }
+  ],
+  "cross_link": true
+}

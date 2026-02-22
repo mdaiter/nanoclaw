@@ -1,0 +1,152 @@
+{
+  "framework": "CUDA",
+  "type_aliases": [
+    ["cufftHandle", "int"],
+    ["cufftResult", "int"],
+    ["cufftComplex", "float2"],
+    ["cufftDoubleComplex", "double2"],
+    ["cufftType", "int"]
+  ],
+  "entries": [
+    {
+      "name": "cufftPlan1d",
+      "verb": "plan",
+      "capabilities": ["cufft_plan"],
+      "params": [
+        ["plan", "cufftHandle", true],
+        ["nx", "int", false],
+        ["type", "cufftType", false],
+        ["batch", "int", false]
+      ],
+      "return_type": "cufftResult",
+      "signature": "cufftResult cufftPlan1d(cufftHandle *plan, int nx, cufftType type, int batch)",
+      "input_formats": [],
+      "output_formats": ["cufftHandle"],
+      "notes": "Create 1D FFT plan. Replaces np.fft.fft.",
+      "async_pattern": false
+    },
+    {
+      "name": "cufftPlanMany",
+      "verb": "plan",
+      "capabilities": ["cufft_plan", "cufft_batch"],
+      "params": [
+        ["plan", "cufftHandle", true],
+        ["rank", "int", false],
+        ["n", "int", true],
+        ["batch", "int", false]
+      ],
+      "return_type": "cufftResult",
+      "signature": "cufftResult cufftPlanMany(cufftHandle *plan, int rank, int *n, int *inembed, int istride, int idist, int *onembed, int ostride, int odist, cufftType type, int batch)",
+      "input_formats": [],
+      "output_formats": ["cufftHandle"],
+      "notes": "Create batched FFT plan. For processing multiple signals in parallel.",
+      "async_pattern": false
+    },
+    {
+      "name": "cufftExecR2C",
+      "verb": "transform",
+      "capabilities": ["cufft_exec", "gpu_compute"],
+      "params": [
+        ["plan", "cufftHandle", false],
+        ["idata", "float", true],
+        ["odata", "cufftComplex", true]
+      ],
+      "return_type": "cufftResult",
+      "signature": "cufftResult cufftExecR2C(cufftHandle plan, cufftReal *idata, cufftComplex *odata)",
+      "input_formats": ["float32_array"],
+      "output_formats": ["complex64_array"],
+      "notes": "Real-to-complex FFT. Replaces np.fft.rfft. GPU-accelerated.",
+      "async_pattern": true
+    },
+    {
+      "name": "cufftExecC2C",
+      "verb": "transform",
+      "capabilities": ["cufft_exec", "gpu_compute"],
+      "params": [
+        ["plan", "cufftHandle", false],
+        ["idata", "cufftComplex", true],
+        ["odata", "cufftComplex", true],
+        ["direction", "int", false]
+      ],
+      "return_type": "cufftResult",
+      "signature": "cufftResult cufftExecC2C(cufftHandle plan, cufftComplex *idata, cufftComplex *odata, int direction)",
+      "input_formats": ["complex64_array"],
+      "output_formats": ["complex64_array"],
+      "notes": "Complex-to-complex FFT. Replaces np.fft.fft. GPU-accelerated.",
+      "async_pattern": true
+    },
+    {
+      "name": "cufftExecC2R",
+      "verb": "transform",
+      "capabilities": ["cufft_exec", "gpu_compute"],
+      "params": [
+        ["plan", "cufftHandle", false],
+        ["idata", "cufftComplex", true],
+        ["odata", "float", true]
+      ],
+      "return_type": "cufftResult",
+      "signature": "cufftResult cufftExecC2R(cufftHandle plan, cufftComplex *idata, cufftReal *odata)",
+      "input_formats": ["complex64_array"],
+      "output_formats": ["float32_array"],
+      "notes": "Complex-to-real inverse FFT. Replaces np.fft.irfft.",
+      "async_pattern": true
+    },
+    {
+      "name": "cufftDestroy",
+      "verb": "destroy",
+      "capabilities": ["cufft_plan"],
+      "params": [
+        ["plan", "cufftHandle", false]
+      ],
+      "return_type": "cufftResult",
+      "signature": "cufftResult cufftDestroy(cufftHandle plan)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Destroy FFT plan.",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [
+    {
+      "framework": "CUDA",
+      "group": "CufftR2C",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "cufftPlan1d",
+          "role": "Create",
+          "args_hint": "&plan, n, CUFFT_R2C, 1",
+          "returns": "cufftResult",
+          "notes": "Create 1D real-to-complex FFT plan."
+        },
+        {
+          "order": 1,
+          "function": "cufftExecR2C",
+          "role": "Use",
+          "args_hint": "plan, d_input, d_output",
+          "returns": "cufftResult",
+          "notes": "Execute real-to-complex FFT on GPU. Output has n/2+1 complex elements."
+        },
+        {
+          "order": 2,
+          "function": "cufftDestroy",
+          "role": "Destroy",
+          "args_hint": "plan",
+          "returns": "cufftResult",
+          "notes": "Destroy FFT plan when done."
+        }
+      ],
+      "constants": [
+        {"name": "CUFFT_SUCCESS", "value": "0", "source": "cufft.h"},
+        {"name": "CUFFT_R2C", "value": "42", "source": "cufft.h"},
+        {"name": "CUFFT_C2R", "value": "44", "source": "cufft.h"},
+        {"name": "CUFFT_C2C", "value": "41", "source": "cufft.h"}
+      ],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "#include <cufft.h>\n#include <cuda_runtime.h>\n#include <stdio.h>\n\n#define CUFFT_CHECK(call) { cufftResult e = call; if (e != CUFFT_SUCCESS) { fprintf(stderr, \"cuFFT error %d at %s:%d\\n\", e, __FILE__, __LINE__); exit(1); } }\n\nvoid gpu_rfft(const float* input, cufftComplex* output, int n) {\n    cufftHandle plan;\n    CUFFT_CHECK(cufftPlan1d(&plan, n, CUFFT_R2C, 1));\n    float* d_input;\n    cufftComplex* d_output;\n    cudaMalloc(&d_input, n * sizeof(float));\n    cudaMalloc(&d_output, (n/2+1) * sizeof(cufftComplex));\n    cudaMemcpy(d_input, input, n * sizeof(float), cudaMemcpyHostToDevice);\n    CUFFT_CHECK(cufftExecR2C(plan, d_input, d_output));\n    cudaMemcpy(output, d_output, (n/2+1) * sizeof(cufftComplex), cudaMemcpyDeviceToHost);\n    cufftDestroy(plan);\n    cudaFree(d_input);\n    cudaFree(d_output);\n}"
+    }
+  ],
+  "cross_link": true
+}

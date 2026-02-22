@@ -1,0 +1,360 @@
+{
+  "framework": "POSIX",
+  "type_aliases": [],
+  "entries": [
+    {
+      "name": "splice",
+      "verb": "transfer",
+      "capabilities": [
+        "io_zerocopy"
+      ],
+      "params": [
+        [
+          "fd_in",
+          "int",
+          false
+        ],
+        [
+          "off_in",
+          "loff_t",
+          true
+        ],
+        [
+          "fd_out",
+          "int",
+          false
+        ],
+        [
+          "off_out",
+          "loff_t",
+          true
+        ],
+        [
+          "len",
+          "size_t",
+          false
+        ],
+        [
+          "flags",
+          "unsigned int",
+          false
+        ]
+      ],
+      "return_type": "ssize_t",
+      "signature": "ssize_t splice(int fd_in, loff_t *off_in, int fd_out, loff_t *off_out, size_t len, unsigned int flags)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Zero-copy pipe splice. Linux 2.6.17+. One fd must be a pipe.",
+      "async_pattern": false
+    },
+    {
+      "name": "io_uring_enter",
+      "verb": "poll",
+      "capabilities": [
+        "io_poll"
+      ],
+      "params": [
+        [
+          "fd",
+          "unsigned int",
+          false
+        ],
+        [
+          "to_submit",
+          "unsigned int",
+          false
+        ],
+        [
+          "min_complete",
+          "unsigned int",
+          false
+        ],
+        [
+          "flags",
+          "unsigned int",
+          false
+        ],
+        [
+          "sig",
+          "sigset_t",
+          true
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int io_uring_enter(unsigned int fd, unsigned int to_submit, unsigned int min_complete, unsigned int flags, sigset_t *sig)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Linux 5.1+ async I/O. Submit + complete in 1 syscall. Zero-syscall fast path.",
+      "async_pattern": false
+    },
+    {
+      "name": "mmap",
+      "verb": "map",
+      "capabilities": [
+        "io_mmap"
+      ],
+      "params": [
+        [
+          "addr",
+          "void",
+          true
+        ],
+        [
+          "length",
+          "size_t",
+          false
+        ],
+        [
+          "prot",
+          "int",
+          false
+        ],
+        [
+          "flags",
+          "int",
+          false
+        ],
+        [
+          "fd",
+          "int",
+          false
+        ],
+        [
+          "offset",
+          "off_t",
+          false
+        ]
+      ],
+      "return_type": "void *",
+      "signature": "void *mmap(void *addr, size_t length, int prot, int flags, int fd, off_t offset)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Map file into address space. Avoids read()/write() entirely for random access.",
+      "async_pattern": false
+    },
+    {
+      "name": "writev",
+      "verb": "write",
+      "capabilities": [
+        "io_writev",
+        "io_write"
+      ],
+      "params": [
+        [
+          "fd",
+          "int",
+          false
+        ],
+        [
+          "iov",
+          "struct iovec",
+          true
+        ],
+        [
+          "iovcnt",
+          "int",
+          false
+        ]
+      ],
+      "return_type": "ssize_t",
+      "signature": "ssize_t writev(int fd, const struct iovec *iov, int iovcnt)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Vectored write: batch N buffers into 1 syscall. Replaces write() loops.",
+      "async_pattern": false
+    },
+    {
+      "name": "copy_file_range",
+      "verb": "transfer",
+      "capabilities": [
+        "io_zerocopy"
+      ],
+      "params": [
+        [
+          "fd_in",
+          "int",
+          false
+        ],
+        [
+          "off_in",
+          "loff_t",
+          true
+        ],
+        [
+          "fd_out",
+          "int",
+          false
+        ],
+        [
+          "off_out",
+          "loff_t",
+          true
+        ],
+        [
+          "len",
+          "size_t",
+          false
+        ],
+        [
+          "flags",
+          "unsigned int",
+          false
+        ]
+      ],
+      "return_type": "ssize_t",
+      "signature": "ssize_t copy_file_range(int fd_in, loff_t *off_in, int fd_out, loff_t *off_out, size_t len, unsigned int flags)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Zero-copy file-to-file. Linux 4.5+. Avoids read()+write() round-trip.",
+      "async_pattern": false
+    },
+    {
+      "name": "readv",
+      "verb": "read",
+      "capabilities": [
+        "io_readv",
+        "io_read"
+      ],
+      "params": [
+        [
+          "fd",
+          "int",
+          false
+        ],
+        [
+          "iov",
+          "struct iovec",
+          true
+        ],
+        [
+          "iovcnt",
+          "int",
+          false
+        ]
+      ],
+      "return_type": "ssize_t",
+      "signature": "ssize_t readv(int fd, const struct iovec *iov, int iovcnt)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Vectored read: scatter into N buffers in 1 syscall. Replaces read() loops.",
+      "async_pattern": false
+    },
+    {
+      "name": "sendfile",
+      "verb": "transfer",
+      "capabilities": [
+        "io_zerocopy"
+      ],
+      "params": [
+        [
+          "out_fd",
+          "int",
+          false
+        ],
+        [
+          "in_fd",
+          "int",
+          false
+        ],
+        [
+          "offset",
+          "off_t",
+          true
+        ],
+        [
+          "count",
+          "size_t",
+          false
+        ]
+      ],
+      "return_type": "ssize_t",
+      "signature": "ssize_t sendfile(int out_fd, int in_fd, off_t *offset, size_t count)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Zero-copy kernel-to-kernel transfer. No user-space buffer needed.",
+      "async_pattern": false
+    },
+    {
+      "name": "kevent",
+      "verb": "poll",
+      "capabilities": [
+        "io_poll"
+      ],
+      "params": [
+        [
+          "kq",
+          "int",
+          false
+        ],
+        [
+          "changelist",
+          "struct kevent",
+          true
+        ],
+        [
+          "nchanges",
+          "int",
+          false
+        ],
+        [
+          "eventlist",
+          "struct kevent",
+          true
+        ],
+        [
+          "nevents",
+          "int",
+          false
+        ],
+        [
+          "timeout",
+          "struct timespec",
+          true
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int kevent(int kq, const struct kevent *changelist, int nchanges, struct kevent *eventlist, int nevents, const struct timespec *timeout)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "macOS/BSD event notification. Batch register + wait in 1 syscall.",
+      "async_pattern": false
+    },
+    {
+      "name": "epoll_wait",
+      "verb": "poll",
+      "capabilities": [
+        "io_poll"
+      ],
+      "params": [
+        [
+          "epfd",
+          "int",
+          false
+        ],
+        [
+          "events",
+          "struct epoll_event",
+          true
+        ],
+        [
+          "maxevents",
+          "int",
+          false
+        ],
+        [
+          "timeout",
+          "int",
+          false
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int epoll_wait(int epfd, struct epoll_event *events, int maxevents, int timeout)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Linux event notification. O(ready) not O(total).",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [],
+  "cross_link": true
+}

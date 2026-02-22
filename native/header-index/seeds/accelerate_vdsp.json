@@ -1,0 +1,184 @@
+{
+  "framework": "Accelerate",
+  "type_aliases": [
+    ["vDSP_Length", "unsigned long"],
+    ["vDSP_Stride", "long"]
+  ],
+  "entries": [
+    {
+      "name": "vDSP_vsmsa",
+      "verb": "normalize",
+      "capabilities": [
+        "vector_normalize",
+        "vector_math"
+      ],
+      "params": [
+        ["__A", "float", true],
+        ["__IA", "vDSP_Stride", false],
+        ["__B", "float", true],
+        ["__C", "float", true],
+        ["__D", "float", true],
+        ["__ID", "vDSP_Stride", false],
+        ["__N", "vDSP_Length", false]
+      ],
+      "return_type": "void",
+      "signature": "void vDSP_vsmsa(const float *__A, vDSP_Stride __IA, const float *__B, const float *__C, float *__D, vDSP_Stride __ID, vDSP_Length __N)",
+      "input_formats": ["float32_array"],
+      "output_formats": ["float32_array"],
+      "notes": "Vector scalar multiply and scalar add: D[i] = A[i] * B + C. Single call replaces multiply + subtract. Ideal for channel normalization (pixel * scale + offset).",
+      "async_pattern": false
+    },
+    {
+      "name": "vDSP_vsmsb",
+      "verb": "normalize",
+      "capabilities": [
+        "vector_normalize",
+        "vector_math"
+      ],
+      "params": [
+        ["__A", "float", true],
+        ["__IA", "vDSP_Stride", false],
+        ["__B", "float", true],
+        ["__C", "float", true],
+        ["__IC", "vDSP_Stride", false],
+        ["__D", "float", true],
+        ["__ID", "vDSP_Stride", false],
+        ["__N", "vDSP_Length", false]
+      ],
+      "return_type": "void",
+      "signature": "void vDSP_vsmsb(const float *__A, vDSP_Stride __IA, const float *__B, const float *__C, vDSP_Stride __IC, float *__D, vDSP_Stride __ID, vDSP_Length __N)",
+      "input_formats": ["float32_array"],
+      "output_formats": ["float32_array"],
+      "notes": "Vector scalar multiply and vector subtract: D[i] = A[i] * B - C[i]. Useful for (pixel * scale - mean) in one pass.",
+      "async_pattern": false
+    },
+    {
+      "name": "vDSP_vdiv",
+      "verb": "divide",
+      "capabilities": [
+        "vector_math"
+      ],
+      "params": [
+        ["__B", "float", true],
+        ["__IB", "vDSP_Stride", false],
+        ["__A", "float", true],
+        ["__IA", "vDSP_Stride", false],
+        ["__C", "float", true],
+        ["__IC", "vDSP_Stride", false],
+        ["__N", "vDSP_Length", false]
+      ],
+      "return_type": "void",
+      "signature": "void vDSP_vdiv(const float *__B, vDSP_Stride __IB, const float *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N)",
+      "input_formats": ["float32_array"],
+      "output_formats": ["float32_array"],
+      "notes": "Vector divide: C[i] = A[i] / B[i]. Note unusual arg order: divisor B comes first.",
+      "async_pattern": false
+    },
+    {
+      "name": "vDSP_vsmul",
+      "verb": "scale",
+      "capabilities": [
+        "vector_normalize",
+        "vector_math"
+      ],
+      "params": [
+        ["__A", "float", true],
+        ["__IA", "vDSP_Stride", false],
+        ["__B", "float", true],
+        ["__C", "float", true],
+        ["__IC", "vDSP_Stride", false],
+        ["__N", "vDSP_Length", false]
+      ],
+      "return_type": "void",
+      "signature": "void vDSP_vsmul(const float *__A, vDSP_Stride __IA, const float *__B, float *__C, vDSP_Stride __IC, vDSP_Length __N)",
+      "input_formats": ["float32_array"],
+      "output_formats": ["float32_array"],
+      "notes": "Vector scalar multiply: C[i] = A[i] * B. Faster than numpy scalar multiply for large arrays.",
+      "async_pattern": false
+    },
+    {
+      "name": "vDSP_vsadd",
+      "verb": "offset",
+      "capabilities": [
+        "vector_normalize",
+        "vector_math"
+      ],
+      "params": [
+        ["__A", "float", true],
+        ["__IA", "vDSP_Stride", false],
+        ["__B", "float", true],
+        ["__C", "float", true],
+        ["__IC", "vDSP_Stride", false],
+        ["__N", "vDSP_Length", false]
+      ],
+      "return_type": "void",
+      "signature": "void vDSP_vsadd(const float *__A, vDSP_Stride __IA, const float *__B, float *__C, vDSP_Stride __IC, vDSP_Length __N)",
+      "input_formats": ["float32_array"],
+      "output_formats": ["float32_array"],
+      "notes": "Vector scalar add: C[i] = A[i] + B. Useful for bias/offset operations.",
+      "async_pattern": false
+    },
+    {
+      "name": "vDSP_vfltu8",
+      "verb": "convert",
+      "capabilities": [
+        "vector_normalize",
+        "vector_convert"
+      ],
+      "params": [
+        ["__A", "unsigned char", true],
+        ["__IA", "vDSP_Stride", false],
+        ["__C", "float", true],
+        ["__IC", "vDSP_Stride", false],
+        ["__N", "vDSP_Length", false]
+      ],
+      "return_type": "void",
+      "signature": "void vDSP_vfltu8(const unsigned char *__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N)",
+      "input_formats": ["uint8_array"],
+      "output_formats": ["float32_array"],
+      "notes": "Convert unsigned uint8 array to float32 in one vectorized pass. Use this (not vDSP_vflt8 which is signed char). Replaces arr.astype(np.float32). Chain with vDSP_vsmsa for fused convert+normalize.",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [
+    {
+      "framework": "Accelerate",
+      "group": "vDSP_vsmsa",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "vDSP_vsmsa",
+          "role": "Use",
+          "args_hint": "const float *A, vDSP_Stride IA, const float *B, const float *C, float *D, vDSP_Stride ID, vDSP_Length N",
+          "returns": "void",
+          "notes": "D[i] = A[i] * B + C. For ImageNet normalize: scale = 1/(255*std), offset = -mean/std. One call per channel replaces 3 numpy ops (divide + subtract + divide)."
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "import ctypes, numpy as np\n_acc = ctypes.CDLL('/System/Library/Frameworks/Accelerate.framework/Accelerate')\n\ndef vdsp_normalize_channel(uint8_channel, mean, std):\n    \"\"\"Normalize a single uint8 image channel to float32: (pixel/255 - mean) / std.\n    Equivalent to: (arr.astype(float32) / 255.0 - mean) / std\n    Uses vDSP_vfltu8 (unsigned uint8->float) + vDSP_vsmsa (scale+add) in 2 native calls\n    instead of 3 numpy operations.\"\"\"\n    ch = np.ascontiguousarray(uint8_channel)  # ensure contiguous for stride=1\n    n = ch.size\n    fp = np.empty(n, dtype=np.float32)\n    # Step 1: uint8 -> float32 (5-arg: A, IA, C, IC, N)\n    _acc.vDSP_vfltu8(ch.ctypes.data_as(ctypes.POINTER(ctypes.c_ubyte)),\n                     ctypes.c_long(1),\n                     fp.ctypes.data_as(ctypes.POINTER(ctypes.c_float)),\n                     ctypes.c_long(1), ctypes.c_ulong(n))\n    # Step 2: D[i] = fp[i] * (1/(255*std)) + (-mean/std)  -- fused scale+offset\n    scale = ctypes.c_float(1.0 / (255.0 * std))\n    offset = ctypes.c_float(-mean / std)\n    _acc.vDSP_vsmsa(fp.ctypes.data_as(ctypes.POINTER(ctypes.c_float)), ctypes.c_long(1),\n                    ctypes.byref(scale), ctypes.byref(offset),\n                    fp.ctypes.data_as(ctypes.POINTER(ctypes.c_float)), ctypes.c_long(1),\n                    ctypes.c_ulong(n))\n    return fp.reshape(uint8_channel.shape)"
+    },
+    {
+      "framework": "Accelerate",
+      "group": "vDSP_vfltu8",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "vDSP_vfltu8",
+          "role": "Use",
+          "args_hint": "const unsigned char *A, vDSP_Stride IA, float *C, vDSP_Stride IC, vDSP_Length N",
+          "returns": "void",
+          "notes": "Convert unsigned uint8 array to float32 vectorized. Use vDSP_vfltu8 (not vDSP_vflt8 which takes signed char). Much faster than numpy astype(float32) for large arrays."
+        }
+      ],
+      "constants": [],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "import ctypes, numpy as np\n_acc = ctypes.CDLL('/System/Library/Frameworks/Accelerate.framework/Accelerate')\n\ndef vdsp_uint8_to_float(arr_u8):\n    \"\"\"Convert uint8 numpy array to float32 using vectorized vDSP.\n    Uses vDSP_vfltu8 (unsigned). Do NOT use vDSP_vflt8 — that takes signed char,\n    so pixel values 128-255 become negative floats.\"\"\"\n    arr = np.ascontiguousarray(arr_u8)  # ensure contiguous for stride=1\n    n = arr.size\n    out = np.empty(n, dtype=np.float32)\n    # 5-arg signature: A, IA, C, IC, N\n    _acc.vDSP_vfltu8(arr.ctypes.data_as(ctypes.POINTER(ctypes.c_ubyte)),\n                     ctypes.c_long(1),\n                     out.ctypes.data_as(ctypes.POINTER(ctypes.c_float)),\n                     ctypes.c_long(1), ctypes.c_ulong(n))\n    return out.reshape(arr_u8.shape)"
+    }
+  ],
+  "cross_link": true
+}

@@ -1,0 +1,179 @@
+{
+  "framework": "Network",
+  "type_aliases": [
+    [
+      "nw_listener_t",
+      "void *"
+    ],
+    [
+      "nw_connection_t",
+      "void *"
+    ],
+    [
+      "nw_content_context_t",
+      "void *"
+    ],
+    [
+      "dispatch_data_t",
+      "void *"
+    ],
+    [
+      "nw_parameters_t",
+      "void *"
+    ],
+    [
+      "nw_endpoint_t",
+      "void *"
+    ]
+  ],
+  "entries": [
+    {
+      "name": "nw_connection_send",
+      "verb": "send",
+      "capabilities": [
+        "io_write",
+        "io_zerocopy"
+      ],
+      "params": [
+        [
+          "connection",
+          "nw_connection_t",
+          false
+        ],
+        [
+          "content",
+          "dispatch_data_t",
+          false
+        ],
+        [
+          "context",
+          "nw_content_context_t",
+          false
+        ],
+        [
+          "is_complete",
+          "bool",
+          false
+        ],
+        [
+          "completion",
+          "nw_connection_send_completion_t",
+          false
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void nw_connection_send(nw_connection_t connection, dispatch_data_t content, nw_content_context_t context, bool is_complete, nw_connection_send_completion_t completion)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Send data on connection. Zero-copy via dispatch_data. Async completion handler.",
+      "async_pattern": true
+    },
+    {
+      "name": "nw_listener_set_new_connection_handler",
+      "verb": "listen",
+      "capabilities": [
+        "io_poll"
+      ],
+      "params": [
+        [
+          "listener",
+          "nw_listener_t",
+          false
+        ],
+        [
+          "handler",
+          "nw_listener_new_connection_handler_t",
+          false
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void nw_listener_set_new_connection_handler(nw_listener_t listener, nw_listener_new_connection_handler_t handler)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Set handler for incoming connections. Replaces accept() loop with event-driven model.",
+      "async_pattern": true
+    },
+    {
+      "name": "nw_connection_create",
+      "verb": "create",
+      "capabilities": [
+        "io_socket"
+      ],
+      "params": [
+        [
+          "endpoint",
+          "nw_endpoint_t",
+          false
+        ],
+        [
+          "parameters",
+          "nw_parameters_t",
+          false
+        ]
+      ],
+      "return_type": "nw_connection_t",
+      "signature": "nw_connection_t nw_connection_create(nw_endpoint_t endpoint, nw_parameters_t parameters)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Create network connection. Kernel-bypass on Apple Silicon for reduced latency.",
+      "async_pattern": true
+    },
+    {
+      "name": "nw_connection_receive",
+      "verb": "receive",
+      "capabilities": [
+        "io_read"
+      ],
+      "params": [
+        [
+          "connection",
+          "nw_connection_t",
+          false
+        ],
+        [
+          "minimum_incomplete_length",
+          "uint32_t",
+          false
+        ],
+        [
+          "maximum_length",
+          "uint32_t",
+          false
+        ],
+        [
+          "completion",
+          "nw_connection_receive_completion_t",
+          false
+        ]
+      ],
+      "return_type": "void",
+      "signature": "void nw_connection_receive(nw_connection_t connection, uint32_t minimum_incomplete_length, uint32_t maximum_length, nw_connection_receive_completion_t completion)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Receive data from connection. Async — invokes completion with data.",
+      "async_pattern": true
+    },
+    {
+      "name": "nw_listener_create",
+      "verb": "create",
+      "capabilities": [
+        "io_socket"
+      ],
+      "params": [
+        [
+          "parameters",
+          "nw_parameters_t",
+          false
+        ]
+      ],
+      "return_type": "nw_listener_t",
+      "signature": "nw_listener_t nw_listener_create(nw_parameters_t parameters)",
+      "input_formats": [],
+      "output_formats": [],
+      "notes": "Create network listener. Replaces socket()+bind()+listen() with kernel-optimized path.",
+      "async_pattern": true
+    }
+  ],
+  "protocols": [],
+  "cross_link": true
+}

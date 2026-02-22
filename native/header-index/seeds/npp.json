@@ -1,0 +1,134 @@
+{
+  "framework": "CUDA",
+  "type_aliases": [
+    ["NppStatus", "int"],
+    ["NppiSize", "struct { int width; int height; }"],
+    ["NppiRect", "struct { int x; int y; int width; int height; }"],
+    ["NppiInterpolationMode", "int"],
+    ["Npp8u", "unsigned char"],
+    ["Npp32f", "float"]
+  ],
+  "entries": [
+    {
+      "name": "nppiResize_8u_C3R",
+      "verb": "resize",
+      "capabilities": [
+        "gpu_image_scale",
+        "image_scale",
+        "gpu_compute"
+      ],
+      "params": [
+        ["pSrc", "Npp8u", true],
+        ["nSrcStep", "int", false],
+        ["oSrcSize", "NppiSize", false],
+        ["oSrcROI", "NppiRect", false],
+        ["pDst", "Npp8u", true],
+        ["nDstStep", "int", false],
+        ["oDstSize", "NppiSize", false],
+        ["oDstROI", "NppiRect", false],
+        ["eInterpolation", "int", false]
+      ],
+      "return_type": "NppStatus",
+      "signature": "NppStatus nppiResize_8u_C3R(const Npp8u *pSrc, int nSrcStep, NppiSize oSrcSize, NppiRect oSrcROI, Npp8u *pDst, int nDstStep, NppiSize oDstSize, NppiRect oDstROI, int eInterpolation)",
+      "input_formats": ["uint8_3ch"],
+      "output_formats": ["uint8_3ch"],
+      "notes": "GPU-accelerated image resize for 3-channel uint8 images. Supports nearest, linear, cubic, super, Lanczos interpolation. Data must already be in GPU memory.",
+      "async_pattern": true
+    },
+    {
+      "name": "nppiFilterGauss_8u_C3R",
+      "verb": "blur",
+      "capabilities": [
+        "image_convolve",
+        "gpu_compute"
+      ],
+      "params": [
+        ["pSrc", "Npp8u", true],
+        ["nSrcStep", "int", false],
+        ["pDst", "Npp8u", true],
+        ["nDstStep", "int", false],
+        ["oSizeROI", "NppiSize", false],
+        ["eMaskSize", "int", false]
+      ],
+      "return_type": "NppStatus",
+      "signature": "NppStatus nppiFilterGauss_8u_C3R(const Npp8u *pSrc, int nSrcStep, Npp8u *pDst, int nDstStep, NppiSize oSizeROI, NppiMaskSize eMaskSize)",
+      "input_formats": ["uint8_3ch"],
+      "output_formats": ["uint8_3ch"],
+      "notes": "GPU-accelerated Gaussian blur for 3-channel uint8. Predefined kernel sizes (3x3, 5x5, 7x7). Data must be in GPU memory.",
+      "async_pattern": true
+    },
+    {
+      "name": "nppiNormL2_32f_C1R",
+      "verb": "norm",
+      "capabilities": [
+        "gpu_vector_math",
+        "vector_math",
+        "gpu_compute"
+      ],
+      "params": [
+        ["pSrc", "Npp32f", true],
+        ["nSrcStep", "int", false],
+        ["oSizeROI", "NppiSize", false],
+        ["pNorm", "Npp32f", true]
+      ],
+      "return_type": "NppStatus",
+      "signature": "NppStatus nppiNormL2_32f_C1R(const Npp32f *pSrc, int nSrcStep, NppiSize oSizeROI, Npp32f *pNorm)",
+      "input_formats": ["float32_image"],
+      "output_formats": ["float32_scalar"],
+      "notes": "L2 norm of a single-channel float image region. Useful for error metrics and convergence checks.",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [
+    {
+      "framework": "CUDA",
+      "group": "NppImagePipeline",
+      "prerequisites": [],
+      "steps": [
+        {
+          "order": 0,
+          "function": "cudaMalloc",
+          "role": "Create",
+          "args_hint": "&d_src, width * height * channels",
+          "returns": "cudaError_t",
+          "notes": "Allocate GPU memory for source image. Use cudaMallocPitch for 2D data to get proper row alignment."
+        },
+        {
+          "order": 1,
+          "function": "cudaMemcpy2D",
+          "role": "Use",
+          "args_hint": "d_src, pitch, h_src, width*channels, width*channels, height, cudaMemcpyHostToDevice",
+          "returns": "cudaError_t",
+          "notes": "Upload image to GPU. For Jetson unified memory, use cudaMallocManaged instead — zero-copy."
+        },
+        {
+          "order": 2,
+          "function": "nppiResize_8u_C3R",
+          "role": "Use",
+          "args_hint": "d_src, srcStep, srcSize, srcROI, d_dst, dstStep, dstSize, dstROI, NPPI_INTER_LINEAR",
+          "returns": "NppStatus",
+          "notes": "GPU image resize. Chain multiple NPP calls on the same GPU data without downloading."
+        },
+        {
+          "order": 3,
+          "function": "cudaMemcpy2D",
+          "role": "Use",
+          "args_hint": "h_dst, width*channels, d_dst, pitch, width*channels, height, cudaMemcpyDeviceToHost",
+          "returns": "cudaError_t",
+          "notes": "Download result from GPU. Skip this if the next operation also runs on GPU."
+        }
+      ],
+      "constants": [
+        {"name": "NPPI_INTER_NN", "value": "1", "source": "nppi.h"},
+        {"name": "NPPI_INTER_LINEAR", "value": "2", "source": "nppi.h"},
+        {"name": "NPPI_INTER_CUBIC", "value": "4", "source": "nppi.h"},
+        {"name": "NPPI_INTER_SUPER", "value": "8", "source": "nppi.h"},
+        {"name": "NPPI_INTER_LANCZOS", "value": "16", "source": "nppi.h"}
+      ],
+      "validated": true,
+      "iterations": 0,
+      "recipe": "#include <npp.h>\n#include <nppi.h>\n#include <cuda_runtime.h>\n#include <stdio.h>\n\n#define CUDA_CHECK(call) { cudaError_t err = call; if (err != cudaSuccess) { fprintf(stderr, \"CUDA error: %s at %s:%d\\n\", cudaGetErrorString(err), __FILE__, __LINE__); exit(1); } }\n#define NPP_CHECK(call) { NppStatus err = call; if (err != NPP_SUCCESS) { fprintf(stderr, \"NPP error %d at %s:%d\\n\", err, __FILE__, __LINE__); exit(1); } }\n\nvoid gpu_resize_image(const unsigned char* h_src, int src_w, int src_h,\n                      unsigned char* h_dst, int dst_w, int dst_h, int channels) {\n    // Allocate GPU memory\n    size_t src_pitch, dst_pitch;\n    Npp8u *d_src, *d_dst;\n    CUDA_CHECK(cudaMallocPitch(&d_src, &src_pitch, src_w * channels, src_h));\n    CUDA_CHECK(cudaMallocPitch(&d_dst, &dst_pitch, dst_w * channels, dst_h));\n\n    // Upload\n    CUDA_CHECK(cudaMemcpy2D(d_src, src_pitch, h_src, src_w * channels,\n                            src_w * channels, src_h, cudaMemcpyHostToDevice));\n\n    // Resize\n    NppiSize srcSize = {src_w, src_h};\n    NppiRect srcROI = {0, 0, src_w, src_h};\n    NppiSize dstSize = {dst_w, dst_h};\n    NppiRect dstROI = {0, 0, dst_w, dst_h};\n    NPP_CHECK(nppiResize_8u_C3R(d_src, src_pitch, srcSize, srcROI,\n                                d_dst, dst_pitch, dstSize, dstROI,\n                                NPPI_INTER_LINEAR));\n\n    // Download\n    CUDA_CHECK(cudaMemcpy2D(h_dst, dst_w * channels, d_dst, dst_pitch,\n                            dst_w * channels, dst_h, cudaMemcpyDeviceToHost));\n\n    cudaFree(d_src); cudaFree(d_dst);\n}"
+    }
+  ],
+  "cross_link": true
+}

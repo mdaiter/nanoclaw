@@ -1,0 +1,966 @@
+{
+  "framework": "NVIDIA_RM",
+  "type_aliases": [],
+  "entries": [
+    {
+      "name": "GPU_GET_GID_INFO",
+      "verb": "query",
+      "capabilities": [
+        "gpu_info"
+      ],
+      "params": [
+        [
+          "subdevice",
+          "NvHandle",
+          false
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS NV2080_CTRL_CMD_GPU_GET_GID_INFO(NvHandle subdevice)",
+      "input_formats": [
+        "flags",
+        "length"
+      ],
+      "output_formats": [
+        "uuid"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "FB_GET_INFO",
+      "verb": "query",
+      "capabilities": [
+        "gpu_info",
+        "gpu_memory"
+      ],
+      "params": [
+        [
+          "subdevice",
+          "NvHandle",
+          false
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS NV2080_CTRL_CMD_FB_GET_INFO(NvHandle subdevice)",
+      "input_formats": [],
+      "output_formats": [
+        "fbInfoList"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "GPU_GET_ATTACHED_IDS",
+      "verb": "query",
+      "capabilities": [
+        "gpu_info"
+      ],
+      "params": [
+        [
+          "client",
+          "NvHandle",
+          false
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS NV0000_CTRL_CMD_GPU_GET_ATTACHED_IDS(NvHandle client)",
+      "input_formats": [
+        "hClient"
+      ],
+      "output_formats": [
+        "gpuIds"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "GPFIFO_GET_WORK_SUBMIT_TOKEN",
+      "verb": "query",
+      "capabilities": [
+        "gpu_channel"
+      ],
+      "params": [
+        [
+          "channel",
+          "NvHandle",
+          false
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS NVC36F_CTRL_CMD_GPFIFO_GET_WORK_SUBMIT_TOKEN(NvHandle channel)",
+      "input_formats": [],
+      "output_formats": [
+        "workSubmitToken"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "UVM_REGISTER_GPU_VASPACE",
+      "verb": "init",
+      "capabilities": [
+        "uvm_memory",
+        "gpu_init"
+      ],
+      "params": [
+        [
+          "fd_uvm",
+          "int",
+          false
+        ],
+        [
+          "fd_ctl",
+          "int",
+          false
+        ],
+        [
+          "hClient",
+          "NvHandle",
+          false
+        ],
+        [
+          "hVaSpace",
+          "NvHandle",
+          false
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS UVM_REGISTER_GPU_VASPACE(int fd_uvm, int fd_ctl, NvHandle hClient, NvHandle hVaSpace)",
+      "input_formats": [
+        "rmCtrlFd",
+        "hClient",
+        "hVaSpace",
+        "gpuUuid"
+      ],
+      "output_formats": [
+        "rmStatus"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "NV_ESC_RM_DUP_OBJECT",
+      "verb": "create",
+      "capabilities": [
+        "gpu_init"
+      ],
+      "params": [
+        [
+          "fd",
+          "int",
+          false
+        ],
+        [
+          "params",
+          "void",
+          true
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(int fd, NV_ESC_RM_DUP_OBJECT, void *params)",
+      "input_formats": [
+        "hClient",
+        "hObject"
+      ],
+      "output_formats": [
+        "hObjectNew"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "UVM_INITIALIZE",
+      "verb": "init",
+      "capabilities": [
+        "uvm_memory",
+        "gpu_init"
+      ],
+      "params": [
+        [
+          "fd_uvm",
+          "int",
+          false
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS UVM_INITIALIZE(int fd_uvm)",
+      "input_formats": [],
+      "output_formats": [
+        "rmStatus"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "NV_ESC_RM_FREE",
+      "verb": "destroy",
+      "capabilities": [
+        "gpu_init"
+      ],
+      "params": [
+        [
+          "fd",
+          "int",
+          false
+        ],
+        [
+          "params",
+          "void",
+          true
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(int fd, NV_ESC_RM_FREE, void *params)",
+      "input_formats": [
+        "hRoot",
+        "hObjectOld"
+      ],
+      "output_formats": [],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "UVM_MAP_EXTERNAL_ALLOCATION",
+      "verb": "map",
+      "capabilities": [
+        "uvm_memory"
+      ],
+      "params": [
+        [
+          "fd_uvm",
+          "int",
+          false
+        ],
+        [
+          "base",
+          "u64",
+          false
+        ],
+        [
+          "length",
+          "u64",
+          false
+        ],
+        [
+          "hMemory",
+          "NvHandle",
+          false
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS UVM_MAP_EXTERNAL_ALLOCATION(int fd_uvm, u64 base, u64 length, NvHandle hMemory)",
+      "input_formats": [
+        "base",
+        "length",
+        "hClient",
+        "hMemory",
+        "gpuUuid"
+      ],
+      "output_formats": [
+        "rmStatus"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "NV_ESC_RM_MAP_MEMORY",
+      "verb": "map",
+      "capabilities": [
+        "gpu_memory"
+      ],
+      "params": [
+        [
+          "fd",
+          "int",
+          false
+        ],
+        [
+          "params",
+          "NVOS33_PARAMETERS",
+          true
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(int fd, NV_ESC_RM_MAP_MEMORY, nv_ioctl_nvos33_parameters_with_fd *params)",
+      "input_formats": [
+        "hClient",
+        "hDevice",
+        "hMemory"
+      ],
+      "output_formats": [
+        "pLinearAddress"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "UVM_CREATE_EXTERNAL_RANGE",
+      "verb": "create",
+      "capabilities": [
+        "uvm_memory"
+      ],
+      "params": [
+        [
+          "fd_uvm",
+          "int",
+          false
+        ],
+        [
+          "base",
+          "u64",
+          false
+        ],
+        [
+          "length",
+          "u64",
+          false
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS UVM_CREATE_EXTERNAL_RANGE(int fd_uvm, u64 base, u64 length)",
+      "input_formats": [
+        "base",
+        "length"
+      ],
+      "output_formats": [
+        "rmStatus"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "UVM_REGISTER_CHANNEL",
+      "verb": "init",
+      "capabilities": [
+        "uvm_memory",
+        "gpu_channel"
+      ],
+      "params": [
+        [
+          "fd_uvm",
+          "int",
+          false
+        ],
+        [
+          "hClient",
+          "NvHandle",
+          false
+        ],
+        [
+          "hChannel",
+          "NvHandle",
+          false
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS UVM_REGISTER_CHANNEL(int fd_uvm, NvHandle hClient, NvHandle hChannel)",
+      "input_formats": [
+        "gpuUuid",
+        "rmCtrlFd",
+        "hClient",
+        "hChannel",
+        "base",
+        "length"
+      ],
+      "output_formats": [
+        "rmStatus"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "MC_GET_ARCH_INFO",
+      "verb": "query",
+      "capabilities": [
+        "gpu_info"
+      ],
+      "params": [
+        [
+          "subdevice",
+          "NvHandle",
+          false
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS NV2080_CTRL_CMD_MC_GET_ARCH_INFO(NvHandle subdevice)",
+      "input_formats": [],
+      "output_formats": [
+        "architecture",
+        "implementation",
+        "revision"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "NV_ESC_RM_ALLOC_MEMORY",
+      "verb": "create",
+      "capabilities": [
+        "gpu_memory"
+      ],
+      "params": [
+        [
+          "fd",
+          "int",
+          false
+        ],
+        [
+          "params",
+          "NVOS02_PARAMETERS",
+          true
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(int fd, NV_ESC_RM_ALLOC_MEMORY, NVOS02_PARAMETERS *params)",
+      "input_formats": [
+        "hRoot",
+        "pMemory",
+        "limit"
+      ],
+      "output_formats": [
+        "hObjectNew"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "GR_GET_INFO",
+      "verb": "query",
+      "capabilities": [
+        "gpu_info",
+        "gpu_compute"
+      ],
+      "params": [
+        [
+          "subdevice",
+          "NvHandle",
+          false
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS NV2080_CTRL_CMD_GR_GET_INFO(NvHandle subdevice)",
+      "input_formats": [],
+      "output_formats": [
+        "grInfoList"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "NV_ESC_RM_MAP_MEMORY_DMA",
+      "verb": "map",
+      "capabilities": [
+        "gpu_memory"
+      ],
+      "params": [
+        [
+          "fd",
+          "int",
+          false
+        ],
+        [
+          "params",
+          "NVOS46_PARAMETERS",
+          true
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(int fd, NV_ESC_RM_MAP_MEMORY_DMA, NVOS46_PARAMETERS *params)",
+      "input_formats": [
+        "hClient",
+        "hDma",
+        "hMemory"
+      ],
+      "output_formats": [
+        "offset",
+        "length"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "GR_GET_TPC_MASK",
+      "verb": "query",
+      "capabilities": [
+        "gpu_info",
+        "gpu_compute"
+      ],
+      "params": [
+        [
+          "subdevice",
+          "NvHandle",
+          false
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS NV2080_CTRL_CMD_GR_GET_TPC_MASK(NvHandle subdevice)",
+      "input_formats": [
+        "gpcId"
+      ],
+      "output_formats": [
+        "tpcMask"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "UVM_FREE",
+      "verb": "destroy",
+      "capabilities": [
+        "uvm_memory"
+      ],
+      "params": [
+        [
+          "fd_uvm",
+          "int",
+          false
+        ],
+        [
+          "base",
+          "u64",
+          false
+        ],
+        [
+          "length",
+          "u64",
+          false
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS UVM_FREE(int fd_uvm, u64 base, u64 length)",
+      "input_formats": [
+        "base",
+        "length"
+      ],
+      "output_formats": [
+        "rmStatus"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "NV_ESC_RM_VID_HEAP_CONTROL",
+      "verb": "control",
+      "capabilities": [
+        "gpu_memory"
+      ],
+      "params": [
+        [
+          "fd",
+          "int",
+          false
+        ],
+        [
+          "params",
+          "NVOS32_PARAMETERS",
+          true
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(int fd, NV_ESC_RM_VID_HEAP_CONTROL, NVOS32_PARAMETERS *params)",
+      "input_formats": [
+        "hRoot",
+        "function",
+        "size"
+      ],
+      "output_formats": [
+        "hMemory"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "NV_ESC_RM_ALLOC",
+      "verb": "create",
+      "capabilities": [
+        "gpu_init",
+        "gpu_compute"
+      ],
+      "params": [
+        [
+          "fd",
+          "int",
+          false
+        ],
+        [
+          "params",
+          "NVOS21_PARAMETERS",
+          true
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(int fd, NV_ESC_RM_ALLOC, NVOS21_PARAMETERS *params)",
+      "input_formats": [
+        "hRoot",
+        "hClass",
+        "pAllocParms"
+      ],
+      "output_formats": [
+        "hObjectNew"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "NV_ESC_RM_UNMAP_MEMORY",
+      "verb": "unmap",
+      "capabilities": [
+        "gpu_memory"
+      ],
+      "params": [
+        [
+          "fd",
+          "int",
+          false
+        ],
+        [
+          "params",
+          "void",
+          true
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(int fd, NV_ESC_RM_UNMAP_MEMORY, void *params)",
+      "input_formats": [
+        "hClient",
+        "hDevice",
+        "hMemory"
+      ],
+      "output_formats": [],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "NV_ESC_RM_CONTROL",
+      "verb": "control",
+      "capabilities": [
+        "gpu_info",
+        "gpu_compute"
+      ],
+      "params": [
+        [
+          "fd",
+          "int",
+          false
+        ],
+        [
+          "params",
+          "NVOS54_PARAMETERS",
+          true
+        ]
+      ],
+      "return_type": "int",
+      "signature": "int ioctl(int fd, NV_ESC_RM_CONTROL, NVOS54_PARAMETERS *params)",
+      "input_formats": [
+        "hClient",
+        "hObject",
+        "cmd",
+        "params"
+      ],
+      "output_formats": [
+        "status"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "GR_GET_CAPS_V2",
+      "verb": "query",
+      "capabilities": [
+        "gpu_info",
+        "gpu_compute"
+      ],
+      "params": [
+        [
+          "subdevice",
+          "NvHandle",
+          false
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS NV2080_CTRL_CMD_GR_GET_CAPS_V2(NvHandle subdevice)",
+      "input_formats": [],
+      "output_formats": [
+        "capsTbl"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "UVM_REGISTER_GPU",
+      "verb": "init",
+      "capabilities": [
+        "uvm_memory",
+        "gpu_init"
+      ],
+      "params": [
+        [
+          "fd_uvm",
+          "int",
+          false
+        ],
+        [
+          "uuid",
+          "NvUuid",
+          true
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS UVM_REGISTER_GPU(int fd_uvm, NvUuid *uuid)",
+      "input_formats": [
+        "gpuUuid"
+      ],
+      "output_formats": [
+        "rmStatus"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "GR_GET_GPC_MASK",
+      "verb": "query",
+      "capabilities": [
+        "gpu_info",
+        "gpu_compute"
+      ],
+      "params": [
+        [
+          "subdevice",
+          "NvHandle",
+          false
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS NV2080_CTRL_CMD_GR_GET_GPC_MASK(NvHandle subdevice)",
+      "input_formats": [],
+      "output_formats": [
+        "gpcMask"
+      ],
+      "notes": "",
+      "async_pattern": false
+    },
+    {
+      "name": "GPU_GET_DEVICE_IDS",
+      "verb": "query",
+      "capabilities": [
+        "gpu_info"
+      ],
+      "params": [
+        [
+          "client",
+          "NvHandle",
+          false
+        ]
+      ],
+      "return_type": "NV_STATUS",
+      "signature": "NV_STATUS NV0000_CTRL_CMD_GPU_GET_DEVICE_IDS(NvHandle client)",
+      "input_formats": [
+        "hClient"
+      ],
+      "output_formats": [
+        "deviceIds"
+      ],
+      "notes": "",
+      "async_pattern": false
+    }
+  ],
+  "protocols": [
+    {
+      "framework": "NVIDIA_RM",
+      "group": "GPU_INIT",
+      "prerequisites": [
+        {
+          "kind": "DevicePath",
+          "path": "/dev/nvidiactl",
+          "reason": "RM control device node"
+        },
+        {
+          "kind": "DevicePath",
+          "path": "/dev/nvidia-uvm",
+          "reason": "Unified Virtual Memory device node"
+        },
+        {
+          "kind": "DevicePath",
+          "path": "/dev/nvidia0",
+          "reason": "GPU 0 device node"
+        }
+      ],
+      "steps": [
+        {
+          "order": 0,
+          "function": "open",
+          "role": "Create",
+          "args_hint": "/dev/nvidiactl",
+          "returns": "fd_ctl",
+          "notes": "Open RM control node"
+        },
+        {
+          "order": 1,
+          "function": "NV_ESC_RM_ALLOC",
+          "role": "Create",
+          "args_hint": "hClass=NV01_ROOT_CLIENT(0x0041)",
+          "returns": "root client handle",
+          "notes": "Allocate root RM client"
+        },
+        {
+          "order": 2,
+          "function": "GPU_GET_DEVICE_IDS",
+          "role": "Query",
+          "args_hint": "hClient=root",
+          "returns": "deviceIds",
+          "notes": "Enumerate attached GPUs"
+        },
+        {
+          "order": 3,
+          "function": "NV_ESC_RM_ALLOC",
+          "role": "Create",
+          "args_hint": "hClass=NV01_DEVICE_0(0x0080)",
+          "returns": "device handle",
+          "notes": "Allocate device object"
+        },
+        {
+          "order": 4,
+          "function": "NV_ESC_RM_ALLOC",
+          "role": "Create",
+          "args_hint": "hClass=NV20_SUBDEVICE_0(0x2080)",
+          "returns": "subdevice handle",
+          "notes": "Allocate subdevice object"
+        },
+        {
+          "order": 5,
+          "function": "NV_ESC_RM_ALLOC",
+          "role": "Create",
+          "args_hint": "hClass=TURING_USERMODE_A(0xC461)",
+          "returns": "usermode handle",
+          "notes": "Allocate usermode doorbell mapping"
+        },
+        {
+          "order": 6,
+          "function": "mmap",
+          "role": "Init",
+          "args_hint": "length=0x10000, PROT_READ|PROT_WRITE, MAP_SHARED",
+          "returns": "gpu_mmio_ptr",
+          "notes": "Map MMIO doorbell BAR for usermode submissions"
+        },
+        {
+          "order": 7,
+          "function": "NV_ESC_RM_ALLOC",
+          "role": "Create",
+          "args_hint": "hClass=FERMI_VASPACE_A(0x90F1), flags=PAGE_FAULTING|EXTERNALLY_OWNED",
+          "returns": "vaspace handle",
+          "notes": "Allocate GPU virtual address space"
+        },
+        {
+          "order": 8,
+          "function": "UVM_INITIALIZE",
+          "role": "Init",
+          "args_hint": "fd_uvm",
+          "returns": "rmStatus=0",
+          "notes": "Initialize UVM subsystem"
+        },
+        {
+          "order": 9,
+          "function": "UVM_REGISTER_GPU",
+          "role": "Init",
+          "args_hint": "gpu_uuid",
+          "returns": "rmStatus=0",
+          "notes": "Register GPU with UVM using UUID from GID_INFO"
+        },
+        {
+          "order": 10,
+          "function": "UVM_REGISTER_GPU_VASPACE",
+          "role": "Init",
+          "args_hint": "fd_ctl, hClient=root, hVaSpace=vaspace, gpu_uuid",
+          "returns": "rmStatus=0",
+          "notes": "Bind GPU VA space to UVM"
+        },
+        {
+          "order": 11,
+          "function": "NV_ESC_RM_VID_HEAP_CONTROL",
+          "role": "Create",
+          "args_hint": "NVOS32_FUNCTION_ALLOC_SIZE, type=IMAGE, size=0x200000",
+          "returns": "mem_handle",
+          "notes": "Allocate video memory for GPFIFO + compute"
+        },
+        {
+          "order": 12,
+          "function": "NV_ESC_RM_ALLOC",
+          "role": "Create",
+          "args_hint": "hClass=KEPLER_CHANNEL_GROUP_A(0xA06C), engineType=GRAPHICS",
+          "returns": "channel_group handle",
+          "notes": "Allocate channel group for compute"
+        },
+        {
+          "order": 13,
+          "function": "NV_ESC_RM_ALLOC",
+          "role": "Create",
+          "args_hint": "hClass=FERMI_CONTEXT_SHARE_A(0x9067), flags=SUBCONTEXT_ASYNC",
+          "returns": "share handle",
+          "notes": "Allocate context share for async subcontexts"
+        },
+        {
+          "order": 14,
+          "function": "NV_ESC_RM_ALLOC",
+          "role": "Create",
+          "args_hint": "hClass=AMPERE_CHANNEL_GPFIFO_A(0xC46F), gpFifoEntries=0x400",
+          "returns": "gpfifo handle",
+          "notes": "Allocate GPFIFO channel for command submission"
+        },
+        {
+          "order": 15,
+          "function": "NV_ESC_RM_ALLOC",
+          "role": "Create",
+          "args_hint": "hClass=AMPERE_COMPUTE_B(0xC7C0)",
+          "returns": "compute handle",
+          "notes": "Allocate compute engine object on GPFIFO channel"
+        }
+      ],
+      "constants": [
+        {
+          "name": "NV01_ROOT_CLIENT",
+          "value": "0x0041",
+          "source": "open-gpu-kernel-modules"
+        },
+        {
+          "name": "NV01_DEVICE_0",
+          "value": "0x0080",
+          "source": "open-gpu-kernel-modules"
+        },
+        {
+          "name": "NV20_SUBDEVICE_0",
+          "value": "0x2080",
+          "source": "open-gpu-kernel-modules"
+        },
+        {
+          "name": "TURING_USERMODE_A",
+          "value": "0xC461",
+          "source": "open-gpu-kernel-modules"
+        },
+        {
+          "name": "FERMI_VASPACE_A",
+          "value": "0x90F1",
+          "source": "open-gpu-kernel-modules"
+        },
+        {
+          "name": "KEPLER_CHANNEL_GROUP_A",
+          "value": "0xA06C",
+          "source": "open-gpu-kernel-modules"
+        },
+        {
+          "name": "AMPERE_CHANNEL_GPFIFO_A",
+          "value": "0xC46F",
+          "source": "open-gpu-kernel-modules"
+        },
+        {
+          "name": "AMPERE_COMPUTE_B",
+          "value": "0xC7C0",
+          "source": "open-gpu-kernel-modules"
+        }
+      ],
+      "validated": true,
+      "iterations": 0
+    }
+  ],
+  "cross_link": true
+}

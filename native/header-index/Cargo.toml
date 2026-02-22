@@ -1,0 +1,26 @@
+[package]
+name = "header-index"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+object = { version = "0.36", default-features = false, features = ["read", "macho"] }
+zstd = "0.13"
+libc = "0.2"
+tempfile = "3"
+sha2 = "0.10"
+dirs = "5"
+
+[[bin]]
+name = "header-index"
+path = "src/bin/header-index.rs"
+
+[features]
+devtool = ["libloading"]
+
+[dependencies.libloading]
+version = "0.8"
+optional = true
