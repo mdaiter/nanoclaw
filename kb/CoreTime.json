@@ -1,0 +1,1449 @@
+{
+  "framework": "CoreTime",
+  "functions": {
+    "TMSetSourceUnavailable": {
+      "name": "TMSetSourceUnavailable",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TMSetSourceUnavailable(TMRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMGetTrustedInterval": {
+      "name": "TMGetTrustedInterval",
+      "framework": "CoreTime",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ TMGetTrustedInterval(TMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMTimeZoneConfirmedNotification": {
+      "name": "TMTimeZoneConfirmedNotification",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMTimeZoneConfirmedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSourceHarvestServer": {
+      "name": "TMSourceHarvestServer",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSourceHarvestServer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSourceNtp": {
+      "name": "TMSourceNtp",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSourceNtp(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMCopyComputedTimeZone": {
+      "name": "TMCopyComputedTimeZone",
+      "framework": "CoreTime",
+      "return_type": "TMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "TMRef/*?*/ TMCopyComputedTimeZone(TMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "TMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSetAutomaticTimeEnabled": {
+      "name": "TMSetAutomaticTimeEnabled",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TMSetAutomaticTimeEnabled(TMRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMProvideCellularTimeZone": {
+      "name": "TMProvideCellularTimeZone",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMProvideCellularTimeZone(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMProvideBBTime": {
+      "name": "TMProvideBBTime",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMProvideBBTime(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMRTCResetNotification": {
+      "name": "TMRTCResetNotification",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMRTCResetNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSetAutomaticTimeZoneEnabled": {
+      "name": "TMSetAutomaticTimeZoneEnabled",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TMSetAutomaticTimeZoneEnabled(TMRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMGetKernelMonotonicClock": {
+      "name": "TMGetKernelMonotonicClock",
+      "framework": "CoreTime",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ TMGetKernelMonotonicClock(TMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSoftReset": {
+      "name": "TMSoftReset",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSoftReset(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSetManualTime": {
+      "name": "TMSetManualTime",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TMSetManualTime(TMRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMConfirmTimeZone": {
+      "name": "TMConfirmTimeZone",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMConfirmTimeZone(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMResetToFirstLaunch": {
+      "name": "TMResetToFirstLaunch",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMResetToFirstLaunch(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMIsTimeZoneConfirmed": {
+      "name": "TMIsTimeZoneConfirmed",
+      "framework": "CoreTime",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool TMIsTimeZoneConfirmed(TMRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSourceAPNS": {
+      "name": "TMSourceAPNS",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSourceAPNS(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMIsBBTimeActive": {
+      "name": "TMIsBBTimeActive",
+      "framework": "CoreTime",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool TMIsBBTimeActive(TMRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMIsAutomaticTimeEnabled": {
+      "name": "TMIsAutomaticTimeEnabled",
+      "framework": "CoreTime",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool TMIsAutomaticTimeEnabled(TMRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMConvertTicksToSeconds": {
+      "name": "TMConvertTicksToSeconds",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMConvertTicksToSeconds(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSourceAccessory": {
+      "name": "TMSourceAccessory",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSourceAccessory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSetSourceTime": {
+      "name": "TMSetSourceTime",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TMSetSourceTime(TMRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSetSourceTimeZone": {
+      "name": "TMSetSourceTimeZone",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TMSetSourceTimeZone(TMRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMGetRTCResetCount": {
+      "name": "TMGetRTCResetCount",
+      "framework": "CoreTime",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ TMGetRTCResetCount(TMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSetupTime": {
+      "name": "TMSetupTime",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TMSetupTime(TMRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSetAuthenticatedSourceTime": {
+      "name": "TMSetAuthenticatedSourceTime",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TMSetAuthenticatedSourceTime(TMRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSourceAirPlay": {
+      "name": "TMSourceAirPlay",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSourceAirPlay(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSetupTimeZone": {
+      "name": "TMSetupTimeZone",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TMSetupTimeZone(TMRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSourceCdma": {
+      "name": "TMSourceCdma",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSourceCdma(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMBBTimeActiveNotification": {
+      "name": "TMBBTimeActiveNotification",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMBBTimeActiveNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSourceGps": {
+      "name": "TMSourceGps",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSourceGps(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSourceLocationBorder": {
+      "name": "TMSourceLocationBorder",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSourceLocationBorder(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMIsAutomaticTimeZoneEnabled": {
+      "name": "TMIsAutomaticTimeZoneEnabled",
+      "framework": "CoreTime",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool TMIsAutomaticTimeZoneEnabled(TMRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMGetBAFinderTime": {
+      "name": "TMGetBAFinderTime",
+      "framework": "CoreTime",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ TMGetBAFinderTime(TMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSourceMobileLockdown": {
+      "name": "TMSourceMobileLockdown",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSourceMobileLockdown(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSourceNitz": {
+      "name": "TMSourceNitz",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSourceNitz(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSourceNtpLowConfidence": {
+      "name": "TMSourceNtpLowConfidence",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSourceNtpLowConfidence(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSourceNtpPacket": {
+      "name": "TMSourceNtpPacket",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSourceNtpPacket(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMLocationTimeZoneActiveNotification": {
+      "name": "TMLocationTimeZoneActiveNotification",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMLocationTimeZoneActiveNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSetTestSourceTime": {
+      "name": "TMSetTestSourceTime",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TMSetTestSourceTime(TMRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSourceLocationServer": {
+      "name": "TMSourceLocationServer",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSourceLocationServer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMFetchNTP": {
+      "name": "TMFetchNTP",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMFetchNTP(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSourceProxBuddy": {
+      "name": "TMSourceProxBuddy",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSourceProxBuddy(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSourceiTunesServer": {
+      "name": "TMSourceiTunesServer",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSourceiTunesServer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSourceLocation": {
+      "name": "TMSourceLocation",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        }
+      ],
+      "signature": "void/*?*/ TMSourceLocation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMGetReferenceTime": {
+      "name": "TMGetReferenceTime",
+      "framework": "CoreTime",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ TMGetReferenceTime(TMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMSetSourceAvailable": {
+      "name": "TMSetSourceAvailable",
+      "framework": "CoreTime",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreTime"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TMSetSourceAvailable(TMRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "gpu_compute": [
+      "TMCopyComputedTimeZone",
+      "TMGetKernelMonotonicClock"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

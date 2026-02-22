@@ -1,0 +1,1057 @@
+{
+  "framework": "DiagnosticLogCollection",
+  "functions": {
+    "DLCSessionLogCallInfo": {
+      "name": "DLCSessionLogCallInfo",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionLogCallInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCAlertTitleKey": {
+      "name": "DLCAlertTitleKey",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCAlertTitleKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionShouldLogCheckpoints": {
+      "name": "DLCSessionShouldLogCheckpoints",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionShouldLogCheckpoints(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCCollectLogsWithCompletionHandler": {
+      "name": "DLCCollectLogsWithCompletionHandler",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DLCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DLCCollectLogsWithCompletionHandler(DLCRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "unknown",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_DLCLogWithLevelFileAndLine": {
+      "name": "_DLCLogWithLevelFileAndLine",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ _DLCLogWithLevelFileAndLine(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCLogBacktraceWithLevelV": {
+      "name": "DLCLogBacktraceWithLevelV",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCLogBacktraceWithLevelV(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCLogBacktraceWithLevel": {
+      "name": "DLCLogBacktraceWithLevel",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCLogBacktraceWithLevel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionAddLogFile": {
+      "name": "DLCSessionAddLogFile",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionAddLogFile(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionSetFailureReason": {
+      "name": "DLCSessionSetFailureReason",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DLCSessionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionSetFailureReason(DLCSessionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionSyncLoggingsPreferences": {
+      "name": "DLCSessionSyncLoggingsPreferences",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionSyncLoggingsPreferences(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionNoteCheckpoint": {
+      "name": "DLCSessionNoteCheckpoint",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionNoteCheckpoint(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCShouldLogMessageBodies": {
+      "name": "DLCShouldLogMessageBodies",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCShouldLogMessageBodies(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_DLCLogWithLevelV": {
+      "name": "_DLCLogWithLevelV",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ _DLCLogWithLevelV(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCLogPathKey": {
+      "name": "DLCLogPathKey",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCLogPathKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCWarn": {
+      "name": "DLCWarn",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCWarn(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_DLCWarnV": {
+      "name": "_DLCWarnV",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ _DLCWarnV(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCGatheringDisplayFlagsKey": {
+      "name": "DLCGatheringDisplayFlagsKey",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCGatheringDisplayFlagsKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCShouldLogLevel": {
+      "name": "DLCShouldLogLevel",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCShouldLogLevel(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCCollectLogs": {
+      "name": "DLCCollectLogs",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCCollectLogs(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_DLCLogEventWithLevelV": {
+      "name": "_DLCLogEventWithLevelV",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ _DLCLogEventWithLevelV(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCLogWithLevelV": {
+      "name": "DLCLogWithLevelV",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCLogWithLevelV(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCDefaultRadarComponentVersionKey": {
+      "name": "DLCDefaultRadarComponentVersionKey",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCDefaultRadarComponentVersionKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionBeginSession": {
+      "name": "DLCSessionBeginSession",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionBeginSession(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCLogEventWithLevelV": {
+      "name": "DLCLogEventWithLevelV",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCLogEventWithLevelV(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCDefaultRadarComponentKey": {
+      "name": "DLCDefaultRadarComponentKey",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCDefaultRadarComponentKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionEvent": {
+      "name": "DLCSessionEvent",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCLogWithLevel": {
+      "name": "DLCLogWithLevel",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCLogWithLevel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionPerformSnapshot": {
+      "name": "DLCSessionPerformSnapshot",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionPerformSnapshot(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCLogEventWithLevel": {
+      "name": "DLCLogEventWithLevel",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCLogEventWithLevel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCWarnV": {
+      "name": "DLCWarnV",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCWarnV(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionSetInitiator": {
+      "name": "DLCSessionSetInitiator",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DLCSessionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionSetInitiator(DLCSessionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionSetRecipient": {
+      "name": "DLCSessionSetRecipient",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DLCSessionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionSetRecipient(DLCSessionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionConnect": {
+      "name": "DLCSessionConnect",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionConnect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCLogGatheringFlagsKey": {
+      "name": "DLCLogGatheringFlagsKey",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCLogGatheringFlagsKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionLogWithLevelV": {
+      "name": "DLCSessionLogWithLevelV",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionLogWithLevelV(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionShouldLogLevel": {
+      "name": "DLCSessionShouldLogLevel",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionShouldLogLevel(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionDiconnect": {
+      "name": "DLCSessionDiconnect",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionDiconnect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCLoggingStringForMessageData": {
+      "name": "DLCLoggingStringForMessageData",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCLoggingStringForMessageData(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionAction": {
+      "name": "DLCSessionAction",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionAction(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionLogWithLevel": {
+      "name": "DLCSessionLogWithLevel",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionLogWithLevel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionPulse": {
+      "name": "DLCSessionPulse",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionPulse(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DLCSessionEndSession": {
+      "name": "DLCSessionEndSession",
+      "framework": "DiagnosticLogCollection",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiagnosticLogCollection"
+        }
+      ],
+      "signature": "void/*?*/ DLCSessionEndSession(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "display_compositing": [
+      "DLCGatheringDisplayFlagsKey"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

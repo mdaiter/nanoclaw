@@ -1,0 +1,2595 @@
+{
+  "framework": "AppleVA",
+  "functions": {
+    "AVAFDiCVBIOProcessFrame": {
+      "name": "AVAFDiCVBIOProcessFrame",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFDiCVBIOProcessFrame(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VP3DecodeFrame": {
+      "name": "VP3DecodeFrame",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ VP3DecodeFrame(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverShowSPBufferImpl": {
+      "name": "DVDDriverShowSPBufferImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverShowSPBufferImpl(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VP3GetSupportedPixelFormats": {
+      "name": "VP3GetSupportedPixelFormats",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VP3Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ VP3GetSupportedPixelFormats(VP3Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFLoadAllRenderers": {
+      "name": "AVAFLoadAllRenderers",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFLoadAllRenderers(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFCreateRendererDVDExt": {
+      "name": "AVAFCreateRendererDVDExt",
+      "framework": "AppleVA",
+      "return_type": "AVAFRef",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "AVAFRef AVAFCreateRendererDVDExt(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "AVAFRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AVAFCreateRendererDisplayExt",
+        "AVAFCreateRenderer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFDeinterlacerGetFrame": {
+      "name": "AVAFDeinterlacerGetFrame",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAFDeinterlacerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AVAFDeinterlacerGetFrame(AVAFDeinterlacerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTInitLibrary": {
+      "name": "AVAFQTInitLibrary",
+      "framework": "AppleVA",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ AVAFQTInitLibrary(void *buf, size_t size)",
+      "verb": "create",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AVAFQTInitDecoder",
+        "AVAFQTInitDeinterlacer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFDeinterlacerGetSourceRowBytes": {
+      "name": "AVAFDeinterlacerGetSourceRowBytes",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAFDeinterlacerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AVAFDeinterlacerGetSourceRowBytes(AVAFDeinterlacerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFTempFilterSetParam": {
+      "name": "AVAFTempFilterSetParam",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAFTempFilterRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AVAFTempFilterSetParam(AVAFTempFilterRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverOpenDeviceImpl": {
+      "name": "DVDDriverOpenDeviceImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverOpenDeviceImpl(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTDeinterlace": {
+      "name": "AVAFQTDeinterlace",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFQTDeinterlace(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverShowMPBufferImpl": {
+      "name": "DVDDriverShowMPBufferImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverShowMPBufferImpl(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFTempFilterCreate": {
+      "name": "AVAFTempFilterCreate",
+      "framework": "AppleVA",
+      "return_type": "AVAFTempFilterRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "AVAFTempFilterRef AVAFTempFilterCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "AVAFTempFilterRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFGetRendererInfo": {
+      "name": "AVAFGetRendererInfo",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AVAFGetRendererInfo(AVAFRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTWaitForJobCompletion": {
+      "name": "AVAFQTWaitForJobCompletion",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "synchronization"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFQTWaitForJobCompletion(void)",
+      "verb": "synchronize",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTRescaleBuffer": {
+      "name": "AVAFQTRescaleBuffer",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFQTRescaleBuffer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFDiCVBIODestroy": {
+      "name": "AVAFDiCVBIODestroy",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAFDiCVBIORef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void AVAFDiCVBIODestroy(AVAFDiCVBIORef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVA_HDCreateRenderer": {
+      "name": "AVA_HDCreateRenderer",
+      "framework": "AppleVA",
+      "return_type": "AVA_HDRef",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "AVA_HDRef AVA_HDCreateRenderer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "AVA_HDRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AVA_HDCreateDecoder"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTCloseDecoder": {
+      "name": "AVAFQTCloseDecoder",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFQTCloseDecoder(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverEnableButtonImpl": {
+      "name": "DVDDriverEnableButtonImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverEnableButtonImpl(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverGetSPBufferImpl": {
+      "name": "DVDDriverGetSPBufferImpl",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DVDDriverRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ DVDDriverGetSPBufferImpl(DVDDriverRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverSetSPPaletteImpl": {
+      "name": "DVDDriverSetSPPaletteImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DVDDriverRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverSetSPPaletteImpl(DVDDriverRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VP3CreateInstance": {
+      "name": "VP3CreateInstance",
+      "framework": "AppleVA",
+      "return_type": "VP3Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "VP3Ref VP3CreateInstance(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "VP3Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "VP3CopyProperty"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverSetSPColorControlImpl": {
+      "name": "DVDDriverSetSPColorControlImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DVDDriverRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverSetSPColorControlImpl(DVDDriverRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VP3SetProperty": {
+      "name": "VP3SetProperty",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VP3Ref",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ VP3SetProperty(VP3Ref *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTSetParameter": {
+      "name": "AVAFQTSetParameter",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAFQTRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AVAFQTSetParameter(AVAFQTRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTTerminateLibrary": {
+      "name": "AVAFQTTerminateLibrary",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFQTTerminateLibrary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFGetHostRenderer": {
+      "name": "AVAFGetHostRenderer",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AVAFGetHostRenderer(AVAFRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverSetSPDefaultColorControlImpl": {
+      "name": "DVDDriverSetSPDefaultColorControlImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DVDDriverRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverSetSPDefaultColorControlImpl(DVDDriverRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTSetDisplayCallback": {
+      "name": "AVAFQTSetDisplayCallback",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAFQTRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AVAFQTSetDisplayCallback(AVAFQTRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverGetFrameImpl": {
+      "name": "DVDDriverGetFrameImpl",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DVDDriverRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ DVDDriverGetFrameImpl(DVDDriverRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFCreateRendererDisplayExt": {
+      "name": "AVAFCreateRendererDisplayExt",
+      "framework": "AppleVA",
+      "return_type": "AVAFRef",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute",
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "AVAFRef AVAFCreateRendererDisplayExt(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "AVAFRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AVAFCreateRendererDVDExt",
+        "AVAFCreateRenderer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverSetFeatureParamImpl": {
+      "name": "DVDDriverSetFeatureParamImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DVDDriverRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverSetFeatureParamImpl(DVDDriverRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFGetGPURenderer": {
+      "name": "AVAFGetGPURenderer",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AVAFGetGPURenderer(AVAFRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTDecodePictureFrontEnd": {
+      "name": "AVAFQTDecodePictureFrontEnd",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFQTDecodePictureFrontEnd(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverDeinterlaceImpl": {
+      "name": "DVDDriverDeinterlaceImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverDeinterlaceImpl(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTDecodeFieldPicturesAsync": {
+      "name": "AVAFQTDecodeFieldPicturesAsync",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFQTDecodeFieldPicturesAsync(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTDisplayPicture": {
+      "name": "AVAFQTDisplayPicture",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFQTDisplayPicture(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VP3GetVersion": {
+      "name": "VP3GetVersion",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VP3Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ VP3GetVersion(VP3Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VP3PatchChunk": {
+      "name": "VP3PatchChunk",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ VP3PatchChunk(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFDeinterlacerGetFrameSeq": {
+      "name": "AVAFDeinterlacerGetFrameSeq",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAFDeinterlacerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AVAFDeinterlacerGetFrameSeq(AVAFDeinterlacerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTInitDecoder": {
+      "name": "AVAFQTInitDecoder",
+      "framework": "AppleVA",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ AVAFQTInitDecoder(void *buf, size_t size)",
+      "verb": "create",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AVAFQTInitLibrary",
+        "AVAFQTInitDeinterlacer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VP3GetMaxParsedStructureVersion": {
+      "name": "VP3GetMaxParsedStructureVersion",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VP3Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ VP3GetMaxParsedStructureVersion(VP3Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverSetSPBufferImpl": {
+      "name": "DVDDriverSetSPBufferImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DVDDriverRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverSetSPBufferImpl(DVDDriverRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverDecodeImpl": {
+      "name": "DVDDriverDecodeImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverDecodeImpl(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTDecodeFieldPictures": {
+      "name": "AVAFQTDecodeFieldPictures",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFQTDecodeFieldPictures(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTDecodePicture": {
+      "name": "AVAFQTDecodePicture",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFQTDecodePicture(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTDrawPicture": {
+      "name": "AVAFQTDrawPicture",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFQTDrawPicture(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverClearMPImpl": {
+      "name": "DVDDriverClearMPImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverClearMPImpl(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFDeinterlacerGetSourceHeight": {
+      "name": "AVAFDeinterlacerGetSourceHeight",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAFDeinterlacerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AVAFDeinterlacerGetSourceHeight(AVAFDeinterlacerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTDecodePictureAsync": {
+      "name": "AVAFQTDecodePictureAsync",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFQTDecodePictureAsync(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverEnableMPImpl": {
+      "name": "DVDDriverEnableMPImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverEnableMPImpl(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverClearSPImpl": {
+      "name": "DVDDriverClearSPImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverClearSPImpl(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VP3DisposeInstance": {
+      "name": "VP3DisposeInstance",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ VP3DisposeInstance(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverEnableSPImpl": {
+      "name": "DVDDriverEnableSPImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverEnableSPImpl(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VP3IsAvailable": {
+      "name": "VP3IsAvailable",
+      "framework": "AppleVA",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VP3Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool VP3IsAvailable(VP3Ref *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverGetKeyColorImpl": {
+      "name": "DVDDriverGetKeyColorImpl",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DVDDriverRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ DVDDriverGetKeyColorImpl(DVDDriverRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFCreateRenderer": {
+      "name": "AVAFCreateRenderer",
+      "framework": "AppleVA",
+      "return_type": "AVAFRef",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "AVAFRef AVAFCreateRenderer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "AVAFRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AVAFCreateRendererDVDExt",
+        "AVAFCreateRendererDisplayExt"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverPrepareButtonImpl": {
+      "name": "DVDDriverPrepareButtonImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverPrepareButtonImpl(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTGetSourceImageInfo": {
+      "name": "AVAFQTGetSourceImageInfo",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAFQTRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AVAFQTGetSourceImageInfo(AVAFQTRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTInitDeinterlacer": {
+      "name": "AVAFQTInitDeinterlacer",
+      "framework": "AppleVA",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ AVAFQTInitDeinterlacer(void *buf, size_t size)",
+      "verb": "create",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AVAFQTInitLibrary",
+        "AVAFQTInitDecoder"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VP3CopyProperty": {
+      "name": "VP3CopyProperty",
+      "framework": "AppleVA",
+      "return_type": "VP3Ref",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VP3Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "VP3Ref/*?*/ VP3CopyProperty(VP3Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "VP3Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "VP3CreateInstance"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTGetTargetImageInfo": {
+      "name": "AVAFQTGetTargetImageInfo",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAFQTRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AVAFQTGetTargetImageInfo(AVAFQTRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFTempFilterGetParam": {
+      "name": "AVAFTempFilterGetParam",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAFTempFilterRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AVAFTempFilterGetParam(AVAFTempFilterRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverApplySPDCSQImpl": {
+      "name": "DVDDriverApplySPDCSQImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverApplySPDCSQImpl(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFDiCVBIOFlush": {
+      "name": "AVAFDiCVBIOFlush",
+      "framework": "AppleVA",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAFDiCVBIORef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Submit pattern"
+        }
+      ],
+      "signature": "int/*?*/ AVAFDiCVBIOFlush(AVAFDiCVBIORef *ref)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFDiCVBIOCreate": {
+      "name": "AVAFDiCVBIOCreate",
+      "framework": "AppleVA",
+      "return_type": "AVAFDiCVBIORef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "AVAFDiCVBIORef AVAFDiCVBIOCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "AVAFDiCVBIORef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverSetMPRectsImpl": {
+      "name": "DVDDriverSetMPRectsImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DVDDriverRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverSetMPRectsImpl(DVDDriverRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFDeinterlacerCreate": {
+      "name": "AVAFDeinterlacerCreate",
+      "framework": "AppleVA",
+      "return_type": "AVAFDeinterlacerRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "AVAFDeinterlacerRef AVAFDeinterlacerCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "AVAFDeinterlacerRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFDeinterlacerDelete": {
+      "name": "AVAFDeinterlacerDelete",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFDeinterlacerDelete(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverGetVersionImpl": {
+      "name": "DVDDriverGetVersionImpl",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DVDDriverRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ DVDDriverGetVersionImpl(DVDDriverRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFTempFilterFrame": {
+      "name": "AVAFTempFilterFrame",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFTempFilterFrame(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFTempFilterDelete": {
+      "name": "AVAFTempFilterDelete",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFTempFilterDelete(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverGetFeatureParamImpl": {
+      "name": "DVDDriverGetFeatureParamImpl",
+      "framework": "AppleVA",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DVDDriverRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ DVDDriverGetFeatureParamImpl(DVDDriverRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVA_HDCreateDecoder": {
+      "name": "AVA_HDCreateDecoder",
+      "framework": "AppleVA",
+      "return_type": "AVA_HDRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "AVA_HDRef AVA_HDCreateDecoder(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "AVA_HDRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AVA_HDCreateRenderer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverSetMVLevelImpl": {
+      "name": "DVDDriverSetMVLevelImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DVDDriverRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverSetMVLevelImpl(DVDDriverRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFUnloadAllRenderers": {
+      "name": "AVAFUnloadAllRenderers",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ AVAFUnloadAllRenderers(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DVDDriverCloseDeviceImpl": {
+      "name": "DVDDriverCloseDeviceImpl",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        }
+      ],
+      "signature": "void/*?*/ DVDDriverCloseDeviceImpl(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAFQTSetSourceImageSize": {
+      "name": "AVAFQTSetSourceImageSize",
+      "framework": "AppleVA",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAFQTRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint32_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleVA"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AVAFQTSetSourceImageSize(AVAFQTRef *ref, uint32_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint32_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "gpu_compute": [
+      "AVAFCreateRenderer",
+      "AVAFCreateRendererDVDExt",
+      "AVAFCreateRendererDisplayExt",
+      "AVAFGetGPURenderer",
+      "AVAFGetHostRenderer",
+      "AVAFGetRendererInfo",
+      "AVAFLoadAllRenderers",
+      "AVAFUnloadAllRenderers",
+      "AVA_HDCreateRenderer"
+    ],
+    "memory_buffer": [
+      "AVAFQTRescaleBuffer",
+      "DVDDriverGetSPBufferImpl",
+      "DVDDriverSetSPBufferImpl",
+      "DVDDriverShowMPBufferImpl",
+      "DVDDriverShowSPBufferImpl"
+    ],
+    "display_compositing": [
+      "AVAFCreateRendererDisplayExt",
+      "AVAFQTDisplayPicture",
+      "AVAFQTSetDisplayCallback"
+    ],
+    "video_processing": [
+      "AVAFDeinterlacerGetFrame",
+      "AVAFDeinterlacerGetFrameSeq",
+      "AVAFDiCVBIOProcessFrame",
+      "AVAFTempFilterFrame",
+      "DVDDriverGetFrameImpl",
+      "VP3DecodeFrame"
+    ],
+    "image_processing": [
+      "AVAFQTGetSourceImageInfo",
+      "AVAFQTGetTargetImageInfo",
+      "AVAFQTRescaleBuffer",
+      "AVAFQTSetSourceImageSize",
+      "VP3GetSupportedPixelFormats"
+    ],
+    "synchronization": [
+      "AVAFQTWaitForJobCompletion"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

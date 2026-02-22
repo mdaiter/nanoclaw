@@ -1,0 +1,1240 @@
+{
+  "framework": "CommonUtilities",
+  "functions": {
+    "CUTCreateDictionaryFromXPCObject": {
+      "name": "CUTCreateDictionaryFromXPCObject",
+      "framework": "CommonUtilities",
+      "return_type": "CUTRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUTRef CUTCreateDictionaryFromXPCObject(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUTRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUTCreateXPCObjectFromDictionary"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTXPCConnectionSetEventHandlers": {
+      "name": "CUTXPCConnectionSetEventHandlers",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUTXPCConnectionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CUTXPCConnectionSetEventHandlers(CUTXPCConnectionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTXPCConfigureConnection": {
+      "name": "CUTXPCConfigureConnection",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTXPCConfigureConnection(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTGetXPCIntFromDictionary": {
+      "name": "CUTGetXPCIntFromDictionary",
+      "framework": "CommonUtilities",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUTRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CUTGetXPCIntFromDictionary(CUTRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "cut_log_group_generation": {
+      "name": "cut_log_group_generation",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ cut_log_group_generation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTInsertNSStringsToXPCDictionary": {
+      "name": "CUTInsertNSStringsToXPCDictionary",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTInsertNSStringsToXPCDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTMapObjectProperties": {
+      "name": "CUTMapObjectProperties",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTMapObjectProperties(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTReportingErrorDomain": {
+      "name": "CUTReportingErrorDomain",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTReportingErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTXPCAlertv": {
+      "name": "CUTXPCAlertv",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTXPCAlertv(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTGetXPCStringFromDictionary": {
+      "name": "CUTGetXPCStringFromDictionary",
+      "framework": "CommonUtilities",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUTRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ CUTGetXPCStringFromDictionary(CUTRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTPropertyListFromNSData": {
+      "name": "CUTPropertyListFromNSData",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTPropertyListFromNSData(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTGetMainBundle": {
+      "name": "CUTGetMainBundle",
+      "framework": "CommonUtilities",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUTRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CUTGetMainBundle(CUTRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTCreateXPCObjectFromDictionary": {
+      "name": "CUTCreateXPCObjectFromDictionary",
+      "framework": "CommonUtilities",
+      "return_type": "CUTRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUTRef CUTCreateXPCObjectFromDictionary(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUTRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUTCreateDictionaryFromXPCObject"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTXPCCreateConnectionForServiceWithQueue": {
+      "name": "CUTXPCCreateConnectionForServiceWithQueue",
+      "framework": "CommonUtilities",
+      "return_type": "CUTXPCRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUTXPCRef CUTXPCCreateConnectionForServiceWithQueue(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUTXPCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUTXPCCreateServerConnection",
+        "CUTXPCCreateConnectionForService"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTTemporaryPath": {
+      "name": "CUTTemporaryPath",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTTemporaryPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTWiFiManagerPMDurationKey": {
+      "name": "CUTWiFiManagerPMDurationKey",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTWiFiManagerPMDurationKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTIsInternalInstall": {
+      "name": "CUTIsInternalInstall",
+      "framework": "CommonUtilities",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUTRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CUTIsInternalInstall(CUTRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTSafeArrayOfStrings": {
+      "name": "CUTSafeArrayOfStrings",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTSafeArrayOfStrings(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTGetMainBundleIdentifier": {
+      "name": "CUTGetMainBundleIdentifier",
+      "framework": "CommonUtilities",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUTRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CUTGetMainBundleIdentifier(CUTRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTSetXPCConnectionContext": {
+      "name": "CUTSetXPCConnectionContext",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUTRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CUTSetXPCConnectionContext(CUTRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTWeakLinkSymbol": {
+      "name": "CUTWeakLinkSymbol",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTWeakLinkSymbol(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTInsertDatasToXPCDictionary": {
+      "name": "CUTInsertDatasToXPCDictionary",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTInsertDatasToXPCDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTWiFiManagerTotalDurationKey": {
+      "name": "CUTWiFiManagerTotalDurationKey",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTWiFiManagerTotalDurationKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTInsertBoolsToXPCDictionary": {
+      "name": "CUTInsertBoolsToXPCDictionary",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTInsertBoolsToXPCDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTXPCCreateServerConnection": {
+      "name": "CUTXPCCreateServerConnection",
+      "framework": "CommonUtilities",
+      "return_type": "CUTXPCRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUTXPCRef CUTXPCCreateServerConnection(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUTXPCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUTXPCCreateConnectionForServiceWithQueue",
+        "CUTXPCCreateConnectionForService"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTAuditTokenTaskHasEntitlement": {
+      "name": "CUTAuditTokenTaskHasEntitlement",
+      "framework": "CommonUtilities",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUTAuditTokenTaskRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CUTAuditTokenTaskHasEntitlement(CUTAuditTokenTaskRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "cut_backtrace": {
+      "name": "cut_backtrace",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ cut_backtrace(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTInsertDoublesToXPCDictionary": {
+      "name": "CUTInsertDoublesToXPCDictionary",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTInsertDoublesToXPCDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTDataForPropertyList": {
+      "name": "CUTDataForPropertyList",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTDataForPropertyList(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTReportingBatchingIntervalDefault": {
+      "name": "CUTReportingBatchingIntervalDefault",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTReportingBatchingIntervalDefault(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTGetXPCDoubleFromDictionary": {
+      "name": "CUTGetXPCDoubleFromDictionary",
+      "framework": "CommonUtilities",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUTRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CUTGetXPCDoubleFromDictionary(CUTRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTGetXPCConnectionContext": {
+      "name": "CUTGetXPCConnectionContext",
+      "framework": "CommonUtilities",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUTRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CUTGetXPCConnectionContext(CUTRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTProcessNameForPid": {
+      "name": "CUTProcessNameForPid",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTProcessNameForPid(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTGetXPCBoolFromDictionary": {
+      "name": "CUTGetXPCBoolFromDictionary",
+      "framework": "CommonUtilities",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUTRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "bool/*?*/ CUTGetXPCBoolFromDictionary(CUTRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTWeakLinkClass": {
+      "name": "CUTWeakLinkClass",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTWeakLinkClass(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTWiFiManagerMaxMeasurementErrorKey": {
+      "name": "CUTWiFiManagerMaxMeasurementErrorKey",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTWiFiManagerMaxMeasurementErrorKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTXPCCreateConnectionForService": {
+      "name": "CUTXPCCreateConnectionForService",
+      "framework": "CommonUtilities",
+      "return_type": "CUTXPCRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUTXPCRef CUTXPCCreateConnectionForService(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUTXPCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUTXPCCreateConnectionForServiceWithQueue",
+        "CUTXPCCreateServerConnection"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "cut_non_arc_os_release": {
+      "name": "cut_non_arc_os_release",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ cut_non_arc_os_release(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTInsertIntsToXPCDictionary": {
+      "name": "CUTInsertIntsToXPCDictionary",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTInsertIntsToXPCDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTGetXPCDataFromDictionary": {
+      "name": "CUTGetXPCDataFromDictionary",
+      "framework": "CommonUtilities",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUTRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CUTGetXPCDataFromDictionary(CUTRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTXPCAlert": {
+      "name": "CUTXPCAlert",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTXPCAlert(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "cut_dispatch_log_queue": {
+      "name": "cut_dispatch_log_queue",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ cut_dispatch_log_queue(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "cut_arc_os_release": {
+      "name": "cut_arc_os_release",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ cut_arc_os_release(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUTWiFiManagerSSIDKey": {
+      "name": "CUTWiFiManagerSSIDKey",
+      "framework": "CommonUtilities",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommonUtilities"
+        }
+      ],
+      "signature": "void/*?*/ CUTWiFiManagerSSIDKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "system_io": [
+      "cut_dispatch_log_queue"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

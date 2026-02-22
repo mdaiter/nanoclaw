@@ -1,0 +1,72 @@
+{
+  "framework": "AccountPolicy",
+  "functions": {
+    "APCreateError": {
+      "name": "APCreateError",
+      "framework": "AccountPolicy",
+      "return_type": "APRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AccountPolicy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APRef APCreateError(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APCreateErrorWithEvalDetails"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APCreateErrorWithEvalDetails": {
+      "name": "APCreateErrorWithEvalDetails",
+      "framework": "AccountPolicy",
+      "return_type": "APRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AccountPolicy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APRef APCreateErrorWithEvalDetails(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APCreateError"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {},
+  "protocols": [],
+  "type_aliases": {}
+}

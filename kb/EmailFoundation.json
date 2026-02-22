@@ -1,0 +1,3920 @@
+{
+  "framework": "EmailFoundation",
+  "functions": {
+    "EFNumbersAreEqual": {
+      "name": "EFNumbersAreEqual",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFNumbersAreEqual(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.Locked.performWhileLocked<A>((inout A) -> A1) -> A1": {
+      "name": "EmailFoundation.Locked.performWhileLocked<A>((inout A) -> A1) -> A1",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.Locked.performWhileLocked<A>((inout A) -> A1) -> A1(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFPromise.future.getter : EmailFoundation.EFFuture<A>": {
+      "name": "EmailFoundation.EFPromise.future.getter : EmailFoundation.EFFuture<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFPromise.future.getter : EmailFoundation.EFFuture<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFARC4NormallyDistributedRandomDoubleWithMinimum": {
+      "name": "EFARC4NormallyDistributedRandomDoubleWithMinimum",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFARC4NormallyDistributedRandomDoubleWithMinimum(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ef_log_EFNetworkStatus": {
+      "name": "_ef_log_EFNetworkStatus",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ _ef_log_EFNetworkStatus(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFIsSeedBuild": {
+      "name": "EFIsSeedBuild",
+      "framework": "EmailFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool EFIsSeedBuild(EFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFAtomicSetOnceObjectLoad": {
+      "name": "EFAtomicSetOnceObjectLoad",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFAtomicRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ EFAtomicSetOnceObjectLoad(EFAtomicRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.Locked.subscript.getter : <A>(Swift.KeyPath<A, A1>) -> A1": {
+      "name": "EmailFoundation.Locked.subscript.getter : <A>(Swift.KeyPath<A, A1>) -> A1",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.Locked.subscript.getter : <A>(Swift.KeyPath<A, A1>) -> A1(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFContentProtectionValidateObservedStateIsUnlocked": {
+      "name": "EFContentProtectionValidateObservedStateIsUnlocked",
+      "framework": "EmailFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFContentProtectionValidateObservedStateRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool EFContentProtectionValidateObservedStateIsUnlocked(EFContentProtectionValidateObservedStateRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFGetFileIsPurgeableFD": {
+      "name": "EFGetFileIsPurgeableFD",
+      "framework": "EmailFoundation",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ EFGetFileIsPurgeableFD(EFRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFPromise.finish(() throws -> A) -> ()": {
+      "name": "EmailFoundation.EFPromise.finish(() throws -> A) -> ()",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFPromise.finish(() throws -> A) -> ()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFSQLiteExtendedErrorCodeKey": {
+      "name": "EFSQLiteExtendedErrorCodeKey",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFSQLiteExtendedErrorCodeKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFContentProtectionGetDeviceLockState": {
+      "name": "EFContentProtectionGetDeviceLockState",
+      "framework": "EmailFoundation",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFContentProtectionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ EFContentProtectionGetDeviceLockState(EFContentProtectionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.then<A>(on: __C.EFScheduler, block: (A) -> EmailFoundation.EFFuture<A1>) -> EmailFoundation.EFFuture<A1>": {
+      "name": "EmailFoundation.EFFuture.then<A>(on: __C.EFScheduler, block: (A) -> EmailFoundation.EFFuture<A1>) -> EmailFoundation.EFFuture<A1>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.then<A>(on: __C.EFScheduler, block: (A) -> EmailFoundation.EFFuture<A1>) -> EmailFoundation.EFFuture<A1>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "static EmailFoundation.EFFuture.asValue(Swift.AnyObject?) -> A?": {
+      "name": "static EmailFoundation.EFFuture.asValue(Swift.AnyObject?) -> A?",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ static EmailFoundation.EFFuture.asValue(Swift.AnyObject?) -> A?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for EmailFoundation.EFPromise.__allocating_init() -> EmailFoundation.EFPromise<A>": {
+      "name": "method descriptor for EmailFoundation.EFPromise.__allocating_init() -> EmailFoundation.EFPromise<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for EmailFoundation.EFPromise.__allocating_init() -> EmailFoundation.EFPromise<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFProductName": {
+      "name": "EFProductName",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFProductName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.__allocating_init(() throws -> A) -> EmailFoundation.EFFuture<A>": {
+      "name": "EmailFoundation.EFFuture.__allocating_init(() throws -> A) -> EmailFoundation.EFFuture<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.__allocating_init(() throws -> A) -> EmailFoundation.EFFuture<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFSQLStringForCollation": {
+      "name": "EFSQLStringForCollation",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFSQLStringForCollation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFSetsAreEqual": {
+      "name": "EFSetsAreEqual",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ EFSetsAreEqual(EFRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_EFLocalizedString": {
+      "name": "_EFLocalizedString",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ _EFLocalizedString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFPostUTF8FormData": {
+      "name": "EFPostUTF8FormData",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFPostUTF8FormData(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFUnregisterContentProtectionObserver": {
+      "name": "EFUnregisterContentProtectionObserver",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFUnregisterContentProtectionObserver(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "class metadata base offset for EmailFoundation.EFPromise": {
+      "name": "class metadata base offset for EmailFoundation.EFPromise",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ class metadata base offset for EmailFoundation.EFPromise(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFStringsAreEqual": {
+      "name": "EFStringsAreEqual",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFStringsAreEqual(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFSQLSchemaColumnNameRowID": {
+      "name": "EFSQLSchemaColumnNameRowID",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFSQLSchemaColumnNameRowID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "static EmailFoundation.EFFuture.asAnyObject(A) -> Swift.AnyObject?": {
+      "name": "static EmailFoundation.EFFuture.asAnyObject(A) -> Swift.AnyObject?",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ static EmailFoundation.EFFuture.asAnyObject(A) -> Swift.AnyObject?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFAtomicObjectRelease": {
+      "name": "EFAtomicObjectRelease",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFAtomicObjectRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void EFAtomicObjectRelease(EFAtomicObjectRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFStringWithUInt64": {
+      "name": "EFStringWithUInt64",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFStringWithUInt64(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.Locked.deinit": {
+      "name": "EmailFoundation.Locked.deinit",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.Locked.deinit(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFPublicErrorInfoKey": {
+      "name": "EFPublicErrorInfoKey",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFPublicErrorInfoKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_EFRepairString": {
+      "name": "_EFRepairString",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ _EFRepairString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.Locked.set<A>(_: Swift.ReferenceWritableKeyPath<A, A1>, to: A1) -> ()": {
+      "name": "EmailFoundation.Locked.set<A>(_: Swift.ReferenceWritableKeyPath<A, A1>, to: A1) -> ()",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.Locked.set<A>(_: Swift.ReferenceWritableKeyPath<A, A1>, to: A1) -> ()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFContentProtectionGetObservedState": {
+      "name": "EFContentProtectionGetObservedState",
+      "framework": "EmailFoundation",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFContentProtectionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ EFContentProtectionGetObservedState(EFContentProtectionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "class metadata base offset for EmailFoundation.EFFuture": {
+      "name": "class metadata base offset for EmailFoundation.EFFuture",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ class metadata base offset for EmailFoundation.EFFuture(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of EmailFoundation.EFFuture.__allocating_init<A where A1: AnyObject>(__C.EFFuture<A1>) -> EmailFoundation.EFFuture<A>": {
+      "name": "dispatch thunk of EmailFoundation.EFFuture.__allocating_init<A where A1: AnyObject>(__C.EFFuture<A1>) -> EmailFoundation.EFFuture<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of EmailFoundation.EFFuture.__allocating_init<A where A1: AnyObject>(__C.EFFuture<A1>) -> EmailFoundation.EFFuture<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.Locked.value() -> A": {
+      "name": "EmailFoundation.Locked.value() -> A",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.Locked.value() -> A(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for EmailFoundation.EFFuture.__allocating_init<A where A1: AnyObject>(__C.EFFuture<A1>) -> EmailFoundation.EFFuture<A>": {
+      "name": "method descriptor for EmailFoundation.EFFuture.__allocating_init<A where A1: AnyObject>(__C.EFFuture<A1>) -> EmailFoundation.EFFuture<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for EmailFoundation.EFFuture.__allocating_init<A where A1: AnyObject>(__C.EFFuture<A1>) -> EmailFoundation.EFFuture<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFARC4NormallyDistributedRandomDoubleInRange": {
+      "name": "EFARC4NormallyDistributedRandomDoubleInRange",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFARC4NormallyDistributedRandomDoubleInRange(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ef_xpc_activity_register": {
+      "name": "_ef_xpc_activity_register",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ _ef_xpc_activity_register(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ef_xpc_activity_run_if_necessary": {
+      "name": "ef_xpc_activity_run_if_necessary",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ ef_xpc_activity_run_if_necessary(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFPriorityDesignatorKey": {
+      "name": "EFPriorityDesignatorKey",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFPriorityDesignatorKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFProtectedDataAvailableInState": {
+      "name": "EFProtectedDataAvailableInState",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFProtectedDataAvailableInState(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.Locked.init(A) -> EmailFoundation.Locked<A>": {
+      "name": "EmailFoundation.Locked.init(A) -> EmailFoundation.Locked<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.Locked.init(A) -> EmailFoundation.Locked<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFCopyResponseDataForURLRequest": {
+      "name": "EFCopyResponseDataForURLRequest",
+      "framework": "EmailFoundation",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ EFCopyResponseDataForURLRequest(size_t size)",
+      "verb": "read",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.Locked.update(to: A) -> ()": {
+      "name": "EmailFoundation.Locked.update(to: A) -> ()",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.Locked.update(to: A) -> ()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.__allocating_init(Swift.Error) -> EmailFoundation.EFFuture<A>": {
+      "name": "EmailFoundation.EFFuture.__allocating_init(Swift.Error) -> EmailFoundation.EFFuture<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.__allocating_init(Swift.Error) -> EmailFoundation.EFFuture<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFContentProtectionStateDescription": {
+      "name": "EFContentProtectionStateDescription",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFContentProtectionStateDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ef_xpc_activity_register": {
+      "name": "ef_xpc_activity_register",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ ef_xpc_activity_register(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFContentProtectionDumpDiagnosticState": {
+      "name": "EFContentProtectionDumpDiagnosticState",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFContentProtectionDumpDiagnosticState(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFSQLStringForConflictResolution": {
+      "name": "EFSQLStringForConflictResolution",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFSQLStringForConflictResolution(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "describableObjectForExpression": {
+      "name": "describableObjectForExpression",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ describableObjectForExpression(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFPromise.finish(Swift.Error) -> Swift.Bool": {
+      "name": "EmailFoundation.EFPromise.finish(Swift.Error) -> Swift.Bool",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFPromise.finish(Swift.Error) -> Swift.Bool(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "class metadata base offset for EmailFoundation.Locked": {
+      "name": "class metadata base offset for EmailFoundation.Locked",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ class metadata base offset for EmailFoundation.Locked(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for EmailFoundation.EFFuture.isCancelled : Swift.Bool": {
+      "name": "property descriptor for EmailFoundation.EFFuture.isCancelled : Swift.Bool",
+      "framework": "EmailFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "property descriptor for EmailFoundation.EFFuture.isRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool property descriptor for EmailFoundation.EFFuture.isCancelled : Swift.Bool(property descriptor for EmailFoundation.EFFuture.isRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.init<A where A1: AnyObject>(__C.EFFuture<A1>) -> EmailFoundation.EFFuture<A>": {
+      "name": "EmailFoundation.EFFuture.init<A where A1: AnyObject>(__C.EFFuture<A1>) -> EmailFoundation.EFFuture<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.init<A where A1: AnyObject>(__C.EFFuture<A1>) -> EmailFoundation.EFFuture<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of EmailFoundation.EFPromise.__allocating_init() -> EmailFoundation.EFPromise<A>": {
+      "name": "dispatch thunk of EmailFoundation.EFPromise.__allocating_init() -> EmailFoundation.EFPromise<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of EmailFoundation.EFPromise.__allocating_init() -> EmailFoundation.EFPromise<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFAttributedStringsAreEqual": {
+      "name": "EFAttributedStringsAreEqual",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFAttributedStringsAreEqual(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFDataAreEqual": {
+      "name": "EFDataAreEqual",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFDataAreEqual(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFMarkFileAsPurgeableFD": {
+      "name": "EFMarkFileAsPurgeableFD",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFMarkFileAsPurgeableFD(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFSQLVerboseDebugLoggingEnabled": {
+      "name": "EFSQLVerboseDebugLoggingEnabled",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFSQLVerboseDebugLoggingEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFVerboseVersion": {
+      "name": "EFVerboseVersion",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFVerboseVersion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFDeviceUnlockedSinceBoot": {
+      "name": "EFDeviceUnlockedSinceBoot",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFDeviceUnlockedSinceBoot(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFContentProtectionSimulateState": {
+      "name": "EFContentProtectionSimulateState",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFContentProtectionSimulateState(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for EmailFoundation.Locked.__allocating_init(A) -> EmailFoundation.Locked<A>": {
+      "name": "method descriptor for EmailFoundation.Locked.__allocating_init(A) -> EmailFoundation.Locked<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for EmailFoundation.Locked.__allocating_init(A) -> EmailFoundation.Locked<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for EmailFoundation.EFFuture.isFinished : Swift.Bool": {
+      "name": "property descriptor for EmailFoundation.EFFuture.isFinished : Swift.Bool",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for EmailFoundation.EFFuture.isFinished : Swift.Bool(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method lookup function for EmailFoundation.EFFuture": {
+      "name": "method lookup function for EmailFoundation.EFFuture",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ method lookup function for EmailFoundation.EFFuture(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFErrorDomain": {
+      "name": "EFErrorDomain",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ef_log_EFSQLQueryGenerator": {
+      "name": "_ef_log_EFSQLQueryGenerator",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ _ef_log_EFSQLQueryGenerator(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.isFinished.getter : Swift.Bool": {
+      "name": "EmailFoundation.EFFuture.isFinished.getter : Swift.Bool",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.isFinished.getter : Swift.Bool(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFPromise.__deallocating_deinit": {
+      "name": "EmailFoundation.EFPromise.__deallocating_deinit",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFPromise.__deallocating_deinit(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFMurmurHash3Mix": {
+      "name": "EFMurmurHash3Mix",
+      "framework": "EmailFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFMurmurRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool EFMurmurHash3Mix(EFMurmurRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFSystemVersion": {
+      "name": "EFSystemVersion",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFSystemVersion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFMurmurHash3Data": {
+      "name": "EFMurmurHash3Data",
+      "framework": "EmailFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFMurmurRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool EFMurmurHash3Data(EFMurmurRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "test_setUse32BitMurmurHash3": {
+      "name": "test_setUse32BitMurmurHash3",
+      "framework": "EmailFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "test_setUse32BitMurmurRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool test_setUse32BitMurmurHash3(test_setUse32BitMurmurRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFMurmurHash3String": {
+      "name": "EFMurmurHash3String",
+      "framework": "EmailFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFMurmurRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool EFMurmurHash3String(EFMurmurRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_EFLocalizedStringFromTable": {
+      "name": "_EFLocalizedStringFromTable",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ _EFLocalizedStringFromTable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ef_log_EFObservable": {
+      "name": "_ef_log_EFObservable",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ _ef_log_EFObservable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.result(withTimeout: Swift.Double) throws -> A": {
+      "name": "EmailFoundation.EFFuture.result(withTimeout: Swift.Double) throws -> A",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.result(withTimeout: Swift.Double) throws -> A(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFProtectedDataAvailable": {
+      "name": "EFProtectedDataAvailable",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFProtectedDataAvailable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.__deallocating_deinit": {
+      "name": "EmailFoundation.EFFuture.__deallocating_deinit",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.__deallocating_deinit(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFStringWithInt": {
+      "name": "EFStringWithInt",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFStringWithInt(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.recover<A>(on: __C.EFScheduler, block: (Swift.Error) -> EmailFoundation.EFFuture<A1>) -> EmailFoundation.EFFuture<A1>": {
+      "name": "EmailFoundation.EFFuture.recover<A>(on: __C.EFScheduler, block: (Swift.Error) -> EmailFoundation.EFFuture<A1>) -> EmailFoundation.EFFuture<A1>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.recover<A>(on: __C.EFScheduler, block: (Swift.Error) -> EmailFoundation.EFFuture<A1>) -> EmailFoundation.EFFuture<A1>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.__allocating_init(A) -> EmailFoundation.EFFuture<A>": {
+      "name": "EmailFoundation.EFFuture.__allocating_init(A) -> EmailFoundation.EFFuture<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.__allocating_init(A) -> EmailFoundation.EFFuture<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFAtomicObjectReleaseIfIdentical": {
+      "name": "EFAtomicObjectReleaseIfIdentical",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFAtomicObjectReleaseIfIdentical(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFAtomicObjectSetIfIdentical": {
+      "name": "EFAtomicObjectSetIfIdentical",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFAtomicObjectRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ EFAtomicObjectSetIfIdentical(EFAtomicObjectRef *ref, uint64_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFDirectionalRightToLeftMark": {
+      "name": "EFDirectionalRightToLeftMark",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFDirectionalRightToLeftMark(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.isCancelled.getter : Swift.Bool": {
+      "name": "EmailFoundation.EFFuture.isCancelled.getter : Swift.Bool",
+      "framework": "EmailFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EmailFoundation.EFFuture.isRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool EmailFoundation.EFFuture.isCancelled.getter : Swift.Bool(EmailFoundation.EFFuture.isRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFAtomicSetOnceObjectRelease": {
+      "name": "EFAtomicSetOnceObjectRelease",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFAtomicSetOnceObjectRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void EFAtomicSetOnceObjectRelease(EFAtomicSetOnceObjectRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFDecodeCacheableInstance": {
+      "name": "EFDecodeCacheableInstance",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFDecodeCacheableInstance(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFStringWithUnsignedInteger": {
+      "name": "EFStringWithUnsignedInteger",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFStringWithUnsignedInteger(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFFrameworkVersion": {
+      "name": "EFFrameworkVersion",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFFrameworkVersion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method lookup function for EmailFoundation.EFPromise": {
+      "name": "method lookup function for EmailFoundation.EFPromise",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ method lookup function for EmailFoundation.EFPromise(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for EmailFoundation.EFPromise.future : EmailFoundation.EFFuture<A>": {
+      "name": "property descriptor for EmailFoundation.EFPromise.future : EmailFoundation.EFFuture<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for EmailFoundation.EFPromise.future : EmailFoundation.EFFuture<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFHEICImageUTType": {
+      "name": "EFHEICImageUTType",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFHEICImageUTType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFInt64RangeMax": {
+      "name": "EFInt64RangeMax",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFInt64RangeMax(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFIsCustomerBuild": {
+      "name": "EFIsCustomerBuild",
+      "framework": "EmailFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool EFIsCustomerBuild(EFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFSQLStringForOrderDirection": {
+      "name": "EFSQLStringForOrderDirection",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFSQLStringForOrderDirection(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFSQLiteErrorDomain": {
+      "name": "EFSQLiteErrorDomain",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFSQLiteErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFBundleIdentifierForXPCConnection": {
+      "name": "EFBundleIdentifierForXPCConnection",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFBundleIdentifierForXPCConnection(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFVerifyFileProtectionType": {
+      "name": "EFVerifyFileProtectionType",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFVerifyFileProtectionType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ef_log_EFProtectedFile": {
+      "name": "_ef_log_EFProtectedFile",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ _ef_log_EFProtectedFile(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFPromise.finish(with: A?, error: Swift.Error?) -> Swift.Bool": {
+      "name": "EmailFoundation.EFPromise.finish(with: A?, error: Swift.Error?) -> Swift.Bool",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFPromise.finish(with: A?, error: Swift.Error?) -> Swift.Bool(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "operatorDescriptionForPredicate": {
+      "name": "operatorDescriptionForPredicate",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ operatorDescriptionForPredicate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFPromise.finish(A) -> Swift.Bool": {
+      "name": "EmailFoundation.EFPromise.finish(A) -> Swift.Bool",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFPromise.finish(A) -> Swift.Bool(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFRegisterContentProtectionObserver": {
+      "name": "EFRegisterContentProtectionObserver",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ EFRegisterContentProtectionObserver(EFRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "EFLogRegisterStateCaptureBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFStringWithInt64": {
+      "name": "EFStringWithInt64",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFStringWithInt64(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.onError(on: __C.EFScheduler, block: (Swift.Error) -> ()) -> Self": {
+      "name": "EmailFoundation.EFFuture.onError(on: __C.EFScheduler, block: (Swift.Error) -> ()) -> Self",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.onError(on: __C.EFScheduler, block: (Swift.Error) -> ()) -> Self(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "test_unsetUse32BitMurmurHash3": {
+      "name": "test_unsetUse32BitMurmurHash3",
+      "framework": "EmailFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "test_unsetUse32BitMurmurRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool test_unsetUse32BitMurmurHash3(test_unsetUse32BitMurmurRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFEncodeCacheableInstance": {
+      "name": "EFEncodeCacheableInstance",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFEncodeCacheableInstance(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFEmailMessageUTType": {
+      "name": "EFEmailMessageUTType",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFEmailMessageUTType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFIsNotNull": {
+      "name": "EFIsNotNull",
+      "framework": "EmailFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool EFIsNotNull(EFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFRoundUnsignedInteger": {
+      "name": "EFRoundUnsignedInteger",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFRoundUnsignedInteger(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.Locked.__deallocating_deinit": {
+      "name": "EmailFoundation.Locked.__deallocating_deinit",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.Locked.__deallocating_deinit(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.__allocating_init<A where A1: AnyObject>(__C.EFFuture<A1>) -> EmailFoundation.EFFuture<A>": {
+      "name": "EmailFoundation.EFFuture.__allocating_init<A where A1: AnyObject>(__C.EFFuture<A1>) -> EmailFoundation.EFFuture<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.__allocating_init<A where A1: AnyObject>(__C.EFFuture<A1>) -> EmailFoundation.EFFuture<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.result() throws -> A": {
+      "name": "EmailFoundation.EFFuture.result() throws -> A",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.result() throws -> A(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFArraysAreEqual": {
+      "name": "EFArraysAreEqual",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFArraysAreEqual(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_DiagnosticStateDictionary": {
+      "name": "_DiagnosticStateDictionary",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ _DiagnosticStateDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFObjectsAreEqual": {
+      "name": "EFObjectsAreEqual",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFObjectsAreEqual(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.map<A>(on: __C.EFScheduler, transform: (A) -> A1) -> EmailFoundation.EFFuture<A1>": {
+      "name": "EmailFoundation.EFFuture.map<A>(on: __C.EFScheduler, transform: (A) -> A1) -> EmailFoundation.EFFuture<A1>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.map<A>(on: __C.EFScheduler, transform: (A) -> A1) -> EmailFoundation.EFFuture<A1>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for EmailFoundation.Locked.subscript<A>(Swift.KeyPath<A, A1>) -> A1": {
+      "name": "property descriptor for EmailFoundation.Locked.subscript<A>(Swift.KeyPath<A, A1>) -> A1",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for EmailFoundation.Locked.subscript<A>(Swift.KeyPath<A, A1>) -> A1(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFFetchSignpostLog": {
+      "name": "EFFetchSignpostLog",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFFetchSignpostLog(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.result(beforeDate: Foundation.Date) throws -> A": {
+      "name": "EmailFoundation.EFFuture.result(beforeDate: Foundation.Date) throws -> A",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.result(beforeDate: Foundation.Date) throws -> A(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_EFARC4NormallyDistributedRandomDouble": {
+      "name": "_EFARC4NormallyDistributedRandomDouble",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ _EFARC4NormallyDistributedRandomDouble(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFPromise.init() -> EmailFoundation.EFPromise<A>": {
+      "name": "EmailFoundation.EFPromise.init() -> EmailFoundation.EFPromise<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFPromise.init() -> EmailFoundation.EFPromise<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFIsRunningUnitTests": {
+      "name": "EFIsRunningUnitTests",
+      "framework": "EmailFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool EFIsRunningUnitTests(EFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFComparatorFromSortDescriptors": {
+      "name": "EFComparatorFromSortDescriptors",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFComparatorFromSortDescriptors(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFSystemBuildVersion": {
+      "name": "EFSystemBuildVersion",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFSystemBuildVersion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of EmailFoundation.Locked.__allocating_init(A) -> EmailFoundation.Locked<A>": {
+      "name": "dispatch thunk of EmailFoundation.Locked.__allocating_init(A) -> EmailFoundation.Locked<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of EmailFoundation.Locked.__allocating_init(A) -> EmailFoundation.Locked<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFDictionarysAreEqual": {
+      "name": "EFDictionarysAreEqual",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFDictionarysAreEqual(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFDirectionalLeftToRightMark": {
+      "name": "EFDirectionalLeftToRightMark",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFDirectionalLeftToRightMark(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFLogRegisterStateCaptureBlock": {
+      "name": "EFLogRegisterStateCaptureBlock",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFLogRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ EFLogRegisterStateCaptureBlock(EFLogRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "EFRegisterContentProtectionObserver"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFMarkFileAsPurgeable": {
+      "name": "EFMarkFileAsPurgeable",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFMarkFileAsPurgeable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ef_xpc_activity_register_withcriteria": {
+      "name": "ef_xpc_activity_register_withcriteria",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ ef_xpc_activity_register_withcriteria(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.Locked.get<A>(Swift.KeyPath<A, A1>) -> A1": {
+      "name": "EmailFoundation.Locked.get<A>(Swift.KeyPath<A, A1>) -> A1",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.Locked.get<A>(Swift.KeyPath<A, A1>) -> A1(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFIsNull": {
+      "name": "EFIsNull",
+      "framework": "EmailFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool EFIsNull(EFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFPromise.__allocating_init() -> EmailFoundation.EFPromise<A>": {
+      "name": "EmailFoundation.EFPromise.__allocating_init() -> EmailFoundation.EFPromise<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFPromise.__allocating_init() -> EmailFoundation.EFPromise<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFDefaultsKeyLogWithPII": {
+      "name": "EFDefaultsKeyLogWithPII",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFDefaultsKeyLogWithPII(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFPromise.deinit": {
+      "name": "EmailFoundation.EFPromise.deinit",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFPromise.deinit(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFNonContainerizedHomeDirectory": {
+      "name": "EFNonContainerizedHomeDirectory",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFNonContainerizedHomeDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFAtomicObjectSetIfNil": {
+      "name": "EFAtomicObjectSetIfNil",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "EFAtomicObjectRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ EFAtomicObjectSetIfNil(EFAtomicObjectRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.deinit": {
+      "name": "EmailFoundation.EFFuture.deinit",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.deinit(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method lookup function for EmailFoundation.Locked": {
+      "name": "method lookup function for EmailFoundation.Locked",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ method lookup function for EmailFoundation.Locked(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.Locked.__allocating_init(A) -> EmailFoundation.Locked<A>": {
+      "name": "EmailFoundation.Locked.__allocating_init(A) -> EmailFoundation.Locked<A>",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.Locked.__allocating_init(A) -> EmailFoundation.Locked<A>(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFSaveTailspin": {
+      "name": "EFSaveTailspin",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFSaveTailspin(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFAtomicObjectLoad": {
+      "name": "EFAtomicObjectLoad",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFAtomicObjectLoad(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.always(on: __C.EFScheduler, block: () -> ()) -> Self": {
+      "name": "EmailFoundation.EFFuture.always(on: __C.EFScheduler, block: () -> ()) -> Self",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.always(on: __C.EFScheduler, block: () -> ()) -> Self(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFARC4NormallyDistributedRandomDouble": {
+      "name": "EFARC4NormallyDistributedRandomDouble",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFARC4NormallyDistributedRandomDouble(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFPerformSyncWithProtectedDataAvailability": {
+      "name": "EFPerformSyncWithProtectedDataAvailability",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFPerformSyncWithProtectedDataAvailability(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EFSQLSchemaDatabaseNameMain": {
+      "name": "EFSQLSchemaDatabaseNameMain",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EFSQLSchemaDatabaseNameMain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "EmailFoundation.EFFuture.onSuccess(on: __C.EFScheduler, block: (A) -> ()) -> Self": {
+      "name": "EmailFoundation.EFFuture.onSuccess(on: __C.EFScheduler, block: (A) -> ()) -> Self",
+      "framework": "EmailFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from EmailFoundation"
+        }
+      ],
+      "signature": "void/*?*/ EmailFoundation.EFFuture.onSuccess(on: __C.EFScheduler, block: (A) -> ()) -> Self(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "system_io": [
+      "dispatch thunk of EmailFoundation.Locked.__allocating_init(A) -> EmailFoundation.Locked<A>",
+      "dispatch thunk of EmailFoundation.EFFuture.__allocating_init<A where A1: AnyObject>(__C.EFFuture<A1>) -> EmailFoundation.EFFuture<A>",
+      "dispatch thunk of EmailFoundation.EFPromise.__allocating_init() -> EmailFoundation.EFPromise<A>"
+    ],
+    "video_processing": [
+      "EFDecodeCacheableInstance",
+      "EFEncodeCacheableInstance",
+      "EFFrameworkVersion"
+    ],
+    "image_processing": [
+      "EFHEICImageUTType"
+    ],
+    "memory_buffer": [
+      "EmailFoundation.Locked.__deallocating_deinit",
+      "EmailFoundation.Locked.__allocating_init(A) -> EmailFoundation.Locked<A>",
+      "dispatch thunk of EmailFoundation.Locked.__allocating_init(A) -> EmailFoundation.Locked<A>",
+      "method descriptor for EmailFoundation.Locked.__allocating_init(A) -> EmailFoundation.Locked<A>",
+      "EmailFoundation.EFFuture.__deallocating_deinit",
+      "EmailFoundation.EFFuture.__allocating_init<A where A1: AnyObject>(__C.EFFuture<A1>) -> EmailFoundation.EFFuture<A>",
+      "dispatch thunk of EmailFoundation.EFFuture.__allocating_init<A where A1: AnyObject>(__C.EFFuture<A1>) -> EmailFoundation.EFFuture<A>",
+      "method descriptor for EmailFoundation.EFFuture.__allocating_init<A where A1: AnyObject>(__C.EFFuture<A1>) -> EmailFoundation.EFFuture<A>",
+      "EmailFoundation.EFFuture.__allocating_init(Swift.Error) -> EmailFoundation.EFFuture<A>",
+      "EmailFoundation.EFFuture.__allocating_init(A) -> EmailFoundation.EFFuture<A>",
+      "EmailFoundation.EFFuture.__allocating_init(() throws -> A) -> EmailFoundation.EFFuture<A>",
+      "EmailFoundation.EFPromise.__allocating_init() -> EmailFoundation.EFPromise<A>",
+      "dispatch thunk of EmailFoundation.EFPromise.__allocating_init() -> EmailFoundation.EFPromise<A>",
+      "method descriptor for EmailFoundation.EFPromise.__allocating_init() -> EmailFoundation.EFPromise<A>",
+      "EmailFoundation.EFPromise.__deallocating_deinit"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

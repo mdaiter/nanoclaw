@@ -1,0 +1,3365 @@
+{
+  "framework": "AirPlayReceiver",
+  "functions": {
+    "APReceiverStatsCollectorAddAudioLostPacketCount": {
+      "name": "APReceiverStatsCollectorAddAudioLostPacketCount",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverStatsCollectorAddAudioLostPacketRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t APReceiverStatsCollectorAddAudioLostPacketCount(APReceiverStatsCollectorAddAudioLostPacketRef *ref)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverStatsCollectorGetFrameCounters",
+        "APReceiverStatsCollectorAddAudioLatePacketCount",
+        "APReceiverStatsCollectorAddAudioUnrecoveredPacketCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInvalidate": {
+      "name": "APAdvertiserInvalidate",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APAdvertiserInvalidate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AirPlayReceiverSessionSendMediaRemoteCommand": {
+      "name": "AirPlayReceiverSessionSendMediaRemoteCommand",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ AirPlayReceiverSessionSendMediaRemoteCommand(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AirPlayReceiverSessionSendCommand_b": {
+      "name": "AirPlayReceiverSessionSendCommand_b",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ AirPlayReceiverSessionSendCommand_b(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorSetMirroringMode": {
+      "name": "APReceiverStatsCollectorSetMirroringMode",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverStatsCollectorRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ APReceiverStatsCollectorSetMirroringMode(APReceiverStatsCollectorRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoCopyClusterCompatibleAirPlayData": {
+      "name": "APAdvertiserInfoCopyClusterCompatibleAirPlayData",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserInfoRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APAdvertiserInfoRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "APAdvertiserInfoRef/*?*/ APAdvertiserInfoCopyClusterCompatibleAirPlayData(APAdvertiserInfoRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserInfoRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType",
+        "APAdvertiserInfoCreate",
+        "APAdvertiserInfoCopyAirPlayDataWithNANServiceType",
+        "APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName",
+        "APAdvertiserInfoCreateWithData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APValeriaHelperReceiverStart": {
+      "name": "APValeriaHelperReceiverStart",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APValeriaHelperReceiverStart(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType": {
+      "name": "APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserInfoRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APAdvertiserInfoRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "APAdvertiserInfoRef/*?*/ APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType(APAdvertiserInfoRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserInfoRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserInfoCopyClusterCompatibleAirPlayData",
+        "APAdvertiserInfoCreate",
+        "APAdvertiserInfoCopyAirPlayDataWithNANServiceType",
+        "APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName",
+        "APAdvertiserInfoCreateWithData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AirPlayReceiverSessionSetProperty": {
+      "name": "AirPlayReceiverSessionSetProperty",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AirPlayReceiverSessionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AirPlayReceiverSessionSetProperty(AirPlayReceiverSessionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserStop": {
+      "name": "APAdvertiserStop",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APAdvertiserStop(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorUpdateVideoSizes": {
+      "name": "APReceiverStatsCollectorUpdateVideoSizes",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APReceiverStatsCollectorUpdateVideoSizes(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoDebugShow": {
+      "name": "APAdvertiserInfoDebugShow",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APAdvertiserInfoDebugShow(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APPairingServicesCoreUtilsCreate": {
+      "name": "APPairingServicesCoreUtilsCreate",
+      "framework": "AirPlayReceiver",
+      "return_type": "APPairingServicesCoreUtilsRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APPairingServicesCoreUtilsRef APPairingServicesCoreUtilsCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APPairingServicesCoreUtilsRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APValeriaHelperActivationStop": {
+      "name": "APValeriaHelperActivationStop",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APValeriaHelperActivationStop(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverUIControllerGetTypeID": {
+      "name": "APReceiverUIControllerGetTypeID",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverUIControllerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ APReceiverUIControllerGetTypeID(APReceiverUIControllerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APValeriaHelperGetTypeID",
+        "AirPlayReceiverServerGetTypeID",
+        "APReceiverScreenSessionGetTypeID",
+        "APReceiverScreenSinkGetClassID",
+        "APReceiverRemoteControlSessionGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APValeriaHelperGetTypeID": {
+      "name": "APValeriaHelperGetTypeID",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APValeriaHelperRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ APValeriaHelperGetTypeID(APValeriaHelperRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverUIControllerGetTypeID",
+        "AirPlayReceiverServerGetTypeID",
+        "APReceiverScreenSessionGetTypeID",
+        "APReceiverScreenSinkGetClassID",
+        "APReceiverRemoteControlSessionGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AirPlayReceiverSessionControl": {
+      "name": "AirPlayReceiverSessionControl",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ AirPlayReceiverSessionControl(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserCopyNANWifiStats": {
+      "name": "APAdvertiserCopyNANWifiStats",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APAdvertiserRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "APAdvertiserRef/*?*/ APAdvertiserCopyNANWifiStats(APAdvertiserRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserCopyProperty",
+        "APAdvertiserCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoCreate": {
+      "name": "APAdvertiserInfoCreate",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserInfoRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APAdvertiserInfoRef APAdvertiserInfoCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserInfoRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserInfoCopyClusterCompatibleAirPlayData",
+        "APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType",
+        "APAdvertiserInfoCopyAirPlayDataWithNANServiceType",
+        "APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName",
+        "APAdvertiserInfoCreateWithData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoCopyAirPlayDataWithNANServiceType": {
+      "name": "APAdvertiserInfoCopyAirPlayDataWithNANServiceType",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserInfoRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APAdvertiserInfoRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "APAdvertiserInfoRef/*?*/ APAdvertiserInfoCopyAirPlayDataWithNANServiceType(APAdvertiserInfoRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserInfoRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserInfoCopyClusterCompatibleAirPlayData",
+        "APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType",
+        "APAdvertiserInfoCreate",
+        "APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName",
+        "APAdvertiserInfoCreateWithData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APPairingServicesCoreUtilsHandleListPeers": {
+      "name": "APPairingServicesCoreUtilsHandleListPeers",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APPairingServicesCoreUtilsHandleListPeers(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AirPlayReceiverServerGetTypeID": {
+      "name": "AirPlayReceiverServerGetTypeID",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AirPlayReceiverServerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ AirPlayReceiverServerGetTypeID(AirPlayReceiverServerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverUIControllerGetTypeID",
+        "APValeriaHelperGetTypeID",
+        "APReceiverScreenSessionGetTypeID",
+        "APReceiverScreenSinkGetClassID",
+        "APReceiverRemoteControlSessionGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverScreenSessionGetTypeID": {
+      "name": "APReceiverScreenSessionGetTypeID",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverScreenSessionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ APReceiverScreenSessionGetTypeID(APReceiverScreenSessionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverUIControllerGetTypeID",
+        "APValeriaHelperGetTypeID",
+        "AirPlayReceiverServerGetTypeID",
+        "APReceiverScreenSinkGetClassID",
+        "APReceiverRemoteControlSessionGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserUpdateNANLinkStatus": {
+      "name": "APAdvertiserUpdateNANLinkStatus",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APAdvertiserUpdateNANLinkStatus(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APValeriaHelperReceiverWaitForConnection": {
+      "name": "APValeriaHelperReceiverWaitForConnection",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "synchronization"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APValeriaHelperReceiverWaitForConnection(void)",
+      "verb": "synchronize",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName": {
+      "name": "APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserInfoRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APAdvertiserInfoRef APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserInfoRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserInfoCopyClusterCompatibleAirPlayData",
+        "APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType",
+        "APAdvertiserInfoCreate",
+        "APAdvertiserInfoCopyAirPlayDataWithNANServiceType",
+        "APAdvertiserInfoCreateWithData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoCreateWithData": {
+      "name": "APAdvertiserInfoCreateWithData",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserInfoRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APAdvertiserInfoRef APAdvertiserInfoCreateWithData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserInfoRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserInfoCopyClusterCompatibleAirPlayData",
+        "APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType",
+        "APAdvertiserInfoCreate",
+        "APAdvertiserInfoCopyAirPlayDataWithNANServiceType",
+        "APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APValeriaHelperReceiverGetListeningPort": {
+      "name": "APValeriaHelperReceiverGetListeningPort",
+      "framework": "AirPlayReceiver",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APValeriaHelperReceiverRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ APValeriaHelperReceiverGetListeningPort(APValeriaHelperReceiverRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APValeriaHelperDiscoveryStartAndCopyMatchingEndpoint": {
+      "name": "APValeriaHelperDiscoveryStartAndCopyMatchingEndpoint",
+      "framework": "AirPlayReceiver",
+      "return_type": "APValeriaHelperDiscoveryStartAndRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APValeriaHelperDiscoveryStartAndRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "APValeriaHelperDiscoveryStartAndRef/*?*/ APValeriaHelperDiscoveryStartAndCopyMatchingEndpoint(APValeriaHelperDiscoveryStartAndRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "APValeriaHelperDiscoveryStartAndRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorEnableHUD": {
+      "name": "APReceiverStatsCollectorEnableHUD",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APReceiverStatsCollectorEnableHUD(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoCopyRAOPData": {
+      "name": "APAdvertiserInfoCopyRAOPData",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserInfoRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APAdvertiserInfoRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "APAdvertiserInfoRef/*?*/ APAdvertiserInfoCopyRAOPData(APAdvertiserInfoRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserInfoRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserInfoCopyClusterCompatibleAirPlayData",
+        "APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType",
+        "APAdvertiserInfoCreate",
+        "APAdvertiserInfoCopyAirPlayDataWithNANServiceType",
+        "APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorUpdateSenderStats": {
+      "name": "APReceiverStatsCollectorUpdateSenderStats",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APReceiverStatsCollectorUpdateSenderStats(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserReportNANIssue": {
+      "name": "APAdvertiserReportNANIssue",
+      "framework": "AirPlayReceiver",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APAdvertiserReportNANRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool APAdvertiserReportNANIssue(APAdvertiserReportNANRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverScreenSinkGetClassID": {
+      "name": "APReceiverScreenSinkGetClassID",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverScreenSinkRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ APReceiverScreenSinkGetClassID(APReceiverScreenSinkRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverUIControllerGetTypeID",
+        "APValeriaHelperGetTypeID",
+        "AirPlayReceiverServerGetTypeID",
+        "APReceiverScreenSessionGetTypeID",
+        "APReceiverRemoteControlSessionGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorSetScreenOptions": {
+      "name": "APReceiverStatsCollectorSetScreenOptions",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverStatsCollectorRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ APReceiverStatsCollectorSetScreenOptions(APReceiverStatsCollectorRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorUpdateVideoPerformanceStats": {
+      "name": "APReceiverStatsCollectorUpdateVideoPerformanceStats",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APReceiverStatsCollectorUpdateVideoPerformanceStats(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorDisableHUD": {
+      "name": "APReceiverStatsCollectorDisableHUD",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APReceiverStatsCollectorDisableHUD(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoCopy": {
+      "name": "APAdvertiserInfoCopy",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserInfoRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APAdvertiserInfoRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "APAdvertiserInfoRef/*?*/ APAdvertiserInfoCopy(APAdvertiserInfoRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserInfoRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserInfoCopyClusterCompatibleAirPlayData",
+        "APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType",
+        "APAdvertiserInfoCreate",
+        "APAdvertiserInfoCopyAirPlayDataWithNANServiceType",
+        "APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserCopyProperty": {
+      "name": "APAdvertiserCopyProperty",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APAdvertiserRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "APAdvertiserRef/*?*/ APAdvertiserCopyProperty(APAdvertiserRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserCopyNANWifiStats",
+        "APAdvertiserCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APPairingServicesGetCMBaseObject": {
+      "name": "APPairingServicesGetCMBaseObject",
+      "framework": "AirPlayReceiver",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APPairingServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ APPairingServicesGetCMBaseObject(APPairingServicesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorEnableLogging": {
+      "name": "APReceiverStatsCollectorEnableLogging",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APReceiverStatsCollectorEnableLogging(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorUpdateVideoFormatDescription": {
+      "name": "APReceiverStatsCollectorUpdateVideoFormatDescription",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APReceiverStatsCollectorUpdateVideoFormatDescription(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverRemoteControlSessionGetClassID": {
+      "name": "APReceiverRemoteControlSessionGetClassID",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverRemoteControlSessionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ APReceiverRemoteControlSessionGetClassID(APReceiverRemoteControlSessionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverUIControllerGetTypeID",
+        "APValeriaHelperGetTypeID",
+        "AirPlayReceiverServerGetTypeID",
+        "APReceiverScreenSessionGetTypeID",
+        "APReceiverScreenSinkGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AirPlayReceiverSessionForceKeyFrame": {
+      "name": "AirPlayReceiverSessionForceKeyFrame",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ AirPlayReceiverSessionForceKeyFrame(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverScreenSinkCreateFileWriter": {
+      "name": "APReceiverScreenSinkCreateFileWriter",
+      "framework": "AirPlayReceiver",
+      "return_type": "APReceiverScreenSinkRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APReceiverScreenSinkRef APReceiverScreenSinkCreateFileWriter(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APReceiverScreenSinkRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverScreenSinkCreateAirPlay"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AirPlayReceiverServerCopyProperty": {
+      "name": "AirPlayReceiverServerCopyProperty",
+      "framework": "AirPlayReceiver",
+      "return_type": "AirPlayReceiverServerRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AirPlayReceiverServerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AirPlayReceiverServerRef/*?*/ AirPlayReceiverServerCopyProperty(AirPlayReceiverServerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AirPlayReceiverServerRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AirPlayReceiverServerCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorGetTypeID": {
+      "name": "APReceiverStatsCollectorGetTypeID",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverStatsCollectorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ APReceiverStatsCollectorGetTypeID(APReceiverStatsCollectorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverUIControllerGetTypeID",
+        "APValeriaHelperGetTypeID",
+        "AirPlayReceiverServerGetTypeID",
+        "APReceiverScreenSessionGetTypeID",
+        "APReceiverScreenSinkGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverScreenSinkGetTypeID": {
+      "name": "APReceiverScreenSinkGetTypeID",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverScreenSinkRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ APReceiverScreenSinkGetTypeID(APReceiverScreenSinkRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverUIControllerGetTypeID",
+        "APValeriaHelperGetTypeID",
+        "AirPlayReceiverServerGetTypeID",
+        "APReceiverScreenSessionGetTypeID",
+        "APReceiverScreenSinkGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserSetProperty": {
+      "name": "APAdvertiserSetProperty",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APAdvertiserRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ APAdvertiserSetProperty(APAdvertiserRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorDisableLogging": {
+      "name": "APReceiverStatsCollectorDisableLogging",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APReceiverStatsCollectorDisableLogging(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorGetFrameCounters": {
+      "name": "APReceiverStatsCollectorGetFrameCounters",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverStatsCollectorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ APReceiverStatsCollectorGetFrameCounters(APReceiverStatsCollectorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverStatsCollectorAddAudioLostPacketCount",
+        "APReceiverStatsCollectorAddAudioLatePacketCount",
+        "APReceiverStatsCollectorAddAudioUnrecoveredPacketCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserCreate": {
+      "name": "APAdvertiserCreate",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APAdvertiserRef APAdvertiserCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserCopyNANWifiStats",
+        "APAdvertiserCopyProperty"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverScreenSinkCreateAirPlay": {
+      "name": "APReceiverScreenSinkCreateAirPlay",
+      "framework": "AirPlayReceiver",
+      "return_type": "APReceiverScreenSinkRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APReceiverScreenSinkRef APReceiverScreenSinkCreateAirPlay(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APReceiverScreenSinkRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverScreenSinkCreateFileWriter"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APValeriaHelperActivationStart": {
+      "name": "APValeriaHelperActivationStart",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APValeriaHelperActivationStart(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AirPlayReceiverServerCreate": {
+      "name": "AirPlayReceiverServerCreate",
+      "framework": "AirPlayReceiver",
+      "return_type": "AirPlayReceiverServerRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "AirPlayReceiverServerRef AirPlayReceiverServerCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "AirPlayReceiverServerRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AirPlayReceiverServerCopyProperty"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AirPlayReceiverServerSendDACPCommands": {
+      "name": "AirPlayReceiverServerSendDACPCommands",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ AirPlayReceiverServerSendDACPCommands(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverRemoteControlSessionGetTypeID": {
+      "name": "APReceiverRemoteControlSessionGetTypeID",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverRemoteControlSessionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ APReceiverRemoteControlSessionGetTypeID(APReceiverRemoteControlSessionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverUIControllerGetTypeID",
+        "APValeriaHelperGetTypeID",
+        "AirPlayReceiverServerGetTypeID",
+        "APReceiverScreenSessionGetTypeID",
+        "APReceiverScreenSinkGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserFlushBonjourRecords": {
+      "name": "APAdvertiserFlushBonjourRecords",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APAdvertiserFlushBonjourRecords(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoCreateAirPlayServiceName": {
+      "name": "APAdvertiserInfoCreateAirPlayServiceName",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserInfoRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APAdvertiserInfoRef APAdvertiserInfoCreateAirPlayServiceName(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserInfoRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserInfoCopyClusterCompatibleAirPlayData",
+        "APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType",
+        "APAdvertiserInfoCreate",
+        "APAdvertiserInfoCopyAirPlayDataWithNANServiceType",
+        "APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AirPlayReceiverSessionSetDelegate": {
+      "name": "AirPlayReceiverSessionSetDelegate",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AirPlayReceiverSessionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AirPlayReceiverSessionSetDelegate(AirPlayReceiverSessionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorSetNetworkClock": {
+      "name": "APReceiverStatsCollectorSetNetworkClock",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverStatsCollectorRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ APReceiverStatsCollectorSetNetworkClock(APReceiverStatsCollectorRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverUIControllerGetShared": {
+      "name": "APReceiverUIControllerGetShared",
+      "framework": "AirPlayReceiver",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverUIControllerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ APReceiverUIControllerGetShared(APReceiverUIControllerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APValeriaHelperDiscoveryStart": {
+      "name": "APValeriaHelperDiscoveryStart",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APValeriaHelperDiscoveryStart(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AirPlayReceiverServerGetDispatchQueue": {
+      "name": "AirPlayReceiverServerGetDispatchQueue",
+      "framework": "AirPlayReceiver",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AirPlayReceiverServerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AirPlayReceiverServerGetDispatchQueue(AirPlayReceiverServerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoCreateData": {
+      "name": "APAdvertiserInfoCreateData",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserInfoRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APAdvertiserInfoRef APAdvertiserInfoCreateData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserInfoRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserInfoCopyClusterCompatibleAirPlayData",
+        "APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType",
+        "APAdvertiserInfoCreate",
+        "APAdvertiserInfoCopyAirPlayDataWithNANServiceType",
+        "APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoCopyAirPlayP2PData": {
+      "name": "APAdvertiserInfoCopyAirPlayP2PData",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserInfoRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APAdvertiserInfoRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "APAdvertiserInfoRef/*?*/ APAdvertiserInfoCopyAirPlayP2PData(APAdvertiserInfoRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserInfoRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserInfoCopyClusterCompatibleAirPlayData",
+        "APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType",
+        "APAdvertiserInfoCreate",
+        "APAdvertiserInfoCopyAirPlayDataWithNANServiceType",
+        "APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APNetworkClockNTPClientLegacyCreate": {
+      "name": "APNetworkClockNTPClientLegacyCreate",
+      "framework": "AirPlayReceiver",
+      "return_type": "APNetworkClockNTPClientLegacyRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APNetworkClockNTPClientLegacyRef APNetworkClockNTPClientLegacyCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APNetworkClockNTPClientLegacyRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorSetHUDOptions": {
+      "name": "APReceiverStatsCollectorSetHUDOptions",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverStatsCollectorRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ APReceiverStatsCollectorSetHUDOptions(APReceiverStatsCollectorRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APPairingServicesCoreUtilsHandleAddPeer": {
+      "name": "APPairingServicesCoreUtilsHandleAddPeer",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APPairingServicesCoreUtilsHandleAddPeer(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserStart": {
+      "name": "APAdvertiserStart",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APAdvertiserStart(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoCopyAirPlayData": {
+      "name": "APAdvertiserInfoCopyAirPlayData",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserInfoRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APAdvertiserInfoRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "APAdvertiserInfoRef/*?*/ APAdvertiserInfoCopyAirPlayData(APAdvertiserInfoRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserInfoRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserInfoCopyClusterCompatibleAirPlayData",
+        "APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType",
+        "APAdvertiserInfoCreate",
+        "APAdvertiserInfoCopyAirPlayDataWithNANServiceType",
+        "APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoSetProperty": {
+      "name": "APAdvertiserInfoSetProperty",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APAdvertiserInfoRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ APAdvertiserInfoSetProperty(APAdvertiserInfoRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APPairingServicesLegacyCreate": {
+      "name": "APPairingServicesLegacyCreate",
+      "framework": "AirPlayReceiver",
+      "return_type": "APPairingServicesLegacyRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APPairingServicesLegacyRef APPairingServicesLegacyCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APPairingServicesLegacyRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APValeriaHelperDiscoveryStop": {
+      "name": "APValeriaHelperDiscoveryStop",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APValeriaHelperDiscoveryStop(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APPairingServicesCoreUtilsHandleRemovePeer": {
+      "name": "APPairingServicesCoreUtilsHandleRemovePeer",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APPairingServicesCoreUtilsHandleRemovePeer(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverScreenSessionCreate": {
+      "name": "APReceiverScreenSessionCreate",
+      "framework": "AirPlayReceiver",
+      "return_type": "APReceiverScreenSessionRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APReceiverScreenSessionRef APReceiverScreenSessionCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APReceiverScreenSessionRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoGetTypeID": {
+      "name": "APAdvertiserInfoGetTypeID",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APAdvertiserInfoRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ APAdvertiserInfoGetTypeID(APAdvertiserInfoRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverUIControllerGetTypeID",
+        "APValeriaHelperGetTypeID",
+        "AirPlayReceiverServerGetTypeID",
+        "APReceiverScreenSessionGetTypeID",
+        "APReceiverScreenSinkGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorAddAudioLatePacketCount": {
+      "name": "APReceiverStatsCollectorAddAudioLatePacketCount",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverStatsCollectorAddAudioLatePacketRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t APReceiverStatsCollectorAddAudioLatePacketCount(APReceiverStatsCollectorAddAudioLatePacketRef *ref)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverStatsCollectorAddAudioLostPacketCount",
+        "APReceiverStatsCollectorGetFrameCounters",
+        "APReceiverStatsCollectorAddAudioUnrecoveredPacketCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverSessionManagerGetTypeID": {
+      "name": "APReceiverSessionManagerGetTypeID",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverSessionManagerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ APReceiverSessionManagerGetTypeID(APReceiverSessionManagerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverUIControllerGetTypeID",
+        "APValeriaHelperGetTypeID",
+        "AirPlayReceiverServerGetTypeID",
+        "APReceiverScreenSessionGetTypeID",
+        "APReceiverScreenSinkGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoCopyProperty": {
+      "name": "APAdvertiserInfoCopyProperty",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserInfoRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APAdvertiserInfoRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "APAdvertiserInfoRef/*?*/ APAdvertiserInfoCopyProperty(APAdvertiserInfoRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserInfoRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserInfoCopyClusterCompatibleAirPlayData",
+        "APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType",
+        "APAdvertiserInfoCreate",
+        "APAdvertiserInfoCopyAirPlayDataWithNANServiceType",
+        "APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorCreate": {
+      "name": "APReceiverStatsCollectorCreate",
+      "framework": "AirPlayReceiver",
+      "return_type": "APReceiverStatsCollectorRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APReceiverStatsCollectorRef APReceiverStatsCollectorCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APReceiverStatsCollectorRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APValeriaHelperCreate": {
+      "name": "APValeriaHelperCreate",
+      "framework": "AirPlayReceiver",
+      "return_type": "APValeriaHelperRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APValeriaHelperRef APValeriaHelperCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APValeriaHelperRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoCreateTestInfoDictionary": {
+      "name": "APAdvertiserInfoCreateTestInfoDictionary",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserInfoRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APAdvertiserInfoRef APAdvertiserInfoCreateTestInfoDictionary(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserInfoRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserInfoCopyClusterCompatibleAirPlayData",
+        "APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType",
+        "APAdvertiserInfoCreate",
+        "APAdvertiserInfoCopyAirPlayDataWithNANServiceType",
+        "APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverScreenSinkGetCMBaseObject": {
+      "name": "APReceiverScreenSinkGetCMBaseObject",
+      "framework": "AirPlayReceiver",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverScreenSinkRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ APReceiverScreenSinkGetCMBaseObject(APReceiverScreenSinkRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorUpdateAudioBufferDuration": {
+      "name": "APReceiverStatsCollectorUpdateAudioBufferDuration",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APReceiverStatsCollectorUpdateAudioBufferDuration(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AirPlayReceiverSessionSendCommand": {
+      "name": "AirPlayReceiverSessionSendCommand",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ AirPlayReceiverSessionSendCommand(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserGetTypeID": {
+      "name": "APAdvertiserGetTypeID",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APAdvertiserRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ APAdvertiserGetTypeID(APAdvertiserRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverUIControllerGetTypeID",
+        "APValeriaHelperGetTypeID",
+        "AirPlayReceiverServerGetTypeID",
+        "APReceiverScreenSessionGetTypeID",
+        "APReceiverScreenSinkGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserInfoCreateRAOPServiceName": {
+      "name": "APAdvertiserInfoCreateRAOPServiceName",
+      "framework": "AirPlayReceiver",
+      "return_type": "APAdvertiserInfoRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "APAdvertiserInfoRef APAdvertiserInfoCreateRAOPServiceName(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "APAdvertiserInfoRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APAdvertiserInfoCopyClusterCompatibleAirPlayData",
+        "APAdvertiserInfoCopyAirPlayP2PDataWithNANServiceType",
+        "APAdvertiserInfoCreate",
+        "APAdvertiserInfoCopyAirPlayDataWithNANServiceType",
+        "APAdvertiserInfoCreateWithDeviceTXTRecordDataAndDeviceName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorSetIfName": {
+      "name": "APReceiverStatsCollectorSetIfName",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverStatsCollectorRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "const char *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ APReceiverStatsCollectorSetIfName(APReceiverStatsCollectorRef *ref, const char * *value)",
+      "verb": "write",
+      "input_formats": [
+        "const char * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverScreenSessionGetClassID": {
+      "name": "APReceiverScreenSessionGetClassID",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverScreenSessionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ APReceiverScreenSessionGetClassID(APReceiverScreenSessionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverUIControllerGetTypeID",
+        "APValeriaHelperGetTypeID",
+        "AirPlayReceiverServerGetTypeID",
+        "APReceiverScreenSessionGetTypeID",
+        "APReceiverScreenSinkGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorAddAudioUnrecoveredPacketCount": {
+      "name": "APReceiverStatsCollectorAddAudioUnrecoveredPacketCount",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverStatsCollectorAddAudioUnrecoveredPacketRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t APReceiverStatsCollectorAddAudioUnrecoveredPacketCount(APReceiverStatsCollectorAddAudioUnrecoveredPacketRef *ref)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverStatsCollectorAddAudioLostPacketCount",
+        "APReceiverStatsCollectorGetFrameCounters",
+        "APReceiverStatsCollectorAddAudioLatePacketCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorShowStats": {
+      "name": "APReceiverStatsCollectorShowStats",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APReceiverStatsCollectorShowStats(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverStatsCollectorUpdateVideoCodec": {
+      "name": "APReceiverStatsCollectorUpdateVideoCodec",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APReceiverStatsCollectorUpdateVideoCodec(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APReceiverUIControllerGetClassID": {
+      "name": "APReceiverUIControllerGetClassID",
+      "framework": "AirPlayReceiver",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "APReceiverUIControllerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ APReceiverUIControllerGetClassID(APReceiverUIControllerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "APReceiverUIControllerGetTypeID",
+        "APValeriaHelperGetTypeID",
+        "AirPlayReceiverServerGetTypeID",
+        "APReceiverScreenSessionGetTypeID",
+        "APReceiverScreenSinkGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APValeriaHelperReceiverStop": {
+      "name": "APValeriaHelperReceiverStop",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APValeriaHelperReceiverStop(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AirPlayReceiverServerControl": {
+      "name": "AirPlayReceiverServerControl",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ AirPlayReceiverServerControl(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "APAdvertiserDebugShow": {
+      "name": "APAdvertiserDebugShow",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        }
+      ],
+      "signature": "void/*?*/ APAdvertiserDebugShow(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AirPlayReceiverServerSetProperty": {
+      "name": "AirPlayReceiverServerSetProperty",
+      "framework": "AirPlayReceiver",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AirPlayReceiverServerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AirPlayReceiverServerSetProperty(AirPlayReceiverServerRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AirPlayReceiverSessionCopyProperty": {
+      "name": "AirPlayReceiverSessionCopyProperty",
+      "framework": "AirPlayReceiver",
+      "return_type": "AirPlayReceiverSessionRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AirPlayReceiverSessionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AirPlayReceiver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AirPlayReceiverSessionRef/*?*/ AirPlayReceiverSessionCopyProperty(AirPlayReceiverSessionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AirPlayReceiverSessionRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "system_io": [
+      "AirPlayReceiverServerGetDispatchQueue"
+    ],
+    "gpu_compute": [
+      "AirPlayReceiverServerSendDACPCommands",
+      "AirPlayReceiverSessionSendCommand",
+      "AirPlayReceiverSessionSendCommand_b",
+      "AirPlayReceiverSessionSendMediaRemoteCommand"
+    ],
+    "video_processing": [
+      "APReceiverStatsCollectorGetFrameCounters",
+      "APReceiverStatsCollectorUpdateVideoCodec",
+      "APReceiverStatsCollectorUpdateVideoFormatDescription",
+      "APReceiverStatsCollectorUpdateVideoPerformanceStats",
+      "APReceiverStatsCollectorUpdateVideoSizes",
+      "AirPlayReceiverSessionForceKeyFrame"
+    ],
+    "display_compositing": [
+      "APReceiverScreenSessionCreate",
+      "APReceiverScreenSessionGetClassID",
+      "APReceiverScreenSessionGetTypeID",
+      "APReceiverScreenSinkCreateAirPlay",
+      "APReceiverScreenSinkCreateFileWriter",
+      "APReceiverScreenSinkGetCMBaseObject",
+      "APReceiverScreenSinkGetClassID",
+      "APReceiverScreenSinkGetTypeID",
+      "APReceiverStatsCollectorSetScreenOptions"
+    ],
+    "cryptography": [
+      "APPairingServicesCoreUtilsHandleAddPeer",
+      "APPairingServicesCoreUtilsHandleListPeers",
+      "APPairingServicesCoreUtilsHandleRemovePeer",
+      "APReceiverUIControllerGetShared"
+    ],
+    "memory_buffer": [
+      "APReceiverStatsCollectorUpdateAudioBufferDuration"
+    ],
+    "synchronization": [
+      "APValeriaHelperReceiverWaitForConnection"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

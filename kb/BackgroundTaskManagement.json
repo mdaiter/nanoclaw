@@ -1,0 +1,1568 @@
+{
+  "framework": "BackgroundTaskManagement",
+  "functions": {
+    "BTMDispositionDescription": {
+      "name": "BTMDispositionDescription",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMDispositionDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RegisterParentApps": {
+      "name": "RegisterParentApps",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "void *",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ RegisterParentApps(void * *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "InternalAttributionsByLabel": {
+      "name": "InternalAttributionsByLabel",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ InternalAttributionsByLabel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMConfigLabel": {
+      "name": "BTMConfigLabel",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMConfigLabel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMSubsystemQuickLook": {
+      "name": "BTMSubsystemQuickLook",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMSubsystemQuickLook(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "btm_set_enablement_status_for_subsystem_and_uid": {
+      "name": "btm_set_enablement_status_for_subsystem_and_uid",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ btm_set_enablement_status_for_subsystem_and_uid(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMManagedConfigurationDomain": {
+      "name": "BTMManagedConfigurationDomain",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMManagedConfigurationDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CuratedInternalNameForLabel": {
+      "name": "CuratedInternalNameForLabel",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ CuratedInternalNameForLabel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMConfigBundleProgram": {
+      "name": "BTMConfigBundleProgram",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMConfigBundleProgram(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMLocalizedNameForSubsystem": {
+      "name": "BTMLocalizedNameForSubsystem",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMLocalizedNameForSubsystem(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BundleURLForAuditToken": {
+      "name": "BundleURLForAuditToken",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BundleURLForAuditToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMSetEnablementStatusForSubsystem": {
+      "name": "BTMSetEnablementStatusForSubsystem",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BTMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BTMSetEnablementStatusForSubsystem(BTMRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMItemIdentifierCopyBaseFromIdentifierAndType": {
+      "name": "BTMItemIdentifierCopyBaseFromIdentifierAndType",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "BTMItemIdentifierRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BTMItemIdentifierRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "BTMItemIdentifierRef/*?*/ BTMItemIdentifierCopyBaseFromIdentifierAndType(BTMItemIdentifierRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "BTMItemIdentifierRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CuratedAssociatedBundleIdentifiersForLabelAndTeamID": {
+      "name": "CuratedAssociatedBundleIdentifiersForLabelAndTeamID",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ CuratedAssociatedBundleIdentifiersForLabelAndTeamID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IsAppleAnchoredCodeAtURL": {
+      "name": "IsAppleAnchoredCodeAtURL",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ IsAppleAnchoredCodeAtURL(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMResetEnablementStatusForSubsystemAndUID": {
+      "name": "BTMResetEnablementStatusForSubsystemAndUID",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMResetEnablementStatusForSubsystemAndUID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LabelForLaunchdPlist": {
+      "name": "LabelForLaunchdPlist",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ LabelForLaunchdPlist(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ConsoleUserUID": {
+      "name": "ConsoleUserUID",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ ConsoleUserUID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AttributionsByLabel": {
+      "name": "AttributionsByLabel",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ AttributionsByLabel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMItemFlagsDescription": {
+      "name": "BTMItemFlagsDescription",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMItemFlagsDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "btm_subsystem_cron": {
+      "name": "btm_subsystem_cron",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ btm_subsystem_cron(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DeveloperNameForPath": {
+      "name": "DeveloperNameForPath",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ DeveloperNameForPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMItemTypeDescription": {
+      "name": "BTMItemTypeDescription",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMItemTypeDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMConfigBundleIdentifiers": {
+      "name": "BTMConfigBundleIdentifiers",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMConfigBundleIdentifiers(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMItemTypeValidateRegistrationParameters": {
+      "name": "BTMItemTypeValidateRegistrationParameters",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMItemTypeValidateRegistrationParameters(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMGetEnablementStatusForSubsystem": {
+      "name": "BTMGetEnablementStatusForSubsystem",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BTMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BTMGetEnablementStatusForSubsystem(BTMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMItemIdentifierWithRegistrationInfo": {
+      "name": "BTMItemIdentifierWithRegistrationInfo",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMItemIdentifierWithRegistrationInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CuratedInternalAssociatedBundleIdentifiersForLabel": {
+      "name": "CuratedInternalAssociatedBundleIdentifiersForLabel",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ CuratedInternalAssociatedBundleIdentifiersForLabel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DesignatedRequirementForAuditToken": {
+      "name": "DesignatedRequirementForAuditToken",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ DesignatedRequirementForAuditToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyDeveloperName": {
+      "name": "copyDeveloperName",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ copyDeveloperName(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMSetEnablementStatusForSubsystemAndUID": {
+      "name": "BTMSetEnablementStatusForSubsystemAndUID",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BTMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BTMSetEnablementStatusForSubsystemAndUID(BTMRef *ref, uint64_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BTMGetEnablementStatusForSubsystemAndUID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMFindTopParentApplication": {
+      "name": "BTMFindTopParentApplication",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMFindTopParentApplication(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMHaveEnablementStatusForSubsystemAndUID": {
+      "name": "BTMHaveEnablementStatusForSubsystemAndUID",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMHaveEnablementStatusForSubsystemAndUID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AuditTokenIsSandboxed": {
+      "name": "AuditTokenIsSandboxed",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AuditTokenRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool AuditTokenIsSandboxed(AuditTokenRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AttributionsContainsLabelOrAttributionValue": {
+      "name": "AttributionsContainsLabelOrAttributionValue",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ AttributionsContainsLabelOrAttributionValue(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DeveloperNameForURL": {
+      "name": "DeveloperNameForURL",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ DeveloperNameForURL(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMErrorDomain": {
+      "name": "BTMErrorDomain",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMDispositionIsLaunchable": {
+      "name": "BTMDispositionIsLaunchable",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BTMDispositionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool BTMDispositionIsLaunchable(BTMDispositionRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMItemTypeBaseDescription": {
+      "name": "BTMItemTypeBaseDescription",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMItemTypeBaseDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMUserDataDidChangeNotification": {
+      "name": "BTMUserDataDidChangeNotification",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMUserDataDidChangeNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMConfigArguments": {
+      "name": "BTMConfigArguments",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMConfigArguments(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CFURLConformsToBundle": {
+      "name": "CFURLConformsToBundle",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ CFURLConformsToBundle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMConfigSHA256Checksum": {
+      "name": "BTMConfigSHA256Checksum",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMConfigSHA256Checksum(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMConfigExecutablePath": {
+      "name": "BTMConfigExecutablePath",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMConfigExecutablePath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetManagerServiceInterface": {
+      "name": "GetManagerServiceInterface",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ GetManagerServiceInterface(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DesignatedRequirementForURL": {
+      "name": "DesignatedRequirementForURL",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ DesignatedRequirementForURL(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "btm_have_enablement_status_for_subsystem_and_uid": {
+      "name": "btm_have_enablement_status_for_subsystem_and_uid",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ btm_have_enablement_status_for_subsystem_and_uid(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMErrorWithCode": {
+      "name": "BTMErrorWithCode",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMErrorWithCode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMErrorString": {
+      "name": "BTMErrorString",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMErrorString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMItemIdentifierForURLAndType": {
+      "name": "BTMItemIdentifierForURLAndType",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMItemIdentifierForURLAndType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BackgroundTaskManagementVersionNumber": {
+      "name": "BackgroundTaskManagementVersionNumber",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BackgroundTaskManagementVersionNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "btm_reset_enablement_status_for_subsystem_and_uid": {
+      "name": "btm_reset_enablement_status_for_subsystem_and_uid",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ btm_reset_enablement_status_for_subsystem_and_uid(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "btm_subsystem_quicklook": {
+      "name": "btm_subsystem_quicklook",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ btm_subsystem_quicklook(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CuratedDeveloperNameForLabelAndTeamID": {
+      "name": "CuratedDeveloperNameForLabelAndTeamID",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ CuratedDeveloperNameForLabelAndTeamID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ItemNameForLaunchdPlist": {
+      "name": "ItemNameForLaunchdPlist",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ ItemNameForLaunchdPlist(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AttributionInfoForLabelAndTeamID": {
+      "name": "AttributionInfoForLabelAndTeamID",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ AttributionInfoForLabelAndTeamID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMSubsystemCron": {
+      "name": "BTMSubsystemCron",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMSubsystemCron(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMItemNameForURL": {
+      "name": "BTMItemNameForURL",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BTMItemNameForURL(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "btm_get_enablement_status_for_subsystem_and_uid": {
+      "name": "btm_get_enablement_status_for_subsystem_and_uid",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ btm_get_enablement_status_for_subsystem_and_uid(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BackgroundTaskManagementVersionString": {
+      "name": "BackgroundTaskManagementVersionString",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ BackgroundTaskManagementVersionString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DeveloperNameForAuditToken": {
+      "name": "DeveloperNameForAuditToken",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        }
+      ],
+      "signature": "void/*?*/ DeveloperNameForAuditToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BTMGetEnablementStatusForSubsystemAndUID": {
+      "name": "BTMGetEnablementStatusForSubsystemAndUID",
+      "framework": "BackgroundTaskManagement",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BTMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackgroundTaskManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ BTMGetEnablementStatusForSubsystemAndUID(BTMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BTMSetEnablementStatusForSubsystemAndUID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "BTMConfigSHA256Checksum"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

@@ -1048,3 +1048,218 @@
 - **CaptiveNetwork (70 functions)**: Captive portal framework - Network authentication, websheet launch, plugin commands, scan list filtering, portal detection, supported SSIDs
 - **WiFiPeerToPeer (32 functions)**: AWDL peer-to-peer - Traffic registration for AirDrop, AirPlay, FaceTime, Sidecar, Universal Control, CarPlay, TimeSync, Ensemble
 
+
+### Batch 61 (Current Session) ✅ - ACCOUNT & AIRPLAY FRAMEWORKS
+1. ✅ AccountPolicy (2 functions) - **NEW** - Account policy error handling
+2. ✅ Accounts (291 functions) - **NEW** - Account management, OAuth, credentials, dataclasses
+3. ✅ AddressBookCore (671 functions) - **NEW** - **MASSIVE** - Address book LDAP, vCard, CardDAV, Exchange
+4. ✅ AggregateDictionary (15 functions) - **NEW** - Analytics aggregation, scalar/distribution keys
+5. ✅ AirPlaySender (217 functions) - **NEW** - AirPlay sender, endpoints, streams, encryption
+6. ✅ AirPlayReceiver (99 functions) - **NEW** - AirPlay receiver, advertiser, pairing, stats
+7. ❌ AirPortAssistant (error: undefined)
+8. ❌ AlgosScoreFramework (error: undefined)
+9. ✅ AnnotationKit (34 functions) - **NEW** - PDF annotation, markup, quadrilaterals
+10. ❌ AppConduit (error: undefined)
+
+### Batch 62 (Current Session) ✅ - AUDIO & APP FRAMEWORKS
+1. ❌ AppDistribution (error: undefined)
+2. ❌ AppDistributionInternal (error: undefined)
+3. ✅ AppServerSupport (2 functions) - **NEW** - Launch server support, pid tracking
+4. ✅ AppleSauce (19 functions) - **NEW** - C++ XPC utilities, docopt parsing
+5. ✅ AppleVA (80 functions) - **NEW** - Video acceleration, DVD driver, VP3 decoder
+6. ❌ AppProtection (error: undefined)
+7. ❌ AppProtectionCore (error: undefined)
+8. ❌ AppleTCC (error: undefined)
+9. ❌ AssetCache (error: undefined)
+10. ✅ AssetsLibrary (0 functions) - **NEW** - Empty framework
+
+### Batch 63 (Current Session) ✅ - AUDIO & BACKGROUND FRAMEWORKS
+1. ❌ AssistantCardServices (error: undefined)
+2. ❌ AssetExplorer (error: undefined)
+3. ✅ AudioAnalytics (20 Swift types, 1 protocol) - **NEW** - Audio analytics reporter, event tracking
+4. ❌ AudioDSP (error: undefined)
+5. ✅ AudioDSPManager (109 Swift types, 16 protocols) - **NEW** - **ENORMOUS** - DSP graph management
+6. ❌ AudioResourceArbitration (error: undefined)
+7. ✅ AudioServerDriver (249 functions) - **NEW** - Audio server plugin driver, resampling, DSP
+8. ✅ AutoBugCaptureCore (21 functions) - **NEW** - Auto bug capture diagnostics, logging
+9. ✅ AutoLoop (73 functions) - **NEW** - Auto loop video processing, stabilization, rendering
+10. ✅ BackgroundAssets (197 functions, 29 Swift types, 4 protocols) - **NEW** - Background asset downloads
+11. ✅ BackgroundSystemTasks (6 functions) - **NEW** - System task scheduling, rate limiting
+12. ✅ BackgroundTaskManagement (62 functions) - **NEW** - Background task management, BTM subsystems
+13. ❌ BackupInfrastructure (error: undefined)
+14. ❌ BarcodeSupport (error: undefined)
+15. ✅ BatteryCenter (10 functions) - **NEW** - Battery/power source monitoring
+16. ❌ BeaconManager (error: undefined)
+17. ✅ BiometricSupport (5 functions) - **NEW** - Biometric logging, snapshots
+18. ✅ BluetoothManager (45 functions) - **NEW** - Bluetooth pairing, device management
+19. ✅ BookCoverUtility (40 functions) - **NEW** - Book cover effects, shadows, bindings
+20. ✅ BookLibraryCore (226 functions) - **NEW** - Book library downloads, metadata, manifests
+
+## Statistics Update - AUDIO & BACKGROUND MILESTONE!
+- **Total Frameworks Indexed:** ~438
+- **Total Functions Discovered:** ~278,300+
+- **Progress:** 18.0% of 2,439 total frameworks 🎉
+- **Largest Frameworks:** SwiftUI (14,312), Network (12,390), Foundation (11,371), AIMLInstrumentationStreams (10,509), IntelligencePlatform (10,679), AppIntents (10,844)
+
+**KEY DISCOVERIES in Batches 61-63:**
+- **AddressBookCore (671 functions)**: **MASSIVE** Address book framework - LDAP server info, CardDAV home paths, Exchange root folders, vCard display names, contact sync, social profiles (LinkedIn, Twitter), custom properties, group management, preferences (private vCard fields, sort keys), server URLs (external/internal), autodiscovery, multi-value properties
+- **AudioDSPManager (109 Swift types + 16 protocols)**: **ENORMOUS** DSP framework - Graph configurations, model asset locations, canonical resolvers, system configurations, Mac driver data sources, validated DSP configs, hardware configs (graph/AU/prop strips), client descriptions, tuning groups, async sequences, debouncing
+- **AudioServerDriver (249 functions)**: Audio server plugin - Ramstad SRC resampling, DSP graph helpers, stream helpers (SRC/DSP), interval filters, audio ring buffers, CAStreamBasicDescription, preferences, device creation, IO operations
+- **BackgroundAssets (197 functions + 29 Swift types)**: Background downloads - Asset pack manager, manifest decoder, status updates, download manager delegates, file descriptors, URL resolution, checksum verification, pausing/resuming
+- **AirPlaySender (217 functions)**: AirPlay sending - Endpoints (local/remote/cluster), streams (audio/screen), message rings, packet handlers, PWD key exchange, encryption contexts, display descriptions
+- **AirPlayReceiver (99 functions)**: AirPlay receiving - Advertiser (NAN/P2P/RAOP data), receiver sessions, stats collectors, screen sinks, pairing services, UI controllers
+- **AutoLoop (73 functions)**: Auto loop video - Live analysis, stabilization (normstab), gating results, loop recipes, frame transforms (homography, gap bridge), bounce/long exposure flavors, GIF rendering
+- **BluetoothManager (45 functions)**: Bluetooth - Device pairing/unpairing/connecting, PIN requests, user confirmation, discovery, battery status, accessibility (head tracking), handsfree voice commands, MAP client
+
+### Batch 47 (Current Session) ✅ - ACCESSIBILITY, CALENDAR & CONTACTS FRAMEWORKS
+1. ✅ AccessibilitySharedSupport (1,725 functions, 250 Swift types, 15 protocols) - **NEW** - **MASSIVE** - Accessibility actions, speech transcriber, VoiceOver, system/device/feature actions
+2. ✅ AccountsDaemon (13 Swift types, 1 protocol) - **NEW** - XPC event publisher, async auth plugin manager
+3. ✅ AccountsUI (12 functions) - **NEW** - Account creation in preference pane
+4. ✅ ActionKit (113 Swift types, 6 protocols) - **NEW** - **MASSIVE** Swift framework - Shortcuts actions, cellular plans, contacts, music/podcast playback
+5. ❌ ActivitySharing (error: undefined)
+6. ✅ AXMediaUtilities (12 Swift types) - **NEW** - UI element detection, bounding boxes, clickability detection
+7. ✅ BackBoardServices (134 functions) - **NEW** - HID events, digitizer, keyboard, pointer attributes
+8. ✅ CalendarFoundation (4 Swift types) - **NEW** - Calendar feature flags, block list
+9. ✅ CalendarUIKit (2,759 functions, 250 Swift types, 25 protocols) - **NEW** - **MASSIVE** - Event cards, contacts, locations, attendees, recurrence
+10. ✅ CalendarDatabase (2,787 functions) - **NEW** - **MASSIVE** - Event/calendar CRUD, attachments, alarms, participants, recurrence
+11. ✅ CalDAV (153 functions) - **NEW** - CalDAV protocol, scheduling, calendar queries
+12. ❌ CameraEditKit (error: undefined)
+13. ❌ CameraUI (error: undefined)
+14. ✅ CarPlay (1 Swift type) - **NEW** - Route sharing state, vehicle state manager
+15. ❌ CarPlaySupport (error: undefined)
+16. ❌ ChatKit (error: undefined)
+17. ✅ CloudDocs (366 functions) - **NEW** - iCloud Drive, ubiquity containers, sync, eviction
+18. ✅ CloudKitDaemon (75 Swift types, 13 protocols) - **NEW** - Session acquisition, account/device/encryption checks, traffic logging
+19. ✅ CloudPhotoLibrary (253 functions) - **NEW** - CPL sync, streaming hints, ramp requests
+20. ✅ CommonUtilities (44 functions) - **NEW** - XPC utilities, weak linking, temporary paths
+21. ✅ ConfigurationProfiles (257 functions) - **NEW** - MDM, provisioning profiles, passcode policies, keychains
+22. ✅ ContactsAutocomplete (46 Swift types, 5 protocols) - **NEW** - Compose recipients, handle availability (iMessage/FaceTime), autocomplete
+23. ✅ ContactsFoundation (13 Swift types, 1 protocol) - **NEW** - Keychain, async serial queue, logging, bug capture
+24. ✅ ContactsUICore (1,637 functions, 350 Swift types, 24 protocols) - **NEW** - **MASSIVE** - Contact cards, avatars, monograms, posters, XPC
+25. ✅ ContentKit (75 Swift types, 4 protocols) - **NEW** - Generative AI (ChatGPT, AFM models), Ask LLM, prompt handling
+26. ✅ CoreDAV (325 functions) - **NEW** - WebDAV protocol, CardDAV, CalDAV HTTP operations
+27. ✅ CoreDuet (195 functions) - **NEW** - Knowledge store, event sync, interactions, person linking
+28. ✅ CoreHandwriting (5 Swift types) - **NEW** - Handwriting model catalog, Calculate wrapper
+29. ✅ CoreNLP (217 functions) - **NEW** - Language identification, tokenization, embeddings, NLP models
+
+## Statistics Update - CALENDAR & CONTACTS MILESTONE!
+- **Total Frameworks Indexed:** ~447
+- **Total Functions Discovered:** ~285,000+
+- **Progress:** 18.3% of 2,439 total frameworks 🎉 🚀
+- **Largest Frameworks:** SwiftUI (14,312), Network (12,390), Foundation (11,371), IntelligencePlatform (10,679), AppIntents (10,844), AIMLInstrumentationStreams (10,509), Vision (6,349), AppKit (6,068)
+
+**KEY DISCOVERIES in Batch 47:**
+- **CalendarUIKit (2,759 functions + 250 Swift types)**: **MASSIVE** calendar UI framework - Event cards with details/properties/actions, contact entities, location models, attendee/organizer models, recurrence rules, virtual conferences, fetch/create/update contact intents, poster views, monogram views
+- **CalendarDatabase (2,787 functions)**: **MASSIVE** calendar database - Complete event/calendar/alarm CRUD operations, attachments with file management, participants (attendees/organizers), recurrence rules/changes, notifications, resource changes, calendar items with availability/sequence, store sync/migration
+- **AccessibilitySharedSupport (1,725 functions + 250 Swift types)**: **MASSIVE** accessibility framework - Complete action system (system/device/feature/assistive touch actions), speech transcriber with audio buffers/FFT, VoiceOver maps, AX LLM manager, action sender/receiver, event/capability handling
+- **ContactsUICore (1,637 functions + 350 Swift types)**: **MASSIVE** contacts UI - Contact cards with inline actions, avatars (view/image/snapshotter), monograms (fonts/colors/recipes), contact posters, likeness store/rendering, XPC client/server, fetch/create/update contact intents
+- **ActionKit (113 Swift types + 6 protocols)**: **MASSIVE** Swift-only Shortcuts framework - Complete action catalog (cellular plans, contacts, FaceTime, music, podcasts, weather, generative AI, device control), entity queries, app shortcuts, top hit actions
+- **ContentKit (75 Swift types)**: Generative AI framework - Ask LLM with ChatGPT/AFM models, prompt handling, conversation management, output types (text/list/boolean/number/date/dictionary), model session management, safety rejection handling
+- **CloudKitDaemon (75 Swift types + 13 protocols)**: CloudKit daemon - Session acquisition with device/account/encryption/data security checks, PCS identity management, traffic logging/parsing, explicit credentials accounts
+- **ContactsAutocomplete (46 Swift types + 5 protocols)**: Contacts autocomplete - Compose recipients with handles (phone/email), handle availability lookup (iMessage/RCS/FaceTime), autocomplete store with app intent integration, IDS lookups
+- **CloudDocs (366 functions)**: iCloud Drive framework - Ubiquity container management, sync coordination, eviction, metadata queries, provisioning profiles, account management, version storage
+- **CoreDAV (325 functions)**: WebDAV framework - Complete DAV protocol support (CardDAV/CalDAV), principal searches, calendar queries, addressbook operations, scheduling inbox/outbox
+- **ConfigurationProfiles (257 functions)**: MDM/configuration - Provisioning profile management, passcode policies, keychain specs, bootstrap tokens, MDM properties, cloud config caching, managed apps
+- **CoreNLP (217 functions)**: Natural language processing - Language identification with hypotheses, tokenization (word/sentence/paragraph), string embeddings, model containers, gazetteer, Japanese token storage
+- **CoreDuet (195 functions)**: Knowledge/context framework - Knowledge store with event insertion/deletion, sync coordination, interaction management, person linking, spotlight integration, sleep/wake prediction
+
+### Batch 48 ✅ - MASSIVE UTILITIES & EMAIL FRAMEWORKS
+1. ✅ CoreLocationProtobuf (97 functions) - **NEW** - CoreLocation protobuf serialization - POI collections, WiFi access points, vision VL vectors, ionosphere data, cellular towers (NR/LTE/CDMA/SCDMA), pressure data, satellite reports
+2. ✅ CoreMaterial (132 functions) - **NEW** - Material design framework - Visual style categories, recipes (dock/platform chrome/content/modules), blend modes, IOSurface creation, CAColorMatrix operations, image conversion, pixel formats
+3. ❌ CoreODI (error: undefined)
+4. ✅ CoreRecents (65 functions) - **NEW** - Recent contacts framework - Address kinds (email/phone/IM/URL/group/map), domains (Mail/Messages/FaceTime/Calendar/Maps/Passbook), sync dict, metadata (subject/time/from), weights
+5. ✅ CoreRoutine (29 functions) - **NEW** - Location routine framework - Distance calculation, coordinate validation, bounding boxes, geodetic/local frame conversion, visit confidence, mach service, familiari ty index, trusted intervals
+6. ✅ CoreSDB (211 functions) - **NEW** - SQLite database wrapper - Record CRUD operations, connection management, statement execution, property handling, change tracking, threaded record stores, database setup, schema management
+7. ✅ CoreSpeech (144 functions) - **NEW** - Speech recognition framework - Siri speech recording modes, voice profile management, P2P remote recording, grading data fetch, nonlinear beep canceller, smart Siri volume, OSD/second-pass inference
+8. ✅ CoreSpotlight (10 Swift types) - **NEW** - Spotlight search framework - CSSearchQuery results with async sequences, CSUserQuery responses/suggestions with user engagement, searchable item attribute sets
+9. ✅ CoreTime (48 functions) - **NEW** - Time management framework - Automatic time/timezone enabled, source time setting (NTP/NITZ/GPS/Accessory/AirPlay/CDMA), RTC reset tracking, kernel monotonic clock, BA finder time
+10. ✅ CoreUI (183 functions + 10 Swift types) - **NEW** - Core UI framework - Rendition keys, theme graphics features, MIME types/subtypes, image conversion/compression, SVG path creation, mask shape copying, bezier paths
+11. ✅ CoreUtils (1,048 functions) - **NEW** - **ENORMOUS** utility framework - HTTP message handling, pairing sessions, cryptography (AES-GCM/ChaCha20-Poly1305), Bonjour advertising, HID browser/devices, NTP clock, socket operations, TLV8 buffers
+12. ❌ DashBoard (error: undefined)
+13. ✅ DataAccess (38 functions) - **NEW** - Data access framework - Account sync, dataclass mappings (AC<->DA), migration, user agent, model/product strings, device ID, weak linking, OAuth, SSL client auth
+14. ✅ DataAccessExpress (47 functions) - **NEW** - Data access logging framework - Logging levels/output, calendar availability types, policy keys, changed folder IDs, custom log configurations, diagnostic slurping
+15. ✅ DataDetectorsCore (303 functions) - **NEW** - **MASSIVE** data detection - Email/phone/URL/address/date/time extraction, scanner configuration, ML classification, result properties, DFA scanning, shipment tracking, UPI identifiers
+16. ✅ DataDetectorsNaturalLanguage (33 functions) - **NEW** - NLP data detection - Feature extraction (dates/keywords), message scanner confidence, polarity probability, event properties, time meridian guessing, tense dependency
+17. ✅ DeviceManagement (257 functions) - **NEW** - MDM framework - Declaration states/payloads, device properties (passcode/DND/orientation/volume), policy types, app status, command states/queuing, CTS backlog/budget/motion
+18. ✅ DiagnosticExtensions (12 functions) - **NEW** - Diagnostic extension framework - Extension tracker sessions, expiration dates, XPC activity management, utility validation
+19. ✅ DiagnosticLogCollection (42 functions) - **NEW** - Log collection framework - Session management, checkpoints, call info logging, log file addition, gathering flags, alert titles, failure reasons
+20. ❌ DigitalAccess (error: undefined)
+21. ✅ DistributedEvaluation (95 functions) - **NEW** - Federated learning framework - Recipe fetching/expiration, evaluation completion, record writing/deletion, device identifier storage, ML runtime plugins (FedStats/DPMLRuntime)
+22. ✅ DuetActivityScheduler (106 functions) - **NEW** - Background activity scheduling - Launch reasons (background fetch/processing/health/location), scheduling priorities, activity durations/transfer sizes, motion states, widget page IDs
+23. ❌ DuetExpertCenter (error: undefined)
+24. ❌ EAP (error: undefined)
+25. ✅ EmailCore (276 functions) - **NEW** - **MASSIVE** email framework - MIME types/subtypes/parameters, auth schemes (CRAM-MD5/Digest-MD5/NTLM/AppleToken), SASL mechanisms, message headers (DKIM/BIMI/HME), Gmail labels, dataclass properties
+26. ✅ EmailDaemon (80 Swift types) - **NEW** - **ENORMOUS** Swift email daemon - Searchable messages/attachments/rich links, indexing analytics (batches/items/times), persona/account management, mailbox persistence, server metadata
+27. ✅ EmailFoundation (151 functions + 3 Swift types) - **NEW** - Email foundation - Futures/promises (EFFuture/EFPromise), locked values, content protection, atomic operations, SQL schema, network status, XPC activity registration
+28. ✅ EmojiKit (0 functions) - **NEW** - Swift-only emoji framework (no exported C/ObjC functions)
+29. ✅ EmojiFoundation (226 functions + 14 Swift types) - **NEW** - Emoji framework - Emoji categories, skin tone specifiers, usage tracking, adaptation database, stemming (Arabic/Basque/Danish/English/French/Greek/Hindi/Italian/Spanish/Swedish/Tamil), centering/transforms
+30. ✅ EventKit (19 Swift types + 1 protocol) - **NEW** - Calendar framework Swift extensions - Location search, autocomplete results, recurrence rules, event store changes, map search completion, remote UI serialization
+
+## Statistics Update - **291K+ FUNCTIONS MILESTONE!** 🎉
+- **Total Frameworks Indexed:** ~467
+- **Total Functions Discovered:** ~291,400+
+- **Progress:** 19.1% of 2,439 total frameworks 🚀
+- **Largest Frameworks:** SwiftUI (14,312), Network (12,390), Foundation (11,371), IntelligencePlatform (10,679), AppIntents (10,844), AIMLInstrumentationStreams (10,509), Vision (6,349), AppKit (6,068)
+
+**KEY DISCOVERIES in Batch 48:**
+- **CoreUtils (1,048 functions)**: **ENORMOUS** utilities framework - Complete HTTP message/connection handling with headers/binary bytes, pairing sessions with identity handlers/keychain info, cryptography (AES-GCM verify/decrypt, ChaCha20-Poly1305 encrypt/decrypt), Bonjour advertiser updates, HID browser/device management, NTP clock with QoS, socket operations (connect/read/write), network interfaces, TLV8 buffer operations, plist streaming
+- **DataDetectorsCore (303 functions)**: **MASSIVE** data detection - Complete scanner with DFA/ML support, result types (email/phone/URL/address/date/time/shipment/flight/UPI), binder keys for all data types, proximity sorting, timeout configuration, locale/timezone handling
+- **EmailCore (276 functions)**: **MASSIVE** email core - Complete MIME handling (types/subtypes/parameters for all media), authentication (CRAM-MD5/Digest-MD5/NTLM/AppleToken/OAuth), SASL mechanisms, message headers (DKIM signature/BIMI location/HME address), Gmail labels, account dataclass properties
+- **DeviceManagement (257 functions)**: MDM/device management - Declaration states with payloads/predicates/error chains, device properties (passcode enabled/DND/lost mode/orientation/volume/AirPlay route), policy types (application category), CTS (backlog/motion state/client data budget), command states/queuing
+- **EmojiFoundation (226 functions + 14 Swift types)**: Emoji processing - Complete stemming support for 11 languages (Arabic/Basque/Danish/English/French/Greek/Hindi/Italian/Spanish/Swedish/Tamil), adaptation database with SQLite, emoji categories (recents/symbols/activity), skin tone specifiers (Fitzpatrick 1-6), centering/transform calculations
+- **CoreSDB (211 functions)**: SQLite database framework - Complete record CRUD (add/update/remove/copy), connection management (read/write/threaded), statement execution with result handling, property get/set, change logging/tracking, schema management, database setup/migration
+- **CoreUI (183 functions + 10 Swift types)**: Core UI framework - Rendition key management with attributes, theme graphics features/sizes/parts, MIME types for all media, image conversion/compression/color quantization, SVG path creation, mask shape operations, bezier path segments
+- **EmailFoundation (151 functions + 3 Swift types)**: Email utilities - Futures/promises pattern (EFFuture/EFPromise) with map/then/recover operations, locked value containers with atomic access, content protection state observing, SQL schema column names, XPC activity registration
+- **CoreSpeech (144 functions)**: Speech recognition - Siri speech recording modes (dictation/acoustic fingerprinting), voice profile sync/delete/parallel recordings, P2P remote recording start/status, grading data fetch, nonlinear beep canceller with nl_proc/nl_init, smart Siri volume, OSD/second-pass inference batch sizes
+- **CoreMaterial (132 functions)**: Material design - Visual style categories (primary/secondary/tertiary/separator/stroke), recipes (dock/platform chrome/content/modules/preview/toolbar), CAColorMatrix operations with vibrant shadow, IOSurface creation, image pixel format conversion
+- **DuetActivityScheduler (106 functions)**: Background scheduling - Launch reasons (background fetch/processing/HealthKit/significant location/watch connectivity), scheduling priorities (background/utility/default/user-initiated), activity durations (very short/short/moderate/long/interminable), motion states (stationary/automotive/cycling), widget page IDs
+- **CoreLocationProtobuf (97 functions)**: Location protobufs - POI collection requests/responses, WiFi access points, vision VL vectors/localization debug, ionosphere data, cellular tower readings (NR/LTE/SCDMA/CDMA), pressure/altimeter collections, satellite info, indoor events
+- **DistributedEvaluation (95 functions)**: Federated learning - Recipe fetching with local-only prefix, evaluation completion events (success/error), record writing/deletion with garbage collection, device identifier storage, ML runtime plugin IDs (FedStats/DPMLRuntime/XCTest), file vault checking
+- **EmailDaemon (80 Swift types)**: **ENORMOUS** Swift email - Searchable messages with authentication state/flags/categories, searchable attachments/rich links with metadata, indexing analytics (batch counts/outcomes/errors, item counts/events/times with mean/median/p95), mailbox persistence with server metadata (UID validity/next/mod sequence), persona/account lookups
+
+---
+
+## Batch 49 - 🎉 **300K+ FUNCTIONS MILESTONE!** 🎉
+**Indexed:** 2026-02-22
+**Frameworks:** 9 frameworks (5 with functions, 4 undefined errors)
+**Total Functions/Types:** ~8,314
+
+### Frameworks Indexed:
+1. ✅ EventKitUI (62 Swift types) - **NEW** - Event/calendar UI framework - SwiftUI views for event editing/viewing/calendar choosing, generic detail views, account chooser, font sizing, navigation stacks, event detectors
+2. ✅ ExchangeSync (3 functions) - **NEW** - Exchange sync framework - Timebase functions for clock/time reference, minimal API surface
+3. ✅ FamilyCircle (1,754 functions + 147 Swift types + 22 protocols) - **NEW** - **ENORMOUS** family sharing framework - Family Circle container management with CloudKit sync, family member/invite management, sharing center, XPC activities, message utilities, age attestation
+4. ✅ FamilyControls (90 functions) - **NEW** - Parental controls - App restriction categories, Safari filtering, managed settings/preferences, Screen Time authorization/session management, activity picker, device family, URL parsing
+5. ✅ FileProvider (693 functions + 2 Swift types) - **NEW** - **MASSIVE** File provider framework - FPFS (File Provider File System) operations, domain state/progress, package extensions, dataless fault handling, enumeration, XPC messaging, sync anchors, NSFileProviderItem extensions
+6. ✅ FindMyDevice (8 functions) - **NEW** - Find My framework - Secure locations API, lost mode management, XPC service names
+7. ✅ FrontBoard (82 functions) - **NEW** - Scene workspace management - Scene updates, display configs, workspace defaults/identifiers, workspace change notifications
+8. ✅ FrontBoardServices (246 functions) - **NEW** - **MASSIVE** display/scene framework - Display layout elements (display configs/arrangements/physical sizes), scene management (creation/destruction/update), application opening/activation, actions/messages, transaction coordination
+9. ✅ GameCenterFoundation (107 Swift types + 10 protocols) - **NEW** - **ENORMOUS** GameKit Swift layer - FastSync transport/channels/messenger for SharePlay multiplayer, group activity manager/session/messaging, multiplayer activity reporter, transport monitoring (ping/pong/RTT), leader election, invite messages, localized strings for all GameKit UI
+10. ✅ GameCenterUI (2,718 functions + 819 Swift types + 49 protocols) - **NEW** - **ENORMOUS** Game Center UI framework - Complete GameKit UI implementation, dashboard/profile/leaderboard/achievement views, multiplayer matchmaking UI, friend suggestions, onboarding flows, challenge lockups, activity feed, settings panels, SwiftUI/AppKit components
+11. ✅ GameController (808 functions + 24 Swift types + 1 protocol) - **NEW** - **MASSIVE** Game controller framework - Complete controller input mapping (buttons/triggers/thumbsticks/dpads), haptics (localities/engines/patterns), keyboard key codes (US/international layouts), GCPhysicalInputElementCollection, controller discovery/connection, light/adaptive triggers, motion sensors
+12. ✅ GeoServices (26 Swift types) - **NEW** - Maps/location Swift extensions - Async region store queries, polyline coordinate iterators/ranges, GEODirectionsService async APIs, category taxonomy mapping, timeout utilities, navigation listener remote client
+13. ✅ GraphicsServices (140 functions) - **NEW** - Low-level graphics services - GSEvent handling (keyboard/mouse/touch events), event timestamps/subtypes, keyboard translation/locale, hardware keyboard attachment, main screen info/orientation/scale, Purple named ports (workspace/system event), modal event handling
+14. ❌ HealthDaemon (error: undefined)
+15. ✅ HearingCore (33 functions) - **NEW** - Hearing accessibility core - Logging categories (hearing aids/live listen/nearby/protection/XPC), process names (Heard/Carousel/SpringBoard/AXUIServer), message keys (UUID/device name/payload/identifier), bundle names
+16. ❌ HomeKit (error: undefined)
+17. ❌ HomeSharing (error: undefined)
+18. ❌ HomeUI (error: undefined)
+19. ❌ HumanUnderstanding (error: undefined)
+20. ✅ IDS (267 functions + 1 Swift extension) - **NEW** - iMessage Delivery Service core - Send message options (encryption/command/UUID/acknowledgement/off-grid delivery), data channel preferences (bitrate/link selection/baseband registration), service names (iMessage/FaceTime/PhotoStream/Maps/ScreenSharing), activity monitoring, registration control, security key rolling
+21. ✅ IMAP (86 functions) - **NEW** - IMAP protocol framework - Message flags (answered/deleted/draft/flagged/junk/forwarded/submitted with color bits), mailbox attributes, status keys (messages/recent/UID validity), quota keys (current/max usage), permanent flags, SASL profile, ID arguments (name/version/command/date)
+22. ✅ IMCore (2,568 functions + 176 Swift types + 8 protocols) - **NEW** - **ENORMOUS** iMessage core framework - ImportExport system (conversation/message/attachment archiving/importing with iterators), daemon connection (multiplexed XPC with capabilities/context/setup), synced settings manager, nickname provider, count statistics (live database/sync store/server counts), chat registry
+
+## Statistics Update - **301.5K+ FUNCTIONS MILESTONE!** 🎉 🚀
+- **Total Frameworks Indexed:** ~476
+- **Total Functions Discovered:** ~301,500+
+- **Progress:** 19.5% of 2,439 total frameworks 🚀 **300K MILESTONE ACHIEVED!**
+- **Largest Frameworks:** SwiftUI (14,312), Network (12,390), Foundation (11,371), IntelligencePlatform (10,679), AppIntents (10,844), AIMLInstrumentationStreams (10,509), Vision (6,349), AppKit (6,068)
+
+**KEY DISCOVERIES in Batch 49:**
+- **GameCenterUI (2,718 functions + 819 Swift types + 49 protocols)**: **ENORMOUS** Game Center UI - Complete GameKit UI implementation with dashboard/profile/leaderboard/achievement views, multiplayer matchmaking UI (stepper/add slot/suggestions container), friend suggestions/add friends lockup, onboarding flows (friends suggestions/welcome), challenge lockups/received/remotely completed, activity feed with action handlers, settings panels (state/page/identifier), SwiftUI components (base view/click view/image button), AppKit components (base view controller/split collection view), artwork loader (avatar/game icons with formats), visual effects/background styles, GK feature flags, localized strings
+- **IMCore (2,568 functions + 176 Swift types + 8 protocols)**: **ENORMOUS** iMessage core - Complete ImportExport system with conversation/message/attachment archiving/importing (ArchivedConversation with iterators, ConversationArchiver/Exporter with batch processing, AttachmentDownloadIterator with progress tracking), multiplexed daemon connection (XPC connection with capabilities/context/setup state, synchronous/async remote proxies, onSetupComplete callbacks), synced settings manager with cache invalidation, nickname provider with daemon connection, count statistics (LiveDatabaseCounts with synced/total/deletes/unresolved, SyncStoreCounts with writable/written, ServerRecordCounts, OverallCounts combining all three), chat registry with message sent/received notifications
+- **FamilyCircle (1,754 functions + 147 Swift types + 22 protocols)**: **ENORMOUS** family sharing - Family Circle container management with CloudKit sync (public/private databases, record zones, subscription management), family member management (add/invite/remove members, pending invitations, member properties/roles), sharing center with context/utilities, XPC activities for background sync, message availability/utilities, age attestation for child accounts, family feature flags, organization member fetching
+- **GameController (808 functions + 24 Swift types + 1 protocol)**: **MASSIVE** game controller framework - Complete input element collection system (GCPhysicalInputElementCollection with subscripting by element names, typed name support for buttons/dpads/axes/switches), button element names (A/B/X/Y, triggers, shoulders, dpads, arcade buttons by row/column), direction pad element names (left/right thumbsticks, dpad), keyboard key codes (full US QWERTY layout, international layouts, function keys F1-F20, keypad digits/operators, modifiers/locks), haptics (localities for left/right handle/trigger/thumbstick, engines, patterns), controller connection notifications, light/adaptive triggers, motion sensors
+- **FileProvider (693 functions + 2 Swift types)**: **MASSIVE** file provider - FPFS (File Provider File System) operations with provider/item/enumeration management, domain state tracking (activation/invalidation/download progress), package extensions for specialized content, dataless fault handling for on-demand downloads, enumeration anchors/batching, XPC messaging between app/extension, NSFileProviderItem protocol extensions, sync anchor management, working set enumeration, version comparison
+- **FrontBoardServices (246 functions)**: **MASSIVE** display/scene management - Display layout with display configs/arrangements/monitor descriptors/physical sizes/bounds, scene management (creation/destruction/update/diff/identity/settings), application opening/activation with options, scene actions/messages for communication, transaction coordination for multi-step operations, workspace assertions, process visibility monitoring, open application service
+- **GameCenterFoundation (107 Swift types + 10 protocols)**: **ENORMOUS** GameKit Swift - FastSync transport system (FastSyncTransport with lobby/game channels, FastSyncChannel with session/messenger/participant tracking, FastSyncMessenger with reliable/unreliable messaging), group activity integration (GKGroupActivityManager/Session/Messenger for SharePlay, GKGroupActivity metadata), multiplayer activity reporter with instrumentation, transport monitoring (TransportMonitor/PeerMonitor with ping/pong/RTT/packet loss), FastSync leader election, invite message support, localized strings for all GameKit UI states/errors/achievements/challenges
+

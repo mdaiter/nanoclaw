@@ -1,0 +1,858 @@
+{
+  "framework": "DataDetectorsNaturalLanguage",
+  "functions": {
+    "IPFeatureExtractorContextText": {
+      "name": "IPFeatureExtractorContextText",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureExtractorContextText(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureTextMessageScannerConfidenceNormTextLength": {
+      "name": "IPFeatureTextMessageScannerConfidenceNormTextLength",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureTextMessageScannerConfidenceNormTextLength(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextIsDateTimeComplement": {
+      "name": "IPFeatureDataContextIsDateTimeComplement",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "IPFeatureDataContextRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool IPFeatureDataContextIsDateTimeComplement(IPFeatureDataContextRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextEventEndDate": {
+      "name": "IPFeatureDataContextEventEndDate",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureDataContextEventEndDate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureKeywordContextExtractedFromSubject": {
+      "name": "IPFeatureKeywordContextExtractedFromSubject",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureKeywordContextExtractedFromSubject(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureExtractorDetectedDateInSubjectFeatureData": {
+      "name": "IPFeatureExtractorDetectedDateInSubjectFeatureData",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureExtractorDetectedDateInSubjectFeatureData(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureExtractorContextSubject": {
+      "name": "IPFeatureExtractorContextSubject",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureExtractorContextSubject(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureExtractorContextDataDetectorsFeatures": {
+      "name": "IPFeatureExtractorContextDataDetectorsFeatures",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureExtractorContextDataDetectorsFeatures(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureTextMessageScannerConfidenceMatchedRatio": {
+      "name": "IPFeatureTextMessageScannerConfidenceMatchedRatio",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureTextMessageScannerConfidenceMatchedRatio(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextDateIsTimeOnlyAndReferrengingToSentDate": {
+      "name": "IPFeatureDataContextDateIsTimeOnlyAndReferrengingToSentDate",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "IPFeatureDataContextDateRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool IPFeatureDataContextDateIsTimeOnlyAndReferrengingToSentDate(IPFeatureDataContextDateRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextEventIsAllDay": {
+      "name": "IPFeatureDataContextEventIsAllDay",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "IPFeatureDataContextEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool IPFeatureDataContextEventIsAllDay(IPFeatureDataContextEventRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextDateTimeFromIpsosOverlay": {
+      "name": "IPFeatureDataContextDateTimeFromIpsosOverlay",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureDataContextDateTimeFromIpsosOverlay(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextDateOnlyContainsTimeInformation": {
+      "name": "IPFeatureDataContextDateOnlyContainsTimeInformation",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureDataContextDateOnlyContainsTimeInformation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureExtractorPreviousFeatureSentences": {
+      "name": "IPFeatureExtractorPreviousFeatureSentences",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureExtractorPreviousFeatureSentences(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureKeywordContextDistanceToDate": {
+      "name": "IPFeatureKeywordContextDistanceToDate",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureKeywordContextDistanceToDate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextEventEndDateTimeZone": {
+      "name": "IPFeatureDataContextEventEndDateTimeZone",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureDataContextEventEndDateTimeZone(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureTextMessageScannerConfidenceDistanceToDates": {
+      "name": "IPFeatureTextMessageScannerConfidenceDistanceToDates",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureTextMessageScannerConfidenceDistanceToDates(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureTextMessageScannerConfidenceNumberOfEventTypes": {
+      "name": "IPFeatureTextMessageScannerConfidenceNumberOfEventTypes",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureTextMessageScannerConfidenceNumberOfEventTypes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextEventIsDateRange": {
+      "name": "IPFeatureDataContextEventIsDateRange",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "IPFeatureDataContextEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool IPFeatureDataContextEventIsDateRange(IPFeatureDataContextEventRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureTextMessageScannerConfidenceEventVariance": {
+      "name": "IPFeatureTextMessageScannerConfidenceEventVariance",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureTextMessageScannerConfidenceEventVariance(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPMessageTypeShortMessage": {
+      "name": "IPMessageTypeShortMessage",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPMessageTypeShortMessage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPMessageTypeEmail": {
+      "name": "IPMessageTypeEmail",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPMessageTypeEmail(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextExtractedFromSubject": {
+      "name": "IPFeatureDataContextExtractedFromSubject",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureDataContextExtractedFromSubject(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextTimeNeedsMeridianGuess": {
+      "name": "IPFeatureDataContextTimeNeedsMeridianGuess",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureDataContextTimeNeedsMeridianGuess(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextEventStartDateTimeZone": {
+      "name": "IPFeatureDataContextEventStartDateTimeZone",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureDataContextEventStartDateTimeZone(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureTextMessageScannerConfidencePolarityFlips": {
+      "name": "IPFeatureTextMessageScannerConfidencePolarityFlips",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureTextMessageScannerConfidencePolarityFlips(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextDateTimeIsTenseDependent": {
+      "name": "IPFeatureDataContextDateTimeIsTenseDependent",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "IPFeatureDataContextDateTimeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool IPFeatureDataContextDateTimeIsTenseDependent(IPFeatureDataContextDateTimeRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextTimeIsApproximate": {
+      "name": "IPFeatureDataContextTimeIsApproximate",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "IPFeatureDataContextTimeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool IPFeatureDataContextTimeIsApproximate(IPFeatureDataContextTimeRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextIsTimeOffset": {
+      "name": "IPFeatureDataContextIsTimeOffset",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "IPFeatureDataContextRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool IPFeatureDataContextIsTimeOffset(IPFeatureDataContextRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextEventPrefersAllDay": {
+      "name": "IPFeatureDataContextEventPrefersAllDay",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureDataContextEventPrefersAllDay(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextPolarityProbability": {
+      "name": "IPFeatureDataContextPolarityProbability",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureDataContextPolarityProbability(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureKeywordContextMatchedRatio": {
+      "name": "IPFeatureKeywordContextMatchedRatio",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureKeywordContextMatchedRatio(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IPFeatureDataContextEventPlacemark": {
+      "name": "IPFeatureDataContextEventPlacemark",
+      "framework": "DataDetectorsNaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataDetectorsNaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ IPFeatureDataContextEventPlacemark(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {},
+  "protocols": [],
+  "type_aliases": {}
+}

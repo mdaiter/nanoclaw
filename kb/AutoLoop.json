@@ -1,0 +1,2096 @@
+{
+  "framework": "AutoLoop",
+  "functions": {
+    "get_default_autoloopSettings": {
+      "name": "get_default_autoloopSettings",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "get_default_autoloopRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ get_default_autoloopSettings(get_default_autoloopRef *ref, void * *value)",
+      "verb": "read",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_NORMSTAB_STABRESULT": {
+      "name": "AUTOLOOP_LAR_KEY_NORMSTAB_STABRESULT",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_NORMSTAB_STABRESULT(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "liveAnalysisResultToDictionary": {
+      "name": "liveAnalysisResultToDictionary",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ liveAnalysisResultToDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_PARAM_FADE": {
+      "name": "AUTOLOOP_LAR_KEY_PARAM_FADE",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_PARAM_FADE(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "validateInputVideoAndGetDuration": {
+      "name": "validateInputVideoAndGetDuration",
+      "framework": "AutoLoop",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "validateInputVideoAndRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ validateInputVideoAndGetDuration(validateInputVideoAndRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "alGetFadeDuration": {
+      "name": "alGetFadeDuration",
+      "framework": "AutoLoop",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "alRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ alGetFadeDuration(alRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_FRAMETRANSFORM_RAWTIME": {
+      "name": "AUTOLOOP_LAR_KEY_FRAMETRANSFORM_RAWTIME",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_FRAMETRANSFORM_RAWTIME(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_ERROR": {
+      "name": "AUTOLOOP_LAR_KEY_ERROR",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_ERROR(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "renderGIF": {
+      "name": "renderGIF",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ renderGIF(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "alGatingResultsDestroy": {
+      "name": "alGatingResultsDestroy",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "alGatingResultsRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void alGatingResultsDestroy(alGatingResultsRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LA_FLAVOR_LONGEXP": {
+      "name": "AUTOLOOP_LA_FLAVOR_LONGEXP",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LA_FLAVOR_LONGEXP(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "validateLiveAnalysisDictionaryVersion": {
+      "name": "validateLiveAnalysisDictionaryVersion",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ validateLiveAnalysisDictionaryVersion(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_MIN_VERSION": {
+      "name": "AUTOLOOP_LAR_KEY_MIN_VERSION",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_MIN_VERSION(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LA_FLAVOR_NORMSTABILIZE": {
+      "name": "AUTOLOOP_LA_FLAVOR_NORMSTABILIZE",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LA_FLAVOR_NORMSTABILIZE(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_PARAMS": {
+      "name": "AUTOLOOP_LAR_KEY_PARAMS",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_PARAMS(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "alInterpolateMetadataForGap": {
+      "name": "alInterpolateMetadataForGap",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ alInterpolateMetadataForGap(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_FRAMETRANSFORM_HOMOGRAPHY": {
+      "name": "AUTOLOOP_LAR_KEY_FRAMETRANSFORM_HOMOGRAPHY",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_FRAMETRANSFORM_HOMOGRAPHY(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "alStabilizeParamsToDict": {
+      "name": "alStabilizeParamsToDict",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ alStabilizeParamsToDict(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "autoloopErrorCodeToString": {
+      "name": "autoloopErrorCodeToString",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ autoloopErrorCodeToString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "autoloopSettingsSetLongerBounce": {
+      "name": "autoloopSettingsSetLongerBounce",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "autoloopRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ autoloopSettingsSetLongerBounce(autoloopRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "extractGatingResult": {
+      "name": "extractGatingResult",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ extractGatingResult(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getGatingOptionFlagsForDiagnostics": {
+      "name": "getGatingOptionFlagsForDiagnostics",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ getGatingOptionFlagsForDiagnostics(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "liveAnalysisResultFromDictionary": {
+      "name": "liveAnalysisResultFromDictionary",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ liveAnalysisResultFromDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "autoloopSettingsSetPointOfInterestAndTrim": {
+      "name": "autoloopSettingsSetPointOfInterestAndTrim",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "autoloopRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ autoloopSettingsSetPointOfInterestAndTrim(autoloopRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "runAutoLoopPipeline": {
+      "name": "runAutoLoopPipeline",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ runAutoLoopPipeline(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "runAutoLoopRender": {
+      "name": "runAutoLoopRender",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ runAutoLoopRender(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "runPingPongRender": {
+      "name": "runPingPongRender",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ runPingPongRender(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_PARAM_ENERGY": {
+      "name": "AUTOLOOP_LAR_KEY_PARAM_ENERGY",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_PARAM_ENERGY(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "extractGatingDecision": {
+      "name": "extractGatingDecision",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ extractGatingDecision(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "runAutoLoopStabilize": {
+      "name": "runAutoLoopStabilize",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ runAutoLoopStabilize(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "alLoopRecipeDestroy": {
+      "name": "alLoopRecipeDestroy",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "alLoopRecipeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void alLoopRecipeDestroy(alLoopRecipeRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LA_FLAVOR_BOUNCE": {
+      "name": "AUTOLOOP_LA_FLAVOR_BOUNCE",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LA_FLAVOR_BOUNCE(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "alLoopRecipeToDict": {
+      "name": "alLoopRecipeToDict",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ alLoopRecipeToDict(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "alStabilizeParamsFromDictionary": {
+      "name": "alStabilizeParamsFromDictionary",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ alStabilizeParamsFromDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "createAutoLoopSettingsForAsset": {
+      "name": "createAutoLoopSettingsForAsset",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "createAutoLoopRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ createAutoLoopSettingsForAsset(createAutoLoopRef *ref, void * *value)",
+      "verb": "create",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "liveAnalysisResultDestroy": {
+      "name": "liveAnalysisResultDestroy",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "liveAnalysisResultRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void liveAnalysisResultDestroy(liveAnalysisResultRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_FRAMETRANSFORM_GAPBRIDGE": {
+      "name": "AUTOLOOP_LAR_KEY_FRAMETRANSFORM_GAPBRIDGE",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_FRAMETRANSFORM_GAPBRIDGE(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "liveAnalysisResultCopyRecipe": {
+      "name": "liveAnalysisResultCopyRecipe",
+      "framework": "AutoLoop",
+      "return_type": "liveAnalysisResultRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "liveAnalysisResultRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "liveAnalysisResultRef/*?*/ liveAnalysisResultCopyRecipe(liveAnalysisResultRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "liveAnalysisResultRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "autoloopSettingsSetGating": {
+      "name": "autoloopSettingsSetGating",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "autoloopRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ autoloopSettingsSetGating(autoloopRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_PARAM_START": {
+      "name": "AUTOLOOP_LAR_KEY_PARAM_START",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_PARAM_START(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_PARAM_FLAVOR": {
+      "name": "AUTOLOOP_LAR_KEY_PARAM_FLAVOR",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_PARAM_FLAVOR(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "validateAutoLoopSettings": {
+      "name": "validateAutoLoopSettings",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "validateAutoLoopRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ validateAutoLoopSettings(validateAutoLoopRef *ref, void * *value)",
+      "verb": "predicate",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "createBundleDefaultGatingClassifierURL": {
+      "name": "createBundleDefaultGatingClassifierURL",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ createBundleDefaultGatingClassifierURL(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "createGatingDetailString": {
+      "name": "createGatingDetailString",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ createGatingDetailString(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "alGetLoopPeriod": {
+      "name": "alGetLoopPeriod",
+      "framework": "AutoLoop",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "alRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ alGetLoopPeriod(alRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "alGetNumerOfFrames": {
+      "name": "alGetNumerOfFrames",
+      "framework": "AutoLoop",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "alRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ alGetNumerOfFrames(alRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getMinimumSafeInputDuration": {
+      "name": "getMinimumSafeInputDuration",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ getMinimumSafeInputDuration(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "autoloopSettingsSetDisableStabilizationGPU": {
+      "name": "autoloopSettingsSetDisableStabilizationGPU",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "autoloopRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ autoloopSettingsSetDisableStabilizationGPU(autoloopRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getGatingResult": {
+      "name": "getGatingResult",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ getGatingResult(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "validateLiveAnalysisDictionaryFormatAndVersion": {
+      "name": "validateLiveAnalysisDictionaryFormatAndVersion",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ validateLiveAnalysisDictionaryFormatAndVersion(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LA_FLAVOR_AUTOLOOP": {
+      "name": "AUTOLOOP_LA_FLAVOR_AUTOLOOP",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LA_FLAVOR_AUTOLOOP(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "alLoopRecipeFromDictionary": {
+      "name": "alLoopRecipeFromDictionary",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ alLoopRecipeFromDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_VERSION": {
+      "name": "AUTOLOOP_LAR_KEY_VERSION",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_VERSION(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getGatingOptionFlagsForSuggestions": {
+      "name": "getGatingOptionFlagsForSuggestions",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ getGatingOptionFlagsForSuggestions(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "renderStabilizedVideo": {
+      "name": "renderStabilizedVideo",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute",
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ renderStabilizedVideo(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "createGIFFromVideo": {
+      "name": "createGIFFromVideo",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ createGIFFromVideo(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_NORMSTAB_FRAMEINSTRUCTIONS": {
+      "name": "AUTOLOOP_LAR_KEY_NORMSTAB_FRAMEINSTRUCTIONS",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_NORMSTAB_FRAMEINSTRUCTIONS(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "runLiveAnalysisPipeline": {
+      "name": "runLiveAnalysisPipeline",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ runLiveAnalysisPipeline(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "buildLoopRecipeDictFromLiveAnalysisDict": {
+      "name": "buildLoopRecipeDictFromLiveAnalysisDict",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ buildLoopRecipeDictFromLiveAnalysisDict(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "create_default_internal_autoloopSettings": {
+      "name": "create_default_internal_autoloopSettings",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "create_default_internal_autoloopRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ create_default_internal_autoloopSettings(create_default_internal_autoloopRef *ref, void * *value)",
+      "verb": "create",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "get_autoloopSettings_forAsset": {
+      "name": "get_autoloopSettings_forAsset",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "get_autoloopRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ get_autoloopSettings_forAsset(get_autoloopRef *ref, void * *value)",
+      "verb": "read",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "autoloopSettingsSetRecipeProviderCallback": {
+      "name": "autoloopSettingsSetRecipeProviderCallback",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "autoloopRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ autoloopSettingsSetRecipeProviderCallback(autoloopRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "autoloopSettingsSetGatingFeaturesProviderCallback": {
+      "name": "autoloopSettingsSetGatingFeaturesProviderCallback",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "autoloopRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ autoloopSettingsSetGatingFeaturesProviderCallback(autoloopRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "autoloopSettingsSetOptimizeForMemoryUse": {
+      "name": "autoloopSettingsSetOptimizeForMemoryUse",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "autoloopRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ autoloopSettingsSetOptimizeForMemoryUse(autoloopRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_PARAM_PERIOD": {
+      "name": "AUTOLOOP_LAR_KEY_PARAM_PERIOD",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_PARAM_PERIOD(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getFlavor": {
+      "name": "getFlavor",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ getFlavor(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "alGetLoopStart": {
+      "name": "alGetLoopStart",
+      "framework": "AutoLoop",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "alRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ alGetLoopStart(alRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_NORMSTAB_FRAMEDUR": {
+      "name": "AUTOLOOP_LAR_KEY_NORMSTAB_FRAMEDUR",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_NORMSTAB_FRAMEDUR(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_NORMSTABILIZE": {
+      "name": "AUTOLOOP_LAR_KEY_NORMSTABILIZE",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_NORMSTABILIZE(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AUTOLOOP_LAR_KEY_NORMSTAB_STABCROP": {
+      "name": "AUTOLOOP_LAR_KEY_NORMSTAB_STABCROP",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ AUTOLOOP_LAR_KEY_NORMSTAB_STABCROP(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "alRender": {
+      "name": "alRender",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        }
+      ],
+      "signature": "void/*?*/ alRender(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "autoloopSettingsDestroy": {
+      "name": "autoloopSettingsDestroy",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "autoloopSettingsRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void autoloopSettingsDestroy(autoloopSettingsRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "alStabilizeParamsDestroy": {
+      "name": "alStabilizeParamsDestroy",
+      "framework": "AutoLoop",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "alStabilizeParamsRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AutoLoop"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void alStabilizeParamsDestroy(alStabilizeParamsRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "memory_buffer": [
+      "autoloopSettingsSetOptimizeForMemoryUse"
+    ],
+    "video_processing": [
+      "AUTOLOOP_LAR_KEY_FRAMETRANSFORM_GAPBRIDGE",
+      "AUTOLOOP_LAR_KEY_FRAMETRANSFORM_HOMOGRAPHY",
+      "AUTOLOOP_LAR_KEY_FRAMETRANSFORM_RAWTIME",
+      "AUTOLOOP_LAR_KEY_NORMSTAB_FRAMEDUR",
+      "AUTOLOOP_LAR_KEY_NORMSTAB_FRAMEINSTRUCTIONS",
+      "alGetNumerOfFrames",
+      "createGIFFromVideo",
+      "renderStabilizedVideo",
+      "validateInputVideoAndGetDuration"
+    ],
+    "gpu_compute": [
+      "alRender",
+      "autoloopSettingsSetDisableStabilizationGPU",
+      "renderGIF",
+      "renderStabilizedVideo",
+      "runAutoLoopPipeline",
+      "runAutoLoopRender",
+      "runLiveAnalysisPipeline",
+      "runPingPongRender"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

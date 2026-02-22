@@ -1,0 +1,203 @@
+{
+  "framework": "FindMyDevice",
+  "functions": {
+    "FMDSecureLocationsReceivedPayloadNotification": {
+      "name": "FMDSecureLocationsReceivedPayloadNotification",
+      "framework": "FindMyDevice",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FindMyDevice"
+        }
+      ],
+      "signature": "void/*?*/ FMDSecureLocationsReceivedPayloadNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FMDLostModeExitAuthCompleteNotification": {
+      "name": "FMDLostModeExitAuthCompleteNotification",
+      "framework": "FindMyDevice",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FindMyDevice"
+        }
+      ],
+      "signature": "void/*?*/ FMDLostModeExitAuthCompleteNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FMDFMMManagerUnregisterErrorDomain": {
+      "name": "FMDFMMManagerUnregisterErrorDomain",
+      "framework": "FindMyDevice",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FindMyDevice"
+        }
+      ],
+      "signature": "void/*?*/ FMDFMMManagerUnregisterErrorDomain(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FMDRepairDeviceThisDeviceIdentifier": {
+      "name": "FMDRepairDeviceThisDeviceIdentifier",
+      "framework": "FindMyDevice",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FindMyDevice"
+        }
+      ],
+      "signature": "void/*?*/ FMDRepairDeviceThisDeviceIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "fmdFMMLastOperationResult": {
+      "name": "fmdFMMLastOperationResult",
+      "framework": "FindMyDevice",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FindMyDevice"
+        }
+      ],
+      "signature": "void/*?*/ fmdFMMLastOperationResult(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FMDFMIPManagerUnregisterErrorDomain": {
+      "name": "FMDFMIPManagerUnregisterErrorDomain",
+      "framework": "FindMyDevice",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FindMyDevice"
+        }
+      ],
+      "signature": "void/*?*/ FMDFMIPManagerUnregisterErrorDomain(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FMDSecureLocationsReceivedCommandNotification": {
+      "name": "FMDSecureLocationsReceivedCommandNotification",
+      "framework": "FindMyDevice",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FindMyDevice"
+        }
+      ],
+      "signature": "void/*?*/ FMDSecureLocationsReceivedCommandNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FMDSharedConfigurationKeyTheftAndLoss": {
+      "name": "FMDSharedConfigurationKeyTheftAndLoss",
+      "framework": "FindMyDevice",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FindMyDevice"
+        }
+      ],
+      "signature": "void/*?*/ FMDSharedConfigurationKeyTheftAndLoss(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "FMDSharedConfigurationKeyTheftAndLoss"
+    ],
+    "gpu_compute": [
+      "FMDSecureLocationsReceivedCommandNotification"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

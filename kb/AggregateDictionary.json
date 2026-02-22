@@ -1,0 +1,428 @@
+{
+  "framework": "AggregateDictionary",
+  "functions": {
+    "ADClientAddValueForScalarKey": {
+      "name": "ADClientAddValueForScalarKey",
+      "framework": "AggregateDictionary",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AggregateDictionary"
+        }
+      ],
+      "signature": "void/*?*/ ADClientAddValueForScalarKey(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ADDaysSince1970": {
+      "name": "ADDaysSince1970",
+      "framework": "AggregateDictionary",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AggregateDictionary"
+        }
+      ],
+      "signature": "void/*?*/ ADDaysSince1970(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ADClientPushValueForDistributionKey": {
+      "name": "ADClientPushValueForDistributionKey",
+      "framework": "AggregateDictionary",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AggregateDictionary"
+        }
+      ],
+      "signature": "void/*?*/ ADClientPushValueForDistributionKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ADMonotonicTimeGetCurrent": {
+      "name": "ADMonotonicTimeGetCurrent",
+      "framework": "AggregateDictionary",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ADMonotonicTimeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AggregateDictionary"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ADMonotonicTimeGetCurrent(ADMonotonicTimeRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ADClientSetValueForScalarKey": {
+      "name": "ADClientSetValueForScalarKey",
+      "framework": "AggregateDictionary",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ADClientRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AggregateDictionary"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ ADClientSetValueForScalarKey(ADClientRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ADPushTimeIntervalForDistributionKeyTimingBlock": {
+      "name": "ADPushTimeIntervalForDistributionKeyTimingBlock",
+      "framework": "AggregateDictionary",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AggregateDictionary"
+        }
+      ],
+      "signature": "void/*?*/ ADPushTimeIntervalForDistributionKeyTimingBlock(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ADClientBatchKeys": {
+      "name": "ADClientBatchKeys",
+      "framework": "AggregateDictionary",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AggregateDictionary"
+        }
+      ],
+      "signature": "void/*?*/ ADClientBatchKeys(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ADPushTimeIntervalForDistributionKeySinceStartTime": {
+      "name": "ADPushTimeIntervalForDistributionKeySinceStartTime",
+      "framework": "AggregateDictionary",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AggregateDictionary"
+        }
+      ],
+      "signature": "void/*?*/ ADPushTimeIntervalForDistributionKeySinceStartTime(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ADClientCheckpoint": {
+      "name": "ADClientCheckpoint",
+      "framework": "AggregateDictionary",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AggregateDictionary"
+        }
+      ],
+      "signature": "void/*?*/ ADClientCheckpoint(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ADClientCommit": {
+      "name": "ADClientCommit",
+      "framework": "AggregateDictionary",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ADClientRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AggregateDictionary"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Submit pattern"
+        }
+      ],
+      "signature": "int/*?*/ ADClientCommit(ADClientRef *ref)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ADClientClearDistributionKey": {
+      "name": "ADClientClearDistributionKey",
+      "framework": "AggregateDictionary",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AggregateDictionary"
+        }
+      ],
+      "signature": "void/*?*/ ADClientClearDistributionKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ADClientSetValueForDistributionKey": {
+      "name": "ADClientSetValueForDistributionKey",
+      "framework": "AggregateDictionary",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ADClientRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AggregateDictionary"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ ADClientSetValueForDistributionKey(ADClientRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ADClientSignificantTimeChanged": {
+      "name": "ADClientSignificantTimeChanged",
+      "framework": "AggregateDictionary",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AggregateDictionary"
+        }
+      ],
+      "signature": "void/*?*/ ADClientSignificantTimeChanged(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ADClientClearScalarKey": {
+      "name": "ADClientClearScalarKey",
+      "framework": "AggregateDictionary",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AggregateDictionary"
+        }
+      ],
+      "signature": "void/*?*/ ADClientClearScalarKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ADClientIsEnabled": {
+      "name": "ADClientIsEnabled",
+      "framework": "AggregateDictionary",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ADClientRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AggregateDictionary"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ADClientIsEnabled(ADClientRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {},
+  "protocols": [],
+  "type_aliases": {}
+}

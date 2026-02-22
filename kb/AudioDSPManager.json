@@ -1,0 +1,38 @@
+{
+  "framework": "AudioDSPManager",
+  "functions": {
+    "CreateAudioDSPManager": {
+      "name": "CreateAudioDSPManager",
+      "framework": "AudioDSPManager",
+      "return_type": "void *",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioDSPManager"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "void * CreateAudioDSPManager(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {},
+  "protocols": [],
+  "type_aliases": {}
+}

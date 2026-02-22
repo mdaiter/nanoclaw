@@ -1,0 +1,332 @@
+{
+  "framework": "AccountsUI",
+  "functions": {
+    "ACUICreateAccountInPreferencePane": {
+      "name": "ACUICreateAccountInPreferencePane",
+      "framework": "AccountsUI",
+      "return_type": "ACUIRef",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AccountsUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ACUIRef ACUICreateAccountInPreferencePane(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ACUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ACUIAllowAccountModification": {
+      "name": "ACUIAllowAccountModification",
+      "framework": "AccountsUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AccountsUI"
+        }
+      ],
+      "signature": "void/*?*/ ACUIAllowAccountModification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ACUIIsRunningInternetAccountsPref": {
+      "name": "ACUIIsRunningInternetAccountsPref",
+      "framework": "AccountsUI",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ACUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AccountsUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ACUIIsRunningInternetAccountsPref(ACUIRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ACUIDefaultUIDataclassIdentifiers": {
+      "name": "ACUIDefaultUIDataclassIdentifiers",
+      "framework": "AccountsUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AccountsUI"
+        }
+      ],
+      "signature": "void/*?*/ ACUIDefaultUIDataclassIdentifiers(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ACUIUID": {
+      "name": "ACUIUID",
+      "framework": "AccountsUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AccountsUI"
+        }
+      ],
+      "signature": "void/*?*/ ACUIUID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AccountsUIVersionNumber": {
+      "name": "AccountsUIVersionNumber",
+      "framework": "AccountsUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AccountsUI"
+        }
+      ],
+      "signature": "void/*?*/ AccountsUIVersionNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ACUIRevealAccountInPreferencePane": {
+      "name": "ACUIRevealAccountInPreferencePane",
+      "framework": "AccountsUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AccountsUI"
+        }
+      ],
+      "signature": "void/*?*/ ACUIRevealAccountInPreferencePane(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AccountsUIVersionString": {
+      "name": "AccountsUIVersionString",
+      "framework": "AccountsUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AccountsUI"
+        }
+      ],
+      "signature": "void/*?*/ AccountsUIVersionString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ACUIRevealAccountInPreferencePaneAndPromptToEnable": {
+      "name": "ACUIRevealAccountInPreferencePaneAndPromptToEnable",
+      "framework": "AccountsUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AccountsUI"
+        }
+      ],
+      "signature": "void/*?*/ ACUIRevealAccountInPreferencePaneAndPromptToEnable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ACUIOpenPreferencePaneWithArgs": {
+      "name": "ACUIOpenPreferencePaneWithArgs",
+      "framework": "AccountsUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AccountsUI"
+        }
+      ],
+      "signature": "void/*?*/ ACUIOpenPreferencePaneWithArgs(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ACUIIsNetworkAvailable": {
+      "name": "ACUIIsNetworkAvailable",
+      "framework": "AccountsUI",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ACUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AccountsUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ACUIIsNetworkAvailable(ACUIRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ACUILog": {
+      "name": "ACUILog",
+      "framework": "AccountsUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AccountsUI"
+        }
+      ],
+      "signature": "void/*?*/ ACUILog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "neural_network": [
+      "ACUICreateAccountInPreferencePane",
+      "ACUIOpenPreferencePaneWithArgs",
+      "ACUIRevealAccountInPreferencePane",
+      "ACUIRevealAccountInPreferencePaneAndPromptToEnable"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

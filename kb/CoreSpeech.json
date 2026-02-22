@@ -1,0 +1,3840 @@
+{
+  "framework": "CoreSpeech",
+  "functions": {
+    "CSP2P_VoiceProfileParallelRecordingsFetchCmd": {
+      "name": "CSP2P_VoiceProfileParallelRecordingsFetchCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileParallelRecordingsFetchCmd(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreSpeechServiceListenerInterface": {
+      "name": "CoreSpeechServiceListenerInterface",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CoreSpeechServiceListenerInterface(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NOISE_WEIGHT_MIN": {
+      "name": "NOISE_WEIGHT_MIN",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ NOISE_WEIGHT_MIN(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "sleepCallback": {
+      "name": "sleepCallback",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "void *",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ sleepCallback(void * *ref, void (*)(void *) callback, void *context)",
+      "verb": "unknown",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriAudioFileWriterExtAudioFileErrorDomain": {
+      "name": "CSSiriAudioFileWriterExtAudioFileErrorDomain",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSiriAudioFileWriterExtAudioFileErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NviLogContextFacility": {
+      "name": "NviLogContextFacility",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ NviLogContextFacility(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriSpeechRecordingModeIsAcousticFingerprinting": {
+      "name": "CSSiriSpeechRecordingModeIsAcousticFingerprinting",
+      "framework": "CoreSpeech",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSSiriSpeechRecordingModeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CSSiriSpeechRecordingModeIsAcousticFingerprinting(CSSiriSpeechRecordingModeRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_RemoteRecordingStatus_Key": {
+      "name": "CSP2P_RemoteRecordingStatus_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_RemoteRecordingStatus_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileAppDomain_Key": {
+      "name": "CSP2P_VoiceProfileAppDomain_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileAppDomain_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceGradingDataFetchCmd": {
+      "name": "CSP2P_VoiceGradingDataFetchCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceGradingDataFetchCmd(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriDebug_KeywordTriggeredPhraseId": {
+      "name": "CSSiriDebug_KeywordTriggeredPhraseId",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSiriDebug_KeywordTriggeredPhraseId(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceGradingDataFetchTriggerStudyLogsCmd": {
+      "name": "CSP2P_VoiceGradingDataFetchTriggerStudyLogsCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceGradingDataFetchTriggerStudyLogsCmd(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "sumsegment": {
+      "name": "sumsegment",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ sumsegment(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriDebug_VoiceProfileSyncTrigger": {
+      "name": "CSSiriDebug_VoiceProfileSyncTrigger",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSiriDebug_VoiceProfileSyncTrigger(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriSpeechRecordingGetUsesAutomaticEndpointingFromEndpointerOperationMode": {
+      "name": "CSSiriSpeechRecordingGetUsesAutomaticEndpointingFromEndpointerOperationMode",
+      "framework": "CoreSpeech",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSSiriSpeechRecordingRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSSiriSpeechRecordingGetUsesAutomaticEndpointingFromEndpointerOperationMode(CSSiriSpeechRecordingRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NonlinearBeepCanceller::nl_proc(AudioBufferList const*, AudioBufferList const*, AudioBufferList*, AudioBufferList*, AudioBufferList*, AudioBufferList*)": {
+      "name": "NonlinearBeepCanceller::nl_proc(AudioBufferList const*, AudioBufferList const*, AudioBufferList*, AudioBufferList*, AudioBufferList*, AudioBufferList*)",
+      "framework": "CoreSpeech",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NonlinearBeepRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool NonlinearBeepCanceller::nl_proc(AudioBufferList const*, AudioBufferList const*, AudioBufferList*, AudioBufferList*, AudioBufferList*, AudioBufferList*)(NonlinearBeepRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NonlinearBeepCanceller::nl_init(unsigned int, float, float, float, float, float, float, float, float, float, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)": {
+      "name": "NonlinearBeepCanceller::nl_init(unsigned int, float, float, float, float, float, float, float, float, float, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)",
+      "framework": "CoreSpeech",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NonlinearBeepRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool NonlinearBeepCanceller::nl_init(unsigned int, float, float, float, float, float, float, float, float, float, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)(NonlinearBeepRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BenchmarkXPCGetInterface": {
+      "name": "BenchmarkXPCGetInterface",
+      "framework": "CoreSpeech",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BenchmarkXPCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BenchmarkXPCGetInterface(BenchmarkXPCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileRemoteRecordingDir": {
+      "name": "CSP2P_VoiceProfileRemoteRecordingDir",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileRemoteRecordingDir(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSAttendingTypeGetName": {
+      "name": "CSAttendingTypeGetName",
+      "framework": "CoreSpeech",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSAttendingTypeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ CSAttendingTypeGetName(CSAttendingTypeRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSAttendingTypeGetFromName",
+        "CSAttendingStopReasonGetName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_RemoteRecordingStart_Key": {
+      "name": "CSP2P_RemoteRecordingStart_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_RemoteRecordingStart_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NviIsInternalBuild": {
+      "name": "NviIsInternalBuild",
+      "framework": "CoreSpeech",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NviRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool NviIsInternalBuild(NviRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriSpeechRecordingRecordedAudioAppContainerName": {
+      "name": "CSSiriSpeechRecordingRecordedAudioAppContainerName",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSiriSpeechRecordingRecordedAudioAppContainerName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SpeechModelTrainingGetInterface": {
+      "name": "SpeechModelTrainingGetInterface",
+      "framework": "CoreSpeech",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SpeechModelTrainingRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ SpeechModelTrainingGetInterface(SpeechModelTrainingRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileFileName_Key": {
+      "name": "CSP2P_VoiceProfileFileName_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileFileName_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_overlapFactor": {
+      "name": "_overlapFactor",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ _overlapFactor(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_UncompressedDataSize_Key": {
+      "name": "CSP2P_UncompressedDataSize_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_UncompressedDataSize_Key(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriSpeechRecordingModeIsDictation": {
+      "name": "CSSiriSpeechRecordingModeIsDictation",
+      "framework": "CoreSpeech",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSSiriSpeechRecordingModeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CSSiriSpeechRecordingModeIsDictation(CSSiriSpeechRecordingModeRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "createFloatArray": {
+      "name": "createFloatArray",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ createFloatArray(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSAnalyticsContextCreateWithRecordingInfo": {
+      "name": "CSAnalyticsContextCreateWithRecordingInfo",
+      "framework": "CoreSpeech",
+      "return_type": "CSAnalyticsContextRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSAnalyticsContextRef CSAnalyticsContextCreateWithRecordingInfo(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CSAnalyticsContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_CommandDict_Key": {
+      "name": "CSP2P_CommandDict_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_CommandDict_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSAttSiriRequestSourceKey": {
+      "name": "CSAttSiriRequestSourceKey",
+      "framework": "CoreSpeech",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSAttSiriRequestSourceKey(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSP2P_ADRequestHandlerType_Key",
+        "CSSiriAudioMessageRequestServiceName",
+        "CSP2P_SiriDebugUIRequestId",
+        "CSP2P_ADCoreSpeechRequestHandler"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSAttendingTypeGetFromName": {
+      "name": "CSAttendingTypeGetFromName",
+      "framework": "CoreSpeech",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSAttendingTypeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ CSAttendingTypeGetFromName(CSAttendingTypeRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSAttendingTypeGetName",
+        "CSAttendingStopReasonGetName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileDeleteCmd": {
+      "name": "CSP2P_VoiceProfileDeleteCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileDeleteCmd(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "readJson": {
+      "name": "readJson",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ readJson(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSKeychainValueForAccountAndKey": {
+      "name": "CSKeychainValueForAccountAndKey",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSKeychainValueForAccountAndKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_PeerIdentifier_Key": {
+      "name": "CSP2P_PeerIdentifier_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_PeerIdentifier_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SmartSiriVolume::feedFloatAudio(float const*, unsigned int)": {
+      "name": "SmartSiriVolume::feedFloatAudio(float const*, unsigned int)",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ SmartSiriVolume::feedFloatAudio(float const*, unsigned int)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NonlinearBeepCanceller::NonlinearBeepCanceller()": {
+      "name": "NonlinearBeepCanceller::NonlinearBeepCanceller()",
+      "framework": "CoreSpeech",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NonlinearBeepRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool NonlinearBeepCanceller::NonlinearBeepCanceller()(NonlinearBeepRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_RemoteHeySiriEnable_Key": {
+      "name": "CSP2P_RemoteHeySiriEnable_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_RemoteHeySiriEnable_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSCopyKeychainBaseQueryDictionary": {
+      "name": "CSCopyKeychainBaseQueryDictionary",
+      "framework": "CoreSpeech",
+      "return_type": "CSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CSRef/*?*/ CSCopyKeychainBaseQueryDictionary(CSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileTotalSegments_Key": {
+      "name": "CSP2P_VoiceProfileTotalSegments_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileTotalSegments_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriPlaybackRouteFromAudioDestination": {
+      "name": "CSSiriPlaybackRouteFromAudioDestination",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSiriPlaybackRouteFromAudioDestination(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getOSDInferenceBatchSize": {
+      "name": "getOSDInferenceBatchSize",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ getOSDInferenceBatchSize(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getSeconPassInferenceBatchSize": {
+      "name": "getSeconPassInferenceBatchSize",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ getSeconPassInferenceBatchSize(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_RemoteHeySiriCmd": {
+      "name": "CSP2P_RemoteHeySiriCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_RemoteHeySiriCmd(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileStatus_Key": {
+      "name": "CSP2P_VoiceProfileStatus_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileStatus_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_ADRequestHandlerType_Key": {
+      "name": "CSP2P_ADRequestHandlerType_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSP2P_ADRequestHandlerType_Key(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSAttSiriRequestSourceKey",
+        "CSSiriAudioMessageRequestServiceName",
+        "CSP2P_SiriDebugUIRequestId",
+        "CSP2P_ADCoreSpeechRequestHandler"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileDataType_Key": {
+      "name": "CSP2P_VoiceProfileDataType_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileDataType_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "fftEnergies": {
+      "name": "fftEnergies",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ fftEnergies(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileiTunesUserID_Key": {
+      "name": "CSP2P_VoiceProfileiTunesUserID_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileiTunesUserID_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetNviPreferencesBoolValForKey": {
+      "name": "GetNviPreferencesBoolValForKey",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ GetNviPreferencesBoolValForKey(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_ParallelRecordingCmd": {
+      "name": "CSP2P_ParallelRecordingCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_ParallelRecordingCmd(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_RemoteHeySiriStatus_Key": {
+      "name": "CSP2P_RemoteHeySiriStatus_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_RemoteHeySiriStatus_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SmartSiriVolume::prepareEnergyBuffer(float)": {
+      "name": "SmartSiriVolume::prepareEnergyBuffer(float)",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ SmartSiriVolume::prepareEnergyBuffer(float)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "vecsqrt": {
+      "name": "vecsqrt",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ vecsqrt(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SmartSiriVolume::reset()": {
+      "name": "SmartSiriVolume::reset()",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ SmartSiriVolume::reset()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriDebug_SpeakerGradingTrigger": {
+      "name": "CSSiriDebug_SpeakerGradingTrigger",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSiriDebug_SpeakerGradingTrigger(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_CommandType_Key": {
+      "name": "CSP2P_CommandType_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_CommandType_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileFetchCmd": {
+      "name": "CSP2P_VoiceProfileFetchCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileFetchCmd(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileTransferCompleted_Key": {
+      "name": "CSP2P_VoiceProfileTransferCompleted_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileTransferCompleted_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriAudioFileWriterErrorDomain": {
+      "name": "CSSiriAudioFileWriterErrorDomain",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSiriAudioFileWriterErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SmartSiriVolume::computeTimeDomainEnergy(float)": {
+      "name": "SmartSiriVolume::computeTimeDomainEnergy(float)",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ SmartSiriVolume::computeTimeDomainEnergy(float)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SmartSiriVolume::removeVoiceTriggerSamples(unsigned long long, unsigned long long)": {
+      "name": "SmartSiriVolume::removeVoiceTriggerSamples(unsigned long long, unsigned long long)",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ SmartSiriVolume::removeVoiceTriggerSamples(unsigned long long, unsigned long long)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_sampleRate": {
+      "name": "_sampleRate",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ _sampleRate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_decimationCorrection": {
+      "name": "_decimationCorrection",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ _decimationCorrection(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SmartSiriVolume::estimateSoundLevel()": {
+      "name": "SmartSiriVolume::estimateSoundLevel()",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ SmartSiriVolume::estimateSoundLevel()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "defaultMadviseChunkSize": {
+      "name": "defaultMadviseChunkSize",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ defaultMadviseChunkSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SmartSiriVolume::~SmartSiriVolume()": {
+      "name": "SmartSiriVolume::~SmartSiriVolume()",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ SmartSiriVolume::~SmartSiriVolume()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileTransferCmd": {
+      "name": "CSP2P_VoiceProfileTransferCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileTransferCmd(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "root_port": {
+      "name": "root_port",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ root_port(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceFileNameToBeGraded_Key": {
+      "name": "CSP2P_VoiceFileNameToBeGraded_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceFileNameToBeGraded_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSRCHandlingXPCServiceGetXPCInterface": {
+      "name": "CSRCHandlingXPCServiceGetXPCInterface",
+      "framework": "CoreSpeech",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSRCHandlingXPCServiceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSRCHandlingXPCServiceGetXPCInterface(CSRCHandlingXPCServiceRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriSpeechRecordingGetUsesServerEndpointingFromRequestOptions": {
+      "name": "CSSiriSpeechRecordingGetUsesServerEndpointingFromRequestOptions",
+      "framework": "CoreSpeech",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSSiriSpeechRecordingRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSSiriSpeechRecordingGetUsesServerEndpointingFromRequestOptions(CSSiriSpeechRecordingRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfilePeerName_Key": {
+      "name": "CSP2P_VoiceProfilePeerName_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfilePeerName_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_GradingBatchTransferID_Key": {
+      "name": "CSP2P_GradingBatchTransferID_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_GradingBatchTransferID_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceGradingDataFetchMagusLogsCmd": {
+      "name": "CSP2P_VoiceGradingDataFetchMagusLogsCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceGradingDataFetchMagusLogsCmd(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_SmartSiriVolumeMetaContext_Key": {
+      "name": "CSP2P_SmartSiriVolumeMetaContext_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_SmartSiriVolumeMetaContext_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceDataToBeGraded_Key": {
+      "name": "CSP2P_VoiceDataToBeGraded_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceDataToBeGraded_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceGradingDataFetchSpeechLogForCompressedAudioCmd": {
+      "name": "CSP2P_VoiceGradingDataFetchSpeechLogForCompressedAudioCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceGradingDataFetchSpeechLogForCompressedAudioCmd(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "InitNviLogging": {
+      "name": "InitNviLogging",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ InitNviLogging(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileSegment_Key": {
+      "name": "CSP2P_VoiceProfileSegment_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileSegment_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileProfileId_Key": {
+      "name": "CSP2P_VoiceProfileProfileId_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileProfileId_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceTriggerEventInfo_Key": {
+      "name": "CSP2P_VoiceTriggerEventInfo_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceTriggerEventInfo_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriGlobalKeychainAccountIdentifier": {
+      "name": "CSSiriGlobalKeychainAccountIdentifier",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSiriGlobalKeychainAccountIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreSpeechXPCGetInterface": {
+      "name": "CoreSpeechXPCGetInterface",
+      "framework": "CoreSpeech",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CoreSpeechXPCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CoreSpeechXPCGetInterface(CoreSpeechXPCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "countZeroCrossings": {
+      "name": "countZeroCrossings",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ countZeroCrossings(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileListQueryCmd": {
+      "name": "CSP2P_VoiceProfileListQueryCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileListQueryCmd(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_AcousticSLMetaContext_Key": {
+      "name": "CSP2P_AcousticSLMetaContext_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_AcousticSLMetaContext_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriDebug_NotifyVTRejectedFeedbackBanner": {
+      "name": "CSSiriDebug_NotifyVTRejectedFeedbackBanner",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSiriDebug_NotifyVTRejectedFeedbackBanner(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SmartSiriVolume::initialize(unsigned int, unsigned int, unsigned int, unsigned int, float, float, unsigned int, unsigned int, float, CSSSVSoundType)": {
+      "name": "SmartSiriVolume::initialize(unsigned int, unsigned int, unsigned int, unsigned int, float, float, unsigned int, unsigned int, float, CSSSVSoundType)",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ SmartSiriVolume::initialize(unsigned int, unsigned int, unsigned int, unsigned int, float, float, unsigned int, unsigned int, float, CSSSVSoundType)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriDebug_KeywordTriggerScore": {
+      "name": "CSSiriDebug_KeywordTriggerScore",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSiriDebug_KeywordTriggerScore(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_MultiUserMetaContext_Key": {
+      "name": "CSP2P_MultiUserMetaContext_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_MultiUserMetaContext_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceGradingDataTransferCmd": {
+      "name": "CSP2P_VoiceGradingDataTransferCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceGradingDataTransferCmd(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileUpdateTriggerCmd": {
+      "name": "CSP2P_VoiceProfileUpdateTriggerCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileUpdateTriggerCmd(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NviErrorDomain": {
+      "name": "NviErrorDomain",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ NviErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NviInputSamplingRate": {
+      "name": "NviInputSamplingRate",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ NviInputSamplingRate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriSpeechRecordingModeIsOfflineOnly": {
+      "name": "CSSiriSpeechRecordingModeIsOfflineOnly",
+      "framework": "CoreSpeech",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSSiriSpeechRecordingModeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CSSiriSpeechRecordingModeIsOfflineOnly(CSSiriSpeechRecordingModeRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MockRemotePluginXPCGetInterface": {
+      "name": "MockRemotePluginXPCGetInterface",
+      "framework": "CoreSpeech",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MockRemotePluginXPCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MockRemotePluginXPCGetInterface(MockRemotePluginXPCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileSiriProfileId_Key": {
+      "name": "CSP2P_VoiceProfileSiriProfileId_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileSiriProfileId_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileReverseTransferCmd": {
+      "name": "CSP2P_VoiceProfileReverseTransferCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileReverseTransferCmd(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_decimationFactor": {
+      "name": "_decimationFactor",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ _decimationFactor(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "numSamplesFromFirstPassToVoiceTrigger": {
+      "name": "numSamplesFromFirstPassToVoiceTrigger",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ numSamplesFromFirstPassToVoiceTrigger(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileParallelRecordingTransferCmd": {
+      "name": "CSP2P_VoiceProfileParallelRecordingTransferCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileParallelRecordingTransferCmd(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriAudioMessageRequestServiceName": {
+      "name": "CSSiriAudioMessageRequestServiceName",
+      "framework": "CoreSpeech",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSSiriAudioMessageRequestServiceName(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSAttSiriRequestSourceKey",
+        "CSP2P_ADRequestHandlerType_Key",
+        "CSP2P_SiriDebugUIRequestId",
+        "CSP2P_ADCoreSpeechRequestHandler"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_GradingDataTransferStatus_Key": {
+      "name": "CSP2P_GradingDataTransferStatus_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_GradingDataTransferStatus_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriDebug_NotifyVTNearMissFeedbackBanner": {
+      "name": "CSSiriDebug_NotifyVTNearMissFeedbackBanner",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSiriDebug_NotifyVTNearMissFeedbackBanner(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSpeechRecordSettingsKey": {
+      "name": "CSSpeechRecordSettingsKey",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSSpeechRecordRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSSpeechRecordSettingsKey(CSSpeechRecordRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceGradingDataFetchSpeechLogForPCMAudioCmd": {
+      "name": "CSP2P_VoiceGradingDataFetchSpeechLogForPCMAudioCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceGradingDataFetchSpeechLogForPCMAudioCmd(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriSpeechRecordingTrimmedAudioDirectoryPath": {
+      "name": "CSSiriSpeechRecordingTrimmedAudioDirectoryPath",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSiriSpeechRecordingTrimmedAudioDirectoryPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriSpeechRecordingRecordedAudioDirectoryPath": {
+      "name": "CSSiriSpeechRecordingRecordedAudioDirectoryPath",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSiriSpeechRecordingRecordedAudioDirectoryPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NviPreferencesValueForKey": {
+      "name": "NviPreferencesValueForKey",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ NviPreferencesValueForKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriAudioServiceGetWorkloop": {
+      "name": "CSSiriAudioServiceGetWorkloop",
+      "framework": "CoreSpeech",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSSiriAudioServiceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSSiriAudioServiceGetWorkloop(CSSiriAudioServiceRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getPhsInferenceBatchSize": {
+      "name": "getPhsInferenceBatchSize",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ getPhsInferenceBatchSize(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_SiriDebugUIRequestId": {
+      "name": "CSP2P_SiriDebugUIRequestId",
+      "framework": "CoreSpeech",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSP2P_SiriDebugUIRequestId(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSAttSiriRequestSourceKey",
+        "CSP2P_ADRequestHandlerType_Key",
+        "CSSiriAudioMessageRequestServiceName",
+        "CSP2P_ADCoreSpeechRequestHandler"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceGradingDataFetchSpeechLogForCSAudioCmd": {
+      "name": "CSP2P_VoiceGradingDataFetchSpeechLogForCSAudioCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceGradingDataFetchSpeechLogForCSAudioCmd(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileOnboardTimeStamp_Key": {
+      "name": "CSP2P_VoiceProfileOnboardTimeStamp_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileOnboardTimeStamp_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileRecordedData_Key": {
+      "name": "CSP2P_VoiceProfileRecordedData_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileRecordedData_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetVTPreferencesBoolValForKey": {
+      "name": "GetVTPreferencesBoolValForKey",
+      "framework": "CoreSpeech",
+      "return_type": "bool",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "bool/*?*/ GetVTPreferencesBoolValForKey(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_ADCoreSpeechRequestHandler": {
+      "name": "CSP2P_ADCoreSpeechRequestHandler",
+      "framework": "CoreSpeech",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSP2P_ADCoreSpeechRequestHandler(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSAttSiriRequestSourceKey",
+        "CSP2P_ADRequestHandlerType_Key",
+        "CSSiriAudioMessageRequestServiceName",
+        "CSP2P_SiriDebugUIRequestId"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileLocale_Key": {
+      "name": "CSP2P_VoiceProfileLocale_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileLocale_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_SpeakerRecognitionMetaContext_Key": {
+      "name": "CSP2P_SpeakerRecognitionMetaContext_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_SpeakerRecognitionMetaContext_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_decimationFractional": {
+      "name": "_decimationFractional",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ _decimationFractional(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NviIsHorseman": {
+      "name": "NviIsHorseman",
+      "framework": "CoreSpeech",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NviRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool NviIsHorseman(NviRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriDebug_VoiceProfileAddedTrigger": {
+      "name": "CSSiriDebug_VoiceProfileAddedTrigger",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSiriDebug_VoiceProfileAddedTrigger(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileRemoteFileName_Key": {
+      "name": "CSP2P_VoiceProfileRemoteFileName_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileRemoteFileName_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileRelativeFilePath_Key": {
+      "name": "CSP2P_VoiceProfileRelativeFilePath_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileRelativeFilePath_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_IsDataCompressed_Key": {
+      "name": "CSP2P_IsDataCompressed_Key",
+      "framework": "CoreSpeech",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSP2P_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CSP2P_IsDataCompressed_Key(CSP2P_Ref *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceGradingDataFetchVoiceTriggerLogsCmd": {
+      "name": "CSP2P_VoiceGradingDataFetchVoiceTriggerLogsCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceGradingDataFetchVoiceTriggerLogsCmd(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSAttendingStopReasonGetName": {
+      "name": "CSAttendingStopReasonGetName",
+      "framework": "CoreSpeech",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSAttendingStopReasonRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ CSAttendingStopReasonGetName(CSAttendingStopReasonRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSAttendingTypeGetName",
+        "CSAttendingTypeGetFromName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileHomeUserId_Key": {
+      "name": "CSP2P_VoiceProfileHomeUserId_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileHomeUserId_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NviPreferencesKeyList": {
+      "name": "NviPreferencesKeyList",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ NviPreferencesKeyList(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSSmartSiriVolumeOverrideMediaVolumeKey": {
+      "name": "CSSSmartSiriVolumeOverrideMediaVolumeKey",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSSmartSiriVolumeOverrideMediaVolumeKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriAudioMessageServiceGetXPCInterface": {
+      "name": "CSSiriAudioMessageServiceGetXPCInterface",
+      "framework": "CoreSpeech",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSSiriAudioMessageServiceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSSiriAudioMessageServiceGetXPCInterface(CSSiriAudioMessageServiceRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileiTunesPassword_Key": {
+      "name": "CSP2P_VoiceProfileiTunesPassword_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileiTunesPassword_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileData_Key": {
+      "name": "CSP2P_VoiceProfileData_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileData_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriDebug_RemoteNearMissGradingTrigger": {
+      "name": "CSSiriDebug_RemoteNearMissGradingTrigger",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSiriDebug_RemoteNearMissGradingTrigger(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriRecordRouteFromAudioSource": {
+      "name": "CSSiriRecordRouteFromAudioSource",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSSiriRecordRouteFromAudioSource(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceGradingDataFetchSpeechLogsCmd": {
+      "name": "CSP2P_VoiceGradingDataFetchSpeechLogsCmd",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceGradingDataFetchSpeechLogsCmd(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSSiriSpeechRecordingModeIsSiri": {
+      "name": "CSSiriSpeechRecordingModeIsSiri",
+      "framework": "CoreSpeech",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSSiriSpeechRecordingModeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CSSiriSpeechRecordingModeIsSiri(CSSiriSpeechRecordingModeRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SmartSiriVolume::SmartSiriVolume()": {
+      "name": "SmartSiriVolume::SmartSiriVolume()",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ SmartSiriVolume::SmartSiriVolume()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SiriLockscreenEnabledDidChangeNotificationName": {
+      "name": "SiriLockscreenEnabledDidChangeNotificationName",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ SiriLockscreenEnabledDidChangeNotificationName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSP2P_VoiceProfileSpeakerName_Key": {
+      "name": "CSP2P_VoiceProfileSpeakerName_Key",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ CSP2P_VoiceProfileSpeakerName_Key(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NOISE_WEIGHT_MAX": {
+      "name": "NOISE_WEIGHT_MAX",
+      "framework": "CoreSpeech",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSpeech"
+        }
+      ],
+      "signature": "void/*?*/ NOISE_WEIGHT_MAX(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "neural_network": [
+      "getOSDInferenceBatchSize",
+      "getPhsInferenceBatchSize",
+      "getSeconPassInferenceBatchSize"
+    ],
+    "linear_algebra": [
+      "fftEnergies"
+    ],
+    "system_io": [
+      "CSSiriAudioServiceGetWorkloop"
+    ],
+    "gpu_compute": [
+      "CSP2P_CommandDict_Key",
+      "CSP2P_CommandType_Key",
+      "SmartSiriVolume::computeTimeDomainEnergy(float)"
+    ],
+    "compression": [
+      "CSP2P_IsDataCompressed_Key",
+      "CSP2P_UncompressedDataSize_Key",
+      "CSP2P_VoiceGradingDataFetchSpeechLogForCompressedAudioCmd"
+    ],
+    "display_compositing": [
+      "SiriLockscreenEnabledDidChangeNotificationName"
+    ],
+    "memory_buffer": [
+      "SmartSiriVolume::prepareEnergyBuffer(float)",
+      "NonlinearBeepCanceller::nl_proc(AudioBufferList const*, AudioBufferList const*, AudioBufferList*, AudioBufferList*, AudioBufferList*, AudioBufferList*)"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

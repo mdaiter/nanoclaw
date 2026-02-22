@@ -1,0 +1,6534 @@
+{
+  "framework": "CoreSDB",
+  "functions": {
+    "CSDBPerformLockedSectionForConnectionForWriting": {
+      "name": "CSDBPerformLockedSectionForConnectionForWriting",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformLockedSectionForConnectionForWriting(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordGetClass": {
+      "name": "CSDBRecordGetClass",
+      "framework": "CoreSDB",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSDBRecordGetClass(CSDBRecordRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseSetSetupHandler": {
+      "name": "CSDBSqliteDatabaseSetSetupHandler",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteDatabaseRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseSetSetupHandler(CSDBSqliteDatabaseRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseSetVersion": {
+      "name": "CSDBSqliteDatabaseSetVersion",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteDatabaseRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseSetVersion(CSDBSqliteDatabaseRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteSetDefaultPageCacheSize": {
+      "name": "CSDBSqliteSetDefaultPageCacheSize",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint32_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteSetDefaultPageCacheSize(CSDBSqliteRef *ref, uint32_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint32_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBGenerateInClauseForCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteStatementReset": {
+      "name": "CSDBSqliteStatementReset",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteStatementReset(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabasePath": {
+      "name": "CSDBSqliteDatabasePath",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabasePath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformLockedSectionUsingUnfairLock": {
+      "name": "CSDBPerformLockedSectionUsingUnfairLock",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformLockedSectionUsingUnfairLock(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionIntegerForProperty": {
+      "name": "CSDBSqliteConnectionIntegerForProperty",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionIntegerForProperty(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteStatementCopyAllRowsStringsForColumnsAtIndices": {
+      "name": "CSDBSqliteStatementCopyAllRowsStringsForColumnsAtIndices",
+      "framework": "CoreSDB",
+      "return_type": "CSDBSqliteStatementRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteStatementRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CSDBSqliteStatementRef/*?*/ CSDBSqliteStatementCopyAllRowsStringsForColumnsAtIndices(CSDBSqliteStatementRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBSqliteStatementRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBSqliteStatementCopyDataResult",
+        "CSDBSqliteStatementCopyStringResult",
+        "CSDBSqliteStatementCopyStringsForColumnsAtIndices"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreProcessAddedRecords": {
+      "name": "CSDBRecordStoreProcessAddedRecords",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreProcessAddedRecords(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteBindTextFromCFArrayOfCFStrings": {
+      "name": "CSDBSqliteBindTextFromCFArrayOfCFStrings",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteBindTextFromCFArrayOfCFStrings(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSetAsideInPlaceCorruptedDatabaseHandler": {
+      "name": "CSDBSetAsideInPlaceCorruptedDatabaseHandler",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSetAsideInPlaceCorruptedDatabaseHandler(CSDBRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteSetupLoggingForDatabaseHandle": {
+      "name": "CSDBSqliteSetupLoggingForDatabaseHandle",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteSetupLoggingForDatabaseHandle(CSDBSqliteRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBGetMobileUserGID": {
+      "name": "CSDBGetMobileUserGID",
+      "framework": "CoreSDB",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CSDBGetMobileUserGID(CSDBRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreGetRecordIDForRowid",
+        "CSDBRecordGetTypeID",
+        "CSDBRecordGetID",
+        "CSDBRecordStoreGetRowidForRecordID",
+        "CSDBGetMobileUserUID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordCreateCopy": {
+      "name": "CSDBRecordCreateCopy",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRecordRef CSDBRecordCreateCopy(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordCopyChangedProperties",
+        "CSDBRecordCopyProperty",
+        "CSDBRecordCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformLockedSectionUsingSpinLock": {
+      "name": "CSDBPerformLockedSectionUsingSpinLock",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformLockedSectionUsingSpinLock(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordMarkPropertyChanged": {
+      "name": "CSDBRecordMarkPropertyChanged",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordMarkPropertyChanged(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCopyChangedRecords": {
+      "name": "CSDBRecordStoreCopyChangedRecords",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef/*?*/ CSDBRecordStoreCopyChangedRecords(CSDBRecordStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor",
+        "CSDBRecordStoreCreateSelectPrefix"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor": {
+      "name": "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor",
+        "CSDBRecordStoreCreateSelectPrefix"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordGetStore": {
+      "name": "CSDBRecordGetStore",
+      "framework": "CoreSDB",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSDBRecordGetStore(CSDBRecordRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBGenerateInClauseForCount": {
+      "name": "CSDBGenerateInClauseForCount",
+      "framework": "CoreSDB",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBGenerateInClauseForRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t CSDBGenerateInClauseForCount(CSDBGenerateInClauseForRef *ref)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBSqliteSetDefaultPageCacheSize"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordGetSequenceNumber": {
+      "name": "CSDBRecordGetSequenceNumber",
+      "framework": "CoreSDB",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSDBRecordGetSequenceNumber(CSDBRecordRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCopyDeletedRecordIDsOfClass": {
+      "name": "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef/*?*/ CSDBRecordStoreCopyDeletedRecordIDsOfClass(CSDBRecordStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor",
+        "CSDBRecordStoreCreateSelectPrefix"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreDestroy": {
+      "name": "CSDBRecordStoreDestroy",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void CSDBRecordStoreDestroy(CSDBRecordStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionAddRecord": {
+      "name": "CSDBSqliteConnectionAddRecord",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionAddRecord(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionAddRecordWithRowid": {
+      "name": "CSDBSqliteConnectionAddRecordWithRowid",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionAddRecordWithRowid(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBCreateThreadedRecordStoreWithQOSClass": {
+      "name": "CSDBCreateThreadedRecordStoreWithQOSClass",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRef CSDBCreateThreadedRecordStoreWithQOSClass(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBCreateThreadedRecordStore",
+        "CSDBCreateDirectoriesToPath",
+        "CSDBCreateThreadedRecordStoreWithQOSClassAndLookAsideBufferConfig",
+        "CSDBCreateUTF8StringFromCFString",
+        "CSDBCreateDirectoriesToPathWithOwnership"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteBackupDatabase": {
+      "name": "CSDBSqliteBackupDatabase",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteBackupDatabase(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseSetLookAsideConfig": {
+      "name": "CSDBSqliteDatabaseSetLookAsideConfig",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteDatabaseRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseSetLookAsideConfig(CSDBSqliteDatabaseRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreRemoveRecord": {
+      "name": "CSDBRecordStoreRemoveRecord",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreRemoveRecord(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteStatementApplyValuesFromRecordWithNullValue": {
+      "name": "CSDBSqliteStatementApplyValuesFromRecordWithNullValue",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteStatementApplyValuesFromRecordWithNullValue(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteStatementCopyDataResult": {
+      "name": "CSDBSqliteStatementCopyDataResult",
+      "framework": "CoreSDB",
+      "return_type": "CSDBSqliteStatementRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteStatementRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CSDBSqliteStatementRef/*?*/ CSDBSqliteStatementCopyDataResult(CSDBSqliteStatementRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBSqliteStatementRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBSqliteStatementCopyAllRowsStringsForColumnsAtIndices",
+        "CSDBSqliteStatementCopyStringResult",
+        "CSDBSqliteStatementCopyStringsForColumnsAtIndices"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordIsPendingDelete": {
+      "name": "CSDBRecordIsPendingDelete",
+      "framework": "CoreSDB",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CSDBRecordIsPendingDelete(CSDBRecordRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreIsLoggingChanges": {
+      "name": "CSDBRecordStoreIsLoggingChanges",
+      "framework": "CoreSDB",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CSDBRecordStoreIsLoggingChanges(CSDBRecordStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreRemoveRecordOfClassWithUID": {
+      "name": "CSDBRecordStoreRemoveRecordOfClassWithUID",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreRemoveRecordOfClassWithUID(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreSaveWithCallback": {
+      "name": "CSDBRecordStoreSaveWithCallback",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreSaveWithCallback(CSDBRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "write",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBThreadedRecordStoreRegisterClass",
+        "CSDBSqliteDatabaseRegisterFunctionForDB",
+        "CSDBRecordStoreRegisterClass",
+        "CSDBRegisterReconnectBlockWithIdentifier",
+        "CSDBDefaultCorruptedDatabaseHandler"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordGetProperty": {
+      "name": "CSDBRecordGetProperty",
+      "framework": "CoreSDB",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSDBRecordGetProperty(CSDBRecordRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseCopyValueForProperty": {
+      "name": "CSDBSqliteDatabaseCopyValueForProperty",
+      "framework": "CoreSDB",
+      "return_type": "CSDBSqliteDatabaseRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteDatabaseRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CSDBSqliteDatabaseRef/*?*/ CSDBSqliteDatabaseCopyValueForProperty(CSDBSqliteDatabaseRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBSqliteDatabaseRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBSqliteDatabaseCreateWithPath"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteBindBlobFromCFData": {
+      "name": "CSDBSqliteBindBlobFromCFData",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteBindBlobFromCFData(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionUpdateRecord": {
+      "name": "CSDBSqliteConnectionUpdateRecord",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionUpdateRecord(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseSetShouldMigrateInExternalProcess": {
+      "name": "CSDBSqliteDatabaseSetShouldMigrateInExternalProcess",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteDatabaseRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseSetShouldMigrateInExternalProcess(CSDBSqliteDatabaseRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreSetContext": {
+      "name": "CSDBRecordStoreSetContext",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreSetContext(CSDBRecordStoreRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionSetValueForProperty": {
+      "name": "CSDBSqliteConnectionSetValueForProperty",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteConnectionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionSetValueForProperty(CSDBSqliteConnectionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseSetLoggingEnabled": {
+      "name": "CSDBSqliteDatabaseSetLoggingEnabled",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteDatabaseRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseSetLoggingEnabled(CSDBSqliteDatabaseRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseStatementForWriting": {
+      "name": "CSDBSqliteDatabaseStatementForWriting",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseStatementForWriting(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteStatementInteger64ResultColumn": {
+      "name": "CSDBSqliteStatementInteger64ResultColumn",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteStatementInteger64ResultColumn(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBStringMethods": {
+      "name": "CSDBStringMethods",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBStringMethods(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteStatementSendResults": {
+      "name": "CSDBSqliteStatementSendResults",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteStatementSendResults(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBThreadedRecordStoreEnsureDatabaseSetupWithProtection": {
+      "name": "CSDBThreadedRecordStoreEnsureDatabaseSetupWithProtection",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBThreadedRecordStoreEnsureDatabaseRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBThreadedRecordStoreEnsureDatabaseSetupWithProtection(CSDBThreadedRecordStoreEnsureDatabaseRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBThreadedRecordStoreRegisterClass": {
+      "name": "CSDBThreadedRecordStoreRegisterClass",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBThreadedRecordStoreRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBThreadedRecordStoreRegisterClass(CSDBThreadedRecordStoreRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "write",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreSaveWithCallback",
+        "CSDBSqliteDatabaseRegisterFunctionForDB",
+        "CSDBRecordStoreRegisterClass",
+        "CSDBRegisterReconnectBlockWithIdentifier",
+        "CSDBDefaultCorruptedDatabaseHandler"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSetCorruptedDatabaseHandler": {
+      "name": "CSDBSetCorruptedDatabaseHandler",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSetCorruptedDatabaseHandler(CSDBRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreProcessQuery": {
+      "name": "CSDBRecordStoreProcessQuery",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreProcessQuery(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBThreadedRecordStoreTeardownDatabase": {
+      "name": "CSDBThreadedRecordStoreTeardownDatabase",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBThreadedRecordStoreTeardownDatabase(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreProcessStatementWithPropertyIndices": {
+      "name": "CSDBRecordStoreProcessStatementWithPropertyIndices",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreProcessStatementWithPropertyIndices(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordInitializeProperty": {
+      "name": "CSDBRecordInitializeProperty",
+      "framework": "CoreSDB",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ CSDBRecordInitializeProperty(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBPerformLockedSectionForRecordStoreWithoutInitialize"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreProcessStatement": {
+      "name": "CSDBRecordStoreProcessStatement",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreProcessStatement(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionPerformSQL": {
+      "name": "CSDBSqliteConnectionPerformSQL",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionPerformSQL(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseRegisterFunctionForDB": {
+      "name": "CSDBSqliteDatabaseRegisterFunctionForDB",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteDatabaseRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseRegisterFunctionForDB(CSDBSqliteDatabaseRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreSaveWithCallback",
+        "CSDBThreadedRecordStoreRegisterClass",
+        "CSDBRecordStoreRegisterClass",
+        "CSDBRegisterReconnectBlockWithIdentifier",
+        "CSDBDefaultCorruptedDatabaseHandler"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPushLastSQLCommand": {
+      "name": "CSDBPushLastSQLCommand",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPushLastSQLCommand(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCreateReadColumns": {
+      "name": "CSDBRecordStoreCreateReadColumns",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef CSDBRecordStoreCreateReadColumns(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor",
+        "CSDBRecordStoreCreateSelectPrefix"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordIsPendingChange": {
+      "name": "CSDBRecordIsPendingChange",
+      "framework": "CoreSDB",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CSDBRecordIsPendingChange(CSDBRecordRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreAddExistingRecord": {
+      "name": "CSDBRecordStoreAddExistingRecord",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreAddExistingRecord(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCreateColumnListFromRecordDescriptor": {
+      "name": "CSDBRecordStoreCreateColumnListFromRecordDescriptor",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef CSDBRecordStoreCreateColumnListFromRecordDescriptor(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateSelectPrefix"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCreateSelectPrefix": {
+      "name": "CSDBRecordStoreCreateSelectPrefix",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef CSDBRecordStoreCreateSelectPrefix(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreRefFromThreadedRecordStoreRef": {
+      "name": "CSDBRecordStoreRefFromThreadedRecordStoreRef",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreRefFromThreadedRecordStoreRef(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionBeginTransactionType": {
+      "name": "CSDBSqliteConnectionBeginTransactionType",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionBeginTransactionType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBGetMobileUserDirectory": {
+      "name": "CSDBGetMobileUserDirectory",
+      "framework": "CoreSDB",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSDBGetMobileUserDirectory(CSDBRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreHasUnsavedChanges": {
+      "name": "CSDBRecordStoreHasUnsavedChanges",
+      "framework": "CoreSDB",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CSDBRecordStoreHasUnsavedChanges(CSDBRecordStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseVacuum": {
+      "name": "CSDBSqliteDatabaseVacuum",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseVacuum(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqlitePreparedStatement": {
+      "name": "CSDBSqlitePreparedStatement",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqlitePreparedStatement(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordUnloadProperty": {
+      "name": "CSDBRecordUnloadProperty",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordUnloadProperty(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreLogChanges": {
+      "name": "CSDBRecordStoreLogChanges",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreLogChanges(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordSaveStore": {
+      "name": "CSDBRecordSaveStore",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordSaveStore(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseConnectionForWritingWithOwnership": {
+      "name": "CSDBSqliteDatabaseConnectionForWritingWithOwnership",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseConnectionForWritingWithOwnership(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBThreadedRecordStoreGetQueue": {
+      "name": "CSDBThreadedRecordStoreGetQueue",
+      "framework": "CoreSDB",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBThreadedRecordStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSDBThreadedRecordStoreGetQueue(CSDBThreadedRecordStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionRowidOfLastInsert": {
+      "name": "CSDBSqliteConnectionRowidOfLastInsert",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionRowidOfLastInsert(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformLocked": {
+      "name": "CSDBPerformLocked",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformLocked(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseSetMigrationHandlers": {
+      "name": "CSDBSqliteDatabaseSetMigrationHandlers",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteDatabaseRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseSetMigrationHandlers(CSDBSqliteDatabaseRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreSaveWithCallbackAndTransactionType": {
+      "name": "CSDBRecordStoreSaveWithCallbackAndTransactionType",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreSaveWithCallbackAndTransactionType(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteStatementApplyValuesFromRecord": {
+      "name": "CSDBSqliteStatementApplyValuesFromRecord",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteStatementApplyValuesFromRecord(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBCreateThreadedRecordStore": {
+      "name": "CSDBCreateThreadedRecordStore",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRef CSDBCreateThreadedRecordStore(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBCreateThreadedRecordStoreWithQOSClass",
+        "CSDBCreateDirectoriesToPath",
+        "CSDBCreateThreadedRecordStoreWithQOSClassAndLookAsideBufferConfig",
+        "CSDBCreateUTF8StringFromCFString",
+        "CSDBCreateDirectoriesToPathWithOwnership"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordInvalidateRecord": {
+      "name": "CSDBRecordInvalidateRecord",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordInvalidateRecord(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreRegisterClass": {
+      "name": "CSDBRecordStoreRegisterClass",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreRegisterClass(CSDBRecordStoreRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "write",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreSaveWithCallback",
+        "CSDBThreadedRecordStoreRegisterClass",
+        "CSDBSqliteDatabaseRegisterFunctionForDB",
+        "CSDBRegisterReconnectBlockWithIdentifier",
+        "CSDBDefaultCorruptedDatabaseHandler"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCreateColumnListWithAliasAndExtraColumns": {
+      "name": "CSDBRecordStoreCreateColumnListWithAliasAndExtraColumns",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef CSDBRecordStoreCreateColumnListWithAliasAndExtraColumns(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreGetRecordIDForRowid": {
+      "name": "CSDBRecordStoreGetRecordIDForRowid",
+      "framework": "CoreSDB",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CSDBRecordStoreGetRecordIDForRowid(CSDBRecordStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBGetMobileUserGID",
+        "CSDBRecordGetTypeID",
+        "CSDBRecordGetID",
+        "CSDBRecordStoreGetRowidForRecordID",
+        "CSDBGetMobileUserUID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreSetValueForProperty": {
+      "name": "CSDBRecordStoreSetValueForProperty",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreSetValueForProperty(CSDBRecordStoreRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBThreadedRecordStoreOwnsCurrentThread": {
+      "name": "CSDBThreadedRecordStoreOwnsCurrentThread",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBThreadedRecordStoreOwnsCurrentThread(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRegisterReconnectBlockWithIdentifier": {
+      "name": "CSDBRegisterReconnectBlockWithIdentifier",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRegisterReconnectBlockWithIdentifier(CSDBRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreSaveWithCallback",
+        "CSDBThreadedRecordStoreRegisterClass",
+        "CSDBSqliteDatabaseRegisterFunctionForDB",
+        "CSDBRecordStoreRegisterClass",
+        "CSDBDefaultCorruptedDatabaseHandler"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteStepWithConnection": {
+      "name": "CSDBSqliteStepWithConnection",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteStepWithConnection(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCreateSelectPrefixFromRecordDescriptor": {
+      "name": "CSDBRecordStoreCreateSelectPrefixFromRecordDescriptor",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef CSDBRecordStoreCreateSelectPrefixFromRecordDescriptor(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteUtilitiesGetSchemaVersionAtPath": {
+      "name": "CSDBSqliteUtilitiesGetSchemaVersionAtPath",
+      "framework": "CoreSDB",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteUtilitiesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ CSDBSqliteUtilitiesGetSchemaVersionAtPath(CSDBSqliteUtilitiesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBSqliteUtilitiesGetSchemaVersionAtPathWithProtection"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordGetTypeID": {
+      "name": "CSDBRecordGetTypeID",
+      "framework": "CoreSDB",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CSDBRecordGetTypeID(CSDBRecordRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBGetMobileUserGID",
+        "CSDBRecordStoreGetRecordIDForRowid",
+        "CSDBRecordGetID",
+        "CSDBRecordStoreGetRowidForRecordID",
+        "CSDBGetMobileUserUID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionStatementForSQL": {
+      "name": "CSDBSqliteConnectionStatementForSQL",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionStatementForSQL(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreGetContext": {
+      "name": "CSDBRecordStoreGetContext",
+      "framework": "CoreSDB",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSDBRecordStoreGetContext(CSDBRecordStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseConnectionForReading": {
+      "name": "CSDBSqliteDatabaseConnectionForReading",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseConnectionForReading(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteBindInt": {
+      "name": "CSDBSqliteBindInt",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteBindInt(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseFromThreadedRecordStoreRef": {
+      "name": "CSDBSqliteDatabaseFromThreadedRecordStoreRef",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseFromThreadedRecordStoreRef(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformLockedSectionForRecordStoreWithoutInitialize": {
+      "name": "CSDBPerformLockedSectionForRecordStoreWithoutInitialize",
+      "framework": "CoreSDB",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ CSDBPerformLockedSectionForRecordStoreWithoutInitialize(void *buf, size_t size)",
+      "verb": "execute",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordInitializeProperty"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordCopyChangedProperties": {
+      "name": "CSDBRecordCopyChangedProperties",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CSDBRecordRef/*?*/ CSDBRecordCopyChangedProperties(CSDBRecordRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordCreateCopy",
+        "CSDBRecordCopyProperty",
+        "CSDBRecordCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordIndexOfPropertyNamed": {
+      "name": "CSDBRecordIndexOfPropertyNamed",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordIndexOfPropertyNamed(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreProcessRecordStatementWithPropertyIndices": {
+      "name": "CSDBRecordStoreProcessRecordStatementWithPropertyIndices",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreProcessRecordStatementWithPropertyIndices(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformUnlockedSectionForConnectionForWriting": {
+      "name": "CSDBPerformUnlockedSectionForConnectionForWriting",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformUnlockedSectionForConnectionForWriting(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionCopyValueForProperty": {
+      "name": "CSDBSqliteConnectionCopyValueForProperty",
+      "framework": "CoreSDB",
+      "return_type": "CSDBSqliteConnectionRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteConnectionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CSDBSqliteConnectionRef/*?*/ CSDBSqliteConnectionCopyValueForProperty(CSDBSqliteConnectionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBSqliteConnectionRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBSqliteConnectionCopyValuesForPropertiesLike"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBThreadedRecordStoreEnsureDatabaseSetup": {
+      "name": "CSDBThreadedRecordStoreEnsureDatabaseSetup",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBThreadedRecordStoreEnsureDatabaseRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBThreadedRecordStoreEnsureDatabaseSetup(CSDBThreadedRecordStoreEnsureDatabaseRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformUnlockedSectionForRecordStore": {
+      "name": "CSDBPerformUnlockedSectionForRecordStore",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformUnlockedSectionForRecordStore(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCreateSelectStatement": {
+      "name": "CSDBRecordStoreCreateSelectStatement",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef CSDBRecordStoreCreateSelectStatement(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordSetProperty": {
+      "name": "CSDBRecordSetProperty",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordSetProperty(CSDBRecordRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformUnlockedSectionForQueryForWriting": {
+      "name": "CSDBPerformUnlockedSectionForQueryForWriting",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformUnlockedSectionForQueryForWriting(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBDefaultCorruptedDatabaseHandler": {
+      "name": "CSDBDefaultCorruptedDatabaseHandler",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBDefaultCorruptedDatabaseHandler(CSDBRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "unknown",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreSaveWithCallback",
+        "CSDBThreadedRecordStoreRegisterClass",
+        "CSDBSqliteDatabaseRegisterFunctionForDB",
+        "CSDBRecordStoreRegisterClass",
+        "CSDBRegisterReconnectBlockWithIdentifier"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBDeregisterReconnectBlockWithIdentifier": {
+      "name": "CSDBDeregisterReconnectBlockWithIdentifier",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBDeregisterReconnectBlockWithIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBLogLastCommandsForError": {
+      "name": "CSDBLogLastCommandsForError",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBLogLastCommandsForError(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordCopyProperty": {
+      "name": "CSDBRecordCopyProperty",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CSDBRecordRef/*?*/ CSDBRecordCopyProperty(CSDBRecordRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordCreateCopy",
+        "CSDBRecordCopyChangedProperties",
+        "CSDBRecordCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformLockedSectionForConnectionForReading": {
+      "name": "CSDBPerformLockedSectionForConnectionForReading",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformLockedSectionForConnectionForReading(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordCreate": {
+      "name": "CSDBRecordCreate",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRecordRef CSDBRecordCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordCreateCopy",
+        "CSDBRecordCopyChangedProperties",
+        "CSDBRecordCopyProperty"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCreateDistinctColumnList": {
+      "name": "CSDBRecordStoreCreateDistinctColumnList",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef CSDBRecordStoreCreateDistinctColumnList(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordGetID": {
+      "name": "CSDBRecordGetID",
+      "framework": "CoreSDB",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CSDBRecordGetID(CSDBRecordRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBGetMobileUserGID",
+        "CSDBRecordStoreGetRecordIDForRowid",
+        "CSDBRecordGetTypeID",
+        "CSDBRecordStoreGetRowidForRecordID",
+        "CSDBGetMobileUserUID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreProcessAddedRecordsWithPolicyAndTransactionType": {
+      "name": "CSDBRecordStoreProcessAddedRecordsWithPolicyAndTransactionType",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreProcessAddedRecordsWithPolicyAndTransactionType(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreSave": {
+      "name": "CSDBRecordStoreSave",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreSave(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreSaveAndInvalidateCaches": {
+      "name": "CSDBRecordStoreSaveAndInvalidateCaches",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreSaveAndInvalidateCaches(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreInvalidateCachesWithStore": {
+      "name": "CSDBRecordStoreInvalidateCachesWithStore",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreInvalidateCachesWithStore(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCreateColumnList": {
+      "name": "CSDBRecordStoreCreateColumnList",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef CSDBRecordStoreCreateColumnList(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionCheckNoConnectionError": {
+      "name": "CSDBSqliteConnectionCheckNoConnectionError",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionCheckNoConnectionError(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionCopyValuesForPropertiesLike": {
+      "name": "CSDBSqliteConnectionCopyValuesForPropertiesLike",
+      "framework": "CoreSDB",
+      "return_type": "CSDBSqliteConnectionRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteConnectionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CSDBSqliteConnectionRef/*?*/ CSDBSqliteConnectionCopyValuesForPropertiesLike(CSDBSqliteConnectionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBSqliteConnectionRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBSqliteConnectionCopyValueForProperty"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordIsPendingAdd": {
+      "name": "CSDBRecordIsPendingAdd",
+      "framework": "CoreSDB",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CSDBRecordIsPendingAdd(CSDBRecordRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionSetBusyTimeout": {
+      "name": "CSDBSqliteConnectionSetBusyTimeout",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteConnectionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionSetBusyTimeout(CSDBSqliteConnectionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordGetPropertyDescriptor": {
+      "name": "CSDBRecordGetPropertyDescriptor",
+      "framework": "CoreSDB",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSDBRecordGetPropertyDescriptor(CSDBRecordRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionCommit": {
+      "name": "CSDBSqliteConnectionCommit",
+      "framework": "CoreSDB",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteConnectionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Submit pattern"
+        }
+      ],
+      "signature": "int/*?*/ CSDBSqliteConnectionCommit(CSDBSqliteConnectionRef *ref)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseCreateWithPath": {
+      "name": "CSDBSqliteDatabaseCreateWithPath",
+      "framework": "CoreSDB",
+      "return_type": "CSDBSqliteDatabaseRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBSqliteDatabaseRef CSDBSqliteDatabaseCreateWithPath(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBSqliteDatabaseRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBSqliteDatabaseCopyValueForProperty"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseSetConnectionInitializer": {
+      "name": "CSDBSqliteDatabaseSetConnectionInitializer",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteDatabaseRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseSetConnectionInitializer(CSDBSqliteDatabaseRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseClose": {
+      "name": "CSDBSqliteDatabaseClose",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteDatabaseRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void CSDBSqliteDatabaseClose(CSDBSqliteDatabaseRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteBindDouble": {
+      "name": "CSDBSqliteBindDouble",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteBindDouble(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseCheckIntegrity": {
+      "name": "CSDBSqliteDatabaseCheckIntegrity",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseCheckIntegrity(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordShow": {
+      "name": "CSDBRecordShow",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordShow(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseSetValueForProperty": {
+      "name": "CSDBSqliteDatabaseSetValueForProperty",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteDatabaseRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseSetValueForProperty(CSDBSqliteDatabaseRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteStatementInteger64Result": {
+      "name": "CSDBSqliteStatementInteger64Result",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteStatementInteger64Result(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDeleteDatabase": {
+      "name": "CSDBSqliteDeleteDatabase",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDeleteDatabase(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformLockedSectionForRecordStore": {
+      "name": "CSDBPerformLockedSectionForRecordStore",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformLockedSectionForRecordStore(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformUnlocked": {
+      "name": "CSDBPerformUnlocked",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformUnlocked(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformBlock": {
+      "name": "CSDBPerformBlock",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformBlock(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCreateWithPath": {
+      "name": "CSDBRecordStoreCreateWithPath",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef CSDBRecordStoreCreateWithPath(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteBindTextFromCFString": {
+      "name": "CSDBSqliteBindTextFromCFString",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteBindTextFromCFString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBCheckResultWithStatement": {
+      "name": "CSDBCheckResultWithStatement",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBCheckResultWithStatement(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseSetDataProtectionClass": {
+      "name": "CSDBSqliteDatabaseSetDataProtectionClass",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteDatabaseRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseSetDataProtectionClass(CSDBSqliteDatabaseRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCreateSelectPrefixFromRecordDescriptorWithAdditionalColumns": {
+      "name": "CSDBRecordStoreCreateSelectPrefixFromRecordDescriptorWithAdditionalColumns",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef CSDBRecordStoreCreateSelectPrefixFromRecordDescriptorWithAdditionalColumns(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCopyInstanceOfClassWithUID": {
+      "name": "CSDBRecordStoreCopyInstanceOfClassWithUID",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef/*?*/ CSDBRecordStoreCopyInstanceOfClassWithUID(CSDBRecordStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteBindInt64": {
+      "name": "CSDBSqliteBindInt64",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteBindInt64(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionDatabaseVersion": {
+      "name": "CSDBSqliteConnectionDatabaseVersion",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionDatabaseVersion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteStatementCopyStringResult": {
+      "name": "CSDBSqliteStatementCopyStringResult",
+      "framework": "CoreSDB",
+      "return_type": "CSDBSqliteStatementRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteStatementRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CSDBSqliteStatementRef/*?*/ CSDBSqliteStatementCopyStringResult(CSDBSqliteStatementRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBSqliteStatementRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBSqliteStatementCopyAllRowsStringsForColumnsAtIndices",
+        "CSDBSqliteStatementCopyDataResult",
+        "CSDBSqliteStatementCopyStringsForColumnsAtIndices"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseConnectionForWriting": {
+      "name": "CSDBSqliteDatabaseConnectionForWriting",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseConnectionForWriting(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteErrMsg": {
+      "name": "CSDBSqliteErrMsg",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteErrMsg(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreInvalidateCaches": {
+      "name": "CSDBRecordStoreInvalidateCaches",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreInvalidateCaches(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteStatementIntegerResult": {
+      "name": "CSDBSqliteStatementIntegerResult",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteStatementIntegerResult(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreGetDatabase": {
+      "name": "CSDBRecordStoreGetDatabase",
+      "framework": "CoreSDB",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSDBRecordStoreGetDatabase(CSDBRecordStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteStatementPerform": {
+      "name": "CSDBSqliteStatementPerform",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteStatementPerform(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformUnlockedSectionForConnectionForReading": {
+      "name": "CSDBPerformUnlockedSectionForConnectionForReading",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformUnlockedSectionForConnectionForReading(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBThreadedRecordStoreGetSequenceNumber": {
+      "name": "CSDBThreadedRecordStoreGetSequenceNumber",
+      "framework": "CoreSDB",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBThreadedRecordStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSDBThreadedRecordStoreGetSequenceNumber(CSDBThreadedRecordStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteStatementCopyStringsForColumnsAtIndices": {
+      "name": "CSDBSqliteStatementCopyStringsForColumnsAtIndices",
+      "framework": "CoreSDB",
+      "return_type": "CSDBSqliteStatementRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteStatementRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CSDBSqliteStatementRef/*?*/ CSDBSqliteStatementCopyStringsForColumnsAtIndices(CSDBSqliteStatementRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBSqliteStatementRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBSqliteStatementCopyAllRowsStringsForColumnsAtIndices",
+        "CSDBSqliteStatementCopyDataResult",
+        "CSDBSqliteStatementCopyStringResult"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreGetSequenceNumber": {
+      "name": "CSDBRecordStoreGetSequenceNumber",
+      "framework": "CoreSDB",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSDBRecordStoreGetSequenceNumber(CSDBRecordStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCopyAddedRecords": {
+      "name": "CSDBRecordStoreCopyAddedRecords",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef/*?*/ CSDBRecordStoreCopyAddedRecords(CSDBRecordStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreRevert": {
+      "name": "CSDBRecordStoreRevert",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreRevert(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseStatementForReading": {
+      "name": "CSDBSqliteDatabaseStatementForReading",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseStatementForReading(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreSetSetupHandler": {
+      "name": "CSDBRecordStoreSetSetupHandler",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreSetSetupHandler(CSDBRecordStoreRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseReleaseSqliteStatement": {
+      "name": "CSDBSqliteDatabaseReleaseSqliteStatement",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseReleaseSqliteStatement(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordMarkChanged": {
+      "name": "CSDBRecordMarkChanged",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordMarkChanged(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteStep": {
+      "name": "CSDBSqliteStep",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteStep(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionBegin": {
+      "name": "CSDBSqliteConnectionBegin",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionBegin(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionGetBusyTimeout": {
+      "name": "CSDBSqliteConnectionGetBusyTimeout",
+      "framework": "CoreSDB",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteConnectionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSDBSqliteConnectionGetBusyTimeout(CSDBSqliteConnectionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCopyValueForProperty": {
+      "name": "CSDBRecordStoreCopyValueForProperty",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef/*?*/ CSDBRecordStoreCopyValueForProperty(CSDBRecordStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreSaveWithPreAndPostCallbacksAndTransactionType": {
+      "name": "CSDBRecordStoreSaveWithPreAndPostCallbacksAndTransactionType",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreSaveWithPreAndPostCallbacksAndTransactionType(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreAddRecord": {
+      "name": "CSDBRecordStoreAddRecord",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreAddRecord(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCreateTablesForClass": {
+      "name": "CSDBRecordStoreCreateTablesForClass",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef CSDBRecordStoreCreateTablesForClass(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseReleaseSqliteConnection": {
+      "name": "CSDBSqliteDatabaseReleaseSqliteConnection",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseReleaseSqliteConnection(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreProcessAddedRecordsWithPolicy": {
+      "name": "CSDBRecordStoreProcessAddedRecordsWithPolicy",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreProcessAddedRecordsWithPolicy(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteUtilitiesGetSchemaVersionAtPathWithProtection": {
+      "name": "CSDBSqliteUtilitiesGetSchemaVersionAtPathWithProtection",
+      "framework": "CoreSDB",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteUtilitiesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ CSDBSqliteUtilitiesGetSchemaVersionAtPathWithProtection(CSDBSqliteUtilitiesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBSqliteUtilitiesGetSchemaVersionAtPath"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreGetLastSequenceNumber": {
+      "name": "CSDBRecordStoreGetLastSequenceNumber",
+      "framework": "CoreSDB",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSDBRecordStoreGetLastSequenceNumber(CSDBRecordStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseCheckpointAndVacuum": {
+      "name": "CSDBSqliteDatabaseCheckpointAndVacuum",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseCheckpointAndVacuum(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformUnlockedSectionForDatabase": {
+      "name": "CSDBPerformUnlockedSectionForDatabase",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformUnlockedSectionForDatabase(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCreateSelectPrefixWithTableExpressionAndAlias": {
+      "name": "CSDBRecordStoreCreateSelectPrefixWithTableExpressionAndAlias",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef CSDBRecordStoreCreateSelectPrefixWithTableExpressionAndAlias(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBIntegerMethods": {
+      "name": "CSDBIntegerMethods",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBIntegerMethods(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionFlushStatementCache": {
+      "name": "CSDBSqliteConnectionFlushStatementCache",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionFlushStatementCache(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteStatementBindValuesForColumns": {
+      "name": "CSDBSqliteStatementBindValuesForColumns",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteStatementBindValuesForColumns(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBGetLastSQLCommands": {
+      "name": "CSDBGetLastSQLCommands",
+      "framework": "CoreSDB",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSDBGetLastSQLCommands(CSDBRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreRecordCommitChangesAndReleaseUnlocked": {
+      "name": "CSDBRecordStoreRecordCommitChangesAndReleaseUnlocked",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreRecordCommitChangesAndReleaseUnlocked(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformLockedSectionForQueryForReading": {
+      "name": "CSDBPerformLockedSectionForQueryForReading",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformLockedSectionForQueryForReading(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreGetRowidForRecordID": {
+      "name": "CSDBRecordStoreGetRowidForRecordID",
+      "framework": "CoreSDB",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CSDBRecordStoreGetRowidForRecordID(CSDBRecordStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBGetMobileUserGID",
+        "CSDBRecordStoreGetRecordIDForRowid",
+        "CSDBRecordGetTypeID",
+        "CSDBRecordGetID",
+        "CSDBGetMobileUserUID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreRecordCommitChangesAndRelease": {
+      "name": "CSDBRecordStoreRecordCommitChangesAndRelease",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordStoreRecordCommitChangesAndRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void CSDBRecordStoreRecordCommitChangesAndRelease(CSDBRecordStoreRecordCommitChangesAndRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBDataMethods": {
+      "name": "CSDBDataMethods",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBDataMethods(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBGetCorruptDatabaseHandler": {
+      "name": "CSDBGetCorruptDatabaseHandler",
+      "framework": "CoreSDB",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSDBGetCorruptDatabaseHandler(CSDBRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBCreateDirectoriesToPath": {
+      "name": "CSDBCreateDirectoriesToPath",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRef CSDBCreateDirectoriesToPath(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBCreateThreadedRecordStoreWithQOSClass",
+        "CSDBCreateThreadedRecordStore",
+        "CSDBCreateThreadedRecordStoreWithQOSClassAndLookAsideBufferConfig",
+        "CSDBCreateUTF8StringFromCFString",
+        "CSDBCreateDirectoriesToPathWithOwnership"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformLockedSectionForDatabase": {
+      "name": "CSDBPerformLockedSectionForDatabase",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformLockedSectionForDatabase(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformUnlockedSectionForQueryForReading": {
+      "name": "CSDBPerformUnlockedSectionForQueryForReading",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformUnlockedSectionForQueryForReading(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreCreateSelectPrefixFromRecordDescriptorWithAdditionalColumn": {
+      "name": "CSDBRecordStoreCreateSelectPrefixFromRecordDescriptorWithAdditionalColumn",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRecordStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRecordStoreRef CSDBRecordStoreCreateSelectPrefixFromRecordDescriptorWithAdditionalColumn(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRecordStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBRecordStoreCopyChangedRecords",
+        "CSDBRecordStoreCreateJoinableSelectPrefixFromRecordDescriptor",
+        "CSDBRecordStoreCopyDeletedRecordIDsOfClass",
+        "CSDBRecordStoreCreateReadColumns",
+        "CSDBRecordStoreCreateColumnListFromRecordDescriptor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformLockedSectionForQueryForWriting": {
+      "name": "CSDBPerformLockedSectionForQueryForWriting",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformLockedSectionForQueryForWriting(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordIsFull": {
+      "name": "CSDBRecordIsFull",
+      "framework": "CoreSDB",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CSDBRecordIsFull(CSDBRecordRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBCreateThreadedRecordStoreWithQOSClassAndLookAsideBufferConfig": {
+      "name": "CSDBCreateThreadedRecordStoreWithQOSClassAndLookAsideBufferConfig",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRef",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRef CSDBCreateThreadedRecordStoreWithQOSClassAndLookAsideBufferConfig(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBCreateThreadedRecordStoreWithQOSClass",
+        "CSDBCreateThreadedRecordStore",
+        "CSDBCreateDirectoriesToPath",
+        "CSDBCreateUTF8StringFromCFString",
+        "CSDBCreateDirectoriesToPathWithOwnership"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBPerformBlockAfterDelay": {
+      "name": "CSDBPerformBlockAfterDelay",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBPerformBlockAfterDelay(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBCreateUTF8StringFromCFString": {
+      "name": "CSDBCreateUTF8StringFromCFString",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRef CSDBCreateUTF8StringFromCFString(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBCreateThreadedRecordStoreWithQOSClass",
+        "CSDBCreateThreadedRecordStore",
+        "CSDBCreateDirectoriesToPath",
+        "CSDBCreateThreadedRecordStoreWithQOSClassAndLookAsideBufferConfig",
+        "CSDBCreateDirectoriesToPathWithOwnership"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBDatabasePassesIntegrityCheckAtPath": {
+      "name": "CSDBDatabasePassesIntegrityCheckAtPath",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBDatabasePassesIntegrityCheckAtPath(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteBindColumnValue": {
+      "name": "CSDBSqliteBindColumnValue",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteBindColumnValue(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBGetMobileUserUID": {
+      "name": "CSDBGetMobileUserUID",
+      "framework": "CoreSDB",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CSDBGetMobileUserUID(CSDBRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBGetMobileUserGID",
+        "CSDBRecordStoreGetRecordIDForRowid",
+        "CSDBRecordGetTypeID",
+        "CSDBRecordGetID",
+        "CSDBRecordStoreGetRowidForRecordID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionIntegerForPropertyWithDefaultValue": {
+      "name": "CSDBSqliteConnectionIntegerForPropertyWithDefaultValue",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionIntegerForPropertyWithDefaultValue(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionRollback": {
+      "name": "CSDBSqliteConnectionRollback",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionRollback(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteConnectionSetIntegerForProperty": {
+      "name": "CSDBSqliteConnectionSetIntegerForProperty",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteConnectionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteConnectionSetIntegerForProperty(CSDBSqliteConnectionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseCloseAllConnections": {
+      "name": "CSDBSqliteDatabaseCloseAllConnections",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseCloseAllConnections(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBCreateDirectoriesToPathWithOwnership": {
+      "name": "CSDBCreateDirectoriesToPathWithOwnership",
+      "framework": "CoreSDB",
+      "return_type": "CSDBRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSDBRef CSDBCreateDirectoriesToPathWithOwnership(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CSDBRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSDBCreateThreadedRecordStoreWithQOSClass",
+        "CSDBCreateThreadedRecordStore",
+        "CSDBCreateDirectoriesToPath",
+        "CSDBCreateThreadedRecordStoreWithQOSClassAndLookAsideBufferConfig",
+        "CSDBCreateUTF8StringFromCFString"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreLogBasicChanges": {
+      "name": "CSDBRecordStoreLogBasicChanges",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreLogBasicChanges(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteDatabaseDefaultSetupHandler": {
+      "name": "CSDBSqliteDatabaseDefaultSetupHandler",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBSqliteDatabaseDefaultRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteDatabaseDefaultSetupHandler(CSDBSqliteDatabaseDefaultRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordDestroy": {
+      "name": "CSDBRecordDestroy",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSDBRecordRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void CSDBRecordDestroy(CSDBRecordRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBRecordStoreProcessDeletedRecordsWithPolicyAndTransactionType": {
+      "name": "CSDBRecordStoreProcessDeletedRecordsWithPolicyAndTransactionType",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBRecordStoreProcessDeletedRecordsWithPolicyAndTransactionType(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSDBSqliteBindNull": {
+      "name": "CSDBSqliteBindNull",
+      "framework": "CoreSDB",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreSDB"
+        }
+      ],
+      "signature": "void/*?*/ CSDBSqliteBindNull(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "memory_buffer": [
+      "CSDBCreateThreadedRecordStoreWithQOSClassAndLookAsideBufferConfig"
+    ],
+    "gpu_compute": [
+      "CSDBGetLastSQLCommands",
+      "CSDBLogLastCommandsForError",
+      "CSDBPushLastSQLCommand"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

@@ -1,0 +1,261 @@
+{
+  "framework": "BatteryCenter",
+  "functions": {
+    "BCLogSubsystem": {
+      "name": "BCLogSubsystem",
+      "framework": "BatteryCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BatteryCenter"
+        }
+      ],
+      "signature": "void/*?*/ BCLogSubsystem(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BCStringFromParts": {
+      "name": "BCStringFromParts",
+      "framework": "BatteryCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BatteryCenter"
+        }
+      ],
+      "signature": "void/*?*/ BCStringFromParts(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BCLogWidget": {
+      "name": "BCLogWidget",
+      "framework": "BatteryCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BatteryCenter"
+        }
+      ],
+      "signature": "void/*?*/ BCLogWidget(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BatteryCenterVersionString": {
+      "name": "BatteryCenterVersionString",
+      "framework": "BatteryCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BatteryCenter"
+        }
+      ],
+      "signature": "void/*?*/ BatteryCenterVersionString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BCRegisterUserNotificationsLogging": {
+      "name": "BCRegisterUserNotificationsLogging",
+      "framework": "BatteryCenter",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BatteryCenter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ BCRegisterUserNotificationsLogging(BCRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BCLogPowerSourceController": {
+      "name": "BCLogPowerSourceController",
+      "framework": "BatteryCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BatteryCenter"
+        }
+      ],
+      "signature": "void/*?*/ BCLogPowerSourceController(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BatteryCenterVersionNumber": {
+      "name": "BatteryCenterVersionNumber",
+      "framework": "BatteryCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BatteryCenter"
+        }
+      ],
+      "signature": "void/*?*/ BatteryCenterVersionNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BCLogDeviceController": {
+      "name": "BCLogDeviceController",
+      "framework": "BatteryCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BatteryCenter"
+        }
+      ],
+      "signature": "void/*?*/ BCLogDeviceController(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BCCombinedLeftRightBatteryStatus": {
+      "name": "BCCombinedLeftRightBatteryStatus",
+      "framework": "BatteryCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BatteryCenter"
+        }
+      ],
+      "signature": "void/*?*/ BCCombinedLeftRightBatteryStatus(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "orderedDeviceAccessoryCategories": {
+      "name": "orderedDeviceAccessoryCategories",
+      "framework": "BatteryCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BatteryCenter"
+        }
+      ],
+      "signature": "void/*?*/ orderedDeviceAccessoryCategories(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {},
+  "protocols": [],
+  "type_aliases": {}
+}

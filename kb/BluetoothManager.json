@@ -1,0 +1,1119 @@
+{
+  "framework": "BluetoothManager",
+  "functions": {
+    "BluetoothPairingPINRequestNotification": {
+      "name": "BluetoothPairingPINRequestNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ BluetoothPairingPINRequestNotification(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BluetoothHandsfreeInitiatedVoiceCommand"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothDeviceUnpairedNotification": {
+      "name": "BluetoothDeviceUnpairedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothDeviceUnpairedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothDeviceDiscoveredNotification": {
+      "name": "BluetoothDeviceDiscoveredNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothDeviceDiscoveredNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothDeviceDisconnectSuccessNotification": {
+      "name": "BluetoothDeviceDisconnectSuccessNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothDeviceDisconnectSuccessNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothDeviceUpdatedNotification": {
+      "name": "BluetoothDeviceUpdatedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothDeviceUpdatedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothAccessibilityHeadTrackChanged": {
+      "name": "BluetoothAccessibilityHeadTrackChanged",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothAccessibilityHeadTrackChanged(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothErrorKey": {
+      "name": "BluetoothErrorKey",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothErrorKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothDiscoveryStoppedNotification": {
+      "name": "BluetoothDiscoveryStoppedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothDiscoveryStoppedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothAccessorySettingsChanged": {
+      "name": "BluetoothAccessorySettingsChanged",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BluetoothAccessoryRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothAccessorySettingsChanged(BluetoothAccessoryRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "sharedBluetoothManagerLogComponent": {
+      "name": "sharedBluetoothManagerLogComponent",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ sharedBluetoothManagerLogComponent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothConnectionStatusChangedNotification": {
+      "name": "BluetoothConnectionStatusChangedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothConnectionStatusChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothDeviceDisconnectFailedNotification": {
+      "name": "BluetoothDeviceDisconnectFailedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothDeviceDisconnectFailedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothDeviceSupportsMAPClientNotification": {
+      "name": "BluetoothDeviceSupportsMAPClientNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothDeviceSupportsMAPClientNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothAdvertisingStateChangedNotification": {
+      "name": "BluetoothAdvertisingStateChangedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothAdvertisingStateChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothDeviceSupportsContactSyncNotification": {
+      "name": "BluetoothDeviceSupportsContactSyncNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothDeviceSupportsContactSyncNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AddressForBTDevice": {
+      "name": "AddressForBTDevice",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ AddressForBTDevice(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothHeadTrackingAvailable": {
+      "name": "BluetoothHeadTrackingAvailable",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothHeadTrackingAvailable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothAccessoryInEarStatusNotification": {
+      "name": "BluetoothAccessoryInEarStatusNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothAccessoryInEarStatusNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothHighPowerEnabled": {
+      "name": "BluetoothHighPowerEnabled",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothHighPowerEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothHandsfreeInitiatedVoiceCommand": {
+      "name": "BluetoothHandsfreeInitiatedVoiceCommand",
+      "framework": "BluetoothManager",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ BluetoothHandsfreeInitiatedVoiceCommand(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BluetoothPairingPINRequestNotification"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothNotificationNameKey": {
+      "name": "BluetoothNotificationNameKey",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothNotificationNameKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothDeviceConnectFailedNotification": {
+      "name": "BluetoothDeviceConnectFailedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothDeviceConnectFailedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothFirstDeviceUnlockCompleted": {
+      "name": "BluetoothFirstDeviceUnlockCompleted",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothFirstDeviceUnlockCompleted(void)",
+      "verb": "synchronize",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothPairingPINResultFailedNotification": {
+      "name": "BluetoothPairingPINResultFailedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothPairingPINResultFailedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothPairingPINResultSuccessNotification": {
+      "name": "BluetoothPairingPINResultSuccessNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothPairingPINResultSuccessNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothDiscoveryStateChangedNotification": {
+      "name": "BluetoothDiscoveryStateChangedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothDiscoveryStateChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothPairedStatusChangedNotification": {
+      "name": "BluetoothPairedStatusChangedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothPairedStatusChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothPairingUserConfirmationNotification": {
+      "name": "BluetoothPairingUserConfirmationNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothPairingUserConfirmationNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothPairingUserNumericComparisionNotification": {
+      "name": "BluetoothPairingUserNumericComparisionNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothPairingUserNumericComparisionNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothPowerChangedNotification": {
+      "name": "BluetoothPowerChangedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothPowerChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothDenylistStateChangedNotification": {
+      "name": "BluetoothDenylistStateChangedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothDenylistStateChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothHandsfreeEndedVoiceCommand": {
+      "name": "BluetoothHandsfreeEndedVoiceCommand",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothHandsfreeEndedVoiceCommand(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothAccessorySealValueStatusNotification": {
+      "name": "BluetoothAccessorySealValueStatusNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothAccessorySealValueStatusNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothPairingPassKeyDisplayNotification": {
+      "name": "BluetoothPairingPassKeyDisplayNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothPairingPassKeyDisplayNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothAccessoryAACPCapabilitiesReceived": {
+      "name": "BluetoothAccessoryAACPCapabilitiesReceived",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothAccessoryAACPCapabilitiesReceived(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothConnectabilityChangedNotification": {
+      "name": "BluetoothConnectabilityChangedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothConnectabilityChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothHighPowerDisabled": {
+      "name": "BluetoothHighPowerDisabled",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothHighPowerDisabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothMagicPairedDeviceNameChangedNotification": {
+      "name": "BluetoothMagicPairedDeviceNameChangedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothMagicPairedDeviceNameChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothStateChangedNotification": {
+      "name": "BluetoothStateChangedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothStateChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothDeviceRemovedNotification": {
+      "name": "BluetoothDeviceRemovedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothDeviceRemovedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothDeviceChangedNotification": {
+      "name": "BluetoothDeviceChangedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothDeviceChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothDeviceBatteryChangedNotification": {
+      "name": "BluetoothDeviceBatteryChangedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothDeviceBatteryChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothDeviceConnectSuccessNotification": {
+      "name": "BluetoothDeviceConnectSuccessNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothDeviceConnectSuccessNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothAccessorySensorStreamingFrequencyChanged": {
+      "name": "BluetoothAccessorySensorStreamingFrequencyChanged",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothAccessorySensorStreamingFrequencyChanged(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BluetoothAvailabilityChangedNotification": {
+      "name": "BluetoothAvailabilityChangedNotification",
+      "framework": "BluetoothManager",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BluetoothManager"
+        }
+      ],
+      "signature": "void/*?*/ BluetoothAvailabilityChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "sharedBluetoothManagerLogComponent"
+    ],
+    "display_compositing": [
+      "BluetoothPairingPassKeyDisplayNotification"
+    ],
+    "gpu_compute": [
+      "BluetoothHandsfreeEndedVoiceCommand",
+      "BluetoothHandsfreeInitiatedVoiceCommand"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}
