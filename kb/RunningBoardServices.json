@@ -1,0 +1,3527 @@
+{
+  "framework": "RunningBoardServices",
+  "functions": {
+    "RBSDeserializeCFValueFromXPCDictionaryWithKey": {
+      "name": "RBSDeserializeCFValueFromXPCDictionaryWithKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSDeserializeCFValueFromXPCDictionaryWithKey(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_message_log": {
+      "name": "rbs_message_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_message_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSMemoryLimitInactive": {
+      "name": "RBSMemoryLimitInactive",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSMemoryLimitInactive(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSPreventLaunchStateIsPrevented": {
+      "name": "RBSPreventLaunchStateIsPrevented",
+      "framework": "RunningBoardServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "RBSPreventLaunchStateRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool RBSPreventLaunchStateIsPrevented(RBSPreventLaunchStateRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromRBSLegacyReason": {
+      "name": "NSStringFromRBSLegacyReason",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromRBSLegacyReason(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSBoolForKey": {
+      "name": "RBSBoolForKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSBoolForKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSDeserializeDataFromXPCDictionaryWithKey": {
+      "name": "RBSDeserializeDataFromXPCDictionaryWithKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSDeserializeDataFromXPCDictionaryWithKey(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_general_log": {
+      "name": "rbs_general_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_general_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSIsBinaryCatalystOriOS": {
+      "name": "RBSIsBinaryCatalystOriOS",
+      "framework": "RunningBoardServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "RBSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool RBSIsBinaryCatalystOriOS(RBSRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromRBSMemoryLimitStrength": {
+      "name": "NSStringFromRBSMemoryLimitStrength",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromRBSMemoryLimitStrength(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSAppViewServiceSessionVendingEntitlement": {
+      "name": "RBSAppViewServiceSessionVendingEntitlement",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSAppViewServiceSessionVendingEntitlement(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_assertion_adapter_wsvis_count": {
+      "name": "rbs_assertion_adapter_wsvis_count",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_assertion_adapter_wsvis_count(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSAssertionErrorDomain": {
+      "name": "RBSAssertionErrorDomain",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSAssertionErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_invalidate_domain_assertion": {
+      "name": "rbs_invalidate_domain_assertion",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_invalidate_domain_assertion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSServiceInitialize": {
+      "name": "RBSServiceInitialize",
+      "framework": "RunningBoardServices",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ RBSServiceInitialize(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "RBSLaunchRequestErrorExitContextKey",
+        "RBSRequestErrorDomain"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSDebugStateIsDebugging": {
+      "name": "RBSDebugStateIsDebugging",
+      "framework": "RunningBoardServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "RBSDebugStateRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool RBSDebugStateIsDebugging(RBSDebugStateRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_resource_log": {
+      "name": "rbs_resource_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_resource_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_ttl_log": {
+      "name": "rbs_ttl_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_ttl_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSArrayForKey": {
+      "name": "RBSArrayForKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSArrayForKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSSerializeDoubleToXPCDictionaryWithKey": {
+      "name": "RBSSerializeDoubleToXPCDictionaryWithKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSSerializeDoubleToXPCDictionaryWithKey(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSEndowmentEncode": {
+      "name": "RBSEndowmentEncode",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSEndowmentEncode(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_acquire_domain_assertion_list": {
+      "name": "rbs_acquire_domain_assertion_list",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_acquire_domain_assertion_list(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSProcessStateAssertionExplanation": {
+      "name": "RBSProcessStateAssertionExplanation",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSProcessStateAssertionExplanation(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_assertion_adapter_assertion_count": {
+      "name": "rbs_assertion_adapter_assertion_count",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_assertion_adapter_assertion_count(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSCreateDeserializedCFValueFromXPCDictionaryWithKey": {
+      "name": "RBSCreateDeserializedCFValueFromXPCDictionaryWithKey",
+      "framework": "RunningBoardServices",
+      "return_type": "RBSRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "RBSRef RBSCreateDeserializedCFValueFromXPCDictionaryWithKey(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "RBSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "RBSCreateDeserializedDataFromXPCDictionaryWithKey",
+        "RBSCreateDeserializedStringFromXPCDictionaryWithKey",
+        "RBSCreateDeserializedNSSecureEncodableObjectOfClassFromXPCDictionaryWithKey"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_coder_log": {
+      "name": "rbs_coder_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_coder_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSStringForKey": {
+      "name": "RBSStringForKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSStringForKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_assertion_adapter_assertion_for_id": {
+      "name": "rbs_assertion_adapter_assertion_for_id",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_assertion_adapter_assertion_for_id(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSAssertionErrorAttributeKey": {
+      "name": "RBSAssertionErrorAttributeKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSAssertionErrorAttributeKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSAcquisitionCompletionPolicyIsValid": {
+      "name": "RBSAcquisitionCompletionPolicyIsValid",
+      "framework": "RunningBoardServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "RBSAcquisitionCompletionPolicyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool RBSAcquisitionCompletionPolicyIsValid(RBSAcquisitionCompletionPolicyRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_assertion_adapter_iopm_count": {
+      "name": "rbs_assertion_adapter_iopm_count",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_assertion_adapter_iopm_count(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSXPCEncodingClassKey": {
+      "name": "RBSXPCEncodingClassKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSXPCEncodingClassKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSProcessTimeLimitationNone": {
+      "name": "RBSProcessTimeLimitationNone",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSProcessTimeLimitationNone(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_set_assertion_adapter_allow_on_self": {
+      "name": "rbs_set_assertion_adapter_allow_on_self",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_set_assertion_adapter_allow_on_self(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSDeserializeNSSecureEncodableObjectOfClassFromXPCDictionaryWithKey": {
+      "name": "RBSDeserializeNSSecureEncodableObjectOfClassFromXPCDictionaryWithKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSDeserializeNSSecureEncodableObjectOfClassFromXPCDictionaryWithKey(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSUserfacingNamespace": {
+      "name": "RBSUserfacingNamespace",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSUserfacingNamespace(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_acquire_appnap_assertion": {
+      "name": "rbs_acquire_appnap_assertion",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_acquire_appnap_assertion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSResourceViolationServiceName": {
+      "name": "RBSResourceViolationServiceName",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSResourceViolationServiceName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromRBSAcquisitionCompletionPolicy": {
+      "name": "NSStringFromRBSAcquisitionCompletionPolicy",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromRBSAcquisitionCompletionPolicy(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromRBSDurationStartPolicy": {
+      "name": "NSStringFromRBSDurationStartPolicy",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromRBSDurationStartPolicy(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSPathForSystemDirectory": {
+      "name": "RBSPathForSystemDirectory",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSPathForSystemDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSProcessStateAssertionDomainNames": {
+      "name": "RBSProcessStateAssertionDomainNames",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSProcessStateAssertionDomainNames(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSServiceMessageAssertionIdentifierKey": {
+      "name": "RBSServiceMessageAssertionIdentifierKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSServiceMessageAssertionIdentifierKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSXPCPackObject": {
+      "name": "RBSXPCPackObject",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSXPCPackObject(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_invalidate_appnap_assertion": {
+      "name": "rbs_invalidate_appnap_assertion",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_invalidate_appnap_assertion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_monitor_log": {
+      "name": "rbs_monitor_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_monitor_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSAppViewServiceMachServiceName": {
+      "name": "RBSAppViewServiceMachServiceName",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSAppViewServiceMachServiceName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_set_iopm_appnap_state": {
+      "name": "rbs_set_iopm_appnap_state",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_set_iopm_appnap_state(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_sp_telemetry_log": {
+      "name": "rbs_sp_telemetry_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_sp_telemetry_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSMemoryLimitActive": {
+      "name": "RBSMemoryLimitActive",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSMemoryLimitActive(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_assertion_adapter_wsdraw_count": {
+      "name": "rbs_assertion_adapter_wsdraw_count",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_assertion_adapter_wsdraw_count(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSProcessStateAssertionRunningReason": {
+      "name": "RBSProcessStateAssertionRunningReason",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSProcessStateAssertionRunningReason(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSLaunchRequestErrorExitContextKey": {
+      "name": "RBSLaunchRequestErrorExitContextKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ RBSLaunchRequestErrorExitContextKey(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "RBSServiceInitialize",
+        "RBSRequestErrorDomain"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_adapter_log": {
+      "name": "rbs_adapter_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_adapter_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSPathForCurrentUserDirectory": {
+      "name": "RBSPathForCurrentUserDirectory",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSPathForCurrentUserDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSServiceErrorDomain": {
+      "name": "RBSServiceErrorDomain",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSServiceErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_best_effort_networking_log": {
+      "name": "rbs_best_effort_networking_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_best_effort_networking_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSDaemonStartupNotification": {
+      "name": "RBSDaemonStartupNotification",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSDaemonStartupNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSServiceMessageProcessIdentifierKey": {
+      "name": "RBSServiceMessageProcessIdentifierKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSServiceMessageProcessIdentifierKey(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSServiceErrorThrottleTimeKey": {
+      "name": "RBSServiceErrorThrottleTimeKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSServiceErrorThrottleTimeKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSDeserializeDoubleFromXPCDictionaryWithKey": {
+      "name": "RBSDeserializeDoubleFromXPCDictionaryWithKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSDeserializeDoubleFromXPCDictionaryWithKey(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSServiceMessageErrorKey": {
+      "name": "RBSServiceMessageErrorKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSServiceMessageErrorKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSBundleIDForPID": {
+      "name": "RBSBundleIDForPID",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSBundleIDForPID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_process_log": {
+      "name": "rbs_process_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_process_log(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSProcessStateAssertionReason": {
+      "name": "RBSProcessStateAssertionReason",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSProcessStateAssertionReason(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSDarwinRoleFromRBSRole": {
+      "name": "RBSDarwinRoleFromRBSRole",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSDarwinRoleFromRBSRole(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSNumberForKey": {
+      "name": "RBSNumberForKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSNumberForKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromRBSCPUMaximumUsageViolationPolicy": {
+      "name": "NSStringFromRBSCPUMaximumUsageViolationPolicy",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromRBSCPUMaximumUsageViolationPolicy(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_acquire_domain_assertion": {
+      "name": "rbs_acquire_domain_assertion",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_acquire_domain_assertion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromRBSLegacyFlags": {
+      "name": "NSStringFromRBSLegacyFlags",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromRBSLegacyFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_jetsam_log": {
+      "name": "rbs_jetsam_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_jetsam_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSEndowmentDecode": {
+      "name": "RBSEndowmentDecode",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSEndowmentDecode(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSSandboxCanAccessMachService": {
+      "name": "RBSSandboxCanAccessMachService",
+      "framework": "RunningBoardServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "RBSSandboxRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool RBSSandboxCanAccessMachService(RBSSandboxRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_sp_therm_log": {
+      "name": "rbs_sp_therm_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_sp_therm_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSExecutablePathForBundlePath": {
+      "name": "RBSExecutablePathForBundlePath",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSExecutablePathForBundlePath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_set_assertion_adapter_service": {
+      "name": "rbs_set_assertion_adapter_service",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_set_assertion_adapter_service(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSAtomicSetFlag": {
+      "name": "RBSAtomicSetFlag",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "RBSAtomicRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ RBSAtomicSetFlag(RBSAtomicRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSSerializeCFValueToXPCDictionaryWithKey": {
+      "name": "RBSSerializeCFValueToXPCDictionaryWithKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSSerializeCFValueToXPCDictionaryWithKey(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_test_log": {
+      "name": "rbs_test_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_test_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSExtensionPointFromBundleDict": {
+      "name": "RBSExtensionPointFromBundleDict",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSExtensionPointFromBundleDict(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSEndowmentRootEnvironment": {
+      "name": "RBSEndowmentRootEnvironment",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSEndowmentRootEnvironment(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSPIDExists": {
+      "name": "RBSPIDExists",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSPIDExists(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromRBSDurationEndPolicy": {
+      "name": "NSStringFromRBSDurationEndPolicy",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromRBSDurationEndPolicy(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSMachAbsoluteTime": {
+      "name": "RBSMachAbsoluteTime",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSMachAbsoluteTime(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSServiceErrorEntitlementKey": {
+      "name": "RBSServiceErrorEntitlementKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSServiceErrorEntitlementKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSCreateDeserializedDataFromXPCDictionaryWithKey": {
+      "name": "RBSCreateDeserializedDataFromXPCDictionaryWithKey",
+      "framework": "RunningBoardServices",
+      "return_type": "RBSRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "RBSRef RBSCreateDeserializedDataFromXPCDictionaryWithKey(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "RBSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "RBSCreateDeserializedCFValueFromXPCDictionaryWithKey",
+        "RBSCreateDeserializedStringFromXPCDictionaryWithKey",
+        "RBSCreateDeserializedNSSecureEncodableObjectOfClassFromXPCDictionaryWithKey"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSURLForKey": {
+      "name": "RBSURLForKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSURLForKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromRBSTaskState": {
+      "name": "NSStringFromRBSTaskState",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromRBSTaskState(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_sp_state_log": {
+      "name": "rbs_sp_state_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_sp_state_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_system_log": {
+      "name": "rbs_system_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_system_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_assertion_log": {
+      "name": "rbs_assertion_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_assertion_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSMachPortIsType": {
+      "name": "RBSMachPortIsType",
+      "framework": "RunningBoardServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "RBSMachPortRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool RBSMachPortIsType(RBSMachPortRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_assertion_adapter_appnap_assertion": {
+      "name": "rbs_assertion_adapter_appnap_assertion",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_assertion_adapter_appnap_assertion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSCaptureStateToFile": {
+      "name": "RBSCaptureStateToFile",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSCaptureStateToFile(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSMachPortType": {
+      "name": "RBSMachPortType",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSMachPortType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSSerializeNSSecureEncodableObjectToXPCDictionaryWithKey": {
+      "name": "RBSSerializeNSSecureEncodableObjectToXPCDictionaryWithKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSSerializeNSSecureEncodableObjectToXPCDictionaryWithKey(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSCurrentUserDirectory": {
+      "name": "RBSCurrentUserDirectory",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSCurrentUserDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSContainedExtensionBundleIDs": {
+      "name": "RBSContainedExtensionBundleIDs",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSContainedExtensionBundleIDs(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSExecutablePathForPID": {
+      "name": "RBSExecutablePathForPID",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSExecutablePathForPID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSConnectionServiceName": {
+      "name": "RBSConnectionServiceName",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSConnectionServiceName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSAuditTokenRepresentsPlatformBinary": {
+      "name": "RBSAuditTokenRepresentsPlatformBinary",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSAuditTokenRepresentsPlatformBinary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSServiceMessageProcessStatesKey": {
+      "name": "RBSServiceMessageProcessStatesKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSServiceMessageProcessStatesKey(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_get_assertion_adapter_appnap_assertion": {
+      "name": "rbs_get_assertion_adapter_appnap_assertion",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_get_assertion_adapter_appnap_assertion(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_appnap_enabled_for_pid": {
+      "name": "rbs_appnap_enabled_for_pid",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_appnap_enabled_for_pid(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_power_log": {
+      "name": "rbs_power_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_power_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSDictionaryForKey": {
+      "name": "RBSDictionaryForKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSDictionaryForKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSDispatchAsyncWithQoS": {
+      "name": "RBSDispatchAsyncWithQoS",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSDispatchAsyncWithQoS(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSCreateDeserializedStringFromXPCDictionaryWithKey": {
+      "name": "RBSCreateDeserializedStringFromXPCDictionaryWithKey",
+      "framework": "RunningBoardServices",
+      "return_type": "RBSRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "RBSRef RBSCreateDeserializedStringFromXPCDictionaryWithKey(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "RBSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "RBSCreateDeserializedCFValueFromXPCDictionaryWithKey",
+        "RBSCreateDeserializedDataFromXPCDictionaryWithKey",
+        "RBSCreateDeserializedNSSecureEncodableObjectOfClassFromXPCDictionaryWithKey"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSSerializeStringToXPCDictionaryWithKey": {
+      "name": "RBSSerializeStringToXPCDictionaryWithKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSSerializeStringToXPCDictionaryWithKey(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromRBSTerminationResistance": {
+      "name": "NSStringFromRBSTerminationResistance",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromRBSTerminationResistance(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_shim_log": {
+      "name": "rbs_shim_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_shim_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_connection_log": {
+      "name": "rbs_connection_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_connection_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSDeserializeStringFromXPCDictionaryWithKey": {
+      "name": "RBSDeserializeStringFromXPCDictionaryWithKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSDeserializeStringFromXPCDictionaryWithKey(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_set_appnap_windowserver_drawing": {
+      "name": "rbs_set_appnap_windowserver_drawing",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_set_appnap_windowserver_drawing(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromRBSRole": {
+      "name": "NSStringFromRBSRole",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromRBSRole(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSVisibilityNamespace": {
+      "name": "RBSVisibilityNamespace",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSVisibilityNamespace(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromRBSPreventLaunchState": {
+      "name": "NSStringFromRBSPreventLaunchState",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromRBSPreventLaunchState(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSSystemRootDirectory": {
+      "name": "RBSSystemRootDirectory",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSSystemRootDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSTaskStateIsRunning": {
+      "name": "RBSTaskStateIsRunning",
+      "framework": "RunningBoardServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "RBSTaskStateRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool RBSTaskStateIsRunning(RBSTaskStateRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_job_log": {
+      "name": "rbs_job_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_job_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSInvalidRealAuditToken": {
+      "name": "RBSInvalidRealAuditToken",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSInvalidRealAuditToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSAtomicGetFlag": {
+      "name": "RBSAtomicGetFlag",
+      "framework": "RunningBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "RBSAtomicRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ RBSAtomicGetFlag(RBSAtomicRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_set_appnap_windowserver_visible": {
+      "name": "rbs_set_appnap_windowserver_visible",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_set_appnap_windowserver_visible(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSRealAuditTokenValid": {
+      "name": "RBSRealAuditTokenValid",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSRealAuditTokenValid(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSServiceMessageManagedEndpointByLaunchIdentifierKey": {
+      "name": "RBSServiceMessageManagedEndpointByLaunchIdentifierKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSServiceMessageManagedEndpointByLaunchIdentifierKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSCreateDeserializedNSSecureEncodableObjectOfClassFromXPCDictionaryWithKey": {
+      "name": "RBSCreateDeserializedNSSecureEncodableObjectOfClassFromXPCDictionaryWithKey",
+      "framework": "RunningBoardServices",
+      "return_type": "RBSRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "RBSRef RBSCreateDeserializedNSSecureEncodableObjectOfClassFromXPCDictionaryWithKey(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "RBSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "RBSCreateDeserializedCFValueFromXPCDictionaryWithKey",
+        "RBSCreateDeserializedDataFromXPCDictionaryWithKey",
+        "RBSCreateDeserializedStringFromXPCDictionaryWithKey"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSDispatchQueueAssert": {
+      "name": "RBSDispatchQueueAssert",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSDispatchQueueAssert(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSRequestErrorDomain": {
+      "name": "RBSRequestErrorDomain",
+      "framework": "RunningBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ RBSRequestErrorDomain(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "RBSServiceInitialize",
+        "RBSLaunchRequestErrorExitContextKey"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_job_oversize_log": {
+      "name": "rbs_job_oversize_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_job_oversize_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSServiceMessageReturnValueKey": {
+      "name": "RBSServiceMessageReturnValueKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSServiceMessageReturnValueKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_sp_assertion_log": {
+      "name": "rbs_sp_assertion_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_sp_assertion_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rbs_state_log": {
+      "name": "rbs_state_log",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ rbs_state_log(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSXPCUnpackObject": {
+      "name": "RBSXPCUnpackObject",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSXPCUnpackObject(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSServiceErrorPermanentKey": {
+      "name": "RBSServiceErrorPermanentKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSServiceErrorPermanentKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSXPCEqualDates": {
+      "name": "RBSXPCEqualDates",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSXPCEqualDates(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSRoleFromDarwinRole": {
+      "name": "RBSRoleFromDarwinRole",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSRoleFromDarwinRole(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromRBSGPURole": {
+      "name": "NSStringFromRBSGPURole",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromRBSGPURole(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSSerializeDataToXPCDictionaryWithKey": {
+      "name": "RBSSerializeDataToXPCDictionaryWithKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSSerializeDataToXPCDictionaryWithKey(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromRBSDebugState": {
+      "name": "NSStringFromRBSDebugState",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromRBSDebugState(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSPIDIsBeingDebugged": {
+      "name": "RBSPIDIsBeingDebugged",
+      "framework": "RunningBoardServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "RBSPIDRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool RBSPIDIsBeingDebugged(RBSPIDRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RBSAssertionErrorDomainKey": {
+      "name": "RBSAssertionErrorDomainKey",
+      "framework": "RunningBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from RunningBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ RBSAssertionErrorDomainKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "memory_buffer": [
+      "NSStringFromRBSMemoryLimitStrength",
+      "RBSMemoryLimitActive",
+      "RBSMemoryLimitInactive"
+    ],
+    "system_io": [
+      "RBSDispatchAsyncWithQoS",
+      "RBSDispatchQueueAssert"
+    ],
+    "display_compositing": [
+      "rbs_set_appnap_windowserver_drawing",
+      "rbs_set_appnap_windowserver_visible"
+    ],
+    "gpu_compute": [
+      "NSStringFromRBSGPURole"
+    ],
+    "neural_network": [
+      "RBSServiceErrorPermanentKey"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

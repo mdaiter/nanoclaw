@@ -1,0 +1,2301 @@
+{
+  "framework": "PowerLog",
+  "functions": {
+    "PPSCreateTelemetryIdentifier": {
+      "name": "PPSCreateTelemetryIdentifier",
+      "framework": "PowerLog",
+      "return_type": "PPSRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "PPSRef PPSCreateTelemetryIdentifier(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "PPSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryLifeMonitorLogCoreDuetPredictionEvents": {
+      "name": "PLBatteryLifeMonitorLogCoreDuetPredictionEvents",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryLifeMonitorLogCoreDuetPredictionEvents(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLLogEvent": {
+      "name": "PLLogEvent",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLLogEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLResetPowerlog": {
+      "name": "PLResetPowerlog",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLResetPowerlog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLSysdiagnoseCopyExtendedPersistenceLog": {
+      "name": "PLSysdiagnoseCopyExtendedPersistenceLog",
+      "framework": "PowerLog",
+      "return_type": "PLSysdiagnoseRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLSysdiagnoseRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "PLSysdiagnoseRef/*?*/ PLSysdiagnoseCopyExtendedPersistenceLog(PLSysdiagnoseRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "PLSysdiagnoseRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PLSysdiagnoseCopyPowerlog",
+        "PLSysdiagnoseCopyBatteryUILogs",
+        "PLSysdiagnoseCopyLogs"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryUsageUIStringForResponseType": {
+      "name": "PLBatteryUsageUIStringForResponseType",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryUsageUIStringForResponseType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "perfpowertelemetry_create_identifier": {
+      "name": "perfpowertelemetry_create_identifier",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ perfpowertelemetry_create_identifier(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLLogRegisteredAggregateEvent": {
+      "name": "PLLogRegisteredAggregateEvent",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLLogRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ PLLogRegisteredAggregateEvent(PLLogRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "unknown",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PLLogRegisteredEventFilterByInterval",
+        "PLShouldLogRegisteredEvent",
+        "PLLogRegisteredEvent",
+        "PLLogTimeSensitiveRegisteredEvent",
+        "PLQueryRegistered"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLCopyBackgroundProcessingLog": {
+      "name": "PLCopyBackgroundProcessingLog",
+      "framework": "PowerLog",
+      "return_type": "PLRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "PLRef/*?*/ PLCopyBackgroundProcessingLog(PLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "PLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PLCopyBatteryUIPlists",
+        "PLCopyXcodeOrganizerLog",
+        "PLCopyPowerlog",
+        "PLCopyExtendedPersistenceLog",
+        "PLCopyCleanEnergyLog"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLMovePowerlogsToCR": {
+      "name": "PLMovePowerlogsToCR",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLMovePowerlogsToCR(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLLogRegisteredEventFilterByInterval": {
+      "name": "PLLogRegisteredEventFilterByInterval",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLLogRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ PLLogRegisteredEventFilterByInterval(PLLogRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "unknown",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PLLogRegisteredAggregateEvent",
+        "PLShouldLogRegisteredEvent",
+        "PLLogRegisteredEvent",
+        "PLLogTimeSensitiveRegisteredEvent",
+        "PLQueryRegistered"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "pps_create_telemetry_identifier": {
+      "name": "pps_create_telemetry_identifier",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ pps_create_telemetry_identifier(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryLifeMonitorReportEnergyDuet": {
+      "name": "PLBatteryLifeMonitorReportEnergyDuet",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryLifeMonitorReportEnergyDuet(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryGaugeStartTracingForProcessName": {
+      "name": "PLBatteryGaugeStartTracingForProcessName",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryGaugeStartTracingForProcessName(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLCopyBatteryUIPlists": {
+      "name": "PLCopyBatteryUIPlists",
+      "framework": "PowerLog",
+      "return_type": "PLRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "PLRef/*?*/ PLCopyBatteryUIPlists(PLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "PLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PLCopyBackgroundProcessingLog",
+        "PLCopyXcodeOrganizerLog",
+        "PLCopyPowerlog",
+        "PLCopyExtendedPersistenceLog",
+        "PLCopyCleanEnergyLog"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryUsageUIStringForQueryRange": {
+      "name": "PLBatteryUsageUIStringForQueryRange",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryUsageUIStringForQueryRange(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryGaugeStopTracingForBundleId": {
+      "name": "PLBatteryGaugeStopTracingForBundleId",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryGaugeStopTracingForBundleId(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBuildEnergyBucket": {
+      "name": "PLBuildEnergyBucket",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBuildEnergyBucket(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLShouldLogRegisteredEvent": {
+      "name": "PLShouldLogRegisteredEvent",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLShouldLogRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ PLShouldLogRegisteredEvent(PLShouldLogRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "predicate",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PLLogRegisteredAggregateEvent",
+        "PLLogRegisteredEventFilterByInterval",
+        "PLLogRegisteredEvent",
+        "PLLogTimeSensitiveRegisteredEvent",
+        "PLQueryRegistered"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLSysdiagnoseCopyPowerlog": {
+      "name": "PLSysdiagnoseCopyPowerlog",
+      "framework": "PowerLog",
+      "return_type": "PLSysdiagnoseRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLSysdiagnoseRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "PLSysdiagnoseRef/*?*/ PLSysdiagnoseCopyPowerlog(PLSysdiagnoseRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "PLSysdiagnoseRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PLSysdiagnoseCopyExtendedPersistenceLog",
+        "PLSysdiagnoseCopyBatteryUILogs",
+        "PLSysdiagnoseCopyLogs"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryGaugeStopTracingForPid": {
+      "name": "PLBatteryGaugeStopTracingForPid",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryGaugeStopTracingForPid(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryGaugeStartTracingForPid": {
+      "name": "PLBatteryGaugeStartTracingForPid",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryGaugeStartTracingForPid(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryLifeMonitorReportCumulativeTotalDiscretionaryEnergyCoreDuet": {
+      "name": "PLBatteryLifeMonitorReportCumulativeTotalDiscretionaryEnergyCoreDuet",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryLifeMonitorReportCumulativeTotalDiscretionaryEnergyCoreDuet(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryGaugePauseTracingForPid": {
+      "name": "PLBatteryGaugePauseTracingForPid",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryGaugePauseTracingForPid(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryLifeMonitorStopAllDuetEvents": {
+      "name": "PLBatteryLifeMonitorStopAllDuetEvents",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryLifeMonitorStopAllDuetEvents(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryGaugeStartTracingForBundleId": {
+      "name": "PLBatteryGaugeStartTracingForBundleId",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryGaugeStartTracingForBundleId(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLGenerateBatteryUIPlist": {
+      "name": "PLGenerateBatteryUIPlist",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLGenerateBatteryUIPlist(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLLogRegisteredEvent": {
+      "name": "PLLogRegisteredEvent",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLLogRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ PLLogRegisteredEvent(PLLogRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "unknown",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PLLogRegisteredAggregateEvent",
+        "PLLogRegisteredEventFilterByInterval",
+        "PLShouldLogRegisteredEvent",
+        "PLLogTimeSensitiveRegisteredEvent",
+        "PLQueryRegistered"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLRunBUIQueryWithRangeType": {
+      "name": "PLRunBUIQueryWithRangeType",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLRunBUIQueryWithRangeType(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLSysdiagnoseTimeSensitivePhase": {
+      "name": "PLSysdiagnoseTimeSensitivePhase",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLSysdiagnoseTimeSensitivePhase(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "perfpowertelemetry_send_event": {
+      "name": "perfpowertelemetry_send_event",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ perfpowertelemetry_send_event(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryUsageUIQuery": {
+      "name": "PLBatteryUsageUIQuery",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryUsageUIQuery(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryLifeMonitorLogDuetEvent": {
+      "name": "PLBatteryLifeMonitorLogDuetEvent",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryLifeMonitorLogDuetEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLCopyXcodeOrganizerLog": {
+      "name": "PLCopyXcodeOrganizerLog",
+      "framework": "PowerLog",
+      "return_type": "PLRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "PLRef/*?*/ PLCopyXcodeOrganizerLog(PLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "PLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PLCopyBackgroundProcessingLog",
+        "PLCopyBatteryUIPlists",
+        "PLCopyPowerlog",
+        "PLCopyExtendedPersistenceLog",
+        "PLCopyCleanEnergyLog"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLCopyPowerlog": {
+      "name": "PLCopyPowerlog",
+      "framework": "PowerLog",
+      "return_type": "PLRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "PLRef/*?*/ PLCopyPowerlog(PLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "PLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PLCopyBackgroundProcessingLog",
+        "PLCopyBatteryUIPlists",
+        "PLCopyXcodeOrganizerLog",
+        "PLCopyExtendedPersistenceLog",
+        "PLCopyCleanEnergyLog"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryGaugeVersion": {
+      "name": "PLBatteryGaugeVersion",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryGaugeVersion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryUsageUIKeyForRequest": {
+      "name": "PLBatteryUsageUIKeyForRequest",
+      "framework": "PowerLog",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ PLBatteryUsageUIKeyForRequest(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryUsageUIKeyFromConfiguration": {
+      "name": "PLBatteryUsageUIKeyFromConfiguration",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryUsageUIKeyFromConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLCrashMoverCopyPowerlog": {
+      "name": "PLCrashMoverCopyPowerlog",
+      "framework": "PowerLog",
+      "return_type": "PLCrashMoverRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLCrashMoverRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "PLCrashMoverRef/*?*/ PLCrashMoverCopyPowerlog(PLCrashMoverRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "PLCrashMoverRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryLifeMonitorReportDiscretionaryBudgetForDuet": {
+      "name": "PLBatteryLifeMonitorReportDiscretionaryBudgetForDuet",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryLifeMonitorReportDiscretionaryBudgetForDuet(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLTalkToPowerlogHelper": {
+      "name": "PLTalkToPowerlogHelper",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLTalkToPowerlogHelper(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLCopyExtendedPersistenceLog": {
+      "name": "PLCopyExtendedPersistenceLog",
+      "framework": "PowerLog",
+      "return_type": "PLRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "PLRef/*?*/ PLCopyExtendedPersistenceLog(PLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "PLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PLCopyBackgroundProcessingLog",
+        "PLCopyBatteryUIPlists",
+        "PLCopyXcodeOrganizerLog",
+        "PLCopyPowerlog",
+        "PLCopyCleanEnergyLog"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryGaugePauseTracingForBundleId": {
+      "name": "PLBatteryGaugePauseTracingForBundleId",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryGaugePauseTracingForBundleId(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBuildUsageSnapshot": {
+      "name": "PLBuildUsageSnapshot",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBuildUsageSnapshot(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "batteryUISuggestionSummary": {
+      "name": "batteryUISuggestionSummary",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ batteryUISuggestionSummary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatchDropMessages": {
+      "name": "PLBatchDropMessages",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatchDropMessages(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryLifeMonitorLogCoreDuetAdmissionEvent": {
+      "name": "PLBatteryLifeMonitorLogCoreDuetAdmissionEvent",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryLifeMonitorLogCoreDuetAdmissionEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryGaugePauseTracingForProcessName": {
+      "name": "PLBatteryGaugePauseTracingForProcessName",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryGaugePauseTracingForProcessName(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryLifeMonitorLogCoreDuetEvent": {
+      "name": "PLBatteryLifeMonitorLogCoreDuetEvent",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryLifeMonitorLogCoreDuetEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryUsageUIConfiguration": {
+      "name": "PLBatteryUsageUIConfiguration",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryUsageUIConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PPSSendTelemetry": {
+      "name": "PPSSendTelemetry",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PPSSendTelemetry(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLLogTimeSensitiveRegisteredEvent": {
+      "name": "PLLogTimeSensitiveRegisteredEvent",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLLogTimeSensitiveRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ PLLogTimeSensitiveRegisteredEvent(PLLogTimeSensitiveRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "unknown",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PLLogRegisteredAggregateEvent",
+        "PLLogRegisteredEventFilterByInterval",
+        "PLShouldLogRegisteredEvent",
+        "PLLogRegisteredEvent",
+        "PLQueryRegistered"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryGaugeGetSnapshot": {
+      "name": "PLBatteryGaugeGetSnapshot",
+      "framework": "PowerLog",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLBatteryGaugeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ PLBatteryGaugeGetSnapshot(PLBatteryGaugeRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLCalculateEndOfHour": {
+      "name": "PLCalculateEndOfHour",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLCalculateEndOfHour(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLCopyCleanEnergyLog": {
+      "name": "PLCopyCleanEnergyLog",
+      "framework": "PowerLog",
+      "return_type": "PLRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "PLRef/*?*/ PLCopyCleanEnergyLog(PLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "PLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PLCopyBackgroundProcessingLog",
+        "PLCopyBatteryUIPlists",
+        "PLCopyXcodeOrganizerLog",
+        "PLCopyPowerlog",
+        "PLCopyExtendedPersistenceLog"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLSysdiagnoseCopyBatteryUILogs": {
+      "name": "PLSysdiagnoseCopyBatteryUILogs",
+      "framework": "PowerLog",
+      "return_type": "PLSysdiagnoseRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLSysdiagnoseRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "PLSysdiagnoseRef/*?*/ PLSysdiagnoseCopyBatteryUILogs(PLSysdiagnoseRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "PLSysdiagnoseRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PLSysdiagnoseCopyExtendedPersistenceLog",
+        "PLSysdiagnoseCopyPowerlog",
+        "PLSysdiagnoseCopyLogs"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryGaugeResumeTracingForProcessName": {
+      "name": "PLBatteryGaugeResumeTracingForProcessName",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryGaugeResumeTracingForProcessName(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLCalculateEndOfDayWithDate": {
+      "name": "PLCalculateEndOfDayWithDate",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLCalculateEndOfDayWithDate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLShouldLogEvent": {
+      "name": "PLShouldLogEvent",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLShouldLogEvent(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PerfPowerTelemetryCreateIdentifier": {
+      "name": "PerfPowerTelemetryCreateIdentifier",
+      "framework": "PowerLog",
+      "return_type": "PerfPowerTelemetryRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "PerfPowerTelemetryRef PerfPowerTelemetryCreateIdentifier(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "PerfPowerTelemetryRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "batteryUIHasNoteworthyInformation": {
+      "name": "batteryUIHasNoteworthyInformation",
+      "framework": "PowerLog",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "batteryUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool batteryUIHasNoteworthyInformation(batteryUIRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBuildEnergyBucketTillNow": {
+      "name": "PLBuildEnergyBucketTillNow",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBuildEnergyBucketTillNow(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryGaugeResumeTracingForBundleId": {
+      "name": "PLBatteryGaugeResumeTracingForBundleId",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryGaugeResumeTracingForBundleId(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryLifeMonitorReportBatteryCapacityForCoreDuet": {
+      "name": "PLBatteryLifeMonitorReportBatteryCapacityForCoreDuet",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryLifeMonitorReportBatteryCapacityForCoreDuet(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLCalculateEndOfDay": {
+      "name": "PLCalculateEndOfDay",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLCalculateEndOfDay(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLQueryRegistered": {
+      "name": "PLQueryRegistered",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLQueryRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ PLQueryRegistered(PLQueryRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "read",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PLLogRegisteredAggregateEvent",
+        "PLLogRegisteredEventFilterByInterval",
+        "PLShouldLogRegisteredEvent",
+        "PLLogRegisteredEvent",
+        "PLLogTimeSensitiveRegisteredEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryBreakdownResponseTypes": {
+      "name": "PLBatteryBreakdownResponseTypes",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryBreakdownResponseTypes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryGaugeResumeTracingForPid": {
+      "name": "PLBatteryGaugeResumeTracingForPid",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryGaugeResumeTracingForPid(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "pps_send_telemetry": {
+      "name": "pps_send_telemetry",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ pps_send_telemetry(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryLifeMonitorReportEnergyCoreDuet": {
+      "name": "PLBatteryLifeMonitorReportEnergyCoreDuet",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryLifeMonitorReportEnergyCoreDuet(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryGaugeStopTracingForProcessName": {
+      "name": "PLBatteryGaugeStopTracingForProcessName",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryGaugeStopTracingForProcessName(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryUsageUIDynamicEndConfiguration": {
+      "name": "PLBatteryUsageUIDynamicEndConfiguration",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryUsageUIDynamicEndConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLRunBUIQuery": {
+      "name": "PLRunBUIQuery",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLRunBUIQuery(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "batteryUIInsightSummary": {
+      "name": "batteryUIInsightSummary",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ batteryUIInsightSummary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLConfigureBUIQueryInsightsAndSuggestionsSummary": {
+      "name": "PLConfigureBUIQueryInsightsAndSuggestionsSummary",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLConfigureBUIQueryInsightsAndSuggestionsSummary(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLBatteryLifeMonitorLogCoreDuetEventsAggregate": {
+      "name": "PLBatteryLifeMonitorLogCoreDuetEventsAggregate",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLBatteryLifeMonitorLogCoreDuetEventsAggregate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLCalculateEndOfHourWithDate": {
+      "name": "PLCalculateEndOfHourWithDate",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLCalculateEndOfHourWithDate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLConfigureBUIQueryNoteworthyInformation": {
+      "name": "PLConfigureBUIQueryNoteworthyInformation",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLConfigureBUIQueryNoteworthyInformation(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PerfPowerTelemetrySendEvent": {
+      "name": "PerfPowerTelemetrySendEvent",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PerfPowerTelemetrySendEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLForceBatching": {
+      "name": "PLForceBatching",
+      "framework": "PowerLog",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        }
+      ],
+      "signature": "void/*?*/ PLForceBatching(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PLSysdiagnoseCopyLogs": {
+      "name": "PLSysdiagnoseCopyLogs",
+      "framework": "PowerLog",
+      "return_type": "PLSysdiagnoseRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PLSysdiagnoseRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PowerLog"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "PLSysdiagnoseRef/*?*/ PLSysdiagnoseCopyLogs(PLSysdiagnoseRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "PLSysdiagnoseRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PLSysdiagnoseCopyExtendedPersistenceLog",
+        "PLSysdiagnoseCopyPowerlog",
+        "PLSysdiagnoseCopyBatteryUILogs"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "neural_network": [
+      "PLCopyCleanEnergyLog"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

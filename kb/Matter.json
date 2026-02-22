@@ -1,0 +1,1229 @@
+{
+  "framework": "Matter",
+  "functions": {
+    "MTRSetLogCallback": {
+      "name": "MTRSetLogCallback",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MTRRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MTRSetLogCallback(MTRRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRDeviceControllerRegistrationControllerContextKey": {
+      "name": "MTRDeviceControllerRegistrationControllerContextKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRDeviceControllerRegistrationControllerContextKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRDeviceControllerRegistrationControllerIsRunningKey": {
+      "name": "MTRDeviceControllerRegistrationControllerIsRunningKey",
+      "framework": "Matter",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MTRDeviceControllerRegistrationControllerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MTRDeviceControllerRegistrationControllerIsRunningKey(MTRDeviceControllerRegistrationControllerRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRArrayValueType": {
+      "name": "MTRArrayValueType",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRArrayValueType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRUTF8StringValueType": {
+      "name": "MTRUTF8StringValueType",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRUTF8StringValueType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRCommandPathKey": {
+      "name": "MTRCommandPathKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRCommandPathKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRSignedIntegerValueType": {
+      "name": "MTRSignedIntegerValueType",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRSignedIntegerValueType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRSizeThreadExtendedPANID": {
+      "name": "MTRSizeThreadExtendedPANID",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRSizeThreadExtendedPANID(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRSizeThreadNetworkName": {
+      "name": "MTRSizeThreadNetworkName",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRSizeThreadNetworkName(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRSizeThreadPANID": {
+      "name": "MTRSizeThreadPANID",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRSizeThreadPANID(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTREventIsHistoricalKey": {
+      "name": "MTREventIsHistoricalKey",
+      "framework": "Matter",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MTREventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MTREventIsHistoricalKey(MTREventRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRResponseCommandNameForID": {
+      "name": "MTRResponseCommandNameForID",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRResponseCommandNameForID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRContextTagKey": {
+      "name": "MTRContextTagKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRContextTagKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRBooleanValueType": {
+      "name": "MTRBooleanValueType",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRBooleanValueType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTREventTimestampDateKey": {
+      "name": "MTREventTimestampDateKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTREventTimestampDateKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRDeviceControllerRegistrationDeviceInternalStateKey": {
+      "name": "MTRDeviceControllerRegistrationDeviceInternalStateKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRDeviceControllerRegistrationDeviceInternalStateKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRFloatValueType": {
+      "name": "MTRFloatValueType",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRFloatValueType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTREventSystemUpTimeKey": {
+      "name": "MTREventSystemUpTimeKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTREventSystemUpTimeKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRDataKey": {
+      "name": "MTRDataKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRDataKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRErrorDomain": {
+      "name": "MTRErrorDomain",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTREventPathKey": {
+      "name": "MTREventPathKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTREventPathKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRDataVersionKey": {
+      "name": "MTRDataVersionKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRDataVersionKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRAttributePathKey": {
+      "name": "MTRAttributePathKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRAttributePathKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRInteractionErrorDomain": {
+      "name": "MTRInteractionErrorDomain",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRInteractionErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRRequestCommandNameForID": {
+      "name": "MTRRequestCommandNameForID",
+      "framework": "Matter",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ MTRRequestCommandNameForID(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRSizeThreadPSKc": {
+      "name": "MTRSizeThreadPSKc",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRSizeThreadPSKc(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRDeviceControllerRegistrationControllerCompressedFabricIDKey": {
+      "name": "MTRDeviceControllerRegistrationControllerCompressedFabricIDKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRDeviceControllerRegistrationControllerCompressedFabricIDKey(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRDoubleValueType": {
+      "name": "MTRDoubleValueType",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRDoubleValueType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTREventTimeTypeKey": {
+      "name": "MTREventTimeTypeKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTREventTimeTypeKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRValueKey": {
+      "name": "MTRValueKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRValueKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRErrorKey": {
+      "name": "MTRErrorKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRErrorKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRClusterNameForID": {
+      "name": "MTRClusterNameForID",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRClusterNameForID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRAttributeNameForID": {
+      "name": "MTRAttributeNameForID",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRAttributeNameForID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRDeviceControllerRegistrationNodeIDsKey": {
+      "name": "MTRDeviceControllerRegistrationNodeIDsKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRDeviceControllerRegistrationNodeIDsKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTREventPriorityKey": {
+      "name": "MTREventPriorityKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTREventPriorityKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRSizeThreadExtendedPanId": {
+      "name": "MTRSizeThreadExtendedPanId",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRSizeThreadExtendedPanId(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTREventNameForID": {
+      "name": "MTREventNameForID",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTREventNameForID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRPreviousDataKey": {
+      "name": "MTRPreviousDataKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRPreviousDataKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRSizeThreadMasterKey": {
+      "name": "MTRSizeThreadMasterKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRSizeThreadMasterKey(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRStructureValueType": {
+      "name": "MTRStructureValueType",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRStructureValueType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRTypeKey": {
+      "name": "MTRTypeKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRTypeKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRSetMessageReliabilityParameters": {
+      "name": "MTRSetMessageReliabilityParameters",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MTRRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MTRSetMessageReliabilityParameters(MTRRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRUnsignedIntegerValueType": {
+      "name": "MTRUnsignedIntegerValueType",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRUnsignedIntegerValueType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTREventNumberKey": {
+      "name": "MTREventNumberKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTREventNumberKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRDeviceControllerStorageClasses": {
+      "name": "MTRDeviceControllerStorageClasses",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRDeviceControllerStorageClasses(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRNullValueType": {
+      "name": "MTRNullValueType",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRNullValueType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRDeviceControllerRegistrationNodeIDKey": {
+      "name": "MTRDeviceControllerRegistrationNodeIDKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRDeviceControllerRegistrationNodeIDKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTRDeviceControllerRegistrationControllerNodeIDKey": {
+      "name": "MTRDeviceControllerRegistrationControllerNodeIDKey",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTRDeviceControllerRegistrationControllerNodeIDKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MTROctetStringValueType": {
+      "name": "MTROctetStringValueType",
+      "framework": "Matter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Matter"
+        }
+      ],
+      "signature": "void/*?*/ MTROctetStringValueType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "compression": [
+      "MTRDeviceControllerRegistrationControllerCompressedFabricIDKey"
+    ],
+    "gpu_compute": [
+      "MTRCommandPathKey",
+      "MTRRequestCommandNameForID",
+      "MTRResponseCommandNameForID"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

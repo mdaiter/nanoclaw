@@ -1,0 +1,2044 @@
+{
+  "framework": "DisplayServices",
+  "functions": {
+    "DisplayServicesSetLinearBrightness": {
+      "name": "DisplayServicesSetLinearBrightness",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesSetLinearBrightness(DisplayServicesRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesGetLinearBrightnessUsableRange": {
+      "name": "DisplayServicesGetLinearBrightnessUsableRange",
+      "framework": "DisplayServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ DisplayServicesGetLinearBrightnessUsableRange(DisplayServicesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesHasCommit": {
+      "name": "DisplayServicesHasCommit",
+      "framework": "DisplayServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool DisplayServicesHasCommit(DisplayServicesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesCommitSettings": {
+      "name": "DisplayServicesCommitSettings",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesCommitRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesCommitSettings(DisplayServicesCommitRef *ref, void * *value)",
+      "verb": "execute",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesRegisterForAuthorizationNotifications": {
+      "name": "DisplayServicesRegisterForAuthorizationNotifications",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesRegisterForAuthorizationNotifications(DisplayServicesRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DisplayServicesRegisterForResetAmbientLightNotifications",
+        "DisplayServicesRegisterForNotification",
+        "DisplayServicesRegisterForBrightnessChangeNotifications",
+        "DisplayServicesRegisterForAmbientLightCompensationNotifications",
+        "DisplayServicesRegisterForDisplayUSBHotplugNotifications"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesSetBrightnessButtonsEnabled": {
+      "name": "DisplayServicesSetBrightnessButtonsEnabled",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesSetBrightnessButtonsEnabled(DisplayServicesRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesHasTouchSwitchDisable": {
+      "name": "DisplayServicesHasTouchSwitchDisable",
+      "framework": "DisplayServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool DisplayServicesHasTouchSwitchDisable(DisplayServicesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesSetDynamicSlider": {
+      "name": "DisplayServicesSetDynamicSlider",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesSetDynamicSlider(DisplayServicesRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesHasOptionsAuthorization": {
+      "name": "DisplayServicesHasOptionsAuthorization",
+      "framework": "DisplayServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool DisplayServicesHasOptionsAuthorization(DisplayServicesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesUnregisterForAmbientLightCompensationNotifications": {
+      "name": "DisplayServicesUnregisterForAmbientLightCompensationNotifications",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesUnregisterForAmbientLightCompensationNotifications(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesGetLinearBrightness": {
+      "name": "DisplayServicesGetLinearBrightness",
+      "framework": "DisplayServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ DisplayServicesGetLinearBrightness(DisplayServicesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesGetPowerMode": {
+      "name": "DisplayServicesGetPowerMode",
+      "framework": "DisplayServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ DisplayServicesGetPowerMode(DisplayServicesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesHasBrightnessButtons": {
+      "name": "DisplayServicesHasBrightnessButtons",
+      "framework": "DisplayServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool DisplayServicesHasBrightnessButtons(DisplayServicesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesCanResetAmbientLight": {
+      "name": "DisplayServicesCanResetAmbientLight",
+      "framework": "DisplayServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool DisplayServicesCanResetAmbientLight(DisplayServicesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesRegisterForResetAmbientLightNotifications": {
+      "name": "DisplayServicesRegisterForResetAmbientLightNotifications",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesRegisterForResetAmbientLightNotifications(DisplayServicesRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DisplayServicesRegisterForAuthorizationNotifications",
+        "DisplayServicesRegisterForNotification",
+        "DisplayServicesRegisterForBrightnessChangeNotifications",
+        "DisplayServicesRegisterForAmbientLightCompensationNotifications",
+        "DisplayServicesRegisterForDisplayUSBHotplugNotifications"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesHasAmbientLightCompensation": {
+      "name": "DisplayServicesHasAmbientLightCompensation",
+      "framework": "DisplayServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool DisplayServicesHasAmbientLightCompensation(DisplayServicesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesCreateBrightnessTable": {
+      "name": "DisplayServicesCreateBrightnessTable",
+      "framework": "DisplayServices",
+      "return_type": "DisplayServicesRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "DisplayServicesRef DisplayServicesCreateBrightnessTable(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "DisplayServicesRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesHasPowerButton": {
+      "name": "DisplayServicesHasPowerButton",
+      "framework": "DisplayServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool DisplayServicesHasPowerButton(DisplayServicesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesRegisterForNotification": {
+      "name": "DisplayServicesRegisterForNotification",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesRegisterForNotification(DisplayServicesRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DisplayServicesRegisterForAuthorizationNotifications",
+        "DisplayServicesRegisterForResetAmbientLightNotifications",
+        "DisplayServicesRegisterForBrightnessChangeNotifications",
+        "DisplayServicesRegisterForAmbientLightCompensationNotifications",
+        "DisplayServicesRegisterForDisplayUSBHotplugNotifications"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesResetAmbientLight": {
+      "name": "DisplayServicesResetAmbientLight",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesResetAmbientLight(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesGetDynamicSlider": {
+      "name": "DisplayServicesGetDynamicSlider",
+      "framework": "DisplayServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ DisplayServicesGetDynamicSlider(DisplayServicesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesGetPowerSwitchMode": {
+      "name": "DisplayServicesGetPowerSwitchMode",
+      "framework": "DisplayServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ DisplayServicesGetPowerSwitchMode(DisplayServicesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesIsSmartDisplay": {
+      "name": "DisplayServicesIsSmartDisplay",
+      "framework": "DisplayServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool DisplayServicesIsSmartDisplay(DisplayServicesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesUnregisterForDisplayUSBHotplugNotifications": {
+      "name": "DisplayServicesUnregisterForDisplayUSBHotplugNotifications",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesUnregisterForDisplayUSBHotplugNotifications(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesUnregisterForResetAmbientLightNotifications": {
+      "name": "DisplayServicesUnregisterForResetAmbientLightNotifications",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesUnregisterForResetAmbientLightNotifications(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesNeedsBrightnessSmoothing": {
+      "name": "DisplayServicesNeedsBrightnessSmoothing",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesNeedsBrightnessSmoothing(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesEnableAmbientLightCompensation": {
+      "name": "DisplayServicesEnableAmbientLightCompensation",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesEnableAmbientLightCompensation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesSetBrightnessSmooth": {
+      "name": "DisplayServicesSetBrightnessSmooth",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesSetBrightnessSmooth(DisplayServicesRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesResetAmbientLightAll": {
+      "name": "DisplayServicesResetAmbientLightAll",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesResetAmbientLightAll(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesSetAuthorized": {
+      "name": "DisplayServicesSetAuthorized",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesSetAuthorized(DisplayServicesRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesUnregisterForBrightnessChangeNotifications": {
+      "name": "DisplayServicesUnregisterForBrightnessChangeNotifications",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesUnregisterForBrightnessChangeNotifications(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesHasPowerMode": {
+      "name": "DisplayServicesHasPowerMode",
+      "framework": "DisplayServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool DisplayServicesHasPowerMode(DisplayServicesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesSetBrightness": {
+      "name": "DisplayServicesSetBrightness",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesSetBrightness(DisplayServicesRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesUnregisterForNotification": {
+      "name": "DisplayServicesUnregisterForNotification",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesUnregisterForNotification(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesRegisterForBrightnessChangeNotifications": {
+      "name": "DisplayServicesRegisterForBrightnessChangeNotifications",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesRegisterForBrightnessChangeNotifications(DisplayServicesRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DisplayServicesRegisterForAuthorizationNotifications",
+        "DisplayServicesRegisterForResetAmbientLightNotifications",
+        "DisplayServicesRegisterForNotification",
+        "DisplayServicesRegisterForAmbientLightCompensationNotifications",
+        "DisplayServicesRegisterForDisplayUSBHotplugNotifications"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesGetBrightnessIncrement": {
+      "name": "DisplayServicesGetBrightnessIncrement",
+      "framework": "DisplayServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ DisplayServicesGetBrightnessIncrement(DisplayServicesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesGetPowerButtonEnabled": {
+      "name": "DisplayServicesGetPowerButtonEnabled",
+      "framework": "DisplayServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "bool/*?*/ DisplayServicesGetPowerButtonEnabled(DisplayServicesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesRegisterForAmbientLightCompensationNotifications": {
+      "name": "DisplayServicesRegisterForAmbientLightCompensationNotifications",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesRegisterForAmbientLightCompensationNotifications(DisplayServicesRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DisplayServicesRegisterForAuthorizationNotifications",
+        "DisplayServicesRegisterForResetAmbientLightNotifications",
+        "DisplayServicesRegisterForNotification",
+        "DisplayServicesRegisterForBrightnessChangeNotifications",
+        "DisplayServicesRegisterForDisplayUSBHotplugNotifications"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesGetBrightnessButtonsEnabled": {
+      "name": "DisplayServicesGetBrightnessButtonsEnabled",
+      "framework": "DisplayServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "bool/*?*/ DisplayServicesGetBrightnessButtonsEnabled(DisplayServicesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesRegisterForDisplayUSBHotplugNotifications": {
+      "name": "DisplayServicesRegisterForDisplayUSBHotplugNotifications",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesRegisterForDisplayUSBHotplugNotifications(DisplayServicesRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DisplayServicesRegisterForAuthorizationNotifications",
+        "DisplayServicesRegisterForResetAmbientLightNotifications",
+        "DisplayServicesRegisterForNotification",
+        "DisplayServicesRegisterForBrightnessChangeNotifications",
+        "DisplayServicesRegisterForAmbientLightCompensationNotifications"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesAmbientLightCompensationEnabled": {
+      "name": "DisplayServicesAmbientLightCompensationEnabled",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesAmbientLightCompensationEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesIsBuiltInDisplay": {
+      "name": "DisplayServicesIsBuiltInDisplay",
+      "framework": "DisplayServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool DisplayServicesIsBuiltInDisplay(DisplayServicesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesCanChangeBrightness": {
+      "name": "DisplayServicesCanChangeBrightness",
+      "framework": "DisplayServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool DisplayServicesCanChangeBrightness(DisplayServicesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesSetBrightnessWithType": {
+      "name": "DisplayServicesSetBrightnessWithType",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesSetBrightnessWithType(DisplayServicesRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesSetPowerButtonEnabled": {
+      "name": "DisplayServicesSetPowerButtonEnabled",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesSetPowerButtonEnabled(DisplayServicesRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesSetToDefaults": {
+      "name": "DisplayServicesSetToDefaults",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesSetToDefaults(DisplayServicesRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesSetPowerMode": {
+      "name": "DisplayServicesSetPowerMode",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesSetPowerMode(DisplayServicesRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesUnregisterForAuthorizationNotifications": {
+      "name": "DisplayServicesUnregisterForAuthorizationNotifications",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesUnregisterForAuthorizationNotifications(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesGetAuthorized": {
+      "name": "DisplayServicesGetAuthorized",
+      "framework": "DisplayServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ DisplayServicesGetAuthorized(DisplayServicesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesGetCommitInterval": {
+      "name": "DisplayServicesGetCommitInterval",
+      "framework": "DisplayServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ DisplayServicesGetCommitInterval(DisplayServicesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesBezelButtonsLocked": {
+      "name": "DisplayServicesBezelButtonsLocked",
+      "framework": "DisplayServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        }
+      ],
+      "signature": "void/*?*/ DisplayServicesBezelButtonsLocked(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DisplayServicesGetBrightness": {
+      "name": "DisplayServicesGetBrightness",
+      "framework": "DisplayServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DisplayServicesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DisplayServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ DisplayServicesGetBrightness(DisplayServicesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "DisplayServicesHasAmbientLightCompensation",
+      "DisplayServicesHasBrightnessButtons",
+      "DisplayServicesHasCommit",
+      "DisplayServicesHasOptionsAuthorization",
+      "DisplayServicesHasPowerButton",
+      "DisplayServicesHasPowerMode",
+      "DisplayServicesHasTouchSwitchDisable"
+    ],
+    "display_compositing": [
+      "DisplayServicesAmbientLightCompensationEnabled",
+      "DisplayServicesBezelButtonsLocked",
+      "DisplayServicesCanChangeBrightness",
+      "DisplayServicesCanResetAmbientLight",
+      "DisplayServicesCommitSettings",
+      "DisplayServicesCreateBrightnessTable",
+      "DisplayServicesEnableAmbientLightCompensation",
+      "DisplayServicesGetAuthorized",
+      "DisplayServicesGetBrightness",
+      "DisplayServicesGetBrightnessButtonsEnabled",
+      "DisplayServicesGetBrightnessIncrement",
+      "DisplayServicesGetCommitInterval",
+      "DisplayServicesGetDynamicSlider",
+      "DisplayServicesGetLinearBrightness",
+      "DisplayServicesGetLinearBrightnessUsableRange",
+      "DisplayServicesGetPowerButtonEnabled",
+      "DisplayServicesGetPowerMode",
+      "DisplayServicesGetPowerSwitchMode",
+      "DisplayServicesHasAmbientLightCompensation",
+      "DisplayServicesHasBrightnessButtons",
+      "DisplayServicesHasCommit",
+      "DisplayServicesHasOptionsAuthorization",
+      "DisplayServicesHasPowerButton",
+      "DisplayServicesHasPowerMode",
+      "DisplayServicesHasTouchSwitchDisable",
+      "DisplayServicesIsBuiltInDisplay",
+      "DisplayServicesIsSmartDisplay",
+      "DisplayServicesNeedsBrightnessSmoothing",
+      "DisplayServicesRegisterForAmbientLightCompensationNotifications",
+      "DisplayServicesRegisterForAuthorizationNotifications",
+      "DisplayServicesRegisterForBrightnessChangeNotifications",
+      "DisplayServicesRegisterForDisplayUSBHotplugNotifications",
+      "DisplayServicesRegisterForNotification",
+      "DisplayServicesRegisterForResetAmbientLightNotifications",
+      "DisplayServicesResetAmbientLight",
+      "DisplayServicesResetAmbientLightAll",
+      "DisplayServicesSetAuthorized",
+      "DisplayServicesSetBrightness",
+      "DisplayServicesSetBrightnessButtonsEnabled",
+      "DisplayServicesSetBrightnessSmooth",
+      "DisplayServicesSetBrightnessWithType",
+      "DisplayServicesSetDynamicSlider",
+      "DisplayServicesSetLinearBrightness",
+      "DisplayServicesSetPowerButtonEnabled",
+      "DisplayServicesSetPowerMode",
+      "DisplayServicesSetToDefaults",
+      "DisplayServicesUnregisterForAmbientLightCompensationNotifications",
+      "DisplayServicesUnregisterForAuthorizationNotifications",
+      "DisplayServicesUnregisterForBrightnessChangeNotifications",
+      "DisplayServicesUnregisterForDisplayUSBHotplugNotifications",
+      "DisplayServicesUnregisterForNotification",
+      "DisplayServicesUnregisterForResetAmbientLightNotifications"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

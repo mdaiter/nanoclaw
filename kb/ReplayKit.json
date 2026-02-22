@@ -1,0 +1,1136 @@
+{
+  "framework": "ReplayKit",
+  "functions": {
+    "RP_RoundNumberWithSigFigs": {
+      "name": "RP_RoundNumberWithSigFigs",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RP_RoundNumberWithSigFigs(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPSampleBufferUtilities_SecondsPresentationTimeForSample": {
+      "name": "RPSampleBufferUtilities_SecondsPresentationTimeForSample",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RPSampleBufferUtilities_SecondsPresentationTimeForSample(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPVideoEditorExtensionMoviePathKey": {
+      "name": "RPVideoEditorExtensionMoviePathKey",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RPVideoEditorExtensionMoviePathKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPVideoSampleOrientationKey": {
+      "name": "RPVideoSampleOrientationKey",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RPVideoSampleOrientationKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ReplayKitVersionNumber": {
+      "name": "ReplayKitVersionNumber",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ ReplayKitVersionNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPSampleBufferUtilities_CreateBlankPixelBuffer": {
+      "name": "RPSampleBufferUtilities_CreateBlankPixelBuffer",
+      "framework": "ReplayKit",
+      "return_type": "RPSampleBufferUtilities_Ref",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "RPSampleBufferUtilities_Ref RPSampleBufferUtilities_CreateBlankPixelBuffer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "RPSampleBufferUtilities_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "RPSampleBufferUtilities_CreateDecodeAudioSampleBuffer",
+        "RPSampleBufferUtilities_CreateEmptyAudioSampleBufferWithTimeInterval",
+        "RPSampleBufferUtilities_CreateAudioSampleBuffer",
+        "RPSampleBufferUtilities_CreateSampleBufferWithPixelBuffer",
+        "RPSampleBufferUtilities_CreateSampleBufferFromIOSurface"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPAudioPacketPool_Alloc": {
+      "name": "RPAudioPacketPool_Alloc",
+      "framework": "ReplayKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ RPAudioPacketPool_Alloc(size_t size)",
+      "verb": "allocate",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPSampleBufferUtilities_CreateDecodeAudioSampleBuffer": {
+      "name": "RPSampleBufferUtilities_CreateDecodeAudioSampleBuffer",
+      "framework": "ReplayKit",
+      "return_type": "RPSampleBufferUtilities_Ref",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "RPSampleBufferUtilities_Ref RPSampleBufferUtilities_CreateDecodeAudioSampleBuffer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "RPSampleBufferUtilities_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "RPSampleBufferUtilities_CreateBlankPixelBuffer",
+        "RPSampleBufferUtilities_CreateEmptyAudioSampleBufferWithTimeInterval",
+        "RPSampleBufferUtilities_CreateAudioSampleBuffer",
+        "RPSampleBufferUtilities_CreateSampleBufferWithPixelBuffer",
+        "RPSampleBufferUtilities_CreateSampleBufferFromIOSurface"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPSampleBufferUtilities_CreateEmptyAudioSampleBufferWithTimeInterval": {
+      "name": "RPSampleBufferUtilities_CreateEmptyAudioSampleBufferWithTimeInterval",
+      "framework": "ReplayKit",
+      "return_type": "RPSampleBufferUtilities_Ref",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "RPSampleBufferUtilities_Ref RPSampleBufferUtilities_CreateEmptyAudioSampleBufferWithTimeInterval(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "RPSampleBufferUtilities_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "RPSampleBufferUtilities_CreateBlankPixelBuffer",
+        "RPSampleBufferUtilities_CreateDecodeAudioSampleBuffer",
+        "RPSampleBufferUtilities_CreateAudioSampleBuffer",
+        "RPSampleBufferUtilities_CreateSampleBufferWithPixelBuffer",
+        "RPSampleBufferUtilities_CreateSampleBufferFromIOSurface"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPSampleBufferUtilities_CreateAudioSampleBuffer": {
+      "name": "RPSampleBufferUtilities_CreateAudioSampleBuffer",
+      "framework": "ReplayKit",
+      "return_type": "RPSampleBufferUtilities_Ref",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "RPSampleBufferUtilities_Ref RPSampleBufferUtilities_CreateAudioSampleBuffer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "RPSampleBufferUtilities_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "RPSampleBufferUtilities_CreateBlankPixelBuffer",
+        "RPSampleBufferUtilities_CreateDecodeAudioSampleBuffer",
+        "RPSampleBufferUtilities_CreateEmptyAudioSampleBufferWithTimeInterval",
+        "RPSampleBufferUtilities_CreateSampleBufferWithPixelBuffer",
+        "RPSampleBufferUtilities_CreateSampleBufferFromIOSurface"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPVideoEditorExtensionBundleIdentifierKey": {
+      "name": "RPVideoEditorExtensionBundleIdentifierKey",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RPVideoEditorExtensionBundleIdentifierKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPAudioPacketPool_Free": {
+      "name": "RPAudioPacketPool_Free",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "RPAudioPacketPool_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void RPAudioPacketPool_Free(RPAudioPacketPool_Ref *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPSampleBufferUtilities_CreateSampleBufferWithPixelBuffer": {
+      "name": "RPSampleBufferUtilities_CreateSampleBufferWithPixelBuffer",
+      "framework": "ReplayKit",
+      "return_type": "RPSampleBufferUtilities_Ref",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "RPSampleBufferUtilities_Ref RPSampleBufferUtilities_CreateSampleBufferWithPixelBuffer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "RPSampleBufferUtilities_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "RPSampleBufferUtilities_CreateBlankPixelBuffer",
+        "RPSampleBufferUtilities_CreateDecodeAudioSampleBuffer",
+        "RPSampleBufferUtilities_CreateEmptyAudioSampleBufferWithTimeInterval",
+        "RPSampleBufferUtilities_CreateAudioSampleBuffer",
+        "RPSampleBufferUtilities_CreateSampleBufferFromIOSurface"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPSampleBufferUtilities_CreateSampleBufferFromIOSurface": {
+      "name": "RPSampleBufferUtilities_CreateSampleBufferFromIOSurface",
+      "framework": "ReplayKit",
+      "return_type": "RPSampleBufferUtilities_Ref",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "RPSampleBufferUtilities_Ref RPSampleBufferUtilities_CreateSampleBufferFromIOSurface(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "RPSampleBufferUtilities_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "RPSampleBufferUtilities_CreateBlankPixelBuffer",
+        "RPSampleBufferUtilities_CreateDecodeAudioSampleBuffer",
+        "RPSampleBufferUtilities_CreateEmptyAudioSampleBufferWithTimeInterval",
+        "RPSampleBufferUtilities_CreateAudioSampleBuffer",
+        "RPSampleBufferUtilities_CreateSampleBufferWithPixelBuffer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPStringUtility_CStrToFourcc": {
+      "name": "RPStringUtility_CStrToFourcc",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RPStringUtility_CStrToFourcc(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPVideoEditorExtensionFileAttachmentKey": {
+      "name": "RPVideoEditorExtensionFileAttachmentKey",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RPVideoEditorExtensionFileAttachmentKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPAudioPacketPool_Create": {
+      "name": "RPAudioPacketPool_Create",
+      "framework": "ReplayKit",
+      "return_type": "RPAudioPacketPool_Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "RPAudioPacketPool_Ref RPAudioPacketPool_Create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "RPAudioPacketPool_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPSampleBufferUtilities_ReleaseAudioSampleBuffer": {
+      "name": "RPSampleBufferUtilities_ReleaseAudioSampleBuffer",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RPSampleBufferUtilities_ReleaseAudioSampleBuffer(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "__RPLogLevel": {
+      "name": "__RPLogLevel",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ __RPLogLevel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPAudioPacketPool_Destroy": {
+      "name": "RPAudioPacketPool_Destroy",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "RPAudioPacketPool_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void RPAudioPacketPool_Destroy(RPAudioPacketPool_Ref *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPLogSetLogLevel": {
+      "name": "RPLogSetLogLevel",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "RPLogRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ RPLogSetLogLevel(RPLogRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RP_Micro": {
+      "name": "RP_Micro",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RP_Micro(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ReplayKitVersionString": {
+      "name": "ReplayKitVersionString",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ ReplayKitVersionString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPRecordingErrorDomain": {
+      "name": "RPRecordingErrorDomain",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RPRecordingErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPSampleBufferUtilities_EncodeAudioSampleBuffer": {
+      "name": "RPSampleBufferUtilities_EncodeAudioSampleBuffer",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RPSampleBufferUtilities_EncodeAudioSampleBuffer(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPApplicationInfoBundleIdentifierKey": {
+      "name": "RPApplicationInfoBundleIdentifierKey",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RPApplicationInfoBundleIdentifierKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPVideoEditorExtensionOverrideShareMessageKey": {
+      "name": "RPVideoEditorExtensionOverrideShareMessageKey",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RPVideoEditorExtensionOverrideShareMessageKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RP_TimeFromTimestamp": {
+      "name": "RP_TimeFromTimestamp",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RP_TimeFromTimestamp(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPVideoEditorExtensionAppNameKey": {
+      "name": "RPVideoEditorExtensionAppNameKey",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RPVideoEditorExtensionAppNameKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPSampleBufferUtilities_CopySampleBufferFromSourceBuffer": {
+      "name": "RPSampleBufferUtilities_CopySampleBufferFromSourceBuffer",
+      "framework": "ReplayKit",
+      "return_type": "RPSampleBufferUtilities_Ref",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "RPSampleBufferUtilities_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "RPSampleBufferUtilities_Ref/*?*/ RPSampleBufferUtilities_CopySampleBufferFromSourceBuffer(RPSampleBufferUtilities_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "RPSampleBufferUtilities_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "RPSampleBufferUtilities_CreateBlankPixelBuffer",
+        "RPSampleBufferUtilities_CreateDecodeAudioSampleBuffer",
+        "RPSampleBufferUtilities_CreateEmptyAudioSampleBufferWithTimeInterval",
+        "RPSampleBufferUtilities_CreateAudioSampleBuffer",
+        "RPSampleBufferUtilities_CreateSampleBufferWithPixelBuffer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPSampleBufferUtilities_getContentHeadroom": {
+      "name": "RPSampleBufferUtilities_getContentHeadroom",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RPSampleBufferUtilities_getContentHeadroom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RP_RoundNumberToNearestMultiple": {
+      "name": "RP_RoundNumberToNearestMultiple",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RP_RoundNumberToNearestMultiple(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPVideoEditorExtensionOverrideTintColorKey": {
+      "name": "RPVideoEditorExtensionOverrideTintColorKey",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RPVideoEditorExtensionOverrideTintColorKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPMathUtilityNewsroomPositionTransitionScreenRect": {
+      "name": "RPMathUtilityNewsroomPositionTransitionScreenRect",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RPMathUtilityNewsroomPositionTransitionScreenRect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPSampleBufferUtilities_CreateCGImageFromIOSurface": {
+      "name": "RPSampleBufferUtilities_CreateCGImageFromIOSurface",
+      "framework": "ReplayKit",
+      "return_type": "RPSampleBufferUtilities_Ref",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "RPSampleBufferUtilities_Ref RPSampleBufferUtilities_CreateCGImageFromIOSurface(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "RPSampleBufferUtilities_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "RPSampleBufferUtilities_CreateBlankPixelBuffer",
+        "RPSampleBufferUtilities_CreateDecodeAudioSampleBuffer",
+        "RPSampleBufferUtilities_CreateEmptyAudioSampleBufferWithTimeInterval",
+        "RPSampleBufferUtilities_CreateAudioSampleBuffer",
+        "RPSampleBufferUtilities_CreateSampleBufferWithPixelBuffer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPStringUtility_FourccToCStr": {
+      "name": "RPStringUtility_FourccToCStr",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RPStringUtility_FourccToCStr(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RP_TimestampFromTime": {
+      "name": "RP_TimestampFromTime",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ RP_TimestampFromTime(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCStreamErrorDomain": {
+      "name": "SCStreamErrorDomain",
+      "framework": "ReplayKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ReplayKit"
+        }
+      ],
+      "signature": "void/*?*/ SCStreamErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "RPVideoEditorExtensionOverrideShareMessageKey"
+    ],
+    "video_processing": [
+      "RPVideoEditorExtensionAppNameKey",
+      "RPVideoEditorExtensionBundleIdentifierKey",
+      "RPVideoEditorExtensionFileAttachmentKey",
+      "RPVideoEditorExtensionMoviePathKey",
+      "RPVideoEditorExtensionOverrideShareMessageKey",
+      "RPVideoEditorExtensionOverrideTintColorKey",
+      "RPVideoSampleOrientationKey"
+    ],
+    "display_compositing": [
+      "RPMathUtilityNewsroomPositionTransitionScreenRect"
+    ],
+    "memory_buffer": [
+      "RPAudioPacketPool_Alloc",
+      "RPSampleBufferUtilities_CopySampleBufferFromSourceBuffer",
+      "RPSampleBufferUtilities_CreateAudioSampleBuffer",
+      "RPSampleBufferUtilities_CreateBlankPixelBuffer",
+      "RPSampleBufferUtilities_CreateCGImageFromIOSurface",
+      "RPSampleBufferUtilities_CreateDecodeAudioSampleBuffer",
+      "RPSampleBufferUtilities_CreateEmptyAudioSampleBufferWithTimeInterval",
+      "RPSampleBufferUtilities_CreateSampleBufferFromIOSurface",
+      "RPSampleBufferUtilities_CreateSampleBufferWithPixelBuffer",
+      "RPSampleBufferUtilities_EncodeAudioSampleBuffer",
+      "RPSampleBufferUtilities_ReleaseAudioSampleBuffer",
+      "RPSampleBufferUtilities_SecondsPresentationTimeForSample",
+      "RPSampleBufferUtilities_getContentHeadroom"
+    ],
+    "image_processing": [
+      "RPSampleBufferUtilities_CreateBlankPixelBuffer",
+      "RPSampleBufferUtilities_CreateCGImageFromIOSurface",
+      "RPSampleBufferUtilities_CreateSampleBufferWithPixelBuffer"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

@@ -1,0 +1,4386 @@
+{
+  "framework": "CoreMIDI",
+  "functions": {
+    "MIDISetupAddExternalDevice": {
+      "name": "MIDISetupAddExternalDevice",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDISetupAddExternalDevice(MIDIRef *ref, void * *value)",
+      "verb": "observe",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDestinationCreateWithBlock": {
+      "name": "MIDIDestinationCreateWithBlock",
+      "framework": "CoreMIDI",
+      "return_type": "MIDIDestinationRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MIDIDestinationRef MIDIDestinationCreateWithBlock(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MIDIDestinationRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MIDIDestinationCreateWithProtocol",
+        "MIDIDestinationCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIObjectGetDataProperty": {
+      "name": "MIDIObjectGetDataProperty",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIObjectRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIObjectGetDataProperty(MIDIObjectRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIObjectGetStringProperty": {
+      "name": "MIDIObjectGetStringProperty",
+      "framework": "CoreMIDI",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIObjectRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ MIDIObjectGetStringProperty(MIDIObjectRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MIDIObjectSetStringProperty"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIEntityGetSource": {
+      "name": "MIDIEntityGetSource",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIEntityRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIEntityGetSource(MIDIEntityRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISetupToData": {
+      "name": "MIDISetupToData",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDISetupToData(MIDIRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIGetDevice": {
+      "name": "MIDIGetDevice",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIGetDevice(MIDIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIConfigRename": {
+      "name": "MIDIConfigRename",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIConfigRename(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIThruConnectionSetParams": {
+      "name": "MIDIThruConnectionSetParams",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIThruConnectionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDIThruConnectionSetParams(MIDIThruConnectionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDI::EventList::create(MIDIProtocolID, unsigned long long, std::__1::span<unsigned int const, 18446744073709551615ul>)": {
+      "name": "MIDI::EventList::create(MIDIProtocolID, unsigned long long, std::__1::span<unsigned int const, 18446744073709551615ul>)",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDI::EventList::create(MIDIProtocolID, unsigned long long, std::__1::span<unsigned int const, 18446744073709551615ul>)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIInputPortCreateWithProtocol": {
+      "name": "MIDIInputPortCreateWithProtocol",
+      "framework": "CoreMIDI",
+      "return_type": "MIDIInputPortRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MIDIInputPortRef MIDIInputPortCreateWithProtocol(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MIDIInputPortRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MIDIInputPortCreateWithBlock",
+        "MIDIInputPortCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIObjectSetIntegerProperty": {
+      "name": "MIDIObjectSetIntegerProperty",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIObjectRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDIObjectSetIntegerProperty(MIDIObjectRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDICapabilityMUIDCollides": {
+      "name": "MIDICapabilityMUIDCollides",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDICapabilityMUIDCollides(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISendEventList": {
+      "name": "MIDISendEventList",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDISendEventList(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISendUMPSysex8": {
+      "name": "MIDISendUMPSysex8",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDISendUMPSysex8(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIThruConnectionFind": {
+      "name": "MIDIThruConnectionFind",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIThruConnectionFind(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDeviceListGetDevice": {
+      "name": "MIDIDeviceListGetDevice",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIDeviceListRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIDeviceListGetDevice(MIDIDeviceListRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIGet32BitOnlyDrivers": {
+      "name": "MIDIGet32BitOnlyDrivers",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIGet32BitOnlyDrivers(MIDIRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDICIProfileWasUpdatedNotification": {
+      "name": "MIDICIProfileWasUpdatedNotification",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDICIProfileWasUpdatedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDINetworkBonjourServiceType": {
+      "name": "MIDINetworkBonjourServiceType",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDINetworkBonjourServiceType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDeviceDispose": {
+      "name": "MIDIDeviceDispose",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIDeviceDispose(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIReceived": {
+      "name": "MIDIReceived",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIReceived(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISetupCreate": {
+      "name": "MIDISetupCreate",
+      "framework": "CoreMIDI",
+      "return_type": "MIDISetupRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MIDISetupRef MIDISetupCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MIDISetupRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIReceivedEventList": {
+      "name": "MIDIReceivedEventList",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIReceivedEventList(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIPacketListInit": {
+      "name": "MIDIPacketListInit",
+      "framework": "CoreMIDI",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ MIDIPacketListInit(void *buf, size_t size)",
+      "verb": "create",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MIDIThruConnectionParamsInitialize",
+        "MIDIEventListInit"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDITimerTaskSetNextWakeTime": {
+      "name": "MIDITimerTaskSetNextWakeTime",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDITimerTaskRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDITimerTaskSetNextWakeTime(MIDITimerTaskRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDestinationCreateWithProtocol": {
+      "name": "MIDIDestinationCreateWithProtocol",
+      "framework": "CoreMIDI",
+      "return_type": "MIDIDestinationRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MIDIDestinationRef MIDIDestinationCreateWithProtocol(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MIDIDestinationRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MIDIDestinationCreateWithBlock",
+        "MIDIDestinationCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIServerRun": {
+      "name": "MIDIServerRun",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIServerRun(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIBluetoothDriverActivateAllConnections": {
+      "name": "MIDIBluetoothDriverActivateAllConnections",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIBluetoothDriverActivateAllConnections(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISetSerialPortOwner": {
+      "name": "MIDISetSerialPortOwner",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDISetSerialPortOwner(MIDIRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIRestart": {
+      "name": "MIDIRestart",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIRestart(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIGetSource": {
+      "name": "MIDIGetSource",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIGetSource(MIDIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDINetworkNotificationContactsDidChange": {
+      "name": "MIDINetworkNotificationContactsDidChange",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDINetworkNotificationContactsDidChange(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIUMPEndpointWasAddedNotification": {
+      "name": "MIDIUMPEndpointWasAddedNotification",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIUMPEndpointWasAddedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISend": {
+      "name": "MIDISend",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDISend(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIGetSerialPortOwner": {
+      "name": "MIDIGetSerialPortOwner",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIGetSerialPortOwner(MIDIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIServerIs32Bit": {
+      "name": "MIDIServerIs32Bit",
+      "framework": "CoreMIDI",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIServerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MIDIServerIs32Bit(MIDIServerRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIClientCreateWithBlock": {
+      "name": "MIDIClientCreateWithBlock",
+      "framework": "CoreMIDI",
+      "return_type": "MIDIClientRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MIDIClientRef MIDIClientCreateWithBlock(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MIDIClientRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MIDIClientCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIUMPEndpointWasUpdatedNotification": {
+      "name": "MIDIUMPEndpointWasUpdatedNotification",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIUMPEndpointWasUpdatedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISetNotificationRunLoop": {
+      "name": "MIDISetNotificationRunLoop",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDISetNotificationRunLoop(MIDIRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "UMPCIDiscover": {
+      "name": "UMPCIDiscover",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ UMPCIDiscover(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIEntityGetDestination": {
+      "name": "MIDIEntityGetDestination",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIEntityRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIEntityGetDestination(MIDIEntityRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIPacketListAdd": {
+      "name": "MIDIPacketListAdd",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIPacketListAdd(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIPortDispose": {
+      "name": "MIDIPortDispose",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIPortDispose(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISourceCreate": {
+      "name": "MIDISourceCreate",
+      "framework": "CoreMIDI",
+      "return_type": "MIDISourceRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MIDISourceRef MIDISourceCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MIDISourceRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MIDISourceCreateWithProtocol"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISetupRemoveDevice": {
+      "name": "MIDISetupRemoveDevice",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDISetupRemoveDevice(MIDIRef *ref, void * *value)",
+      "verb": "observe",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIGetNumberOfDevices": {
+      "name": "MIDIGetNumberOfDevices",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIGetNumberOfDevices(MIDIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDITimerTaskCreate": {
+      "name": "MIDITimerTaskCreate",
+      "framework": "CoreMIDI",
+      "return_type": "MIDITimerTaskRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MIDITimerTaskRef MIDITimerTaskCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MIDITimerTaskRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDITimerTaskDispose": {
+      "name": "MIDITimerTaskDispose",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDITimerTaskDispose(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDeviceGetNumberOfEntities": {
+      "name": "MIDIDeviceGetNumberOfEntities",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIDeviceGetNumberOfEntities(MIDIDeviceRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISourceCreateWithProtocol": {
+      "name": "MIDISourceCreateWithProtocol",
+      "framework": "CoreMIDI",
+      "return_type": "MIDISourceRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MIDISourceRef MIDISourceCreateWithProtocol(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MIDISourceRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MIDISourceCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIEventPacketSysexBytesForGroup": {
+      "name": "MIDIEventPacketSysexBytesForGroup",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIEventPacketSysexBytesForGroup(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDI::StreamState::chase(MIDI::Packetizer&)": {
+      "name": "MIDI::StreamState::chase(MIDI::Packetizer&)",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDI::StreamState::chase(MIDI::Packetizer&)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDI::LegacyPacketListDeleter::operator()(MIDI::LegacyPacketList*)": {
+      "name": "MIDI::LegacyPacketListDeleter::operator()(MIDI::LegacyPacketList*)",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDI::LegacyPacketListDeleter::operator()(MIDI::LegacyPacketList*)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIGetSerialPortDrivers": {
+      "name": "MIDIGetSerialPortDrivers",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIGetSerialPortDrivers(MIDIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIThruConnectionCreate": {
+      "name": "MIDIThruConnectionCreate",
+      "framework": "CoreMIDI",
+      "return_type": "MIDIThruConnectionRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MIDIThruConnectionRef MIDIThruConnectionCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MIDIThruConnectionRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDeviceListGetNumberOfDevices": {
+      "name": "MIDIDeviceListGetNumberOfDevices",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIDeviceListRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIDeviceListGetNumberOfDevices(MIDIDeviceListRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDINetworkNotificationSessionDidChange": {
+      "name": "MIDINetworkNotificationSessionDidChange",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDINetworkNotificationSessionDidChange(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIObjectRemoveProperty": {
+      "name": "MIDIObjectRemoveProperty",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIObjectRemoveProperty(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDeviceNewEntity": {
+      "name": "MIDIDeviceNewEntity",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIDeviceNewEntity(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDI::StreamState::update_with_v1_packets(std::__1::span<unsigned int const, 18446744073709551615ul>)": {
+      "name": "MIDI::StreamState::update_with_v1_packets(std::__1::span<unsigned int const, 18446744073709551615ul>)",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDI::StreamState::update_with_v1_packets(std::__1::span<unsigned int const, 18446744073709551615ul>)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIThruConnectionParamsInitialize": {
+      "name": "MIDIThruConnectionParamsInitialize",
+      "framework": "CoreMIDI",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ MIDIThruConnectionParamsInitialize(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MIDIPacketListInit",
+        "MIDIEventListInit"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIGetDestination": {
+      "name": "MIDIGetDestination",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIGetDestination(MIDIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIConfigCheckVirginState": {
+      "name": "MIDIConfigCheckVirginState",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIConfigCheckVirginState(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDeviceListDispose": {
+      "name": "MIDIDeviceListDispose",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIDeviceListDispose(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIEntityGetDevice": {
+      "name": "MIDIEntityGetDevice",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIEntityRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIEntityGetDevice(MIDIEntityRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIEntityGetNumberOfSources": {
+      "name": "MIDIEntityGetNumberOfSources",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIEntityRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIEntityGetNumberOfSources(MIDIEntityRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDICIProfileWasRemovedNotification": {
+      "name": "MIDICIProfileWasRemovedNotification",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDICIProfileWasRemovedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDeviceDBGetModels": {
+      "name": "MIDIDeviceDBGetModels",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIDeviceDBRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIDeviceDBGetModels(MIDIDeviceDBRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDICIDeviceWasAddedNotification": {
+      "name": "MIDICIDeviceWasAddedNotification",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDICIDeviceWasAddedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDICIProfileObjectKey": {
+      "name": "MIDICIProfileObjectKey",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDICIProfileObjectKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIGetDriverIORunLoop": {
+      "name": "MIDIGetDriverIORunLoop",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIGetDriverIORunLoop(MIDIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIClientDispose": {
+      "name": "MIDIClientDispose",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIClientDispose(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDI::StreamState::reset(MIDI::Packetizer&)": {
+      "name": "MIDI::StreamState::reset(MIDI::Packetizer&)",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDI::StreamState::reset(MIDI::Packetizer&)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIUMPFunctionBlockObjectKey": {
+      "name": "MIDIUMPFunctionBlockObjectKey",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIUMPFunctionBlockObjectKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDriverEnableMonitoring": {
+      "name": "MIDIDriverEnableMonitoring",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIDriverEnableMonitoring(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIObjectGetProperties": {
+      "name": "MIDIObjectGetProperties",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIObjectRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIObjectGetProperties(MIDIObjectRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIObjectSetDictionaryProperty": {
+      "name": "MIDIObjectSetDictionaryProperty",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIObjectRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDIObjectSetDictionaryProperty(MIDIObjectRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISetupRemoveExternalDevice": {
+      "name": "MIDISetupRemoveExternalDevice",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDISetupRemoveExternalDevice(MIDIRef *ref, void * *value)",
+      "verb": "observe",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDI::StreamState::clear()": {
+      "name": "MIDI::StreamState::clear()",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDI::StreamState::clear()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIConfigDelete": {
+      "name": "MIDIConfigDelete",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIConfigDelete(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDICIDeviceWasRemovedNotification": {
+      "name": "MIDICIDeviceWasRemovedNotification",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDICIDeviceWasRemovedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIObjectGetIntegerProperty": {
+      "name": "MIDIObjectGetIntegerProperty",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIObjectRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIObjectGetIntegerProperty(MIDIObjectRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISendSysex": {
+      "name": "MIDISendSysex",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDISendSysex(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISetupAddDevice": {
+      "name": "MIDISetupAddDevice",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDISetupAddDevice(MIDIRef *ref, void * *value)",
+      "verb": "observe",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIGetExternalDevice": {
+      "name": "MIDIGetExternalDevice",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIGetExternalDevice(MIDIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIEventListInit": {
+      "name": "MIDIEventListInit",
+      "framework": "CoreMIDI",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ MIDIEventListInit(void *buf, size_t size)",
+      "verb": "create",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MIDIPacketListInit",
+        "MIDIThruConnectionParamsInitialize"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDeviceListAddDevice": {
+      "name": "MIDIDeviceListAddDevice",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIDeviceListAddDevice(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIGetNumberOfExternalDevices": {
+      "name": "MIDIGetNumberOfExternalDevices",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIGetNumberOfExternalDevices(MIDIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIConfigDuplicate": {
+      "name": "MIDIConfigDuplicate",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIConfigDuplicate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDeviceCreate": {
+      "name": "MIDIDeviceCreate",
+      "framework": "CoreMIDI",
+      "return_type": "MIDIDeviceRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MIDIDeviceRef MIDIDeviceCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MIDIDeviceRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDeviceGetEntity": {
+      "name": "MIDIDeviceGetEntity",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIDeviceGetEntity(MIDIDeviceRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIEndpointGetEntity": {
+      "name": "MIDIEndpointGetEntity",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIEndpointRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIEndpointGetEntity(MIDIEndpointRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIEndpointSetRefCons": {
+      "name": "MIDIEndpointSetRefCons",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIEndpointRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDIEndpointSetRefCons(MIDIEndpointRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIEntityAddOrRemoveEndpoints": {
+      "name": "MIDIEntityAddOrRemoveEndpoints",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIEntityAddOrRemoveEndpoints(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIEventListForEachEvent": {
+      "name": "MIDIEventListForEachEvent",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIEventListForEachEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIInputPortCreateWithBlock": {
+      "name": "MIDIInputPortCreateWithBlock",
+      "framework": "CoreMIDI",
+      "return_type": "MIDIInputPortRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MIDIInputPortRef MIDIInputPortCreateWithBlock(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MIDIInputPortRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MIDIInputPortCreateWithProtocol",
+        "MIDIInputPortCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIConfigNew": {
+      "name": "MIDIConfigNew",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIConfigNew(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIPortConnectSource": {
+      "name": "MIDIPortConnectSource",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIPortConnectSource(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDI::LegacyPacketList::create(MIDIProtocolID, unsigned long long, std::__1::span<unsigned char const, 18446744073709551615ul>)": {
+      "name": "MIDI::LegacyPacketList::create(MIDIProtocolID, unsigned long long, std::__1::span<unsigned char const, 18446744073709551615ul>)",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDI::LegacyPacketList::create(MIDIProtocolID, unsigned long long, std::__1::span<unsigned char const, 18446744073709551615ul>)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIPortDisconnectSource": {
+      "name": "MIDIPortDisconnectSource",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIPortDisconnectSource(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIThruConnectionGetParams": {
+      "name": "MIDIThruConnectionGetParams",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIThruConnectionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIThruConnectionGetParams(MIDIThruConnectionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIExternalDeviceCreate": {
+      "name": "MIDIExternalDeviceCreate",
+      "framework": "CoreMIDI",
+      "return_type": "MIDIExternalDeviceRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MIDIExternalDeviceRef MIDIExternalDeviceCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MIDIExternalDeviceRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDICIDeviceObjectKey": {
+      "name": "MIDICIDeviceObjectKey",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDICIDeviceObjectKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDeviceRemoveEntity": {
+      "name": "MIDIDeviceRemoveEntity",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIDeviceRemoveEntity(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIEntityGetNumberOfDestinations": {
+      "name": "MIDIEntityGetNumberOfDestinations",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIEntityRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIEntityGetNumberOfDestinations(MIDIEntityRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIUMPEndpointObjectKey": {
+      "name": "MIDIUMPEndpointObjectKey",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIUMPEndpointObjectKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIBluetoothDriverDisconnect": {
+      "name": "MIDIBluetoothDriverDisconnect",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIBluetoothDriverDisconnect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIOutputPortCreate": {
+      "name": "MIDIOutputPortCreate",
+      "framework": "CoreMIDI",
+      "return_type": "MIDIOutputPortRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MIDIOutputPortRef MIDIOutputPortCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MIDIOutputPortRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIObjectSetStringProperty": {
+      "name": "MIDIObjectSetStringProperty",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIObjectRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "const char *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDIObjectSetStringProperty(MIDIObjectRef *ref, const char * *value)",
+      "verb": "write",
+      "input_formats": [
+        "const char * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MIDIObjectGetStringProperty"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIUMPEndpointWasRemovedNotification": {
+      "name": "MIDIUMPEndpointWasRemovedNotification",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIUMPEndpointWasRemovedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDI::EventList::size() const": {
+      "name": "MIDI::EventList::size() const",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDI::EventList::size() const(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIThruConnectionDispose": {
+      "name": "MIDIThruConnectionDispose",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIThruConnectionDispose(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIGetNumberOfDestinations": {
+      "name": "MIDIGetNumberOfDestinations",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIGetNumberOfDestinations(MIDIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIGetNumberOfSources": {
+      "name": "MIDIGetNumberOfSources",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIGetNumberOfSources(MIDIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIInputPortCreate": {
+      "name": "MIDIInputPortCreate",
+      "framework": "CoreMIDI",
+      "return_type": "MIDIInputPortRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MIDIInputPortRef MIDIInputPortCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MIDIInputPortRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MIDIInputPortCreateWithProtocol",
+        "MIDIInputPortCreateWithBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDI::EventList::dump(MIDI::EventList const*)": {
+      "name": "MIDI::EventList::dump(MIDI::EventList const*)",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDI::EventList::dump(MIDI::EventList const*)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDICapabilityGetDiscoveryMUID": {
+      "name": "MIDICapabilityGetDiscoveryMUID",
+      "framework": "CoreMIDI",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDICapabilityRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ MIDICapabilityGetDiscoveryMUID(MIDICapabilityRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISendUMPSysex": {
+      "name": "MIDISendUMPSysex",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDISendUMPSysex(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDI::StreamState::StreamState(unsigned int)": {
+      "name": "MIDI::StreamState::StreamState(unsigned int)",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDI::StreamState::StreamState(unsigned int)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "UMPCIGlobalState": {
+      "name": "UMPCIGlobalState",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ UMPCIGlobalState(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIConfigGetCurrent": {
+      "name": "MIDIConfigGetCurrent",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIConfigRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIConfigGetCurrent(MIDIConfigRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDeviceAddEntity": {
+      "name": "MIDIDeviceAddEntity",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIDeviceAddEntity(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDI::EventList::create(MIDI::EventList const*)": {
+      "name": "MIDI::EventList::create(MIDI::EventList const*)",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDI::EventList::create(MIDI::EventList const*)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIEventListAdd": {
+      "name": "MIDIEventListAdd",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIEventListAdd(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIClientCreate": {
+      "name": "MIDIClientCreate",
+      "framework": "CoreMIDI",
+      "return_type": "MIDIClientRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MIDIClientRef MIDIClientCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MIDIClientRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MIDIClientCreateWithBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIConfigInstall": {
+      "name": "MIDIConfigInstall",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIConfigInstall(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIEndpointDispose": {
+      "name": "MIDIEndpointDispose",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIEndpointDispose(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIConfigExists": {
+      "name": "MIDIConfigExists",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIConfigExists(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDeviceDBGetManufModelProperties": {
+      "name": "MIDIDeviceDBGetManufModelProperties",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIDeviceDBRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIDeviceDBGetManufModelProperties(MIDIDeviceDBRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIObjectGetDictionaryProperty": {
+      "name": "MIDIObjectGetDictionaryProperty",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIObjectRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIObjectGetDictionaryProperty(MIDIObjectRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISetupFromData": {
+      "name": "MIDISetupFromData",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDISetupFromData(MIDIRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISetupGetCurrent": {
+      "name": "MIDISetupGetCurrent",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDISetupRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDISetupGetCurrent(MIDISetupRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIEndpointGetRefCons": {
+      "name": "MIDIEndpointGetRefCons",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIEndpointRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIEndpointGetRefCons(MIDIEndpointRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISetupDispose": {
+      "name": "MIDISetupDispose",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDISetupDispose(MIDIRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIGetDriverDeviceList": {
+      "name": "MIDIGetDriverDeviceList",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIGetDriverDeviceList(MIDIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "UMPCIServerSideMIDICITransaction": {
+      "name": "UMPCIServerSideMIDICITransaction",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ UMPCIServerSideMIDICITransaction(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIFlushOutput": {
+      "name": "MIDIFlushOutput",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIFlushOutput(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIObjectSetDataProperty": {
+      "name": "MIDIObjectSetDataProperty",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIObjectRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDIObjectSetDataProperty(MIDIObjectRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIConfigGetList": {
+      "name": "MIDIConfigGetList",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIConfigRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIConfigGetList(MIDIConfigRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDISetupInstall": {
+      "name": "MIDISetupInstall",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MIDISetupInstall(MIDIRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDestinationCreate": {
+      "name": "MIDIDestinationCreate",
+      "framework": "CoreMIDI",
+      "return_type": "MIDIDestinationRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MIDIDestinationRef MIDIDestinationCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MIDIDestinationRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MIDIDestinationCreateWithBlock",
+        "MIDIDestinationCreateWithProtocol"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIObjectFindByUniqueID": {
+      "name": "MIDIObjectFindByUniqueID",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIObjectFindByUniqueID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDI::LegacyPacketList::dump(MIDI::LegacyPacketList const*)": {
+      "name": "MIDI::LegacyPacketList::dump(MIDI::LegacyPacketList const*)",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDI::LegacyPacketList::dump(MIDI::LegacyPacketList const*)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIDeviceDBGetManufacturers": {
+      "name": "MIDIDeviceDBGetManufacturers",
+      "framework": "CoreMIDI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MIDIDeviceDBRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MIDIDeviceDBGetManufacturers(MIDIDeviceDBRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MIDIUMPFunctionBlockWasUpdatedNotification": {
+      "name": "MIDIUMPFunctionBlockWasUpdatedNotification",
+      "framework": "CoreMIDI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMIDI"
+        }
+      ],
+      "signature": "void/*?*/ MIDIUMPFunctionBlockWasUpdatedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "gpu_compute": [
+      "MIDISendUMPSysex",
+      "MIDISendUMPSysex8"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

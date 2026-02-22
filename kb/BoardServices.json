@@ -1,0 +1,696 @@
+{
+  "framework": "BoardServices",
+  "functions": {
+    "BSServiceXPCLog": {
+      "name": "BSServiceXPCLog",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceXPCLog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBSServiceConnectionErrorCode": {
+      "name": "NSStringFromBSServiceConnectionErrorCode",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBSServiceConnectionErrorCode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceConnectionEndpointInstanceKey": {
+      "name": "BSServiceConnectionEndpointInstanceKey",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceConnectionEndpointInstanceKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceConnectionEndpointServiceKey": {
+      "name": "BSServiceConnectionEndpointServiceKey",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceConnectionEndpointServiceKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSXPCServiceConnectionExecuteCallOut": {
+      "name": "BSXPCServiceConnectionExecuteCallOut",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSXPCServiceConnectionExecuteCallOut(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceBootstrapLog": {
+      "name": "BSServiceBootstrapLog",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceBootstrapLog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceConnectionErrorDomain": {
+      "name": "BSServiceConnectionErrorDomain",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceConnectionErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSBoardServicesVersionNumber": {
+      "name": "BSBoardServicesVersionNumber",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSBoardServicesVersionNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceConnectionErrorCreate": {
+      "name": "BSServiceConnectionErrorCreate",
+      "framework": "BoardServices",
+      "return_type": "BSServiceConnectionErrorRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "BSServiceConnectionErrorRef BSServiceConnectionErrorCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "BSServiceConnectionErrorRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BSServiceConnectionErrorCreateWithInfo"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceLog": {
+      "name": "BSServiceLog",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceLog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceSetIsTesting": {
+      "name": "BSServiceSetIsTesting",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BSServiceRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceSetIsTesting(BSServiceRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceXPCBatchLog": {
+      "name": "BSServiceXPCBatchLog",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceXPCBatchLog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSSetServiceFeatureFlagResolver": {
+      "name": "BSSetServiceFeatureFlagResolver",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BSRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BSSetServiceFeatureFlagResolver(BSRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceXPCErrorsLog": {
+      "name": "BSServiceXPCErrorsLog",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceXPCErrorsLog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBSServiceDomainMultiplexingType": {
+      "name": "NSStringFromBSServiceDomainMultiplexingType",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBSServiceDomainMultiplexingType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceConnectionEndpointTargetDescriptionForServiceListener": {
+      "name": "BSServiceConnectionEndpointTargetDescriptionForServiceListener",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceConnectionEndpointTargetDescriptionForServiceListener(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceEndpointGrantNamespace": {
+      "name": "BSServiceEndpointGrantNamespace",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceEndpointGrantNamespace(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceMethodNameErrorKey": {
+      "name": "BSServiceMethodNameErrorKey",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceMethodNameErrorKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceConnectionEndpointTargetDescriptionForAnonymousDomain": {
+      "name": "BSServiceConnectionEndpointTargetDescriptionForAnonymousDomain",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceConnectionEndpointTargetDescriptionForAnonymousDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceInjectionLog": {
+      "name": "BSServiceInjectionLog",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceInjectionLog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceIsTesting": {
+      "name": "BSServiceIsTesting",
+      "framework": "BoardServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BSServiceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool BSServiceIsTesting(BSServiceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBSServiceDomainStartType": {
+      "name": "NSStringFromBSServiceDomainStartType",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBSServiceDomainStartType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceQualityFromBSServiceDomainMultiplexingType": {
+      "name": "BSServiceQualityFromBSServiceDomainMultiplexingType",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceQualityFromBSServiceDomainMultiplexingType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSBoardServicesVersionString": {
+      "name": "BSBoardServicesVersionString",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSBoardServicesVersionString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceConnectionEndpointTargetDescriptionForMachName": {
+      "name": "BSServiceConnectionEndpointTargetDescriptionForMachName",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceConnectionEndpointTargetDescriptionForMachName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceConnectionEndpointTargetDescriptionForServiceLookup": {
+      "name": "BSServiceConnectionEndpointTargetDescriptionForServiceLookup",
+      "framework": "BoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSServiceConnectionEndpointTargetDescriptionForServiceLookup(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSServiceConnectionErrorCreateWithInfo": {
+      "name": "BSServiceConnectionErrorCreateWithInfo",
+      "framework": "BoardServices",
+      "return_type": "BSServiceConnectionErrorRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "BSServiceConnectionErrorRef BSServiceConnectionErrorCreateWithInfo(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "BSServiceConnectionErrorRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BSServiceConnectionErrorCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {},
+  "protocols": [],
+  "type_aliases": {}
+}

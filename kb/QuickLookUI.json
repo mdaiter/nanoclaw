@@ -1,0 +1,1980 @@
+{
+  "framework": "QuickLookUI",
+  "functions": {
+    "_QLPreviewDocumentGetPageSizeInDisplayBundle": {
+      "name": "_QLPreviewDocumentGetPageSizeInDisplayBundle",
+      "framework": "QuickLookUI",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_QLPreviewDocumentRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ _QLPreviewDocumentGetPageSizeInDisplayBundle(_QLPreviewDocumentRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_QLPreviewDocumentGetPageCountInDisplayBundle"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleHintGuessOptimalSize": {
+      "name": "QLDisplayBundleHintGuessOptimalSize",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleHintGuessOptimalSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLEditOperationSupportedForURLWithType (from QuickLookNonBaseSystem)": {
+      "name": "QLEditOperationSupportedForURLWithType (from QuickLookNonBaseSystem)",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLEditOperationSupportedForURLWithType (from QuickLookNonBaseSystem)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLOpenButtonInfoApplicationsBlockKey": {
+      "name": "QLOpenButtonInfoApplicationsBlockKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLOpenButtonInfoApplicationsBlockKey(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLScarlettRemoveBackgroundEnabled": {
+      "name": "QLScarlettRemoveBackgroundEnabled",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLScarlettRemoveBackgroundEnabled(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLUIServiceEditToolbarInterface": {
+      "name": "QLUIServiceEditToolbarInterface",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLUIServiceEditToolbarInterface(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLSizingUserDefinedSizeKey": {
+      "name": "QLSizingUserDefinedSizeKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLSizingUserDefinedSizeKey(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleHintURLRequestKey": {
+      "name": "QLDisplayBundleHintURLRequestKey",
+      "framework": "QuickLookUI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ QLDisplayBundleHintURLRequestKey(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "QLInitUILogging"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleHintUseRemoteKey": {
+      "name": "QLDisplayBundleHintUseRemoteKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleHintUseRemoteKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_QLPreviewDocumentCopyDisplayBundle": {
+      "name": "_QLPreviewDocumentCopyDisplayBundle",
+      "framework": "QuickLookUI",
+      "return_type": "_QLPreviewDocumentRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_QLPreviewDocumentRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_QLPreviewDocumentRef/*?*/ _QLPreviewDocumentCopyDisplayBundle(_QLPreviewDocumentRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_QLPreviewDocumentRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_QLPreviewDocumentCopyPageTextFromDisplayBundle",
+        "_QLPreviewDocumentCopyPageAsImageFromDisplayBundle"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLSizingRatioKey": {
+      "name": "QLSizingRatioKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLSizingRatioKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLScarlettEnabled": {
+      "name": "QLScarlettEnabled",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLScarlettEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLSizingDeltaPositionKey": {
+      "name": "QLSizingDeltaPositionKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLSizingDeltaPositionKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleHintPasswordKey": {
+      "name": "QLDisplayBundleHintPasswordKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleHintPasswordKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLSizingNaturalSizeKey": {
+      "name": "QLSizingNaturalSizeKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLSizingNaturalSizeKey(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLLayoutNaturalSizeKey": {
+      "name": "QLLayoutNaturalSizeKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLLayoutNaturalSizeKey(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLOpenButtonAppIconKey": {
+      "name": "QLOpenButtonAppIconKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLOpenButtonAppIconKey(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLOpenButtonInfoImageKey": {
+      "name": "QLOpenButtonInfoImageKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLOpenButtonInfoImageKey(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleHintSaveMode": {
+      "name": "QLDisplayBundleHintSaveMode",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleHintSaveMode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleHintMarkupPossible": {
+      "name": "QLDisplayBundleHintMarkupPossible",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleHintMarkupPossible(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleHintErrorKey": {
+      "name": "QLDisplayBundleHintErrorKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleHintErrorKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLPreviewPropertyDisplayBundleScreenshotKey": {
+      "name": "QLPreviewPropertyDisplayBundleScreenshotKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLPreviewPropertyDisplayBundleScreenshotKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLSolariumEnabled": {
+      "name": "QLSolariumEnabled",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLSolariumEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleErrorDomain": {
+      "name": "QLDisplayBundleErrorDomain",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLUIServiceHostInterface": {
+      "name": "QLUIServiceHostInterface",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLUIServiceHostInterface(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_QLPreviewDocumentCopyPageTextFromDisplayBundle": {
+      "name": "_QLPreviewDocumentCopyPageTextFromDisplayBundle",
+      "framework": "QuickLookUI",
+      "return_type": "_QLPreviewDocumentRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_QLPreviewDocumentRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_QLPreviewDocumentRef/*?*/ _QLPreviewDocumentCopyPageTextFromDisplayBundle(_QLPreviewDocumentRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_QLPreviewDocumentRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_QLPreviewDocumentCopyDisplayBundle",
+        "_QLPreviewDocumentCopyPageAsImageFromDisplayBundle"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_QLThumbnailRequestSetThumbnailWithURLRepresentation": {
+      "name": "_QLThumbnailRequestSetThumbnailWithURLRepresentation",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_QLThumbnailRequestRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _QLThumbnailRequestSetThumbnailWithURLRepresentation(_QLThumbnailRequestRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLOpenButtonInfoTightTitleKey": {
+      "name": "QLOpenButtonInfoTightTitleKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLOpenButtonInfoTightTitleKey(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLImageAndTextPropertyValueKey": {
+      "name": "QLImageAndTextPropertyValueKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLImageAndTextPropertyValueKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLExpectedClassesForPropertiesDictionaries": {
+      "name": "QLExpectedClassesForPropertiesDictionaries",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLExpectedClassesForPropertiesDictionaries(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleHintURLKey": {
+      "name": "QLDisplayBundleHintURLKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleHintURLKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLScarlettQuickActionsEnabled": {
+      "name": "QLScarlettQuickActionsEnabled",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLScarlettQuickActionsEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_QLPreviewDocumentDrawPageFromDisplayBundle": {
+      "name": "_QLPreviewDocumentDrawPageFromDisplayBundle",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ _QLPreviewDocumentDrawPageFromDisplayBundle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_QLUseRTLLayout": {
+      "name": "_QLUseRTLLayout",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ _QLUseRTLLayout(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_QLPreviewDocumentCopyPageAsImageFromDisplayBundle": {
+      "name": "_QLPreviewDocumentCopyPageAsImageFromDisplayBundle",
+      "framework": "QuickLookUI",
+      "return_type": "_QLPreviewDocumentRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_QLPreviewDocumentRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing",
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_QLPreviewDocumentRef/*?*/ _QLPreviewDocumentCopyPageAsImageFromDisplayBundle(_QLPreviewDocumentRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_QLPreviewDocumentRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_QLPreviewDocumentCopyDisplayBundle",
+        "_QLPreviewDocumentCopyPageTextFromDisplayBundle"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleDisplayStateCurrentEDRStrengthKey": {
+      "name": "QLDisplayBundleDisplayStateCurrentEDRStrengthKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleDisplayStateCurrentEDRStrengthKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleHintCanShareKey": {
+      "name": "QLDisplayBundleHintCanShareKey",
+      "framework": "QuickLookUI",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "QLDisplayBundleHintRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool QLDisplayBundleHintCanShareKey(QLDisplayBundleHintRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLUIServiceBaseInterface": {
+      "name": "QLUIServiceBaseInterface",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLUIServiceBaseInterface(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLPreviewItemLaunchURL": {
+      "name": "QLPreviewItemLaunchURL",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLPreviewItemLaunchURL(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_QLPreviewDocumentIsPaginatedInDisplayBundle": {
+      "name": "_QLPreviewDocumentIsPaginatedInDisplayBundle",
+      "framework": "QuickLookUI",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_QLPreviewDocumentRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _QLPreviewDocumentIsPaginatedInDisplayBundle(_QLPreviewDocumentRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLHDRMarkupEnabled": {
+      "name": "QLHDRMarkupEnabled",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLHDRMarkupEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLUIServiceBaseHostInterface": {
+      "name": "QLUIServiceBaseHostInterface",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLUIServiceBaseHostInterface(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleDisplayStateCurrentPageKey": {
+      "name": "QLDisplayBundleDisplayStateCurrentPageKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleDisplayStateCurrentPageKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLLayoutConstrainsToNaturalSizeKey": {
+      "name": "QLLayoutConstrainsToNaturalSizeKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLLayoutConstrainsToNaturalSizeKey(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLOpenButtonAppNameKey": {
+      "name": "QLOpenButtonAppNameKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLOpenButtonAppNameKey(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLOpenButtonAppURLKey": {
+      "name": "QLOpenButtonAppURLKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLOpenButtonAppURLKey(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_QLSeamlessOpeningSupportForRunningApplication": {
+      "name": "_QLSeamlessOpeningSupportForRunningApplication",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ _QLSeamlessOpeningSupportForRunningApplication(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleDisplayStateCurrentTimeKey": {
+      "name": "QLDisplayBundleDisplayStateCurrentTimeKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleDisplayStateCurrentTimeKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleErrorHideOpenButtonKey": {
+      "name": "QLDisplayBundleErrorHideOpenButtonKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleErrorHideOpenButtonKey(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLOpenButtonInfoTitleKey": {
+      "name": "QLOpenButtonInfoTitleKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLOpenButtonInfoTitleKey(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLInitUILogging": {
+      "name": "QLInitUILogging",
+      "framework": "QuickLookUI",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ QLInitUILogging(void *buf, size_t size)",
+      "verb": "create",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "QLDisplayBundleHintURLRequestKey"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLPreviewTestBehavior": {
+      "name": "QLPreviewTestBehavior",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLPreviewTestBehavior(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLPreviewItemGetDefaultOpenButtonInfo": {
+      "name": "QLPreviewItemGetDefaultOpenButtonInfo",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLPreviewItemGetDefaultOpenButtonInfo(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_QLPreviewDocumentReleaseDisplayBundle": {
+      "name": "_QLPreviewDocumentReleaseDisplayBundle",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ _QLPreviewDocumentReleaseDisplayBundle(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleHintAsyncLoadKey": {
+      "name": "QLDisplayBundleHintAsyncLoadKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleHintAsyncLoadKey(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLImageAndTextPropertyLabelKey": {
+      "name": "QLImageAndTextPropertyLabelKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLImageAndTextPropertyLabelKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLSizingOnlyRatioKey": {
+      "name": "QLSizingOnlyRatioKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLSizingOnlyRatioKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLEditOperationSupportsType (from QuickLookNonBaseSystem)": {
+      "name": "QLEditOperationSupportsType (from QuickLookNonBaseSystem)",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLEditOperationSupportsType (from QuickLookNonBaseSystem)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLPreviewOptionWebImageURLKey": {
+      "name": "QLPreviewOptionWebImageURLKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLPreviewOptionWebImageURLKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_QLPreviewDocumentGetPageCountInDisplayBundle": {
+      "name": "_QLPreviewDocumentGetPageCountInDisplayBundle",
+      "framework": "QuickLookUI",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_QLPreviewDocumentRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ _QLPreviewDocumentGetPageCountInDisplayBundle(_QLPreviewDocumentRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_QLPreviewDocumentGetPageSizeInDisplayBundle"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_getSeamlessOpeningQueue": {
+      "name": "_getSeamlessOpeningQueue",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ _getSeamlessOpeningQueue(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleHintActivity": {
+      "name": "QLDisplayBundleHintActivity",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleHintActivity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLUIServiceInterface": {
+      "name": "QLUIServiceInterface",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLUIServiceInterface(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_QLThumbnailRequestSetThumbnailWithDataRepresentation": {
+      "name": "_QLThumbnailRequestSetThumbnailWithDataRepresentation",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_QLThumbnailRequestRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _QLThumbnailRequestSetThumbnailWithDataRepresentation(_QLThumbnailRequestRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLSizingMinimumSizeKey": {
+      "name": "QLSizingMinimumSizeKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLSizingMinimumSizeKey(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_QLDeactivateSlowMotion": {
+      "name": "_QLDeactivateSlowMotion",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ _QLDeactivateSlowMotion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "qlUILogHandles": {
+      "name": "qlUILogHandles",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ qlUILogHandles(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLSharedPreviewPanelWillOpenNotificationName": {
+      "name": "QLSharedPreviewPanelWillOpenNotificationName",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLSharedPreviewPanelWillOpenNotificationName(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleDisplayStateCurrentScrollKey": {
+      "name": "QLDisplayBundleDisplayStateCurrentScrollKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleDisplayStateCurrentScrollKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLSizingContainerProportionKey": {
+      "name": "QLSizingContainerProportionKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLSizingContainerProportionKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleHintAnimateHDR": {
+      "name": "QLDisplayBundleHintAnimateHDR",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleHintAnimateHDR(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLDisplayBundleHintDisableProgressiveLoadKey": {
+      "name": "QLDisplayBundleHintDisableProgressiveLoadKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLDisplayBundleHintDisableProgressiveLoadKey(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "QLPreviewOptionWebPageURLKey": {
+      "name": "QLPreviewOptionWebPageURLKey",
+      "framework": "QuickLookUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from QuickLookUI"
+        }
+      ],
+      "signature": "void/*?*/ QLPreviewOptionWebPageURLKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "neural_network": [
+      "QLSharedPreviewPanelWillOpenNotificationName"
+    ],
+    "image_processing": [
+      "QLImageAndTextPropertyLabelKey",
+      "QLImageAndTextPropertyValueKey",
+      "QLOpenButtonInfoImageKey",
+      "QLPreviewOptionWebImageURLKey",
+      "_QLPreviewDocumentCopyPageAsImageFromDisplayBundle"
+    ],
+    "cryptography": [
+      "QLDisplayBundleHintCanShareKey",
+      "QLSharedPreviewPanelWillOpenNotificationName"
+    ],
+    "display_compositing": [
+      "QLDisplayBundleDisplayStateCurrentEDRStrengthKey",
+      "QLDisplayBundleDisplayStateCurrentPageKey",
+      "QLDisplayBundleDisplayStateCurrentScrollKey",
+      "QLDisplayBundleDisplayStateCurrentTimeKey",
+      "QLDisplayBundleErrorDomain",
+      "QLDisplayBundleErrorHideOpenButtonKey",
+      "QLDisplayBundleHintActivity",
+      "QLDisplayBundleHintAnimateHDR",
+      "QLDisplayBundleHintAsyncLoadKey",
+      "QLDisplayBundleHintCanShareKey",
+      "QLDisplayBundleHintDisableProgressiveLoadKey",
+      "QLDisplayBundleHintErrorKey",
+      "QLDisplayBundleHintGuessOptimalSize",
+      "QLDisplayBundleHintMarkupPossible",
+      "QLDisplayBundleHintPasswordKey",
+      "QLDisplayBundleHintSaveMode",
+      "QLDisplayBundleHintURLKey",
+      "QLDisplayBundleHintURLRequestKey",
+      "QLDisplayBundleHintUseRemoteKey",
+      "QLPreviewPropertyDisplayBundleScreenshotKey",
+      "_QLPreviewDocumentCopyDisplayBundle",
+      "_QLPreviewDocumentCopyPageAsImageFromDisplayBundle",
+      "_QLPreviewDocumentCopyPageTextFromDisplayBundle",
+      "_QLPreviewDocumentDrawPageFromDisplayBundle",
+      "_QLPreviewDocumentGetPageCountInDisplayBundle",
+      "_QLPreviewDocumentGetPageSizeInDisplayBundle",
+      "_QLPreviewDocumentIsPaginatedInDisplayBundle",
+      "_QLPreviewDocumentReleaseDisplayBundle"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

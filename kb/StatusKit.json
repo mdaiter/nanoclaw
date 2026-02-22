@@ -1,0 +1,188 @@
+{
+  "framework": "StatusKit",
+  "functions": {
+    "SKStatusPublishingErrorDomain": {
+      "name": "SKStatusPublishingErrorDomain",
+      "framework": "StatusKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from StatusKit"
+        }
+      ],
+      "signature": "void/*?*/ SKStatusPublishingErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SKPresenceErrorDomain": {
+      "name": "SKPresenceErrorDomain",
+      "framework": "StatusKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from StatusKit"
+        }
+      ],
+      "signature": "void/*?*/ SKPresenceErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SKStatusSubscriptionErrorDomain": {
+      "name": "SKStatusSubscriptionErrorDomain",
+      "framework": "StatusKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from StatusKit"
+        }
+      ],
+      "signature": "void/*?*/ SKStatusSubscriptionErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ValidateClientIsInAllowlistForServiceName": {
+      "name": "ValidateClientIsInAllowlistForServiceName",
+      "framework": "StatusKit",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ValidateClientRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from StatusKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ValidateClientIsInAllowlistForServiceName(ValidateClientRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "StringFromSKStatusKitErrorCode": {
+      "name": "StringFromSKStatusKitErrorCode",
+      "framework": "StatusKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from StatusKit"
+        }
+      ],
+      "signature": "void/*?*/ StringFromSKStatusKitErrorCode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ValidateIdentifierMeetsBlastdoorRequirements": {
+      "name": "ValidateIdentifierMeetsBlastdoorRequirements",
+      "framework": "StatusKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from StatusKit"
+        }
+      ],
+      "signature": "void/*?*/ ValidateIdentifierMeetsBlastdoorRequirements(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SKStatusKitErrorDomain": {
+      "name": "SKStatusKitErrorDomain",
+      "framework": "StatusKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from StatusKit"
+        }
+      ],
+      "signature": "void/*?*/ SKStatusKitErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "linear_algebra": [
+      "ValidateIdentifierMeetsBlastdoorRequirements"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

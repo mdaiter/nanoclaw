@@ -1,0 +1,763 @@
+{
+  "framework": "SafariServices",
+  "functions": {
+    "_SFKeychainService": {
+      "name": "_SFKeychainService",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ _SFKeychainService(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSGetFullySimplifiedStringForURL": {
+      "name": "SSGetFullySimplifiedStringForURL",
+      "framework": "SafariServices",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ SSGetFullySimplifiedStringForURL(SSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SSGetBestURLForUserTypedString",
+        "SSGetApplicationNameForUserAgent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SFMacAppStoreOrDeveloperIDDistributionCodeSigningRequirement": {
+      "name": "_SFMacAppStoreOrDeveloperIDDistributionCodeSigningRequirement",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ _SFMacAppStoreOrDeveloperIDDistributionCodeSigningRequirement(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSGetBestURLForUserTypedString": {
+      "name": "SSGetBestURLForUserTypedString",
+      "framework": "SafariServices",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ SSGetBestURLForUserTypedString(SSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SSGetFullySimplifiedStringForURL",
+        "SSGetApplicationNameForUserAgent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSGetSafariDateOfLastActiveUse": {
+      "name": "SSGetSafariDateOfLastActiveUse",
+      "framework": "SafariServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ SSGetSafariDateOfLastActiveUse(SSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSGetWebSearchURLForSearchQuery": {
+      "name": "SSGetWebSearchURLForSearchQuery",
+      "framework": "SafariServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ SSGetWebSearchURLForSearchQuery(SSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SFContentBlockerDidRequestReloadNotification": {
+      "name": "_SFContentBlockerDidRequestReloadNotification",
+      "framework": "SafariServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ _SFContentBlockerDidRequestReloadNotification(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SFContentBlockerContentHashKey": {
+      "name": "_SFContentBlockerContentHashKey",
+      "framework": "SafariServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_SFContentBlockerContentRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _SFContentBlockerContentHashKey(_SFContentBlockerContentRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SFKeychainLabel": {
+      "name": "_SFKeychainLabel",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ _SFKeychainLabel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SFContentBlockerExtensionPointIdentifier": {
+      "name": "_SFContentBlockerExtensionPointIdentifier",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ _SFContentBlockerExtensionPointIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFExtensionMessageKey": {
+      "name": "SFExtensionMessageKey",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ SFExtensionMessageKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSGetApplicationNameForUserAgent": {
+      "name": "SSGetApplicationNameForUserAgent",
+      "framework": "SafariServices",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ SSGetApplicationNameForUserAgent(SSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SSGetFullySimplifiedStringForURL",
+        "SSGetBestURLForUserTypedString"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SFSafariServicesAvailable": {
+      "name": "_SFSafariServicesAvailable",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ _SFSafariServicesAvailable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SFSafariServicesVersion": {
+      "name": "_SFSafariServicesVersion",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ _SFSafariServicesVersion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SFMacAppStoreCodingRequirement": {
+      "name": "_SFMacAppStoreCodingRequirement",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ _SFMacAppStoreCodingRequirement(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFErrorDomain": {
+      "name": "SFErrorDomain",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ SFErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SFAllowRunningInternalWebExtensionsPreferenceKey": {
+      "name": "_SFAllowRunningInternalWebExtensionsPreferenceKey",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ _SFAllowRunningInternalWebExtensionsPreferenceKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SFSafariExtensionPointIdentifier": {
+      "name": "_SFSafariExtensionPointIdentifier",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ _SFSafariExtensionPointIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSRemoveSyncedKeychainData": {
+      "name": "SSRemoveSyncedKeychainData",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ SSRemoveSyncedKeychainData(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SFTouchIDToAutoFillPreferenceKey": {
+      "name": "_SFTouchIDToAutoFillPreferenceKey",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ _SFTouchIDToAutoFillPreferenceKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SFSafariContentBlockerDidChangeDistributedNotification": {
+      "name": "_SFSafariContentBlockerDidChangeDistributedNotification",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ _SFSafariContentBlockerDidChangeDistributedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SFAppleBNITeamIdentifier": {
+      "name": "_SFAppleBNITeamIdentifier",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ _SFAppleBNITeamIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSHasDefaultBookmarks": {
+      "name": "SSHasDefaultBookmarks",
+      "framework": "SafariServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SSHasDefaultBookmarks(SSRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSGetSyncedDataClasses": {
+      "name": "SSGetSyncedDataClasses",
+      "framework": "SafariServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ SSGetSyncedDataClasses(SSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFExtensionProfileKey": {
+      "name": "SFExtensionProfileKey",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ SFExtensionProfileKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSSyncedTabsServiceEnableStateChanged": {
+      "name": "SSSyncedTabsServiceEnableStateChanged",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ SSSyncedTabsServiceEnableStateChanged(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SFExtensionEnabledKey": {
+      "name": "_SFExtensionEnabledKey",
+      "framework": "SafariServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SafariServices"
+        }
+      ],
+      "signature": "void/*?*/ _SFExtensionEnabledKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "SSHasDefaultBookmarks"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

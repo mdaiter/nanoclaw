@@ -1,0 +1,1163 @@
+{
+  "framework": "NetworkStatistics",
+  "functions": {
+    "NStatManagerCreate": {
+      "name": "NStatManagerCreate",
+      "framework": "NetworkStatistics",
+      "return_type": "NStatManagerRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NStatManagerRef NStatManagerCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NStatManagerRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NStatManagerCreateRouteSource",
+        "NStatManagerCreateSysinfoSource",
+        "NStatManagerCreateUDPSource",
+        "NStatManagerCreateInterfaceSource",
+        "NStatManagerCreateTCPSource"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatSourceRemove": {
+      "name": "NStatSourceRemove",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatSourceRemove(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatSourceSetCountsBlock": {
+      "name": "NStatSourceSetCountsBlock",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NStatSourceRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint32_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NStatSourceSetCountsBlock(NStatSourceRef *ref, uint32_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint32_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatSourceSetFilter": {
+      "name": "NStatSourceSetFilter",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NStatSourceRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NStatSourceSetFilter(NStatSourceRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerCreateRouteSource": {
+      "name": "NStatManagerCreateRouteSource",
+      "framework": "NetworkStatistics",
+      "return_type": "NStatManagerRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NStatManagerRef NStatManagerCreateRouteSource(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NStatManagerRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NStatManagerCreate",
+        "NStatManagerCreateSysinfoSource",
+        "NStatManagerCreateUDPSource",
+        "NStatManagerCreateInterfaceSource",
+        "NStatManagerCreateTCPSource"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatSourceSetRemovedBlock": {
+      "name": "NStatSourceSetRemovedBlock",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NStatSourceRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NStatSourceSetRemovedBlock(NStatSourceRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerAddAllRoutesWithFilter": {
+      "name": "NStatManagerAddAllRoutesWithFilter",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatManagerAddAllRoutesWithFilter(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatSourceQueryDescription": {
+      "name": "NStatSourceQueryDescription",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatSourceQueryDescription(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerAddAllTCPWithOptions": {
+      "name": "NStatManagerAddAllTCPWithOptions",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatManagerAddAllTCPWithOptions(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerAddAllUDPWithOptions": {
+      "name": "NStatManagerAddAllUDPWithOptions",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatManagerAddAllUDPWithOptions(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerCreateSysinfoSource": {
+      "name": "NStatManagerCreateSysinfoSource",
+      "framework": "NetworkStatistics",
+      "return_type": "NStatManagerRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NStatManagerRef NStatManagerCreateSysinfoSource(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NStatManagerRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NStatManagerCreate",
+        "NStatManagerCreateRouteSource",
+        "NStatManagerCreateUDPSource",
+        "NStatManagerCreateInterfaceSource",
+        "NStatManagerCreateTCPSource"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerSetInterfaceTraceFD": {
+      "name": "NStatManagerSetInterfaceTraceFD",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NStatManagerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NStatManagerSetInterfaceTraceFD(NStatManagerRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatSourceCopyProperties": {
+      "name": "NStatSourceCopyProperties",
+      "framework": "NetworkStatistics",
+      "return_type": "NStatSourceRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NStatSourceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NStatSourceRef/*?*/ NStatSourceCopyProperties(NStatSourceRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NStatSourceRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NStatSourceCopyProperty"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerSetInterfaceSourceFD": {
+      "name": "NStatManagerSetInterfaceSourceFD",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NStatManagerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NStatManagerSetInterfaceSourceFD(NStatManagerRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerCreateUDPSource": {
+      "name": "NStatManagerCreateUDPSource",
+      "framework": "NetworkStatistics",
+      "return_type": "NStatManagerRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NStatManagerRef NStatManagerCreateUDPSource(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NStatManagerRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NStatManagerCreate",
+        "NStatManagerCreateRouteSource",
+        "NStatManagerCreateSysinfoSource",
+        "NStatManagerCreateInterfaceSource",
+        "NStatManagerCreateTCPSource"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerDestroy": {
+      "name": "NStatManagerDestroy",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NStatManagerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void NStatManagerDestroy(NStatManagerRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatRouteValuesForIPv6Host": {
+      "name": "NStatRouteValuesForIPv6Host",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatRouteValuesForIPv6Host(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatRouteValuesForIPv4Host": {
+      "name": "NStatRouteValuesForIPv4Host",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatRouteValuesForIPv4Host(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatSourceCopyCounts": {
+      "name": "NStatSourceCopyCounts",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatSourceCopyCounts(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerCreateInterfaceSource": {
+      "name": "NStatManagerCreateInterfaceSource",
+      "framework": "NetworkStatistics",
+      "return_type": "NStatManagerRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NStatManagerRef NStatManagerCreateInterfaceSource(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NStatManagerRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NStatManagerCreate",
+        "NStatManagerCreateRouteSource",
+        "NStatManagerCreateSysinfoSource",
+        "NStatManagerCreateUDPSource",
+        "NStatManagerCreateTCPSource"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatSourceCurrentSnapshot": {
+      "name": "NStatSourceCurrentSnapshot",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatSourceCurrentSnapshot(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerQueryAllSourcesDescriptions": {
+      "name": "NStatManagerQueryAllSourcesDescriptions",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatManagerQueryAllSourcesDescriptions(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerAddAllTCPWithFilter": {
+      "name": "NStatManagerAddAllTCPWithFilter",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatManagerAddAllTCPWithFilter(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerSetFlags": {
+      "name": "NStatManagerSetFlags",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NStatManagerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NStatManagerSetFlags(NStatManagerRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerAddAllRoutes": {
+      "name": "NStatManagerAddAllRoutes",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatManagerAddAllRoutes(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatSourceCopyProperty": {
+      "name": "NStatSourceCopyProperty",
+      "framework": "NetworkStatistics",
+      "return_type": "NStatSourceRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NStatSourceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NStatSourceRef/*?*/ NStatSourceCopyProperty(NStatSourceRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NStatSourceRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NStatSourceCopyProperties"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerAddAllUDP": {
+      "name": "NStatManagerAddAllUDP",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatManagerAddAllUDP(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerQueryAllSourcesUpdate": {
+      "name": "NStatManagerQueryAllSourcesUpdate",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatManagerQueryAllSourcesUpdate(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatSourceIdentifier": {
+      "name": "NStatSourceIdentifier",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatSourceIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatSourceQueryUpdate": {
+      "name": "NStatSourceQueryUpdate",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatSourceQueryUpdate(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatSourceSetEventsBlock": {
+      "name": "NStatSourceSetEventsBlock",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NStatSourceRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NStatSourceSetEventsBlock(NStatSourceRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerAddAllUDPWithFilter": {
+      "name": "NStatManagerAddAllUDPWithFilter",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatManagerAddAllUDPWithFilter(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerSetQueuePriority": {
+      "name": "NStatManagerSetQueuePriority",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NStatManagerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NStatManagerSetQueuePriority(NStatManagerRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatSourceSetDescriptionBlock": {
+      "name": "NStatSourceSetDescriptionBlock",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NStatSourceRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NStatSourceSetDescriptionBlock(NStatSourceRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatSourceQueryCounts": {
+      "name": "NStatSourceQueryCounts",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatSourceQueryCounts(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerCreateTCPSource": {
+      "name": "NStatManagerCreateTCPSource",
+      "framework": "NetworkStatistics",
+      "return_type": "NStatManagerRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NStatManagerRef NStatManagerCreateTCPSource(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NStatManagerRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NStatManagerCreate",
+        "NStatManagerCreateRouteSource",
+        "NStatManagerCreateSysinfoSource",
+        "NStatManagerCreateUDPSource",
+        "NStatManagerCreateInterfaceSource"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerAddAllTCP": {
+      "name": "NStatManagerAddAllTCP",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatManagerAddAllTCP(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NStatManagerQueryAllSources": {
+      "name": "NStatManagerQueryAllSources",
+      "framework": "NetworkStatistics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkStatistics"
+        }
+      ],
+      "signature": "void/*?*/ NStatManagerQueryAllSources(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {},
+  "protocols": [],
+  "type_aliases": {}
+}

@@ -1,0 +1,597 @@
+{
+  "framework": "AppleIDSSOAuthentication",
+  "functions": {
+    "AIDAServiceTypeMessages": {
+      "name": "AIDAServiceTypeMessages",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ AIDAServiceTypeMessages(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AIDACoderTypeKey": {
+      "name": "AIDACoderTypeKey",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ AIDACoderTypeKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AIDACoderSuccessKey": {
+      "name": "AIDACoderSuccessKey",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ AIDACoderSuccessKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AIDALogSystem": {
+      "name": "_AIDALogSystem",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ _AIDALogSystem(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AIDASignpostGetNanoseconds": {
+      "name": "_AIDASignpostGetNanoseconds",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AIDASignpostRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _AIDASignpostGetNanoseconds(_AIDASignpostRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AIDASignpostCreate": {
+      "name": "_AIDASignpostCreate",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "_AIDASignpostRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_AIDASignpostRef _AIDASignpostCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_AIDASignpostRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthenticationServicesKey": {
+      "name": "AppleIDAuthenticationServicesKey",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ AppleIDAuthenticationServicesKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AIDAServiceTypeFaceTime": {
+      "name": "AIDAServiceTypeFaceTime",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ AIDAServiceTypeFaceTime(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthenticationAppleIDSettingsTokenIdentifier": {
+      "name": "AppleIDAuthenticationAppleIDSettingsTokenIdentifier",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthenticationAppleIDRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AppleIDAuthenticationAppleIDSettingsTokenIdentifier(AppleIDAuthenticationAppleIDRef *ref, uint64_t value)",
+      "verb": "unknown",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthenticationiCloudFamilySettingsTokenIdentifier",
+        "AppleIDAuthenticationiCloudSettingsTokenIdentifier"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthenticationiCloudFamilySettingsTokenIdentifier": {
+      "name": "AppleIDAuthenticationiCloudFamilySettingsTokenIdentifier",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthenticationiCloudFamilyRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AppleIDAuthenticationiCloudFamilySettingsTokenIdentifier(AppleIDAuthenticationiCloudFamilyRef *ref, uint64_t value)",
+      "verb": "unknown",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthenticationAppleIDSettingsTokenIdentifier",
+        "AppleIDAuthenticationiCloudSettingsTokenIdentifier"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AIDAAccountPropertyDSID": {
+      "name": "AIDAAccountPropertyDSID",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ AIDAAccountPropertyDSID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AIDAAccountPropertyAltDSID": {
+      "name": "AIDAAccountPropertyAltDSID",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ AIDAAccountPropertyAltDSID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AIDAErrorDomain": {
+      "name": "AIDAErrorDomain",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ AIDAErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AIDAServiceTypeStore": {
+      "name": "AIDAServiceTypeStore",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ AIDAServiceTypeStore(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthenticationPBTokenIdentifier": {
+      "name": "AppleIDAuthenticationPBTokenIdentifier",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ AppleIDAuthenticationPBTokenIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "kiCloudPersonIDKey": {
+      "name": "kiCloudPersonIDKey",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ kiCloudPersonIDKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "kiCloudPrimaryAccountKey": {
+      "name": "kiCloudPrimaryAccountKey",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ kiCloudPrimaryAccountKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AIDAServiceTypeCloud": {
+      "name": "AIDAServiceTypeCloud",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ AIDAServiceTypeCloud(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AIDAServiceTypeGameCenter": {
+      "name": "AIDAServiceTypeGameCenter",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ AIDAServiceTypeGameCenter(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AIDACoderErrorKey": {
+      "name": "AIDACoderErrorKey",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ AIDACoderErrorKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthenticationiCloudSettingsTokenIdentifier": {
+      "name": "AppleIDAuthenticationiCloudSettingsTokenIdentifier",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthenticationiCloudRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AppleIDAuthenticationiCloudSettingsTokenIdentifier(AppleIDAuthenticationiCloudRef *ref, uint64_t value)",
+      "verb": "unknown",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthenticationAppleIDSettingsTokenIdentifier",
+        "AppleIDAuthenticationiCloudFamilySettingsTokenIdentifier"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AIDASignpostLogSystem": {
+      "name": "_AIDASignpostLogSystem",
+      "framework": "AppleIDSSOAuthentication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDSSOAuthentication"
+        }
+      ],
+      "signature": "void/*?*/ _AIDASignpostLogSystem(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {},
+  "protocols": [],
+  "type_aliases": {}
+}

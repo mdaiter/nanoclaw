@@ -1,0 +1,5402 @@
+{
+  "framework": "TCC",
+  "functions": {
+    "TCCAccessRequestIndirectWithOptions": {
+      "name": "TCCAccessRequestIndirectWithOptions",
+      "framework": "TCC",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ TCCAccessRequestIndirectWithOptions(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCAccessRequestIndirect",
+        "TCCAccessRequest"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_get_request_prompt_policy": {
+      "name": "tcc_message_options_get_request_prompt_policy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_get_request_prompt_policy(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_create": {
+      "name": "tcc_server_create",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_identity_create": {
+      "name": "tcc_identity_create",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_identity_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_service": {
+      "name": "tcc_authorization_record_get_service",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_service(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_request_change": {
+      "name": "tcc_authorization_request_change",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_request_change(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_credential_create_for_process_with_audit_token_and_assumed_identity": {
+      "name": "tcc_credential_create_for_process_with_audit_token_and_assumed_identity",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_credential_create_for_process_with_audit_token_and_assumed_identity(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_non_modifiable": {
+      "name": "tcc_authorization_record_get_non_modifiable",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_non_modifiable(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_credential_create_for_file_provider_domain_identifier": {
+      "name": "tcc_credential_create_for_file_provider_domain_identifier",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_credential_create_for_file_provider_domain_identifier(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_set_reply_handler_policy": {
+      "name": "tcc_message_options_set_reply_handler_policy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_set_reply_handler_policy(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_release": {
+      "name": "tcc_release",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_release(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_events_subscribe": {
+      "name": "tcc_events_subscribe",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_events_subscribe(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_session_pid_version": {
+      "name": "tcc_authorization_record_get_session_pid_version",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_session_pid_version(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_credential_singleton_for_self": {
+      "name": "tcc_credential_singleton_for_self",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_credential_singleton_for_self(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCCreateIndirectObjectIdentityFromAuditToken": {
+      "name": "TCCCreateIndirectObjectIdentityFromAuditToken",
+      "framework": "TCC",
+      "return_type": "TCCRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "TCCRef TCCCreateIndirectObjectIdentityFromAuditToken(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "TCCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCCreateIndirectObjectIdentityForFileProviderDomainFromPath",
+        "TCCCreateDesignatedRequirementIdentityFromPath",
+        "TCCCopyIconResourcePathForService",
+        "TCCCreateIndirectObjectIdentityFromFileProviderDomainID",
+        "TCCCreateDesignatedRequirementIdentityFromAuditToken"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_service_get_audit_token_cache_max_size": {
+      "name": "tcc_service_get_audit_token_cache_max_size",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_service_get_audit_token_cache_max_size(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_preflight_with_endpoint": {
+      "name": "tcc_authorization_preflight_with_endpoint",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_preflight_with_endpoint(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_get_database_type": {
+      "name": "tcc_message_options_get_database_type",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_get_database_type(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_events_filter_singleton_for_check_in": {
+      "name": "tcc_events_filter_singleton_for_check_in",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_events_filter_singleton_for_check_in(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_credential_create_data_from_process_with_audit_token": {
+      "name": "tcc_credential_create_data_from_process_with_audit_token",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_credential_create_data_from_process_with_audit_token(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCCreateIndirectObjectIdentityForFileProviderDomainFromPath": {
+      "name": "TCCCreateIndirectObjectIdentityForFileProviderDomainFromPath",
+      "framework": "TCC",
+      "return_type": "TCCRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "TCCRef TCCCreateIndirectObjectIdentityForFileProviderDomainFromPath(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "TCCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCCreateIndirectObjectIdentityFromAuditToken",
+        "TCCCreateDesignatedRequirementIdentityFromPath",
+        "TCCCopyIconResourcePathForService",
+        "TCCCreateIndirectObjectIdentityFromFileProviderDomainID",
+        "TCCCreateDesignatedRequirementIdentityFromAuditToken"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessResetAll": {
+      "name": "TCCAccessResetAll",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessResetAll(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCExpirationCopyInformationForService": {
+      "name": "TCCExpirationCopyInformationForService",
+      "framework": "TCC",
+      "return_type": "TCCExpirationRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCExpirationRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "TCCExpirationRef/*?*/ TCCExpirationCopyInformationForService(TCCExpirationRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "TCCExpirationRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessCopyInformation": {
+      "name": "TCCAccessCopyInformation",
+      "framework": "TCC",
+      "return_type": "TCCAccessRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "TCCAccessRef/*?*/ TCCAccessCopyInformation(TCCAccessRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "TCCAccessRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCAccessCopyOverrides",
+        "TCCAccessCopyInformationForBundle",
+        "TCCAccessCopyBundleIdentifiersDisabledForService",
+        "TCCAccessCopyBundleIdentifiersForService",
+        "TCCAccessCopyInformationForBundleId"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCIntegrityFlagReset": {
+      "name": "TCCIntegrityFlagReset",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCIntegrityFlagReset(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_message_get_authorization_records_by_services": {
+      "name": "tcc_server_message_get_authorization_records_by_services",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_message_get_authorization_records_by_services(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_metrics_get_service_name": {
+      "name": "tcc_metrics_get_service_name",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_metrics_get_service_name(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_retain": {
+      "name": "tcc_retain",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_retain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_service_get_is_system_service": {
+      "name": "tcc_service_get_is_system_service",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_service_get_is_system_service(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessSetForCodeIdentity": {
+      "name": "TCCAccessSetForCodeIdentity",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessSetForCodeIdentity(TCCAccessRef *ref, uint64_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCAccessSetForBundleIdWithOptions",
+        "TCCAccessSetForBundleIdAndCodeRequirement",
+        "TCCAccessSetForBundleId"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_identity_type_and_identifiers_are_equal": {
+      "name": "tcc_identity_type_and_identifiers_are_equal",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_identity_type_and_identifiers_are_equal(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessSetForPath": {
+      "name": "TCCAccessSetForPath",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "const char *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessSetForPath(TCCAccessRef *ref, const char * *value)",
+      "verb": "write",
+      "input_formats": [
+        "const char * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCAccessSetForPathWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_cache_create": {
+      "name": "tcc_authorization_cache_create",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_cache_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_changed_for_service_notification_name": {
+      "name": "tcc_authorization_changed_for_service_notification_name",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_changed_for_service_notification_name(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_check_audit_token": {
+      "name": "tcc_authorization_check_audit_token",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_check_audit_token(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_set_has_prompted_for_allow": {
+      "name": "tcc_message_options_set_has_prompted_for_allow",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_set_has_prompted_for_allow(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessGetOverrides": {
+      "name": "TCCAccessGetOverrides",
+      "framework": "TCC",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ TCCAccessGetOverrides(TCCAccessRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessSetPidResponsibleForPid": {
+      "name": "TCCAccessSetPidResponsibleForPid",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessSetPidResponsibleForPid(TCCAccessRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_identity_set_verifier_code_requirement_string": {
+      "name": "tcc_identity_set_verifier_code_requirement_string",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_identity_set_verifier_code_requirement_string(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_service_get_name": {
+      "name": "tcc_service_get_name",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_service_get_name(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAuthGetReasonDescription": {
+      "name": "TCCAuthGetReasonDescription",
+      "framework": "TCC",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAuthRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ TCCAuthGetReasonDescription(TCCAuthRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCCheckIfDatabaseIsRegistered": {
+      "name": "TCCCheckIfDatabaseIsRegistered",
+      "framework": "TCC",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCCheckIfDatabaseRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool TCCCheckIfDatabaseIsRegistered(TCCCheckIfDatabaseRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_cache_dump_state_copy": {
+      "name": "tcc_authorization_cache_dump_state_copy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_cache_dump_state_copy(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_last_modified_date": {
+      "name": "tcc_authorization_record_get_last_modified_date",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_last_modified_date(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_attributed_entity_create": {
+      "name": "tcc_attributed_entity_create",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_attributed_entity_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_preflight": {
+      "name": "tcc_authorization_preflight",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_preflight(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_metrics_create": {
+      "name": "tcc_metrics_create",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_metrics_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessResetForBundleIdWithOptions": {
+      "name": "TCCAccessResetForBundleIdWithOptions",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessResetForBundleIdWithOptions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_service_get_authorization_value_type": {
+      "name": "tcc_service_get_authorization_value_type",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_service_get_authorization_value_type(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_get_has_prompted_for_allow": {
+      "name": "tcc_message_options_get_has_prompted_for_allow",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_get_has_prompted_for_allow(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessDeclarePolicy": {
+      "name": "TCCAccessDeclarePolicy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessDeclarePolicy(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_authorization_reason": {
+      "name": "tcc_authorization_record_set_authorization_reason",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_authorization_reason(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_allow_standard_user_to_set_system_service": {
+      "name": "tcc_authorization_record_get_allow_standard_user_to_set_system_service",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_allow_standard_user_to_set_system_service(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCTestInternalWithReplyHander": {
+      "name": "TCCTestInternalWithReplyHander",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCTestInternalWithReplyHander(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessSetForBundle": {
+      "name": "TCCAccessSetForBundle",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessSetForBundle(TCCAccessRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_service": {
+      "name": "tcc_authorization_record_set_service",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_service(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessReset": {
+      "name": "TCCAccessReset",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessReset(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAuthPromptIconString": {
+      "name": "TCCAuthPromptIconString",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAuthPromptIconString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_tcc_util_create_CFError_with_user_info": {
+      "name": "_tcc_util_create_CFError_with_user_info",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ _tcc_util_create_CFError_with_user_info(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_audit_token_request_change": {
+      "name": "tcc_authorization_audit_token_request_change",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_audit_token_request_change(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_cache_handle_authorization_changed_for_service": {
+      "name": "tcc_authorization_cache_handle_authorization_changed_for_service",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_cache_handle_authorization_changed_for_service(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_indirect_object_identity": {
+      "name": "tcc_authorization_record_get_indirect_object_identity",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_indirect_object_identity(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_allow_standard_user_to_set_system_service": {
+      "name": "tcc_authorization_record_set_allow_standard_user_to_set_system_service",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_allow_standard_user_to_set_system_service(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_indirect_object_attributed_entity": {
+      "name": "tcc_authorization_record_set_indirect_object_attributed_entity",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_indirect_object_attributed_entity(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_session_pid": {
+      "name": "tcc_authorization_record_set_session_pid",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_session_pid(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_subject_attributed_entity": {
+      "name": "tcc_authorization_record_set_subject_attributed_entity",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_subject_attributed_entity(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_authorization_reason": {
+      "name": "tcc_authorization_record_get_authorization_reason",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_authorization_reason(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_identity_create_from_external_representation": {
+      "name": "tcc_identity_create_from_external_representation",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_identity_create_from_external_representation(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessRequestIndirect": {
+      "name": "TCCAccessRequestIndirect",
+      "framework": "TCC",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ TCCAccessRequestIndirect(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCAccessRequestIndirectWithOptions",
+        "TCCAccessRequest"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessSetForBundleIdWithOptions": {
+      "name": "TCCAccessSetForBundleIdWithOptions",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessSetForBundleIdWithOptions(TCCAccessRef *ref, uint64_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCAccessSetForCodeIdentity",
+        "TCCAccessSetForBundleIdAndCodeRequirement",
+        "TCCAccessSetForBundleId"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessResetForBundle": {
+      "name": "TCCAccessResetForBundle",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessResetForBundle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_indirect_object_identity": {
+      "name": "tcc_authorization_record_set_indirect_object_identity",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_indirect_object_identity(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_last_modified_date": {
+      "name": "tcc_authorization_record_set_last_modified_date",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_last_modified_date(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCExpirationResetServiceForPath": {
+      "name": "TCCExpirationResetServiceForPath",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCExpirationResetServiceForPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_audit_token_report_use": {
+      "name": "tcc_authorization_audit_token_report_use",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_audit_token_report_use(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_get_reply_handler_queue": {
+      "name": "tcc_server_get_reply_handler_queue",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_get_reply_handler_queue(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_get_nokill_policy": {
+      "name": "tcc_message_options_get_nokill_policy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_get_nokill_policy(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessResetForBundleIdWithAuditToken": {
+      "name": "TCCAccessResetForBundleIdWithAuditToken",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessResetForBundleIdWithAuditToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_bootUUID": {
+      "name": "tcc_authorization_record_set_bootUUID",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_bootUUID(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_set_client_dict": {
+      "name": "tcc_message_options_set_client_dict",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_set_client_dict(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessRequest": {
+      "name": "TCCAccessRequest",
+      "framework": "TCC",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ TCCAccessRequest(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCAccessRequestIndirectWithOptions",
+        "TCCAccessRequestIndirect"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_metrics_set_service_name": {
+      "name": "tcc_metrics_set_service_name",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_metrics_set_service_name(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessOverride": {
+      "name": "TCCAccessOverride",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessOverride(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_set_include_policy": {
+      "name": "tcc_message_options_set_include_policy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_set_include_policy(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_convert_xpc_object_to_record": {
+      "name": "tcc_server_convert_xpc_object_to_record",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_convert_xpc_object_to_record(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_message_request_authorization": {
+      "name": "tcc_server_message_request_authorization",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_message_request_authorization(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_service_get_authorization_prompt_rights_mask": {
+      "name": "tcc_service_get_authorization_prompt_rights_mask",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_service_get_authorization_prompt_rights_mask(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_get_request_usage_string_policy": {
+      "name": "tcc_message_options_get_request_usage_string_policy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_get_request_usage_string_policy(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_expired_at_date": {
+      "name": "tcc_authorization_record_set_expired_at_date",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_expired_at_date(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_authorization_value": {
+      "name": "tcc_authorization_record_get_authorization_value",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_authorization_value(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_credential_create_for_process_with_audit_token": {
+      "name": "tcc_credential_create_for_process_with_audit_token",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_credential_create_for_process_with_audit_token(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_has_prompted_for_allow": {
+      "name": "tcc_authorization_record_set_has_prompted_for_allow",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_has_prompted_for_allow(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_singleton_default": {
+      "name": "tcc_server_singleton_default",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_singleton_default(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_message_get_authorization_records_by_service": {
+      "name": "tcc_server_message_get_authorization_records_by_service",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_message_get_authorization_records_by_service(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCServiceCopyNames": {
+      "name": "TCCServiceCopyNames",
+      "framework": "TCC",
+      "return_type": "TCCServiceRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCServiceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "TCCServiceRef/*?*/ TCCServiceCopyNames(TCCServiceRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "TCCServiceRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCServiceCopyDescriptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_set_authorization_change_handler": {
+      "name": "tcc_server_set_authorization_change_handler",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_set_authorization_change_handler(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAuthCopyDescription": {
+      "name": "TCCAuthCopyDescription",
+      "framework": "TCC",
+      "return_type": "TCCAuthRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAuthRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "TCCAuthRef/*?*/ TCCAuthCopyDescription(TCCAuthRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "TCCAuthRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessSetForBundleIdAndCodeRequirement": {
+      "name": "TCCAccessSetForBundleIdAndCodeRequirement",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessSetForBundleIdAndCodeRequirement(TCCAccessRef *ref, uint64_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCAccessSetForCodeIdentity",
+        "TCCAccessSetForBundleIdWithOptions",
+        "TCCAccessSetForBundleId"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCCreateDesignatedRequirementIdentityFromPath": {
+      "name": "TCCCreateDesignatedRequirementIdentityFromPath",
+      "framework": "TCC",
+      "return_type": "TCCRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "TCCRef TCCCreateDesignatedRequirementIdentityFromPath(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "TCCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCCreateIndirectObjectIdentityFromAuditToken",
+        "TCCCreateIndirectObjectIdentityForFileProviderDomainFromPath",
+        "TCCCopyIconResourcePathForService",
+        "TCCCreateIndirectObjectIdentityFromFileProviderDomainID",
+        "TCCCreateDesignatedRequirementIdentityFromAuditToken"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCServiceCopyDescriptions": {
+      "name": "TCCServiceCopyDescriptions",
+      "framework": "TCC",
+      "return_type": "TCCServiceRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCServiceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "TCCServiceRef/*?*/ TCCServiceCopyDescriptions(TCCServiceRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "TCCServiceRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCServiceCopyNames"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_subject_identity": {
+      "name": "tcc_authorization_record_set_subject_identity",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_subject_identity(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessSetForAuditTokenWithOptions": {
+      "name": "TCCAccessSetForAuditTokenWithOptions",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessSetForAuditTokenWithOptions(TCCAccessRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_set_prompt_string_type": {
+      "name": "tcc_message_options_set_prompt_string_type",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_set_prompt_string_type(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_change_monitor_start_monitoring_service": {
+      "name": "tcc_authorization_change_monitor_start_monitoring_service",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_change_monitor_start_monitoring_service(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_change_monitor_create": {
+      "name": "tcc_authorization_change_monitor_create",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_change_monitor_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessSetOverride": {
+      "name": "TCCAccessSetOverride",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessSetOverride(TCCAccessRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCExpirationResetServiceForBundleIdentifier": {
+      "name": "TCCExpirationResetServiceForBundleIdentifier",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCExpirationResetServiceForBundleIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_subject_attributed_entity": {
+      "name": "tcc_authorization_record_get_subject_attributed_entity",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_subject_attributed_entity(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_request_with_endpoint": {
+      "name": "tcc_authorization_request_with_endpoint",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_request_with_endpoint(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_get_cache_policy": {
+      "name": "tcc_message_options_get_cache_policy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_get_cache_policy(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_attributed_entity_get_type": {
+      "name": "tcc_attributed_entity_get_type",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_attributed_entity_get_type(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_object_equal": {
+      "name": "tcc_object_equal",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_object_equal(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_object_hash": {
+      "name": "tcc_object_hash",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_object_hash(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_cache_set_authorization": {
+      "name": "tcc_authorization_cache_set_authorization",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_cache_set_authorization(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_retain_internal": {
+      "name": "tcc_retain_internal",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_retain_internal(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_message_prompt_authorization_value": {
+      "name": "tcc_server_message_prompt_authorization_value",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_message_prompt_authorization_value(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_indirect_object_attributed_entity": {
+      "name": "tcc_authorization_record_get_indirect_object_attributed_entity",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_indirect_object_attributed_entity(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_create": {
+      "name": "tcc_authorization_record_create",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCTestInternalWithReplyHander4": {
+      "name": "TCCTestInternalWithReplyHander4",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCTestInternalWithReplyHander4(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_non_modifiable": {
+      "name": "tcc_authorization_record_set_non_modifiable",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_non_modifiable(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessCopyOverrides": {
+      "name": "TCCAccessCopyOverrides",
+      "framework": "TCC",
+      "return_type": "TCCAccessRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "TCCAccessRef/*?*/ TCCAccessCopyOverrides(TCCAccessRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "TCCAccessRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCAccessCopyInformation",
+        "TCCAccessCopyInformationForBundle",
+        "TCCAccessCopyBundleIdentifiersDisabledForService",
+        "TCCAccessCopyBundleIdentifiersForService",
+        "TCCAccessCopyInformationForBundleId"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_create_with_endpoint": {
+      "name": "tcc_server_create_with_endpoint",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_create_with_endpoint(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCIntegrityFlagCheck": {
+      "name": "TCCIntegrityFlagCheck",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCIntegrityFlagCheck(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_authorization_right": {
+      "name": "tcc_authorization_record_get_authorization_right",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_authorization_right(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_set_request_record_upgrade_policy": {
+      "name": "tcc_message_options_set_request_record_upgrade_policy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_set_request_record_upgrade_policy(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_set_request_prompt_rights_mask": {
+      "name": "tcc_message_options_set_request_prompt_rights_mask",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_set_request_prompt_rights_mask(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_identity_get_identifier": {
+      "name": "tcc_identity_get_identifier",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_identity_get_identifier(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_identity_get_type": {
+      "name": "tcc_identity_get_type",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_identity_get_type(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessSetForPathWithOptions": {
+      "name": "TCCAccessSetForPathWithOptions",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "const char *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessSetForPathWithOptions(TCCAccessRef *ref, const char * *value)",
+      "verb": "write",
+      "input_formats": [
+        "const char * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCAccessSetForPath"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_service_get_CF_name": {
+      "name": "tcc_service_get_CF_name",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_service_get_CF_name(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_message_set_authorization_change_policy": {
+      "name": "tcc_server_message_set_authorization_change_policy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_message_set_authorization_change_policy(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_authorization_value": {
+      "name": "tcc_authorization_record_set_authorization_value",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_authorization_value(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessSetForAuditToken": {
+      "name": "TCCAccessSetForAuditToken",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessSetForAuditToken(TCCAccessRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_message_get_identity_for_credential": {
+      "name": "tcc_server_message_get_identity_for_credential",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_message_get_identity_for_credential(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_message_credential_report_use": {
+      "name": "tcc_server_message_credential_report_use",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_message_credential_report_use(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_get_reply_handler_policy": {
+      "name": "tcc_message_options_get_reply_handler_policy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_get_reply_handler_policy(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_session_pid_version": {
+      "name": "tcc_authorization_record_set_session_pid_version",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_session_pid_version(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessSetForBundleId": {
+      "name": "TCCAccessSetForBundleId",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessSetForBundleId(TCCAccessRef *ref, uint64_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCAccessSetForCodeIdentity",
+        "TCCAccessSetForBundleIdWithOptions",
+        "TCCAccessSetForBundleIdAndCodeRequirement"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCCopyIconResourcePathForService": {
+      "name": "TCCCopyIconResourcePathForService",
+      "framework": "TCC",
+      "return_type": "TCCRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "TCCRef/*?*/ TCCCopyIconResourcePathForService(TCCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "TCCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCCreateIndirectObjectIdentityFromAuditToken",
+        "TCCCreateIndirectObjectIdentityForFileProviderDomainFromPath",
+        "TCCCreateDesignatedRequirementIdentityFromPath",
+        "TCCCreateIndirectObjectIdentityFromFileProviderDomainID",
+        "TCCCreateDesignatedRequirementIdentityFromAuditToken"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_subject_identity": {
+      "name": "tcc_authorization_record_get_subject_identity",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_subject_identity(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_identity_set_verifier_code_requirement_data": {
+      "name": "tcc_identity_set_verifier_code_requirement_data",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_identity_set_verifier_code_requirement_data(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_get_client_dict": {
+      "name": "tcc_message_options_get_client_dict",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_get_client_dict(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCCreateIndirectObjectIdentityFromFileProviderDomainID": {
+      "name": "TCCCreateIndirectObjectIdentityFromFileProviderDomainID",
+      "framework": "TCC",
+      "return_type": "TCCRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "TCCRef TCCCreateIndirectObjectIdentityFromFileProviderDomainID(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "TCCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCCreateIndirectObjectIdentityFromAuditToken",
+        "TCCCreateIndirectObjectIdentityForFileProviderDomainFromPath",
+        "TCCCreateDesignatedRequirementIdentityFromPath",
+        "TCCCopyIconResourcePathForService",
+        "TCCCreateDesignatedRequirementIdentityFromAuditToken"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCExpirationResetService": {
+      "name": "TCCExpirationResetService",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCExpirationResetService(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_set_nokill_policy": {
+      "name": "tcc_message_options_set_nokill_policy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_set_nokill_policy(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_copy_cached_authorization": {
+      "name": "tcc_server_copy_cached_authorization",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_copy_cached_authorization(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_service_singleton_for_CF_name": {
+      "name": "tcc_service_singleton_for_CF_name",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_service_singleton_for_CF_name(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAuthPromptIconFromServiceName": {
+      "name": "TCCAuthPromptIconFromServiceName",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAuthPromptIconFromServiceName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCCreateDesignatedRequirementIdentityFromAuditToken": {
+      "name": "TCCCreateDesignatedRequirementIdentityFromAuditToken",
+      "framework": "TCC",
+      "return_type": "TCCRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "TCCRef TCCCreateDesignatedRequirementIdentityFromAuditToken(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "TCCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCCreateIndirectObjectIdentityFromAuditToken",
+        "TCCCreateIndirectObjectIdentityForFileProviderDomainFromPath",
+        "TCCCreateDesignatedRequirementIdentityFromPath",
+        "TCCCopyIconResourcePathForService",
+        "TCCCreateIndirectObjectIdentityFromFileProviderDomainID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_attributed_entity_get_path": {
+      "name": "tcc_attributed_entity_get_path",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_attributed_entity_get_path(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_version": {
+      "name": "tcc_authorization_record_set_version",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_version(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessCheckAuditToken": {
+      "name": "TCCAccessCheckAuditToken",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessCheckAuditToken(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_service_singleton_for_name": {
+      "name": "tcc_service_singleton_for_name",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_service_singleton_for_name(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_bootUUID": {
+      "name": "tcc_authorization_record_get_bootUUID",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_bootUUID(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_set_request_prompt_policy": {
+      "name": "tcc_message_options_set_request_prompt_policy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_set_request_prompt_policy(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_session_pid": {
+      "name": "tcc_authorization_record_get_session_pid",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_session_pid(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessCopyInformationForBundle": {
+      "name": "TCCAccessCopyInformationForBundle",
+      "framework": "TCC",
+      "return_type": "TCCAccessRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "TCCAccessRef/*?*/ TCCAccessCopyInformationForBundle(TCCAccessRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "TCCAccessRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCAccessCopyInformation",
+        "TCCAccessCopyOverrides",
+        "TCCAccessCopyBundleIdentifiersDisabledForService",
+        "TCCAccessCopyBundleIdentifiersForService",
+        "TCCAccessCopyInformationForBundleId"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessSelectPolicyForExtensionWithIdentifier": {
+      "name": "TCCAccessSelectPolicyForExtensionWithIdentifier",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessSelectPolicyForExtensionWithIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_cache_handle_authorization_changed_for_service_clear": {
+      "name": "tcc_authorization_cache_handle_authorization_changed_for_service_clear",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_cache_handle_authorization_changed_for_service_clear(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_set_access_with_prompt": {
+      "name": "tcc_authorization_set_access_with_prompt",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_set_access_with_prompt(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_object_copy_description": {
+      "name": "tcc_object_copy_description",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_object_copy_description(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_message_get_authorization_records_by_database": {
+      "name": "tcc_server_message_get_authorization_records_by_database",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_message_get_authorization_records_by_database(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_create": {
+      "name": "tcc_message_options_create",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_message_get_authorization_records_by_identity": {
+      "name": "tcc_server_message_get_authorization_records_by_identity",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_message_get_authorization_records_by_identity(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_service_get_authorization_rights_mask": {
+      "name": "tcc_service_get_authorization_rights_mask",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_service_get_authorization_rights_mask(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_set_database_type": {
+      "name": "tcc_message_options_set_database_type",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_set_database_type(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_events_filter_create_with_criteria": {
+      "name": "tcc_events_filter_create_with_criteria",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_events_filter_create_with_criteria(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_identity_copy_external_representation": {
+      "name": "tcc_identity_copy_external_representation",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_identity_copy_external_representation(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_release_internal": {
+      "name": "tcc_release_internal",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_release_internal(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessCopyBundleIdentifiersDisabledForService": {
+      "name": "TCCAccessCopyBundleIdentifiersDisabledForService",
+      "framework": "TCC",
+      "return_type": "TCCAccessRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "TCCAccessRef/*?*/ TCCAccessCopyBundleIdentifiersDisabledForService(TCCAccessRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "TCCAccessRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCAccessCopyInformation",
+        "TCCAccessCopyOverrides",
+        "TCCAccessCopyInformationForBundle",
+        "TCCAccessCopyBundleIdentifiersForService",
+        "TCCAccessCopyInformationForBundleId"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_set_cache_policy": {
+      "name": "tcc_message_options_set_cache_policy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_set_cache_policy(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessResetPoliciesExcept": {
+      "name": "TCCAccessResetPoliciesExcept",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessResetPoliciesExcept(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessPreflightWithAuditToken": {
+      "name": "TCCAccessPreflightWithAuditToken",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessPreflightWithAuditToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessResetForBundleId": {
+      "name": "TCCAccessResetForBundleId",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessResetForBundleId(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_cache_shared_instance": {
+      "name": "tcc_authorization_cache_shared_instance",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_cache_shared_instance(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_expired_at_date": {
+      "name": "tcc_authorization_record_get_expired_at_date",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_expired_at_date(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_set_authorization_right": {
+      "name": "tcc_authorization_record_set_authorization_right",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_set_authorization_right(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_identity_get_verifier_code_requirement_string": {
+      "name": "tcc_identity_get_verifier_code_requirement_string",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_identity_get_verifier_code_requirement_string(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_identity_get_verifier_type": {
+      "name": "tcc_identity_get_verifier_type",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_identity_get_verifier_type(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_message_set_authorization_value": {
+      "name": "tcc_server_message_set_authorization_value",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_message_set_authorization_value(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCRegisterNewDatabase": {
+      "name": "TCCRegisterNewDatabase",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ TCCRegisterNewDatabase(TCCRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_set_request_usage_string_policy": {
+      "name": "tcc_message_options_set_request_usage_string_policy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_set_request_usage_string_policy(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_send_analytics": {
+      "name": "tcc_server_send_analytics",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_send_analytics(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessSet": {
+      "name": "TCCAccessSet",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessSet(TCCAccessRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_cache_copy_authorization": {
+      "name": "tcc_authorization_cache_copy_authorization",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_cache_copy_authorization(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCTestInternal": {
+      "name": "TCCTestInternal",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCTestInternal(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_credential_create_for_self_with_assumed_identity": {
+      "name": "tcc_credential_create_for_self_with_assumed_identity",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_credential_create_for_self_with_assumed_identity(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_get_request_prompt_rights_mask": {
+      "name": "tcc_message_options_get_request_prompt_rights_mask",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_get_request_prompt_rights_mask(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessGetOverride": {
+      "name": "TCCAccessGetOverride",
+      "framework": "TCC",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ TCCAccessGetOverride(TCCAccessRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessCopyBundleIdentifiersForService": {
+      "name": "TCCAccessCopyBundleIdentifiersForService",
+      "framework": "TCC",
+      "return_type": "TCCAccessRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "TCCAccessRef/*?*/ TCCAccessCopyBundleIdentifiersForService(TCCAccessRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "TCCAccessRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCAccessCopyInformation",
+        "TCCAccessCopyOverrides",
+        "TCCAccessCopyInformationForBundle",
+        "TCCAccessCopyBundleIdentifiersDisabledForService",
+        "TCCAccessCopyInformationForBundleId"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessCopyInformationForBundleId": {
+      "name": "TCCAccessCopyInformationForBundleId",
+      "framework": "TCC",
+      "return_type": "TCCAccessRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "TCCAccessRef/*?*/ TCCAccessCopyInformationForBundleId(TCCAccessRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "TCCAccessRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCAccessCopyInformation",
+        "TCCAccessCopyOverrides",
+        "TCCAccessCopyInformationForBundle",
+        "TCCAccessCopyBundleIdentifiersDisabledForService",
+        "TCCAccessCopyBundleIdentifiersForService"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCCreateDesignatedRequirementIdentityFromAuditTokenForService": {
+      "name": "TCCCreateDesignatedRequirementIdentityFromAuditTokenForService",
+      "framework": "TCC",
+      "return_type": "TCCRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "TCCRef TCCCreateDesignatedRequirementIdentityFromAuditTokenForService(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "TCCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "TCCCreateIndirectObjectIdentityFromAuditToken",
+        "TCCCreateIndirectObjectIdentityForFileProviderDomainFromPath",
+        "TCCCreateDesignatedRequirementIdentityFromPath",
+        "TCCCopyIconResourcePathForService",
+        "TCCCreateIndirectObjectIdentityFromFileProviderDomainID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_get_include_policy": {
+      "name": "tcc_message_options_get_include_policy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_get_include_policy(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_request": {
+      "name": "tcc_authorization_request",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_request(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_get_prompt_string_type": {
+      "name": "tcc_message_options_get_prompt_string_type",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_get_prompt_string_type(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_copy_authorization_cache": {
+      "name": "tcc_server_copy_authorization_cache",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_copy_authorization_cache(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_message_options_get_request_record_upgrade_policy": {
+      "name": "tcc_message_options_get_request_record_upgrade_policy",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_message_options_get_request_record_upgrade_policy(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_message_request_authorization_change": {
+      "name": "tcc_server_message_request_authorization_change",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_message_request_authorization_change(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_has_prompted_for_allow": {
+      "name": "tcc_authorization_record_get_has_prompted_for_allow",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_has_prompted_for_allow(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessRestricted": {
+      "name": "TCCAccessRestricted",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessRestricted(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessResetForPath": {
+      "name": "TCCAccessResetForPath",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessResetForPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessPreflight": {
+      "name": "TCCAccessPreflight",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessPreflight(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_authorization_record_get_version": {
+      "name": "tcc_authorization_record_get_version",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_authorization_record_get_version(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TCCAccessSetForIndirectObject": {
+      "name": "TCCAccessSetForIndirectObject",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "TCCAccessRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ TCCAccessSetForIndirectObject(TCCAccessRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_events_unsubscribe": {
+      "name": "tcc_events_unsubscribe",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_events_unsubscribe(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "tcc_server_cache_authorization": {
+      "name": "tcc_server_cache_authorization",
+      "framework": "TCC",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from TCC"
+        }
+      ],
+      "signature": "void/*?*/ tcc_server_cache_authorization(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "tcc_authorization_cache_shared_instance"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

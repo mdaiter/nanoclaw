@@ -1,0 +1,5473 @@
+{
+  "framework": "AOSKit",
+  "functions": {
+    "_AOSAddAppleID": {
+      "name": "_AOSAddAppleID",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAddAppleID(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchBuddyHelpThread": {
+      "name": "AOSLaunchBuddyHelpThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchBuddyHelpThread(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSRemoveAppleID": {
+      "name": "_AOSRemoveAppleID",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSRemoveAppleID(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchDataclassConfigThread": {
+      "name": "AOSLaunchDataclassConfigThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchDataclassConfigThread(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSAccountCacheNewAuthToken": {
+      "name": "AOSAccountCacheNewAuthToken",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSAccountCacheNewAuthToken(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSShimCopyLoggedInAccount": {
+      "name": "AOSShimCopyLoggedInAccount",
+      "framework": "AOSKit",
+      "return_type": "AOSShimRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSShimRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AOSShimRef/*?*/ AOSShimCopyLoggedInAccount(AOSShimRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AOSShimRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AOSShimCopyPropertiesForService",
+        "AOSShimCopyAccountIDs"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRegisterDevice": {
+      "name": "_AOSAccountRegisterDevice",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSAccountRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRegisterDevice(_AOSAccountRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_didReceiveResponseCallback",
+        "_didFailCallback",
+        "_didFinishLoadingCallback",
+        "AOSLaunchRegisterDeviceThread",
+        "_willCacheResponseCallback"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveTOSInfo": {
+      "name": "_AOSAccountRetrieveTOSInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveTOSInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountUpdateDataclassConfig": {
+      "name": "_AOSAccountUpdateDataclassConfig",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountUpdateDataclassConfig(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_didReceiveResponseCallback": {
+      "name": "_didReceiveResponseCallback",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_didRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ _didReceiveResponseCallback(_didRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "unknown",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSAccountRegisterDevice",
+        "_didFailCallback",
+        "_didFinishLoadingCallback",
+        "AOSLaunchRegisterDeviceThread",
+        "_willCacheResponseCallback"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSAccountCopyAuthInfo": {
+      "name": "AOSAccountCopyAuthInfo",
+      "framework": "AOSKit",
+      "return_type": "AOSAccountRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AOSAccountRef/*?*/ AOSAccountCopyAuthInfo(AOSAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AOSAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AOSAccountCreate",
+        "AOSAccountCopyInfo"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountPerformFamilyEligibilityCheck": {
+      "name": "_AOSAccountPerformFamilyEligibilityCheck",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountPerformFamilyEligibilityCheck(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKGetAccountAttributes": {
+      "name": "AOSKGetAccountAttributes",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSKRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSKGetAccountAttributes(AOSKRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchConfigQueryThread": {
+      "name": "AOSLaunchConfigQueryThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchConfigQueryThread(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_willSendRequestForAuthChallengeCallback": {
+      "name": "_willSendRequestForAuthChallengeCallback",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ _willSendRequestForAuthChallengeCallback(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CreateCFErrorFromRequest",
+        "_AOSAccountGenerateRequestHeaders"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSShimCopyPropertiesForService": {
+      "name": "AOSShimCopyPropertiesForService",
+      "framework": "AOSKit",
+      "return_type": "AOSShimRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSShimRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AOSShimRef/*?*/ AOSShimCopyPropertiesForService(AOSShimRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AOSShimRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AOSShimCopyLoggedInAccount",
+        "AOSShimCopyAccountIDs"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveFamilyMemberPhoto": {
+      "name": "_AOSAccountRetrieveFamilyMemberPhoto",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveFamilyMemberPhoto(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_shouldPinHostName": {
+      "name": "_shouldPinHostName",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _shouldPinHostName(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSDisablePCS": {
+      "name": "_AOSDisablePCS",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSDisablePCS(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveEventDetails": {
+      "name": "_AOSAccountRetrieveEventDetails",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveEventDetails(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKGetQuotaError": {
+      "name": "AOSKGetQuotaError",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSKRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSKGetQuotaError(AOSKRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountHandleNotification": {
+      "name": "_AOSAccountHandleNotification",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountHandleNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSIsBTMMEnabled": {
+      "name": "_AOSIsBTMMEnabled",
+      "framework": "AOSKit",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _AOSIsBTMMEnabled(_AOSRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchBuddyLoginThread": {
+      "name": "AOSLaunchBuddyLoginThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchBuddyLoginThread(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSAccountCreate": {
+      "name": "AOSAccountCreate",
+      "framework": "AOSKit",
+      "return_type": "AOSAccountRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "AOSAccountRef AOSAccountCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "AOSAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AOSAccountCopyAuthInfo",
+        "AOSAccountCopyInfo"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionCreate": {
+      "name": "AOSTransactionCreate",
+      "framework": "AOSKit",
+      "return_type": "AOSTransactionRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "AOSTransactionRef AOSTransactionCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "AOSTransactionRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSStoreAccountInfo": {
+      "name": "AOSStoreAccountInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSStoreAccountInfo(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSModifyBTMMInfo": {
+      "name": "_AOSModifyBTMMInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSModifyBTMMInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKGetEmailAddress": {
+      "name": "AOSKGetEmailAddress",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSKRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSKGetEmailAddress(AOSKRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveFamilyImage": {
+      "name": "_AOSAccountRetrieveFamilyImage",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveFamilyImage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSCreateUnescapedString": {
+      "name": "_AOSCreateUnescapedString",
+      "framework": "AOSKit",
+      "return_type": "_AOSRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_AOSRef _AOSCreateUnescapedString(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_AOSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSCopyBTMMConfigInfo",
+        "_AOSCopyZoneForUser",
+        "_AOSCopyDSIDForZone",
+        "_AOSCopyUserToZoneMapping"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountCopyMemberName": {
+      "name": "_AOSAccountCopyMemberName",
+      "framework": "AOSKit",
+      "return_type": "_AOSAccountRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_AOSAccountRef/*?*/ _AOSAccountCopyMemberName(_AOSAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_AOSAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSAccountCreateWithMemberName",
+        "_AOSAccountCreateFromMobileMePrefs",
+        "_AOSAccountCopyBTMMConfigInfo",
+        "_AOSAccountCopyStoredValue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveMeCardImage": {
+      "name": "_AOSAccountRetrieveMeCardImage",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveMeCardImage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSAccountResolveAuthFailure": {
+      "name": "AOSAccountResolveAuthFailure",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSAccountResolveAuthFailure(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSCopyConfiguredAccountIdentifiers": {
+      "name": "AOSCopyConfiguredAccountIdentifiers",
+      "framework": "AOSKit",
+      "return_type": "AOSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AOSRef/*?*/ AOSCopyConfiguredAccountIdentifiers(AOSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AOSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AOSCopyStoredAccountInfo",
+        "AOSCopyStoredProxyCredentials"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchDocumentsMigrationDevicesThread": {
+      "name": "AOSLaunchDocumentsMigrationDevicesThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchDocumentsMigrationDevicesThread(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKGetQuotaUsed": {
+      "name": "AOSKGetQuotaUsed",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSKRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSKGetQuotaUsed(AOSKRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKGetUserInfo": {
+      "name": "AOSKGetUserInfo",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSKRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSKGetUserInfo(AOSKRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountCreateWithMemberName": {
+      "name": "_AOSAccountCreateWithMemberName",
+      "framework": "AOSKit",
+      "return_type": "_AOSAccountRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_AOSAccountRef _AOSAccountCreateWithMemberName(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_AOSAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSAccountCopyMemberName",
+        "_AOSAccountCreateFromMobileMePrefs",
+        "_AOSAccountCopyBTMMConfigInfo",
+        "_AOSAccountCopyStoredValue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountDeregisterDevice": {
+      "name": "_AOSAccountDeregisterDevice",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountDeregisterDevice(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountUpdateMeCardImage": {
+      "name": "_AOSAccountUpdateMeCardImage",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountUpdateMeCardImage(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSEnablePCS": {
+      "name": "_AOSEnablePCS",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSEnablePCS(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveMeCardPhoto": {
+      "name": "_AOSAccountRetrieveMeCardPhoto",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveMeCardPhoto(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionGetCallbackFunction": {
+      "name": "AOSTransactionGetCallbackFunction",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSTransactionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSTransactionGetCallbackFunction(AOSTransactionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountCreateFromMobileMePrefs": {
+      "name": "_AOSAccountCreateFromMobileMePrefs",
+      "framework": "AOSKit",
+      "return_type": "_AOSAccountRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_AOSAccountRef _AOSAccountCreateFromMobileMePrefs(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_AOSAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSAccountCopyMemberName",
+        "_AOSAccountCreateWithMemberName",
+        "_AOSAccountCopyBTMMConfigInfo",
+        "_AOSAccountCopyStoredValue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionSetIsFinished": {
+      "name": "AOSTransactionSetIsFinished",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSTransactionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AOSTransactionSetIsFinished(AOSTransactionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchPushTokenRetrievalThread": {
+      "name": "AOSLaunchPushTokenRetrievalThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchPushTokenRetrievalThread(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountIsBTMMAuthRequired": {
+      "name": "_AOSAccountIsBTMMAuthRequired",
+      "framework": "AOSKit",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _AOSAccountIsBTMMAuthRequired(_AOSAccountRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKGetAccountInfo": {
+      "name": "AOSKGetAccountInfo",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSKRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSKGetAccountInfo(AOSKRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchBTMMThread": {
+      "name": "AOSLaunchBTMMThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchBTMMThread(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountCopyBTMMConfigInfo": {
+      "name": "_AOSAccountCopyBTMMConfigInfo",
+      "framework": "AOSKit",
+      "return_type": "_AOSAccountRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_AOSAccountRef/*?*/ _AOSAccountCopyBTMMConfigInfo(_AOSAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_AOSAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSAccountCopyMemberName",
+        "_AOSAccountCreateWithMemberName",
+        "_AOSAccountCreateFromMobileMePrefs",
+        "_AOSAccountCopyStoredValue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKGetAccountStatus": {
+      "name": "AOSKGetAccountStatus",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSKRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSKGetAccountStatus(AOSKRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKObtainAccountAttributes": {
+      "name": "AOSKObtainAccountAttributes",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSKObtainAccountAttributes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSShimHandlePushNotification": {
+      "name": "AOSShimHandlePushNotification",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSShimHandlePushNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionGetError": {
+      "name": "AOSTransactionGetError",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSTransactionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSTransactionGetError(AOSTransactionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountDisableBTMMForUser": {
+      "name": "_AOSAccountDisableBTMMForUser",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountDisableBTMMForUser(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountResolveAuthFailure": {
+      "name": "_AOSAccountResolveAuthFailure",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountResolveAuthFailure(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSKASSystem": {
+      "name": "_AOSKASSystem",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSKASSystem(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSLogSystem": {
+      "name": "_AOSLogSystem",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSLogSystem(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_didFailCallback": {
+      "name": "_didFailCallback",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_didRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ _didFailCallback(_didRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "unknown",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSAccountRegisterDevice",
+        "_didReceiveResponseCallback",
+        "_didFinishLoadingCallback",
+        "AOSLaunchRegisterDeviceThread",
+        "_willCacheResponseCallback"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveMBSSOInfo": {
+      "name": "_AOSAccountRetrieveMBSSOInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveMBSSOInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSCopyStoredAccountInfo": {
+      "name": "AOSCopyStoredAccountInfo",
+      "framework": "AOSKit",
+      "return_type": "AOSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AOSRef/*?*/ AOSCopyStoredAccountInfo(AOSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AOSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AOSCopyConfiguredAccountIdentifiers",
+        "AOSCopyStoredProxyCredentials"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAddFMMAccount": {
+      "name": "_AOSAddFMMAccount",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAddFMMAccount(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSAccountGetAppleID": {
+      "name": "AOSAccountGetAppleID",
+      "framework": "AOSKit",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ AOSAccountGetAppleID(AOSAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountTriggerDocumentsMigration": {
+      "name": "_AOSAccountTriggerDocumentsMigration",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountTriggerDocumentsMigration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSAccountRefreshInfo": {
+      "name": "AOSAccountRefreshInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSAccountRefreshInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountIsClassic": {
+      "name": "_AOSAccountIsClassic",
+      "framework": "AOSKit",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _AOSAccountIsClassic(_AOSAccountRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountPerformMBLogin": {
+      "name": "_AOSAccountPerformMBLogin",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountPerformMBLogin(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSRemoveFMMAccount": {
+      "name": "_AOSRemoveFMMAccount",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSRemoveFMMAccount(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRelayCredentials": {
+      "name": "_AOSAccountRelayCredentials",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRelayCredentials(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountHandleAuthFailure": {
+      "name": "_AOSAccountHandleAuthFailure",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountHandleAuthFailure(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveDocumentsMigrationDevices": {
+      "name": "_AOSAccountRetrieveDocumentsMigrationDevices",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveDocumentsMigrationDevices(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKGetMailProperties": {
+      "name": "AOSKGetMailProperties",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSKRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSKGetMailProperties(AOSKRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKFetchConfigPort": {
+      "name": "AOSKFetchConfigPort",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSKFetchConfigPort(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKGetOSInfo": {
+      "name": "AOSKGetOSInfo",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSKRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSKGetOSInfo(AOSKRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSRemoveAccountInfo": {
+      "name": "AOSRemoveAccountInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSRemoveAccountInfo(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionSetResult": {
+      "name": "AOSTransactionSetResult",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSTransactionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AOSTransactionSetResult(AOSTransactionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveFamilyDetails": {
+      "name": "_AOSAccountRetrieveFamilyDetails",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveFamilyDetails(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountShowFamilyAuthAlert": {
+      "name": "_AOSAccountShowFamilyAuthAlert",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountShowFamilyAuthAlert(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "serviceName": {
+      "name": "serviceName",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ serviceName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKGetMailAliases": {
+      "name": "AOSKGetMailAliases",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSKRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSKGetMailAliases(AOSKRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionUpdate": {
+      "name": "AOSTransactionUpdate",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSTransactionUpdate(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveRampState": {
+      "name": "_AOSAccountRetrieveRampState",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveRampState(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRemoveInfo": {
+      "name": "_AOSAccountRemoveInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRemoveInfo(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchRampStateRetrievalThread": {
+      "name": "AOSLaunchRampStateRetrievalThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchRampStateRetrievalThread(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountPerformDelegateLogin": {
+      "name": "_AOSAccountPerformDelegateLogin",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountPerformDelegateLogin(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveMBSignUpInfo": {
+      "name": "_AOSAccountRetrieveMBSignUpInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveMBSignUpInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountFinishSetup": {
+      "name": "_AOSAccountFinishSetup",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSAccountFinishRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountFinishSetup(_AOSAccountFinishRef *ref, void * *value)",
+      "verb": "execute",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSAccountShowTOSDialog": {
+      "name": "AOSAccountShowTOSDialog",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSAccountShowTOSDialog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountHandleAlertDismissal": {
+      "name": "_AOSAccountHandleAlertDismissal",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountHandleAlertDismissal(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountAuthenticate": {
+      "name": "_AOSAccountAuthenticate",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountAuthenticate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountSaveInfo": {
+      "name": "_AOSAccountSaveInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountSaveInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveMBHelpInfo": {
+      "name": "_AOSAccountRetrieveMBHelpInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveMBHelpInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_didFinishLoadingCallback": {
+      "name": "_didFinishLoadingCallback",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_didRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ _didFinishLoadingCallback(_didRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "execute",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSAccountRegisterDevice",
+        "_didReceiveResponseCallback",
+        "_didFailCallback",
+        "AOSLaunchRegisterDeviceThread",
+        "_willCacheResponseCallback"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveMBUpdateInfo": {
+      "name": "_AOSAccountRetrieveMBUpdateInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveMBUpdateInfo(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSDeserializeAccountInfo": {
+      "name": "_AOSDeserializeAccountInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSDeserializeAccountInfo(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchDocumentsMigrationStatusThread": {
+      "name": "AOSLaunchDocumentsMigrationStatusThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchDocumentsMigrationStatusThread(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountDisableBTMM": {
+      "name": "_AOSAccountDisableBTMM",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountDisableBTMM(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSAccountGetProperties": {
+      "name": "AOSAccountGetProperties",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSAccountGetProperties(AOSAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CreateCFErrorFromRequest": {
+      "name": "CreateCFErrorFromRequest",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ CreateCFErrorFromRequest(size_t size)",
+      "verb": "create",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_willSendRequestForAuthChallengeCallback",
+        "_AOSAccountGenerateRequestHeaders"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionGetCallbackQueue": {
+      "name": "AOSTransactionGetCallbackQueue",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSTransactionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSTransactionGetCallbackQueue(AOSTransactionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSShimAccountRefresh": {
+      "name": "AOSShimAccountRefresh",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSShimAccountRefresh(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSShimServiceIsEnabled": {
+      "name": "AOSShimServiceIsEnabled",
+      "framework": "AOSKit",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSShimServiceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool AOSShimServiceIsEnabled(AOSShimServiceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_isCertificateTrusted": {
+      "name": "_isCertificateTrusted",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _isCertificateTrusted(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionSetSuccessful": {
+      "name": "AOSTransactionSetSuccessful",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSTransactionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AOSTransactionSetSuccessful(AOSTransactionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountSetProperties": {
+      "name": "_AOSAccountSetProperties",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSAccountRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountSetProperties(_AOSAccountRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionSetError": {
+      "name": "AOSTransactionSetError",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSTransactionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AOSTransactionSetError(AOSTransactionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrievePushToken": {
+      "name": "_AOSAccountRetrievePushToken",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrievePushToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKCheckAccountType": {
+      "name": "AOSKCheckAccountType",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSKCheckAccountType(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveMailAliases": {
+      "name": "_AOSAccountRetrieveMailAliases",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveMailAliases(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountUpdateName": {
+      "name": "_AOSAccountUpdateName",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountUpdateName(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSCopyBTMMConfigInfo": {
+      "name": "_AOSCopyBTMMConfigInfo",
+      "framework": "AOSKit",
+      "return_type": "_AOSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_AOSRef/*?*/ _AOSCopyBTMMConfigInfo(_AOSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_AOSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSCreateUnescapedString",
+        "_AOSCopyZoneForUser",
+        "_AOSCopyDSIDForZone",
+        "_AOSCopyUserToZoneMapping"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveStorageUsageInfo": {
+      "name": "_AOSAccountRetrieveStorageUsageInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveStorageUsageInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchDocumentsMigrationTriggerThread": {
+      "name": "AOSLaunchDocumentsMigrationTriggerThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchDocumentsMigrationTriggerThread(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchRegisterDeviceThread": {
+      "name": "AOSLaunchRegisterDeviceThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSLaunchRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchRegisterDeviceThread(AOSLaunchRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSAccountRegisterDevice",
+        "_didReceiveResponseCallback",
+        "_didFailCallback",
+        "_didFinishLoadingCallback",
+        "_willCacheResponseCallback"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountWasMigrated": {
+      "name": "_AOSAccountWasMigrated",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountWasMigrated(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSCopyZoneForUser": {
+      "name": "_AOSCopyZoneForUser",
+      "framework": "AOSKit",
+      "return_type": "_AOSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_AOSRef/*?*/ _AOSCopyZoneForUser(_AOSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_AOSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSCreateUnescapedString",
+        "_AOSCopyBTMMConfigInfo",
+        "_AOSCopyDSIDForZone",
+        "_AOSCopyUserToZoneMapping"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSLog": {
+      "name": "_AOSLog",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSLog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRefreshInfo": {
+      "name": "_AOSAccountRefreshInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRefreshInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountUpdateMeCardPhoto": {
+      "name": "_AOSAccountUpdateMeCardPhoto",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountUpdateMeCardPhoto(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountGenerateRequestHeaders": {
+      "name": "_AOSAccountGenerateRequestHeaders",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ _AOSAccountGenerateRequestHeaders(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_willSendRequestForAuthChallengeCallback",
+        "CreateCFErrorFromRequest"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionIsAsync": {
+      "name": "AOSTransactionIsAsync",
+      "framework": "AOSKit",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSTransactionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool AOSTransactionIsAsync(AOSTransactionRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountUpdateSharedMailPrefs": {
+      "name": "_AOSAccountUpdateSharedMailPrefs",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountUpdateSharedMailPrefs(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSAccountCopyInfo": {
+      "name": "AOSAccountCopyInfo",
+      "framework": "AOSKit",
+      "return_type": "AOSAccountRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AOSAccountRef/*?*/ AOSAccountCopyInfo(AOSAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AOSAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AOSAccountCopyAuthInfo",
+        "AOSAccountCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountUpdateGSTokens": {
+      "name": "_AOSAccountUpdateGSTokens",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountUpdateGSTokens(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchStorageUsageThread": {
+      "name": "AOSLaunchStorageUsageThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchStorageUsageThread(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSLogForce": {
+      "name": "_AOSLogForce",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSLogForce(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSModifyBTMMConfigInfo": {
+      "name": "_AOSModifyBTMMConfigInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSModifyBTMMConfigInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_willCacheResponseCallback": {
+      "name": "_willCacheResponseCallback",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "void *",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ _willCacheResponseCallback(void * *ref, void (*)(void *) callback, void *context)",
+      "verb": "unknown",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSAccountRegisterDevice",
+        "_didReceiveResponseCallback",
+        "_didFailCallback",
+        "_didFinishLoadingCallback",
+        "AOSLaunchRegisterDeviceThread"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveDocumentsMigrationStatus": {
+      "name": "_AOSAccountRetrieveDocumentsMigrationStatus",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveDocumentsMigrationStatus(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_didReceiveDataCallback": {
+      "name": "_didReceiveDataCallback",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_didRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ _didReceiveDataCallback(_didRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "unknown",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSAccountRegisterDevice",
+        "_didReceiveResponseCallback",
+        "_didFailCallback",
+        "_didFinishLoadingCallback",
+        "AOSLaunchRegisterDeviceThread"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKGetAccountState": {
+      "name": "AOSKGetAccountState",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSKRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSKGetAccountState(AOSKRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRegisterAll": {
+      "name": "_AOSAccountRegisterAll",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSAccountRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRegisterAll(_AOSAccountRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSAccountRegisterDevice",
+        "_didReceiveResponseCallback",
+        "_didFailCallback",
+        "_didFinishLoadingCallback",
+        "AOSLaunchRegisterDeviceThread"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionSuccessful": {
+      "name": "AOSTransactionSuccessful",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSTransactionSuccessful(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionWaitUntilFinished": {
+      "name": "AOSTransactionWaitUntilFinished",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "synchronization"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSTransactionWaitUntilFinished(void)",
+      "verb": "synchronize",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveDeviceList": {
+      "name": "_AOSAccountRetrieveDeviceList",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveDeviceList(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountPerformMembershipCheck": {
+      "name": "_AOSAccountPerformMembershipCheck",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountPerformMembershipCheck(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchDeviceListRetrievalThread": {
+      "name": "AOSLaunchDeviceListRetrievalThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchDeviceListRetrievalThread(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSRetrieveFMMAccount": {
+      "name": "_AOSRetrieveFMMAccount",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSRetrieveFMMAccount(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKObtainAccountInfo": {
+      "name": "AOSKObtainAccountInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSKObtainAccountInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSCopyDSIDForZone": {
+      "name": "_AOSCopyDSIDForZone",
+      "framework": "AOSKit",
+      "return_type": "_AOSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_AOSRef/*?*/ _AOSCopyDSIDForZone(_AOSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_AOSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSCreateUnescapedString",
+        "_AOSCopyBTMMConfigInfo",
+        "_AOSCopyZoneForUser",
+        "_AOSCopyUserToZoneMapping"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionIsFinished": {
+      "name": "AOSTransactionIsFinished",
+      "framework": "AOSKit",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSTransactionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool AOSTransactionIsFinished(AOSTransactionRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKGetQuotaAvailable": {
+      "name": "AOSKGetQuotaAvailable",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSKRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSKGetQuotaAvailable(AOSKRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveGSToken": {
+      "name": "_AOSAccountRetrieveGSToken",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveGSToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKObtainAccountCredentials": {
+      "name": "AOSKObtainAccountCredentials",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSKObtainAccountCredentials(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSKeychainProxySystem": {
+      "name": "_AOSKeychainProxySystem",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSKeychainProxySystem(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSAccountShowAuthDialog": {
+      "name": "AOSAccountShowAuthDialog",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSAccountShowAuthDialog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountIsBTMMEnabled": {
+      "name": "_AOSAccountIsBTMMEnabled",
+      "framework": "AOSKit",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _AOSAccountIsBTMMEnabled(_AOSAccountRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountEnableBTMM": {
+      "name": "_AOSAccountEnableBTMM",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountEnableBTMM(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveMailAliasInfo": {
+      "name": "_AOSAccountRetrieveMailAliasInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveMailAliasInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKValidateAccountCredenitals": {
+      "name": "AOSKValidateAccountCredenitals",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSKValidateAccountCredenitals(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchSystemCheckThread": {
+      "name": "AOSLaunchSystemCheckThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchSystemCheckThread(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountPerformEmailLookup": {
+      "name": "_AOSAccountPerformEmailLookup",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountPerformEmailLookup(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchEmailLookupThread": {
+      "name": "AOSLaunchEmailLookupThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchEmailLookupThread(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSAccountGetPassword": {
+      "name": "AOSAccountGetPassword",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSAccountGetPassword(AOSAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSShimCopyAccountIDs": {
+      "name": "AOSShimCopyAccountIDs",
+      "framework": "AOSKit",
+      "return_type": "AOSShimRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSShimRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AOSShimRef/*?*/ AOSShimCopyAccountIDs(AOSShimRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AOSShimRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AOSShimCopyLoggedInAccount",
+        "AOSShimCopyPropertiesForService"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSCopyStoredProxyCredentials": {
+      "name": "AOSCopyStoredProxyCredentials",
+      "framework": "AOSKit",
+      "return_type": "AOSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AOSRef/*?*/ AOSCopyStoredProxyCredentials(AOSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AOSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AOSCopyConfiguredAccountIdentifiers",
+        "AOSCopyStoredAccountInfo"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRefreshAll": {
+      "name": "_AOSAccountRefreshAll",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRefreshAll(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionCancel": {
+      "name": "AOSTransactionCancel",
+      "framework": "AOSKit",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSTransactionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool AOSTransactionCancel(AOSTransactionRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSRelayCookie": {
+      "name": "_AOSRelayCookie",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSRelayCookie(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSShimAccountCopyProperty": {
+      "name": "AOSShimAccountCopyProperty",
+      "framework": "AOSKit",
+      "return_type": "AOSShimAccountRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSShimAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AOSShimAccountRef/*?*/ AOSShimAccountCopyProperty(AOSShimAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AOSShimAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveConfigInfoForKey": {
+      "name": "_AOSAccountRetrieveConfigInfoForKey",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveConfigInfoForKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSShimAppleIDForDSID": {
+      "name": "AOSShimAppleIDForDSID",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSShimAppleIDForDSID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSAccountGetUser": {
+      "name": "AOSAccountGetUser",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSAccountGetUser(AOSAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountStoreValue": {
+      "name": "_AOSAccountStoreValue",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountStoreValue(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSSecItemSystem": {
+      "name": "_AOSSecItemSystem",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSSecItemSystem(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_didReceiveAuthChallengeCallback": {
+      "name": "_didReceiveAuthChallengeCallback",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_didRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ _didReceiveAuthChallengeCallback(_didRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "unknown",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSAccountRegisterDevice",
+        "_didReceiveResponseCallback",
+        "_didFailCallback",
+        "_didFinishLoadingCallback",
+        "AOSLaunchRegisterDeviceThread"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveInfo": {
+      "name": "_AOSAccountRetrieveInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchDeregisterDeviceThread": {
+      "name": "AOSLaunchDeregisterDeviceThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchDeregisterDeviceThread(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSCopyUserToZoneMapping": {
+      "name": "_AOSCopyUserToZoneMapping",
+      "framework": "AOSKit",
+      "return_type": "_AOSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_AOSRef/*?*/ _AOSCopyUserToZoneMapping(_AOSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_AOSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSCreateUnescapedString",
+        "_AOSCopyBTMMConfigInfo",
+        "_AOSCopyZoneForUser",
+        "_AOSCopyDSIDForZone"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSStoreProxyCredentials": {
+      "name": "AOSStoreProxyCredentials",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSStoreProxyCredentials(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_ShowPasswordChangedAlert": {
+      "name": "_ShowPasswordChangedAlert",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _ShowPasswordChangedAlert(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSShimServiceSetEnabled": {
+      "name": "AOSShimServiceSetEnabled",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSShimServiceRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AOSShimServiceSetEnabled(AOSShimServiceRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionGetContext": {
+      "name": "AOSTransactionGetContext",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSTransactionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSTransactionGetContext(AOSTransactionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLaunchDelegateLoginThread": {
+      "name": "AOSLaunchDelegateLoginThread",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ AOSLaunchDelegateLoginThread(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSKGetAccountType": {
+      "name": "AOSKGetAccountType",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSKRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSKGetAccountType(AOSKRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountShowAuthAlert": {
+      "name": "_AOSAccountShowAuthAlert",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountShowAuthAlert(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionGetResult": {
+      "name": "AOSTransactionGetResult",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSTransactionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSTransactionGetResult(AOSTransactionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSTransactionGetCallbackBlock": {
+      "name": "AOSTransactionGetCallbackBlock",
+      "framework": "AOSKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSTransactionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSTransactionGetCallbackBlock(AOSTransactionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountCopyStoredValue": {
+      "name": "_AOSAccountCopyStoredValue",
+      "framework": "AOSKit",
+      "return_type": "_AOSAccountRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_AOSAccountRef/*?*/ _AOSAccountCopyStoredValue(_AOSAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_AOSAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AOSAccountCopyMemberName",
+        "_AOSAccountCreateWithMemberName",
+        "_AOSAccountCreateFromMobileMePrefs",
+        "_AOSAccountCopyBTMMConfigInfo"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRefreshBTMMInfo": {
+      "name": "_AOSAccountRefreshBTMMInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRefreshBTMMInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSSecKeychainSystem": {
+      "name": "_AOSSecKeychainSystem",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSSecKeychainSystem(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSSerializeAccountInfo": {
+      "name": "_AOSSerializeAccountInfo",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSSerializeAccountInfo(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountUsernameIsEmailAddress": {
+      "name": "_AOSAccountUsernameIsEmailAddress",
+      "framework": "AOSKit",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSAccountUsernameRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _AOSAccountUsernameIsEmailAddress(_AOSAccountUsernameRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountRetrieveMailProperties": {
+      "name": "_AOSAccountRetrieveMailProperties",
+      "framework": "AOSKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSKit"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountRetrieveMailProperties(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "synchronization": [
+      "AOSTransactionWaitUntilFinished"
+    ],
+    "gpu_compute": [
+      "AOSLaunchRampStateRetrievalThread",
+      "_AOSAccountRetrieveRampState"
+    ],
+    "cryptography": [
+      "_AOSAccountRefreshAll",
+      "_AOSAccountUpdateSharedMailPrefs"
+    ],
+    "image_processing": [
+      "_AOSAccountRetrieveFamilyImage",
+      "_AOSAccountRetrieveMeCardImage",
+      "_AOSAccountUpdateMeCardImage"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

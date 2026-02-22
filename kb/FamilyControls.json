@@ -1,0 +1,2615 @@
+{
+  "framework": "FamilyControls",
+  "functions": {
+    "FCCopyAppDisplayNameForUser": {
+      "name": "FCCopyAppDisplayNameForUser",
+      "framework": "FamilyControls",
+      "return_type": "FCRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FCRef/*?*/ FCCopyAppDisplayNameForUser(FCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FCCopyBundleIDFudgingIfNecessary",
+        "FCCopyDesignatedRequirement",
+        "FCCopyInfoDictFudgingIfNecessary",
+        "FCCreateAppSignature",
+        "FCCopyBundleNameFudgingIfNecessary"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCGetStringFromOSType": {
+      "name": "FCGetStringFromOSType",
+      "framework": "FamilyControls",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ FCGetStringFromOSType(FCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FCGetAllWidgetPaths",
+        "FCGetAppPathsAtPath"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCSafariCopyExistingBookmarks": {
+      "name": "FCSafariCopyExistingBookmarks",
+      "framework": "FamilyControls",
+      "return_type": "FCSafariRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCSafariRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FCSafariRef/*?*/ FCSafariCopyExistingBookmarks(FCSafariRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FCSafariRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FCSafariCreateBookmarksFromFlatArray"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGContentFilterPageWasBlocked": {
+      "name": "_FCMIGContentFilterPageWasBlocked",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGContentFilterPageWasBlocked(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCMacIsInRecovery": {
+      "name": "FCMacIsInRecovery",
+      "framework": "FamilyControls",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCMacRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool FCMacIsInRecovery(FCMacRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCAppIsSignedByAppStore": {
+      "name": "FCAppIsSignedByAppStore",
+      "framework": "FamilyControls",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCAppRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool FCAppIsSignedByAppStore(FCAppRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCSafariGetWhiteListForUser": {
+      "name": "FCSafariGetWhiteListForUser",
+      "framework": "FamilyControls",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCSafariRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ FCSafariGetWhiteListForUser(FCSafariRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCSafariAddToWhiteList": {
+      "name": "FCSafariAddToWhiteList",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCSafariAddToWhiteList(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGResetUsageData": {
+      "name": "_FCMIGResetUsageData",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGResetUsageData(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGSaveUsageData": {
+      "name": "_FCMIGSaveUsageData",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGSaveUsageData(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGUserCanLogin": {
+      "name": "_FCMIGUserCanLogin",
+      "framework": "FamilyControls",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FCMIGUserRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _FCMIGUserCanLogin(_FCMIGUserRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCHasAppLaunchRestrictions": {
+      "name": "FCHasAppLaunchRestrictions",
+      "framework": "FamilyControls",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool FCHasAppLaunchRestrictions(FCRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGOverrideWebBlock": {
+      "name": "_FCMIGOverrideWebBlock",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGOverrideWebBlock(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGLaunch": {
+      "name": "_FCMIGLaunch",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGLaunch(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGSafariVisitedPage": {
+      "name": "_FCMIGSafariVisitedPage",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGSafariVisitedPage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCNextForcedUserLogout": {
+      "name": "FCNextForcedUserLogout",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCNextForcedUserLogout(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGExecuteRequestForUser": {
+      "name": "_FCMIGExecuteRequestForUser",
+      "framework": "FamilyControls",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ _FCMIGExecuteRequestForUser(size_t size)",
+      "verb": "execute",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FCInitAppLaunchRestrictions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCFindAppPathsAtPath": {
+      "name": "FCFindAppPathsAtPath",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCFindAppPathsAtPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGNotifyKernelOfDetachedSignature": {
+      "name": "_FCMIGNotifyKernelOfDetachedSignature",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGNotifyKernelOfDetachedSignature(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCSafariRemoveFromWhiteList": {
+      "name": "FCSafariRemoveFromWhiteList",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCSafariRemoveFromWhiteList(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCAppLaunchWasBlocked": {
+      "name": "FCAppLaunchWasBlocked",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCAppLaunchWasBlocked(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCGetAllWidgetPaths": {
+      "name": "FCGetAllWidgetPaths",
+      "framework": "FamilyControls",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ FCGetAllWidgetPaths(FCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FCGetStringFromOSType",
+        "FCGetAppPathsAtPath"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSLogForCategory": {
+      "name": "OSLogForCategory",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ OSLogForCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCTimeDurationString": {
+      "name": "FCTimeDurationString",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCTimeDurationString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCManagedPreferencesDirectoryForUserName": {
+      "name": "FCManagedPreferencesDirectoryForUserName",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCManagedPreferencesDirectoryForUserName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCSafariWriteUserBookmarksToBookmarksFile": {
+      "name": "FCSafariWriteUserBookmarksToBookmarksFile",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCSafariWriteUserBookmarksToBookmarksFile(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCWeekendLength": {
+      "name": "FCWeekendLength",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCWeekendLength(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCSafariWriteBookmarks": {
+      "name": "FCSafariWriteBookmarks",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCSafariWriteBookmarks(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCCopyBundleIDFudgingIfNecessary": {
+      "name": "FCCopyBundleIDFudgingIfNecessary",
+      "framework": "FamilyControls",
+      "return_type": "FCRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FCRef/*?*/ FCCopyBundleIDFudgingIfNecessary(FCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FCCopyAppDisplayNameForUser",
+        "FCCopyDesignatedRequirement",
+        "FCCopyInfoDictFudgingIfNecessary",
+        "FCCreateAppSignature",
+        "FCCopyBundleNameFudgingIfNecessary"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SortDictFromDesc": {
+      "name": "SortDictFromDesc",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ SortDictFromDesc(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGAppLaunchBlocked": {
+      "name": "_FCMIGAppLaunchBlocked",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGAppLaunchBlocked(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCExistsManagedUsers": {
+      "name": "FCExistsManagedUsers",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCExistsManagedUsers(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCIsAppAllowedToLaunch": {
+      "name": "FCIsAppAllowedToLaunch",
+      "framework": "FamilyControls",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool FCIsAppAllowedToLaunch(FCRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCSafariPageWasBlocked": {
+      "name": "FCSafariPageWasBlocked",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCSafariPageWasBlocked(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetICUWeekdayWeekendInfo": {
+      "name": "GetICUWeekdayWeekendInfo",
+      "framework": "FamilyControls",
+      "return_type": "void *",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GetICUWeekdayWeekendInfo(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGAppCanSublaunch": {
+      "name": "_FCMIGAppCanSublaunch",
+      "framework": "FamilyControls",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FCMIGAppRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _FCMIGAppCanSublaunch(_FCMIGAppRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGHasAppLaunchRestrictions": {
+      "name": "_FCMIGHasAppLaunchRestrictions",
+      "framework": "FamilyControls",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FCMIGRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _FCMIGHasAppLaunchRestrictions(_FCMIGRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGListeningStatusChanged": {
+      "name": "_FCMIGListeningStatusChanged",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGListeningStatusChanged(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGOverrideTimeControls": {
+      "name": "_FCMIGOverrideTimeControls",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGOverrideTimeControls(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCLaunchDaemon": {
+      "name": "FCLaunchDaemon",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCLaunchDaemon(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGAppCanLaunch": {
+      "name": "_FCMIGAppCanLaunch",
+      "framework": "FamilyControls",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FCMIGAppRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _FCMIGAppCanLaunch(_FCMIGAppRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCAppIsSignedByApple": {
+      "name": "FCAppIsSignedByApple",
+      "framework": "FamilyControls",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCAppRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool FCAppIsSignedByApple(FCAppRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCNotifyKernelOfDetachedSignature": {
+      "name": "FCNotifyKernelOfDetachedSignature",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCNotifyKernelOfDetachedSignature(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCiChatSaveChatLog": {
+      "name": "FCiChatSaveChatLog",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCiChatSaveChatLog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCIsAppAllowedToLaunchExt": {
+      "name": "FCIsAppAllowedToLaunchExt",
+      "framework": "FamilyControls",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool FCIsAppAllowedToLaunchExt(FCRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCCopyDesignatedRequirement": {
+      "name": "FCCopyDesignatedRequirement",
+      "framework": "FamilyControls",
+      "return_type": "FCRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FCRef/*?*/ FCCopyDesignatedRequirement(FCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FCCopyAppDisplayNameForUser",
+        "FCCopyBundleIDFudgingIfNecessary",
+        "FCCopyInfoDictFudgingIfNecessary",
+        "FCCreateAppSignature",
+        "FCCopyBundleNameFudgingIfNecessary"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGMailRemoveContactFromWhiteList": {
+      "name": "_FCMIGMailRemoveContactFromWhiteList",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGMailRemoveContactFromWhiteList(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCCopyInfoDictFudgingIfNecessary": {
+      "name": "FCCopyInfoDictFudgingIfNecessary",
+      "framework": "FamilyControls",
+      "return_type": "FCRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FCRef/*?*/ FCCopyInfoDictFudgingIfNecessary(FCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FCCopyAppDisplayNameForUser",
+        "FCCopyBundleIDFudgingIfNecessary",
+        "FCCopyDesignatedRequirement",
+        "FCCreateAppSignature",
+        "FCCopyBundleNameFudgingIfNecessary"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGReadSettings": {
+      "name": "_FCMIGReadSettings",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FCMIGReadRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGReadSettings(_FCMIGReadRef *ref, void * *value)",
+      "verb": "read",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGSafariReadExistingBookmarks": {
+      "name": "_FCMIGSafariReadExistingBookmarks",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGSafariReadExistingBookmarks(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCInitAppLaunchRestrictions": {
+      "name": "FCInitAppLaunchRestrictions",
+      "framework": "FamilyControls",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ FCInitAppLaunchRestrictions(void *buf, size_t size)",
+      "verb": "create",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_FCMIGExecuteRequestForUser"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCPrefDomainsRequireDaemon": {
+      "name": "FCPrefDomainsRequireDaemon",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCPrefDomainsRequireDaemon(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetUserShortNameForUID": {
+      "name": "GetUserShortNameForUID",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ GetUserShortNameForUID(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCCreateAppSignature": {
+      "name": "FCCreateAppSignature",
+      "framework": "FamilyControls",
+      "return_type": "FCRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FCRef FCCreateAppSignature(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FCCopyAppDisplayNameForUser",
+        "FCCopyBundleIDFudgingIfNecessary",
+        "FCCopyDesignatedRequirement",
+        "FCCopyInfoDictFudgingIfNecessary",
+        "FCCopyBundleNameFudgingIfNecessary"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCCopyBundleNameFudgingIfNecessary": {
+      "name": "FCCopyBundleNameFudgingIfNecessary",
+      "framework": "FamilyControls",
+      "return_type": "FCRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FCRef/*?*/ FCCopyBundleNameFudgingIfNecessary(FCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FCCopyAppDisplayNameForUser",
+        "FCCopyBundleIDFudgingIfNecessary",
+        "FCCopyDesignatedRequirement",
+        "FCCopyInfoDictFudgingIfNecessary",
+        "FCCreateAppSignature"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCCopyDetachedSignature": {
+      "name": "FCCopyDetachedSignature",
+      "framework": "FamilyControls",
+      "return_type": "FCRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FCRef/*?*/ FCCopyDetachedSignature(FCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FCCopyAppDisplayNameForUser",
+        "FCCopyBundleIDFudgingIfNecessary",
+        "FCCopyDesignatedRequirement",
+        "FCCopyInfoDictFudgingIfNecessary",
+        "FCCreateAppSignature"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCSafariCreateBookmarksFromFlatArray": {
+      "name": "FCSafariCreateBookmarksFromFlatArray",
+      "framework": "FamilyControls",
+      "return_type": "FCSafariRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FCSafariRef FCSafariCreateBookmarksFromFlatArray(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FCSafariRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FCSafariCopyExistingBookmarks"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGMailAddContactsToWhiteList": {
+      "name": "_FCMIGMailAddContactsToWhiteList",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGMailAddContactsToWhiteList(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "UserIsLoggedIn": {
+      "name": "UserIsLoggedIn",
+      "framework": "FamilyControls",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "UserRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool UserIsLoggedIn(UserRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCPreferredLanguageForUserName": {
+      "name": "FCPreferredLanguageForUserName",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCPreferredLanguageForUserName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGNextForcedUserLogout": {
+      "name": "_FCMIGNextForcedUserLogout",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGNextForcedUserLogout(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCGetLocalManagedUsers": {
+      "name": "FCGetLocalManagedUsers",
+      "framework": "FamilyControls",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ FCGetLocalManagedUsers(FCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCCopyInstalledApplications": {
+      "name": "FCCopyInstalledApplications",
+      "framework": "FamilyControls",
+      "return_type": "FCRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FCRef/*?*/ FCCopyInstalledApplications(FCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FCCopyAppDisplayNameForUser",
+        "FCCopyBundleIDFudgingIfNecessary",
+        "FCCopyDesignatedRequirement",
+        "FCCopyInfoDictFudgingIfNecessary",
+        "FCCreateAppSignature"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCCreateDesignatedRequirement": {
+      "name": "FCCreateDesignatedRequirement",
+      "framework": "FamilyControls",
+      "return_type": "FCRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FCRef FCCreateDesignatedRequirement(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FCCopyAppDisplayNameForUser",
+        "FCCopyBundleIDFudgingIfNecessary",
+        "FCCopyDesignatedRequirement",
+        "FCCopyInfoDictFudgingIfNecessary",
+        "FCCreateAppSignature"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCFolderForUserName": {
+      "name": "FCFolderForUserName",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCFolderForUserName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCAppIsSigned": {
+      "name": "FCAppIsSigned",
+      "framework": "FamilyControls",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCAppRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool FCAppIsSigned(FCAppRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCSafariHasWebSiteRestrictions": {
+      "name": "FCSafariHasWebSiteRestrictions",
+      "framework": "FamilyControls",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCSafariRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool FCSafariHasWebSiteRestrictions(FCSafariRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCGetAppPathsAtPath": {
+      "name": "FCGetAppPathsAtPath",
+      "framework": "FamilyControls",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ FCGetAppPathsAtPath(FCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FCGetStringFromOSType",
+        "FCGetAllWidgetPaths"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCManagedDomainsForUser": {
+      "name": "FCManagedDomainsForUser",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCManagedDomainsForUser(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCUserCanLogin": {
+      "name": "FCUserCanLogin",
+      "framework": "FamilyControls",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FCUserRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool FCUserCanLogin(FCUserRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGCreateMOCProxyForUser": {
+      "name": "_FCMIGCreateMOCProxyForUser",
+      "framework": "FamilyControls",
+      "return_type": "_FCMIGRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_FCMIGRef _FCMIGCreateMOCProxyForUser(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_FCMIGRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gICUInfo": {
+      "name": "gICUInfo",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ gICUInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCCreateTempKeychainForCodesigning": {
+      "name": "FCCreateTempKeychainForCodesigning",
+      "framework": "FamilyControls",
+      "return_type": "FCRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FCRef FCCreateTempKeychainForCodesigning(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FCRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FCCopyAppDisplayNameForUser",
+        "FCCopyBundleIDFudgingIfNecessary",
+        "FCCopyDesignatedRequirement",
+        "FCCopyInfoDictFudgingIfNecessary",
+        "FCCreateAppSignature"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCValidateSignedApplication": {
+      "name": "FCValidateSignedApplication",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCValidateSignedApplication(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCWorkWeekLength": {
+      "name": "FCWorkWeekLength",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCWorkWeekLength(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGClearLogsForUser": {
+      "name": "_FCMIGClearLogsForUser",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGClearLogsForUser(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGReleaseMOCProxyForUser": {
+      "name": "_FCMIGReleaseMOCProxyForUser",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGReleaseMOCProxyForUser(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGReadOverrides": {
+      "name": "_FCMIGReadOverrides",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGReadOverrides(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGiChatSaveChatLog": {
+      "name": "_FCMIGiChatSaveChatLog",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGiChatSaveChatLog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCMailAddToWhiteList": {
+      "name": "FCMailAddToWhiteList",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCMailAddToWhiteList(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCContentFilterPageWasBlocked": {
+      "name": "FCContentFilterPageWasBlocked",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCContentFilterPageWasBlocked(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCMailRemoveFromWhiteList": {
+      "name": "FCMailRemoveFromWhiteList",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCMailRemoveFromWhiteList(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ReversePathComponentCountSort": {
+      "name": "ReversePathComponentCountSort",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ ReversePathComponentCountSort(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SortDescFromDict": {
+      "name": "SortDescFromDict",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ SortDescFromDict(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGAppSublaunchBlocked": {
+      "name": "_FCMIGAppSublaunchBlocked",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGAppSublaunchBlocked(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGContentFilterPageWasVisited": {
+      "name": "_FCMIGContentFilterPageWasVisited",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGContentFilterPageWasVisited(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCAuthorizeManagedUserLogin": {
+      "name": "FCAuthorizeManagedUserLogin",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCAuthorizeManagedUserLogin(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "UIDForShortName": {
+      "name": "UIDForShortName",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ UIDForShortName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FCMIGSafariWriteBookmarks": {
+      "name": "_FCMIGSafariWriteBookmarks",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ _FCMIGSafariWriteBookmarks(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FCSafariVisitedPage": {
+      "name": "FCSafariVisitedPage",
+      "framework": "FamilyControls",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from FamilyControls"
+        }
+      ],
+      "signature": "void/*?*/ FCSafariVisitedPage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "gpu_compute": [
+      "FCNotifyKernelOfDetachedSignature",
+      "_FCMIGNotifyKernelOfDetachedSignature"
+    ],
+    "display_compositing": [
+      "FCCopyAppDisplayNameForUser"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

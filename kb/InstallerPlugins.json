@@ -1,0 +1,395 @@
+{
+  "framework": "InstallerPlugins",
+  "functions": {
+    "InstallerSection_IsRunningFromInstallMedia": {
+      "name": "InstallerSection_IsRunningFromInstallMedia",
+      "framework": "InstallerPlugins",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "InstallerSection_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from InstallerPlugins"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool InstallerSection_IsRunningFromInstallMedia(InstallerSection_Ref *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "InstallerState_LicenseAgreedLanguage": {
+      "name": "InstallerState_LicenseAgreedLanguage",
+      "framework": "InstallerPlugins",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from InstallerPlugins"
+        }
+      ],
+      "signature": "void/*?*/ InstallerState_LicenseAgreedLanguage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "InstallerState_TargetVolumePath": {
+      "name": "InstallerState_TargetVolumePath",
+      "framework": "InstallerPlugins",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from InstallerPlugins"
+        }
+      ],
+      "signature": "void/*?*/ InstallerState_TargetVolumePath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "InstallerState_InstallStarted": {
+      "name": "InstallerState_InstallStarted",
+      "framework": "InstallerPlugins",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from InstallerPlugins"
+        }
+      ],
+      "signature": "void/*?*/ InstallerState_InstallStarted(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "InstallerState_ChoiceDictionaries": {
+      "name": "InstallerState_ChoiceDictionaries",
+      "framework": "InstallerPlugins",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from InstallerPlugins"
+        }
+      ],
+      "signature": "void/*?*/ InstallerState_ChoiceDictionaries(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMC_TargetProcessingDidCompleteNotification": {
+      "name": "TMC_TargetProcessingDidCompleteNotification",
+      "framework": "InstallerPlugins",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from InstallerPlugins"
+        }
+      ],
+      "signature": "void/*?*/ TMC_TargetProcessingDidCompleteNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "TMC_MatrixContentsDidChangeNotification": {
+      "name": "TMC_MatrixContentsDidChangeNotification",
+      "framework": "InstallerPlugins",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from InstallerPlugins"
+        }
+      ],
+      "signature": "void/*?*/ TMC_MatrixContentsDidChangeNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "logdatasource_notify": {
+      "name": "logdatasource_notify",
+      "framework": "InstallerPlugins",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from InstallerPlugins"
+        }
+      ],
+      "signature": "void/*?*/ logdatasource_notify(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "InstallerState_Choice_Identifier": {
+      "name": "InstallerState_Choice_Identifier",
+      "framework": "InstallerPlugins",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from InstallerPlugins"
+        }
+      ],
+      "signature": "void/*?*/ InstallerState_Choice_Identifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "InstallerState_Choice_CustomLocation": {
+      "name": "InstallerState_Choice_CustomLocation",
+      "framework": "InstallerPlugins",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from InstallerPlugins"
+        }
+      ],
+      "signature": "void/*?*/ InstallerState_Choice_CustomLocation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "InstallerState_LicenseAgreed": {
+      "name": "InstallerState_LicenseAgreed",
+      "framework": "InstallerPlugins",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from InstallerPlugins"
+        }
+      ],
+      "signature": "void/*?*/ InstallerState_LicenseAgreed(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IS_InstallerSectionClosing_Notification": {
+      "name": "IS_InstallerSectionClosing_Notification",
+      "framework": "InstallerPlugins",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from InstallerPlugins"
+        }
+      ],
+      "signature": "void/*?*/ IS_InstallerSectionClosing_Notification(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "InstallerState_Choice_Installed": {
+      "name": "InstallerState_Choice_Installed",
+      "framework": "InstallerPlugins",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from InstallerPlugins"
+        }
+      ],
+      "signature": "void/*?*/ InstallerState_Choice_Installed(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "regExCompare": {
+      "name": "regExCompare",
+      "framework": "InstallerPlugins",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from InstallerPlugins"
+        }
+      ],
+      "signature": "void/*?*/ regExCompare(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "InstallerState_TargetPath": {
+      "name": "InstallerState_TargetPath",
+      "framework": "InstallerPlugins",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from InstallerPlugins"
+        }
+      ],
+      "signature": "void/*?*/ InstallerState_TargetPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "InstallerState_InstallSucceeded": {
+      "name": "InstallerState_InstallSucceeded",
+      "framework": "InstallerPlugins",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from InstallerPlugins"
+        }
+      ],
+      "signature": "void/*?*/ InstallerState_InstallSucceeded(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "linear_algebra": [
+      "TMC_MatrixContentsDidChangeNotification"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

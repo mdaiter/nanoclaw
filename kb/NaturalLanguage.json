@@ -1,0 +1,6040 @@
+{
+  "framework": "NaturalLanguage",
+  "functions": {
+    "NLPSequenceModelCreateWithURL": {
+      "name": "NLPSequenceModelCreateWithURL",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPSequenceModelRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NLPSequenceModelRef NLPSequenceModelCreateWithURL(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NLPSequenceModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPSequenceModelCopyPredictedTokensAndLabelsForText",
+        "NLPSequenceModelCopyTestResults",
+        "NLPSequenceModelCopyPredictedLabelArraysForTokenArrays",
+        "NLPSequenceModelCopyPredictedTokensAndLabelHypothesesForText",
+        "NLPSequenceModelCreateWithData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPEmbeddingModelCopyVectorForString": {
+      "name": "NLPEmbeddingModelCopyVectorForString",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPEmbeddingModelRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPEmbeddingModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NLPEmbeddingModelRef/*?*/ NLPEmbeddingModelCopyVectorForString(NLPEmbeddingModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NLPEmbeddingModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPEmbeddingModelCreateWithURL",
+        "NLPEmbeddingModelCreateWithData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagPlaceName": {
+      "name": "NLTagPlaceName",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagPlaceName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagPunctuation": {
+      "name": "NLTagPunctuation",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagPunctuation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLParameterTunerOptionsKeyPreferLowerScore": {
+      "name": "NLParameterTunerOptionsKeyPreferLowerScore",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLParameterTunerOptionsKeyPreferLowerScore(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptKhmer": {
+      "name": "NLScriptKhmer",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptKhmer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageModelArchitectureLSTM": {
+      "name": "NLLanguageModelArchitectureLSTM",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageModelArchitectureLSTM(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelEmbeddingTypeCustom": {
+      "name": "NLModelEmbeddingTypeCustom",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelEmbeddingTypeCustom(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagOpenQuote": {
+      "name": "NLTagOpenQuote",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagOpenQuote(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPSequenceModelCopyPredictedTokensAndLabelsForText": {
+      "name": "NLPSequenceModelCopyPredictedTokensAndLabelsForText",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPSequenceModelRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPSequenceModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NLPSequenceModelRef/*?*/ NLPSequenceModelCopyPredictedTokensAndLabelsForText(NLPSequenceModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NLPSequenceModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPSequenceModelCreateWithURL",
+        "NLPSequenceModelCopyTestResults",
+        "NLPSequenceModelCopyPredictedLabelArraysForTokenArrays",
+        "NLPSequenceModelCopyPredictedTokensAndLabelHypothesesForText",
+        "NLPSequenceModelCreateWithData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageGujarati": {
+      "name": "NLLanguageGujarati",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageGujarati(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageTurkish": {
+      "name": "NLLanguageTurkish",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageTurkish(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageCzech": {
+      "name": "NLLanguageCzech",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageCzech(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageUrdu": {
+      "name": "NLLanguageUrdu",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageUrdu(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLNaturalLanguageErrorDomain": {
+      "name": "NLNaturalLanguageErrorDomain",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLNaturalLanguageErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageRussian": {
+      "name": "NLLanguageRussian",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageRussian(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagCloseParenthesis": {
+      "name": "NLTagCloseParenthesis",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagCloseParenthesis(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageGerman": {
+      "name": "NLLanguageGerman",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageGerman(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPClassifierModelCreateWithURL": {
+      "name": "NLPClassifierModelCreateWithURL",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPClassifierModelRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NLPClassifierModelRef NLPClassifierModelCreateWithURL(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NLPClassifierModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPClassifierModelCopyPredictedLabelForText",
+        "NLPClassifierModelCopyTestResults",
+        "NLPClassifierModelCopyData",
+        "NLPClassifierModelCreateWithData",
+        "NLPClassifierModelCopyPredictedLabelHypothesesForText"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagDeterminer": {
+      "name": "NLTagDeterminer",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagDeterminer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLOptionsKeyAdaptationEnabled": {
+      "name": "NLOptionsKeyAdaptationEnabled",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLOptionsKeyAdaptationEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageUkrainian": {
+      "name": "NLLanguageUkrainian",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageUkrainian(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLParameterTunerOptionsKeyMaximumIterations": {
+      "name": "NLParameterTunerOptionsKeyMaximumIterations",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLParameterTunerOptionsKeyMaximumIterations(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptArmenian": {
+      "name": "NLScriptArmenian",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptArmenian(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelEmbeddingTypeStatic": {
+      "name": "NLModelEmbeddingTypeStatic",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelEmbeddingTypeStatic(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageSimplifiedChinese": {
+      "name": "NLLanguageSimplifiedChinese",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageSimplifiedChinese(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageMalayalam": {
+      "name": "NLLanguageMalayalam",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageMalayalam(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguagePunjabi": {
+      "name": "NLLanguagePunjabi",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguagePunjabi(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageSpanish": {
+      "name": "NLLanguageSpanish",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageSpanish(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptUndetermined": {
+      "name": "NLScriptUndetermined",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptUndetermined(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelConfigurationOptionsKeyLanguage": {
+      "name": "NLModelConfigurationOptionsKeyLanguage",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelConfigurationOptionsKeyLanguage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLParameterNameCharacterLanguageModelWeight": {
+      "name": "NLParameterNameCharacterLanguageModelWeight",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLParameterNameCharacterLanguageModelWeight(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptCherokee": {
+      "name": "NLScriptCherokee",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptCherokee(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagClassifier": {
+      "name": "NLTagClassifier",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagClassifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagSchemeLanguage": {
+      "name": "NLTagSchemeLanguage",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagSchemeLanguage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagSchemeSentimentScore": {
+      "name": "NLTagSchemeSentimentScore",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagSchemeSentimentScore(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagWordJoiner": {
+      "name": "NLTagWordJoiner",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagWordJoiner(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptThai": {
+      "name": "NLScriptThai",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptThai(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagDash": {
+      "name": "NLTagDash",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagDash(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptGujarati": {
+      "name": "NLScriptGujarati",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptGujarati(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageKorean": {
+      "name": "NLLanguageKorean",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageKorean(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPSequenceModelCopyTestResults": {
+      "name": "NLPSequenceModelCopyTestResults",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPSequenceModelRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPSequenceModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NLPSequenceModelRef/*?*/ NLPSequenceModelCopyTestResults(NLPSequenceModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NLPSequenceModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPSequenceModelCreateWithURL",
+        "NLPSequenceModelCopyPredictedTokensAndLabelsForText",
+        "NLPSequenceModelCopyPredictedLabelArraysForTokenArrays",
+        "NLPSequenceModelCopyPredictedTokensAndLabelHypothesesForText",
+        "NLPSequenceModelCreateWithData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPGazetteerModelCopyLabelForString": {
+      "name": "NLPGazetteerModelCopyLabelForString",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPGazetteerModelRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPGazetteerModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NLPGazetteerModelRef/*?*/ NLPGazetteerModelCopyLabelForString(NLPGazetteerModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NLPGazetteerModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPGazetteerModelCreateWithURL",
+        "NLPGazetteerModelCreateWithData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPSequenceModelWriteCoreMLModelToURL": {
+      "name": "NLPSequenceModelWriteCoreMLModelToURL",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLPSequenceModelWriteCoreMLModelToURL(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagSchemeScript": {
+      "name": "NLTagSchemeScript",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagSchemeScript(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageAmharic": {
+      "name": "NLLanguageAmharic",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageAmharic(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPGazetteerModelIsRevisionSupported": {
+      "name": "NLPGazetteerModelIsRevisionSupported",
+      "framework": "NaturalLanguage",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPGazetteerModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool NLPGazetteerModelIsRevisionSupported(NLPGazetteerModelRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelEmbeddingTypeDynamic": {
+      "name": "NLModelEmbeddingTypeDynamic",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelEmbeddingTypeDynamic(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLOptionsKeyAppContext": {
+      "name": "NLOptionsKeyAppContext",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLOptionsKeyAppContext(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptEthiopic": {
+      "name": "NLScriptEthiopic",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptEthiopic(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPSequenceModelCopyPredictedLabelArraysForTokenArrays": {
+      "name": "NLPSequenceModelCopyPredictedLabelArraysForTokenArrays",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPSequenceModelRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPSequenceModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NLPSequenceModelRef/*?*/ NLPSequenceModelCopyPredictedLabelArraysForTokenArrays(NLPSequenceModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NLPSequenceModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPSequenceModelCreateWithURL",
+        "NLPSequenceModelCopyPredictedTokensAndLabelsForText",
+        "NLPSequenceModelCopyTestResults",
+        "NLPSequenceModelCopyPredictedTokensAndLabelHypothesesForText",
+        "NLPSequenceModelCreateWithData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageBulgarian": {
+      "name": "NLLanguageBulgarian",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageBulgarian(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageItalian": {
+      "name": "NLLanguageItalian",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageItalian(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelConfigurationOptionsKeyRevision": {
+      "name": "NLModelConfigurationOptionsKeyRevision",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelConfigurationOptionsKeyRevision(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPEmbeddingModelGetRevision": {
+      "name": "NLPEmbeddingModelGetRevision",
+      "framework": "NaturalLanguage",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPEmbeddingModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ NLPEmbeddingModelGetRevision(NLPEmbeddingModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPClassifierModelCopyPredictedLabelForText": {
+      "name": "NLPClassifierModelCopyPredictedLabelForText",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPClassifierModelRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPClassifierModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NLPClassifierModelRef/*?*/ NLPClassifierModelCopyPredictedLabelForText(NLPClassifierModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NLPClassifierModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPClassifierModelCreateWithURL",
+        "NLPClassifierModelCopyTestResults",
+        "NLPClassifierModelCopyData",
+        "NLPClassifierModelCreateWithData",
+        "NLPClassifierModelCopyPredictedLabelHypothesesForText"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPClassifierModelCopyTestResults": {
+      "name": "NLPClassifierModelCopyTestResults",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPClassifierModelRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPClassifierModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NLPClassifierModelRef/*?*/ NLPClassifierModelCopyTestResults(NLPClassifierModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NLPClassifierModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPClassifierModelCreateWithURL",
+        "NLPClassifierModelCopyPredictedLabelForText",
+        "NLPClassifierModelCopyData",
+        "NLPClassifierModelCreateWithData",
+        "NLPClassifierModelCopyPredictedLabelHypothesesForText"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptKannada": {
+      "name": "NLScriptKannada",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptKannada(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageSinhalese": {
+      "name": "NLLanguageSinhalese",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageSinhalese(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLOptionsKeyArchitecture": {
+      "name": "NLOptionsKeyArchitecture",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLOptionsKeyArchitecture(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptArabic": {
+      "name": "NLScriptArabic",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptArabic(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagOtherWord": {
+      "name": "NLTagOtherWord",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagOtherWord(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageHebrew": {
+      "name": "NLLanguageHebrew",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageHebrew(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageMalay": {
+      "name": "NLLanguageMalay",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageMalay(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptSinhala": {
+      "name": "NLScriptSinhala",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptSinhala(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLContextualEmbeddingKeyRevision": {
+      "name": "NLContextualEmbeddingKeyRevision",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLContextualEmbeddingKeyRevision(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelConfigurationOptionsKeyEmbeddingType": {
+      "name": "NLModelConfigurationOptionsKeyEmbeddingType",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelConfigurationOptionsKeyEmbeddingType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageBengali": {
+      "name": "NLLanguageBengali",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageBengali(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageFrench": {
+      "name": "NLLanguageFrench",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageFrench(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageKhmer": {
+      "name": "NLLanguageKhmer",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageKhmer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelConfigurationOptionsKeyUseTransfer": {
+      "name": "NLModelConfigurationOptionsKeyUseTransfer",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelConfigurationOptionsKeyUseTransfer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagPreposition": {
+      "name": "NLTagPreposition",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagPreposition(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPGazetteerModelCreateWithURL": {
+      "name": "NLPGazetteerModelCreateWithURL",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPGazetteerModelRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NLPGazetteerModelRef NLPGazetteerModelCreateWithURL(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NLPGazetteerModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPGazetteerModelCopyLabelForString",
+        "NLPGazetteerModelCreateWithData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagInterjection": {
+      "name": "NLTagInterjection",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagInterjection(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPSequenceModelWriteToURL": {
+      "name": "NLPSequenceModelWriteToURL",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLPSequenceModelWriteToURL(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptGeorgian": {
+      "name": "NLScriptGeorgian",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptGeorgian(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptJapanese": {
+      "name": "NLScriptJapanese",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptJapanese(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptMyanmar": {
+      "name": "NLScriptMyanmar",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptMyanmar(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageArabic": {
+      "name": "NLLanguageArabic",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageArabic(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptDevanagari": {
+      "name": "NLScriptDevanagari",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptDevanagari(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageCroatian": {
+      "name": "NLLanguageCroatian",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageCroatian(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguagePortuguese": {
+      "name": "NLLanguagePortuguese",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguagePortuguese(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelConfigurationOptionsKeyUseMaxEnt": {
+      "name": "NLModelConfigurationOptionsKeyUseMaxEnt",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelConfigurationOptionsKeyUseMaxEnt(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelConfigurationOptionsKeyUseBidirectionalNeuralNetwork": {
+      "name": "NLModelConfigurationOptionsKeyUseBidirectionalNeuralNetwork",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelConfigurationOptionsKeyUseBidirectionalNeuralNetwork(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagConjunction": {
+      "name": "NLTagConjunction",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagConjunction(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLContextualEmbeddingKeyLanguages": {
+      "name": "NLContextualEmbeddingKeyLanguages",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLContextualEmbeddingKeyLanguages(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPClassifierModelCopyData": {
+      "name": "NLPClassifierModelCopyData",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPClassifierModelRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPClassifierModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NLPClassifierModelRef/*?*/ NLPClassifierModelCopyData(NLPClassifierModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NLPClassifierModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPClassifierModelCreateWithURL",
+        "NLPClassifierModelCopyPredictedLabelForText",
+        "NLPClassifierModelCopyTestResults",
+        "NLPClassifierModelCreateWithData",
+        "NLPClassifierModelCopyPredictedLabelHypothesesForText"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagSchemeInternalClass": {
+      "name": "NLTagSchemeInternalClass",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagSchemeInternalClass(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPClassifierModelGetCurrentRevision": {
+      "name": "NLPClassifierModelGetCurrentRevision",
+      "framework": "NaturalLanguage",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPClassifierModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ NLPClassifierModelGetCurrentRevision(NLPClassifierModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPSequenceModelCopyPredictedTokensAndLabelHypothesesForText": {
+      "name": "NLPSequenceModelCopyPredictedTokensAndLabelHypothesesForText",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPSequenceModelRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPSequenceModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NLPSequenceModelRef/*?*/ NLPSequenceModelCopyPredictedTokensAndLabelHypothesesForText(NLPSequenceModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NLPSequenceModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPSequenceModelCreateWithURL",
+        "NLPSequenceModelCopyPredictedTokensAndLabelsForText",
+        "NLPSequenceModelCopyTestResults",
+        "NLPSequenceModelCopyPredictedLabelArraysForTokenArrays",
+        "NLPSequenceModelCreateWithData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPSequenceModelIsRevisionSupported": {
+      "name": "NLPSequenceModelIsRevisionSupported",
+      "framework": "NaturalLanguage",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPSequenceModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool NLPSequenceModelIsRevisionSupported(NLPSequenceModelRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelConfigurationOptionsKeyUseCRF": {
+      "name": "NLModelConfigurationOptionsKeyUseCRF",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelConfigurationOptionsKeyUseCRF(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagSchemeLemma": {
+      "name": "NLTagSchemeLemma",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagSchemeLemma(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLContextualEmbeddingKeyScripts": {
+      "name": "NLContextualEmbeddingKeyScripts",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLContextualEmbeddingKeyScripts(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagSchemeNameTypeOrLexicalClass": {
+      "name": "NLTagSchemeNameTypeOrLexicalClass",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagSchemeNameTypeOrLexicalClass(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLParameterTunerOptionsKeyRandomSeed": {
+      "name": "NLParameterTunerOptionsKeyRandomSeed",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLParameterTunerOptionsKeyRandomSeed(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguagePolish": {
+      "name": "NLLanguagePolish",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguagePolish(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagAdverb": {
+      "name": "NLTagAdverb",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagAdverb(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageGreek": {
+      "name": "NLLanguageGreek",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageGreek(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPSequenceModelGetCurrentRevision": {
+      "name": "NLPSequenceModelGetCurrentRevision",
+      "framework": "NaturalLanguage",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPSequenceModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ NLPSequenceModelGetCurrentRevision(NLPSequenceModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagSurprise": {
+      "name": "NLTagSurprise",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagSurprise(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageHungarian": {
+      "name": "NLLanguageHungarian",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageHungarian(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageHindi": {
+      "name": "NLLanguageHindi",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageHindi(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPClassifierModelIsRevisionSupported": {
+      "name": "NLPClassifierModelIsRevisionSupported",
+      "framework": "NaturalLanguage",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPClassifierModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool NLPClassifierModelIsRevisionSupported(NLPClassifierModelRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageNorwegian": {
+      "name": "NLLanguageNorwegian",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageNorwegian(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagIdiom": {
+      "name": "NLTagIdiom",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagIdiom(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageArmenian": {
+      "name": "NLLanguageArmenian",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageArmenian(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelAlgorithmTransfer": {
+      "name": "NLModelAlgorithmTransfer",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelAlgorithmTransfer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageEnglish": {
+      "name": "NLLanguageEnglish",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageEnglish(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLOptionsKeyLocale": {
+      "name": "NLOptionsKeyLocale",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLOptionsKeyLocale(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptOriya": {
+      "name": "NLScriptOriya",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptOriya(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagFear": {
+      "name": "NLTagFear",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagFear(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageRomanian": {
+      "name": "NLLanguageRomanian",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageRomanian(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagSentenceTerminator": {
+      "name": "NLTagSentenceTerminator",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagSentenceTerminator(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagAdjective": {
+      "name": "NLTagAdjective",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagAdjective(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagNumber": {
+      "name": "NLTagNumber",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptGurmukhi": {
+      "name": "NLScriptGurmukhi",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptGurmukhi(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelConfigurationOptionsKeyEmbeddingData": {
+      "name": "NLModelConfigurationOptionsKeyEmbeddingData",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelConfigurationOptionsKeyEmbeddingData(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageTelugu": {
+      "name": "NLLanguageTelugu",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageTelugu(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagWord": {
+      "name": "NLTagWord",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagWord(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageGeorgian": {
+      "name": "NLLanguageGeorgian",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageGeorgian(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagNoun": {
+      "name": "NLTagNoun",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagNoun(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagSchemeContextualEmbedding": {
+      "name": "NLTagSchemeContextualEmbedding",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagSchemeContextualEmbedding(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageOriya": {
+      "name": "NLLanguageOriya",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageOriya(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageSlovak": {
+      "name": "NLLanguageSlovak",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageSlovak(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageSwedish": {
+      "name": "NLLanguageSwedish",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageSwedish(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageIcelandic": {
+      "name": "NLLanguageIcelandic",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageIcelandic(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageCatalan": {
+      "name": "NLLanguageCatalan",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageCatalan(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageMarathi": {
+      "name": "NLLanguageMarathi",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageMarathi(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelAlgorithmCRF": {
+      "name": "NLModelAlgorithmCRF",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelAlgorithmCRF(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguagePersian": {
+      "name": "NLLanguagePersian",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguagePersian(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelConfigurationOptionsKeyAlgorithm": {
+      "name": "NLModelConfigurationOptionsKeyAlgorithm",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelConfigurationOptionsKeyAlgorithm(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPClassifierModelGetRevision": {
+      "name": "NLPClassifierModelGetRevision",
+      "framework": "NaturalLanguage",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPClassifierModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ NLPClassifierModelGetRevision(NLPClassifierModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPEmbeddingModelCreateWithURL": {
+      "name": "NLPEmbeddingModelCreateWithURL",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPEmbeddingModelRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NLPEmbeddingModelRef NLPEmbeddingModelCreateWithURL(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NLPEmbeddingModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPEmbeddingModelCopyVectorForString",
+        "NLPEmbeddingModelCreateWithData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPGazetteerModelCreateWithData": {
+      "name": "NLPGazetteerModelCreateWithData",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPGazetteerModelRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NLPGazetteerModelRef NLPGazetteerModelCreateWithData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NLPGazetteerModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPGazetteerModelCopyLabelForString",
+        "NLPGazetteerModelCreateWithURL"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptMongolian": {
+      "name": "NLScriptMongolian",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptMongolian(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagVerb": {
+      "name": "NLTagVerb",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagVerb(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageKazakh": {
+      "name": "NLLanguageKazakh",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageKazakh(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptBengali": {
+      "name": "NLScriptBengali",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptBengali(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageVietnamese": {
+      "name": "NLLanguageVietnamese",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageVietnamese(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLOptionsKeyUseLMS": {
+      "name": "NLOptionsKeyUseLMS",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLOptionsKeyUseLMS(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPGazetteerModelGetCurrentRevision": {
+      "name": "NLPGazetteerModelGetCurrentRevision",
+      "framework": "NaturalLanguage",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPGazetteerModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ NLPGazetteerModelGetCurrentRevision(NLPGazetteerModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageJapanese": {
+      "name": "NLLanguageJapanese",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageJapanese(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLParameterTunerAlgorithmGaussianProcess": {
+      "name": "NLParameterTunerAlgorithmGaussianProcess",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLParameterTunerAlgorithmGaussianProcess(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagOtherPunctuation": {
+      "name": "NLTagOtherPunctuation",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagOtherPunctuation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelAlgorithmRNN": {
+      "name": "NLModelAlgorithmRNN",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelAlgorithmRNN(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagPersonalName": {
+      "name": "NLTagPersonalName",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagPersonalName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagParticle": {
+      "name": "NLTagParticle",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagParticle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelTrainerOptionsKeyMaximumIterations": {
+      "name": "NLModelTrainerOptionsKeyMaximumIterations",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelTrainerOptionsKeyMaximumIterations(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPEmbeddingModelCreateWithData": {
+      "name": "NLPEmbeddingModelCreateWithData",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPEmbeddingModelRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NLPEmbeddingModelRef NLPEmbeddingModelCreateWithData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NLPEmbeddingModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPEmbeddingModelCopyVectorForString",
+        "NLPEmbeddingModelCreateWithURL"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelAlgorithmMaxEnt": {
+      "name": "NLModelAlgorithmMaxEnt",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelAlgorithmMaxEnt(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageThai": {
+      "name": "NLLanguageThai",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageThai(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPGazetteerModelGetRevision": {
+      "name": "NLPGazetteerModelGetRevision",
+      "framework": "NaturalLanguage",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPGazetteerModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ NLPGazetteerModelGetRevision(NLPGazetteerModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPClassifierModelWriteCoreMLModelToURLWithOptions": {
+      "name": "NLPClassifierModelWriteCoreMLModelToURLWithOptions",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLPClassifierModelWriteCoreMLModelToURLWithOptions(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPSequenceModelWriteCoreMLModelToURLWithOptions": {
+      "name": "NLPSequenceModelWriteCoreMLModelToURLWithOptions",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLPSequenceModelWriteCoreMLModelToURLWithOptions(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPClassifierModelWriteToURL": {
+      "name": "NLPClassifierModelWriteToURL",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLPClassifierModelWriteToURL(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLParameterTunerAlgorithmRandom": {
+      "name": "NLParameterTunerAlgorithmRandom",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLParameterTunerAlgorithmRandom(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptTelugu": {
+      "name": "NLScriptTelugu",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptTelugu(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagAnger": {
+      "name": "NLTagAnger",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagAnger(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPClassifierModelCreateWithData": {
+      "name": "NLPClassifierModelCreateWithData",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPClassifierModelRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NLPClassifierModelRef NLPClassifierModelCreateWithData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NLPClassifierModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPClassifierModelCreateWithURL",
+        "NLPClassifierModelCopyPredictedLabelForText",
+        "NLPClassifierModelCopyTestResults",
+        "NLPClassifierModelCopyData",
+        "NLPClassifierModelCopyPredictedLabelHypothesesForText"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLParameterTunerOptionsKeyInitialParameterValues": {
+      "name": "NLParameterTunerOptionsKeyInitialParameterValues",
+      "framework": "NaturalLanguage",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ NLParameterTunerOptionsKeyInitialParameterValues(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptKorean": {
+      "name": "NLScriptKorean",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptKorean(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptCanadianAboriginalSyllabics": {
+      "name": "NLScriptCanadianAboriginalSyllabics",
+      "framework": "NaturalLanguage",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLScriptRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool NLScriptCanadianAboriginalSyllabics(NLScriptRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagOtherWhitespace": {
+      "name": "NLTagOtherWhitespace",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagOtherWhitespace(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPClassifierModelCopyPredictedLabelHypothesesForText": {
+      "name": "NLPClassifierModelCopyPredictedLabelHypothesesForText",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPClassifierModelRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPClassifierModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NLPClassifierModelRef/*?*/ NLPClassifierModelCopyPredictedLabelHypothesesForText(NLPClassifierModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NLPClassifierModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPClassifierModelCreateWithURL",
+        "NLPClassifierModelCopyPredictedLabelForText",
+        "NLPClassifierModelCopyTestResults",
+        "NLPClassifierModelCopyData",
+        "NLPClassifierModelCreateWithData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelConfigurationOptionsKeyUseRNN": {
+      "name": "NLModelConfigurationOptionsKeyUseRNN",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelConfigurationOptionsKeyUseRNN(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLContextualEmbeddingKeyUseANE": {
+      "name": "NLContextualEmbeddingKeyUseANE",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLContextualEmbeddingKeyUseANE(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPSequenceModelCreateWithData": {
+      "name": "NLPSequenceModelCreateWithData",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPSequenceModelRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NLPSequenceModelRef NLPSequenceModelCreateWithData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NLPSequenceModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPSequenceModelCreateWithURL",
+        "NLPSequenceModelCopyPredictedTokensAndLabelsForText",
+        "NLPSequenceModelCopyTestResults",
+        "NLPSequenceModelCopyPredictedLabelArraysForTokenArrays",
+        "NLPSequenceModelCopyPredictedTokensAndLabelHypothesesForText"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagCloseQuote": {
+      "name": "NLTagCloseQuote",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagCloseQuote(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagOpenParenthesis": {
+      "name": "NLTagOpenParenthesis",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagOpenParenthesis(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptCyrillic": {
+      "name": "NLScriptCyrillic",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptCyrillic(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagParagraphBreak": {
+      "name": "NLTagParagraphBreak",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagParagraphBreak(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptHebrew": {
+      "name": "NLScriptHebrew",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptHebrew(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageCherokee": {
+      "name": "NLLanguageCherokee",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageCherokee(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelEmbeddingTypeTransformer": {
+      "name": "NLModelEmbeddingTypeTransformer",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelEmbeddingTypeTransformer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptGreek": {
+      "name": "NLScriptGreek",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptGreek(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagHappiness": {
+      "name": "NLTagHappiness",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagHappiness(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagSchemeTokenType": {
+      "name": "NLTagSchemeTokenType",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagSchemeTokenType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLOptionsKeyLanguage": {
+      "name": "NLOptionsKeyLanguage",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLOptionsKeyLanguage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLOptionsKeyLocalization": {
+      "name": "NLOptionsKeyLocalization",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLOptionsKeyLocalization(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageKannada": {
+      "name": "NLLanguageKannada",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageKannada(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptSimplifiedChinese": {
+      "name": "NLScriptSimplifiedChinese",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptSimplifiedChinese(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagSadness": {
+      "name": "NLTagSadness",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagSadness(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelWritingOptionsKeyAtomicWrite": {
+      "name": "NLModelWritingOptionsKeyAtomicWrite",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelWritingOptionsKeyAtomicWrite(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLOptionsKeyGranularity": {
+      "name": "NLOptionsKeyGranularity",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLOptionsKeyGranularity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLParameterNameWordLanguageModelWeight": {
+      "name": "NLParameterNameWordLanguageModelWeight",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLParameterNameWordLanguageModelWeight(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPEmbeddingModelGetCurrentRevision": {
+      "name": "NLPEmbeddingModelGetCurrentRevision",
+      "framework": "NaturalLanguage",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPEmbeddingModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ NLPEmbeddingModelGetCurrentRevision(NLPEmbeddingModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageModelArchitectureTransformer": {
+      "name": "NLLanguageModelArchitectureTransformer",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageModelArchitectureTransformer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPClassifierModelCreateTrainedModelWithData": {
+      "name": "NLPClassifierModelCreateTrainedModelWithData",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPClassifierModelRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NLPClassifierModelRef NLPClassifierModelCreateTrainedModelWithData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NLPClassifierModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPClassifierModelCreateWithURL",
+        "NLPClassifierModelCopyPredictedLabelForText",
+        "NLPClassifierModelCopyTestResults",
+        "NLPClassifierModelCopyData",
+        "NLPClassifierModelCreateWithData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPGazetteerModelWriteCoreMLModelToURLWithOptions": {
+      "name": "NLPGazetteerModelWriteCoreMLModelToURLWithOptions",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLPGazetteerModelWriteCoreMLModelToURLWithOptions(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLParameterNameLexiconWeight": {
+      "name": "NLParameterNameLexiconWeight",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLParameterNameLexiconWeight(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageDanish": {
+      "name": "NLLanguageDanish",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageDanish(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagSchemeLexicalClass": {
+      "name": "NLTagSchemeLexicalClass",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagSchemeLexicalClass(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageUndetermined": {
+      "name": "NLLanguageUndetermined",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageUndetermined(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageLao": {
+      "name": "NLLanguageLao",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageLao(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageDutch": {
+      "name": "NLLanguageDutch",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageDutch(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageIndonesian": {
+      "name": "NLLanguageIndonesian",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageIndonesian(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelConfigurationOptionsKeyEmbeddingURL": {
+      "name": "NLModelConfigurationOptionsKeyEmbeddingURL",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelConfigurationOptionsKeyEmbeddingURL(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagOtherEmotion": {
+      "name": "NLTagOtherEmotion",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagOtherEmotion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptLatin": {
+      "name": "NLScriptLatin",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptLatin(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelWritingOptionsKeyOutputFeatureName": {
+      "name": "NLModelWritingOptionsKeyOutputFeatureName",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelWritingOptionsKeyOutputFeatureName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptTraditionalChinese": {
+      "name": "NLScriptTraditionalChinese",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptTraditionalChinese(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagWhitespace": {
+      "name": "NLTagWhitespace",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagWhitespace(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPSequenceModelCopyPredictedLabelHypothesesForTokens": {
+      "name": "NLPSequenceModelCopyPredictedLabelHypothesesForTokens",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPSequenceModelRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPSequenceModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NLPSequenceModelRef/*?*/ NLPSequenceModelCopyPredictedLabelHypothesesForTokens(NLPSequenceModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NLPSequenceModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPSequenceModelCreateWithURL",
+        "NLPSequenceModelCopyPredictedTokensAndLabelsForText",
+        "NLPSequenceModelCopyTestResults",
+        "NLPSequenceModelCopyPredictedLabelArraysForTokenArrays",
+        "NLPSequenceModelCopyPredictedTokensAndLabelHypothesesForText"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageBurmese": {
+      "name": "NLLanguageBurmese",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageBurmese(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageTibetan": {
+      "name": "NLLanguageTibetan",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageTibetan(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptTamil": {
+      "name": "NLScriptTamil",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptTamil(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagOrganizationName": {
+      "name": "NLTagOrganizationName",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagOrganizationName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLParameterTunerOptionsKeyAlgorithm": {
+      "name": "NLParameterTunerOptionsKeyAlgorithm",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLParameterTunerOptionsKeyAlgorithm(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagOther": {
+      "name": "NLTagOther",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagOther(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelWritingOptionsKeyInputFeatureName": {
+      "name": "NLModelWritingOptionsKeyInputFeatureName",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelWritingOptionsKeyInputFeatureName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagSchemeNameType": {
+      "name": "NLTagSchemeNameType",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagSchemeNameType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPSequenceModelGetRevision": {
+      "name": "NLPSequenceModelGetRevision",
+      "framework": "NaturalLanguage",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPSequenceModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ NLPSequenceModelGetRevision(NLPSequenceModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPEmbeddingModelIsRevisionSupported": {
+      "name": "NLPEmbeddingModelIsRevisionSupported",
+      "framework": "NaturalLanguage",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPEmbeddingModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool NLPEmbeddingModelIsRevisionSupported(NLPEmbeddingModelRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptLao": {
+      "name": "NLScriptLao",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptLao(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageFinnish": {
+      "name": "NLLanguageFinnish",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageFinnish(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLAssetsHaveChangedNotification": {
+      "name": "NLAssetsHaveChangedNotification",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLAssetsHaveChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageTraditionalChinese": {
+      "name": "NLLanguageTraditionalChinese",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageTraditionalChinese(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptMalayalam": {
+      "name": "NLScriptMalayalam",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptMalayalam(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelEmbeddingTypeContextual": {
+      "name": "NLModelEmbeddingTypeContextual",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelEmbeddingTypeContextual(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageMongolian": {
+      "name": "NLLanguageMongolian",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageMongolian(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPSequenceModelCreateTrainedModelWithData": {
+      "name": "NLPSequenceModelCreateTrainedModelWithData",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPSequenceModelRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "NLPSequenceModelRef NLPSequenceModelCreateTrainedModelWithData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "NLPSequenceModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPSequenceModelCreateWithURL",
+        "NLPSequenceModelCopyPredictedTokensAndLabelsForText",
+        "NLPSequenceModelCopyTestResults",
+        "NLPSequenceModelCopyPredictedLabelArraysForTokenArrays",
+        "NLPSequenceModelCopyPredictedTokensAndLabelHypothesesForText"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPSequenceModelCopyData": {
+      "name": "NLPSequenceModelCopyData",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPSequenceModelRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPSequenceModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NLPSequenceModelRef/*?*/ NLPSequenceModelCopyData(NLPSequenceModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NLPSequenceModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPSequenceModelCreateWithURL",
+        "NLPSequenceModelCopyPredictedTokensAndLabelsForText",
+        "NLPSequenceModelCopyTestResults",
+        "NLPSequenceModelCopyPredictedLabelArraysForTokenArrays",
+        "NLPSequenceModelCopyPredictedTokensAndLabelHypothesesForText"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagLove": {
+      "name": "NLTagLove",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagLove(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLModelConfigurationOptionsKeyEmbeddingModel": {
+      "name": "NLModelConfigurationOptionsKeyEmbeddingModel",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLModelConfigurationOptionsKeyEmbeddingModel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPClassifierModelWriteCoreMLModelToURL": {
+      "name": "NLPClassifierModelWriteCoreMLModelToURL",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLPClassifierModelWriteCoreMLModelToURL(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPSequenceModelCopyPredictedLabelsForTokens": {
+      "name": "NLPSequenceModelCopyPredictedLabelsForTokens",
+      "framework": "NaturalLanguage",
+      "return_type": "NLPSequenceModelRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLPSequenceModelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "NLPSequenceModelRef/*?*/ NLPSequenceModelCopyPredictedLabelsForTokens(NLPSequenceModelRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "NLPSequenceModelRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NLPSequenceModelCreateWithURL",
+        "NLPSequenceModelCopyPredictedTokensAndLabelsForText",
+        "NLPSequenceModelCopyTestResults",
+        "NLPSequenceModelCopyPredictedLabelArraysForTokenArrays",
+        "NLPSequenceModelCopyPredictedTokensAndLabelHypothesesForText"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLParameterTunerOptionsKeyMetadata": {
+      "name": "NLParameterTunerOptionsKeyMetadata",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLParameterTunerOptionsKeyMetadata(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLOptionsKeyIsSiriModel": {
+      "name": "NLOptionsKeyIsSiriModel",
+      "framework": "NaturalLanguage",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NLOptionsKeyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool NLOptionsKeyIsSiriModel(NLOptionsKeyRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagSchemeEmotionalState": {
+      "name": "NLTagSchemeEmotionalState",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagSchemeEmotionalState(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLLanguageTamil": {
+      "name": "NLLanguageTamil",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLLanguageTamil(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLPEmbeddingModelWriteCoreMLModelToURLWithOptions": {
+      "name": "NLPEmbeddingModelWriteCoreMLModelToURLWithOptions",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLPEmbeddingModelWriteCoreMLModelToURLWithOptions(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLContextualEmbeddingKeyEnableE5": {
+      "name": "NLContextualEmbeddingKeyEnableE5",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLContextualEmbeddingKeyEnableE5(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagPronoun": {
+      "name": "NLTagPronoun",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagPronoun(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLTagSchemeWordEmbedding": {
+      "name": "NLTagSchemeWordEmbedding",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLTagSchemeWordEmbedding(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NLScriptTibetan": {
+      "name": "NLScriptTibetan",
+      "framework": "NaturalLanguage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NaturalLanguage"
+        }
+      ],
+      "signature": "void/*?*/ NLScriptTibetan(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "neural_network": [
+      "NLContextualEmbeddingKeyUseANE",
+      "NLLanguageJapanese",
+      "NLModelConfigurationOptionsKeyUseBidirectionalNeuralNetwork",
+      "NLPClassifierModelWriteCoreMLModelToURL",
+      "NLPClassifierModelWriteCoreMLModelToURLWithOptions",
+      "NLPEmbeddingModelWriteCoreMLModelToURLWithOptions",
+      "NLPGazetteerModelWriteCoreMLModelToURLWithOptions",
+      "NLPSequenceModelWriteCoreMLModelToURL",
+      "NLPSequenceModelWriteCoreMLModelToURLWithOptions",
+      "NLScriptJapanese"
+    ],
+    "gpu_compute": [
+      "NLTagPunctuation"
+    ],
+    "cryptography": [
+      "NLAssetsHaveChangedNotification"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

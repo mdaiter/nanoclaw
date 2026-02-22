@@ -1,0 +1,4006 @@
+{
+  "framework": "CoreServicesStore",
+  "functions": {
+    "_CSMapEnumerateKeysAndValues": {
+      "name": "_CSMapEnumerateKeysAndValues",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSMapEnumerateKeysAndValues(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStringIsValid": {
+      "name": "_CSStringIsValid",
+      "framework": "CoreServicesStore",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStringRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _CSStringIsValid(_CSStringRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSVisualizerIsRelatedUnitAttributeName": {
+      "name": "_CSVisualizerIsRelatedUnitAttributeName",
+      "framework": "CoreServicesStore",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSVisualizerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _CSVisualizerIsRelatedUnitAttributeName(_CSVisualizerRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSStoreCreateMutable": {
+      "name": "CSStoreCreateMutable",
+      "framework": "CoreServicesStore",
+      "return_type": "CSStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSStoreRef CSStoreCreateMutable(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSStoreCreateMutableCopy"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreGetArrayTable": {
+      "name": "_CSStoreGetArrayTable",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _CSStoreGetArrayTable(_CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStringIsPacked": {
+      "name": "_CSStringIsPacked",
+      "framework": "CoreServicesStore",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStringRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _CSStringIsPacked(_CSStringRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSVisualizerFontWeightAttributeName": {
+      "name": "_CSVisualizerFontWeightAttributeName",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSVisualizerFontWeightAttributeName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreIsMutable": {
+      "name": "_CSStoreIsMutable",
+      "framework": "CoreServicesStore",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _CSStoreIsMutable(_CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSMapAddMapTable": {
+      "name": "CSMapAddMapTable",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ CSMapAddMapTable(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreCopyMemoryStatistics": {
+      "name": "_CSStoreCopyMemoryStatistics",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStoreRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CSStoreRef/*?*/ _CSStoreCopyMemoryStatistics(_CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStoreCreateWithURL",
+        "_CSStoreCreateXPCRepresentation",
+        "_CSStoreCopyDebugDescriptionOfTable",
+        "_CSStoreCreateWithXPCRepresentation",
+        "_CSStoreCopyTableName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreGarbageCollect": {
+      "name": "_CSStoreGarbageCollect",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreGarbageCollect(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSMapSetValue": {
+      "name": "CSMapSetValue",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSMapRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSMapSetValue(CSMapRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreCreateWithURL": {
+      "name": "_CSStoreCreateWithURL",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CSStoreRef _CSStoreCreateWithURL(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStoreCopyMemoryStatistics",
+        "_CSStoreCreateXPCRepresentation",
+        "_CSStoreCopyDebugDescriptionOfTable",
+        "_CSStoreCreateWithXPCRepresentation",
+        "_CSStoreCopyTableName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSDictionaryEnumerateAllValues": {
+      "name": "_CSDictionaryEnumerateAllValues",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSDictionaryEnumerateAllValues(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSArrayRemoveValueAtIndex": {
+      "name": "_CSArrayRemoveValueAtIndex",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSArrayRemoveValueAtIndex(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSDictionaryCreate": {
+      "name": "_CSDictionaryCreate",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSDictionaryRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CSDictionaryRef _CSDictionaryCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CSDictionaryRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSDictionaryCreateWithKeysAndValues"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSArraySetValueAtIndex": {
+      "name": "_CSArraySetValueAtIndex",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSArrayRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint32_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _CSArraySetValueAtIndex(_CSArrayRef *ref, uint32_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint32_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSDictionaryGetCount",
+        "_CSStringGetRetainCount",
+        "_CSArrayGetCount",
+        "CSStoreGetUnitCount",
+        "_CSArrayGetValueAtIndex"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStringMakeConst": {
+      "name": "_CSStringMakeConst",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStringMakeConst(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreWriteToURL": {
+      "name": "_CSStoreWriteToURL",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreWriteToURL(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSVisualizerFixedWidthFontAttributeName": {
+      "name": "_CSVisualizerFixedWidthFontAttributeName",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSVisualizerFixedWidthFontAttributeName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSVisualizerBreakDownDataVersion": {
+      "name": "_CSVisualizerBreakDownDataVersion",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSVisualizerBreakDownDataVersion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSVisualizerOutputTypeAttributeName": {
+      "name": "_CSVisualizerOutputTypeAttributeName",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSVisualizerOutputTypeAttributeName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreShow": {
+      "name": "_CSStoreShow",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreShow(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreAccessContextCreateWithLock": {
+      "name": "_CSStoreAccessContextCreateWithLock",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStoreAccessContextRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CSStoreAccessContextRef _CSStoreAccessContextCreateWithLock(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStoreAccessContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStoreAccessContextCreateSharedReadingContext",
+        "_CSStoreAccessContextCreateWithQueueAndAssertionFunctions",
+        "_CSStoreAccessContextCreateWithQueue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreAccessContextCreateSharedReadingContext": {
+      "name": "_CSStoreAccessContextCreateSharedReadingContext",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStoreAccessContextRef",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CSStoreAccessContextRef _CSStoreAccessContextCreateSharedReadingContext(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStoreAccessContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStoreAccessContextCreateWithLock",
+        "_CSStoreAccessContextCreateWithQueueAndAssertionFunctions",
+        "_CSStoreAccessContextCreateWithQueue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreAccessContextAssertReading": {
+      "name": "_CSStoreAccessContextAssertReading",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreAccessContextAssertReading(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreSetUnitIdentifierExhaustionHandler": {
+      "name": "_CSStoreSetUnitIdentifierExhaustionHandler",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreSetUnitIdentifierExhaustionHandler(_CSStoreRef *ref, uint64_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStringGetUnitFromID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSArrayCreateWithCapacity": {
+      "name": "_CSArrayCreateWithCapacity",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSArrayRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CSArrayRef _CSArrayCreateWithCapacity(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CSArrayRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSArrayCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSArrayEnumerateAllValues": {
+      "name": "_CSArrayEnumerateAllValues",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSArrayEnumerateAllValues(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSVisualizerNumericValueAttributeName": {
+      "name": "_CSVisualizerNumericValueAttributeName",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSVisualizerNumericValueAttributeName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStringGetLowercase": {
+      "name": "_CSStringGetLowercase",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStringRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _CSStringGetLowercase(_CSStringRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSStoreAllocUnitWithData": {
+      "name": "CSStoreAllocUnitWithData",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSStoreAllocUnitWithData(size_t size)",
+      "verb": "write",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSMapInit",
+        "CSStoreAllocUnit",
+        "CSStringBindingStoreInit"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSMapSync": {
+      "name": "CSMapSync",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ CSMapSync(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSMapInit": {
+      "name": "CSMapInit",
+      "framework": "CoreServicesStore",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ CSMapInit(void *buf, size_t size)",
+      "verb": "create",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSStoreAllocUnitWithData",
+        "CSStoreAllocUnit",
+        "CSStringBindingStoreInit"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSMapWriteToHeader": {
+      "name": "CSMapWriteToHeader",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ CSMapWriteToHeader(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreCreateXPCRepresentation": {
+      "name": "_CSStoreCreateXPCRepresentation",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CSStoreRef _CSStoreCreateXPCRepresentation(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStoreCopyMemoryStatistics",
+        "_CSStoreCreateWithURL",
+        "_CSStoreCopyDebugDescriptionOfTable",
+        "_CSStoreCreateWithXPCRepresentation",
+        "_CSStoreCopyTableName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSMapRemoveValue": {
+      "name": "CSMapRemoveValue",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ CSMapRemoveValue(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreAccessContextCreateWithQueueAndAssertionFunctions": {
+      "name": "_CSStoreAccessContextCreateWithQueueAndAssertionFunctions",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStoreAccessContextRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CSStoreAccessContextRef _CSStoreAccessContextCreateWithQueueAndAssertionFunctions(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStoreAccessContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStoreAccessContextCreateWithLock",
+        "_CSStoreAccessContextCreateSharedReadingContext",
+        "_CSStoreAccessContextCreateWithQueue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreCopyDebugDescriptionOfTable": {
+      "name": "_CSStoreCopyDebugDescriptionOfTable",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStoreRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CSStoreRef/*?*/ _CSStoreCopyDebugDescriptionOfTable(_CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStoreCopyMemoryStatistics",
+        "_CSStoreCreateWithURL",
+        "_CSStoreCreateXPCRepresentation",
+        "_CSStoreCreateWithXPCRepresentation",
+        "_CSStoreCopyTableName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreSetMutable": {
+      "name": "_CSStoreSetMutable",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreSetMutable(_CSStoreRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreGetXPCClass": {
+      "name": "_CSStoreGetXPCClass",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _CSStoreGetXPCClass(_CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSDictionarySetValue": {
+      "name": "_CSDictionarySetValue",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSDictionaryRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _CSDictionarySetValue(_CSDictionaryRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSDictionaryCreateWithKeysAndValues": {
+      "name": "_CSDictionaryCreateWithKeysAndValues",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSDictionaryRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CSDictionaryRef _CSDictionaryCreateWithKeysAndValues(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CSDictionaryRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSDictionaryCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStringRetain": {
+      "name": "_CSStringRetain",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStringRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStringRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Retain pattern"
+        }
+      ],
+      "signature": "_CSStringRef _CSStringRetain(_CSStringRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStringRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStringCopyUppercase",
+        "_CSStringCopyCFString",
+        "_CSStringCopyLowercase"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreSetExpectedAccessQueue": {
+      "name": "_CSStoreSetExpectedAccessQueue",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreSetExpectedAccessQueue(_CSStoreRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSDictionaryRemoveAllValues": {
+      "name": "_CSDictionaryRemoveAllValues",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSDictionaryRemoveAllValues(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSGetStringForCFString": {
+      "name": "_CSGetStringForCFString",
+      "framework": "CoreServicesStore",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ _CSGetStringForCFString(_CSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSGetConstStringForCharacters",
+        "_CSGetStringForCharacters",
+        "_CSStoreGetStringTable",
+        "_CSStoreGetTableWithName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreGetDictionaryTable": {
+      "name": "_CSStoreGetDictionaryTable",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _CSStoreGetDictionaryTable(_CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSDictionaryGetCount": {
+      "name": "_CSDictionaryGetCount",
+      "framework": "CoreServicesStore",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSDictionaryRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ _CSDictionaryGetCount(_CSDictionaryRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSArraySetValueAtIndex",
+        "_CSStringGetRetainCount",
+        "_CSArrayGetCount",
+        "CSStoreGetUnitCount",
+        "_CSArrayGetValueAtIndex"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSGetConstStringForCharacters": {
+      "name": "_CSGetConstStringForCharacters",
+      "framework": "CoreServicesStore",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ _CSGetConstStringForCharacters(_CSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSGetStringForCFString",
+        "_CSGetStringForCharacters",
+        "_CSStoreGetStringTable",
+        "_CSStoreGetTableWithName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSStringBindingCopyCFStrings": {
+      "name": "CSStringBindingCopyCFStrings",
+      "framework": "CoreServicesStore",
+      "return_type": "CSStringBindingRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSStringBindingRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CSStringBindingRef/*?*/ CSStringBindingCopyCFStrings(CSStringBindingRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CSStringBindingRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreCreateWithXPCRepresentation": {
+      "name": "_CSStoreCreateWithXPCRepresentation",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CSStoreRef _CSStoreCreateWithXPCRepresentation(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStoreCopyMemoryStatistics",
+        "_CSStoreCreateWithURL",
+        "_CSStoreCreateXPCRepresentation",
+        "_CSStoreCopyDebugDescriptionOfTable",
+        "_CSStoreCopyTableName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSDictionaryGetValue": {
+      "name": "_CSDictionaryGetValue",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSDictionaryRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _CSDictionaryGetValue(_CSDictionaryRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSDictionaryGetValueOptions": {
+      "name": "_CSDictionaryGetValueOptions",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSDictionaryRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _CSDictionaryGetValueOptions(_CSDictionaryRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreAccessContextAssertWriting": {
+      "name": "_CSStoreAccessContextAssertWriting",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreAccessContextAssertWriting(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSVisualizerLinkAttributeName": {
+      "name": "_CSVisualizerLinkAttributeName",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSVisualizerLinkAttributeName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreWriteToUnit": {
+      "name": "_CSStoreWriteToUnit",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreWriteToUnit(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStringGetRetainCount": {
+      "name": "_CSStringGetRetainCount",
+      "framework": "CoreServicesStore",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStringGetRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t _CSStringGetRetainCount(_CSStringGetRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSArraySetValueAtIndex",
+        "_CSDictionaryGetCount",
+        "_CSArrayGetCount",
+        "CSStoreGetUnitCount",
+        "_CSArrayGetValueAtIndex"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSStoreCreateMutableCopy": {
+      "name": "CSStoreCreateMutableCopy",
+      "framework": "CoreServicesStore",
+      "return_type": "CSStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CSStoreRef CSStoreCreateMutableCopy(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "CSStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSStoreCreateMutable"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSMapGetKeyAndValueForKeyData": {
+      "name": "CSMapGetKeyAndValueForKeyData",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSMapRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSMapGetKeyAndValueForKeyData(CSMapRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSStoreFreeUnit": {
+      "name": "CSStoreFreeUnit",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ CSStoreFreeUnit(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreAccessContextAccessForRead": {
+      "name": "_CSStoreAccessContextAccessForRead",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreAccessContextAccessForRead(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreRemoveTable": {
+      "name": "_CSStoreRemoveTable",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreRemoveTable(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSStoreGetUnit": {
+      "name": "CSStoreGetUnit",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSStoreGetUnit(CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSStringBindingFindStringAndBindings": {
+      "name": "CSStringBindingFindStringAndBindings",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ CSStringBindingFindStringAndBindings(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSVisualizerForegroundColorAttributeName": {
+      "name": "_CSVisualizerForegroundColorAttributeName",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSVisualizerForegroundColorAttributeName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSStoreGetHeader": {
+      "name": "CSStoreGetHeader",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSStoreGetHeader(CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreEnumerateTables": {
+      "name": "_CSStoreEnumerateTables",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreEnumerateTables(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreValidate": {
+      "name": "_CSStoreValidate",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreValidate(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSDictionaryGetKeyOptions": {
+      "name": "_CSDictionaryGetKeyOptions",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSDictionaryRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _CSDictionaryGetKeyOptions(_CSDictionaryRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreAccessContextAccessForWrite": {
+      "name": "_CSStoreAccessContextAccessForWrite",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreAccessContextAccessForWrite(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSArrayAppendValue": {
+      "name": "_CSArrayAppendValue",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSArrayAppendValue(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSMapCopyDebugDescription": {
+      "name": "_CSMapCopyDebugDescription",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSMapRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSMapRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CSMapRef/*?*/ _CSMapCopyDebugDescription(_CSMapRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CSMapRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSStoreAllocUnit": {
+      "name": "CSStoreAllocUnit",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSStoreAllocUnit(size_t size)",
+      "verb": "write",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSStoreAllocUnitWithData",
+        "CSMapInit",
+        "CSStringBindingStoreInit"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_kCSStoreTableNameMaxLength": {
+      "name": "_kCSStoreTableNameMaxLength",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _kCSStoreTableNameMaxLength(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSStoreReallocUnit": {
+      "name": "CSStoreReallocUnit",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ CSStoreReallocUnit(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSArrayGetCapacity": {
+      "name": "_CSArrayGetCapacity",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSArrayRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _CSArrayGetCapacity(_CSArrayRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSGetStringForCharacters": {
+      "name": "_CSGetStringForCharacters",
+      "framework": "CoreServicesStore",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ _CSGetStringForCharacters(_CSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSGetStringForCFString",
+        "_CSGetConstStringForCharacters",
+        "_CSStoreGetStringTable",
+        "_CSStoreGetTableWithName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSArrayReserveCapacity": {
+      "name": "_CSArrayReserveCapacity",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSArrayReserveCapacity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStringBindingEnumerateAllBindings": {
+      "name": "_CSStringBindingEnumerateAllBindings",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStringBindingEnumerateAllBindings(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreAccessContextCreateWithQueue": {
+      "name": "_CSStoreAccessContextCreateWithQueue",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStoreAccessContextRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CSStoreAccessContextRef _CSStoreAccessContextCreateWithQueue(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStoreAccessContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStoreAccessContextCreateWithLock",
+        "_CSStoreAccessContextCreateSharedReadingContext",
+        "_CSStoreAccessContextCreateWithQueueAndAssertionFunctions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreCommit": {
+      "name": "_CSStoreCommit",
+      "framework": "CoreServicesStore",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Submit pattern"
+        }
+      ],
+      "signature": "int/*?*/ _CSStoreCommit(_CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreWriteToHeader": {
+      "name": "_CSStoreWriteToHeader",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreWriteToHeader(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSArrayGetCount": {
+      "name": "_CSArrayGetCount",
+      "framework": "CoreServicesStore",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSArrayRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ _CSArrayGetCount(_CSArrayRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSArraySetValueAtIndex",
+        "_CSDictionaryGetCount",
+        "_CSStringGetRetainCount",
+        "CSStoreGetUnitCount",
+        "_CSArrayGetValueAtIndex"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSArrayInsertValueAtIndex": {
+      "name": "_CSArrayInsertValueAtIndex",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSArrayInsertValueAtIndex(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreAddTable": {
+      "name": "_CSStoreAddTable",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreAddTable(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSArrayDispose": {
+      "name": "_CSArrayDispose",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSArrayDispose(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreGetStringTable": {
+      "name": "_CSStoreGetStringTable",
+      "framework": "CoreServicesStore",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ _CSStoreGetStringTable(_CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSGetStringForCFString",
+        "_CSGetConstStringForCharacters",
+        "_CSGetStringForCharacters",
+        "_CSStoreGetTableWithName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStringBindingGetBindings": {
+      "name": "_CSStringBindingGetBindings",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStringBindingRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _CSStringBindingGetBindings(_CSStringBindingRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStringCopyUppercase": {
+      "name": "_CSStringCopyUppercase",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStringRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStringRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CSStringRef/*?*/ _CSStringCopyUppercase(_CSStringRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStringRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStringRetain",
+        "_CSStringCopyCFString",
+        "_CSStringCopyLowercase"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSStoreGetUnitCount": {
+      "name": "CSStoreGetUnitCount",
+      "framework": "CoreServicesStore",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ CSStoreGetUnitCount(CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSArraySetValueAtIndex",
+        "_CSDictionaryGetCount",
+        "_CSStringGetRetainCount",
+        "_CSArrayGetCount",
+        "_CSArrayGetValueAtIndex"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreSetExpectedAccessContext": {
+      "name": "_CSStoreSetExpectedAccessContext",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreSetExpectedAccessContext(_CSStoreRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreEnumerateUnits": {
+      "name": "_CSStoreEnumerateUnits",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStoreEnumerateUnits(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreGetCatalogTable": {
+      "name": "_CSStoreGetCatalogTable",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _CSStoreGetCatalogTable(_CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreIsTableBalanced": {
+      "name": "_CSStoreIsTableBalanced",
+      "framework": "CoreServicesStore",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _CSStoreIsTableBalanced(_CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSStringBindingStoreInit": {
+      "name": "CSStringBindingStoreInit",
+      "framework": "CoreServicesStore",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ CSStringBindingStoreInit(void *buf, size_t size)",
+      "verb": "write",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CSStoreAllocUnitWithData",
+        "CSMapInit",
+        "CSStoreAllocUnit"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreCopyTableName": {
+      "name": "_CSStoreCopyTableName",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStoreRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CSStoreRef/*?*/ _CSStoreCopyTableName(_CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStoreCopyMemoryStatistics",
+        "_CSStoreCreateWithURL",
+        "_CSStoreCreateXPCRepresentation",
+        "_CSStoreCopyDebugDescriptionOfTable",
+        "_CSStoreCreateWithXPCRepresentation"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSArrayCreate": {
+      "name": "_CSArrayCreate",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSArrayRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CSArrayRef _CSArrayCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CSArrayRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSArrayCreateWithCapacity"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSVisualizerTemporalValueAttributeName": {
+      "name": "_CSVisualizerTemporalValueAttributeName",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSVisualizerTemporalValueAttributeName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStringIsConst": {
+      "name": "_CSStringIsConst",
+      "framework": "CoreServicesStore",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStringRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _CSStringIsConst(_CSStringRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSStoreGetGeneration": {
+      "name": "CSStoreGetGeneration",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSStoreGetGeneration(CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreCopyDebugDescriptionOfBytesInRange": {
+      "name": "_CSStoreCopyDebugDescriptionOfBytesInRange",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStoreRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CSStoreRef/*?*/ _CSStoreCopyDebugDescriptionOfBytesInRange(_CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStoreCopyMemoryStatistics",
+        "_CSStoreCreateWithURL",
+        "_CSStoreCreateXPCRepresentation",
+        "_CSStoreCopyDebugDescriptionOfTable",
+        "_CSStoreCreateWithXPCRepresentation"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSMapGetHeader": {
+      "name": "CSMapGetHeader",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSMapRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSMapGetHeader(CSMapRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSStringBindingRemoveBindings": {
+      "name": "CSStringBindingRemoveBindings",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ CSStringBindingRemoveBindings(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSVisualizerTemporalDeltaAttributeName": {
+      "name": "_CSVisualizerTemporalDeltaAttributeName",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSVisualizerTemporalDeltaAttributeName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSArrayRemoveAllValues": {
+      "name": "_CSArrayRemoveAllValues",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSArrayRemoveAllValues(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStringCopyCFString": {
+      "name": "_CSStringCopyCFString",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStringRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStringRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CSStringRef/*?*/ _CSStringCopyCFString(_CSStringRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStringRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStringRetain",
+        "_CSStringCopyUppercase",
+        "_CSStringCopyLowercase"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStringGetUppercase": {
+      "name": "_CSStringGetUppercase",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStringRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _CSStringGetUppercase(_CSStringRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSVisualizerWarningAttributeName": {
+      "name": "_CSVisualizerWarningAttributeName",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSVisualizerWarningAttributeName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreCreateByReadingFromFileHandle": {
+      "name": "_CSStoreCreateByReadingFromFileHandle",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CSStoreRef _CSStoreCreateByReadingFromFileHandle(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStoreCopyMemoryStatistics",
+        "_CSStoreCreateWithURL",
+        "_CSStoreCreateXPCRepresentation",
+        "_CSStoreCopyDebugDescriptionOfTable",
+        "_CSStoreCreateWithXPCRepresentation"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSStringBindingStoreAddTable": {
+      "name": "CSStringBindingStoreAddTable",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ CSStringBindingStoreAddTable(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreCopyDebugDescriptionOfUnit": {
+      "name": "_CSStoreCopyDebugDescriptionOfUnit",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStoreRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CSStoreRef/*?*/ _CSStoreCopyDebugDescriptionOfUnit(_CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStoreCopyMemoryStatistics",
+        "_CSStoreCreateWithURL",
+        "_CSStoreCreateXPCRepresentation",
+        "_CSStoreCopyDebugDescriptionOfTable",
+        "_CSStoreCreateWithXPCRepresentation"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSArrayGetValueAtIndex": {
+      "name": "_CSArrayGetValueAtIndex",
+      "framework": "CoreServicesStore",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSArrayRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ _CSArrayGetValueAtIndex(_CSArrayRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSArraySetValueAtIndex",
+        "_CSDictionaryGetCount",
+        "_CSStringGetRetainCount",
+        "_CSArrayGetCount",
+        "CSStoreGetUnitCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSCopyStringForCharacters": {
+      "name": "_CSCopyStringForCharacters",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CSRef/*?*/ _CSCopyStringForCharacters(_CSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSVisualizerBackgroundColorAttributeName": {
+      "name": "_CSVisualizerBackgroundColorAttributeName",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSVisualizerBackgroundColorAttributeName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStringBindingEnumerate": {
+      "name": "_CSStringBindingEnumerate",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSStringBindingEnumerate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSDictionaryDispose": {
+      "name": "_CSDictionaryDispose",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        }
+      ],
+      "signature": "void/*?*/ _CSDictionaryDispose(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSStringBindingSetBindings": {
+      "name": "CSStringBindingSetBindings",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSStringBindingRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CSStringBindingSetBindings(CSStringBindingRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSMapGetValue": {
+      "name": "CSMapGetValue",
+      "framework": "CoreServicesStore",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CSMapRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CSMapGetValue(CSMapRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStringGetUnitFromID": {
+      "name": "_CSStringGetUnitFromID",
+      "framework": "CoreServicesStore",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStringRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ _CSStringGetUnitFromID(_CSStringRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStoreSetUnitIdentifierExhaustionHandler"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStringRelease": {
+      "name": "_CSStringRelease",
+      "framework": "CoreServicesStore",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStringRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void _CSStringRelease(_CSStringRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreGetTableWithName": {
+      "name": "_CSStoreGetTableWithName",
+      "framework": "CoreServicesStore",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStoreRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ _CSStoreGetTableWithName(_CSStoreRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSGetStringForCFString",
+        "_CSGetConstStringForCharacters",
+        "_CSGetStringForCharacters",
+        "_CSStoreGetStringTable"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStringCopyLowercase": {
+      "name": "_CSStringCopyLowercase",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStringRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CSStringRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CSStringRef/*?*/ _CSStringCopyLowercase(_CSStringRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStringRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStringRetain",
+        "_CSStringCopyUppercase",
+        "_CSStringCopyCFString"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CSStoreCreateDataWithUnitNoCopy": {
+      "name": "_CSStoreCreateDataWithUnitNoCopy",
+      "framework": "CoreServicesStore",
+      "return_type": "_CSStoreRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesStore"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CSStoreRef _CSStoreCreateDataWithUnitNoCopy(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "_CSStoreRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CSStoreCopyMemoryStatistics",
+        "_CSStoreCreateWithURL",
+        "_CSStoreCreateXPCRepresentation",
+        "_CSStoreCopyDebugDescriptionOfTable",
+        "_CSStoreCreateWithXPCRepresentation"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "_CSStoreAccessContextCreateSharedReadingContext"
+    ],
+    "memory_buffer": [
+      "CSStoreAllocUnit",
+      "CSStoreAllocUnitWithData",
+      "CSStoreReallocUnit",
+      "_CSStoreCopyMemoryStatistics"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

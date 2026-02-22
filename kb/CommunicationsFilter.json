@@ -1,0 +1,646 @@
+{
+  "framework": "CommunicationsFilter",
+  "functions": {
+    "CMFXPCParameterKeyItems": {
+      "name": "CMFXPCParameterKeyItems",
+      "framework": "CommunicationsFilter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        }
+      ],
+      "signature": "void/*?*/ CMFXPCParameterKeyItems(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFBlockListAddItemForAllServices": {
+      "name": "CMFBlockListAddItemForAllServices",
+      "framework": "CommunicationsFilter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        }
+      ],
+      "signature": "void/*?*/ CMFBlockListAddItemForAllServices(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFXPCResponseKey": {
+      "name": "CMFXPCResponseKey",
+      "framework": "CommunicationsFilter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        }
+      ],
+      "signature": "void/*?*/ CMFXPCResponseKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFBlockListIsItemBlocked": {
+      "name": "CMFBlockListIsItemBlocked",
+      "framework": "CommunicationsFilter",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMFBlockListRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMFBlockListIsItemBlocked(CMFBlockListRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFItemGetType": {
+      "name": "CMFItemGetType",
+      "framework": "CommunicationsFilter",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMFItemRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMFItemGetType(CMFItemRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFDictionaryResultKey": {
+      "name": "CMFDictionaryResultKey",
+      "framework": "CommunicationsFilter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        }
+      ],
+      "signature": "void/*?*/ CMFDictionaryResultKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFItemCopyBusinessID": {
+      "name": "CMFItemCopyBusinessID",
+      "framework": "CommunicationsFilter",
+      "return_type": "CMFItemRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMFItemRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CMFItemRef/*?*/ CMFItemCopyBusinessID(CMFItemRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CMFItemRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMFItemCreateWithPhoneNumber",
+        "CMFItemCopyEmailAddress",
+        "CMFItemCreateWithEmailAddress",
+        "CMFItemCopyPhoneNumber",
+        "CMFItemCreateWithBusinessID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFBlockListRemoveItemFromAllServices": {
+      "name": "CMFBlockListRemoveItemFromAllServices",
+      "framework": "CommunicationsFilter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        }
+      ],
+      "signature": "void/*?*/ CMFBlockListRemoveItemFromAllServices(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CreateCMFItemFromString": {
+      "name": "CreateCMFItemFromString",
+      "framework": "CommunicationsFilter",
+      "return_type": "void *",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "void * CreateCMFItemFromString(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFItemCreateWithPhoneNumber": {
+      "name": "CMFItemCreateWithPhoneNumber",
+      "framework": "CommunicationsFilter",
+      "return_type": "CMFItemRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMFItemRef CMFItemCreateWithPhoneNumber(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMFItemRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMFItemCopyBusinessID",
+        "CMFItemCopyEmailAddress",
+        "CMFItemCreateWithEmailAddress",
+        "CMFItemCopyPhoneNumber",
+        "CMFItemCreateWithBusinessID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFAgentName": {
+      "name": "CMFAgentName",
+      "framework": "CommunicationsFilter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        }
+      ],
+      "signature": "void/*?*/ CMFAgentName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFItemCopyEmailAddress": {
+      "name": "CMFItemCopyEmailAddress",
+      "framework": "CommunicationsFilter",
+      "return_type": "CMFItemRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMFItemRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CMFItemRef/*?*/ CMFItemCopyEmailAddress(CMFItemRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CMFItemRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMFItemCopyBusinessID",
+        "CMFItemCreateWithPhoneNumber",
+        "CMFItemCreateWithEmailAddress",
+        "CMFItemCopyPhoneNumber",
+        "CMFItemCreateWithBusinessID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFItemCreateWithEmailAddress": {
+      "name": "CMFItemCreateWithEmailAddress",
+      "framework": "CommunicationsFilter",
+      "return_type": "CMFItemRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMFItemRef CMFItemCreateWithEmailAddress(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMFItemRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMFItemCopyBusinessID",
+        "CMFItemCreateWithPhoneNumber",
+        "CMFItemCopyEmailAddress",
+        "CMFItemCopyPhoneNumber",
+        "CMFItemCreateWithBusinessID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFItemCopyPhoneNumber": {
+      "name": "CMFItemCopyPhoneNumber",
+      "framework": "CommunicationsFilter",
+      "return_type": "CMFItemRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMFItemRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CMFItemRef/*?*/ CMFItemCopyPhoneNumber(CMFItemRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CMFItemRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMFItemCopyBusinessID",
+        "CMFItemCreateWithPhoneNumber",
+        "CMFItemCopyEmailAddress",
+        "CMFItemCreateWithEmailAddress",
+        "CMFItemCreateWithBusinessID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFItemCreateWithBusinessID": {
+      "name": "CMFItemCreateWithBusinessID",
+      "framework": "CommunicationsFilter",
+      "return_type": "CMFItemRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMFItemRef CMFItemCreateWithBusinessID(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMFItemRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMFItemCopyBusinessID",
+        "CMFItemCreateWithPhoneNumber",
+        "CMFItemCopyEmailAddress",
+        "CMFItemCreateWithEmailAddress",
+        "CMFItemCopyPhoneNumber"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFBlockListGetBlockedStatusForItems": {
+      "name": "CMFBlockListGetBlockedStatusForItems",
+      "framework": "CommunicationsFilter",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMFBlockListRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMFBlockListGetBlockedStatusForItems(CMFBlockListRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFSyncAgentBlockListUpdated": {
+      "name": "CMFSyncAgentBlockListUpdated",
+      "framework": "CommunicationsFilter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        }
+      ],
+      "signature": "void/*?*/ CMFSyncAgentBlockListUpdated(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFBlockListCopyItemsForAllServicesService": {
+      "name": "CMFBlockListCopyItemsForAllServicesService",
+      "framework": "CommunicationsFilter",
+      "return_type": "CMFBlockListRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMFBlockListRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CMFBlockListRef/*?*/ CMFBlockListCopyItemsForAllServicesService(CMFBlockListRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CMFBlockListRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFXPCEventCode": {
+      "name": "CMFXPCEventCode",
+      "framework": "CommunicationsFilter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        }
+      ],
+      "signature": "void/*?*/ CMFXPCEventCode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFXPCParameterKeyItem": {
+      "name": "CMFXPCParameterKeyItem",
+      "framework": "CommunicationsFilter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        }
+      ],
+      "signature": "void/*?*/ CMFXPCParameterKeyItem(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMFBlockListUpdatedNotification": {
+      "name": "CMFBlockListUpdatedNotification",
+      "framework": "CommunicationsFilter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CommunicationsFilter"
+        }
+      ],
+      "signature": "void/*?*/ CMFBlockListUpdatedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {},
+  "protocols": [],
+  "type_aliases": {}
+}

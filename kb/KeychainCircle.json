@@ -1,0 +1,3379 @@
+{
+  "framework": "KeychainCircle",
+  "functions": {
+    "ApplyScopeListForID": {
+      "name": "ApplyScopeListForID",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ ApplyScopeListForID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "secLogEnable": {
+      "name": "secLogEnable",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ secLogEnable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "pairingScope": {
+      "name": "pairingScope",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ pairingScope(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecAKSSanitizedKeyclass": {
+      "name": "SecAKSSanitizedKeyclass",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ SecAKSSanitizedKeyclass(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "sizeof_seq_data_data": {
+      "name": "sizeof_seq_data_data",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ sizeof_seq_data_data(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "KCPairingIntent_Capability_FullPeer": {
+      "name": "KCPairingIntent_Capability_FullPeer",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ KCPairingIntent_Capability_FullPeer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RequirementError": {
+      "name": "RequirementError",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ RequirementError(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CFStringPerformWithCString": {
+      "name": "CFStringPerformWithCString",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ CFStringPerformWithCString(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CFStringSetPerformWithDescription": {
+      "name": "CFStringSetPerformWithDescription",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CFStringRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CFStringSetPerformWithDescription(CFStringRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CFStringPerformWithCStringAndLength": {
+      "name": "CFStringPerformWithCStringAndLength",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ CFStringPerformWithCStringAndLength(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetShortDateFormatterQueue": {
+      "name": "GetShortDateFormatterQueue",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ GetShortDateFormatterQueue(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecCopyURLForFileInUserScopedKeychainDirectory": {
+      "name": "SecCopyURLForFileInUserScopedKeychainDirectory",
+      "framework": "KeychainCircle",
+      "return_type": "SecRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SecRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "SecRef/*?*/ SecCopyURLForFileInUserScopedKeychainDirectory(SecRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "SecRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SecCopyURLForFileInProtectedDirectory",
+        "SecCopyURLForFileInBaseDirectory",
+        "SecCopyURLForFileInUserCacheDirectory",
+        "SecCopyHomeURL",
+        "SecCopyURLForFileInManagedPreferencesDirectory"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecCopyURLForFileInProtectedDirectory": {
+      "name": "SecCopyURLForFileInProtectedDirectory",
+      "framework": "KeychainCircle",
+      "return_type": "SecRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SecRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "SecRef/*?*/ SecCopyURLForFileInProtectedDirectory(SecRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "SecRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SecCopyURLForFileInUserScopedKeychainDirectory",
+        "SecCopyURLForFileInBaseDirectory",
+        "SecCopyURLForFileInUserCacheDirectory",
+        "SecCopyHomeURL",
+        "SecCopyURLForFileInManagedPreferencesDirectory"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecError": {
+      "name": "SecError",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ SecError(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IsScopeActive": {
+      "name": "IsScopeActive",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ IsScopeActive(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "secLogObjForCFScope": {
+      "name": "secLogObjForCFScope",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ secLogObjForCFScope(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CFStringPerformWithUTF8CFData": {
+      "name": "CFStringPerformWithUTF8CFData",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ CFStringPerformWithUTF8CFData(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecGetDebugDescriptionFormatOptions": {
+      "name": "SecGetDebugDescriptionFormatOptions",
+      "framework": "KeychainCircle",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SecRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ SecGetDebugDescriptionFormatOptions(SecRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "WithPathInKeychainDirectory": {
+      "name": "WithPathInKeychainDirectory",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ WithPathInKeychainDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "secLogObjForScope": {
+      "name": "secLogObjForScope",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ secLogObjForScope(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CFStringArrayPerformWithDescription": {
+      "name": "CFStringArrayPerformWithDescription",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ CFStringArrayPerformWithDescription(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecCopyURLForFileInBaseDirectory": {
+      "name": "SecCopyURLForFileInBaseDirectory",
+      "framework": "KeychainCircle",
+      "return_type": "SecRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SecRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "SecRef/*?*/ SecCopyURLForFileInBaseDirectory(SecRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "SecRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SecCopyURLForFileInUserScopedKeychainDirectory",
+        "SecCopyURLForFileInProtectedDirectory",
+        "SecCopyURLForFileInUserCacheDirectory",
+        "SecCopyHomeURL",
+        "SecCopyURLForFileInManagedPreferencesDirectory"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "secLogDisable": {
+      "name": "secLogDisable",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ secLogDisable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CopyCurrentScopePlist": {
+      "name": "CopyCurrentScopePlist",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ CopyCurrentScopePlist(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IsScopeActiveC": {
+      "name": "IsScopeActiveC",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ IsScopeActiveC(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "sizeof_initialmessage_version1": {
+      "name": "sizeof_initialmessage_version1",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ sizeof_initialmessage_version1(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "vouchMaxRetry": {
+      "name": "vouchMaxRetry",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ vouchMaxRetry(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "encode_initialmessage_version1": {
+      "name": "encode_initialmessage_version1",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ encode_initialmessage_version1(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PairingPacketKey_Credential": {
+      "name": "PairingPacketKey_Credential",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ PairingPacketKey_Credential(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PairingPacketKey_OctagonData": {
+      "name": "PairingPacketKey_OctagonData",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ PairingPacketKey_OctagonData(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecCFCreateErrorWithFormatAndArguments": {
+      "name": "SecCFCreateErrorWithFormatAndArguments",
+      "framework": "KeychainCircle",
+      "return_type": "SecCFRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "SecCFRef SecCFCreateErrorWithFormatAndArguments(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "SecCFRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SecCFCreateErrorWithFormat"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecSetCustomHomeURL": {
+      "name": "SecSetCustomHomeURL",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SecRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ SecSetCustomHomeURL(SecRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PairingPacketKey_EndOfSession": {
+      "name": "PairingPacketKey_EndOfSession",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ PairingPacketKey_EndOfSession(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "WithPathInDirectory": {
+      "name": "WithPathInDirectory",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ WithPathInDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "decode_version2": {
+      "name": "decode_version2",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ decode_version2(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "epochMaxRetry": {
+      "name": "epochMaxRetry",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ epochMaxRetry(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MetricsEnable": {
+      "name": "MetricsEnable",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ MetricsEnable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "decode_seq_data_data": {
+      "name": "decode_seq_data_data",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ decode_seq_data_data(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PairingPacketKey_PCSDataRequest": {
+      "name": "PairingPacketKey_PCSDataRequest",
+      "framework": "KeychainCircle",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ PairingPacketKey_PCSDataRequest(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "extractStartFromInitialMessage",
+        "KCInitialMessageDataReadFrom",
+        "PairingPacketKey_InitialCredentialsFromAcceptor",
+        "SecAllocationError"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecCFCreateErrorWithFormat": {
+      "name": "SecCFCreateErrorWithFormat",
+      "framework": "KeychainCircle",
+      "return_type": "SecCFRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "SecCFRef SecCFCreateErrorWithFormat(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "SecCFRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SecCFCreateErrorWithFormatAndArguments"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecCopyURLForFileInUserCacheDirectory": {
+      "name": "SecCopyURLForFileInUserCacheDirectory",
+      "framework": "KeychainCircle",
+      "return_type": "SecRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SecRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "SecRef/*?*/ SecCopyURLForFileInUserCacheDirectory(SecRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "SecRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SecCopyURLForFileInUserScopedKeychainDirectory",
+        "SecCopyURLForFileInProtectedDirectory",
+        "SecCopyURLForFileInBaseDirectory",
+        "SecCopyHomeURL",
+        "SecCopyURLForFileInManagedPreferencesDirectory"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "KCPairingIntent_Type_None": {
+      "name": "KCPairingIntent_Type_None",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ KCPairingIntent_Type_None(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PairingPacketKey_PCSDataPacketNumber": {
+      "name": "PairingPacketKey_PCSDataPacketNumber",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ PairingPacketKey_PCSDataPacketNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "extractStartFromInitialMessage": {
+      "name": "extractStartFromInitialMessage",
+      "framework": "KeychainCircle",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ extractStartFromInitialMessage(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PairingPacketKey_PCSDataRequest",
+        "KCInitialMessageDataReadFrom",
+        "PairingPacketKey_InitialCredentialsFromAcceptor",
+        "SecAllocationError"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecAKSKeybagDropLockAssertion": {
+      "name": "SecAKSKeybagDropLockAssertion",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ SecAKSKeybagDropLockAssertion(void)",
+      "verb": "synchronize",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "kcder_encode_data_optional": {
+      "name": "kcder_encode_data_optional",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ kcder_encode_data_optional(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PairingPacketKey_PCSDataKeyPrefix": {
+      "name": "PairingPacketKey_PCSDataKeyPrefix",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ PairingPacketKey_PCSDataKeyPrefix(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "decode_seq_string_data": {
+      "name": "decode_seq_string_data",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ decode_seq_string_data(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "encode_seq_string_data": {
+      "name": "encode_seq_string_data",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ encode_seq_string_data(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "withStringOfAbsoluteTime": {
+      "name": "withStringOfAbsoluteTime",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ withStringOfAbsoluteTime(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreCryptoError": {
+      "name": "CoreCryptoError",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ CoreCryptoError(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "KCInitialMessageDataReadFrom": {
+      "name": "KCInitialMessageDataReadFrom",
+      "framework": "KeychainCircle",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ KCInitialMessageDataReadFrom(void *buf, size_t size)",
+      "verb": "read",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PairingPacketKey_PCSDataRequest",
+        "extractStartFromInitialMessage",
+        "PairingPacketKey_InitialCredentialsFromAcceptor",
+        "SecAllocationError"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PairingPacketKey_Version": {
+      "name": "PairingPacketKey_Version",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ PairingPacketKey_Version(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "KCPairingIntent_Type_SilentRepair": {
+      "name": "KCPairingIntent_Type_SilentRepair",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ KCPairingIntent_Type_SilentRepair(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MetricsOverrideTestsAreEnabled": {
+      "name": "MetricsOverrideTestsAreEnabled",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ MetricsOverrideTestsAreEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecIsEduMode": {
+      "name": "SecIsEduMode",
+      "framework": "KeychainCircle",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SecRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SecIsEduMode(SecRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecKernError": {
+      "name": "SecKernError",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ SecKernError(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecRequirementError": {
+      "name": "SecRequirementError",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ SecRequirementError(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecSetCustomHomeURLString": {
+      "name": "SecSetCustomHomeURLString",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SecRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "const char *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ SecSetCustomHomeURLString(SecRef *ref, const char * *value)",
+      "verb": "write",
+      "input_formats": [
+        "const char * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SetCustomHomePath": {
+      "name": "SetCustomHomePath",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ SetCustomHomePath(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "WithPathInProtectedDirectory": {
+      "name": "WithPathInProtectedDirectory",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ WithPathInProtectedDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecCopyHomeURL": {
+      "name": "SecCopyHomeURL",
+      "framework": "KeychainCircle",
+      "return_type": "SecRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SecRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "SecRef/*?*/ SecCopyHomeURL(SecRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "SecRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SecCopyURLForFileInUserScopedKeychainDirectory",
+        "SecCopyURLForFileInProtectedDirectory",
+        "SecCopyURLForFileInBaseDirectory",
+        "SecCopyURLForFileInUserCacheDirectory",
+        "SecCopyURLForFileInManagedPreferencesDirectory"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "WithPathInUserCacheDirectory": {
+      "name": "WithPathInUserCacheDirectory",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ WithPathInUserCacheDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecAKSDoWithKeybagLockAssertion": {
+      "name": "SecAKSDoWithKeybagLockAssertion",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ SecAKSDoWithKeybagLockAssertion(void)",
+      "verb": "synchronize",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "KeychainCircleVersionNumber": {
+      "name": "KeychainCircleVersionNumber",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ KeychainCircleVersionNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecCopyURLForFileInManagedPreferencesDirectory": {
+      "name": "SecCopyURLForFileInManagedPreferencesDirectory",
+      "framework": "KeychainCircle",
+      "return_type": "SecRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SecRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "SecRef/*?*/ SecCopyURLForFileInManagedPreferencesDirectory(SecRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "SecRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SecCopyURLForFileInUserScopedKeychainDirectory",
+        "SecCopyURLForFileInProtectedDirectory",
+        "SecCopyURLForFileInBaseDirectory",
+        "SecCopyURLForFileInUserCacheDirectory",
+        "SecCopyHomeURL"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecSeparateUserKeychain": {
+      "name": "SecSeparateUserKeychain",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ SecSeparateUserKeychain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecCopyBaseFilesURL": {
+      "name": "SecCopyBaseFilesURL",
+      "framework": "KeychainCircle",
+      "return_type": "SecRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SecRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "SecRef/*?*/ SecCopyBaseFilesURL(SecRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "SecRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SecCopyURLForFileInUserScopedKeychainDirectory",
+        "SecCopyURLForFileInProtectedDirectory",
+        "SecCopyURLForFileInBaseDirectory",
+        "SecCopyURLForFileInUserCacheDirectory",
+        "SecCopyHomeURL"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "kcder_decode_data_nocopy": {
+      "name": "kcder_decode_data_nocopy",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ kcder_decode_data_nocopy(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "api_trace": {
+      "name": "api_trace",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ api_trace(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "encode_initialmessage_version2": {
+      "name": "encode_initialmessage_version2",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ encode_initialmessage_version2(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "kcder_encode_data": {
+      "name": "kcder_encode_data",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ kcder_encode_data(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CFDictionaryCopyCompactDescription": {
+      "name": "CFDictionaryCopyCompactDescription",
+      "framework": "KeychainCircle",
+      "return_type": "CFDictionaryRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CFDictionaryRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CFDictionaryRef/*?*/ CFDictionaryCopyCompactDescription(CFDictionaryRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CFDictionaryRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CFDictionaryCopySuperCompactDescription"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "KCJoiningErrorCreate": {
+      "name": "KCJoiningErrorCreate",
+      "framework": "KeychainCircle",
+      "return_type": "KCJoiningErrorRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "KCJoiningErrorRef KCJoiningErrorCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "KCJoiningErrorRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PairingPacketKey_PCSData": {
+      "name": "PairingPacketKey_PCSData",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ PairingPacketKey_PCSData(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "kcder_sizeof_data": {
+      "name": "kcder_sizeof_data",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ kcder_sizeof_data(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecAKSKeybagHoldLockAssertion": {
+      "name": "SecAKSKeybagHoldLockAssertion",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ SecAKSKeybagHoldLockAssertion(void)",
+      "verb": "synchronize",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PairingPacketKey_CircleBlob": {
+      "name": "PairingPacketKey_CircleBlob",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ PairingPacketKey_CircleBlob(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "sizeof_seq_string_data": {
+      "name": "sizeof_seq_string_data",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ sizeof_seq_string_data(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "__security_debug_init": {
+      "name": "__security_debug_init",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ __security_debug_init(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "KCPairingIntent_Capability_LimitedPeer": {
+      "name": "KCPairingIntent_Capability_LimitedPeer",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ KCPairingIntent_Capability_LimitedPeer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "decode_version1": {
+      "name": "decode_version1",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ decode_version1(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetShortDateFormatter": {
+      "name": "GetShortDateFormatter",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ GetShortDateFormatter(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecCFCalendarDoWithZuluCalendar": {
+      "name": "SecCFCalendarDoWithZuluCalendar",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ SecCFCalendarDoWithZuluCalendar(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PairingPacketKey_InitialCredentialsFromAcceptor": {
+      "name": "PairingPacketKey_InitialCredentialsFromAcceptor",
+      "framework": "KeychainCircle",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ PairingPacketKey_InitialCredentialsFromAcceptor(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PairingPacketKey_PCSDataRequest",
+        "extractStartFromInitialMessage",
+        "KCInitialMessageDataReadFrom",
+        "SecAllocationError"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CFDataCreateWithRandomBytes": {
+      "name": "CFDataCreateWithRandomBytes",
+      "framework": "KeychainCircle",
+      "return_type": "CFDataRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CFDataRef CFDataCreateWithRandomBytes(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CFDataRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecLogAPICreate": {
+      "name": "SecLogAPICreate",
+      "framework": "KeychainCircle",
+      "return_type": "SecLogAPIRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "SecLogAPIRef SecLogAPICreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "SecLogAPIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PerformWithBuffer": {
+      "name": "PerformWithBuffer",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ PerformWithBuffer(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecCopyURLForFileInKeychainDirectory": {
+      "name": "SecCopyURLForFileInKeychainDirectory",
+      "framework": "KeychainCircle",
+      "return_type": "SecRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SecRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "SecRef/*?*/ SecCopyURLForFileInKeychainDirectory(SecRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "SecRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SecCopyURLForFileInUserScopedKeychainDirectory",
+        "SecCopyURLForFileInProtectedDirectory",
+        "SecCopyURLForFileInBaseDirectory",
+        "SecCopyURLForFileInUserCacheDirectory",
+        "SecCopyHomeURL"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "KCPairingIntent_Type_UserDriven": {
+      "name": "KCPairingIntent_Type_UserDriven",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ KCPairingIntent_Type_UserDriven(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "pairingCompression": {
+      "name": "pairingCompression",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ pairingCompression(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ApplyScopeListForIDC": {
+      "name": "ApplyScopeListForIDC",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ ApplyScopeListForIDC(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "KeychainCircleVersionString": {
+      "name": "KeychainCircleVersionString",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ KeychainCircleVersionString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecAKSCopyBackupBagWithSecret": {
+      "name": "SecAKSCopyBackupBagWithSecret",
+      "framework": "KeychainCircle",
+      "return_type": "SecAKSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SecAKSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "SecAKSRef/*?*/ SecAKSCopyBackupBagWithSecret(SecAKSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "SecAKSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "kcder_decode_data": {
+      "name": "kcder_decode_data",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ kcder_decode_data(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MetricsDisable": {
+      "name": "MetricsDisable",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ MetricsDisable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "kcder_decode_string": {
+      "name": "kcder_decode_string",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ kcder_decode_string(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "kcder_encode_raw_octet_space": {
+      "name": "kcder_encode_raw_octet_space",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ kcder_encode_raw_octet_space(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecAllocationError": {
+      "name": "SecAllocationError",
+      "framework": "KeychainCircle",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ SecAllocationError(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PairingPacketKey_PCSDataRequest",
+        "extractStartFromInitialMessage",
+        "KCInitialMessageDataReadFrom",
+        "PairingPacketKey_InitialCredentialsFromAcceptor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PairingPacketKey_PeerJoinBlob": {
+      "name": "PairingPacketKey_PeerJoinBlob",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ PairingPacketKey_PeerJoinBlob(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "encode_initialmessage": {
+      "name": "encode_initialmessage",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ encode_initialmessage(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecAKSDoWithKeybagLockAssertionSoftly": {
+      "name": "SecAKSDoWithKeybagLockAssertionSoftly",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ SecAKSDoWithKeybagLockAssertionSoftly(void)",
+      "verb": "synchronize",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetKeybagAssertionQueue": {
+      "name": "GetKeybagAssertionQueue",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ GetKeybagAssertionQueue(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "sizeof_initialmessage": {
+      "name": "sizeof_initialmessage",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ sizeof_initialmessage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSStatusError": {
+      "name": "OSStatusError",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ OSStatusError(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "kcder_encode_string": {
+      "name": "kcder_encode_string",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ kcder_encode_string(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PairingPacketKey_PCSDataFromAcceptor": {
+      "name": "PairingPacketKey_PCSDataFromAcceptor",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ PairingPacketKey_PCSDataFromAcceptor(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PairingPacketKey_PCSDataAck": {
+      "name": "PairingPacketKey_PCSDataAck",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ PairingPacketKey_PCSDataAck(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecCopyURLForFileInPreferencesDirectory": {
+      "name": "SecCopyURLForFileInPreferencesDirectory",
+      "framework": "KeychainCircle",
+      "return_type": "SecRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SecRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "SecRef/*?*/ SecCopyURLForFileInPreferencesDirectory(SecRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "SecRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SecCopyURLForFileInUserScopedKeychainDirectory",
+        "SecCopyURLForFileInProtectedDirectory",
+        "SecCopyURLForFileInBaseDirectory",
+        "SecCopyURLForFileInUserCacheDirectory",
+        "SecCopyHomeURL"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CFDictionaryCopySuperCompactDescription": {
+      "name": "CFDictionaryCopySuperCompactDescription",
+      "framework": "KeychainCircle",
+      "return_type": "CFDictionaryRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CFDictionaryRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CFDictionaryRef/*?*/ CFDictionaryCopySuperCompactDescription(CFDictionaryRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CFDictionaryRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CFDictionaryCopyCompactDescription"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "joinMaxRetry": {
+      "name": "joinMaxRetry",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ joinMaxRetry(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CFStringCreateByTrimmingCharactersInSet": {
+      "name": "CFStringCreateByTrimmingCharactersInSet",
+      "framework": "KeychainCircle",
+      "return_type": "CFStringRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CFStringRef CFStringCreateByTrimmingCharactersInSet(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CFStringRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "KCErrorDomain": {
+      "name": "KCErrorDomain",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ KCErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecCheckErrno": {
+      "name": "SecCheckErrno",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ SecCheckErrno(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PerformWithBufferAndClear": {
+      "name": "PerformWithBufferAndClear",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ PerformWithBufferAndClear(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "encode_seq_data_data": {
+      "name": "encode_seq_data_data",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ encode_seq_data_data(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "sizeof_initialmessage_version2": {
+      "name": "sizeof_initialmessage_version2",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ sizeof_initialmessage_version2(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "kcder_sizeof_string": {
+      "name": "kcder_sizeof_string",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ kcder_sizeof_string(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecCopyURLForFileInSystemKeychainDirectory": {
+      "name": "SecCopyURLForFileInSystemKeychainDirectory",
+      "framework": "KeychainCircle",
+      "return_type": "SecRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SecRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "SecRef/*?*/ SecCopyURLForFileInSystemKeychainDirectory(SecRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "SecRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SecCopyURLForFileInUserScopedKeychainDirectory",
+        "SecCopyURLForFileInProtectedDirectory",
+        "SecCopyURLForFileInBaseDirectory",
+        "SecCopyURLForFileInUserCacheDirectory",
+        "SecCopyHomeURL"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "secLogEnabled": {
+      "name": "secLogEnabled",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ secLogEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PairingPacketKey_Device": {
+      "name": "PairingPacketKey_Device",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ PairingPacketKey_Device(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "lockAssertType": {
+      "name": "lockAssertType",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ lockAssertType(void)",
+      "verb": "synchronize",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "decode_initialmessage": {
+      "name": "decode_initialmessage",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ decode_initialmessage(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "prepareMaxRetry": {
+      "name": "prepareMaxRetry",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ prepareMaxRetry(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ApplyScopeDictionaryForID": {
+      "name": "ApplyScopeDictionaryForID",
+      "framework": "KeychainCircle",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from KeychainCircle"
+        }
+      ],
+      "signature": "void/*?*/ ApplyScopeDictionaryForID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "CoreCryptoError"
+    ],
+    "compression": [
+      "pairingCompression"
+    ],
+    "memory_buffer": [
+      "PerformWithBuffer",
+      "PerformWithBufferAndClear",
+      "SecAllocationError"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

@@ -1,0 +1,2521 @@
+{
+  "framework": "CoreServicesInternal",
+  "functions": {
+    "_FSURLCopyResourcePropertyForKey": {
+      "name": "_FSURLCopyResourcePropertyForKey",
+      "framework": "CoreServicesInternal",
+      "return_type": "_FSURLRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSURLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_FSURLRef/*?*/ _FSURLCopyResourcePropertyForKey(_FSURLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_FSURLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_FSURLCopyResourcePropertyForKeyFromCache",
+        "_FSURLCopyResourcePropertiesForKeys",
+        "_FSURLCopyResourcePropertyValuesAndFlags",
+        "_FSURLCreateStandardError",
+        "_FSURLCreateFileReferenceURLFromFSRef"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_URLEnumeratorCreateForDirectoryURL": {
+      "name": "_URLEnumeratorCreateForDirectoryURL",
+      "framework": "CoreServicesInternal",
+      "return_type": "_URLEnumeratorRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_URLEnumeratorRef _URLEnumeratorCreateForDirectoryURL(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_URLEnumeratorRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_URLEnumeratorCreateForMountedVolumes"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_URLEnumeratorSkipDescendents": {
+      "name": "_URLEnumeratorSkipDescendents",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _URLEnumeratorSkipDescendents(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSCreatePathForFileID": {
+      "name": "_FSCreatePathForFileID",
+      "framework": "CoreServicesInternal",
+      "return_type": "_FSRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_FSRef _FSCreatePathForFileID(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_FSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_FSCreateFileReferenceURLFromIDs"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_RevocableBookmarksCopyClients": {
+      "name": "_RevocableBookmarksCopyClients",
+      "framework": "CoreServicesInternal",
+      "return_type": "_RevocableBookmarksRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_RevocableBookmarksRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_RevocableBookmarksRef/*?*/ _RevocableBookmarksCopyClients(_RevocableBookmarksRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_RevocableBookmarksRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_RevocableBookmarksCopyClientBundleIdentifiers"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLCopySecurityEAs": {
+      "name": "_CFURLCopySecurityEAs",
+      "framework": "CoreServicesInternal",
+      "return_type": "_CFURLRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CFURLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CFURLRef/*?*/ _CFURLCopySecurityEAs(_CFURLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CFURLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CFURLCreateBookmarkDataFromAliasRecord",
+        "_CFURLCreateByResolvingBookmarkData",
+        "_CFURLCreateBookmarkData",
+        "_CFURLCreateResourcePropertyForKeyFromBookmarkData",
+        "_CFURLCreateResourcePropertiesForKeysFromBookmarkData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLBeginResourcePropertyCacheAccess": {
+      "name": "_FSURLBeginResourcePropertyCacheAccess",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _FSURLBeginResourcePropertyCacheAccess(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLCacheResourcePropertyForKey": {
+      "name": "_FSURLCacheResourcePropertyForKey",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _FSURLCacheResourcePropertyForKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLGetFSRef": {
+      "name": "_FSURLGetFSRef",
+      "framework": "CoreServicesInternal",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSURLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _FSURLGetFSRef(_FSURLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLBookmarkDataCopyDescription": {
+      "name": "_CFURLBookmarkDataCopyDescription",
+      "framework": "CoreServicesInternal",
+      "return_type": "_CFURLBookmarkDataRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CFURLBookmarkDataRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CFURLBookmarkDataRef/*?*/ _CFURLBookmarkDataCopyDescription(_CFURLBookmarkDataRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CFURLBookmarkDataRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CFURLBookmarkDataCreateByAddingSecurityScopeWithKey",
+        "_CFURLBookmarkDataCreateByAddingSecurityScope"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLCreateBookmarkDataFromAliasRecord": {
+      "name": "_CFURLCreateBookmarkDataFromAliasRecord",
+      "framework": "CoreServicesInternal",
+      "return_type": "_CFURLRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CFURLRef _CFURLCreateBookmarkDataFromAliasRecord(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CFURLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CFURLCopySecurityEAs",
+        "_CFURLCreateByResolvingBookmarkData",
+        "_CFURLCreateBookmarkData",
+        "_CFURLCreateResourcePropertyForKeyFromBookmarkData",
+        "_CFURLCreateResourcePropertiesForKeysFromBookmarkData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLResourceIsReachable": {
+      "name": "_FSURLResourceIsReachable",
+      "framework": "CoreServicesInternal",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSURLResourceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _FSURLResourceIsReachable(_FSURLResourceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FileCacheGetName": {
+      "name": "_FileCacheGetName",
+      "framework": "CoreServicesInternal",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FileCacheRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ _FileCacheGetName(_FileCacheRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLGetCacheAutoFlushingEnabled": {
+      "name": "_FSURLGetCacheAutoFlushingEnabled",
+      "framework": "CoreServicesInternal",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSURLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "bool/*?*/ _FSURLGetCacheAutoFlushingEnabled(_FSURLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLStartAccessingSecurityScopedResource": {
+      "name": "_FSURLStartAccessingSecurityScopedResource",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _FSURLStartAccessingSecurityScopedResource(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLCreateByResolvingBookmarkData": {
+      "name": "_CFURLCreateByResolvingBookmarkData",
+      "framework": "CoreServicesInternal",
+      "return_type": "_CFURLRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CFURLRef _CFURLCreateByResolvingBookmarkData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CFURLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CFURLCopySecurityEAs",
+        "_CFURLCreateBookmarkDataFromAliasRecord",
+        "_CFURLCreateBookmarkData",
+        "_CFURLCreateResourcePropertyForKeyFromBookmarkData",
+        "_CFURLCreateResourcePropertiesForKeysFromBookmarkData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLNoteSecurityScopedResourceMovedWithFileIdentifier": {
+      "name": "_FSURLNoteSecurityScopedResourceMovedWithFileIdentifier",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _FSURLNoteSecurityScopedResourceMovedWithFileIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_URLCreateByResolvingAliasFile": {
+      "name": "_URLCreateByResolvingAliasFile",
+      "framework": "CoreServicesInternal",
+      "return_type": "_URLRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_URLRef _URLCreateByResolvingAliasFile(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_URLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_URLCopySecurityScopeFromFileURL"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLSetResourcePropertiesForKeys": {
+      "name": "_FSURLSetResourcePropertiesForKeys",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSURLRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _FSURLSetResourcePropertiesForKeys(_FSURLRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_URLEnumeratorGetNextURL": {
+      "name": "_URLEnumeratorGetNextURL",
+      "framework": "CoreServicesInternal",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_URLEnumeratorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _URLEnumeratorGetNextURL(_URLEnumeratorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_URLCopySecurityScopeFromFileURL": {
+      "name": "_URLCopySecurityScopeFromFileURL",
+      "framework": "CoreServicesInternal",
+      "return_type": "_URLRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_URLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_URLRef/*?*/ _URLCopySecurityScopeFromFileURL(_URLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_URLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_URLCreateByResolvingAliasFile"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLGetObjectInformationNoIO": {
+      "name": "_FSURLGetObjectInformationNoIO",
+      "framework": "CoreServicesInternal",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSURLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _FSURLGetObjectInformationNoIO(_FSURLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLBookmarkDataCreateByAddingSecurityScopeWithKey": {
+      "name": "_CFURLBookmarkDataCreateByAddingSecurityScopeWithKey",
+      "framework": "CoreServicesInternal",
+      "return_type": "_CFURLBookmarkDataRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CFURLBookmarkDataRef _CFURLBookmarkDataCreateByAddingSecurityScopeWithKey(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CFURLBookmarkDataRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CFURLBookmarkDataCopyDescription",
+        "_CFURLBookmarkDataCreateByAddingSecurityScope"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FileURLCreateDisplayPathComponentsArray": {
+      "name": "_FileURLCreateDisplayPathComponentsArray",
+      "framework": "CoreServicesInternal",
+      "return_type": "_FileURLRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_FileURLRef _FileURLCreateDisplayPathComponentsArray(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_FileURLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLCreateBookmarkData": {
+      "name": "_CFURLCreateBookmarkData",
+      "framework": "CoreServicesInternal",
+      "return_type": "_CFURLRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CFURLRef _CFURLCreateBookmarkData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CFURLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CFURLCopySecurityEAs",
+        "_CFURLCreateBookmarkDataFromAliasRecord",
+        "_CFURLCreateByResolvingBookmarkData",
+        "_CFURLCreateResourcePropertyForKeyFromBookmarkData",
+        "_CFURLCreateResourcePropertiesForKeysFromBookmarkData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_URLEnumeratorGetSourceDidChange": {
+      "name": "_URLEnumeratorGetSourceDidChange",
+      "framework": "CoreServicesInternal",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_URLEnumeratorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _URLEnumeratorGetSourceDidChange(_URLEnumeratorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLBookmarkDataCreateByAddingSecurityScope": {
+      "name": "_CFURLBookmarkDataCreateByAddingSecurityScope",
+      "framework": "CoreServicesInternal",
+      "return_type": "_CFURLBookmarkDataRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CFURLBookmarkDataRef _CFURLBookmarkDataCreateByAddingSecurityScope(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CFURLBookmarkDataRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CFURLBookmarkDataCopyDescription",
+        "_CFURLBookmarkDataCreateByAddingSecurityScopeWithKey"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLCreateResourcePropertyForKeyFromBookmarkData": {
+      "name": "_CFURLCreateResourcePropertyForKeyFromBookmarkData",
+      "framework": "CoreServicesInternal",
+      "return_type": "_CFURLRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CFURLRef _CFURLCreateResourcePropertyForKeyFromBookmarkData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CFURLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CFURLCopySecurityEAs",
+        "_CFURLCreateBookmarkDataFromAliasRecord",
+        "_CFURLCreateByResolvingBookmarkData",
+        "_CFURLCreateBookmarkData",
+        "_CFURLCreateResourcePropertiesForKeysFromBookmarkData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLSetCacheAutoFlushingEnabled": {
+      "name": "_FSURLSetCacheAutoFlushingEnabled",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSURLRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _FSURLSetCacheAutoFlushingEnabled(_FSURLRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLCopyResourcePropertyForKeyFromCache": {
+      "name": "_FSURLCopyResourcePropertyForKeyFromCache",
+      "framework": "CoreServicesInternal",
+      "return_type": "_FSURLRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSURLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_FSURLRef/*?*/ _FSURLCopyResourcePropertyForKeyFromCache(_FSURLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_FSURLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_FSURLCopyResourcePropertyForKey",
+        "_FSURLCopyResourcePropertiesForKeys",
+        "_FSURLCopyResourcePropertyValuesAndFlags",
+        "_FSURLCreateStandardError",
+        "_FSURLCreateFileReferenceURLFromFSRef"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FileCacheClearPropertyValueForKey": {
+      "name": "_FileCacheClearPropertyValueForKey",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _FileCacheClearPropertyValueForKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_RegisterFilePropertyProvider": {
+      "name": "_RegisterFilePropertyProvider",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_Ref",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ _RegisterFilePropertyProvider(_Ref *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_RegisterFilePropertyWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FileCacheGetFlags": {
+      "name": "_FileCacheGetFlags",
+      "framework": "CoreServicesInternal",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FileCacheRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _FileCacheGetFlags(_FileCacheRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLCopyResourcePropertiesForKeys": {
+      "name": "_FSURLCopyResourcePropertiesForKeys",
+      "framework": "CoreServicesInternal",
+      "return_type": "_FSURLRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSURLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_FSURLRef/*?*/ _FSURLCopyResourcePropertiesForKeys(_FSURLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_FSURLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_FSURLCopyResourcePropertyForKey",
+        "_FSURLCopyResourcePropertyForKeyFromCache",
+        "_FSURLCopyResourcePropertyValuesAndFlags",
+        "_FSURLCreateStandardError",
+        "_FSURLCreateFileReferenceURLFromFSRef"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLGetResourcePropertyFlags": {
+      "name": "_FSURLGetResourcePropertyFlags",
+      "framework": "CoreServicesInternal",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSURLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _FSURLGetResourcePropertyFlags(_FSURLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLBookmarkDataIsSecurityScoped": {
+      "name": "_CFURLBookmarkDataIsSecurityScoped",
+      "framework": "CoreServicesInternal",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CFURLBookmarkDataRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _CFURLBookmarkDataIsSecurityScoped(_CFURLBookmarkDataRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLNoteSecurityScopedResourceMoved": {
+      "name": "_FSURLNoteSecurityScopedResourceMoved",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _FSURLNoteSecurityScopedResourceMoved(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLCopyResourcePropertyValuesAndFlags": {
+      "name": "_FSURLCopyResourcePropertyValuesAndFlags",
+      "framework": "CoreServicesInternal",
+      "return_type": "_FSURLRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSURLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_FSURLRef/*?*/ _FSURLCopyResourcePropertyValuesAndFlags(_FSURLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_FSURLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_FSURLCopyResourcePropertyForKey",
+        "_FSURLCopyResourcePropertyForKeyFromCache",
+        "_FSURLCopyResourcePropertiesForKeys",
+        "_FSURLCreateStandardError",
+        "_FSURLCreateFileReferenceURLFromFSRef"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSCreateFileReferenceURLFromIDs": {
+      "name": "_FSCreateFileReferenceURLFromIDs",
+      "framework": "CoreServicesInternal",
+      "return_type": "_FSRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_FSRef _FSCreateFileReferenceURLFromIDs(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_FSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_FSCreatePathForFileID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLBookmarkToAliasHandle": {
+      "name": "_CFURLBookmarkToAliasHandle",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _CFURLBookmarkToAliasHandle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_URLEnumeratorGetURLsBulk": {
+      "name": "_URLEnumeratorGetURLsBulk",
+      "framework": "CoreServicesInternal",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_URLEnumeratorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _URLEnumeratorGetURLsBulk(_URLEnumeratorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLCreateResourcePropertiesForKeysFromBookmarkData": {
+      "name": "_CFURLCreateResourcePropertiesForKeysFromBookmarkData",
+      "framework": "CoreServicesInternal",
+      "return_type": "_CFURLRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CFURLRef _CFURLCreateResourcePropertiesForKeysFromBookmarkData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CFURLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CFURLCopySecurityEAs",
+        "_CFURLCreateBookmarkDataFromAliasRecord",
+        "_CFURLCreateByResolvingBookmarkData",
+        "_CFURLCreateBookmarkData",
+        "_CFURLCreateResourcePropertyForKeyFromBookmarkData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLGetCatalogInfo": {
+      "name": "_FSURLGetCatalogInfo",
+      "framework": "CoreServicesInternal",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSURLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _FSURLGetCatalogInfo(_FSURLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FileCacheGetTypeID": {
+      "name": "_FileCacheGetTypeID",
+      "framework": "CoreServicesInternal",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FileCacheRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ _FileCacheGetTypeID(_FileCacheRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_RevocableBookmarksSetActiveStatusForBundleIdentifier",
+        "_FSGetFileSystemRepresentationForFileID",
+        "_URLEnumeratorGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLStopAccessingSecurityScopedResource": {
+      "name": "_FSURLStopAccessingSecurityScopedResource",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _FSURLStopAccessingSecurityScopedResource(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_URLEnumeratorCreateForMountedVolumes": {
+      "name": "_URLEnumeratorCreateForMountedVolumes",
+      "framework": "CoreServicesInternal",
+      "return_type": "_URLEnumeratorRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_URLEnumeratorRef _URLEnumeratorCreateForMountedVolumes(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_URLEnumeratorRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_URLEnumeratorCreateForDirectoryURL"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLCompareBookmarkData": {
+      "name": "_CFURLCompareBookmarkData",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _CFURLCompareBookmarkData(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLStartAccessingSecurityScopedResource": {
+      "name": "_CFURLStartAccessingSecurityScopedResource",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _CFURLStartAccessingSecurityScopedResource(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLStopAccessingSecurityScopedResource": {
+      "name": "_CFURLStopAccessingSecurityScopedResource",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _CFURLStopAccessingSecurityScopedResource(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLWriteBookmarkDataToFile": {
+      "name": "_CFURLWriteBookmarkDataToFile",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _CFURLWriteBookmarkDataToFile(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLSetPermanentResourcePropertyForKey": {
+      "name": "_FSURLSetPermanentResourcePropertyForKey",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSURLRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _FSURLSetPermanentResourcePropertyForKey(_FSURLRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FileCacheGetFinderInfo": {
+      "name": "_FileCacheGetFinderInfo",
+      "framework": "CoreServicesInternal",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FileCacheRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _FileCacheGetFinderInfo(_FileCacheRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_RevocableBookmarksRevokeForBundleIdentifier": {
+      "name": "_RevocableBookmarksRevokeForBundleIdentifier",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _RevocableBookmarksRevokeForBundleIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_RevocableBookmarksSetActiveStatusForBundleIdentifier": {
+      "name": "_RevocableBookmarksSetActiveStatusForBundleIdentifier",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_RevocableBookmarksRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _RevocableBookmarksSetActiveStatusForBundleIdentifier(_RevocableBookmarksRef *ref, uint64_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_FileCacheGetTypeID",
+        "_FSGetFileSystemRepresentationForFileID",
+        "_URLEnumeratorGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLCreateStandardError": {
+      "name": "_FSURLCreateStandardError",
+      "framework": "CoreServicesInternal",
+      "return_type": "_FSURLRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_FSURLRef _FSURLCreateStandardError(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_FSURLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_FSURLCopyResourcePropertyForKey",
+        "_FSURLCopyResourcePropertyForKeyFromCache",
+        "_FSURLCopyResourcePropertiesForKeys",
+        "_FSURLCopyResourcePropertyValuesAndFlags",
+        "_FSURLCreateFileReferenceURLFromFSRef"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLGetVolumePropertyFlags": {
+      "name": "_FSURLGetVolumePropertyFlags",
+      "framework": "CoreServicesInternal",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSURLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _FSURLGetVolumePropertyFlags(_FSURLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FileCacheGetPropertyValueForKey": {
+      "name": "_FileCacheGetPropertyValueForKey",
+      "framework": "CoreServicesInternal",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FileCacheRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _FileCacheGetPropertyValueForKey(_FileCacheRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_URLAttachSecurityScopeToFileURL": {
+      "name": "_URLAttachSecurityScopeToFileURL",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _URLAttachSecurityScopeToFileURL(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLCreateBookmarkDataFromFile": {
+      "name": "_CFURLCreateBookmarkDataFromFile",
+      "framework": "CoreServicesInternal",
+      "return_type": "_CFURLRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CFURLRef _CFURLCreateBookmarkDataFromFile(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CFURLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CFURLCopySecurityEAs",
+        "_CFURLCreateBookmarkDataFromAliasRecord",
+        "_CFURLCreateByResolvingBookmarkData",
+        "_CFURLCreateBookmarkData",
+        "_CFURLCreateResourcePropertyForKeyFromBookmarkData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_URLEnumeratorGetDescendentLevel": {
+      "name": "_URLEnumeratorGetDescendentLevel",
+      "framework": "CoreServicesInternal",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_URLEnumeratorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _URLEnumeratorGetDescendentLevel(_URLEnumeratorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_URLReplaceObject": {
+      "name": "_URLReplaceObject",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _URLReplaceObject(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSGetFileSystemRepresentationForFileID": {
+      "name": "_FSGetFileSystemRepresentationForFileID",
+      "framework": "CoreServicesInternal",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ _FSGetFileSystemRepresentationForFileID(_FSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_FileCacheGetTypeID",
+        "_RevocableBookmarksSetActiveStatusForBundleIdentifier",
+        "_URLEnumeratorGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_RevocableBookmarksCopyClientBundleIdentifiers": {
+      "name": "_RevocableBookmarksCopyClientBundleIdentifiers",
+      "framework": "CoreServicesInternal",
+      "return_type": "_RevocableBookmarksRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_RevocableBookmarksRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_RevocableBookmarksRef/*?*/ _RevocableBookmarksCopyClientBundleIdentifiers(_RevocableBookmarksRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_RevocableBookmarksRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_RevocableBookmarksCopyClients"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_RegisterFilePropertyWithOptions": {
+      "name": "_RegisterFilePropertyWithOptions",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_Ref",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ _RegisterFilePropertyWithOptions(_Ref *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_RegisterFilePropertyProvider"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLCacheResourcePropertiesForKeys": {
+      "name": "_FSURLCacheResourcePropertiesForKeys",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _FSURLCacheResourcePropertiesForKeys(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLClearResourcePropertyCacheForKey": {
+      "name": "_FSURLClearResourcePropertyCacheForKey",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _FSURLClearResourcePropertyCacheForKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLCreateFileReferenceURLFromFSRef": {
+      "name": "_FSURLCreateFileReferenceURLFromFSRef",
+      "framework": "CoreServicesInternal",
+      "return_type": "_FSURLRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_FSURLRef _FSURLCreateFileReferenceURLFromFSRef(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_FSURLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_FSURLCopyResourcePropertyForKey",
+        "_FSURLCopyResourcePropertyForKeyFromCache",
+        "_FSURLCopyResourcePropertiesForKeys",
+        "_FSURLCopyResourcePropertyValuesAndFlags",
+        "_FSURLCreateStandardError"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_URLEnumeratorGetTypeID": {
+      "name": "_URLEnumeratorGetTypeID",
+      "framework": "CoreServicesInternal",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_URLEnumeratorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ _URLEnumeratorGetTypeID(_URLEnumeratorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_FileCacheGetTypeID",
+        "_RevocableBookmarksSetActiveStatusForBundleIdentifier",
+        "_FSGetFileSystemRepresentationForFileID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLEndResourcePropertyCacheAccess": {
+      "name": "_FSURLEndResourcePropertyCacheAccess",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        }
+      ],
+      "signature": "void/*?*/ _FSURLEndResourcePropertyCacheAccess(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLCopyResourcePropertiesForKeysFromCache": {
+      "name": "_FSURLCopyResourcePropertiesForKeysFromCache",
+      "framework": "CoreServicesInternal",
+      "return_type": "_FSURLRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSURLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_FSURLRef/*?*/ _FSURLCopyResourcePropertiesForKeysFromCache(_FSURLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_FSURLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_FSURLCopyResourcePropertyForKey",
+        "_FSURLCopyResourcePropertyForKeyFromCache",
+        "_FSURLCopyResourcePropertiesForKeys",
+        "_FSURLCopyResourcePropertyValuesAndFlags",
+        "_FSURLCreateStandardError"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FSURLSetResourcePropertyForKey": {
+      "name": "_FSURLSetResourcePropertyForKey",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FSURLRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _FSURLSetResourcePropertyForKey(_FSURLRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CFURLCreateWithVolumeURLAndResourceID": {
+      "name": "_CFURLCreateWithVolumeURLAndResourceID",
+      "framework": "CoreServicesInternal",
+      "return_type": "_CFURLRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CFURLRef _CFURLCreateWithVolumeURLAndResourceID(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CFURLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CFURLCopySecurityEAs",
+        "_CFURLCreateBookmarkDataFromAliasRecord",
+        "_CFURLCreateByResolvingBookmarkData",
+        "_CFURLCreateBookmarkData",
+        "_CFURLCreateResourcePropertyForKeyFromBookmarkData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FileCacheCreateShallowCopy": {
+      "name": "_FileCacheCreateShallowCopy",
+      "framework": "CoreServicesInternal",
+      "return_type": "_FileCacheRef",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_FileCacheRef _FileCacheCreateShallowCopy(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_FileCacheRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_FileCacheSetPropertyValueForKey": {
+      "name": "_FileCacheSetPropertyValueForKey",
+      "framework": "CoreServicesInternal",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_FileCacheRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreServicesInternal"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _FileCacheSetPropertyValueForKey(_FileCacheRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "neural_network": [
+      "_FSURLSetPermanentResourcePropertyForKey"
+    ],
+    "display_compositing": [
+      "_FileURLCreateDisplayPathComponentsArray"
+    ],
+    "cryptography": [
+      "_CFURLBookmarkToAliasHandle",
+      "_FileCacheCreateShallowCopy"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

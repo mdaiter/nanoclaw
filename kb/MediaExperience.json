@@ -1,0 +1,3391 @@
+{
+  "framework": "MediaExperience",
+  "functions": {
+    "FigRoutingManagerGetEndpointManager": {
+      "name": "FigRoutingManagerGetEndpointManager",
+      "framework": "MediaExperience",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingManagerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ FigRoutingManagerGetEndpointManager(FigRoutingManagerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextCreateVideoContext": {
+      "name": "FigRoutingContextCreateVideoContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRef",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRef FigRoutingContextCreateVideoContext(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextCopySystemAudioContext",
+        "FigRoutingContextCopySystemMirroringContext",
+        "FigRoutingContextCopySystemRemotePoolContext",
+        "FigRoutingContextCopySystemAudioInputContext",
+        "FigRoutingContextCopySystemMusicContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVSystemController_SubscribeToNotificationsAttribute": {
+      "name": "AVSystemController_SubscribeToNotificationsAttribute",
+      "framework": "MediaExperience",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        }
+      ],
+      "signature": "void/*?*/ AVSystemController_SubscribeToNotificationsAttribute(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextRemoteCopySystemRemotePoolContext": {
+      "name": "FigRoutingContextRemoteCopySystemRemotePoolContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRemoteRef/*?*/ FigRoutingContextRemoteCopySystemRemotePoolContext(FigRoutingContextRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextRemoteCreatePerAppSecondDisplayContext",
+        "FigRoutingContextRemoteCopySidePlayContext",
+        "FigRoutingContextRemoteCopySystemAudioInputContext",
+        "FigRoutingContextRemoteCopySystemMirroringContext",
+        "FigRoutingContextRemoteCreateRemoteMusicControllerContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextResilientRemoteCopySystemAudioContext": {
+      "name": "FigRoutingContextResilientRemoteCopySystemAudioContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextResilientRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextResilientRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextResilientRemoteRef/*?*/ FigRoutingContextResilientRemoteCopySystemAudioContext(FigRoutingContextResilientRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextResilientRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextResilientRemoteCopySidePlayContext",
+        "FigRoutingContextResilientRemoteCopyAllAudioContexts",
+        "FigRoutingContextResilientRemoteCopySystemMirroringContext",
+        "FigRoutingContextResilientRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextResilientRemoteCreateRemoteMusicControllerContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MXSessionHandleInterruptionResponse": {
+      "name": "MXSessionHandleInterruptionResponse",
+      "framework": "MediaExperience",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        }
+      ],
+      "signature": "void/*?*/ MXSessionHandleInterruptionResponse(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextRemoteCreatePerAppSecondDisplayContext": {
+      "name": "FigRoutingContextRemoteCreatePerAppSecondDisplayContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRemoteRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRemoteRef FigRoutingContextRemoteCreatePerAppSecondDisplayContext(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextRemoteCopySidePlayContext",
+        "FigRoutingContextRemoteCopySystemAudioInputContext",
+        "FigRoutingContextRemoteCopySystemMirroringContext",
+        "FigRoutingContextRemoteCreateRemoteMusicControllerContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigSystemControllerGetTypeID": {
+      "name": "FigSystemControllerGetTypeID",
+      "framework": "MediaExperience",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigSystemControllerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ FigSystemControllerGetTypeID(FigSystemControllerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigVolumeControllerGetClassID",
+        "FigEndpointUIAgentGetClassID",
+        "FigSTSGetClassID",
+        "FigRouteDiscovererGetTypeID",
+        "FigRoutingContextGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigVolumeControllerGetClassID": {
+      "name": "FigVolumeControllerGetClassID",
+      "framework": "MediaExperience",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigVolumeControllerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ FigVolumeControllerGetClassID(FigVolumeControllerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigSystemControllerGetTypeID",
+        "FigEndpointUIAgentGetClassID",
+        "FigSTSGetClassID",
+        "FigRouteDiscovererGetTypeID",
+        "FigRoutingContextGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextRemoteCopySidePlayContext": {
+      "name": "FigRoutingContextRemoteCopySidePlayContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRemoteRef/*?*/ FigRoutingContextRemoteCopySidePlayContext(FigRoutingContextRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextRemoteCreatePerAppSecondDisplayContext",
+        "FigRoutingContextRemoteCopySystemAudioInputContext",
+        "FigRoutingContextRemoteCopySystemMirroringContext",
+        "FigRoutingContextRemoteCreateRemoteMusicControllerContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MXInitialize": {
+      "name": "MXInitialize",
+      "framework": "MediaExperience",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ MXInitialize(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MXRoutingInitialize",
+        "MXIntegrationTestInitialize"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextRemoteCopySystemAudioInputContext": {
+      "name": "FigRoutingContextRemoteCopySystemAudioInputContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRemoteRef/*?*/ FigRoutingContextRemoteCopySystemAudioInputContext(FigRoutingContextRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextRemoteCreatePerAppSecondDisplayContext",
+        "FigRoutingContextRemoteCopySidePlayContext",
+        "FigRoutingContextRemoteCopySystemMirroringContext",
+        "FigRoutingContextRemoteCreateRemoteMusicControllerContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextResilientRemoteCopySidePlayContext": {
+      "name": "FigRoutingContextResilientRemoteCopySidePlayContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextResilientRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextResilientRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextResilientRemoteRef/*?*/ FigRoutingContextResilientRemoteCopySidePlayContext(FigRoutingContextResilientRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextResilientRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextResilientRemoteCopySystemAudioContext",
+        "FigRoutingContextResilientRemoteCopyAllAudioContexts",
+        "FigRoutingContextResilientRemoteCopySystemMirroringContext",
+        "FigRoutingContextResilientRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextResilientRemoteCreateRemoteMusicControllerContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextCopySystemAudioContext": {
+      "name": "FigRoutingContextCopySystemAudioContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRef/*?*/ FigRoutingContextCopySystemAudioContext(FigRoutingContextRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextCreateVideoContext",
+        "FigRoutingContextCopySystemMirroringContext",
+        "FigRoutingContextCopySystemRemotePoolContext",
+        "FigRoutingContextCopySystemAudioInputContext",
+        "FigRoutingContextCopySystemMusicContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigResilientRemoteRoutingContextFactoryGetCurrent": {
+      "name": "FigResilientRemoteRoutingContextFactoryGetCurrent",
+      "framework": "MediaExperience",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigResilientRemoteRoutingContextFactoryRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ FigResilientRemoteRoutingContextFactoryGetCurrent(FigResilientRemoteRoutingContextFactoryRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextCopySystemMirroringContext": {
+      "name": "FigRoutingContextCopySystemMirroringContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRef/*?*/ FigRoutingContextCopySystemMirroringContext(FigRoutingContextRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextCreateVideoContext",
+        "FigRoutingContextCopySystemAudioContext",
+        "FigRoutingContextCopySystemRemotePoolContext",
+        "FigRoutingContextCopySystemAudioInputContext",
+        "FigRoutingContextCopySystemMusicContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextCopySystemRemotePoolContext": {
+      "name": "FigRoutingContextCopySystemRemotePoolContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRef/*?*/ FigRoutingContextCopySystemRemotePoolContext(FigRoutingContextRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextCreateVideoContext",
+        "FigRoutingContextCopySystemAudioContext",
+        "FigRoutingContextCopySystemMirroringContext",
+        "FigRoutingContextCopySystemAudioInputContext",
+        "FigRoutingContextCopySystemMusicContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextResilientRemoteCopyAllAudioContexts": {
+      "name": "FigRoutingContextResilientRemoteCopyAllAudioContexts",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextResilientRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextResilientRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextResilientRemoteRef/*?*/ FigRoutingContextResilientRemoteCopyAllAudioContexts(FigRoutingContextResilientRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextResilientRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextResilientRemoteCopySystemAudioContext",
+        "FigRoutingContextResilientRemoteCopySidePlayContext",
+        "FigRoutingContextResilientRemoteCopySystemMirroringContext",
+        "FigRoutingContextResilientRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextResilientRemoteCreateRemoteMusicControllerContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRemoteRoutingContextFactorySetForQueue": {
+      "name": "FigRemoteRoutingContextFactorySetForQueue",
+      "framework": "MediaExperience",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRemoteRoutingContextFactoryRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ FigRemoteRoutingContextFactorySetForQueue(FigRemoteRoutingContextFactoryRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextResilientRemoteCopySystemMirroringContext": {
+      "name": "FigRoutingContextResilientRemoteCopySystemMirroringContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextResilientRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextResilientRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextResilientRemoteRef/*?*/ FigRoutingContextResilientRemoteCopySystemMirroringContext(FigRoutingContextResilientRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextResilientRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextResilientRemoteCopySystemAudioContext",
+        "FigRoutingContextResilientRemoteCopySidePlayContext",
+        "FigRoutingContextResilientRemoteCopyAllAudioContexts",
+        "FigRoutingContextResilientRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextResilientRemoteCreateRemoteMusicControllerContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextResilientRemoteCopySystemRemotePoolContext": {
+      "name": "FigRoutingContextResilientRemoteCopySystemRemotePoolContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextResilientRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextResilientRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextResilientRemoteRef/*?*/ FigRoutingContextResilientRemoteCopySystemRemotePoolContext(FigRoutingContextResilientRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextResilientRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextResilientRemoteCopySystemAudioContext",
+        "FigRoutingContextResilientRemoteCopySidePlayContext",
+        "FigRoutingContextResilientRemoteCopyAllAudioContexts",
+        "FigRoutingContextResilientRemoteCopySystemMirroringContext",
+        "FigRoutingContextResilientRemoteCreateRemoteMusicControllerContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigEndpointUIAgentGetClassID": {
+      "name": "FigEndpointUIAgentGetClassID",
+      "framework": "MediaExperience",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigEndpointUIAgentRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ FigEndpointUIAgentGetClassID(FigEndpointUIAgentRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigSystemControllerGetTypeID",
+        "FigVolumeControllerGetClassID",
+        "FigSTSGetClassID",
+        "FigRouteDiscovererGetTypeID",
+        "FigRoutingContextGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextCopySystemAudioInputContext": {
+      "name": "FigRoutingContextCopySystemAudioInputContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRef/*?*/ FigRoutingContextCopySystemAudioInputContext(FigRoutingContextRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextCreateVideoContext",
+        "FigRoutingContextCopySystemAudioContext",
+        "FigRoutingContextCopySystemMirroringContext",
+        "FigRoutingContextCopySystemRemotePoolContext",
+        "FigRoutingContextCopySystemMusicContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigSTSCreate": {
+      "name": "FigSTSCreate",
+      "framework": "MediaExperience",
+      "return_type": "FigSTSRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigSTSRef FigSTSCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigSTSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextRemoteCopySystemMirroringContext": {
+      "name": "FigRoutingContextRemoteCopySystemMirroringContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRemoteRef/*?*/ FigRoutingContextRemoteCopySystemMirroringContext(FigRoutingContextRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextRemoteCreatePerAppSecondDisplayContext",
+        "FigRoutingContextRemoteCopySidePlayContext",
+        "FigRoutingContextRemoteCopySystemAudioInputContext",
+        "FigRoutingContextRemoteCreateRemoteMusicControllerContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigSTSGetClassID": {
+      "name": "FigSTSGetClassID",
+      "framework": "MediaExperience",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigSTSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ FigSTSGetClassID(FigSTSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigSystemControllerGetTypeID",
+        "FigVolumeControllerGetClassID",
+        "FigEndpointUIAgentGetClassID",
+        "FigRouteDiscovererGetTypeID",
+        "FigRoutingContextGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigSystemControllerStartServer": {
+      "name": "FigSystemControllerStartServer",
+      "framework": "MediaExperience",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        }
+      ],
+      "signature": "void/*?*/ FigSystemControllerStartServer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextRemoteCreateRemoteMusicControllerContext": {
+      "name": "FigRoutingContextRemoteCreateRemoteMusicControllerContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRemoteRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRemoteRef FigRoutingContextRemoteCreateRemoteMusicControllerContext(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextRemoteCreatePerAppSecondDisplayContext",
+        "FigRoutingContextRemoteCopySidePlayContext",
+        "FigRoutingContextRemoteCopySystemAudioInputContext",
+        "FigRoutingContextRemoteCopySystemMirroringContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MXSessionEndInterruption": {
+      "name": "MXSessionEndInterruption",
+      "framework": "MediaExperience",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        }
+      ],
+      "signature": "void/*?*/ MXSessionEndInterruption(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MXSessionSetProperty": {
+      "name": "MXSessionSetProperty",
+      "framework": "MediaExperience",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MXSessionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MXSessionSetProperty(MXSessionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextResilientRemoteCreateRemoteMusicControllerContext": {
+      "name": "FigRoutingContextResilientRemoteCreateRemoteMusicControllerContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextResilientRemoteRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigRoutingContextResilientRemoteRef FigRoutingContextResilientRemoteCreateRemoteMusicControllerContext(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextResilientRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextResilientRemoteCopySystemAudioContext",
+        "FigRoutingContextResilientRemoteCopySidePlayContext",
+        "FigRoutingContextResilientRemoteCopyAllAudioContexts",
+        "FigRoutingContextResilientRemoteCopySystemMirroringContext",
+        "FigRoutingContextResilientRemoteCopySystemRemotePoolContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextResilientRemoteCopySystemAudioInputContext": {
+      "name": "FigRoutingContextResilientRemoteCopySystemAudioInputContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextResilientRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextResilientRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextResilientRemoteRef/*?*/ FigRoutingContextResilientRemoteCopySystemAudioInputContext(FigRoutingContextResilientRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextResilientRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextResilientRemoteCopySystemAudioContext",
+        "FigRoutingContextResilientRemoteCopySidePlayContext",
+        "FigRoutingContextResilientRemoteCopyAllAudioContexts",
+        "FigRoutingContextResilientRemoteCopySystemMirroringContext",
+        "FigRoutingContextResilientRemoteCopySystemRemotePoolContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextCopySystemMusicContext": {
+      "name": "FigRoutingContextCopySystemMusicContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRef/*?*/ FigRoutingContextCopySystemMusicContext(FigRoutingContextRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextCreateVideoContext",
+        "FigRoutingContextCopySystemAudioContext",
+        "FigRoutingContextCopySystemMirroringContext",
+        "FigRoutingContextCopySystemRemotePoolContext",
+        "FigRoutingContextCopySystemAudioInputContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MXRegisterEndpointManager": {
+      "name": "MXRegisterEndpointManager",
+      "framework": "MediaExperience",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MXRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ MXRegisterEndpointManager(MXRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigSystemControllerRemoteCreate": {
+      "name": "FigSystemControllerRemoteCreate",
+      "framework": "MediaExperience",
+      "return_type": "FigSystemControllerRemoteRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigSystemControllerRemoteRef FigSystemControllerRemoteCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigSystemControllerRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRouteDiscovererGetTypeID": {
+      "name": "FigRouteDiscovererGetTypeID",
+      "framework": "MediaExperience",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRouteDiscovererRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ FigRouteDiscovererGetTypeID(FigRouteDiscovererRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigSystemControllerGetTypeID",
+        "FigVolumeControllerGetClassID",
+        "FigEndpointUIAgentGetClassID",
+        "FigSTSGetClassID",
+        "FigRoutingContextGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextCreateControlChannelOnlyContext": {
+      "name": "FigRoutingContextCreateControlChannelOnlyContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRef FigRoutingContextCreateControlChannelOnlyContext(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextCreateVideoContext",
+        "FigRoutingContextCopySystemAudioContext",
+        "FigRoutingContextCopySystemMirroringContext",
+        "FigRoutingContextCopySystemRemotePoolContext",
+        "FigRoutingContextCopySystemAudioInputContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigVolumeControllerGetCMBaseObject": {
+      "name": "FigVolumeControllerGetCMBaseObject",
+      "framework": "MediaExperience",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigVolumeControllerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ FigVolumeControllerGetCMBaseObject(FigVolumeControllerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRemoteRoutingContextFactoryGetCurrent": {
+      "name": "FigRemoteRoutingContextFactoryGetCurrent",
+      "framework": "MediaExperience",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRemoteRoutingContextFactoryRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ FigRemoteRoutingContextFactoryGetCurrent(FigRemoteRoutingContextFactoryRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextGetClassID": {
+      "name": "FigRoutingContextGetClassID",
+      "framework": "MediaExperience",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ FigRoutingContextGetClassID(FigRoutingContextRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigSystemControllerGetTypeID",
+        "FigVolumeControllerGetClassID",
+        "FigEndpointUIAgentGetClassID",
+        "FigSTSGetClassID",
+        "FigRouteDiscovererGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextRemoteCopyContextForUUID": {
+      "name": "FigRoutingContextRemoteCopyContextForUUID",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRemoteRef/*?*/ FigRoutingContextRemoteCopyContextForUUID(FigRoutingContextRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextRemoteCreatePerAppSecondDisplayContext",
+        "FigRoutingContextRemoteCopySidePlayContext",
+        "FigRoutingContextRemoteCopySystemAudioInputContext",
+        "FigRoutingContextRemoteCopySystemMirroringContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigSTSGetTypeID": {
+      "name": "FigSTSGetTypeID",
+      "framework": "MediaExperience",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigSTSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ FigSTSGetTypeID(FigSTSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigSystemControllerGetTypeID",
+        "FigVolumeControllerGetClassID",
+        "FigEndpointUIAgentGetClassID",
+        "FigSTSGetClassID",
+        "FigRouteDiscovererGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingManagerGetNotifyingObject": {
+      "name": "FigRoutingManagerGetNotifyingObject",
+      "framework": "MediaExperience",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingManagerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ FigRoutingManagerGetNotifyingObject(FigRoutingManagerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextRemoteCopyAllAudioContexts": {
+      "name": "FigRoutingContextRemoteCopyAllAudioContexts",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRemoteRef/*?*/ FigRoutingContextRemoteCopyAllAudioContexts(FigRoutingContextRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextRemoteCreatePerAppSecondDisplayContext",
+        "FigRoutingContextRemoteCopySidePlayContext",
+        "FigRoutingContextRemoteCopySystemAudioInputContext",
+        "FigRoutingContextRemoteCopySystemMirroringContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextResilientRemoteCopyDefaultContext": {
+      "name": "FigRoutingContextResilientRemoteCopyDefaultContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextResilientRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextResilientRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextResilientRemoteRef/*?*/ FigRoutingContextResilientRemoteCopyDefaultContext(FigRoutingContextResilientRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextResilientRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextResilientRemoteCopySystemAudioContext",
+        "FigRoutingContextResilientRemoteCopySidePlayContext",
+        "FigRoutingContextResilientRemoteCopyAllAudioContexts",
+        "FigRoutingContextResilientRemoteCopySystemMirroringContext",
+        "FigRoutingContextResilientRemoteCopySystemRemotePoolContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigEndpointUIAgentCreate": {
+      "name": "FigEndpointUIAgentCreate",
+      "framework": "MediaExperience",
+      "return_type": "FigEndpointUIAgentRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigEndpointUIAgentRef FigEndpointUIAgentCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigEndpointUIAgentRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextResilientRemoteCopySystemRemoteDisplay": {
+      "name": "FigRoutingContextResilientRemoteCopySystemRemoteDisplay",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextResilientRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextResilientRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextResilientRemoteRef/*?*/ FigRoutingContextResilientRemoteCopySystemRemoteDisplay(FigRoutingContextResilientRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextResilientRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextResilientRemoteCopySystemAudioContext",
+        "FigRoutingContextResilientRemoteCopySidePlayContext",
+        "FigRoutingContextResilientRemoteCopyAllAudioContexts",
+        "FigRoutingContextResilientRemoteCopySystemMirroringContext",
+        "FigRoutingContextResilientRemoteCopySystemRemotePoolContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextCreateAudioContext": {
+      "name": "FigRoutingContextCreateAudioContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRef FigRoutingContextCreateAudioContext(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextCreateVideoContext",
+        "FigRoutingContextCopySystemAudioContext",
+        "FigRoutingContextCopySystemMirroringContext",
+        "FigRoutingContextCopySystemRemotePoolContext",
+        "FigRoutingContextCopySystemAudioInputContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigVolumeControllerStartServer": {
+      "name": "FigVolumeControllerStartServer",
+      "framework": "MediaExperience",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        }
+      ],
+      "signature": "void/*?*/ FigVolumeControllerStartServer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextGetTypeID": {
+      "name": "FigRoutingContextGetTypeID",
+      "framework": "MediaExperience",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ FigRoutingContextGetTypeID(FigRoutingContextRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigSystemControllerGetTypeID",
+        "FigVolumeControllerGetClassID",
+        "FigEndpointUIAgentGetClassID",
+        "FigSTSGetClassID",
+        "FigRouteDiscovererGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextRemoteCopySystemMusicContext": {
+      "name": "FigRoutingContextRemoteCopySystemMusicContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRemoteRef/*?*/ FigRoutingContextRemoteCopySystemMusicContext(FigRoutingContextRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextRemoteCreatePerAppSecondDisplayContext",
+        "FigRoutingContextRemoteCopySidePlayContext",
+        "FigRoutingContextRemoteCopySystemAudioInputContext",
+        "FigRoutingContextRemoteCopySystemMirroringContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextStartServer": {
+      "name": "FigRoutingContextStartServer",
+      "framework": "MediaExperience",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        }
+      ],
+      "signature": "void/*?*/ FigRoutingContextStartServer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextRemoteCopySystemAudioContext": {
+      "name": "FigRoutingContextRemoteCopySystemAudioContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRemoteRef/*?*/ FigRoutingContextRemoteCopySystemAudioContext(FigRoutingContextRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextRemoteCreatePerAppSecondDisplayContext",
+        "FigRoutingContextRemoteCopySidePlayContext",
+        "FigRoutingContextRemoteCopySystemAudioInputContext",
+        "FigRoutingContextRemoteCopySystemMirroringContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRouteDiscovererCreate": {
+      "name": "FigRouteDiscovererCreate",
+      "framework": "MediaExperience",
+      "return_type": "FigRouteDiscovererRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigRouteDiscovererRef FigRouteDiscovererCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigRouteDiscovererRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRouteDiscovererStartServer": {
+      "name": "FigRouteDiscovererStartServer",
+      "framework": "MediaExperience",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        }
+      ],
+      "signature": "void/*?*/ FigRouteDiscovererStartServer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MXRoutingInitialize": {
+      "name": "MXRoutingInitialize",
+      "framework": "MediaExperience",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ MXRoutingInitialize(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MXInitialize",
+        "MXIntegrationTestInitialize"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MXSessionCreate": {
+      "name": "MXSessionCreate",
+      "framework": "MediaExperience",
+      "return_type": "MXSessionRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MXSessionRef MXSessionCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MXSessionRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MXSessionCopyProperty",
+        "MXSessionCreateWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextRemoteCreateControlChannelOnlyContext": {
+      "name": "FigRoutingContextRemoteCreateControlChannelOnlyContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRemoteRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRemoteRef FigRoutingContextRemoteCreateControlChannelOnlyContext(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextRemoteCreatePerAppSecondDisplayContext",
+        "FigRoutingContextRemoteCopySidePlayContext",
+        "FigRoutingContextRemoteCopySystemAudioInputContext",
+        "FigRoutingContextRemoteCopySystemMirroringContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRouteDiscovererXPCRemoteCreate": {
+      "name": "FigRouteDiscovererXPCRemoteCreate",
+      "framework": "MediaExperience",
+      "return_type": "FigRouteDiscovererXPCRemoteRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigRouteDiscovererXPCRemoteRef FigRouteDiscovererXPCRemoteCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigRouteDiscovererXPCRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MXSessionBeginInterruption": {
+      "name": "MXSessionBeginInterruption",
+      "framework": "MediaExperience",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        }
+      ],
+      "signature": "void/*?*/ MXSessionBeginInterruption(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextCopyAllAudioContexts": {
+      "name": "FigRoutingContextCopyAllAudioContexts",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRef/*?*/ FigRoutingContextCopyAllAudioContexts(FigRoutingContextRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextCreateVideoContext",
+        "FigRoutingContextCopySystemAudioContext",
+        "FigRoutingContextCopySystemMirroringContext",
+        "FigRoutingContextCopySystemRemotePoolContext",
+        "FigRoutingContextCopySystemAudioInputContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingRemoteCopyDisplayMenuVideoContext": {
+      "name": "FigRoutingRemoteCopyDisplayMenuVideoContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing",
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingRemoteRef/*?*/ FigRoutingRemoteCopyDisplayMenuVideoContext(FigRoutingRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVSystemController_PostNotificationsFromMainThreadOnly": {
+      "name": "AVSystemController_PostNotificationsFromMainThreadOnly",
+      "framework": "MediaExperience",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        }
+      ],
+      "signature": "void/*?*/ AVSystemController_PostNotificationsFromMainThreadOnly(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextResilientRemoteCreateControlChannelOnlyContext": {
+      "name": "FigRoutingContextResilientRemoteCreateControlChannelOnlyContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextResilientRemoteRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigRoutingContextResilientRemoteRef FigRoutingContextResilientRemoteCreateControlChannelOnlyContext(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextResilientRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextResilientRemoteCopySystemAudioContext",
+        "FigRoutingContextResilientRemoteCopySidePlayContext",
+        "FigRoutingContextResilientRemoteCopyAllAudioContexts",
+        "FigRoutingContextResilientRemoteCopySystemMirroringContext",
+        "FigRoutingContextResilientRemoteCopySystemRemotePoolContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextResilientRemoteCreateVideoContext": {
+      "name": "FigRoutingContextResilientRemoteCreateVideoContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextResilientRemoteRef",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigRoutingContextResilientRemoteRef FigRoutingContextResilientRemoteCreateVideoContext(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextResilientRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextResilientRemoteCopySystemAudioContext",
+        "FigRoutingContextResilientRemoteCopySidePlayContext",
+        "FigRoutingContextResilientRemoteCopyAllAudioContexts",
+        "FigRoutingContextResilientRemoteCopySystemMirroringContext",
+        "FigRoutingContextResilientRemoteCopySystemRemotePoolContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextCopySidePlayContext": {
+      "name": "FigRoutingContextCopySidePlayContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRef/*?*/ FigRoutingContextCopySidePlayContext(FigRoutingContextRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextCreateVideoContext",
+        "FigRoutingContextCopySystemAudioContext",
+        "FigRoutingContextCopySystemMirroringContext",
+        "FigRoutingContextCopySystemRemotePoolContext",
+        "FigRoutingContextCopySystemAudioInputContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextResilientRemoteCopySystemMusicContext": {
+      "name": "FigRoutingContextResilientRemoteCopySystemMusicContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextResilientRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextResilientRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextResilientRemoteRef/*?*/ FigRoutingContextResilientRemoteCopySystemMusicContext(FigRoutingContextResilientRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextResilientRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextResilientRemoteCopySystemAudioContext",
+        "FigRoutingContextResilientRemoteCopySidePlayContext",
+        "FigRoutingContextResilientRemoteCopyAllAudioContexts",
+        "FigRoutingContextResilientRemoteCopySystemMirroringContext",
+        "FigRoutingContextResilientRemoteCopySystemRemotePoolContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextRemoteCreateAudioContext": {
+      "name": "FigRoutingContextRemoteCreateAudioContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRemoteRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRemoteRef FigRoutingContextRemoteCreateAudioContext(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextRemoteCreatePerAppSecondDisplayContext",
+        "FigRoutingContextRemoteCopySidePlayContext",
+        "FigRoutingContextRemoteCopySystemAudioInputContext",
+        "FigRoutingContextRemoteCopySystemMirroringContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigSystemControllerGetClassID": {
+      "name": "FigSystemControllerGetClassID",
+      "framework": "MediaExperience",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigSystemControllerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ FigSystemControllerGetClassID(FigSystemControllerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigSystemControllerGetTypeID",
+        "FigVolumeControllerGetClassID",
+        "FigEndpointUIAgentGetClassID",
+        "FigSTSGetClassID",
+        "FigRouteDiscovererGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigEndpointUIAgentXPCRemoteCreate": {
+      "name": "FigEndpointUIAgentXPCRemoteCreate",
+      "framework": "MediaExperience",
+      "return_type": "FigEndpointUIAgentXPCRemoteRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigEndpointUIAgentXPCRemoteRef FigEndpointUIAgentXPCRemoteCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigEndpointUIAgentXPCRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MXIntegrationTestInitialize": {
+      "name": "MXIntegrationTestInitialize",
+      "framework": "MediaExperience",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ MXIntegrationTestInitialize(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MXInitialize",
+        "MXRoutingInitialize"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigVolumeControllerCopySharedControllerRemote": {
+      "name": "FigVolumeControllerCopySharedControllerRemote",
+      "framework": "MediaExperience",
+      "return_type": "FigVolumeControllerRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigVolumeControllerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigVolumeControllerRef/*?*/ FigVolumeControllerCopySharedControllerRemote(FigVolumeControllerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigVolumeControllerRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigEndpointUIAgentGetTypeID": {
+      "name": "FigEndpointUIAgentGetTypeID",
+      "framework": "MediaExperience",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigEndpointUIAgentRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ FigEndpointUIAgentGetTypeID(FigEndpointUIAgentRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigSystemControllerGetTypeID",
+        "FigVolumeControllerGetClassID",
+        "FigEndpointUIAgentGetClassID",
+        "FigSTSGetClassID",
+        "FigRouteDiscovererGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextCreatePerAppSecondDisplayContext": {
+      "name": "FigRoutingContextCreatePerAppSecondDisplayContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRef FigRoutingContextCreatePerAppSecondDisplayContext(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextCreateVideoContext",
+        "FigRoutingContextCopySystemAudioContext",
+        "FigRoutingContextCopySystemMirroringContext",
+        "FigRoutingContextCopySystemRemotePoolContext",
+        "FigRoutingContextCopySystemAudioInputContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRouteDiscovererGetClassID": {
+      "name": "FigRouteDiscovererGetClassID",
+      "framework": "MediaExperience",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRouteDiscovererRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ FigRouteDiscovererGetClassID(FigRouteDiscovererRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigSystemControllerGetTypeID",
+        "FigVolumeControllerGetClassID",
+        "FigEndpointUIAgentGetClassID",
+        "FigSTSGetClassID",
+        "FigRouteDiscovererGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingCopyDisplayMenuVideoContext": {
+      "name": "FigRoutingCopyDisplayMenuVideoContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing",
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingRef/*?*/ FigRoutingCopyDisplayMenuVideoContext(FigRoutingRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextResilientRemoteCreateAudioContext": {
+      "name": "FigRoutingContextResilientRemoteCreateAudioContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextResilientRemoteRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigRoutingContextResilientRemoteRef FigRoutingContextResilientRemoteCreateAudioContext(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextResilientRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextResilientRemoteCopySystemAudioContext",
+        "FigRoutingContextResilientRemoteCopySidePlayContext",
+        "FigRoutingContextResilientRemoteCopyAllAudioContexts",
+        "FigRoutingContextResilientRemoteCopySystemMirroringContext",
+        "FigRoutingContextResilientRemoteCopySystemRemotePoolContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MXSessionCopyProperty": {
+      "name": "MXSessionCopyProperty",
+      "framework": "MediaExperience",
+      "return_type": "MXSessionRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MXSessionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MXSessionRef/*?*/ MXSessionCopyProperty(MXSessionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MXSessionRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MXSessionCreate",
+        "MXSessionCreateWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigEndpointUIAgentStartServer": {
+      "name": "FigEndpointUIAgentStartServer",
+      "framework": "MediaExperience",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        }
+      ],
+      "signature": "void/*?*/ FigEndpointUIAgentStartServer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextResilientRemoteCreatePerAppSecondDisplayContext": {
+      "name": "FigRoutingContextResilientRemoteCreatePerAppSecondDisplayContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextResilientRemoteRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigRoutingContextResilientRemoteRef FigRoutingContextResilientRemoteCreatePerAppSecondDisplayContext(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextResilientRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextResilientRemoteCopySystemAudioContext",
+        "FigRoutingContextResilientRemoteCopySidePlayContext",
+        "FigRoutingContextResilientRemoteCopyAllAudioContexts",
+        "FigRoutingContextResilientRemoteCopySystemMirroringContext",
+        "FigRoutingContextResilientRemoteCopySystemRemotePoolContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextRemoteCreateVideoContext": {
+      "name": "FigRoutingContextRemoteCreateVideoContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRemoteRef",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRemoteRef FigRoutingContextRemoteCreateVideoContext(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextRemoteCreatePerAppSecondDisplayContext",
+        "FigRoutingContextRemoteCopySidePlayContext",
+        "FigRoutingContextRemoteCopySystemAudioInputContext",
+        "FigRoutingContextRemoteCopySystemMirroringContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextCopyContextForUUID": {
+      "name": "FigRoutingContextCopyContextForUUID",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRef/*?*/ FigRoutingContextCopyContextForUUID(FigRoutingContextRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextCreateVideoContext",
+        "FigRoutingContextCopySystemAudioContext",
+        "FigRoutingContextCopySystemMirroringContext",
+        "FigRoutingContextCopySystemRemotePoolContext",
+        "FigRoutingContextCopySystemAudioInputContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextResilientRemoteCopyContextForUUID": {
+      "name": "FigRoutingContextResilientRemoteCopyContextForUUID",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextResilientRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextResilientRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextResilientRemoteRef/*?*/ FigRoutingContextResilientRemoteCopyContextForUUID(FigRoutingContextResilientRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextResilientRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextResilientRemoteCopySystemAudioContext",
+        "FigRoutingContextResilientRemoteCopySidePlayContext",
+        "FigRoutingContextResilientRemoteCopyAllAudioContexts",
+        "FigRoutingContextResilientRemoteCopySystemMirroringContext",
+        "FigRoutingContextResilientRemoteCopySystemRemotePoolContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextCopySystemRemoteDisplayContext": {
+      "name": "FigRoutingContextCopySystemRemoteDisplayContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRef/*?*/ FigRoutingContextCopySystemRemoteDisplayContext(FigRoutingContextRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextCreateVideoContext",
+        "FigRoutingContextCopySystemAudioContext",
+        "FigRoutingContextCopySystemMirroringContext",
+        "FigRoutingContextCopySystemRemotePoolContext",
+        "FigRoutingContextCopySystemAudioInputContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextResilientRemoteCopyDisplayMenuVideoContext": {
+      "name": "FigRoutingContextResilientRemoteCopyDisplayMenuVideoContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextResilientRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextResilientRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing",
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextResilientRemoteRef/*?*/ FigRoutingContextResilientRemoteCopyDisplayMenuVideoContext(FigRoutingContextResilientRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextResilientRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextResilientRemoteCopySystemAudioContext",
+        "FigRoutingContextResilientRemoteCopySidePlayContext",
+        "FigRoutingContextResilientRemoteCopyAllAudioContexts",
+        "FigRoutingContextResilientRemoteCopySystemMirroringContext",
+        "FigRoutingContextResilientRemoteCopySystemRemotePoolContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigRoutingContextRemoteCopySystemRemoteDisplayContext": {
+      "name": "FigRoutingContextRemoteCopySystemRemoteDisplayContext",
+      "framework": "MediaExperience",
+      "return_type": "FigRoutingContextRemoteRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigRoutingContextRemoteRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "FigRoutingContextRemoteRef/*?*/ FigRoutingContextRemoteCopySystemRemoteDisplayContext(FigRoutingContextRemoteRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "FigRoutingContextRemoteRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigRoutingContextRemoteCopySystemRemotePoolContext",
+        "FigRoutingContextRemoteCreatePerAppSecondDisplayContext",
+        "FigRoutingContextRemoteCopySidePlayContext",
+        "FigRoutingContextRemoteCopySystemAudioInputContext",
+        "FigRoutingContextRemoteCopySystemMirroringContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MXSessionCreateWithOptions": {
+      "name": "MXSessionCreateWithOptions",
+      "framework": "MediaExperience",
+      "return_type": "MXSessionRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MXSessionRef MXSessionCreateWithOptions(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MXSessionRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MXSessionCreate",
+        "MXSessionCopyProperty"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigVolumeControllerGetTypeID": {
+      "name": "FigVolumeControllerGetTypeID",
+      "framework": "MediaExperience",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigVolumeControllerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ FigVolumeControllerGetTypeID(FigVolumeControllerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "FigSystemControllerGetTypeID",
+        "FigVolumeControllerGetClassID",
+        "FigEndpointUIAgentGetClassID",
+        "FigSTSGetClassID",
+        "FigRouteDiscovererGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "FigSTSGetCMBaseObject": {
+      "name": "FigSTSGetCMBaseObject",
+      "framework": "MediaExperience",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "FigSTSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaExperience"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ FigSTSGetCMBaseObject(FigSTSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "video_processing": [
+      "FigRoutingContextCreateVideoContext",
+      "FigRoutingContextRemoteCreateVideoContext",
+      "FigRoutingContextResilientRemoteCopyDisplayMenuVideoContext",
+      "FigRoutingContextResilientRemoteCreateVideoContext",
+      "FigRoutingCopyDisplayMenuVideoContext",
+      "FigRoutingRemoteCopyDisplayMenuVideoContext"
+    ],
+    "cryptography": [
+      "FigVolumeControllerCopySharedControllerRemote"
+    ],
+    "display_compositing": [
+      "FigRoutingContextCopySystemRemoteDisplayContext",
+      "FigRoutingContextCreatePerAppSecondDisplayContext",
+      "FigRoutingContextRemoteCopySystemRemoteDisplayContext",
+      "FigRoutingContextRemoteCreatePerAppSecondDisplayContext",
+      "FigRoutingContextResilientRemoteCopyDisplayMenuVideoContext",
+      "FigRoutingContextResilientRemoteCopySystemRemoteDisplay",
+      "FigRoutingContextResilientRemoteCreatePerAppSecondDisplayContext",
+      "FigRoutingCopyDisplayMenuVideoContext",
+      "FigRoutingRemoteCopyDisplayMenuVideoContext"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

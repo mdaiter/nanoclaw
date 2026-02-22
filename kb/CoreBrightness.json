@@ -1,0 +1,920 @@
+{
+  "framework": "CoreBrightness",
+  "functions": {
+    "CBALCGetBoolPreferenceForKey": {
+      "name": "CBALCGetBoolPreferenceForKey",
+      "framework": "CoreBrightness",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "bool/*?*/ CBALCGetBoolPreferenceForKey(CBALCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCGetDisplayAutoBrightnessEnabled": {
+      "name": "CBALCGetDisplayAutoBrightnessEnabled",
+      "framework": "CoreBrightness",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "bool/*?*/ CBALCGetDisplayAutoBrightnessEnabled(CBALCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCSetDictionary": {
+      "name": "CBALCSetDictionary",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CBALCSetDictionary(CBALCRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCGetFloatPreferenceForKey": {
+      "name": "CBALCGetFloatPreferenceForKey",
+      "framework": "CoreBrightness",
+      "return_type": "double",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "double/*?*/ CBALCGetFloatPreferenceForKey(CBALCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "double"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CBALCSetFloatPreferenceForKey"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCSetDictPreferenceForKey": {
+      "name": "CBALCSetDictPreferenceForKey",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CBALCSetDictPreferenceForKey(CBALCRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCSetKeyboardAutoBrightnessEnabled": {
+      "name": "CBALCSetKeyboardAutoBrightnessEnabled",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CBALCSetKeyboardAutoBrightnessEnabled(CBALCRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCALSCopyALSServiceClient": {
+      "name": "CBALCALSCopyALSServiceClient",
+      "framework": "CoreBrightness",
+      "return_type": "CBALCALSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCALSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CBALCALSRef/*?*/ CBALCALSCopyALSServiceClient(CBALCALSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CBALCALSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCSetBoolPreferenceForKey": {
+      "name": "CBALCSetBoolPreferenceForKey",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CBALCSetBoolPreferenceForKey(CBALCRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCLGPVersion": {
+      "name": "CBALCLGPVersion",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        }
+      ],
+      "signature": "void/*?*/ CBALCLGPVersion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCRegisterALSPluginCallback": {
+      "name": "CBALCRegisterALSPluginCallback",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ CBALCRegisterALSPluginCallback(CBALCRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CBALCUnregisterALSPluginCallback"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCUnregisterALSPluginCallback": {
+      "name": "CBALCUnregisterALSPluginCallback",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "void *",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ CBALCUnregisterALSPluginCallback(void * *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CBALCRegisterALSPluginCallback"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCSetFloatPreferenceForKey": {
+      "name": "CBALCSetFloatPreferenceForKey",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "double",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CBALCSetFloatPreferenceForKey(CBALCRef *ref, double value)",
+      "verb": "write",
+      "input_formats": [
+        "double"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CBALCGetFloatPreferenceForKey"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCSetIntPreferenceForKey": {
+      "name": "CBALCSetIntPreferenceForKey",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CBALCSetIntPreferenceForKey(CBALCRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "protocol witness for Swift.CustomStringConvertible.description.getter : Swift.String in conformance __C.CBPMClientID : Swift.CustomStringConvertible in CoreBrightness": {
+      "name": "protocol witness for Swift.CustomStringConvertible.description.getter : Swift.String in conformance __C.CBPMClientID : Swift.CustomStringConvertible in CoreBrightness",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        }
+      ],
+      "signature": "void/*?*/ protocol witness for Swift.CustomStringConvertible.description.getter : Swift.String in conformance __C.CBPMClientID : Swift.CustomStringConvertible in CoreBrightness(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCGetDictPreferenceForKey": {
+      "name": "CBALCGetDictPreferenceForKey",
+      "framework": "CoreBrightness",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CBALCGetDictPreferenceForKey(CBALCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCGetIntPreferenceForKey": {
+      "name": "CBALCGetIntPreferenceForKey",
+      "framework": "CoreBrightness",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CBALCGetIntPreferenceForKey(CBALCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCKeyboardFeatureAvailable": {
+      "name": "CBALCKeyboardFeatureAvailable",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        }
+      ],
+      "signature": "void/*?*/ CBALCKeyboardFeatureAvailable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCSetKeyboardDimTime": {
+      "name": "CBALCSetKeyboardDimTime",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CBALCSetKeyboardDimTime(CBALCRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCSetDisplayAutoBrightnessEnabled": {
+      "name": "CBALCSetDisplayAutoBrightnessEnabled",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CBALCSetDisplayAutoBrightnessEnabled(CBALCRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCGetKeyboardAutoBrightnessEnabled": {
+      "name": "CBALCGetKeyboardAutoBrightnessEnabled",
+      "framework": "CoreBrightness",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "bool/*?*/ CBALCGetKeyboardAutoBrightnessEnabled(CBALCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "protocol witness for static Swift.CaseIterable.allCases.getter : A.AllCases in conformance __C.CBPMBudgetType : Swift.CaseIterable in CoreBrightness": {
+      "name": "protocol witness for static Swift.CaseIterable.allCases.getter : A.AllCases in conformance __C.CBPMBudgetType : Swift.CaseIterable in CoreBrightness",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        }
+      ],
+      "signature": "void/*?*/ protocol witness for static Swift.CaseIterable.allCases.getter : A.AllCases in conformance __C.CBPMBudgetType : Swift.CaseIterable in CoreBrightness(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCDisplayFeatureAvailable": {
+      "name": "CBALCDisplayFeatureAvailable",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        }
+      ],
+      "signature": "void/*?*/ CBALCDisplayFeatureAvailable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in CoreBrightness):__C.CBPowerManagementModule.init() -> __C.CBPowerManagementModule": {
+      "name": "(extension in CoreBrightness):__C.CBPowerManagementModule.init() -> __C.CBPowerManagementModule",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        }
+      ],
+      "signature": "void/*?*/ (extension in CoreBrightness):__C.CBPowerManagementModule.init() -> __C.CBPowerManagementModule(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in CoreBrightness):__C.CBPMPlatformMac.init() -> __C.CBPMPlatformMac": {
+      "name": "(extension in CoreBrightness):__C.CBPMPlatformMac.init() -> __C.CBPMPlatformMac",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        }
+      ],
+      "signature": "void/*?*/ (extension in CoreBrightness):__C.CBPMPlatformMac.init() -> __C.CBPMPlatformMac(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "protocol witness for Swift.CustomStringConvertible.description.getter : Swift.String in conformance __C.CBPMBudgetType : Swift.CustomStringConvertible in CoreBrightness": {
+      "name": "protocol witness for Swift.CustomStringConvertible.description.getter : Swift.String in conformance __C.CBPMBudgetType : Swift.CustomStringConvertible in CoreBrightness",
+      "framework": "CoreBrightness",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        }
+      ],
+      "signature": "void/*?*/ protocol witness for Swift.CustomStringConvertible.description.getter : Swift.String in conformance __C.CBPMBudgetType : Swift.CustomStringConvertible in CoreBrightness(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CBALCGetKeyboardDimTime": {
+      "name": "CBALCGetKeyboardDimTime",
+      "framework": "CoreBrightness",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CBALCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreBrightness"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CBALCGetKeyboardDimTime(CBALCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "display_compositing": [
+      "CBALCDisplayFeatureAvailable",
+      "CBALCGetDisplayAutoBrightnessEnabled",
+      "CBALCSetDisplayAutoBrightnessEnabled"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

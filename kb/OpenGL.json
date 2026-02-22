@@ -1,0 +1,2590 @@
+{
+  "framework": "OpenGL",
+  "functions": {
+    "CGLIsEnabled": {
+      "name": "CGLIsEnabled",
+      "framework": "OpenGL",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CGLIsEnabled(CGLRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GLCSetProfilerStorage": {
+      "name": "GLCSetProfilerStorage",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GLCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ GLCSetProfilerStorage(GLCRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLFlushDrawable": {
+      "name": "CGLFlushDrawable",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLFlushDrawable(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLDescribePBuffer": {
+      "name": "CGLDescribePBuffer",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLDescribePBuffer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLGetPBufferRetainCount": {
+      "name": "CGLGetPBufferRetainCount",
+      "framework": "OpenGL",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLGetPBufferRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t CGLGetPBufferRetainCount(CGLGetPBufferRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CGLGetPixelFormatRetainCount",
+        "glcPluginCount",
+        "CGLGetContextRetainCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "glcNoop": {
+      "name": "glcNoop",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ glcNoop(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLSelectDispatchBounded": {
+      "name": "CGLSelectDispatchBounded",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLSelectDispatchBounded(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLSetGlobalOption": {
+      "name": "CGLSetGlobalOption",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CGLSetGlobalOption(CGLRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLChoosePixelFormat": {
+      "name": "CGLChoosePixelFormat",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLChoosePixelFormat(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLEnable": {
+      "name": "CGLEnable",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLEnable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLFrontDispatch": {
+      "name": "CGLFrontDispatch",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLFrontDispatch(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLGetPBuffer": {
+      "name": "CGLGetPBuffer",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CGLGetPBuffer(CGLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLClearDrawable": {
+      "name": "CGLClearDrawable",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLClearDrawable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLDisable": {
+      "name": "CGLDisable",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLDisable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLSetOption": {
+      "name": "CGLSetOption",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CGLSetOption(CGLRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLUnlockContext": {
+      "name": "CGLUnlockContext",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLUnlockContext(void)",
+      "verb": "synchronize",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "glcPluginDisconnect": {
+      "name": "glcPluginDisconnect",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ glcPluginDisconnect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLGetParameter": {
+      "name": "CGLGetParameter",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CGLGetParameter(CGLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLGetShareGroup": {
+      "name": "CGLGetShareGroup",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CGLGetShareGroup(CGLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLBackDispatch": {
+      "name": "CGLBackDispatch",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLBackDispatch(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLGetOption": {
+      "name": "CGLGetOption",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CGLGetOption(CGLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLGetPixelFormat": {
+      "name": "CGLGetPixelFormat",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CGLGetPixelFormat(CGLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLGetVirtualScreen": {
+      "name": "CGLGetVirtualScreen",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CGLGetVirtualScreen(CGLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLOpenCLMuxLockDown": {
+      "name": "CGLOpenCLMuxLockDown",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLOpenCLMuxLockDown(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLRetainPBuffer": {
+      "name": "CGLRetainPBuffer",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLRetainPBuffer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GLCGetPBuffer": {
+      "name": "GLCGetPBuffer",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GLCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GLCGetPBuffer(GLCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GLCGetParameter": {
+      "name": "GLCGetParameter",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GLCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GLCGetParameter(GLCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "glcPluginConnect": {
+      "name": "glcPluginConnect",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ glcPluginConnect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLSetPBuffer": {
+      "name": "CGLSetPBuffer",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CGLSetPBuffer(CGLRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "glcDebugListener": {
+      "name": "glcDebugListener",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ glcDebugListener(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLGetPixelFormatRetainCount": {
+      "name": "CGLGetPixelFormatRetainCount",
+      "framework": "OpenGL",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLGetPixelFormatRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t CGLGetPixelFormatRetainCount(CGLGetPixelFormatRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CGLGetPBufferRetainCount",
+        "glcPluginCount",
+        "CGLGetContextRetainCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLDestroyPBuffer": {
+      "name": "CGLDestroyPBuffer",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLDestroyPBuffer(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLGetNextContext": {
+      "name": "CGLGetNextContext",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CGLGetNextContext(CGLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLRestoreDispatchFunction": {
+      "name": "CGLRestoreDispatchFunction",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLRestoreDispatchFunction(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLSetSurface": {
+      "name": "CGLSetSurface",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CGLSetSurface(CGLRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "glcPluginCount": {
+      "name": "glcPluginCount",
+      "framework": "OpenGL",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "glcPluginRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t glcPluginCount(glcPluginRef *ref)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CGLGetPBufferRetainCount",
+        "CGLGetPixelFormatRetainCount",
+        "CGLGetContextRetainCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLDestroyContext": {
+      "name": "CGLDestroyContext",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLDestroyContext(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLReleaseContext": {
+      "name": "CGLReleaseContext",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLReleaseContext(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GLCGetSurface": {
+      "name": "GLCGetSurface",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GLCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GLCGetSurface(GLCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLCreatePBuffer": {
+      "name": "CGLCreatePBuffer",
+      "framework": "OpenGL",
+      "return_type": "CGLRef",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CGLRef CGLCreatePBuffer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CGLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CGLCreateContext",
+        "CGLCopyContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLGetDeviceFromGLRenderer": {
+      "name": "CGLGetDeviceFromGLRenderer",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CGLGetDeviceFromGLRenderer(CGLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLGetVersion": {
+      "name": "CGLGetVersion",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CGLGetVersion(CGLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLUnregisterDestroyPBufferCallback": {
+      "name": "CGLUnregisterDestroyPBufferCallback",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLUnregisterRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ CGLUnregisterDestroyPBufferCallback(CGLUnregisterRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CGLRegisterDestroyPBufferCallback"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLDescribePixelFormat": {
+      "name": "CGLDescribePixelFormat",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLDescribePixelFormat(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLTexImagePBuffer": {
+      "name": "CGLTexImagePBuffer",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLTexImagePBuffer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLSelectDispatch": {
+      "name": "CGLSelectDispatch",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLSelectDispatch(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "glcGetIOAccelService": {
+      "name": "glcGetIOAccelService",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "glcRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ glcGetIOAccelService(glcRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLRetainPixelFormat": {
+      "name": "CGLRetainPixelFormat",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLRetainPixelFormat(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLRegisterDestroyPBufferCallback": {
+      "name": "CGLRegisterDestroyPBufferCallback",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRegisterRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ CGLRegisterDestroyPBufferCallback(CGLRegisterRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CGLUnregisterDestroyPBufferCallback"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GLCGetVirtualScreen": {
+      "name": "GLCGetVirtualScreen",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GLCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GLCGetVirtualScreen(GLCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLGetOffScreen": {
+      "name": "CGLGetOffScreen",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CGLGetOffScreen(CGLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLCreateContext": {
+      "name": "CGLCreateContext",
+      "framework": "OpenGL",
+      "return_type": "CGLRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CGLRef CGLCreateContext(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CGLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CGLCreatePBuffer",
+        "CGLCopyContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLSelectDispatchFunction": {
+      "name": "CGLSelectDispatchFunction",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLSelectDispatchFunction(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLReleasePixelFormat": {
+      "name": "CGLReleasePixelFormat",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLReleasePixelFormat(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLQueryRendererInfo": {
+      "name": "CGLQueryRendererInfo",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLQueryRendererInfo(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLTexImageIOSurface2D": {
+      "name": "CGLTexImageIOSurface2D",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLTexImageIOSurface2D(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLRetainContext": {
+      "name": "CGLRetainContext",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLRetainContext(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLDestroyPixelFormat": {
+      "name": "CGLDestroyPixelFormat",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLDestroyPixelFormat(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLErrorString": {
+      "name": "CGLErrorString",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLErrorString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "cglBadApplicationNotMuxAwareLockDown": {
+      "name": "cglBadApplicationNotMuxAwareLockDown",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ cglBadApplicationNotMuxAwareLockDown(void)",
+      "verb": "synchronize",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GLCGetProfilerStorage": {
+      "name": "GLCGetProfilerStorage",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GLCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GLCGetProfilerStorage(GLCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLLockContext": {
+      "name": "CGLLockContext",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLLockContext(void)",
+      "verb": "synchronize",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLRestoreDispatch": {
+      "name": "CGLRestoreDispatch",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLRestoreDispatch(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLSetParameter": {
+      "name": "CGLSetParameter",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CGLSetParameter(CGLRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLReleasePBuffer": {
+      "name": "CGLReleasePBuffer",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLReleasePBuffer(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLAreContextsShared": {
+      "name": "CGLAreContextsShared",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLAreContextsShared(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLGetSurface": {
+      "name": "CGLGetSurface",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CGLGetSurface(CGLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLSetVirtualScreen": {
+      "name": "CGLSetVirtualScreen",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CGLSetVirtualScreen(CGLRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLDescribeRenderer": {
+      "name": "CGLDescribeRenderer",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLDescribeRenderer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLUpdateContext": {
+      "name": "CGLUpdateContext",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLUpdateContext(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLDestroyRendererInfo": {
+      "name": "CGLDestroyRendererInfo",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ CGLDestroyRendererInfo(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GLCDescribePixelFormat": {
+      "name": "GLCDescribePixelFormat",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ GLCDescribePixelFormat(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLSetFullScreenOnDisplay": {
+      "name": "CGLSetFullScreenOnDisplay",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CGLSetFullScreenOnDisplay(CGLRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLSetOffScreen": {
+      "name": "CGLSetOffScreen",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CGLSetOffScreen(CGLRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLGetContextRetainCount": {
+      "name": "CGLGetContextRetainCount",
+      "framework": "OpenGL",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLGetContextRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t CGLGetContextRetainCount(CGLGetContextRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CGLGetPBufferRetainCount",
+        "CGLGetPixelFormatRetainCount",
+        "glcPluginCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "glcRecordError": {
+      "name": "glcRecordError",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        }
+      ],
+      "signature": "void/*?*/ glcRecordError(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLCopyContext": {
+      "name": "CGLCopyContext",
+      "framework": "OpenGL",
+      "return_type": "CGLRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CGLRef/*?*/ CGLCopyContext(CGLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CGLRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CGLCreatePBuffer",
+        "CGLCreateContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLSetFullScreen": {
+      "name": "CGLSetFullScreen",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CGLSetFullScreen(CGLRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLGetGlobalOption": {
+      "name": "CGLGetGlobalOption",
+      "framework": "OpenGL",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CGLGetGlobalOption(CGLRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGLSetPBufferVolatileState": {
+      "name": "CGLSetPBufferVolatileState",
+      "framework": "OpenGL",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGLRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from OpenGL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CGLSetPBufferVolatileState(CGLRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "memory_buffer": [
+      "CGLCreatePBuffer",
+      "CGLDescribePBuffer",
+      "CGLDestroyPBuffer",
+      "CGLGetPBuffer",
+      "CGLGetPBufferRetainCount",
+      "CGLRegisterDestroyPBufferCallback",
+      "CGLReleasePBuffer",
+      "CGLRetainPBuffer",
+      "CGLSetPBuffer",
+      "CGLSetPBufferVolatileState",
+      "CGLTexImageIOSurface2D",
+      "CGLTexImagePBuffer",
+      "CGLUnregisterDestroyPBufferCallback",
+      "GLCGetPBuffer"
+    ],
+    "system_io": [
+      "CGLBackDispatch",
+      "CGLFrontDispatch",
+      "CGLRestoreDispatch",
+      "CGLRestoreDispatchFunction",
+      "CGLSelectDispatch",
+      "CGLSelectDispatchBounded",
+      "CGLSelectDispatchFunction"
+    ],
+    "image_processing": [
+      "CGLChoosePixelFormat",
+      "CGLDescribePixelFormat",
+      "CGLDestroyPixelFormat",
+      "CGLGetPixelFormat",
+      "CGLGetPixelFormatRetainCount",
+      "CGLReleasePixelFormat",
+      "CGLRetainPixelFormat",
+      "CGLTexImageIOSurface2D",
+      "CGLTexImagePBuffer",
+      "GLCDescribePixelFormat"
+    ],
+    "gpu_compute": [
+      "CGLDescribeRenderer",
+      "CGLDestroyRendererInfo",
+      "CGLGetDeviceFromGLRenderer",
+      "CGLQueryRendererInfo"
+    ],
+    "display_compositing": [
+      "CGLGetOffScreen",
+      "CGLGetVirtualScreen",
+      "CGLSetFullScreen",
+      "CGLSetFullScreenOnDisplay",
+      "CGLSetOffScreen",
+      "CGLSetVirtualScreen",
+      "GLCGetVirtualScreen"
+    ],
+    "cryptography": [
+      "CGLAreContextsShared",
+      "CGLGetShareGroup"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

@@ -1,0 +1,2219 @@
+{
+  "framework": "CoreAnalytics",
+  "functions": {
+    "CoreAnalytics::Client::cancelConnection_sync()": {
+      "name": "CoreAnalytics::Client::cancelConnection_sync()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::cancelConnection_sync()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_log_dump(std::__1::optional<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>)": {
+      "name": "analytics_tool_log_dump(std::__1::optional<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_log_dump(std::__1::optional<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_get_cache_list()": {
+      "name": "analytics_tool_get_cache_list()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_get_cache_list()(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_insert_query_state(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, applesauce::xpc::object, applesauce::xpc::object)": {
+      "name": "analytics_tool_insert_query_state(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, applesauce::xpc::object, applesauce::xpc::object)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_insert_query_state(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, applesauce::xpc::object, applesauce::xpc::object)(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::Client()": {
+      "name": "CoreAnalytics::Client::Client()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::Client()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_disable_all_transform_sampling": {
+      "name": "analytics_disable_all_transform_sampling",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_disable_all_transform_sampling(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_send_event": {
+      "name": "analytics_send_event",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_send_event(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CASPIEnter()": {
+      "name": "CASPIEnter()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CASPIEnter()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_transform_evict(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)": {
+      "name": "analytics_tool_transform_evict(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_transform_evict(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_query_state(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, applesauce::xpc::object)": {
+      "name": "analytics_tool_query_state(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, applesauce::xpc::object)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_query_state(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, applesauce::xpc::object)(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "typeinfo for CoreAnalytics::ConfigurationObserver": {
+      "name": "typeinfo for CoreAnalytics::ConfigurationObserver",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ typeinfo for CoreAnalytics::ConfigurationObserver(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AnalyticsSendEventWithOptions": {
+      "name": "AnalyticsSendEventWithOptions",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ AnalyticsSendEventWithOptions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AnalyticsNotifyTaskingAvailable": {
+      "name": "AnalyticsNotifyTaskingAvailable",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ AnalyticsNotifyTaskingAvailable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_send_event_lazy": {
+      "name": "analytics_send_event_lazy",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_send_event_lazy(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::handleServerMessage_sync(applesauce::xpc::dict const&)": {
+      "name": "CoreAnalytics::Client::handleServerMessage_sync(applesauce::xpc::dict const&)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::handleServerMessage_sync(applesauce::xpc::dict const&)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_send_event_with_options": {
+      "name": "analytics_send_event_with_options",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_send_event_with_options(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_send_exploding_event_lazy": {
+      "name": "analytics_send_exploding_event_lazy",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_send_exploding_event_lazy(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "typeinfo name for CoreAnalytics::EventObserver": {
+      "name": "typeinfo name for CoreAnalytics::EventObserver",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ typeinfo name for CoreAnalytics::EventObserver(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::ConfigurationObserver::~ConfigurationObserver()": {
+      "name": "CoreAnalytics::ConfigurationObserver::~ConfigurationObserver()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::ConfigurationObserver::~ConfigurationObserver()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_transform_persist(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)": {
+      "name": "analytics_tool_transform_persist(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_transform_persist(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::registerErrorHandler(std::__1::function<void (std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&)>&&)": {
+      "name": "CoreAnalytics::Client::registerErrorHandler(std::__1::function<void (std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&)>&&)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::registerErrorHandler(std::__1::function<void (std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&)>&&)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::handleSinkMessageEmit_sync(applesauce::xpc::dict const&)": {
+      "name": "CoreAnalytics::Client::handleSinkMessageEmit_sync(applesauce::xpc::dict const&)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::handleSinkMessageEmit_sync(applesauce::xpc::dict const&)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::isEventUsed(std::__1::basic_string_view<char, std::__1::char_traits<char>>) const": {
+      "name": "CoreAnalytics::Client::isEventUsed(std::__1::basic_string_view<char, std::__1::char_traits<char>>) const",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::isEventUsed(std::__1::basic_string_view<char, std::__1::char_traits<char>>) const(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "vtable for CoreAnalytics::ConfigurationObserver": {
+      "name": "vtable for CoreAnalytics::ConfigurationObserver",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ vtable for CoreAnalytics::ConfigurationObserver(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AnalyticsSendEvent": {
+      "name": "AnalyticsSendEvent",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ AnalyticsSendEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AnalyticsSetCallbackForQueriedEventWithQueue": {
+      "name": "AnalyticsSetCallbackForQueriedEventWithQueue",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AnalyticsRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AnalyticsSetCallbackForQueriedEventWithQueue(AnalyticsRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::releaseSendTransaction()": {
+      "name": "CoreAnalytics::Client::releaseSendTransaction()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::releaseSendTransaction()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_set_callback_for_queried_event": {
+      "name": "analytics_set_callback_for_queried_event",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_set_callback_for_queried_event(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AnalyticsSendEventLazyHighPriority": {
+      "name": "AnalyticsSendEventLazyHighPriority",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ AnalyticsSendEventLazyHighPriority(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_rollover(std::__1::optional<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>, bool)": {
+      "name": "analytics_tool_rollover(std::__1::optional<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>, bool)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_rollover(std::__1::optional<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>, bool)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::retryXpcMessage_sync(applesauce::xpc::dict const&, XPCMessagePriority, bool)": {
+      "name": "CoreAnalytics::Client::retryXpcMessage_sync(applesauce::xpc::dict const&, XPCMessagePriority, bool)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::retryXpcMessage_sync(applesauce::xpc::dict const&, XPCMessagePriority, bool)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AnalyticsIsEventUsed": {
+      "name": "AnalyticsIsEventUsed",
+      "framework": "CoreAnalytics",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AnalyticsRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool AnalyticsIsEventUsed(AnalyticsRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::handleConfigurationChange_sync(applesauce::xpc::dict const&)": {
+      "name": "CoreAnalytics::Client::handleConfigurationChange_sync(applesauce::xpc::dict const&)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::handleConfigurationChange_sync(applesauce::xpc::dict const&)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::sendExitBarrierWithTimeoutSync(unsigned int)": {
+      "name": "CoreAnalytics::Client::sendExitBarrierWithTimeoutSync(unsigned int)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "synchronization"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::sendExitBarrierWithTimeoutSync(unsigned int)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::EventObserver::~EventObserver()": {
+      "name": "CoreAnalytics::EventObserver::~EventObserver()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::EventObserver::~EventObserver()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::sendXpcMessage(applesauce::xpc::dict const&, XPCMessagePriority, bool, bool)": {
+      "name": "CoreAnalytics::Client::sendXpcMessage(applesauce::xpc::dict const&, XPCMessagePriority, bool, bool)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::sendXpcMessage(applesauce::xpc::dict const&, XPCMessagePriority, bool, bool)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ad_addScalarForKey": {
+      "name": "ad_addScalarForKey",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ ad_addScalarForKey(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_notify_tasking_available": {
+      "name": "analytics_notify_tasking_available",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_notify_tasking_available(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CASendEventOptionKeyLogPayload": {
+      "name": "CASendEventOptionKeyLogPayload",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CASendEventOptionKeyLogPayload(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::allowAllEvents()": {
+      "name": "CoreAnalytics::Client::allowAllEvents()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::allowAllEvents()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AnalyticsDisableAllTransformSampling": {
+      "name": "AnalyticsDisableAllTransformSampling",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ AnalyticsDisableAllTransformSampling(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::sendXpcMessage_sync(applesauce::xpc::dict, XPCMessagePriority, bool, bool)": {
+      "name": "CoreAnalytics::Client::sendXpcMessage_sync(applesauce::xpc::dict, XPCMessagePriority, bool, bool)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::sendXpcMessage_sync(applesauce::xpc::dict, XPCMessagePriority, bool, bool)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_config_set_tasking_ndjson(std::__1::pair<applesauce::xpc::object, unsigned long> const&)": {
+      "name": "analytics_tool_config_set_tasking_ndjson(std::__1::pair<applesauce::xpc::object, unsigned long> const&)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_config_set_tasking_ndjson(std::__1::pair<applesauce::xpc::object, unsigned long> const&)(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_config_set_tasking(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)": {
+      "name": "analytics_tool_config_set_tasking(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_config_set_tasking(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_is_event_used_check_db(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)": {
+      "name": "analytics_tool_is_event_used_check_db(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_is_event_used_check_db(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_has_config()": {
+      "name": "analytics_tool_has_config()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_has_config()(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AnalyticsRolloverWithOptions": {
+      "name": "AnalyticsRolloverWithOptions",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ AnalyticsRolloverWithOptions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::retryXpcMessageHelper_sync(applesauce::xpc::dict, XPCMessagePriority, bool, unsigned char, unsigned long long)": {
+      "name": "CoreAnalytics::Client::retryXpcMessageHelper_sync(applesauce::xpc::dict, XPCMessagePriority, bool, unsigned char, unsigned long long)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::retryXpcMessageHelper_sync(applesauce::xpc::dict, XPCMessagePriority, bool, unsigned char, unsigned long long)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_commit()": {
+      "name": "analytics_tool_commit()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_commit()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_rollover_with_options": {
+      "name": "analytics_rollover_with_options",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_rollover_with_options(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_send_event_lazy_with_options": {
+      "name": "analytics_send_event_lazy_with_options",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_send_event_lazy_with_options(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_log_transform_counts()": {
+      "name": "analytics_tool_log_transform_counts()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_log_transform_counts()(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AnalyticsSendEventLazy": {
+      "name": "AnalyticsSendEventLazy",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ AnalyticsSendEventLazy(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::acquireSendTransaction()": {
+      "name": "CoreAnalytics::Client::acquireSendTransaction()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::acquireSendTransaction()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_rollover_events": {
+      "name": "analytics_rollover_events",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_rollover_events(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AnalyticsRolloverEvents": {
+      "name": "AnalyticsRolloverEvents",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ AnalyticsRolloverEvents(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_config_list()": {
+      "name": "analytics_tool_config_list()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_config_list()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_query_clear(std::__1::optional<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>)": {
+      "name": "analytics_tool_query_clear(std::__1::optional<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_query_clear(std::__1::optional<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>)(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::registerEventObserver(std::__1::weak_ptr<CoreAnalytics::EventObserver>)": {
+      "name": "CoreAnalytics::Client::registerEventObserver(std::__1::weak_ptr<CoreAnalytics::EventObserver>)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::registerEventObserver(std::__1::weak_ptr<CoreAnalytics::EventObserver>)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_is_event_used": {
+      "name": "analytics_is_event_used",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_is_event_used(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_set_callback_for_queried_event_with_queue": {
+      "name": "analytics_set_callback_for_queried_event_with_queue",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_set_callback_for_queried_event_with_queue(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getObjectForKey": {
+      "name": "getObjectForKey",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ getObjectForKey(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_config_reload()": {
+      "name": "analytics_tool_config_reload()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_config_reload()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_config_set_reboot_clear(bool)": {
+      "name": "analytics_tool_config_set_reboot_clear(bool)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_config_set_reboot_clear(bool)(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::registerConfigurationObserver(std::__1::weak_ptr<CoreAnalytics::ConfigurationObserver>)": {
+      "name": "CoreAnalytics::Client::registerConfigurationObserver(std::__1::weak_ptr<CoreAnalytics::ConfigurationObserver>)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::registerConfigurationObserver(std::__1::weak_ptr<CoreAnalytics::ConfigurationObserver>)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::get()": {
+      "name": "CoreAnalytics::Client::get()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::get()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "vtable for CoreAnalytics::EventObserver": {
+      "name": "vtable for CoreAnalytics::EventObserver",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ vtable for CoreAnalytics::EventObserver(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "typeinfo for CoreAnalytics::EventObserver": {
+      "name": "typeinfo for CoreAnalytics::EventObserver",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ typeinfo for CoreAnalytics::EventObserver(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AnalyticsSendEventLazyWithOptions": {
+      "name": "AnalyticsSendEventLazyWithOptions",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ AnalyticsSendEventLazyWithOptions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_config_info()": {
+      "name": "analytics_tool_config_info()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_config_info()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::initConnection()": {
+      "name": "CoreAnalytics::Client::initConnection()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::initConnection()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_config_dump()": {
+      "name": "analytics_tool_config_dump()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_config_dump()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_query_list()": {
+      "name": "analytics_tool_query_list()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_query_list()(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_transform_info(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)": {
+      "name": "analytics_tool_transform_info(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_transform_info(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::updateDaemonState(int)": {
+      "name": "CoreAnalytics::Client::updateDaemonState(int)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::updateDaemonState(int)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "setObjectForKey": {
+      "name": "setObjectForKey",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ setObjectForKey(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::sendManagementCommandWithReply(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, applesauce::xpc::dict) const": {
+      "name": "CoreAnalytics::Client::sendManagementCommandWithReply(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, applesauce::xpc::dict) const",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::sendManagementCommandWithReply(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, applesauce::xpc::dict) const(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_reenable_all_transform_sampling": {
+      "name": "analytics_reenable_all_transform_sampling",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_reenable_all_transform_sampling(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AnalyticsReenableAllTransformSampling": {
+      "name": "AnalyticsReenableAllTransformSampling",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ AnalyticsReenableAllTransformSampling(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_send_event_lazy_high_priority": {
+      "name": "analytics_send_event_lazy_high_priority",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_send_event_lazy_high_priority(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_app_usage_sync()": {
+      "name": "analytics_tool_app_usage_sync()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_app_usage_sync()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::sendCheckinMessage_sync()": {
+      "name": "CoreAnalytics::Client::sendCheckinMessage_sync()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::sendCheckinMessage_sync()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::hasConfig() const": {
+      "name": "CoreAnalytics::Client::hasConfig() const",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::hasConfig() const(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AnalyticsSendExplodingEventLazy": {
+      "name": "AnalyticsSendExplodingEventLazy",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ AnalyticsSendExplodingEventLazy(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "typeinfo name for CoreAnalytics::ConfigurationObserver": {
+      "name": "typeinfo name for CoreAnalytics::ConfigurationObserver",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ typeinfo name for CoreAnalytics::ConfigurationObserver(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics.AnalyticsQueryValuesFor(arguments: __C.NSSet) -> __C.OS_xpc_object": {
+      "name": "CoreAnalytics.AnalyticsQueryValuesFor(arguments: __C.NSSet) -> __C.OS_xpc_object",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CoreAnalytics.AnalyticsQueryValuesFor(arguments: __C.NSRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics.AnalyticsQueryValuesFor(arguments: __C.NSSet) -> __C.OS_xpc_object(CoreAnalytics.AnalyticsQueryValuesFor(arguments: __C.NSRef *ref, void * *value)",
+      "verb": "read",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::sendEventAlways(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, std::__1::function<nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, bool, long long, unsigned long long, double, std::__1::allocator, nlohmann::adl_serializer, std::__1::vector<unsigned char, std::__1::allocator<unsigned char>>> ()> const&, CoreAnalytics::SendEventOptions)": {
+      "name": "CoreAnalytics::Client::sendEventAlways(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, std::__1::function<nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, bool, long long, unsigned long long, double, std::__1::allocator, nlohmann::adl_serializer, std::__1::vector<unsigned char, std::__1::allocator<unsigned char>>> ()> const&, CoreAnalytics::SendEventOptions)",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::sendEventAlways(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, std::__1::function<nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, bool, long long, unsigned long long, double, std::__1::allocator, nlohmann::adl_serializer, std::__1::vector<unsigned char, std::__1::allocator<unsigned char>>> ()> const&, CoreAnalytics::SendEventOptions)(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "report_locale_prefs_to_analyticsd": {
+      "name": "report_locale_prefs_to_analyticsd",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ report_locale_prefs_to_analyticsd(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AnalyticsSetCallbackForQueriedEvent": {
+      "name": "AnalyticsSetCallbackForQueriedEvent",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AnalyticsRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AnalyticsSetCallbackForQueriedEvent(AnalyticsRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "analytics_tool_save()": {
+      "name": "analytics_tool_save()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ analytics_tool_save()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreAnalytics::Client::init()": {
+      "name": "CoreAnalytics::Client::init()",
+      "framework": "CoreAnalytics",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreAnalytics"
+        }
+      ],
+      "signature": "void/*?*/ CoreAnalytics::Client::init()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "memory_buffer": [
+      "analytics_tool_log_dump(std::__1::optional<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>)",
+      "analytics_tool_rollover(std::__1::optional<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>, bool)",
+      "analytics_tool_query_clear(std::__1::optional<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>>)",
+      "analytics_tool_query_state(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, applesauce::xpc::object)",
+      "analytics_tool_transform_info(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)",
+      "analytics_tool_transform_evict(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)",
+      "analytics_tool_transform_persist(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)",
+      "analytics_tool_config_set_tasking(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)",
+      "analytics_tool_insert_query_state(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, applesauce::xpc::object, applesauce::xpc::object)",
+      "analytics_tool_is_event_used_check_db(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)",
+      "CoreAnalytics::Client::sendEventAlways(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, std::__1::function<nlohmann::basic_json<std::__1::map, std::__1::vector, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, bool, long long, unsigned long long, double, std::__1::allocator, nlohmann::adl_serializer, std::__1::vector<unsigned char, std::__1::allocator<unsigned char>>> ()> const&, CoreAnalytics::SendEventOptions)",
+      "CoreAnalytics::Client::registerErrorHandler(std::__1::function<void (std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&)>&&)",
+      "CoreAnalytics::Client::sendManagementCommandWithReply(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, applesauce::xpc::dict) const"
+    ],
+    "synchronization": [
+      "CoreAnalytics::Client::sendExitBarrierWithTimeoutSync(unsigned int)"
+    ],
+    "gpu_compute": [
+      "CoreAnalytics::Client::sendManagementCommandWithReply(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, applesauce::xpc::dict) const"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

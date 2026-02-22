@@ -1,0 +1,924 @@
+{
+  "framework": "ScreenSaver",
+  "functions": {
+    "SSSystemScreenSaversPath": {
+      "name": "SSSystemScreenSaversPath",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSSystemScreenSaversPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSDPreviousModuleName": {
+      "name": "SSDPreviousModuleName",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSDPreviousModuleName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSScreenIsMirrored": {
+      "name": "SSScreenIsMirrored",
+      "framework": "ScreenSaver",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SSScreenRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SSScreenIsMirrored(SSScreenRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSSetCrashReporterSignature": {
+      "name": "SSSetCrashReporterSignature",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SSRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ SSSetCrashReporterSignature(SSRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSDEngineLWModulePath": {
+      "name": "SSDEngineLWModulePath",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSDEngineLWModulePath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSRandomPointForSizeWithinBounds": {
+      "name": "SSRandomPointForSizeWithinBounds",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSRandomPointForSizeWithinBounds(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSModuleComputeArchitectureToUse": {
+      "name": "SSModuleComputeArchitectureToUse",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSModuleComputeArchitectureToUse(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSScreenSaverWindowLevel": {
+      "name": "SSScreenSaverWindowLevel",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSScreenSaverWindowLevel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSDBlackSaver": {
+      "name": "SSDBlackSaver",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSDBlackSaver(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSDLastNonRandomModuleDict": {
+      "name": "SSDLastNonRandomModuleDict",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSDLastNonRandomModuleDict(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSIsAppleSignedModule": {
+      "name": "SSIsAppleSignedModule",
+      "framework": "ScreenSaver",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SSIsAppleSignedModule(SSRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSDShowClock": {
+      "name": "SSDShowClock",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSDShowClock(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSDUserSelectedPictureFolders": {
+      "name": "SSDUserSelectedPictureFolders",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSDUserSelectedPictureFolders(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSModuleIsCompatibleArch": {
+      "name": "SSModuleIsCompatibleArch",
+      "framework": "ScreenSaver",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SSModuleRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SSModuleIsCompatibleArch(SSModuleRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSPreflightModuleLoadForPath": {
+      "name": "SSPreflightModuleLoadForPath",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSPreflightModuleLoadForPath(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSInitRandomWithSeed": {
+      "name": "SSInitRandomWithSeed",
+      "framework": "ScreenSaver",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ SSInitRandomWithSeed(void *buf, size_t size)",
+      "verb": "create",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SSInitRandom"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSDEngineDimTime": {
+      "name": "SSDEngineDimTime",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSDEngineDimTime(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSDMainScreenOnly": {
+      "name": "SSDMainScreenOnly",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSDMainScreenOnly(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SanitizedPathForPath": {
+      "name": "SanitizedPathForPath",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SanitizedPathForPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSDEngineModuleName": {
+      "name": "SSDEngineModuleName",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSDEngineModuleName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSLogForCategory": {
+      "name": "OSLogForCategory",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ OSLogForCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSRandomInt": {
+      "name": "SSRandomInt",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSRandomInt(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSInitRandom": {
+      "name": "SSInitRandom",
+      "framework": "ScreenSaver",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ SSInitRandom(void *buf, size_t size)",
+      "verb": "create",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SSInitRandomWithSeed"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSDHotCorners": {
+      "name": "SSDHotCorners",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSDHotCorners(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSDEngineModuleDict": {
+      "name": "SSDEngineModuleDict",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSDEngineModuleDict(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSDEngineModulePath": {
+      "name": "SSDEngineModulePath",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSDEngineModulePath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSDLastNonRandomModuleName": {
+      "name": "SSDLastNonRandomModuleName",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSDLastNonRandomModuleName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSGetScaleFactor": {
+      "name": "SSGetScaleFactor",
+      "framework": "ScreenSaver",
+      "return_type": "double",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "double/*?*/ SSGetScaleFactor(SSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "double"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSRunningAsNormalUser": {
+      "name": "SSRunningAsNormalUser",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSRunningAsNormalUser(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSDPreviousModuleDict": {
+      "name": "SSDPreviousModuleDict",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSDPreviousModuleDict(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSHasGfxAcceleration": {
+      "name": "SSHasGfxAcceleration",
+      "framework": "ScreenSaver",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SSHasGfxAcceleration(SSRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSDBackground": {
+      "name": "SSDBackground",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSDBackground(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SSCenterRectInRect": {
+      "name": "SSCenterRectInRect",
+      "framework": "ScreenSaver",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenSaver"
+        }
+      ],
+      "signature": "void/*?*/ SSCenterRectInRect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "gpu_compute": [
+      "SSModuleComputeArchitectureToUse"
+    ],
+    "cryptography": [
+      "SSHasGfxAcceleration"
+    ],
+    "image_processing": [
+      "SSGetScaleFactor"
+    ],
+    "display_compositing": [
+      "SSDMainScreenOnly",
+      "SSScreenIsMirrored",
+      "SSScreenSaverWindowLevel",
+      "SSSystemScreenSaversPath"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

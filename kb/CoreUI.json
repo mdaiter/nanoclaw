@@ -1,0 +1,5240 @@
+{
+  "framework": "CoreUI",
+  "functions": {
+    "CUISystemThemeRenditionKeyFormat": {
+      "name": "CUISystemThemeRenditionKeyFormat",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUISystemThemeRenditionKeyFormat(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_LookupStructuredThemeProvider": {
+      "name": "_LookupStructuredThemeProvider",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ _LookupStructuredThemeProvider(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICFArrayCreateWithCGRects": {
+      "name": "CUICFArrayCreateWithCGRects",
+      "framework": "CoreUI",
+      "return_type": "CUICFArrayRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUICFArrayRef CUICFArrayCreateWithCGRects(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUICFArrayRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUISetCustomColorInContext": {
+      "name": "CUISetCustomColorInContext",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CUISetCustomColorInContext(CUIRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CUIVectorGlyphContinuousWeightHeavy": {
+      "name": "_CUIVectorGlyphContinuousWeightHeavy",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ _CUIVectorGlyphContinuousWeightHeavy(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIConvertFromTXRPixelFormat": {
+      "name": "CUIConvertFromTXRPixelFormat",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIConvertFromTXRPixelFormat(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICreateMenuPath": {
+      "name": "CUICreateMenuPath",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUIRef CUICreateMenuPath(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions",
+        "CUICreateSDFEdgeTexturePixelFormat"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIColorCreateFromColorWithSystemEffectOptions": {
+      "name": "CUIColorCreateFromColorWithSystemEffectOptions",
+      "framework": "CoreUI",
+      "return_type": "CUIColorRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUIColorRef CUIColorCreateFromColorWithSystemEffectOptions(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUIColorRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIVectorGlyphDefaultsKeyHasImageFills": {
+      "name": "CUIVectorGlyphDefaultsKeyHasImageFills",
+      "framework": "CoreUI",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIVectorGlyphDefaultsKeyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CUIVectorGlyphDefaultsKeyHasImageFills(CUIVectorGlyphDefaultsKeyRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIStringFromClipStrokeKeyframeData": {
+      "name": "CUIStringFromClipStrokeKeyframeData",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIStringFromClipStrokeKeyframeData(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIGetChannelDataForImage": {
+      "name": "CUIGetChannelDataForImage",
+      "framework": "CoreUI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CUIGetChannelDataForImage(CUIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICreateSubpathsFromSVGNode": {
+      "name": "CUICreateSubpathsFromSVGNode",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUIRef CUICreateSubpathsFromSVGNode(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions",
+        "CUICreateSDFEdgeTexturePixelFormat"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIDraw": {
+      "name": "CUIDraw",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIDraw(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIGetFormatForFeatureSetAndPixelFormat": {
+      "name": "CUIGetFormatForFeatureSetAndPixelFormat",
+      "framework": "CoreUI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CUIGetFormatForFeatureSetAndPixelFormat(CUIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIHitTest": {
+      "name": "CUIHitTest",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIHitTest(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUISetThemeCleanupQueue": {
+      "name": "CUISetThemeCleanupQueue",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CUISetThemeCleanupQueue(CUIRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUISystemTheme": {
+      "name": "CUISystemTheme",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUISystemTheme(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICreatePathFromSVGNode": {
+      "name": "CUICreatePathFromSVGNode",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUIRef CUICreatePathFromSVGNode(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions",
+        "CUICreateSDFEdgeTexturePixelFormat"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreUIVersionNumber": {
+      "name": "CoreUIVersionNumber",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CoreUIVersionNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIPlatformNameForPlatform": {
+      "name": "CUIPlatformNameForPlatform",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIPlatformNameForPlatform(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUISetUpContext": {
+      "name": "CUISetUpContext",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CUISetUpContext(CUIRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIGetDeviceArtworkDisplayGamut": {
+      "name": "CUIGetDeviceArtworkDisplayGamut",
+      "framework": "CoreUI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CUIGetDeviceArtworkDisplayGamut(CUIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIPointSizeForDimensionForVectorGlyph": {
+      "name": "CUIPointSizeForDimensionForVectorGlyph",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIPointSizeForDimensionForVectorGlyph(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemePresentationStates": {
+      "name": "gThemePresentationStates",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemePresentationStates(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeMemoryPerformanceClasses": {
+      "name": "gThemeMemoryPerformanceClasses",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeMemoryPerformanceClasses(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIAccumulateSVGShapesIntoPath": {
+      "name": "CUIAccumulateSVGShapesIntoPath",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIAccumulateSVGShapesIntoPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIConvertToTXRPixelFormat": {
+      "name": "CUIConvertToTXRPixelFormat",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIConvertToTXRPixelFormat(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeTextureRawTypes": {
+      "name": "gThemeTextureRawTypes",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeTextureRawTypes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUISVGNodeCanBeRepresentedAsPath": {
+      "name": "CUISVGNodeCanBeRepresentedAsPath",
+      "framework": "CoreUI",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUISVGNodeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CUISVGNodeCanBeRepresentedAsPath(CUISVGNodeRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gEffectParameterTypes": {
+      "name": "gEffectParameterTypes",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gEffectParameterTypes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICreateLayerContents": {
+      "name": "CUICreateLayerContents",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUIRef CUICreateLayerContents(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICopyCustomColorWithOptions",
+        "CUICreateSDFEdgeTexturePixelFormat"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIConvertCGImageFormat": {
+      "name": "CUIConvertCGImageFormat",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIConvertCGImageFormat(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CUIVectorGlyphContinuousWeightThin": {
+      "name": "_CUIVectorGlyphContinuousWeightThin",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ _CUIVectorGlyphContinuousWeightThin(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gColors": {
+      "name": "gColors",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gColors(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICopyCustomColorWithOptions": {
+      "name": "CUICopyCustomColorWithOptions",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CUIRef/*?*/ CUICopyCustomColorWithOptions(CUIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICreateSDFEdgeTexturePixelFormat"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIDrawStyledGlyphsWithAdvances": {
+      "name": "CUIDrawStyledGlyphsWithAdvances",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIDrawStyledGlyphsWithAdvances(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gEffectTypes": {
+      "name": "gEffectTypes",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gEffectTypes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeCompressionTypes": {
+      "name": "gThemeCompressionTypes",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeCompressionTypes(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICFDictionarySetCGRect": {
+      "name": "CUICFDictionarySetCGRect",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUICFDictionaryRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CUICFDictionarySetCGRect(CUICFDictionaryRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeDeploymentTargets": {
+      "name": "gThemeDeploymentTargets",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeDeploymentTargets(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gRenditionTypes": {
+      "name": "gRenditionTypes",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gRenditionTypes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIAccumulateSVGShapesIntoJoinedPath": {
+      "name": "CUIAccumulateSVGShapesIntoJoinedPath",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIAccumulateSVGShapesIntoJoinedPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIDeallocateRGBAImageBuffer": {
+      "name": "CUIDeallocateRGBAImageBuffer",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIDeallocateRGBAImageBuffer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIKeyFormatToArrayString": {
+      "name": "CUIKeyFormatToArrayString",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIKeyFormatToArrayString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIEdgeInsetsInsetRect": {
+      "name": "CUIEdgeInsetsInsetRect",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIEdgeInsetsInsetRect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIGetCustomFontSize": {
+      "name": "CUIGetCustomFontSize",
+      "framework": "CoreUI",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ CUIGetCustomFontSize(CUIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUIRenditionKeyTokenCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIPreferredVectorGlyphConfigurationsForPlatform": {
+      "name": "CUIPreferredVectorGlyphConfigurationsForPlatform",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIPreferredVectorGlyphConfigurationsForPlatform(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIRenditionKeyStandardize": {
+      "name": "CUIRenditionKeyStandardize",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIRenditionKeyStandardize(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CUIVectorGlyphContinuousWeightLight": {
+      "name": "_CUIVectorGlyphContinuousWeightLight",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ _CUIVectorGlyphContinuousWeightLight(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIEdgeInsetsFromCGRect": {
+      "name": "CUIEdgeInsetsFromCGRect",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIEdgeInsetsFromCGRect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CUIVectorGlyphContinuousWeightRegular": {
+      "name": "_CUIVectorGlyphContinuousWeightRegular",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ _CUIVectorGlyphContinuousWeightRegular(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gColorStatuses": {
+      "name": "gColorStatuses",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gColorStatuses(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICreateSDFEdgeTexturePixelFormat": {
+      "name": "CUICreateSDFEdgeTexturePixelFormat",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUIRef CUICreateSDFEdgeTexturePixelFormat(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CUILog": {
+      "name": "_CUILog",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ _CUILog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIEdgeInsetsMake": {
+      "name": "CUIEdgeInsetsMake",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIEdgeInsetsMake(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIPlatformForPlatformString": {
+      "name": "CUIPlatformForPlatformString",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIPlatformForPlatformString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CUIVectorGlyphContinuousWeightBold": {
+      "name": "_CUIVectorGlyphContinuousWeightBold",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ _CUIVectorGlyphContinuousWeightBold(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICFDictionarySetSegmentSeparatorTypes": {
+      "name": "CUICFDictionarySetSegmentSeparatorTypes",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUICFDictionaryRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CUICFDictionarySetSegmentSeparatorTypes(CUICFDictionaryRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeTextureInterpretations": {
+      "name": "gThemeTextureInterpretations",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeTextureInterpretations(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUILogHandle": {
+      "name": "CUILogHandle",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUILogHandle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeTexturePixelFormats": {
+      "name": "gThemeTexturePixelFormats",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeTexturePixelFormats(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICFDictionaryGetCGRect": {
+      "name": "CUICFDictionaryGetCGRect",
+      "framework": "CoreUI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUICFDictionaryRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CUICFDictionaryGetCGRect(CUICFDictionaryRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICFDictionarySetCFArrayOfCGRects": {
+      "name": "CUICFDictionarySetCFArrayOfCGRects",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUICFDictionaryRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CUICFDictionarySetCFArrayOfCGRects(CUICFDictionaryRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICreateSDFEdgeTextureFromImage": {
+      "name": "CUICreateSDFEdgeTextureFromImage",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUIRef CUICreateSDFEdgeTextureFromImage(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIDefaultThemeRenditionKeyFormat": {
+      "name": "CUIDefaultThemeRenditionKeyFormat",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIDefaultThemeRenditionKeyFormat(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIEdgeInsetsZero": {
+      "name": "CUIEdgeInsetsZero",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIEdgeInsetsZero(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIPlaceHolderRendition": {
+      "name": "CUIPlaceHolderRendition",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIPlaceHolderRendition(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIConvertCompressionTypeToString": {
+      "name": "CUIConvertCompressionTypeToString",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIConvertCompressionTypeToString(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIVectorGlyphDefaultsKeyDrawReversesMotionGroups": {
+      "name": "CUIVectorGlyphDefaultsKeyDrawReversesMotionGroups",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIVectorGlyphDefaultsKeyDrawReversesMotionGroups(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CUIVectorGlyphContinuousWeightMedium": {
+      "name": "_CUIVectorGlyphContinuousWeightMedium",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ _CUIVectorGlyphContinuousWeightMedium(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIAddPathToSVGShapeNode": {
+      "name": "CUIAddPathToSVGShapeNode",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIAddPathToSVGShapeNode(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIGetRGBAImageBuffer": {
+      "name": "CUIGetRGBAImageBuffer",
+      "framework": "CoreUI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing",
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CUIGetRGBAImageBuffer(CUIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUILogRenditionLogEnabled": {
+      "name": "CUILogRenditionLogEnabled",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUILogRenditionLogEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIVectorGlyphDefaultsKeyWiggleStyle": {
+      "name": "CUIVectorGlyphDefaultsKeyWiggleStyle",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIVectorGlyphDefaultsKeyWiggleStyle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeDirections": {
+      "name": "gThemeDirections",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeDirections(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeGraphicsFeatureSetClasses": {
+      "name": "gThemeGraphicsFeatureSetClasses",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "gThemeGraphicsFeatureRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ gThemeGraphicsFeatureSetClasses(gThemeGraphicsFeatureRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIFillCARKeyArrayForRenditionKey2": {
+      "name": "CUIFillCARKeyArrayForRenditionKey2",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIFillCARKeyArrayForRenditionKey2(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeSizes": {
+      "name": "gThemeSizes",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeSizes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIFillRenditionKeyForCARKeyArray": {
+      "name": "CUIFillRenditionKeyForCARKeyArray",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIFillRenditionKeyForCARKeyArray(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICGBlendModeFromLSRDescription": {
+      "name": "CUICGBlendModeFromLSRDescription",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUICGBlendModeFromLSRDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIConvertDeepImageTo8": {
+      "name": "CUIConvertDeepImageTo8",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIConvertDeepImageTo8(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIImageIsMonochrome": {
+      "name": "CUIImageIsMonochrome",
+      "framework": "CoreUI",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIImageRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CUIImageIsMonochrome(CUIImageRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICompareRenditionKey": {
+      "name": "CUICompareRenditionKey",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUICompareRenditionKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIImageCompressedWithColorQuantization": {
+      "name": "CUIImageCompressedWithColorQuantization",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIImageCompressedWithColorQuantization(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIMinDimensionForVectorGlyph": {
+      "name": "CUIMinDimensionForVectorGlyph",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIMinDimensionForVectorGlyph(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUISetDebugValue": {
+      "name": "CUISetDebugValue",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CUISetDebugValue(CUIRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIUncompressQuantizedImageData": {
+      "name": "CUIUncompressQuantizedImageData",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIUncompressQuantizedImageData(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIVectorGlyphDefaultsKeyRotatesClockwise": {
+      "name": "CUIVectorGlyphDefaultsKeyRotatesClockwise",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIVectorGlyphDefaultsKeyRotatesClockwise(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIRenditionKeySetValueForAttribute": {
+      "name": "CUIRenditionKeySetValueForAttribute",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRenditionKeyRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CUIRenditionKeySetValueForAttribute(CUIRenditionKeyRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICreateDisplayShape": {
+      "name": "CUICreateDisplayShape",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUIRef CUICreateDisplayShape(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICopyMeasurements": {
+      "name": "CUICopyMeasurements",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CUIRef/*?*/ CUICopyMeasurements(CUIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gEffectBevelStyles": {
+      "name": "gEffectBevelStyles",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gEffectBevelStyles(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIVectorGlyphDefaultsKeyVariableValueMode": {
+      "name": "CUIVectorGlyphDefaultsKeyVariableValueMode",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIVectorGlyphDefaultsKeyVariableValueMode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIDrawExtrudedImageInContext": {
+      "name": "CUIDrawExtrudedImageInContext",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIDrawExtrudedImageInContext(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIRenditionKeyValueForAttribute": {
+      "name": "CUIRenditionKeyValueForAttribute",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIRenditionKeyValueForAttribute(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIBlendModeLSRDescriptionFromCGBlendMode": {
+      "name": "CUIBlendModeLSRDescriptionFromCGBlendMode",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIBlendModeLSRDescriptionFromCGBlendMode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIEdgeInsetsInvalid": {
+      "name": "CUIEdgeInsetsInvalid",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIEdgeInsetsInvalid(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUILogEnableRenditionLog": {
+      "name": "CUILogEnableRenditionLog",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUILogEnableRenditionLog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICreateOrUpdateLayer": {
+      "name": "CUICreateOrUpdateLayer",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUIRef CUICreateOrUpdateLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIComputeImageColorHistogramARGB": {
+      "name": "CUIComputeImageColorHistogramARGB",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIComputeImageColorHistogramARGB(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIEffectBlendModeDescription": {
+      "name": "CUIEffectBlendModeDescription",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIEffectBlendModeDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIEffectBevelStyleDescription": {
+      "name": "CUIEffectBevelStyleDescription",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIEffectBevelStyleDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUISDFTexturesSupported": {
+      "name": "CUISDFTexturesSupported",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUISDFTexturesSupported(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICreateSubpathArrayFromCGPath": {
+      "name": "CUICreateSubpathArrayFromCGPath",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUIRef CUICreateSubpathArrayFromCGPath(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIEdgeInsetsValid": {
+      "name": "CUIEdgeInsetsValid",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIEdgeInsetsValid(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUISVGNodeGetTransform": {
+      "name": "CUISVGNodeGetTransform",
+      "framework": "CoreUI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUISVGNodeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CUISVGNodeGetTransform(CUISVGNodeRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICGImageGetAlphaInfo": {
+      "name": "CUICGImageGetAlphaInfo",
+      "framework": "CoreUI",
+      "return_type": "double",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUICGImageRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "double/*?*/ CUICGImageGetAlphaInfo(CUICGImageRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "double"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUIGetSVGAttributeUnitScale"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeUISizeClasses": {
+      "name": "gThemeUISizeClasses",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeUISizeClasses(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIMaxDimensionForVectorGlyph": {
+      "name": "CUIMaxDimensionForVectorGlyph",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIMaxDimensionForVectorGlyph(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIFillCARKeyArrayForRenditionKey": {
+      "name": "CUIFillCARKeyArrayForRenditionKey",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIFillCARKeyArrayForRenditionKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIRenditionKeyCopy": {
+      "name": "CUIRenditionKeyCopy",
+      "framework": "CoreUI",
+      "return_type": "CUIRenditionKeyRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRenditionKeyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CUIRenditionKeyRef/*?*/ CUIRenditionKeyCopy(CUIRenditionKeyRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRenditionKeyRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_RegisterThemeProvider": {
+      "name": "_RegisterThemeProvider",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_Ref",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ _RegisterThemeProvider(_Ref *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIEqualRenditionKeys": {
+      "name": "CUIEqualRenditionKeys",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIEqualRenditionKeys(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICatalogLetterpressStylePresetName": {
+      "name": "CUICatalogLetterpressStylePresetName",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUICatalogLetterpressStylePresetName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSIIllegalMetrics": {
+      "name": "CSIIllegalMetrics",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CSIIllegalMetrics(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIWatchSubTypeFallbackOrder": {
+      "name": "CUIWatchSubTypeFallbackOrder",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIWatchSubTypeFallbackOrder(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeDisplayGamuts": {
+      "name": "gThemeDisplayGamuts",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeDisplayGamuts(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeGraphicsFeatureSetClasses_Legacy": {
+      "name": "gThemeGraphicsFeatureSetClasses_Legacy",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "gThemeGraphicsFeatureRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ gThemeGraphicsFeatureSetClasses_Legacy(gThemeGraphicsFeatureRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICFDictionarySetSegmentType": {
+      "name": "CUICFDictionarySetSegmentType",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUICFDictionaryRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CUICFDictionarySetSegmentType(CUICFDictionaryRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIConvertImageToPixelFormat": {
+      "name": "CUIConvertImageToPixelFormat",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIConvertImageToPixelFormat(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeTextureFaces": {
+      "name": "gThemeTextureFaces",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeTextureFaces(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIVectorGlyphDefaultsKeyWiggleAngle": {
+      "name": "CUIVectorGlyphDefaultsKeyWiggleAngle",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIVectorGlyphDefaultsKeyWiggleAngle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CUIVectorGlyphContinuousSizeLarge": {
+      "name": "_CUIVectorGlyphContinuousSizeLarge",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ _CUIVectorGlyphContinuousSizeLarge(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gMetafontSizes": {
+      "name": "gMetafontSizes",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gMetafontSizes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeDrawingLayers": {
+      "name": "gThemeDrawingLayers",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeDrawingLayers(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeElements": {
+      "name": "gThemeElements",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeElements(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeTemplateRenderingModes": {
+      "name": "gThemeTemplateRenderingModes",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeTemplateRenderingModes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeValues": {
+      "name": "gThemeValues",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeValues(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeVectorSizes": {
+      "name": "gThemeVectorSizes",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeVectorSizes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIGetDebugValue": {
+      "name": "CUIGetDebugValue",
+      "framework": "CoreUI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CUIGetDebugValue(CUIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CUIVectorGlyphContinuousWeightSemibold": {
+      "name": "_CUIVectorGlyphContinuousWeightSemibold",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ _CUIVectorGlyphContinuousWeightSemibold(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIExists": {
+      "name": "CUIExists",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIExists(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeStates": {
+      "name": "gThemeStates",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeStates(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIRenditionKeyTokenCount": {
+      "name": "CUIRenditionKeyTokenCount",
+      "framework": "CoreUI",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRenditionKeyTokenRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t CUIRenditionKeyTokenCount(CUIRenditionKeyTokenRef *ref)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUIGetCustomFontSize"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIMaxScaleForTargetPlatform": {
+      "name": "CUIMaxScaleForTargetPlatform",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIMaxScaleForTargetPlatform(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gRenditionSubtypes": {
+      "name": "gRenditionSubtypes",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gRenditionSubtypes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICGBitmapContextCreate": {
+      "name": "CUICGBitmapContextCreate",
+      "framework": "CoreUI",
+      "return_type": "CUICGBitmapContextRef",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUICGBitmapContextRef CUICGBitmapContextCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUICGBitmapContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUISVGAttributeGetBoolean": {
+      "name": "CUISVGAttributeGetBoolean",
+      "framework": "CoreUI",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUISVGAttributeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "bool/*?*/ CUISVGAttributeGetBoolean(CUISVGAttributeRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CUIVectorGlyphContinuousSizeMedium": {
+      "name": "_CUIVectorGlyphContinuousSizeMedium",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ _CUIVectorGlyphContinuousSizeMedium(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICreateClipStrokeKeyframeDataFromString": {
+      "name": "CUICreateClipStrokeKeyframeDataFromString",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUIRef CUICreateClipStrokeKeyframeDataFromString(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIRenditionKeyHasIdentifier": {
+      "name": "CUIRenditionKeyHasIdentifier",
+      "framework": "CoreUI",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRenditionKeyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CUIRenditionKeyHasIdentifier(CUIRenditionKeyRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeIdioms": {
+      "name": "gThemeIdioms",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeIdioms(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICalcNonAlphaAreaOfImage": {
+      "name": "CUICalcNonAlphaAreaOfImage",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUICalcNonAlphaAreaOfImage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICopyCustomColor": {
+      "name": "CUICopyCustomColor",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CUIRef/*?*/ CUICopyCustomColor(CUIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gMetafontSelectors": {
+      "name": "gMetafontSelectors",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gMetafontSelectors(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIBlendModeDescriptionFromCGBlendMode": {
+      "name": "CUIBlendModeDescriptionFromCGBlendMode",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIBlendModeDescriptionFromCGBlendMode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICreatePathFromSVGShapeNode": {
+      "name": "CUICreatePathFromSVGShapeNode",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUIRef CUICreatePathFromSVGShapeNode(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gEffectBlendModes": {
+      "name": "gEffectBlendModes",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gEffectBlendModes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeDynamicDisplayModes": {
+      "name": "gThemeDynamicDisplayModes",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeDynamicDisplayModes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeParts": {
+      "name": "gThemeParts",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeParts(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIEdgeInsetsOutsetRect": {
+      "name": "CUIEdgeInsetsOutsetRect",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIEdgeInsetsOutsetRect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICopyFingerPrintForImage": {
+      "name": "CUICopyFingerPrintForImage",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CUIRef/*?*/ CUICopyFingerPrintForImage(CUIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIEdgeInsetsEqualToEdgeInsets": {
+      "name": "CUIEdgeInsetsEqualToEdgeInsets",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIEdgeInsetsEqualToEdgeInsets(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICurrentPlatform": {
+      "name": "CUICurrentPlatform",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUICurrentPlatform(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICreateRenderer": {
+      "name": "CUICreateRenderer",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUIRef CUICreateRenderer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeVectorGlyphRenderingModes": {
+      "name": "gThemeVectorGlyphRenderingModes",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeVectorGlyphRenderingModes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIColorHistogramARGBIsMonochrome": {
+      "name": "CUIColorHistogramARGBIsMonochrome",
+      "framework": "CoreUI",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIColorHistogramARGBRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CUIColorHistogramARGBIsMonochrome(CUIColorHistogramARGBRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICopyMaskShape": {
+      "name": "CUICopyMaskShape",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CUIRef/*?*/ CUICopyMaskShape(CUIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICreateJoinedPathFromSVGNode": {
+      "name": "CUICreateJoinedPathFromSVGNode",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUIRef CUICreateJoinedPathFromSVGNode(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICreateSDFGradientTexturePixelFormat": {
+      "name": "CUICreateSDFGradientTexturePixelFormat",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUIRef CUICreateSDFGradientTexturePixelFormat(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIThemeInfoVersion": {
+      "name": "CUIThemeInfoVersion",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIThemeInfoVersion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIEdgeInsetsToCGRect": {
+      "name": "CUIEdgeInsetsToCGRect",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIEdgeInsetsToCGRect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CUIVectorGlyphContinuousWeightBlack": {
+      "name": "_CUIVectorGlyphContinuousWeightBlack",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ _CUIVectorGlyphContinuousWeightBlack(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICreateSDFGradientTextureFromImage": {
+      "name": "CUICreateSDFGradientTextureFromImage",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CUIRef CUICreateSDFGradientTextureFromImage(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIDrawStyledGlyphsAtPositions": {
+      "name": "CUIDrawStyledGlyphsAtPositions",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIDrawStyledGlyphsAtPositions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICalculateExtrusionMaskOfImage": {
+      "name": "CUICalculateExtrusionMaskOfImage",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUICalculateExtrusionMaskOfImage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIGetSVGAttributeUnitScale": {
+      "name": "CUIGetSVGAttributeUnitScale",
+      "framework": "CoreUI",
+      "return_type": "double",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "double/*?*/ CUIGetSVGAttributeUnitScale(CUIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "double"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICGImageGetAlphaInfo"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CUIVectorGlyphContinuousSizeSmall": {
+      "name": "_CUIVectorGlyphContinuousSizeSmall",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ _CUIVectorGlyphContinuousSizeSmall(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIParseDeploymentTarget": {
+      "name": "CUIParseDeploymentTarget",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIParseDeploymentTarget(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CUIVectorGlyphContinuousWeightUltralight": {
+      "name": "_CUIVectorGlyphContinuousWeightUltralight",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ _CUIVectorGlyphContinuousWeightUltralight(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIVectorGlyphDefaultsKeyVariableColorContinuous": {
+      "name": "CUIVectorGlyphDefaultsKeyVariableColorContinuous",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIVectorGlyphDefaultsKeyVariableColorContinuous(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIRendererSetProperties": {
+      "name": "CUIRendererSetProperties",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRendererRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CUIRendererSetProperties(CUIRendererRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIRendererCopyProperties": {
+      "name": "CUIRendererCopyProperties",
+      "framework": "CoreUI",
+      "return_type": "CUIRendererRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRendererRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CUIRendererRef/*?*/ CUIRendererCopyProperties(CUIRendererRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRendererRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIColorHistogramARGBIntersection": {
+      "name": "CUIColorHistogramARGBIntersection",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIColorHistogramARGBIntersection(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "gThemeVectorWeights": {
+      "name": "gThemeVectorWeights",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ gThemeVectorWeights(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIImageIsWideGamut": {
+      "name": "CUIImageIsWideGamut",
+      "framework": "CoreUI",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIImageRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CUIImageIsWideGamut(CUIImageRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIConvertPixelFormatToString": {
+      "name": "CUIConvertPixelFormatToString",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIConvertPixelFormatToString(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUILogLogToStderr": {
+      "name": "CUILogLogToStderr",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUILogLogToStderr(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CSIEqualMetrics": {
+      "name": "CSIEqualMetrics",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CSIEqualMetrics(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIRenditionKeyFormatRemoveAttribute": {
+      "name": "CUIRenditionKeyFormatRemoveAttribute",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIRenditionKeyFormatRemoveAttribute(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIVectorGlyphDefaultsKeyFillImageNames": {
+      "name": "CUIVectorGlyphDefaultsKeyFillImageNames",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIVectorGlyphDefaultsKeyFillImageNames(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUICopyCustomFontDescriptor": {
+      "name": "CUICopyCustomFontDescriptor",
+      "framework": "CoreUI",
+      "return_type": "CUIRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CUIRef/*?*/ CUICopyCustomFontDescriptor(CUIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CUIRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CUICreateMenuPath",
+        "CUICreateSubpathsFromSVGNode",
+        "CUICreatePathFromSVGNode",
+        "CUICreateLayerContents",
+        "CUICopyCustomColorWithOptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CUIMinScaleForTargetPlatform": {
+      "name": "CUIMinScaleForTargetPlatform",
+      "framework": "CoreUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreUI"
+        }
+      ],
+      "signature": "void/*?*/ CUIMinScaleForTargetPlatform(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "display_compositing": [
+      "CUICreateDisplayShape",
+      "CUIGetDeviceArtworkDisplayGamut",
+      "gThemeDisplayGamuts",
+      "gThemeDynamicDisplayModes"
+    ],
+    "image_processing": [
+      "CUICGBitmapContextCreate",
+      "CUICGImageGetAlphaInfo",
+      "CUICalcNonAlphaAreaOfImage",
+      "CUICalculateExtrusionMaskOfImage",
+      "CUIColorHistogramARGBIntersection",
+      "CUIColorHistogramARGBIsMonochrome",
+      "CUIComputeImageColorHistogramARGB",
+      "CUIConvertCGImageFormat",
+      "CUIConvertDeepImageTo8",
+      "CUIConvertFromTXRPixelFormat",
+      "CUIConvertImageToPixelFormat",
+      "CUIConvertPixelFormatToString",
+      "CUIConvertToTXRPixelFormat",
+      "CUICopyFingerPrintForImage",
+      "CUICreateSDFEdgeTextureFromImage",
+      "CUICreateSDFEdgeTexturePixelFormat",
+      "CUICreateSDFGradientTextureFromImage",
+      "CUICreateSDFGradientTexturePixelFormat",
+      "CUIDeallocateRGBAImageBuffer",
+      "CUIDrawExtrudedImageInContext",
+      "CUIGetChannelDataForImage",
+      "CUIGetFormatForFeatureSetAndPixelFormat",
+      "CUIGetRGBAImageBuffer",
+      "CUIGetSVGAttributeUnitScale",
+      "CUIImageCompressedWithColorQuantization",
+      "CUIImageIsMonochrome",
+      "CUIImageIsWideGamut",
+      "CUIMaxScaleForTargetPlatform",
+      "CUIMinScaleForTargetPlatform",
+      "CUIUncompressQuantizedImageData",
+      "CUIVectorGlyphDefaultsKeyFillImageNames",
+      "CUIVectorGlyphDefaultsKeyHasImageFills",
+      "CUIVectorGlyphDefaultsKeyRotatesClockwise",
+      "gThemeTexturePixelFormats"
+    ],
+    "memory_buffer": [
+      "CUIDeallocateRGBAImageBuffer",
+      "CUIGetRGBAImageBuffer",
+      "gThemeMemoryPerformanceClasses"
+    ],
+    "compression": [
+      "CUIConvertCompressionTypeToString",
+      "CUIImageCompressedWithColorQuantization",
+      "CUIUncompressQuantizedImageData",
+      "gThemeCompressionTypes"
+    ],
+    "cryptography": [
+      "CUIAccumulateSVGShapesIntoJoinedPath",
+      "CUIAccumulateSVGShapesIntoPath",
+      "CUIAddPathToSVGShapeNode",
+      "CUICopyMaskShape",
+      "CUICreateDisplayShape",
+      "CUICreatePathFromSVGShapeNode"
+    ],
+    "video_processing": [
+      "CUICreateClipStrokeKeyframeDataFromString",
+      "CUIStringFromClipStrokeKeyframeData"
+    ],
+    "gpu_compute": [
+      "CUIComputeImageColorHistogramARGB",
+      "CUICreateRenderer",
+      "CUIRendererCopyProperties",
+      "CUIRendererSetProperties",
+      "gThemeTemplateRenderingModes",
+      "gThemeVectorGlyphRenderingModes"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

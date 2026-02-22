@@ -1,0 +1,719 @@
+{
+  "framework": "ServiceManagement",
+  "functions": {
+    "SMLoginItemSetUserAllowed_4BTM": {
+      "name": "SMLoginItemSetUserAllowed_4BTM",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SMLoginItemRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ SMLoginItemSetUserAllowed_4BTM(SMLoginItemRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SMAppServiceUpdateDispositionSync_4BTM": {
+      "name": "SMAppServiceUpdateDispositionSync_4BTM",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        }
+      ],
+      "signature": "void/*?*/ SMAppServiceUpdateDispositionSync_4BTM(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SMJobBless": {
+      "name": "SMJobBless",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        }
+      ],
+      "signature": "void/*?*/ SMJobBless(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SMLoginItemSetEnabled": {
+      "name": "SMLoginItemSetEnabled",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SMLoginItemRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ SMLoginItemSetEnabled(SMLoginItemRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_launch_trial_factors_routine": {
+      "name": "_launch_trial_factors_routine",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        }
+      ],
+      "signature": "void/*?*/ _launch_trial_factors_routine(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SMJobSetEnabled": {
+      "name": "SMJobSetEnabled",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SMJobRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ SMJobSetEnabled(SMJobRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_xpc_domain_routine": {
+      "name": "_xpc_domain_routine",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        }
+      ],
+      "signature": "void/*?*/ _xpc_domain_routine(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_launch_job_routine_async": {
+      "name": "_launch_job_routine_async",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        }
+      ],
+      "signature": "void/*?*/ _launch_job_routine_async(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SMAppServiceErrorDomain": {
+      "name": "SMAppServiceErrorDomain",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        }
+      ],
+      "signature": "void/*?*/ SMAppServiceErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "xpc_create_from_ce_der_with_key": {
+      "name": "xpc_create_from_ce_der_with_key",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        }
+      ],
+      "signature": "void/*?*/ xpc_create_from_ce_der_with_key(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SMCopyAllJobDictionaries": {
+      "name": "SMCopyAllJobDictionaries",
+      "framework": "ServiceManagement",
+      "return_type": "SMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "SMRef/*?*/ SMCopyAllJobDictionaries(SMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "SMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SMCopyEnabledLoginItems_4BTM"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SMJobRemove": {
+      "name": "SMJobRemove",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        }
+      ],
+      "signature": "void/*?*/ SMJobRemove(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SMAppServiceUpdateDisposition_4BTM": {
+      "name": "SMAppServiceUpdateDisposition_4BTM",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        }
+      ],
+      "signature": "void/*?*/ SMAppServiceUpdateDisposition_4BTM(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SMLaunchdPlistSetUserAllowed_4BTM": {
+      "name": "SMLaunchdPlistSetUserAllowed_4BTM",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SMLaunchdPlistRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ SMLaunchdPlistSetUserAllowed_4BTM(SMLaunchdPlistRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SMJobSubmit": {
+      "name": "SMJobSubmit",
+      "framework": "ServiceManagement",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SMJobRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Submit pattern"
+        }
+      ],
+      "signature": "int/*?*/ SMJobSubmit(SMJobRef *ref)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SMJobIsEnabled": {
+      "name": "SMJobIsEnabled",
+      "framework": "ServiceManagement",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SMJobRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SMJobIsEnabled(SMJobRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_launch_job_query_routine": {
+      "name": "_launch_job_query_routine",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        }
+      ],
+      "signature": "void/*?*/ _launch_job_query_routine(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_launch_job_routine": {
+      "name": "_launch_job_routine",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        }
+      ],
+      "signature": "void/*?*/ _launch_job_routine(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_launch_server_test_routine": {
+      "name": "_launch_server_test_routine",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        }
+      ],
+      "signature": "void/*?*/ _launch_server_test_routine(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_xpc_service_routine": {
+      "name": "_xpc_service_routine",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        }
+      ],
+      "signature": "void/*?*/ _xpc_service_routine(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "xpc_create_from_ce_der": {
+      "name": "xpc_create_from_ce_der",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        }
+      ],
+      "signature": "void/*?*/ xpc_create_from_ce_der(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SMJobCopyDictionary": {
+      "name": "SMJobCopyDictionary",
+      "framework": "ServiceManagement",
+      "return_type": "SMJobRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SMJobRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "SMJobRef/*?*/ SMJobCopyDictionary(SMJobRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "SMJobRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SMCopyEnabledLoginItems_4BTM": {
+      "name": "SMCopyEnabledLoginItems_4BTM",
+      "framework": "ServiceManagement",
+      "return_type": "SMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "SMRef/*?*/ SMCopyEnabledLoginItems_4BTM(SMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "SMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SMCopyAllJobDictionaries"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SMLoginItemSetEnabledWithURL": {
+      "name": "_SMLoginItemSetEnabledWithURL",
+      "framework": "ServiceManagement",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_SMLoginItemRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ServiceManagement"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _SMLoginItemSetEnabledWithURL(_SMLoginItemRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {},
+  "protocols": [],
+  "type_aliases": {}
+}

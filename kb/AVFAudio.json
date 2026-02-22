@@ -1,0 +1,6224 @@
+{
+  "framework": "AVFAudio",
+  "functions": {
+    "AVAudioSessionModeTelephonyWebcam (from AudioSession)": {
+      "name": "AVAudioSessionModeTelephonyWebcam (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeTelephonyWebcam (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in AVFAudio):__C.AVAudioCompressedBuffer.packetDependencies.getter : [__C.AudioStreamPacketDependencyDescription]?": {
+      "name": "(extension in AVFAudio):__C.AVAudioCompressedBuffer.packetDependencies.getter : [__C.AudioStreamPacketDependencyDescription]?",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ (extension in AVFAudio):__C.AVAudioCompressedBuffer.packetDependencies.getter : [__C.AudioStreamPacketDependencyDescription]?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionOrientationLeft (from AudioSession)": {
+      "name": "AVAudioSessionOrientationLeft (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionOrientationLeft (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeVideoChatForMedia (from AudioSession)": {
+      "name": "AVAudioSessionModeVideoChatForMedia (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeVideoChatForMedia (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryFindMyDevice (from AudioSession)": {
+      "name": "AVAudioSessionCategoryFindMyDevice (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryFindMyDevice (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVoiceControllerMetricDataEndHostTime": {
+      "name": "AVVoiceControllerMetricDataEndHostTime",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVoiceControllerMetricDataEndHostTime(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeLowLatency (from AudioSession)": {
+      "name": "AVAudioSessionModeLowLatency (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeLowLatency (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionMicrophoneInjectionIsAvailableKey (from AudioSession)": {
+      "name": "AVAudioSessionMicrophoneInjectionIsAvailableKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAudioSessionMicrophoneInjectionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool AVAudioSessionMicrophoneInjectionIsAvailableKey (from AudioSession)(AVAudioSessionMicrophoneInjectionRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeGameChat (from AudioSession)": {
+      "name": "AVAudioSessionModeGameChat (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeGameChat (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVSpeechUtteranceMaximumSpeechRate": {
+      "name": "AVSpeechUtteranceMaximumSpeechRate",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVSpeechUtteranceMaximumSpeechRate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionInterruptionNotification (from AudioSession)": {
+      "name": "AVAudioSessionInterruptionNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionInterruptionNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioUnitTypeMusicEffect": {
+      "name": "AVAudioUnitTypeMusicEffect",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioUnitTypeMusicEffect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVoiceActivationModeKey": {
+      "name": "AVVoiceActivationModeKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVoiceActivationModeKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.polarPatternCardioid : __C.AVAudioSessionLocation": {
+      "name": "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.polarPatternCardioid : __C.AVAudioSessionLocation",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.polarPatternCardioid : __C.AVAudioSessionLocation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortUSBAudio (from AudioSession)": {
+      "name": "AVAudioSessionPortUSBAudio (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortUSBAudio (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioBitRateStrategy_VariableConstrained": {
+      "name": "AVAudioBitRateStrategy_VariableConstrained",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioBitRateStrategy_VariableConstrained(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVLinearPCMIsBigEndianKey": {
+      "name": "AVLinearPCMIsBigEndianKey",
+      "framework": "AVFAudio",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVLinearPCMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool AVLinearPCMIsBigEndianKey(AVLinearPCMRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyGenre": {
+      "name": "AVAudioSequencerInfoDictionaryKeyGenre",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyGenre(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioUnitComponentTagsDidChangeNotification": {
+      "name": "AVAudioUnitComponentTagsDidChangeNotification",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioUnitComponentTagsDidChangeNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyTitle": {
+      "name": "AVAudioSequencerInfoDictionaryKeyTitle",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyTitle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryAudioProcessing (from AudioSession)": {
+      "name": "AVAudioSessionCategoryAudioProcessing (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryAudioProcessing (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategorySpeechDetection (from AudioSession)": {
+      "name": "AVAudioSessionCategorySpeechDetection (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategorySpeechDetection (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionInterruptorBundleIDKey (from AudioSession)": {
+      "name": "AVAudioSessionInterruptorBundleIDKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionInterruptorBundleIDKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPolarPatternOmnidirectional (from AudioSession)": {
+      "name": "AVAudioSessionPolarPatternOmnidirectional (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPolarPatternOmnidirectional (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionRoutingContextChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionRoutingContextChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionRoutingContextChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeVoicePrompt (from AudioSession)": {
+      "name": "AVAudioSessionModeVoicePrompt (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeVoicePrompt (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionSourceContentCurrentlyPlayingIsSpatializedKey (from AudioSession)": {
+      "name": "AVAudioSessionSourceContentCurrentlyPlayingIsSpatializedKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAudioSessionSourceContentCurrentlyPlayingRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool AVAudioSessionSourceContentCurrentlyPlayingIsSpatializedKey (from AudioSession)(AVAudioSessionSourceContentCurrentlyPlayingRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioUnitTypeOutput": {
+      "name": "AVAudioUnitTypeOutput",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioUnitTypeOutput(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioUnitTypeFormatConverter": {
+      "name": "AVAudioUnitTypeFormatConverter",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioUnitTypeFormatConverter(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyYear": {
+      "name": "AVAudioSequencerInfoDictionaryKeyYear",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyYear(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionActivationTriggerKey (from AudioSession)": {
+      "name": "AVAudioSessionActivationTriggerKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionActivationTriggerKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeShortFormVideo (from AudioSession)": {
+      "name": "AVAudioSessionModeShortFormVideo (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeShortFormVideo (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionOrientationBack (from AudioSession)": {
+      "name": "AVAudioSessionOrientationBack (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionOrientationBack (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVCStreamHandle_Invalid": {
+      "name": "AVVCStreamHandle_Invalid",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVCStreamHandle_Invalid(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioUnitManufacturerNameApple": {
+      "name": "AVAudioUnitManufacturerNameApple",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioUnitManufacturerNameApple(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVoiceControllerMetricDataDurationMilliSeconds": {
+      "name": "AVVoiceControllerMetricDataDurationMilliSeconds",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVoiceControllerMetricDataDurationMilliSeconds(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionInputMuteKey (from AudioSession)": {
+      "name": "AVAudioSessionInputMuteKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionInputMuteKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVSampleRateConverterAlgorithm_Normal": {
+      "name": "AVSampleRateConverterAlgorithm_Normal",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVSampleRateConverterAlgorithm_Normal(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyLyricist": {
+      "name": "AVAudioSequencerInfoDictionaryKeyLyricist",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyLyricist(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioUnitTypeMusicDevice": {
+      "name": "AVAudioUnitTypeMusicDevice",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioUnitTypeMusicDevice(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVEncoderBitRateStrategyKey": {
+      "name": "AVEncoderBitRateStrategyKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVEncoderBitRateStrategyKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionLocationLower (from AudioSession)": {
+      "name": "AVAudioSessionLocationLower (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionLocationLower (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortAVB (from AudioSession)": {
+      "name": "AVAudioSessionPortAVB (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortAVB (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioApplicationMuteStateKey (from AudioSession)": {
+      "name": "AVAudioApplicationMuteStateKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioApplicationMuteStateKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioEngineConfigurationChangeNotification": {
+      "name": "AVAudioEngineConfigurationChangeNotification",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioEngineConfigurationChangeNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionSilenceSecondaryAudioHintTypeKey (from AudioSession)": {
+      "name": "AVAudioSessionSilenceSecondaryAudioHintTypeKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionSilenceSecondaryAudioHintTypeKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionAllowEnhanceDialogueChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionAllowEnhanceDialogueChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionAllowEnhanceDialogueChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVLinearPCMIsFloatKey": {
+      "name": "AVLinearPCMIsFloatKey",
+      "framework": "AVFAudio",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVLinearPCMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool AVLinearPCMIsFloatKey(AVLinearPCMRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyAlbum": {
+      "name": "AVAudioSequencerInfoDictionaryKeyAlbum",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyAlbum(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionOrientationFront (from AudioSession)": {
+      "name": "AVAudioSessionOrientationFront (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionOrientationFront (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortPCI (from AudioSession)": {
+      "name": "AVAudioSessionPortPCI (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortPCI (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeLivePhoto (from AudioSession)": {
+      "name": "AVAudioSessionModeLivePhoto (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeLivePhoto (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVCGetInputChannelInfo_UndifferentiatedCountKey": {
+      "name": "AVVCGetInputChannelInfo_UndifferentiatedCountKey",
+      "framework": "AVFAudio",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVVCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ AVVCGetInputChannelInfo_UndifferentiatedCountKey(AVVCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AVVCGetInputChannelInfo_SpeakerReferenceCountKey",
+        "AVVCGetInputChannelInfo_DSPCountKey",
+        "AVVCGetInputChannelInfo_MicCountKey"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionMediaServicesWereLostNotification (from AudioSession)": {
+      "name": "AVAudioSessionMediaServicesWereLostNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionMediaServicesWereLostNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeySubTitle": {
+      "name": "AVAudioSequencerInfoDictionaryKeySubTitle",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeySubTitle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionAllowEnhanceDialogueStateKey (from AudioSession)": {
+      "name": "AVAudioSessionAllowEnhanceDialogueStateKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionAllowEnhanceDialogueStateKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeVoiceChat (from AudioSession)": {
+      "name": "AVAudioSessionModeVoiceChat (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeVoiceChat (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortBluetoothLE (from AudioSession)": {
+      "name": "AVAudioSessionPortBluetoothLE (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortBluetoothLE (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionInputMuteContextExternalProvenance (from AudioSession)": {
+      "name": "AVAudioSessionInputMuteContextExternalProvenance (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionInputMuteContextExternalProvenance (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVEncoderAudioQualityForVBRKey": {
+      "name": "AVEncoderAudioQualityForVBRKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVEncoderAudioQualityForVBRKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionMicrophoneInjectionCapabilitiesChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionMicrophoneInjectionCapabilitiesChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionMicrophoneInjectionCapabilitiesChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryAlarm (from AudioSession)": {
+      "name": "AVAudioSessionCategoryAlarm (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryAlarm (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVCGetInputChannelInfo_SpeakerReferenceCountKey": {
+      "name": "AVVCGetInputChannelInfo_SpeakerReferenceCountKey",
+      "framework": "AVFAudio",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVVCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ AVVCGetInputChannelInfo_SpeakerReferenceCountKey(AVVCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AVVCGetInputChannelInfo_UndifferentiatedCountKey",
+        "AVVCGetInputChannelInfo_DSPCountKey",
+        "AVVCGetInputChannelInfo_MicCountKey"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVoiceControllerMetricAudioSessionSetActiveTime": {
+      "name": "AVVoiceControllerMetricAudioSessionSetActiveTime",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVVoiceControllerMetricAudioSessionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AVVoiceControllerMetricAudioSessionSetActiveTime(AVVoiceControllerMetricAudioSessionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionSourceContentBestAvailableContentTypeKey (from AudioSession)": {
+      "name": "AVAudioSessionSourceContentBestAvailableContentTypeKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionSourceContentBestAvailableContentTypeKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionOutputMuteStateChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionOutputMuteStateChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionOutputMuteStateChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioUnitTypeMIDIProcessor": {
+      "name": "AVAudioUnitTypeMIDIProcessor",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioUnitTypeMIDIProcessor(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionConformSessionAudioSessionIDKey (from AudioSession)": {
+      "name": "AVAudioSessionConformSessionAudioSessionIDKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionConformSessionAudioSessionIDKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionInterruptorSessionIDKey (from AudioSession)": {
+      "name": "AVAudioSessionInterruptorSessionIDKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionInterruptorSessionIDKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionUserIntentToUnmuteOutputNotification (from AudioSession)": {
+      "name": "AVAudioSessionUserIntentToUnmuteOutputNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionUserIntentToUnmuteOutputNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVCStreamHandle_BuiltInStream": {
+      "name": "AVVCStreamHandle_BuiltInStream",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVCStreamHandle_BuiltInStream(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationLeft : __C.AVAudioSessionLocation": {
+      "name": "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationLeft : __C.AVAudioSessionLocation",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationLeft : __C.AVAudioSessionLocation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeSoundRecognition (from AudioSession)": {
+      "name": "AVAudioSessionModeSoundRecognition (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeSoundRecognition (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeSpatialRecording (from AudioSession)": {
+      "name": "AVAudioSessionModeSpatialRecording (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeSpatialRecording (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionSourceContentCurrentlyPlayingIsEligibleForSpatializationKey (from AudioSession)": {
+      "name": "AVAudioSessionSourceContentCurrentlyPlayingIsEligibleForSpatializationKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAudioSessionSourceContentCurrentlyPlayingRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool AVAudioSessionSourceContentCurrentlyPlayingIsEligibleForSpatializationKey (from AudioSession)(AVAudioSessionSourceContentCurrentlyPlayingRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyTrackNumber": {
+      "name": "AVAudioSequencerInfoDictionaryKeyTrackNumber",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyTrackNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationRight : __C.AVAudioSessionLocation": {
+      "name": "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationRight : __C.AVAudioSessionLocation",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationRight : __C.AVAudioSessionLocation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyTempo": {
+      "name": "AVAudioSequencerInfoDictionaryKeyTempo",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyTempo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortBuiltInReceiver (from AudioSession)": {
+      "name": "AVAudioSessionPortBuiltInReceiver (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortBuiltInReceiver (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionRenderingCapabilitiesChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionRenderingCapabilitiesChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionRenderingCapabilitiesChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioUnitTypeOfflineEffect": {
+      "name": "AVAudioUnitTypeOfflineEffect",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioUnitTypeOfflineEffect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVoiceActivationDeviceIDKey": {
+      "name": "AVVoiceActivationDeviceIDKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVoiceActivationDeviceIDKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeySourceBitDepth": {
+      "name": "AVAudioSequencerInfoDictionaryKeySourceBitDepth",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeySourceBitDepth(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeRaw (from AudioSession)": {
+      "name": "AVAudioSessionModeRaw (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeRaw (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVoiceControllerRemoteInputDarwinRoute": {
+      "name": "AVVoiceControllerRemoteInputDarwinRoute",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVoiceControllerRemoteInputDarwinRoute(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortBluetoothHFP (from AudioSession)": {
+      "name": "AVAudioSessionPortBluetoothHFP (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortBluetoothHFP (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioUnitComponentManagerRegistrationsChangedNotification": {
+      "name": "AVAudioUnitComponentManagerRegistrationsChangedNotification",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioUnitComponentManagerRegistrationsChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyKeySignature": {
+      "name": "AVAudioSequencerInfoDictionaryKeyKeySignature",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyKeySignature(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryVoiceOver (from AudioSession)": {
+      "name": "AVAudioSessionCategoryVoiceOver (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryVoiceOver (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryHearingTest (from AudioSession)": {
+      "name": "AVAudioSessionCategoryHearingTest (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryHearingTest (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryMultiRoute (from AudioSession)": {
+      "name": "AVAudioSessionCategoryMultiRoute (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryMultiRoute (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionInterruptionWasSuspendedKey (from AudioSession)": {
+      "name": "AVAudioSessionInterruptionWasSuspendedKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionInterruptionWasSuspendedKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioRemoteInputBufferGainKey": {
+      "name": "AVAudioRemoteInputBufferGainKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioRemoteInputBufferGainKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeSpeechRecognition (from AudioSession)": {
+      "name": "AVAudioSessionModeSpeechRecognition (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeSpeechRecognition (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionActivationDeviceUIDKey (from AudioSession)": {
+      "name": "AVAudioSessionActivationDeviceUIDKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionActivationDeviceUIDKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVoiceControllerBluetoothDoAPRoute": {
+      "name": "AVVoiceControllerBluetoothDoAPRoute",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVoiceControllerBluetoothDoAPRoute(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyISRC": {
+      "name": "AVAudioSequencerInfoDictionaryKeyISRC",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyISRC(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioBitRateStrategy_Constant": {
+      "name": "AVAudioBitRateStrategy_Constant",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioBitRateStrategy_Constant(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationBack : __C.AVAudioSessionLocation": {
+      "name": "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationBack : __C.AVAudioSessionLocation",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationBack : __C.AVAudioSessionLocation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortVirtual (from AudioSession)": {
+      "name": "AVAudioSessionPortVirtual (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortVirtual (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionSpatialPlaybackCapabilitiesChangedNotification (from AudioSession)": {
+      "name": "AVAudioSessionSpatialPlaybackCapabilitiesChangedNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionSpatialPlaybackCapabilitiesChangedNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVEncoderBitDepthHintKey": {
+      "name": "AVEncoderBitDepthHintKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVEncoderBitDepthHintKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVFormatIDKey": {
+      "name": "AVFormatIDKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVFormatIDKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioUnitTypePanner": {
+      "name": "AVAudioUnitTypePanner",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioUnitTypePanner(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortAirPlay (from AudioSession)": {
+      "name": "AVAudioSessionPortAirPlay (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortAirPlay (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionInterruptionOptionKey (from AudioSession)": {
+      "name": "AVAudioSessionInterruptionOptionKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionInterruptionOptionKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioUnitTypeGenerator": {
+      "name": "AVAudioUnitTypeGenerator",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioUnitTypeGenerator(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVExtendedNoteOnEventDefaultInstrument": {
+      "name": "AVExtendedNoteOnEventDefaultInstrument",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVExtendedNoteOnEventDefaultInstrument(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionInputMuteContextInfoKey (from AudioSession)": {
+      "name": "AVAudioSessionInputMuteContextInfoKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionInputMuteContextInfoKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryRingtonePreview (from AudioSession)": {
+      "name": "AVAudioSessionCategoryRingtonePreview (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryRingtonePreview (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionActivationAccessibilityPreferenceKey (from AudioSession)": {
+      "name": "AVAudioSessionActivationAccessibilityPreferenceKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionActivationAccessibilityPreferenceKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVSpeechUtteranceDefaultSpeechRate": {
+      "name": "AVSpeechUtteranceDefaultSpeechRate",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVSpeechUtteranceDefaultSpeechRate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionSilenceSecondaryAudioHintNotification (from AudioSession)": {
+      "name": "AVAudioSessionSilenceSecondaryAudioHintNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionSilenceSecondaryAudioHintNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeSleepTimer (from AudioSession)": {
+      "name": "AVAudioSessionModeSleepTimer (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeSleepTimer (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeMeasurement (from AudioSession)": {
+      "name": "AVAudioSessionModeMeasurement (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeMeasurement (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPolarPatternSubcardioid (from AudioSession)": {
+      "name": "AVAudioSessionPolarPatternSubcardioid (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPolarPatternSubcardioid (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyCopyright": {
+      "name": "AVAudioSequencerInfoDictionaryKeyCopyright",
+      "framework": "AVFAudio",
+      "return_type": "AVAudioSequencerInfoDictionaryKeyRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAudioSequencerInfoDictionaryKeyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AVAudioSequencerInfoDictionaryKeyRef/*?*/ AVAudioSequencerInfoDictionaryKeyCopyright(AVAudioSequencerInfoDictionaryKeyRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "AVAudioSequencerInfoDictionaryKeyRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionOutputSampleRateChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionOutputSampleRateChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionOutputSampleRateChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPickableRouteChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionPickableRouteChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPickableRouteChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioApplicationInputMuteStateChangeNotification (from AudioSession)": {
+      "name": "AVAudioApplicationInputMuteStateChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioApplicationInputMuteStateChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeVideoChat (from AudioSession)": {
+      "name": "AVAudioSessionModeVideoChat (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeVideoChat (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryPlayback (from AudioSession)": {
+      "name": "AVAudioSessionCategoryPlayback (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryPlayback (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.polarPatternOmnidirectional : __C.AVAudioSessionLocation": {
+      "name": "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.polarPatternOmnidirectional : __C.AVAudioSessionLocation",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.polarPatternOmnidirectional : __C.AVAudioSessionLocation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryDropInCall (from AudioSession)": {
+      "name": "AVAudioSessionCategoryDropInCall (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryDropInCall (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeVideoRecording (from AudioSession)": {
+      "name": "AVAudioSessionModeVideoRecording (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeVideoRecording (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVSpeechUtteranceMinimumSpeechRate": {
+      "name": "AVSpeechUtteranceMinimumSpeechRate",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVSpeechUtteranceMinimumSpeechRate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyComments": {
+      "name": "AVAudioSequencerInfoDictionaryKeyComments",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyComments(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionConcurrentAirPlayAudioPreferredKey (from AudioSession)": {
+      "name": "AVAudioSessionConcurrentAirPlayAudioPreferredKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionConcurrentAirPlayAudioPreferredKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionSpatialAudioEnabledKey (from AudioSession)": {
+      "name": "AVAudioSessionSpatialAudioEnabledKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionSpatialAudioEnabledKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionAudioHardwareFormatChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionAudioHardwareFormatChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionAudioHardwareFormatChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeRemoteVoiceChat (from AudioSession)": {
+      "name": "AVAudioSessionModeRemoteVoiceChat (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeRemoteVoiceChat (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortCarAudio (from AudioSession)": {
+      "name": "AVAudioSessionPortCarAudio (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortCarAudio (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortSPDIF (from AudioSession)": {
+      "name": "AVAudioSessionPortSPDIF (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortSPDIF (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVSpeechSynthesisIPANotationAttribute": {
+      "name": "AVSpeechSynthesisIPANotationAttribute",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVSpeechSynthesisIPANotationAttribute(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyTimeSignature": {
+      "name": "AVAudioSequencerInfoDictionaryKeyTimeSignature",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyTimeSignature(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyNominalBitRate": {
+      "name": "AVAudioSequencerInfoDictionaryKeyNominalBitRate",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyNominalBitRate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVSpeechSynthesisAvailableVoicesDidChangeNotification": {
+      "name": "AVSpeechSynthesisAvailableVoicesDidChangeNotification",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVSpeechSynthesisAvailableVoicesDidChangeNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionMediaServicesWereResetNotification (from AudioSession)": {
+      "name": "AVAudioSessionMediaServicesWereResetNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionMediaServicesWereResetNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryAmbient (from AudioSession)": {
+      "name": "AVAudioSessionCategoryAmbient (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryAmbient (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryFindMyPhone (from AudioSession)": {
+      "name": "AVAudioSessionCategoryFindMyPhone (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryFindMyPhone (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionInputMuteChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionInputMuteChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionInputMuteChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionInputSampleRateChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionInputSampleRateChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionInputSampleRateChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionInterruptorNameKey (from AudioSession)": {
+      "name": "AVAudioSessionInterruptorNameKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionInterruptorNameKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionRouteChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionRouteChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionRouteChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioApplicationInputMuteHandlerChangeNotification (from AudioSession)": {
+      "name": "AVAudioApplicationInputMuteHandlerChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioApplicationInputMuteHandlerChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryEmergencyAlert (from AudioSession)": {
+      "name": "AVAudioSessionCategoryEmergencyAlert (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryEmergencyAlert (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVSampleRateConverterAlgorithmKey": {
+      "name": "AVSampleRateConverterAlgorithmKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVSampleRateConverterAlgorithmKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVCGetInputChannelInfo_DSPCountKey": {
+      "name": "AVVCGetInputChannelInfo_DSPCountKey",
+      "framework": "AVFAudio",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVVCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ AVVCGetInputChannelInfo_DSPCountKey(AVVCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AVVCGetInputChannelInfo_UndifferentiatedCountKey",
+        "AVVCGetInputChannelInfo_SpeakerReferenceCountKey",
+        "AVVCGetInputChannelInfo_MicCountKey"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioRemoteInputStartAnchorPointKey": {
+      "name": "AVAudioRemoteInputStartAnchorPointKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioRemoteInputStartAnchorPointKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for (extension in AVFAudio):__C.AVAudioCompressedBuffer.packetDependencies : [__C.AudioStreamPacketDependencyDescription]?": {
+      "name": "property descriptor for (extension in AVFAudio):__C.AVAudioCompressedBuffer.packetDependencies : [__C.AudioStreamPacketDependencyDescription]?",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for (extension in AVFAudio):__C.AVAudioCompressedBuffer.packetDependencies : [__C.AudioStreamPacketDependencyDescription]?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryEARC (from AudioSession)": {
+      "name": "AVAudioSessionCategoryEARC (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryEARC (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionActivationCallDirectionKey (from AudioSession)": {
+      "name": "AVAudioSessionActivationCallDirectionKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionActivationCallDirectionKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortLineIn (from AudioSession)": {
+      "name": "AVAudioSessionPortLineIn (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortLineIn (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyEncodingApplication": {
+      "name": "AVAudioSequencerInfoDictionaryKeyEncodingApplication",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyEncodingApplication(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionBeaconBudgetChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionBeaconBudgetChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionBeaconBudgetChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryWaterEjection (from AudioSession)": {
+      "name": "AVAudioSessionCategoryWaterEjection (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryWaterEjection (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVSampleRateKey": {
+      "name": "AVSampleRateKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVSampleRateKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionMuteStateKey (from AudioSession)": {
+      "name": "AVAudioSessionMuteStateKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionMuteStateKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionRouteChangePreviousRouteKey (from AudioSession)": {
+      "name": "AVAudioSessionRouteChangePreviousRouteKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionRouteChangePreviousRouteKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryVoiceMail (from AudioSession)": {
+      "name": "AVAudioSessionCategoryVoiceMail (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryVoiceMail (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortFireWire (from AudioSession)": {
+      "name": "AVAudioSessionPortFireWire (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortFireWire (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyApproximateDurationInSeconds": {
+      "name": "AVAudioSequencerInfoDictionaryKeyApproximateDurationInSeconds",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyApproximateDurationInSeconds(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortBuiltInMic (from AudioSession)": {
+      "name": "AVAudioSessionPortBuiltInMic (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortBuiltInMic (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyRecordedDate": {
+      "name": "AVAudioSequencerInfoDictionaryKeyRecordedDate",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyRecordedDate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategorySoloAmbient (from AudioSession)": {
+      "name": "AVAudioSessionCategorySoloAmbient (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategorySoloAmbient (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortBluetoothA2DP (from AudioSession)": {
+      "name": "AVAudioSessionPortBluetoothA2DP (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortBluetoothA2DP (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeEmergencyAlert (from AudioSession)": {
+      "name": "AVAudioSessionModeEmergencyAlert (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeEmergencyAlert (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeHapticsConstantVolume (from AudioSession)": {
+      "name": "AVAudioSessionModeHapticsConstantVolume (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeHapticsConstantVolume (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVCCurrentOutputDeviceLatencyKey": {
+      "name": "AVVCCurrentOutputDeviceLatencyKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVCCurrentOutputDeviceLatencyKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionAvailableSampleRatesChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionAvailableSampleRatesChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionAvailableSampleRatesChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeSpatialCapture (from AudioSession)": {
+      "name": "AVAudioSessionModeSpatialCapture (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeSpatialCapture (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVCCurrentInputDeviceLatencyKey": {
+      "name": "AVVCCurrentInputDeviceLatencyKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVCCurrentInputDeviceLatencyKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortContinuityMicrophone (from AudioSession)": {
+      "name": "AVAudioSessionPortContinuityMicrophone (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortContinuityMicrophone (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionRouteChangeReasonKey (from AudioSession)": {
+      "name": "AVAudioSessionRouteChangeReasonKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionRouteChangeReasonKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionConcurrentAirPlayAudioPreferenceChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionConcurrentAirPlayAudioPreferenceChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionConcurrentAirPlayAudioPreferenceChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVEncoderBitRatePerChannelKey": {
+      "name": "AVEncoderBitRatePerChannelKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVEncoderBitRatePerChannelKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryPhoneCall (from AudioSession)": {
+      "name": "AVAudioSessionCategoryPhoneCall (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryPhoneCall (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeStereoCapture (from AudioSession)": {
+      "name": "AVAudioSessionModeStereoCapture (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeStereoCapture (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionSourceContentCurrentlyPlayingChannelCountKey (from AudioSession)": {
+      "name": "AVAudioSessionSourceContentCurrentlyPlayingChannelCountKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionSourceContentCurrentlyPlayingChannelCountKey (from AudioSession)(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeBeacon (from AudioSession)": {
+      "name": "AVAudioSessionModeBeacon (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeBeacon (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioApplicationMuteHandlerIsActiveKey (from AudioSession)": {
+      "name": "AVAudioApplicationMuteHandlerIsActiveKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAudioApplicationMuteHandlerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool AVAudioApplicationMuteHandlerIsActiveKey (from AudioSession)(AVAudioApplicationMuteHandlerRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVEncoderBitRateKey": {
+      "name": "AVEncoderBitRateKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVEncoderBitRateKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVCStreamHandle_ExternalInputHALStream": {
+      "name": "AVVCStreamHandle_ExternalInputHALStream",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVCStreamHandle_ExternalInputHALStream(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationFront : __C.AVAudioSessionLocation": {
+      "name": "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationFront : __C.AVAudioSessionLocation",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationFront : __C.AVAudioSessionLocation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioRemoteInputStartTimeKey": {
+      "name": "AVAudioRemoteInputStartTimeKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioRemoteInputStartTimeKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeySourceEncoder": {
+      "name": "AVAudioSequencerInfoDictionaryKeySourceEncoder",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeySourceEncoder(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionInterruptionTypeKey (from AudioSession)": {
+      "name": "AVAudioSessionInterruptionTypeKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionInterruptionTypeKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVEncoderAudioQualityKey": {
+      "name": "AVEncoderAudioQualityKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVEncoderAudioQualityKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionOrientationTop (from AudioSession)": {
+      "name": "AVAudioSessionOrientationTop (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionOrientationTop (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVNumberOfChannelsKey": {
+      "name": "AVNumberOfChannelsKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVNumberOfChannelsKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioBitRateStrategy_Variable": {
+      "name": "AVAudioBitRateStrategy_Variable",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioBitRateStrategy_Variable(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPolarPatternStereo (from AudioSession)": {
+      "name": "AVAudioSessionPolarPatternStereo (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPolarPatternStereo (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPolarPatternCardioid (from AudioSession)": {
+      "name": "AVAudioSessionPolarPatternCardioid (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPolarPatternCardioid (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionOrientationRight (from AudioSession)": {
+      "name": "AVAudioSessionOrientationRight (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionOrientationRight (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeHearingAccessibility (from AudioSession)": {
+      "name": "AVAudioSessionModeHearingAccessibility (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeHearingAccessibility (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryPlaybackNoSpeaker (from AudioSession)": {
+      "name": "AVAudioSessionCategoryPlaybackNoSpeaker (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryPlaybackNoSpeaker (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryRingtone (from AudioSession)": {
+      "name": "AVAudioSessionCategoryRingtone (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryRingtone (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionRenderingModeNewRenderingModeKey (from AudioSession)": {
+      "name": "AVAudioSessionRenderingModeNewRenderingModeKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionRenderingModeNewRenderingModeKey (from AudioSession)(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVLinearPCMBitDepthKey": {
+      "name": "AVLinearPCMBitDepthKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVLinearPCMBitDepthKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVoiceControllerMetricDataBeginHostTime": {
+      "name": "AVVoiceControllerMetricDataBeginHostTime",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVoiceControllerMetricDataBeginHostTime(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVSampleRateConverterAlgorithm_MinimumPhase": {
+      "name": "AVSampleRateConverterAlgorithm_MinimumPhase",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVSampleRateConverterAlgorithm_MinimumPhase(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionSourceContentCurrentlyPlayingFormatKey (from AudioSession)": {
+      "name": "AVAudioSessionSourceContentCurrentlyPlayingFormatKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionSourceContentCurrentlyPlayingFormatKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryEmergencyAlert_CanBeMuted (from AudioSession)": {
+      "name": "AVAudioSessionCategoryEmergencyAlert_CanBeMuted (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVAudioSessionCategoryEmergencyAlert_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool AVAudioSessionCategoryEmergencyAlert_CanBeMuted (from AudioSession)(AVAudioSessionCategoryEmergencyAlert_Ref *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyArtist": {
+      "name": "AVAudioSequencerInfoDictionaryKeyArtist",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyArtist(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVoiceControllerStartTimeKey": {
+      "name": "AVVoiceControllerStartTimeKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVoiceControllerStartTimeKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortHDMI (from AudioSession)": {
+      "name": "AVAudioSessionPortHDMI (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortHDMI (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVChannelLayoutKey": {
+      "name": "AVChannelLayoutKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVChannelLayoutKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVCStreamHandle_HACBuiltInStream": {
+      "name": "AVVCStreamHandle_HACBuiltInStream",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVCStreamHandle_HACBuiltInStream(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVEncoderASPFrequencyKey": {
+      "name": "AVEncoderASPFrequencyKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVEncoderASPFrequencyKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioUnitTypeEffect": {
+      "name": "AVAudioUnitTypeEffect",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioUnitTypeEffect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategorySystemSoundsAndHaptics (from AudioSession)": {
+      "name": "AVAudioSessionCategorySystemSoundsAndHaptics (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategorySystemSoundsAndHaptics (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionInterruptionReasonKey (from AudioSession)": {
+      "name": "AVAudioSessionInterruptionReasonKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionInterruptionReasonKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVoiceControllerMetricAudioSessionSetInactiveTime": {
+      "name": "AVVoiceControllerMetricAudioSessionSetInactiveTime",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVVoiceControllerMetricAudioSessionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AVVoiceControllerMetricAudioSessionSetInactiveTime(AVVoiceControllerMetricAudioSessionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVSampleRateConverterAudioQualityKey": {
+      "name": "AVSampleRateConverterAudioQualityKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVSampleRateConverterAudioQualityKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyComposer": {
+      "name": "AVAudioSequencerInfoDictionaryKeyComposer",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyComposer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryPlayAndRecord (from AudioSession)": {
+      "name": "AVAudioSessionCategoryPlayAndRecord (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryPlayAndRecord (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortThunderbolt (from AudioSession)": {
+      "name": "AVAudioSessionPortThunderbolt (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortThunderbolt (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVSampleRateConverterAlgorithm_Mastering": {
+      "name": "AVSampleRateConverterAlgorithm_Mastering",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVSampleRateConverterAlgorithm_Mastering(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionRenderingModeChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionRenderingModeChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionRenderingModeChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVoiceControllerNoRecordRoute": {
+      "name": "AVVoiceControllerNoRecordRoute",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVoiceControllerNoRecordRoute(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVEncoderContentSourceKey": {
+      "name": "AVEncoderContentSourceKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVEncoderContentSourceKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationTop : __C.AVAudioSessionLocation": {
+      "name": "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationTop : __C.AVAudioSessionLocation",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationTop : __C.AVAudioSessionLocation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.polarPatternSubcardioid : __C.AVAudioSessionLocation": {
+      "name": "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.polarPatternSubcardioid : __C.AVAudioSessionLocation",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.polarPatternSubcardioid : __C.AVAudioSessionLocation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeSOS (from AudioSession)": {
+      "name": "AVAudioSessionModeSOS (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeSOS (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortHeadsetMic (from AudioSession)": {
+      "name": "AVAudioSessionPortHeadsetMic (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortHeadsetMic (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioUnitTypeMixer": {
+      "name": "AVAudioUnitTypeMixer",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioUnitTypeMixer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVCGetInputChannelInfo_MicCountKey": {
+      "name": "AVVCGetInputChannelInfo_MicCountKey",
+      "framework": "AVFAudio",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVVCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ AVVCGetInputChannelInfo_MicCountKey(AVVCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AVVCGetInputChannelInfo_UndifferentiatedCountKey",
+        "AVVCGetInputChannelInfo_SpeakerReferenceCountKey",
+        "AVVCGetInputChannelInfo_DSPCountKey"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeDefault (from AudioSession)": {
+      "name": "AVAudioSessionModeDefault (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeDefault (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryRecord (from AudioSession)": {
+      "name": "AVAudioSessionCategoryRecord (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryRecord (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioRemoteInputBufferSpeexFrameQualitiesKey": {
+      "name": "AVAudioRemoteInputBufferSpeexFrameQualitiesKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioRemoteInputBufferSpeexFrameQualitiesKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryVoiceCommand (from AudioSession)": {
+      "name": "AVAudioSessionCategoryVoiceCommand (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryVoiceCommand (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionOrientationBottom (from AudioSession)": {
+      "name": "AVAudioSessionOrientationBottom (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionOrientationBottom (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionAvailableInputsChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionAvailableInputsChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionAvailableInputsChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeLocatePhone (from AudioSession)": {
+      "name": "AVAudioSessionModeLocatePhone (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeLocatePhone (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioBitRateStrategy_LongTermAverage": {
+      "name": "AVAudioBitRateStrategy_LongTermAverage",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioBitRateStrategy_LongTermAverage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVoiceControllerRemoteInputJarvisRoute": {
+      "name": "AVVoiceControllerRemoteInputJarvisRoute",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVoiceControllerRemoteInputJarvisRoute(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionCategoryTTYCall (from AudioSession)": {
+      "name": "AVAudioSessionCategoryTTYCall (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionCategoryTTYCall (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionAvailableOutputsChangeNotification (from AudioSession)": {
+      "name": "AVAudioSessionAvailableOutputsChangeNotification (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionAvailableOutputsChangeNotification (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVLinearPCMIsNonInterleaved": {
+      "name": "AVLinearPCMIsNonInterleaved",
+      "framework": "AVFAudio",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AVLinearPCMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool AVLinearPCMIsNonInterleaved(AVLinearPCMRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeVoiceMessages (from AudioSession)": {
+      "name": "AVAudioSessionModeVoiceMessages (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeVoiceMessages (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortBuiltInSpeaker (from AudioSession)": {
+      "name": "AVAudioSessionPortBuiltInSpeaker (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortBuiltInSpeaker (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVSpeechSynthesisVoiceIdentifierAlex": {
+      "name": "AVSpeechSynthesisVoiceIdentifierAlex",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVSpeechSynthesisVoiceIdentifierAlex(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationBottom : __C.AVAudioSessionLocation": {
+      "name": "property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationBottom : __C.AVAudioSessionLocation",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for static (extension in AVFoundation):__C.AVAudioSessionLocation.orientationBottom : __C.AVAudioSessionLocation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionConformSessionShadowingOptionsKey (from AudioSession)": {
+      "name": "AVAudioSessionConformSessionShadowingOptionsKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionConformSessionShadowingOptionsKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVoiceControllerATVRemoteInputRoute": {
+      "name": "AVVoiceControllerATVRemoteInputRoute",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVoiceControllerATVRemoteInputRoute(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVCCurrentOutputSafetyOffsetKey": {
+      "name": "AVVCCurrentOutputSafetyOffsetKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVCCurrentOutputSafetyOffsetKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortDisplayPort (from AudioSession)": {
+      "name": "AVAudioSessionPortDisplayPort (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortDisplayPort (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVoiceControllerAlertBehavior": {
+      "name": "AVVoiceControllerAlertBehavior",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVoiceControllerAlertBehavior(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortLineOut (from AudioSession)": {
+      "name": "AVAudioSessionPortLineOut (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortLineOut (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVEncoderDynamicRangeControlConfigurationKey": {
+      "name": "AVEncoderDynamicRangeControlConfigurationKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVEncoderDynamicRangeControlConfigurationKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioFileTypeKey": {
+      "name": "AVAudioFileTypeKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioFileTypeKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeMoviePlayback (from AudioSession)": {
+      "name": "AVAudioSessionModeMoviePlayback (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeMoviePlayback (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionActivationCallTypeKey (from AudioSession)": {
+      "name": "AVAudioSessionActivationCallTypeKey (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionActivationCallTypeKey (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVVCCurrentInputSafetyOffsetKey": {
+      "name": "AVVCCurrentInputSafetyOffsetKey",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVVCCurrentInputSafetyOffsetKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionLocationUpper (from AudioSession)": {
+      "name": "AVAudioSessionLocationUpper (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionLocationUpper (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSequencerInfoDictionaryKeyChannelLayout": {
+      "name": "AVAudioSequencerInfoDictionaryKeyChannelLayout",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSequencerInfoDictionaryKeyChannelLayout(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionModeSpokenAudio (from AudioSession)": {
+      "name": "AVAudioSessionModeSpokenAudio (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionModeSpokenAudio (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AVAudioSessionPortHeadphones (from AudioSession)": {
+      "name": "AVAudioSessionPortHeadphones (from AudioSession)",
+      "framework": "AVFAudio",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AVFAudio"
+        }
+      ],
+      "signature": "void/*?*/ AVAudioSessionPortHeadphones (from AudioSession)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "memory_buffer": [
+      "(extension in AVFAudio):__C.AVAudioCompressedBuffer.packetDependencies.getter : [__C.AudioStreamPacketDependencyDescription]?",
+      "property descriptor for (extension in AVFAudio):__C.AVAudioCompressedBuffer.packetDependencies : [__C.AudioStreamPacketDependencyDescription]?",
+      "AVAudioRemoteInputBufferGainKey",
+      "AVAudioRemoteInputBufferSpeexFrameQualitiesKey"
+    ],
+    "compression": [
+      "(extension in AVFAudio):__C.AVAudioCompressedBuffer.packetDependencies.getter : [__C.AudioStreamPacketDependencyDescription]?",
+      "property descriptor for (extension in AVFAudio):__C.AVAudioCompressedBuffer.packetDependencies : [__C.AudioStreamPacketDependencyDescription]?"
+    ],
+    "gpu_compute": [
+      "AVAudioSessionCategoryVoiceCommand (from AudioSession)",
+      "AVAudioSessionRenderingCapabilitiesChangeNotification (from AudioSession)",
+      "AVAudioSessionRenderingModeChangeNotification (from AudioSession)",
+      "AVAudioSessionRenderingModeNewRenderingModeKey (from AudioSession)"
+    ],
+    "cryptography": [
+      "AVAudioSessionConformSessionShadowingOptionsKey (from AudioSession)"
+    ],
+    "display_compositing": [
+      "AVAudioSessionPortDisplayPort (from AudioSession)"
+    ],
+    "video_processing": [
+      "AVAudioRemoteInputBufferSpeexFrameQualitiesKey",
+      "AVAudioSessionModeShortFormVideo (from AudioSession)",
+      "AVAudioSessionModeVideoChat (from AudioSession)",
+      "AVAudioSessionModeVideoChatForMedia (from AudioSession)",
+      "AVAudioSessionModeVideoRecording (from AudioSession)"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

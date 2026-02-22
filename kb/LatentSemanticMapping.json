@@ -1,0 +1,1476 @@
+{
+  "framework": "LatentSemanticMapping",
+  "functions": {
+    "LSMResultCopyWord": {
+      "name": "LSMResultCopyWord",
+      "framework": "LatentSemanticMapping",
+      "return_type": "LSMResultRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMResultRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "LSMResultRef/*?*/ LSMResultCopyWord(LSMResultRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "LSMResultRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMResultCreate",
+        "LSMResultCopyTokenCluster",
+        "LSMResultCopyToken",
+        "LSMResultCopyWordCluster"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapCreateSRLanguageModel": {
+      "name": "LSMMapCreateSRLanguageModel",
+      "framework": "LatentSemanticMapping",
+      "return_type": "LSMMapRef",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "LSMMapRef LSMMapCreateSRLanguageModel(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "LSMMapRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMMapCreate",
+        "LSMMapCreateClusters",
+        "LSMMapCreateWordArray",
+        "LSMMapCreateFromURL",
+        "LSMMapCopyWord"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapCreate": {
+      "name": "LSMMapCreate",
+      "framework": "LatentSemanticMapping",
+      "return_type": "LSMMapRef",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "LSMMapRef LSMMapCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "LSMMapRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMMapCreateSRLanguageModel",
+        "LSMMapCreateClusters",
+        "LSMMapCreateWordArray",
+        "LSMMapCreateFromURL",
+        "LSMMapCopyWord"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapGetIndexingPower": {
+      "name": "LSMMapGetIndexingPower",
+      "framework": "LatentSemanticMapping",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMMapRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ LSMMapGetIndexingPower(LSMMapRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMResultGetCount",
+        "LSMMapGetCategoryCount",
+        "LSMMapGetTokenCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapSetProperties": {
+      "name": "LSMMapSetProperties",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMMapRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ LSMMapSetProperties(LSMMapRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapAddTextWithWeight": {
+      "name": "LSMMapAddTextWithWeight",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        }
+      ],
+      "signature": "void/*?*/ LSMMapAddTextWithWeight(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapAddText": {
+      "name": "LSMMapAddText",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        }
+      ],
+      "signature": "void/*?*/ LSMMapAddText(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMResultCreate": {
+      "name": "LSMResultCreate",
+      "framework": "LatentSemanticMapping",
+      "return_type": "LSMResultRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "LSMResultRef LSMResultCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "LSMResultRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMResultCopyWord",
+        "LSMResultCopyTokenCluster",
+        "LSMResultCopyToken",
+        "LSMResultCopyWordCluster"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMTextGetTypeID": {
+      "name": "LSMTextGetTypeID",
+      "framework": "LatentSemanticMapping",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMTextRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ LSMTextGetTypeID(LSMTextRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMMapGetTypeID",
+        "LSMResultGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapCreateClusters": {
+      "name": "LSMMapCreateClusters",
+      "framework": "LatentSemanticMapping",
+      "return_type": "LSMMapRef",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "LSMMapRef LSMMapCreateClusters(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "LSMMapRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMMapCreateSRLanguageModel",
+        "LSMMapCreate",
+        "LSMMapCreateWordArray",
+        "LSMMapCreateFromURL",
+        "LSMMapCopyWord"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapCreateWordArray": {
+      "name": "LSMMapCreateWordArray",
+      "framework": "LatentSemanticMapping",
+      "return_type": "LSMMapRef",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "LSMMapRef LSMMapCreateWordArray(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "LSMMapRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMMapCreateSRLanguageModel",
+        "LSMMapCreate",
+        "LSMMapCreateClusters",
+        "LSMMapCreateFromURL",
+        "LSMMapCopyWord"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapFindToken": {
+      "name": "LSMMapFindToken",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        }
+      ],
+      "signature": "void/*?*/ LSMMapFindToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMResultGetCount": {
+      "name": "LSMResultGetCount",
+      "framework": "LatentSemanticMapping",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMResultRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ LSMResultGetCount(LSMResultRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMMapGetIndexingPower",
+        "LSMMapGetCategoryCount",
+        "LSMMapGetTokenCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMTextAddWord": {
+      "name": "LSMTextAddWord",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        }
+      ],
+      "signature": "void/*?*/ LSMTextAddWord(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapAddCategory": {
+      "name": "LSMMapAddCategory",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        }
+      ],
+      "signature": "void/*?*/ LSMMapAddCategory(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapApplyClusters": {
+      "name": "LSMMapApplyClusters",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        }
+      ],
+      "signature": "void/*?*/ LSMMapApplyClusters(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapCompile": {
+      "name": "LSMMapCompile",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        }
+      ],
+      "signature": "void/*?*/ LSMMapCompile(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapGetCategoryCount": {
+      "name": "LSMMapGetCategoryCount",
+      "framework": "LatentSemanticMapping",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMMapRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ LSMMapGetCategoryCount(LSMMapRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMMapGetIndexingPower",
+        "LSMResultGetCount",
+        "LSMMapGetTokenCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapGetTypeID": {
+      "name": "LSMMapGetTypeID",
+      "framework": "LatentSemanticMapping",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMMapRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ LSMMapGetTypeID(LSMMapRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMTextGetTypeID",
+        "LSMResultGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapGetProperties": {
+      "name": "LSMMapGetProperties",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMMapRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ LSMMapGetProperties(LSMMapRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMTextAddToken": {
+      "name": "LSMTextAddToken",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        }
+      ],
+      "signature": "void/*?*/ LSMTextAddToken(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapSetStopWords": {
+      "name": "LSMMapSetStopWords",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMMapRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ LSMMapSetStopWords(LSMMapRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMResultCopyTokenCluster": {
+      "name": "LSMResultCopyTokenCluster",
+      "framework": "LatentSemanticMapping",
+      "return_type": "LSMResultRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMResultRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "LSMResultRef/*?*/ LSMResultCopyTokenCluster(LSMResultRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "LSMResultRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMResultCopyWord",
+        "LSMResultCreate",
+        "LSMResultCopyToken",
+        "LSMResultCopyWordCluster"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapCreateFromURL": {
+      "name": "LSMMapCreateFromURL",
+      "framework": "LatentSemanticMapping",
+      "return_type": "LSMMapRef",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "LSMMapRef LSMMapCreateFromURL(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "LSMMapRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMMapCreateSRLanguageModel",
+        "LSMMapCreate",
+        "LSMMapCreateClusters",
+        "LSMMapCreateWordArray",
+        "LSMMapCopyWord"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapGetTokenCount": {
+      "name": "LSMMapGetTokenCount",
+      "framework": "LatentSemanticMapping",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMMapRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ LSMMapGetTokenCount(LSMMapRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMMapGetIndexingPower",
+        "LSMResultGetCount",
+        "LSMMapGetCategoryCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMTextAddWords": {
+      "name": "LSMTextAddWords",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        }
+      ],
+      "signature": "void/*?*/ LSMTextAddWords(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMTextCreateFromSRLanguageObject": {
+      "name": "LSMTextCreateFromSRLanguageObject",
+      "framework": "LatentSemanticMapping",
+      "return_type": "LSMTextRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "LSMTextRef LSMTextCreateFromSRLanguageObject(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "LSMTextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMTextCreateFromSRRecognitionResult",
+        "LSMTextCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapWriteToStream": {
+      "name": "LSMMapWriteToStream",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        }
+      ],
+      "signature": "void/*?*/ LSMMapWriteToStream(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMTextCreateFromSRRecognitionResult": {
+      "name": "LSMTextCreateFromSRRecognitionResult",
+      "framework": "LatentSemanticMapping",
+      "return_type": "LSMTextRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "LSMTextRef LSMTextCreateFromSRRecognitionResult(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "LSMTextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMTextCreateFromSRLanguageObject",
+        "LSMTextCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapFindWord": {
+      "name": "LSMMapFindWord",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        }
+      ],
+      "signature": "void/*?*/ LSMMapFindWord(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMResultCopyToken": {
+      "name": "LSMResultCopyToken",
+      "framework": "LatentSemanticMapping",
+      "return_type": "LSMResultRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMResultRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "LSMResultRef/*?*/ LSMResultCopyToken(LSMResultRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "LSMResultRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMResultCopyWord",
+        "LSMResultCreate",
+        "LSMResultCopyTokenCluster",
+        "LSMResultCopyWordCluster"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMResultGetTypeID": {
+      "name": "LSMResultGetTypeID",
+      "framework": "LatentSemanticMapping",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMResultRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ LSMResultGetTypeID(LSMResultRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMTextGetTypeID",
+        "LSMMapGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapCopyWord": {
+      "name": "LSMMapCopyWord",
+      "framework": "LatentSemanticMapping",
+      "return_type": "LSMMapRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMMapRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "LSMMapRef/*?*/ LSMMapCopyWord(LSMMapRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "LSMMapRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMMapCreateSRLanguageModel",
+        "LSMMapCreate",
+        "LSMMapCreateClusters",
+        "LSMMapCreateWordArray",
+        "LSMMapCreateFromURL"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMTextCreate": {
+      "name": "LSMTextCreate",
+      "framework": "LatentSemanticMapping",
+      "return_type": "LSMTextRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "LSMTextRef LSMTextCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "LSMTextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMTextCreateFromSRLanguageObject",
+        "LSMTextCreateFromSRRecognitionResult"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapWriteToURL": {
+      "name": "LSMMapWriteToURL",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        }
+      ],
+      "signature": "void/*?*/ LSMMapWriteToURL(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapCopyToken": {
+      "name": "LSMMapCopyToken",
+      "framework": "LatentSemanticMapping",
+      "return_type": "LSMMapRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMMapRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "LSMMapRef/*?*/ LSMMapCopyToken(LSMMapRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "LSMMapRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMMapCreateSRLanguageModel",
+        "LSMMapCreate",
+        "LSMMapCreateClusters",
+        "LSMMapCreateWordArray",
+        "LSMMapCreateFromURL"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMResultGetScore": {
+      "name": "LSMResultGetScore",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMResultRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ LSMResultGetScore(LSMResultRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapCompileWithBlock": {
+      "name": "LSMMapCompileWithBlock",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        }
+      ],
+      "signature": "void/*?*/ LSMMapCompileWithBlock(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMResultCopyWordCluster": {
+      "name": "LSMResultCopyWordCluster",
+      "framework": "LatentSemanticMapping",
+      "return_type": "LSMResultRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMResultRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "LSMResultRef/*?*/ LSMResultCopyWordCluster(LSMResultRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "LSMResultRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMResultCopyWord",
+        "LSMResultCreate",
+        "LSMResultCopyTokenCluster",
+        "LSMResultCopyToken"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapCreateTextLanguageModel": {
+      "name": "LSMMapCreateTextLanguageModel",
+      "framework": "LatentSemanticMapping",
+      "return_type": "LSMMapRef",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "LSMMapRef LSMMapCreateTextLanguageModel(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "LSMMapRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "LSMMapCreateSRLanguageModel",
+        "LSMMapCreate",
+        "LSMMapCreateClusters",
+        "LSMMapCreateWordArray",
+        "LSMMapCreateFromURL"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMMapStartTraining": {
+      "name": "LSMMapStartTraining",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        }
+      ],
+      "signature": "void/*?*/ LSMMapStartTraining(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LSMResultGetCategory": {
+      "name": "LSMResultGetCategory",
+      "framework": "LatentSemanticMapping",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "LSMResultRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from LatentSemanticMapping"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ LSMResultGetCategory(LSMResultRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "memory_buffer": [
+      "LSMMapAddCategory",
+      "LSMMapAddText",
+      "LSMMapAddTextWithWeight",
+      "LSMMapApplyClusters",
+      "LSMMapCompile",
+      "LSMMapCompileWithBlock",
+      "LSMMapCopyToken",
+      "LSMMapCopyWord",
+      "LSMMapCreate",
+      "LSMMapCreateClusters",
+      "LSMMapCreateFromURL",
+      "LSMMapCreateSRLanguageModel",
+      "LSMMapCreateTextLanguageModel",
+      "LSMMapCreateWordArray",
+      "LSMMapFindToken",
+      "LSMMapFindWord",
+      "LSMMapGetCategoryCount",
+      "LSMMapGetIndexingPower",
+      "LSMMapGetProperties",
+      "LSMMapGetTokenCount",
+      "LSMMapGetTypeID",
+      "LSMMapSetProperties",
+      "LSMMapSetStopWords",
+      "LSMMapStartTraining",
+      "LSMMapWriteToStream",
+      "LSMMapWriteToURL"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

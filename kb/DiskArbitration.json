@@ -1,0 +1,2539 @@
+{
+  "framework": "DiskArbitration",
+  "functions": {
+    "DADiskSetFSKitAdditions": {
+      "name": "DADiskSetFSKitAdditions",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DADiskRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DADiskSetFSKitAdditions(DADiskRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_DArmdir": {
+      "name": "_DArmdir",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ _DArmdir(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterDiskDescriptionChangedCallback": {
+      "name": "DARegisterDiskDescriptionChangedCallback",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterDiskDescriptionChangedCallback(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock",
+        "DARegisterDiskUnmountApprovalCallbackBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterDiskMountApprovalCallback": {
+      "name": "DARegisterDiskMountApprovalCallback",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterDiskMountApprovalCallback(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock",
+        "DARegisterDiskUnmountApprovalCallbackBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterDiskPeekCallbackBlock": {
+      "name": "DARegisterDiskPeekCallbackBlock",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterDiskPeekCallbackBlock(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock",
+        "DARegisterDiskUnmountApprovalCallbackBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DASessionGetTypeID": {
+      "name": "DASessionGetTypeID",
+      "framework": "DiskArbitration",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DASessionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ DASessionGetTypeID(DASessionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DAApprovalSessionGetTypeID",
+        "DADiskGetTypeID",
+        "DADissenterGetProcessID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAUnregisterApprovalCallback": {
+      "name": "DAUnregisterApprovalCallback",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DAUnregisterApprovalCallback(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DARegisterIdleCallbackWithBlock",
+        "DARegisterDiskUnmountApprovalCallbackBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAApprovalSessionScheduleWithRunLoop": {
+      "name": "DAApprovalSessionScheduleWithRunLoop",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DAApprovalSessionScheduleWithRunLoop(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterIdleCallbackWithBlock": {
+      "name": "DARegisterIdleCallbackWithBlock",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterIdleCallbackWithBlock(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterDiskUnmountApprovalCallbackBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterDiskUnmountApprovalCallbackBlock": {
+      "name": "DARegisterDiskUnmountApprovalCallbackBlock",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterDiskUnmountApprovalCallbackBlock(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAApprovalSessionCreate": {
+      "name": "DAApprovalSessionCreate",
+      "framework": "DiskArbitration",
+      "return_type": "DAApprovalSessionRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "DAApprovalSessionRef DAApprovalSessionCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "DAApprovalSessionRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterDiskListCompleteCallback": {
+      "name": "DARegisterDiskListCompleteCallback",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterDiskListCompleteCallback(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAApprovalSessionGetTypeID": {
+      "name": "DAApprovalSessionGetTypeID",
+      "framework": "DiskArbitration",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DAApprovalSessionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ DAApprovalSessionGetTypeID(DAApprovalSessionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DASessionGetTypeID",
+        "DADiskGetTypeID",
+        "DADissenterGetProcessID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_DADiskCreateFromSerialization": {
+      "name": "_DADiskCreateFromSerialization",
+      "framework": "DiskArbitration",
+      "return_type": "_DADiskRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_DADiskRef _DADiskCreateFromSerialization(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_DADiskRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskEjectWithBlockAndAuditToken": {
+      "name": "DADiskEjectWithBlockAndAuditToken",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskEjectWithBlockAndAuditToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskGetTypeID": {
+      "name": "DADiskGetTypeID",
+      "framework": "DiskArbitration",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DADiskRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ DADiskGetTypeID(DADiskRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DASessionGetTypeID",
+        "DAApprovalSessionGetTypeID",
+        "DADissenterGetProcessID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_DAmkdir": {
+      "name": "_DAmkdir",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ _DAmkdir(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskCopyDescription": {
+      "name": "DADiskCopyDescription",
+      "framework": "DiskArbitration",
+      "return_type": "DADiskRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DADiskRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "DADiskRef/*?*/ DADiskCopyDescription(DADiskRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "DADiskRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DADiskCreateFromIOMedia",
+        "DADiskCopyIOMedia",
+        "DADiskCreateFromVolumePath",
+        "DADiskCopyWholeDisk",
+        "DADiskCreateFromBSDName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskGetOptions": {
+      "name": "DADiskGetOptions",
+      "framework": "DiskArbitration",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DADiskRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ DADiskGetOptions(DADiskRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DASessionCreate": {
+      "name": "DASessionCreate",
+      "framework": "DiskArbitration",
+      "return_type": "DASessionRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "DASessionRef DASessionCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "DASessionRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterDiskPeekCallback": {
+      "name": "DARegisterDiskPeekCallback",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterDiskPeekCallback(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_DADiskGetSession": {
+      "name": "_DADiskGetSession",
+      "framework": "DiskArbitration",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_DADiskRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _DADiskGetSession(_DADiskRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskClaimWithBlock": {
+      "name": "DADiskClaimWithBlock",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskClaimWithBlock(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterDiskUnmountApprovalCallback": {
+      "name": "DARegisterDiskUnmountApprovalCallback",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterDiskUnmountApprovalCallback(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskCreateFromIOMedia": {
+      "name": "DADiskCreateFromIOMedia",
+      "framework": "DiskArbitration",
+      "return_type": "DADiskRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "DADiskRef DADiskCreateFromIOMedia(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "DADiskRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DADiskCopyDescription",
+        "DADiskCopyIOMedia",
+        "DADiskCreateFromVolumePath",
+        "DADiskCopyWholeDisk",
+        "DADiskCreateFromBSDName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskRenameWithBlockAndAuditToken": {
+      "name": "DADiskRenameWithBlockAndAuditToken",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskRenameWithBlockAndAuditToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskProbeWithBlock": {
+      "name": "DADiskProbeWithBlock",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskProbeWithBlock(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterIdleCallback": {
+      "name": "DARegisterIdleCallback",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterIdleCallback(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskRenameWithBlock": {
+      "name": "DADiskRenameWithBlock",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskRenameWithBlock(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADissenterCreate": {
+      "name": "DADissenterCreate",
+      "framework": "DiskArbitration",
+      "return_type": "DADissenterRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "DADissenterRef DADissenterCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "DADissenterRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskUnmountWithBlockAndAuditToken": {
+      "name": "DADiskUnmountWithBlockAndAuditToken",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskUnmountWithBlockAndAuditToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DASessionKeepAlive": {
+      "name": "DASessionKeepAlive",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DASessionKeepAlive(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskUnmountWithBlock": {
+      "name": "DADiskUnmountWithBlock",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskUnmountWithBlock(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DASessionScheduleWithRunLoop": {
+      "name": "DASessionScheduleWithRunLoop",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DASessionScheduleWithRunLoop(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterDiskEjectApprovalCallback": {
+      "name": "DARegisterDiskEjectApprovalCallback",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterDiskEjectApprovalCallback(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_DADiskSetEncoding": {
+      "name": "_DADiskSetEncoding",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_DADiskRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _DADiskSetEncoding(_DADiskRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskCopyIOMedia": {
+      "name": "DADiskCopyIOMedia",
+      "framework": "DiskArbitration",
+      "return_type": "DADiskRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DADiskRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "DADiskRef/*?*/ DADiskCopyIOMedia(DADiskRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "DADiskRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DADiskCopyDescription",
+        "DADiskCreateFromIOMedia",
+        "DADiskCreateFromVolumePath",
+        "DADiskCopyWholeDisk",
+        "DADiskCreateFromBSDName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskGetBSDName": {
+      "name": "DADiskGetBSDName",
+      "framework": "DiskArbitration",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DADiskRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ DADiskGetBSDName(DADiskRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DADissenterGetStatusString"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskCreateFromVolumePath": {
+      "name": "DADiskCreateFromVolumePath",
+      "framework": "DiskArbitration",
+      "return_type": "DADiskRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "DADiskRef DADiskCreateFromVolumePath(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "DADiskRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DADiskCopyDescription",
+        "DADiskCreateFromIOMedia",
+        "DADiskCopyIOMedia",
+        "DADiskCopyWholeDisk",
+        "DADiskCreateFromBSDName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskMountWithArguments": {
+      "name": "DADiskMountWithArguments",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskMountWithArguments(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskUnclaim": {
+      "name": "DADiskUnclaim",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskUnclaim(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskCopyWholeDisk": {
+      "name": "DADiskCopyWholeDisk",
+      "framework": "DiskArbitration",
+      "return_type": "DADiskRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DADiskRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "DADiskRef/*?*/ DADiskCopyWholeDisk(DADiskRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "DADiskRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DADiskCopyDescription",
+        "DADiskCreateFromIOMedia",
+        "DADiskCopyIOMedia",
+        "DADiskCreateFromVolumePath",
+        "DADiskCreateFromBSDName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskMountWithBlock": {
+      "name": "DADiskMountWithBlock",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskMountWithBlock(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADissenterGetProcessID": {
+      "name": "DADissenterGetProcessID",
+      "framework": "DiskArbitration",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DADissenterRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ DADissenterGetProcessID(DADissenterRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DASessionGetTypeID",
+        "DAApprovalSessionGetTypeID",
+        "DADiskGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterDiskMountApprovalCallbackBlock": {
+      "name": "DARegisterDiskMountApprovalCallbackBlock",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterDiskMountApprovalCallbackBlock(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAUnregisterCallback": {
+      "name": "DAUnregisterCallback",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DAUnregisterCallback(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskSetOptions": {
+      "name": "DADiskSetOptions",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DADiskRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DADiskSetOptions(DADiskRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADissenterGetStatus": {
+      "name": "DADissenterGetStatus",
+      "framework": "DiskArbitration",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DADissenterRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ DADissenterGetStatus(DADissenterRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAApprovalSessionUnscheduleFromRunLoop": {
+      "name": "DAApprovalSessionUnscheduleFromRunLoop",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DAApprovalSessionUnscheduleFromRunLoop(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterDiskAppearedCallbackBlock": {
+      "name": "DARegisterDiskAppearedCallbackBlock",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterDiskAppearedCallbackBlock(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskRename": {
+      "name": "DADiskRename",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskRename(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskEject": {
+      "name": "DADiskEject",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskEject(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskMountWithArgumentsAndBlock": {
+      "name": "DADiskMountWithArgumentsAndBlock",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskMountWithArgumentsAndBlock(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskMountWithBlockAndAuditToken": {
+      "name": "DADiskMountWithBlockAndAuditToken",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskMountWithBlockAndAuditToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterDiskDisappearedCallback": {
+      "name": "DARegisterDiskDisappearedCallback",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterDiskDisappearedCallback(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterDiskDisappearedCallbackBlock": {
+      "name": "DARegisterDiskDisappearedCallbackBlock",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterDiskDisappearedCallbackBlock(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DASessionUnscheduleFromRunLoop": {
+      "name": "DASessionUnscheduleFromRunLoop",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DASessionUnscheduleFromRunLoop(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskMount": {
+      "name": "DADiskMount",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskMount(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskCreateFromBSDName": {
+      "name": "DADiskCreateFromBSDName",
+      "framework": "DiskArbitration",
+      "return_type": "DADiskRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "DADiskRef DADiskCreateFromBSDName(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "DADiskRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DADiskCopyDescription",
+        "DADiskCreateFromIOMedia",
+        "DADiskCopyIOMedia",
+        "DADiskCreateFromVolumePath",
+        "DADiskCopyWholeDisk"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_DADiskSetAdoption": {
+      "name": "_DADiskSetAdoption",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_DADiskRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _DADiskSetAdoption(_DADiskRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskIsClaimed": {
+      "name": "DADiskIsClaimed",
+      "framework": "DiskArbitration",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DADiskRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool DADiskIsClaimed(DADiskRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DASessionSetDispatchQueue": {
+      "name": "DASessionSetDispatchQueue",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DASessionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ DASessionSetDispatchQueue(DASessionRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADissenterGetStatusString": {
+      "name": "DADissenterGetStatusString",
+      "framework": "DiskArbitration",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DADissenterRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ DADissenterGetStatusString(DADissenterRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DADiskGetBSDName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterDiskDescriptionChangedCallbackBlock": {
+      "name": "DARegisterDiskDescriptionChangedCallbackBlock",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterDiskDescriptionChangedCallbackBlock(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskMountWithArgumentsAndBlockAndAuditToken": {
+      "name": "DADiskMountWithArgumentsAndBlockAndAuditToken",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskMountWithArgumentsAndBlockAndAuditToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterDiskEjectApprovalCallbackBlock": {
+      "name": "DARegisterDiskEjectApprovalCallbackBlock",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterDiskEjectApprovalCallbackBlock(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DARegisterDiskAppearedCallback": {
+      "name": "DARegisterDiskAppearedCallback",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ DARegisterDiskAppearedCallback(DARef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "DARegisterDiskDescriptionChangedCallback",
+        "DARegisterDiskMountApprovalCallback",
+        "DARegisterDiskPeekCallbackBlock",
+        "DAUnregisterApprovalCallback",
+        "DARegisterIdleCallbackWithBlock"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskEjectWithBlock": {
+      "name": "DADiskEjectWithBlock",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskEjectWithBlock(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskClaim": {
+      "name": "DADiskClaim",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskClaim(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DADiskUnmount": {
+      "name": "DADiskUnmount",
+      "framework": "DiskArbitration",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DiskArbitration"
+        }
+      ],
+      "signature": "void/*?*/ DADiskUnmount(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "system_io": [
+      "DASessionSetDispatchQueue"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

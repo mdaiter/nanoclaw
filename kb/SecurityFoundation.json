@@ -1,0 +1,3566 @@
+{
+  "framework": "SecurityFoundation",
+  "functions": {
+    "SFKeychainErrorSaveFailed": {
+      "name": "SFKeychainErrorSaveFailed",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorSaveFailed(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caSubjectInfoOrganizationUnitKey": {
+      "name": "caSubjectInfoOrganizationUnitKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caSubjectInfoOrganizationUnitKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caExtendedKUEAnyBindingKey": {
+      "name": "caExtendedKUEAnyBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caExtendedKUEAnyBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caURIBindingKey": {
+      "name": "caURIBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caURIBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caCertAuthorityCertsKey": {
+      "name": "caCertAuthorityCertsKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caCertAuthorityCertsKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caExtendedKUEiChatSigningBindingKey": {
+      "name": "caExtendedKUEiChatSigningBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caExtendedKUEiChatSigningBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caCAAdminEmailAddrBindingKey": {
+      "name": "caCAAdminEmailAddrBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caCAAdminEmailAddrBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caIssuerPublicKeyHashKey": {
+      "name": "caIssuerPublicKeyHashKey",
+      "framework": "SecurityFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "caRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool caIssuerPublicKeyHashKey(caRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CertParser::CertParser(__SecCertificate*)": {
+      "name": "CertParser::CertParser(__SecCertificate*)",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ CertParser::CertParser(__SecCertificate*)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFPWACStringInDictionary": {
+      "name": "SFPWACStringInDictionary",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFPWACStringInDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CertParser::initWithCFData(__CFData const*)": {
+      "name": "CertParser::initWithCFData(__CFData const*)",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ CertParser::initWithCFData(__CFData const*)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caKeyAlgorithmKey": {
+      "name": "caKeyAlgorithmKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caKeyAlgorithmKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caWebSiteURLKey": {
+      "name": "caWebSiteURLKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caWebSiteURLKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caSubjectInfoCommonNameKey": {
+      "name": "caSubjectInfoCommonNameKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caSubjectInfoCommonNameKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caExtendedKUEDotMacEmailEncryptionBindingKey": {
+      "name": "caExtendedKUEDotMacEmailEncryptionBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caExtendedKUEDotMacEmailEncryptionBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFDefaultCertificateAuthorityFullPath": {
+      "name": "SFDefaultCertificateAuthorityFullPath",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFDefaultCertificateAuthorityFullPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFCryptoServicesErrorNoInitializationVector": {
+      "name": "SFCryptoServicesErrorNoInitializationVector",
+      "framework": "SecurityFoundation",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ SFCryptoServicesErrorNoInitializationVector(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SFCryptoServicesErrorInvalidIVLengthRequested",
+        "caEmailAddressOfRequestorBindingKey"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CertParser::CertParser(long, cssm_data const&)": {
+      "name": "CertParser::CertParser(long, cssm_data const&)",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ CertParser::CertParser(long, cssm_data const&)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecFileVaultMasterMount": {
+      "name": "SecFileVaultMasterMount",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SecFileVaultMasterMount(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caIPAddressBindingKey": {
+      "name": "caIPAddressBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caIPAddressBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caStateBindingKey": {
+      "name": "caStateBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caStateBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFCryptoServicesErrorDigest": {
+      "name": "SFCryptoServicesErrorDigest",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFCryptoServicesErrorDigest(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caEmailAddressOfCAKey": {
+      "name": "caEmailAddressOfCAKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caEmailAddressOfCAKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecFileVaultCompact": {
+      "name": "SecFileVaultCompact",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SecFileVaultCompact(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecFileVaultUnmount": {
+      "name": "SecFileVaultUnmount",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SecFileVaultUnmount(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caSubjectInfoEmailAddressKey": {
+      "name": "caSubjectInfoEmailAddressKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caSubjectInfoEmailAddressKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFPWAStringInDictionary": {
+      "name": "SFPWAStringInDictionary",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFPWAStringInDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFDefaultCertificateAuthority": {
+      "name": "SFDefaultCertificateAuthority",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFDefaultCertificateAuthority(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeychainErrorInvalidParameter": {
+      "name": "SFKeychainErrorInvalidParameter",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorInvalidParameter(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CertParser::~CertParser()": {
+      "name": "CertParser::~CertParser()",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ CertParser::~CertParser()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caCertAuthorityDirectory": {
+      "name": "caCertAuthorityDirectory",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caCertAuthorityDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CertParser::fieldForOid(cssm_data const&, unsigned int)": {
+      "name": "CertParser::fieldForOid(cssm_data const&, unsigned int)",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ CertParser::fieldForOid(cssm_data const&, unsigned int)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeychainErrorKeyType": {
+      "name": "SFKeychainErrorKeyType",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorKeyType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFPWAContextLoadDictionaries": {
+      "name": "SFPWAContextLoadDictionaries",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFPWAContextLoadDictionaries(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caSerialNumberOfIssuerCertBindingKey": {
+      "name": "caSerialNumberOfIssuerCertBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "caSerialNumberOfRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool caSerialNumberOfIssuerCertBindingKey(caSerialNumberOfRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFCryptoServicesErrorDeserializationFailed": {
+      "name": "SFCryptoServicesErrorDeserializationFailed",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFCryptoServicesErrorDeserializationFailed(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeychainErrorItemDecryptionFailed": {
+      "name": "SFKeychainErrorItemDecryptionFailed",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorItemDecryptionFailed(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CertParser::CertParser()": {
+      "name": "CertParser::CertParser()",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ CertParser::CertParser()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caLastSerialNumberUsedKey": {
+      "name": "caLastSerialNumberUsedKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caLastSerialNumberUsedKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFCoreCryptoErrorDomain": {
+      "name": "SFCoreCryptoErrorDomain",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFCoreCryptoErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFPWAPolicyLanguages": {
+      "name": "SFPWAPolicyLanguages",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFPWAPolicyLanguages(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caEmailAddressOfCABindingKey": {
+      "name": "caEmailAddressOfCABindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caEmailAddressOfCABindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caExtendedKUEEmailProtectionBindingKey": {
+      "name": "caExtendedKUEEmailProtectionBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caExtendedKUEEmailProtectionBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeychainErrorRNGFailure": {
+      "name": "SFKeychainErrorRNGFailure",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorRNGFailure(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caKeySizeBindingKey": {
+      "name": "caKeySizeBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caKeySizeBindingKey(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caPathLengthBindingKey": {
+      "name": "caPathLengthBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caPathLengthBindingKey(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFPWARandWord(long, unsigned int, int)": {
+      "name": "SFPWARandWord(long, unsigned int, int)",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFPWARandWord(long, unsigned int, int)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CertParser::extensionForOid(cssm_data const&)": {
+      "name": "CertParser::extensionForOid(cssm_data const&)",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ CertParser::extensionForOid(cssm_data const&)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeychainErrorMissingAccessGroup": {
+      "name": "SFKeychainErrorMissingAccessGroup",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorMissingAccessGroup(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caSubjectAltNamePresentBindingKey": {
+      "name": "caSubjectAltNamePresentBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caSubjectAltNamePresentBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFPWAContextRelease": {
+      "name": "SFPWAContextRelease",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SFPWAContextRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void SFPWAContextRelease(SFPWAContextRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFPWAPolicyCopyDefault": {
+      "name": "SFPWAPolicyCopyDefault",
+      "framework": "SecurityFoundation",
+      "return_type": "SFPWAPolicyRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SFPWAPolicyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "SFPWAPolicyRef/*?*/ SFPWAPolicyCopyDefault(SFPWAPolicyRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "SFPWAPolicyRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SFPWAPolicyCopyFromFile"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFPWAStdStringInDictionary(long, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)": {
+      "name": "SFPWAStdStringInDictionary(long, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFPWAStdStringInDictionary(long, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caExtendedKUEPresentBindingKey": {
+      "name": "caExtendedKUEPresentBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caExtendedKUEPresentBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caLocalityBindingKey": {
+      "name": "caLocalityBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caLocalityBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caOrganizationBindingKey": {
+      "name": "caOrganizationBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caOrganizationBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caConfigFileExtension": {
+      "name": "caConfigFileExtension",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caConfigFileExtension(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caIPAddressIntValue": {
+      "name": "caIPAddressIntValue",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caIPAddressIntValue(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caSubjectInfoOrganizationKey": {
+      "name": "caSubjectInfoOrganizationKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caSubjectInfoOrganizationKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "createCertCsr": {
+      "name": "createCertCsr",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ createCertCsr(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caExtendedKUECodeSigningAppleBindingKey": {
+      "name": "caExtendedKUECodeSigningAppleBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caExtendedKUECodeSigningAppleBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFCryptoServicesErrorDomain": {
+      "name": "SFCryptoServicesErrorDomain",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFCryptoServicesErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeychainErrorDuplicateItem": {
+      "name": "SFKeychainErrorDuplicateItem",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorDuplicateItem(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeychainErrorDomain": {
+      "name": "SFKeychainErrorDomain",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caPEMFileNameForCA": {
+      "name": "caPEMFileNameForCA",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caPEMFileNameForCA(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecFileVaultCreateUsingCertificate": {
+      "name": "SecFileVaultCreateUsingCertificate",
+      "framework": "SecurityFoundation",
+      "return_type": "SecFileVaultRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "SecFileVaultRef SecFileVaultCreateUsingCertificate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "SecFileVaultRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SecFileVaultCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFPWAContextCreate": {
+      "name": "SFPWAContextCreate",
+      "framework": "SecurityFoundation",
+      "return_type": "SFPWAContextRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "SFPWAContextRef SFPWAContextCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "SFPWAContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SFPWAContextCreateWithDefaults"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caCountryBindingKey": {
+      "name": "caCountryBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caCountryBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caExtendedKUESrvrAuthPKINITBindingKey": {
+      "name": "caExtendedKUESrvrAuthPKINITBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caExtendedKUESrvrAuthPKINITBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFCertificateAuthorityInputParmKeyDestinationKeychain": {
+      "name": "SFCertificateAuthorityInputParmKeyDestinationKeychain",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFCertificateAuthorityInputParmKeyDestinationKeychain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFAccessibilityMakeWithMode": {
+      "name": "SFAccessibilityMakeWithMode",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFAccessibilityMakeWithMode(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeychainErrorFailedToCommunicateWithServer": {
+      "name": "SFKeychainErrorFailedToCommunicateWithServer",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorFailedToCommunicateWithServer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFPWAPolicyParse": {
+      "name": "SFPWAPolicyParse",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFPWAPolicyParse(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caExtendedKUEIsCriticalBindingKey": {
+      "name": "caExtendedKUEIsCriticalBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "caExtendedKUERef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool caExtendedKUEIsCriticalBindingKey(caExtendedKUERef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecFileVaultMasterPasswordEnabled": {
+      "name": "SecFileVaultMasterPasswordEnabled",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SecFileVaultMasterPasswordEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "certPrintName": {
+      "name": "certPrintName",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ certPrintName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFPWAPasswordSuggest": {
+      "name": "SFPWAPasswordSuggest",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFPWAPasswordSuggest(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caExtendedKUECodeSigningBindingKey": {
+      "name": "caExtendedKUECodeSigningBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caExtendedKUECodeSigningBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeyDomainCPU": {
+      "name": "SFKeyDomainCPU",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeyDomainCPU(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeychainErrorInvalidKeyData": {
+      "name": "SFKeychainErrorInvalidKeyData",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorInvalidKeyData(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caBasicConstraintsPresentBindingKey": {
+      "name": "caBasicConstraintsPresentBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caBasicConstraintsPresentBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFCryptoServicesErrorUnsupportedDigest": {
+      "name": "SFCryptoServicesErrorUnsupportedDigest",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFCryptoServicesErrorUnsupportedDigest(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFCryptoServicesErrorEncryptionFailed": {
+      "name": "SFCryptoServicesErrorEncryptionFailed",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFCryptoServicesErrorEncryptionFailed(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeychainErrorInvalidPersistentIdentifier": {
+      "name": "SFKeychainErrorInvalidPersistentIdentifier",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorInvalidPersistentIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFCryptoServicesErrorIVGeneratorExhausted": {
+      "name": "SFCryptoServicesErrorIVGeneratorExhausted",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFCryptoServicesErrorIVGeneratorExhausted(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeychainErrorInvalidAccessGroup": {
+      "name": "SFKeychainErrorInvalidAccessGroup",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorInvalidAccessGroup(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecFileVaultUserMount": {
+      "name": "SecFileVaultUserMount",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SecFileVaultUserMount(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFPWAContextCreateWithDefaults": {
+      "name": "SFPWAContextCreateWithDefaults",
+      "framework": "SecurityFoundation",
+      "return_type": "SFPWAContextRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "SFPWAContextRef SFPWAContextCreateWithDefaults(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "SFPWAContextRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SFPWAContextCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caExtendedKUESSLClientAuthBindingKey": {
+      "name": "caExtendedKUESSLClientAuthBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caExtendedKUESSLClientAuthBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFPWAPolicyCopyFromFile": {
+      "name": "SFPWAPolicyCopyFromFile",
+      "framework": "SecurityFoundation",
+      "return_type": "SFPWAPolicyRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SFPWAPolicyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "SFPWAPolicyRef/*?*/ SFPWAPolicyCopyFromFile(SFPWAPolicyRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "SFPWAPolicyRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SFPWAPolicyCopyDefault"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFPWARandomWord": {
+      "name": "SFPWARandomWord",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFPWARandomWord(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caSubjectInfoStateKey": {
+      "name": "caSubjectInfoStateKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caSubjectInfoStateKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caSubjectAltNameIsCriticalBindingKey": {
+      "name": "caSubjectAltNameIsCriticalBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "caSubjectAltNameRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool caSubjectAltNameIsCriticalBindingKey(caSubjectAltNameRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "subjPubKeyInfoToCssmKey": {
+      "name": "subjPubKeyInfoToCssmKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ subjPubKeyInfoToCssmKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecFileVaultRecover": {
+      "name": "SecFileVaultRecover",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SecFileVaultRecover(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caExtendedKUEClAuthPKINITBindingKey": {
+      "name": "caExtendedKUEClAuthPKINITBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caExtendedKUEClAuthPKINITBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caSubjectInfoLocalityKey": {
+      "name": "caSubjectInfoLocalityKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caSubjectInfoLocalityKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecFileVaultMasterPasswordValidates": {
+      "name": "SecFileVaultMasterPasswordValidates",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SecFileVaultMasterPasswordValidates(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFCryptoServicesErrorInvalidAuthenticationCodeLength": {
+      "name": "SFCryptoServicesErrorInvalidAuthenticationCodeLength",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFCryptoServicesErrorInvalidAuthenticationCodeLength(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_copyIdentityForCMSDecoder": {
+      "name": "_copyIdentityForCMSDecoder",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ _copyIdentityForCMSDecoder(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caRFC822NameBindingKey": {
+      "name": "caRFC822NameBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caRFC822NameBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caKeySizeKey": {
+      "name": "caKeySizeKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caKeySizeKey(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "nssNameToCSSM": {
+      "name": "nssNameToCSSM",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ nssNameToCSSM(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caExtendedKUEiChatEncryptionBindingKey": {
+      "name": "caExtendedKUEiChatEncryptionBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caExtendedKUEiChatEncryptionBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecVerifySHA1HMAC(__CFString const*, __CFData const*, __CFData const*)": {
+      "name": "SecVerifySHA1HMAC(__CFString const*, __CFData const*, __CFData const*)",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SecVerifySHA1HMAC(__CFString const*, __CFData const*, __CFData const*)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecFileVaultChangeMasterPasswordPassword": {
+      "name": "SecFileVaultChangeMasterPasswordPassword",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SecFileVaultChangeMasterPasswordPassword(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecFileVaultMount": {
+      "name": "SecFileVaultMount",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SecFileVaultMount(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caKeyAlgorithmBindingKey": {
+      "name": "caKeyAlgorithmBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caKeyAlgorithmBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFCryptoServicesErrorInvalidIVLengthRequested": {
+      "name": "SFCryptoServicesErrorInvalidIVLengthRequested",
+      "framework": "SecurityFoundation",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ SFCryptoServicesErrorInvalidIVLengthRequested(size_t size)",
+      "verb": "measure",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SFCryptoServicesErrorNoInitializationVector",
+        "caEmailAddressOfRequestorBindingKey"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeychainErrorItemNotFound": {
+      "name": "SFKeychainErrorItemNotFound",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorItemNotFound(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFPWAPasswordEvaluator": {
+      "name": "SFPWAPasswordEvaluator",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFPWAPasswordEvaluator(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecFileVaultUserChangePassword": {
+      "name": "SecFileVaultUserChangePassword",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SecFileVaultUserChangePassword(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caCommonNameBindingKey": {
+      "name": "caCommonNameBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caCommonNameBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFCryptoServicesErrorDecryptionFailed": {
+      "name": "SFCryptoServicesErrorDecryptionFailed",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFCryptoServicesErrorDecryptionFailed(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caCreateCAWebSiteOnDiskBindingKey": {
+      "name": "caCreateCAWebSiteOnDiskBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "caRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "caRef caCreateCAWebSiteOnDiskBindingKey(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "caRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caExtendedKUESSLServerAuthBindingKey": {
+      "name": "caExtendedKUESSLServerAuthBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caExtendedKUESSLServerAuthBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caLastSerialNumberUsedBindingKey": {
+      "name": "caLastSerialNumberUsedBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caLastSerialNumberUsedBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caOrganizationUnitBindingKey": {
+      "name": "caOrganizationUnitBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caOrganizationUnitBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caValidityPeriodBindingKey": {
+      "name": "caValidityPeriodBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caValidityPeriodBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caExtendedKUECodeSigningDevelopmentBindingKey": {
+      "name": "caExtendedKUECodeSigningDevelopmentBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caExtendedKUECodeSigningDevelopmentBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caDNSNameBindingKey": {
+      "name": "caDNSNameBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caDNSNameBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeychainErrorOutOfDateChangeToken": {
+      "name": "SFKeychainErrorOutOfDateChangeToken",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorOutOfDateChangeToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeychainErrorInternal": {
+      "name": "SFKeychainErrorInternal",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorInternal(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caHashOfIssuerPublicKeyBindingKey": {
+      "name": "caHashOfIssuerPublicKeyBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "caHashOfRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool caHashOfIssuerPublicKeyBindingKey(caHashOfRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CertParser::initWithData(cssm_data const&)": {
+      "name": "CertParser::initWithData(cssm_data const&)",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ CertParser::initWithData(cssm_data const&)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecFileVaultResize": {
+      "name": "SecFileVaultResize",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SecFileVaultResize(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CertParser::initFields()": {
+      "name": "CertParser::initFields()",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ CertParser::initFields()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecFileVaultMakeMasterPassword": {
+      "name": "SecFileVaultMakeMasterPassword",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SecFileVaultMakeMasterPassword(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecCreateSHA1HMAC(__CFString const*, __CFData const*)": {
+      "name": "SecCreateSHA1HMAC(__CFString const*, __CFData const*)",
+      "framework": "SecurityFoundation",
+      "return_type": "SecRef",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "SecRef SecCreateSHA1HMAC(__CFString const*, __CFData const*)(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "SecRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SecFileVaultCreate": {
+      "name": "SecFileVaultCreate",
+      "framework": "SecurityFoundation",
+      "return_type": "SecFileVaultRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "SecFileVaultRef SecFileVaultCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "SecFileVaultRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SecFileVaultCreateUsingCertificate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caSubjectInfoCountryCodeKey": {
+      "name": "caSubjectInfoCountryCodeKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caSubjectInfoCountryCodeKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caExtendedKUEDotMacEmailSigningBindingKey": {
+      "name": "caExtendedKUEDotMacEmailSigningBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caExtendedKUEDotMacEmailSigningBindingKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeychainErrorSecureDecodeFailed": {
+      "name": "SFKeychainErrorSecureDecodeFailed",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorSecureDecodeFailed(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caPathLengthConstraintPresentBindingKey": {
+      "name": "caPathLengthConstraintPresentBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ caPathLengthConstraintPresentBindingKey(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeychainErrorUnknownKeyType": {
+      "name": "SFKeychainErrorUnknownKeyType",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeychainErrorUnknownKeyType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CertParser::CertParser(long)": {
+      "name": "CertParser::CertParser(long)",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ CertParser::CertParser(long)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caIsCertAuthorityBindingKey": {
+      "name": "caIsCertAuthorityBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "caRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool caIsCertAuthorityBindingKey(caRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "caEmailAddressOfRequestorBindingKey": {
+      "name": "caEmailAddressOfRequestorBindingKey",
+      "framework": "SecurityFoundation",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ caEmailAddressOfRequestorBindingKey(size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SFCryptoServicesErrorNoInitializationVector",
+        "SFCryptoServicesErrorInvalidIVLengthRequested"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFKeyDomainSEP": {
+      "name": "SFKeyDomainSEP",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFKeyDomainSEP(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CertParser::initWithSecCert(__SecCertificate*)": {
+      "name": "CertParser::initWithSecCert(__SecCertificate*)",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ CertParser::initWithSecCert(__SecCertificate*)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFCertificateAuthorityInputParmKeySignerKeychain": {
+      "name": "SFCertificateAuthorityInputParmKeySignerKeychain",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFCertificateAuthorityInputParmKeySignerKeychain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SFCryptoServicesErrorBadType": {
+      "name": "SFCryptoServicesErrorBadType",
+      "framework": "SecurityFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SecurityFoundation"
+        }
+      ],
+      "signature": "void/*?*/ SFCryptoServicesErrorBadType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "SFCoreCryptoErrorDomain",
+      "SFCryptoServicesErrorBadType",
+      "SFCryptoServicesErrorDecryptionFailed",
+      "SFCryptoServicesErrorDeserializationFailed",
+      "SFCryptoServicesErrorDigest",
+      "SFCryptoServicesErrorDomain",
+      "SFCryptoServicesErrorEncryptionFailed",
+      "SFCryptoServicesErrorIVGeneratorExhausted",
+      "SFCryptoServicesErrorInvalidAuthenticationCodeLength",
+      "SFCryptoServicesErrorInvalidIVLengthRequested",
+      "SFCryptoServicesErrorNoInitializationVector",
+      "SFCryptoServicesErrorUnsupportedDigest",
+      "SFKeychainErrorItemDecryptionFailed",
+      "SecCreateSHA1HMAC(__CFString const*, __CFData const*)",
+      "SecVerifySHA1HMAC(__CFString const*, __CFData const*, __CFData const*)",
+      "caExtendedKUEDotMacEmailEncryptionBindingKey",
+      "caExtendedKUEiChatEncryptionBindingKey"
+    ],
+    "memory_buffer": [
+      "SFPWAStdStringInDictionary(long, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>)"
+    ],
+    "display_compositing": [
+      "caExtendedKUESSLServerAuthBindingKey"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

@@ -1,0 +1,6808 @@
+{
+  "framework": "CoreMediaIO",
+  "functions": {
+    "CMIOExtensionPropertyFromPropertyAddress": {
+      "name": "CMIOExtensionPropertyFromPropertyAddress",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyFromPropertyAddress(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOObjectGetPropertyDataSize": {
+      "name": "CMIOObjectGetPropertyDataSize",
+      "framework": "CoreMediaIO",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOObjectRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ CMIOObjectGetPropertyDataSize(CMIOObjectRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOFileWritingControlTokenGetFileSize",
+        "CMIOExtensionPropertyStreamSinkBufferUnderrunCount",
+        "CMIOGraphGetNodeByFunctionalDesignationAndIndex",
+        "CMIOFileWritingControlTokenGetCompletedFileSizeEstimate",
+        "CMIOGraphGetNodeCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphStop": {
+      "name": "CMIOGraphStop",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphStop(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOStreamDeckCueTo": {
+      "name": "CMIOStreamDeckCueTo",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOStreamDeckCueTo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyAddressFromProperty": {
+      "name": "CMIOExtensionPropertyAddressFromProperty",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyAddressFromProperty(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenStartWriting": {
+      "name": "CMIOFileWritingControlTokenStartWriting",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOFileWritingControlTokenStartWriting(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphStart": {
+      "name": "CMIOGraphStart",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphStart(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFormatDescriptionSignifiesDiscontinuity": {
+      "name": "CMIOFormatDescriptionSignifiesDiscontinuity",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOFormatDescriptionSignifiesDiscontinuity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphClearConnections": {
+      "name": "CMIOGraphClearConnections",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphClearConnections(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOHardwareUnload": {
+      "name": "CMIOHardwareUnload",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOHardwareUnload(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamManualFramingDeviceType": {
+      "name": "CMIOExtensionPropertyStreamManualFramingDeviceType",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamManualFramingDeviceType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamFrameDuration": {
+      "name": "CMIOExtensionPropertyStreamFrameDuration",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamFrameDuration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamFlashSupported": {
+      "name": "CMIOExtensionPropertyStreamFlashSupported",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamFlashSupported(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphGetConnectionInfo": {
+      "name": "CMIOGraphGetConnectionInfo",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOGraphRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOGraphGetConnectionInfo(CMIOGraphRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamDeskViewCameraZoomFactor": {
+      "name": "CMIOExtensionPropertyStreamDeskViewCameraZoomFactor",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamDeskViewCameraZoomFactor(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOSampleBufferCreateNoDataMarker": {
+      "name": "CMIOSampleBufferCreateNoDataMarker",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOSampleBufferRef",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMIOSampleBufferRef CMIOSampleBufferCreateNoDataMarker(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOSampleBufferRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOSampleBufferCopyNonRequiredAttachments",
+        "CMIOSampleBufferCreate",
+        "CMIOSampleBufferCopySampleAttachments",
+        "CMIOSampleBufferCreateForImageBuffer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorNoteMasterOutputDeviceLatency": {
+      "name": "CMIOOutputCoordinatorNoteMasterOutputDeviceLatency",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOOutputCoordinatorNoteMasterOutputDeviceLatency(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorGetNumberOfAudioOutputUnitsBeingCoordinated": {
+      "name": "CMIOOutputCoordinatorGetNumberOfAudioOutputUnitsBeingCoordinated",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOOutputCoordinatorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOOutputCoordinatorGetNumberOfAudioOutputUnitsBeingCoordinated(CMIOOutputCoordinatorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamCatHeadDetectionEnabled": {
+      "name": "CMIOExtensionPropertyStreamCatHeadDetectionEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamCatHeadDetectionEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamOverheadCameraMode": {
+      "name": "CMIOExtensionPropertyStreamOverheadCameraMode",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamOverheadCameraMode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOObjectIsPropertySettable": {
+      "name": "CMIOObjectIsPropertySettable",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOObjectIsPropertyRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CMIOObjectIsPropertySettable(CMIOObjectIsPropertyRef *ref, void * *value)",
+      "verb": "predicate",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOUnitRelease": {
+      "name": "CMIOUnitRelease",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOUnitRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void CMIOUnitRelease(CMIOUnitRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamPortraitEffectAperture": {
+      "name": "CMIOExtensionPropertyStreamPortraitEffectAperture",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamPortraitEffectAperture(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamFaceTrackingMaxFaces": {
+      "name": "CMIOExtensionPropertyStreamFaceTrackingMaxFaces",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamFaceTrackingMaxFaces(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenStopWriting": {
+      "name": "CMIOFileWritingControlTokenStopWriting",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOFileWritingControlTokenStopWriting(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOStreamClockConvertHostTimeToDeviceTime": {
+      "name": "CMIOStreamClockConvertHostTimeToDeviceTime",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOStreamClockConvertHostTimeToDeviceTime(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenGetDiscontinuityFlags": {
+      "name": "CMIOFileWritingControlTokenGetDiscontinuityFlags",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFileWritingControlTokenRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOFileWritingControlTokenGetDiscontinuityFlags(CMIOFileWritingControlTokenRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenGetFileWriterOptionsDictionary": {
+      "name": "CMIOFileWritingControlTokenGetFileWriterOptionsDictionary",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFileWritingControlTokenRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOFileWritingControlTokenGetFileWriterOptionsDictionary(CMIOFileWritingControlTokenRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyDeviceManufacturer": {
+      "name": "CMIOExtensionPropertyDeviceManufacturer",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyDeviceManufacturer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenUnitCanStartWriting": {
+      "name": "CMIOFileWritingControlTokenUnitCanStartWriting",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFileWritingControlTokenUnitRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOFileWritingControlTokenUnitCanStartWriting(CMIOFileWritingControlTokenUnitRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOObjectPropertiesChanged": {
+      "name": "CMIOObjectPropertiesChanged",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOObjectPropertiesChanged(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOUnitGetTypeID": {
+      "name": "CMIOUnitGetTypeID",
+      "framework": "CoreMediaIO",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOUnitRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CMIOUnitGetTypeID(CMIOUnitRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOOutputCoordinatorGetTypeID",
+        "CMIOUnitGetClassID",
+        "CMIOGraphGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamInputBufferQueueSize": {
+      "name": "CMIOExtensionPropertyStreamInputBufferQueueSize",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamInputBufferQueueSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamBackgroundReplacementActive": {
+      "name": "CMIOExtensionPropertyStreamBackgroundReplacementActive",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamBackgroundReplacementActive(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphGetNodeInfo": {
+      "name": "CMIOGraphGetNodeInfo",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOGraphRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOGraphGetNodeInfo(CMIOGraphRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamFaceTrackingNetworkFailureThresholdMultiplier": {
+      "name": "CMIOExtensionPropertyStreamFaceTrackingNetworkFailureThresholdMultiplier",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamFaceTrackingNetworkFailureThresholdMultiplier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphRemovePropertyListener": {
+      "name": "CMIOGraphRemovePropertyListener",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphRemovePropertyListener(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenGetFileDuration": {
+      "name": "CMIOFileWritingControlTokenGetFileDuration",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFileWritingControlTokenRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOFileWritingControlTokenGetFileDuration(CMIOFileWritingControlTokenRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOSampleBufferGetDiscontinuityFlags": {
+      "name": "CMIOSampleBufferGetDiscontinuityFlags",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOSampleBufferRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOSampleBufferGetDiscontinuityFlags(CMIOSampleBufferRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIODeviceStartStream": {
+      "name": "CMIODeviceStartStream",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIODeviceStartStream(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenMaximumFileSizeHasBeenReached": {
+      "name": "CMIOFileWritingControlTokenMaximumFileSizeHasBeenReached",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFileWritingControlTokenMaximumFileSizeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOFileWritingControlTokenMaximumFileSizeHasBeenReached(CMIOFileWritingControlTokenMaximumFileSizeRef *ref)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyDeviceCanBeDefaultOutputDevice": {
+      "name": "CMIOExtensionPropertyDeviceCanBeDefaultOutputDevice",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOExtensionPropertyDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOExtensionPropertyDeviceCanBeDefaultOutputDevice(CMIOExtensionPropertyDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphCreateNode": {
+      "name": "CMIOGraphCreateNode",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOGraphRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMIOGraphRef CMIOGraphCreateNode(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOGraphRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOGraphCreate",
+        "CMIOGraphRetain",
+        "CMIOGraphCreateAndConfigureForUnits"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOObjectCreate": {
+      "name": "CMIOObjectCreate",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOObjectRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMIOObjectRef CMIOObjectCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOObjectRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamFaceDetectionEnabled": {
+      "name": "CMIOExtensionPropertyStreamFaceDetectionEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamFaceDetectionEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorNoteVideoOutputSynchronizerPrimed": {
+      "name": "CMIOOutputCoordinatorNoteVideoOutputSynchronizerPrimed",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOOutputCoordinatorNoteVideoOutputSynchronizerPrimed(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionMachServiceNameKey": {
+      "name": "CMIOExtensionMachServiceNameKey",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionMachServiceNameKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOUnitUtilityGetAudioCompressionOptionsDictionaryFields2": {
+      "name": "CMIOUnitUtilityGetAudioCompressionOptionsDictionaryFields2",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOUnitUtilityRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOUnitUtilityGetAudioCompressionOptionsDictionaryFields2(CMIOUnitUtilityRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyIs4CCControlProperty": {
+      "name": "CMIOExtensionPropertyIs4CCControlProperty",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOExtensionPropertyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOExtensionPropertyIs4CCControlProperty(CMIOExtensionPropertyRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyDeviceLinkedCoreAudioDeviceUID": {
+      "name": "CMIOExtensionPropertyDeviceLinkedCoreAudioDeviceUID",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyDeviceLinkedCoreAudioDeviceUID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamPortraitEffectEnabled": {
+      "name": "CMIOExtensionPropertyStreamPortraitEffectEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamPortraitEffectEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOObjectAddPropertyListenerBlock": {
+      "name": "CMIOObjectAddPropertyListenerBlock",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOObjectAddPropertyListenerBlock(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyDeviceCanBeDefaultInputDevice": {
+      "name": "CMIOExtensionPropertyDeviceCanBeDefaultInputDevice",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOExtensionPropertyDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOExtensionPropertyDeviceCanBeDefaultInputDevice(CMIOExtensionPropertyDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorNoteAudioOutputPrimed": {
+      "name": "CMIOOutputCoordinatorNoteAudioOutputPrimed",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOOutputCoordinatorNoteAudioOutputPrimed(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIODeviceStopStream": {
+      "name": "CMIODeviceStopStream",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIODeviceStopStream(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOObjectGetPropertyData": {
+      "name": "CMIOObjectGetPropertyData",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOObjectRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOObjectGetPropertyData(CMIOObjectRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFormatDescriptionGetManufacturerCode": {
+      "name": "CMIOFormatDescriptionGetManufacturerCode",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFormatDescriptionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOFormatDescriptionGetManufacturerCode(CMIOFormatDescriptionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorGetState": {
+      "name": "CMIOOutputCoordinatorGetState",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOOutputCoordinatorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOOutputCoordinatorGetState(CMIOOutputCoordinatorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphInitialize": {
+      "name": "CMIOGraphInitialize",
+      "framework": "CoreMediaIO",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ CMIOGraphInitialize(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorNoteVideoOutputPrimed": {
+      "name": "CMIOOutputCoordinatorNoteVideoOutputPrimed",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOOutputCoordinatorNoteVideoOutputPrimed(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphCreate": {
+      "name": "CMIOGraphCreate",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOGraphRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMIOGraphRef CMIOGraphCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOGraphRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOGraphCreateNode",
+        "CMIOGraphRetain",
+        "CMIOGraphCreateAndConfigureForUnits"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphGetNumberOfConnections": {
+      "name": "CMIOGraphGetNumberOfConnections",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOGraphRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOGraphGetNumberOfConnections(CMIOGraphRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorGetTypeID": {
+      "name": "CMIOOutputCoordinatorGetTypeID",
+      "framework": "CoreMediaIO",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOOutputCoordinatorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CMIOOutputCoordinatorGetTypeID(CMIOOutputCoordinatorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOUnitGetTypeID",
+        "CMIOUnitGetClassID",
+        "CMIOGraphGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyClientStreamingFromDALDevice": {
+      "name": "CMIOExtensionPropertyClientStreamingFromDALDevice",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyClientStreamingFromDALDevice(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOSampleBufferCopyNonRequiredAttachments": {
+      "name": "CMIOSampleBufferCopyNonRequiredAttachments",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOSampleBufferRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOSampleBufferRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CMIOSampleBufferRef/*?*/ CMIOSampleBufferCopyNonRequiredAttachments(CMIOSampleBufferRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOSampleBufferRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOSampleBufferCreateNoDataMarker",
+        "CMIOSampleBufferCreate",
+        "CMIOSampleBufferCopySampleAttachments",
+        "CMIOSampleBufferCreateForImageBuffer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorGetNumberOfVideoOutputUnitsBeingCoordinated": {
+      "name": "CMIOOutputCoordinatorGetNumberOfVideoOutputUnitsBeingCoordinated",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOOutputCoordinatorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOOutputCoordinatorGetNumberOfVideoOutputUnitsBeingCoordinated(CMIOOutputCoordinatorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphResume": {
+      "name": "CMIOGraphResume",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphResume(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyDeviceDockedTrackingActive": {
+      "name": "CMIOExtensionPropertyDeviceDockedTrackingActive",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyDeviceDockedTrackingActive(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOStreamDeckStop": {
+      "name": "CMIOStreamDeckStop",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOStreamDeckStop(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenPauseWriting": {
+      "name": "CMIOFileWritingControlTokenPauseWriting",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOFileWritingControlTokenPauseWriting(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOStreamRegisterAsyncStillCaptureCallback": {
+      "name": "CMIOStreamRegisterAsyncStillCaptureCallback",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOStreamRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ CMIOStreamRegisterAsyncStillCaptureCallback(CMIOStreamRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOFileWritingControlTokenTriggerFileWritingControlCallback",
+        "CMIOAnalyticsRegisterDevice"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyDeviceSpecialDeviceType": {
+      "name": "CMIOExtensionPropertyDeviceSpecialDeviceType",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyDeviceSpecialDeviceType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenGetFileSize": {
+      "name": "CMIOFileWritingControlTokenGetFileSize",
+      "framework": "CoreMediaIO",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFileWritingControlTokenRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ CMIOFileWritingControlTokenGetFileSize(CMIOFileWritingControlTokenRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOObjectGetPropertyDataSize",
+        "CMIOExtensionPropertyStreamSinkBufferUnderrunCount",
+        "CMIOGraphGetNodeByFunctionalDesignationAndIndex",
+        "CMIOFileWritingControlTokenGetCompletedFileSizeEstimate",
+        "CMIOGraphGetNodeCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenCurrentVolumeIsOutOfDiskSpace": {
+      "name": "CMIOFileWritingControlTokenCurrentVolumeIsOutOfDiskSpace",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFileWritingControlTokenCurrentVolumeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOFileWritingControlTokenCurrentVolumeIsOutOfDiskSpace(CMIOFileWritingControlTokenCurrentVolumeRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamSinkBuffersRequiredForStartup": {
+      "name": "CMIOExtensionPropertyStreamSinkBuffersRequiredForStartup",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamSinkBuffersRequiredForStartup(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyProviderManufacturer": {
+      "name": "CMIOExtensionPropertyProviderManufacturer",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyProviderManufacturer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphRelease": {
+      "name": "CMIOGraphRelease",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOGraphRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void CMIOGraphRelease(CMIOGraphRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyDeviceModel": {
+      "name": "CMIOExtensionPropertyDeviceModel",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyDeviceModel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphUninitialize": {
+      "name": "CMIOGraphUninitialize",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphUninitialize(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamSinkBufferUnderrunCount": {
+      "name": "CMIOExtensionPropertyStreamSinkBufferUnderrunCount",
+      "framework": "CoreMediaIO",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOExtensionPropertyStreamSinkBufferUnderrunRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t CMIOExtensionPropertyStreamSinkBufferUnderrunCount(CMIOExtensionPropertyStreamSinkBufferUnderrunRef *ref)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOObjectGetPropertyDataSize",
+        "CMIOFileWritingControlTokenGetFileSize",
+        "CMIOGraphGetNodeByFunctionalDesignationAndIndex",
+        "CMIOFileWritingControlTokenGetCompletedFileSizeEstimate",
+        "CMIOGraphGetNodeCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionInfoDictionaryKey": {
+      "name": "CMIOExtensionInfoDictionaryKey",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionInfoDictionaryKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamBackgroundReplacementPixelBuffer": {
+      "name": "CMIOExtensionPropertyStreamBackgroundReplacementPixelBuffer",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamBackgroundReplacementPixelBuffer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenResumeWriting": {
+      "name": "CMIOFileWritingControlTokenResumeWriting",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOFileWritingControlTokenResumeWriting(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOSampleBufferCreate": {
+      "name": "CMIOSampleBufferCreate",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOSampleBufferRef",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMIOSampleBufferRef CMIOSampleBufferCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOSampleBufferRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOSampleBufferCreateNoDataMarker",
+        "CMIOSampleBufferCopyNonRequiredAttachments",
+        "CMIOSampleBufferCopySampleAttachments",
+        "CMIOSampleBufferCreateForImageBuffer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamFaceTrackingEnabled": {
+      "name": "CMIOExtensionPropertyStreamFaceTrackingEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamFaceTrackingEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyClientObservingSystemPreferredDevice": {
+      "name": "CMIOExtensionPropertyClientObservingSystemPreferredDevice",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyClientObservingSystemPreferredDevice(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenBufferIsIncompatibleWithCurrentFile": {
+      "name": "CMIOFileWritingControlTokenBufferIsIncompatibleWithCurrentFile",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFileWritingControlTokenBufferRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOFileWritingControlTokenBufferIsIncompatibleWithCurrentFile(CMIOFileWritingControlTokenBufferRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorIdle": {
+      "name": "CMIOOutputCoordinatorIdle",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOOutputCoordinatorIdle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamHumanBodyDetectionEnabled": {
+      "name": "CMIOExtensionPropertyStreamHumanBodyDetectionEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamHumanBodyDetectionEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenRelease": {
+      "name": "CMIOFileWritingControlTokenRelease",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFileWritingControlTokenRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void CMIOFileWritingControlTokenRelease(CMIOFileWritingControlTokenRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamCinematicFramingActive": {
+      "name": "CMIOExtensionPropertyStreamCinematicFramingActive",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamCinematicFramingActive(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOObjectRemovePropertyListenerBlock": {
+      "name": "CMIOObjectRemovePropertyListenerBlock",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOObjectRemovePropertyListenerBlock(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenUnitIsWriting": {
+      "name": "CMIOFileWritingControlTokenUnitIsWriting",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFileWritingControlTokenUnitRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOFileWritingControlTokenUnitIsWriting(CMIOFileWritingControlTokenUnitRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphGetPropertyInfo": {
+      "name": "CMIOGraphGetPropertyInfo",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOGraphRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOGraphGetPropertyInfo(CMIOGraphRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphGetProperty": {
+      "name": "CMIOGraphGetProperty",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOGraphRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOGraphGetProperty(CMIOGraphRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamStudioLightingIntensity": {
+      "name": "CMIOExtensionPropertyStreamStudioLightingIntensity",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamStudioLightingIntensity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOUnitRetain": {
+      "name": "CMIOUnitRetain",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOUnitRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOUnitRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Retain pattern"
+        }
+      ],
+      "signature": "CMIOUnitRef CMIOUnitRetain(CMIOUnitRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOUnitRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOUnitCreateFromDescription"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphUpdate": {
+      "name": "CMIOGraphUpdate",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphUpdate(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIORemoveAtExitListener": {
+      "name": "CMIORemoveAtExitListener",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIORemoveAtExitListener(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphGetNodeByFunctionalDesignationAndIndex": {
+      "name": "CMIOGraphGetNodeByFunctionalDesignationAndIndex",
+      "framework": "CoreMediaIO",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOGraphRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ CMIOGraphGetNodeByFunctionalDesignationAndIndex(CMIOGraphRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOObjectGetPropertyDataSize",
+        "CMIOFileWritingControlTokenGetFileSize",
+        "CMIOExtensionPropertyStreamSinkBufferUnderrunCount",
+        "CMIOFileWritingControlTokenGetCompletedFileSizeEstimate",
+        "CMIOGraphGetNodeCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphGetNotificationCenter": {
+      "name": "CMIOGraphGetNotificationCenter",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOGraphRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOGraphGetNotificationCenter(CMIOGraphRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphDictionaryRepresentation": {
+      "name": "CMIOGraphDictionaryRepresentation",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphDictionaryRepresentation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamPortraitEffectActive": {
+      "name": "CMIOExtensionPropertyStreamPortraitEffectActive",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamPortraitEffectActive(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOUnitUtilityGetAudioCompressionOptionsDictionaryFields": {
+      "name": "CMIOUnitUtilityGetAudioCompressionOptionsDictionaryFields",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOUnitUtilityRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOUnitUtilityGetAudioCompressionOptionsDictionaryFields(CMIOUnitUtilityRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamZoomFactorConstantsByManualFramingDeviceType": {
+      "name": "CMIOExtensionPropertyStreamZoomFactorConstantsByManualFramingDeviceType",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamZoomFactorConstantsByManualFramingDeviceType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyDeviceLatency": {
+      "name": "CMIOExtensionPropertyDeviceLatency",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyDeviceLatency(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOStreamClockPostTimingEvent": {
+      "name": "CMIOStreamClockPostTimingEvent",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOStreamClockPostTimingEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphRemoveRenderNotify": {
+      "name": "CMIOGraphRemoveRenderNotify",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphRemoveRenderNotify(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamHumanHandDetectionEnabled": {
+      "name": "CMIOExtensionPropertyStreamHumanHandDetectionEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamHumanHandDetectionEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenAllVolumesAreOutOfDiskSpace": {
+      "name": "CMIOFileWritingControlTokenAllVolumesAreOutOfDiskSpace",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOFileWritingControlTokenAllVolumesAreOutOfDiskSpace(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyForPropertyAddressInDictionary": {
+      "name": "CMIOExtensionPropertyForPropertyAddressInDictionary",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyForPropertyAddressInDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamZoomUsingRamp": {
+      "name": "CMIOExtensionPropertyStreamZoomUsingRamp",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamZoomUsingRamp(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyIs4CCBooleanControlProperty": {
+      "name": "CMIOExtensionPropertyIs4CCBooleanControlProperty",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOExtensionPropertyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOExtensionPropertyIs4CCBooleanControlProperty(CMIOExtensionPropertyRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamReactionEffectsEnabled": {
+      "name": "CMIOExtensionPropertyStreamReactionEffectsEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamReactionEffectsEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamSinkEndOfData": {
+      "name": "CMIOExtensionPropertyStreamSinkEndOfData",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamSinkEndOfData(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorCheckOutputTimebaseRate": {
+      "name": "CMIOOutputCoordinatorCheckOutputTimebaseRate",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOOutputCoordinatorCheckOutputTimebaseRate(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyFromFeatureControl": {
+      "name": "CMIOExtensionPropertyFromFeatureControl",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyFromFeatureControl(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamCenterStageFramingMode": {
+      "name": "CMIOExtensionPropertyStreamCenterStageFramingMode",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamCenterStageFramingMode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamSalientObjectDetectionEnabled": {
+      "name": "CMIOExtensionPropertyStreamSalientObjectDetectionEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamSalientObjectDetectionEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamGesturesEnabled": {
+      "name": "CMIOExtensionPropertyStreamGesturesEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamGesturesEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamDeviceHasUltraWideCamera": {
+      "name": "CMIOExtensionPropertyStreamDeviceHasUltraWideCamera",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOExtensionPropertyStreamDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOExtensionPropertyStreamDeviceHasUltraWideCamera(CMIOExtensionPropertyStreamDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamDogHeadDetectionEnabled": {
+      "name": "CMIOExtensionPropertyStreamDogHeadDetectionEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamDogHeadDetectionEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOMetadataCopyCommonAsDictionary": {
+      "name": "CMIOMetadataCopyCommonAsDictionary",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOMetadataRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOMetadataRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CMIOMetadataRef/*?*/ CMIOMetadataCopyCommonAsDictionary(CMIOMetadataRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOMetadataRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOMetadataCopyAsDictionary"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamZoom": {
+      "name": "CMIOExtensionPropertyStreamZoom",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamZoom(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphRemoveNode": {
+      "name": "CMIOGraphRemoveNode",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphRemoveNode(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphAddRenderNotify": {
+      "name": "CMIOGraphAddRenderNotify",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphAddRenderNotify(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyDeviceCinematicFramingDualStream": {
+      "name": "CMIOExtensionPropertyDeviceCinematicFramingDualStream",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyDeviceCinematicFramingDualStream(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyDeviceIsSuspended": {
+      "name": "CMIOExtensionPropertyDeviceIsSuspended",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOExtensionPropertyDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOExtensionPropertyDeviceIsSuspended(CMIOExtensionPropertyDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOObjectsPublishedAndDied": {
+      "name": "CMIOObjectsPublishedAndDied",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOObjectsPublishedAndDied(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorCreate": {
+      "name": "CMIOOutputCoordinatorCreate",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOOutputCoordinatorRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMIOOutputCoordinatorRef CMIOOutputCoordinatorCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOOutputCoordinatorRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOOutputCoordinatorRetain"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamAsyncStillCaptureConfigurations": {
+      "name": "CMIOExtensionPropertyStreamAsyncStillCaptureConfigurations",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamAsyncStillCaptureConfigurations(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphRetain": {
+      "name": "CMIOGraphRetain",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOGraphRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOGraphRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Retain pattern"
+        }
+      ],
+      "signature": "CMIOGraphRef CMIOGraphRetain(CMIOGraphRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOGraphRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOGraphCreateNode",
+        "CMIOGraphCreate",
+        "CMIOGraphCreateAndConfigureForUnits"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOUnitCreateFromDescription": {
+      "name": "CMIOUnitCreateFromDescription",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOUnitRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMIOUnitRef CMIOUnitCreateFromDescription(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOUnitRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOUnitRetain"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphDisconnectNodeInput": {
+      "name": "CMIOGraphDisconnectNodeInput",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphDisconnectNodeInput(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOAnalyticsSendStart": {
+      "name": "CMIOAnalyticsSendStart",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOAnalyticsSendStart(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyForPropertyAddressInSet": {
+      "name": "CMIOExtensionPropertyForPropertyAddressInSet",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOExtensionPropertyForPropertyAddressInRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyForPropertyAddressInSet(CMIOExtensionPropertyForPropertyAddressInRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionFeatureControlFromProperty": {
+      "name": "CMIOExtensionFeatureControlFromProperty",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionFeatureControlFromProperty(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphAddPropertyListener": {
+      "name": "CMIOGraphAddPropertyListener",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphAddPropertyListener(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamStudioLightingActive": {
+      "name": "CMIOExtensionPropertyStreamStudioLightingActive",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamStudioLightingActive(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOSampleBufferSetDiscontinuityFlags": {
+      "name": "CMIOSampleBufferSetDiscontinuityFlags",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOSampleBufferRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CMIOSampleBufferSetDiscontinuityFlags(CMIOSampleBufferRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOObjectHasProperty": {
+      "name": "CMIOObjectHasProperty",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOObjectRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOObjectHasProperty(CMIOObjectRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOObjectAddPropertyListener": {
+      "name": "CMIOObjectAddPropertyListener",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOObjectAddPropertyListener(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamDeviceHasWideCamera": {
+      "name": "CMIOExtensionPropertyStreamDeviceHasWideCamera",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOExtensionPropertyStreamDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOExtensionPropertyStreamDeviceHasWideCamera(CMIOExtensionPropertyStreamDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIODeviceProcessAVCCommand": {
+      "name": "CMIODeviceProcessAVCCommand",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIODeviceProcessAVCCommand(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOAddAtExitListener": {
+      "name": "CMIOAddAtExitListener",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOAddAtExitListener(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamHumanHeadDetectionEnabled": {
+      "name": "CMIOExtensionPropertyStreamHumanHeadDetectionEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamHumanHeadDetectionEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamReactionEffectsActive": {
+      "name": "CMIOExtensionPropertyStreamReactionEffectsActive",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamReactionEffectsActive(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamPerFrameExifDataEnabled": {
+      "name": "CMIOExtensionPropertyStreamPerFrameExifDataEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamPerFrameExifDataEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamSuppressVideoEffects": {
+      "name": "CMIOExtensionPropertyStreamSuppressVideoEffects",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamSuppressVideoEffects(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOStreamCopyBufferQueue": {
+      "name": "CMIOStreamCopyBufferQueue",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOStreamRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOStreamRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CMIOStreamRef/*?*/ CMIOStreamCopyBufferQueue(CMIOStreamRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOStreamRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOStreamCopyAndClearEnqueuedReactionEffects"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamPanWithTranslation": {
+      "name": "CMIOExtensionPropertyStreamPanWithTranslation",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamPanWithTranslation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamDogBodyDetectionEnabled": {
+      "name": "CMIOExtensionPropertyStreamDogBodyDetectionEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamDogBodyDetectionEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOSampleBufferCopySampleAttachments": {
+      "name": "CMIOSampleBufferCopySampleAttachments",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOSampleBufferRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOSampleBufferRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CMIOSampleBufferRef/*?*/ CMIOSampleBufferCopySampleAttachments(CMIOSampleBufferRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOSampleBufferRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOSampleBufferCreateNoDataMarker",
+        "CMIOSampleBufferCopyNonRequiredAttachments",
+        "CMIOSampleBufferCreate",
+        "CMIOSampleBufferCreateForImageBuffer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOStreamClockCreate": {
+      "name": "CMIOStreamClockCreate",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOStreamClockRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMIOStreamClockRef CMIOStreamClockCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOStreamClockRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyDeviceNameNonLocalized": {
+      "name": "CMIOExtensionPropertyDeviceNameNonLocalized",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyDeviceNameNonLocalized(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenGetCompletedFileSizeEstimate": {
+      "name": "CMIOFileWritingControlTokenGetCompletedFileSizeEstimate",
+      "framework": "CoreMediaIO",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFileWritingControlTokenRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ CMIOFileWritingControlTokenGetCompletedFileSizeEstimate(CMIOFileWritingControlTokenRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOObjectGetPropertyDataSize",
+        "CMIOFileWritingControlTokenGetFileSize",
+        "CMIOExtensionPropertyStreamSinkBufferUnderrunCount",
+        "CMIOGraphGetNodeByFunctionalDesignationAndIndex",
+        "CMIOGraphGetNodeCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamSuppressedGesture": {
+      "name": "CMIOExtensionPropertyStreamSuppressedGesture",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamSuppressedGesture(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOHardwareBeMaster": {
+      "name": "CMIOHardwareBeMaster",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOHardwareBeMaster(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenCreate": {
+      "name": "CMIOFileWritingControlTokenCreate",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOFileWritingControlTokenRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMIOFileWritingControlTokenRef CMIOFileWritingControlTokenCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOFileWritingControlTokenRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOFileWritingControlTokenCreateOutputPathToCapturePathDictionary"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIODeviceProcessRS422Command": {
+      "name": "CMIODeviceProcessRS422Command",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIODeviceProcessRS422Command(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOObjectShow": {
+      "name": "CMIOObjectShow",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOObjectShow(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyIs4CCFeatureControlProperty": {
+      "name": "CMIOExtensionPropertyIs4CCFeatureControlProperty",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOExtensionPropertyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOExtensionPropertyIs4CCFeatureControlProperty(CMIOExtensionPropertyRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOSampleBufferSetSequenceNumber": {
+      "name": "CMIOSampleBufferSetSequenceNumber",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOSampleBufferRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CMIOSampleBufferSetSequenceNumber(CMIOSampleBufferRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOStreamClockPostTimingEventUsingNanos": {
+      "name": "CMIOStreamClockPostTimingEventUsingNanos",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOStreamClockPostTimingEventUsingNanos(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOSampleBufferGetSequenceNumber": {
+      "name": "CMIOSampleBufferGetSequenceNumber",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOSampleBufferRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOSampleBufferGetSequenceNumber(CMIOSampleBufferRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphGetIndNode": {
+      "name": "CMIOGraphGetIndNode",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOGraphRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOGraphGetIndNode(CMIOGraphRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOObjectRemovePropertyListener": {
+      "name": "CMIOObjectRemovePropertyListener",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOObjectRemovePropertyListener(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorRelease": {
+      "name": "CMIOOutputCoordinatorRelease",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOOutputCoordinatorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void CMIOOutputCoordinatorRelease(CMIOOutputCoordinatorRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphCreateAndConfigureForUnits": {
+      "name": "CMIOGraphCreateAndConfigureForUnits",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOGraphRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMIOGraphRef CMIOGraphCreateAndConfigureForUnits(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOGraphRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOGraphCreateNode",
+        "CMIOGraphCreate",
+        "CMIOGraphRetain"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamFaceTrackingFailureFieldOfViewModifier": {
+      "name": "CMIOExtensionPropertyStreamFaceTrackingFailureFieldOfViewModifier",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamFaceTrackingFailureFieldOfViewModifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamLatency": {
+      "name": "CMIOExtensionPropertyStreamLatency",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamLatency(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGetUnitRegistry": {
+      "name": "CMIOGetUnitRegistry",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIORef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOGetUnitRegistry(CMIORef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOStreamEnqueueReactionEffect": {
+      "name": "CMIOStreamEnqueueReactionEffect",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOStreamEnqueueReactionEffect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOUnitGetClassID": {
+      "name": "CMIOUnitGetClassID",
+      "framework": "CoreMediaIO",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOUnitRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CMIOUnitGetClassID(CMIOUnitRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOUnitGetTypeID",
+        "CMIOOutputCoordinatorGetTypeID",
+        "CMIOGraphGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorReset": {
+      "name": "CMIOOutputCoordinatorReset",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOOutputCoordinatorReset(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamHumanFullBodyDetectionEnabled": {
+      "name": "CMIOExtensionPropertyStreamHumanFullBodyDetectionEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamHumanFullBodyDetectionEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamCenterStageRectOfInterest": {
+      "name": "CMIOExtensionPropertyStreamCenterStageRectOfInterest",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamCenterStageRectOfInterest(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphGetTypeID": {
+      "name": "CMIOGraphGetTypeID",
+      "framework": "CoreMediaIO",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOGraphRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CMIOGraphGetTypeID(CMIOGraphRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOUnitGetTypeID",
+        "CMIOOutputCoordinatorGetTypeID",
+        "CMIOUnitGetClassID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorGetCoordinatedOutputTimebase": {
+      "name": "CMIOOutputCoordinatorGetCoordinatedOutputTimebase",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOOutputCoordinatorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOOutputCoordinatorGetCoordinatedOutputTimebase(CMIOOutputCoordinatorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorRetain": {
+      "name": "CMIOOutputCoordinatorRetain",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOOutputCoordinatorRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOOutputCoordinatorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Retain pattern"
+        }
+      ],
+      "signature": "CMIOOutputCoordinatorRef CMIOOutputCoordinatorRetain(CMIOOutputCoordinatorRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOOutputCoordinatorRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOOutputCoordinatorCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphResyncPreview": {
+      "name": "CMIOGraphResyncPreview",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphResyncPreview(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphGetNodeCount": {
+      "name": "CMIOGraphGetNodeCount",
+      "framework": "CoreMediaIO",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOGraphRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ CMIOGraphGetNodeCount(CMIOGraphRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOObjectGetPropertyDataSize",
+        "CMIOFileWritingControlTokenGetFileSize",
+        "CMIOExtensionPropertyStreamSinkBufferUnderrunCount",
+        "CMIOGraphGetNodeByFunctionalDesignationAndIndex",
+        "CMIOFileWritingControlTokenGetCompletedFileSizeEstimate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyIs4CCSelectorControlProperty": {
+      "name": "CMIOExtensionPropertyIs4CCSelectorControlProperty",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOExtensionPropertyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOExtensionPropertyIs4CCSelectorControlProperty(CMIOExtensionPropertyRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOMetadataCopyAsDictionary": {
+      "name": "CMIOMetadataCopyAsDictionary",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOMetadataRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOMetadataRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CMIOMetadataRef/*?*/ CMIOMetadataCopyAsDictionary(CMIOMetadataRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOMetadataRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOMetadataCopyCommonAsDictionary"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphSetProperties": {
+      "name": "CMIOGraphSetProperties",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOGraphRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphSetProperties(CMIOGraphRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenUnitIsPaused": {
+      "name": "CMIOFileWritingControlTokenUnitIsPaused",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFileWritingControlTokenUnitRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOFileWritingControlTokenUnitIsPaused(CMIOFileWritingControlTokenUnitRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorGetEarliestVideoPresentationTime": {
+      "name": "CMIOOutputCoordinatorGetEarliestVideoPresentationTime",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOOutputCoordinatorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOOutputCoordinatorGetEarliestVideoPresentationTime(CMIOOutputCoordinatorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorGetOutputUnitForSynchronizerUnit": {
+      "name": "CMIOOutputCoordinatorGetOutputUnitForSynchronizerUnit",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOOutputCoordinatorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOOutputCoordinatorGetOutputUnitForSynchronizerUnit(CMIOOutputCoordinatorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorDetach": {
+      "name": "CMIOOutputCoordinatorDetach",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOOutputCoordinatorDetach(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOStreamCopyAndClearEnqueuedReactionEffects": {
+      "name": "CMIOStreamCopyAndClearEnqueuedReactionEffects",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOStreamRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOStreamRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CMIOStreamRef/*?*/ CMIOStreamCopyAndClearEnqueuedReactionEffects(CMIOStreamRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOStreamRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOStreamCopyBufferQueue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamStartPanningAtPoint": {
+      "name": "CMIOExtensionPropertyStreamStartPanningAtPoint",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamStartPanningAtPoint(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenTriggerFileWritingControlCallback": {
+      "name": "CMIOFileWritingControlTokenTriggerFileWritingControlCallback",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIORef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ CMIOFileWritingControlTokenTriggerFileWritingControlCallback(CMIORef *ref, void (*)(void *) callback, void *context)",
+      "verb": "unknown",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOStreamRegisterAsyncStillCaptureCallback",
+        "CMIOAnalyticsRegisterDevice"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOStreamDeckJog": {
+      "name": "CMIOStreamDeckJog",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOStreamDeckJog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFormatDescriptionGetOnlyHasIFrames": {
+      "name": "CMIOFormatDescriptionGetOnlyHasIFrames",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFormatDescriptionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOFormatDescriptionGetOnlyHasIFrames(CMIOFormatDescriptionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphSetProperty": {
+      "name": "CMIOGraphSetProperty",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOGraphRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphSetProperty(CMIOGraphRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOObjectSetPropertyData": {
+      "name": "CMIOObjectSetPropertyData",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOObjectRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CMIOObjectSetPropertyData(CMIOObjectRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenCreateOutputPathToCapturePathDictionary": {
+      "name": "CMIOFileWritingControlTokenCreateOutputPathToCapturePathDictionary",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOFileWritingControlTokenRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMIOFileWritingControlTokenRef CMIOFileWritingControlTokenCreateOutputPathToCapturePathDictionary(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOFileWritingControlTokenRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOFileWritingControlTokenCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOAnalyticsRegisterDevice": {
+      "name": "CMIOAnalyticsRegisterDevice",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOAnalyticsRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ CMIOAnalyticsRegisterDevice(CMIOAnalyticsRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOStreamRegisterAsyncStillCaptureCallback",
+        "CMIOFileWritingControlTokenTriggerFileWritingControlCallback"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamBackgroundReplacementEnabled": {
+      "name": "CMIOExtensionPropertyStreamBackgroundReplacementEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamBackgroundReplacementEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyProviderName": {
+      "name": "CMIOExtensionPropertyProviderName",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyProviderName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphGetPropertiesDictionary": {
+      "name": "CMIOGraphGetPropertiesDictionary",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOGraphRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOGraphGetPropertiesDictionary(CMIOGraphRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOStreamClockInvalidate": {
+      "name": "CMIOStreamClockInvalidate",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOStreamClockInvalidate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamManualFramingSupported": {
+      "name": "CMIOExtensionPropertyStreamManualFramingSupported",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamManualFramingSupported(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyIs4CCProperty": {
+      "name": "CMIOExtensionPropertyIs4CCProperty",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOExtensionPropertyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOExtensionPropertyIs4CCProperty(CMIOExtensionPropertyRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamCatBodyDetectionEnabled": {
+      "name": "CMIOExtensionPropertyStreamCatBodyDetectionEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamCatBodyDetectionEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOStreamDeckPlay": {
+      "name": "CMIOStreamDeckPlay",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOStreamDeckPlay(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenGetSampleBuffer": {
+      "name": "CMIOFileWritingControlTokenGetSampleBuffer",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFileWritingControlTokenRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOFileWritingControlTokenGetSampleBuffer(CMIOFileWritingControlTokenRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenMaximumRecordDurationHasBeenReached": {
+      "name": "CMIOFileWritingControlTokenMaximumRecordDurationHasBeenReached",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFileWritingControlTokenMaximumRecordDurationRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOFileWritingControlTokenMaximumRecordDurationHasBeenReached(CMIOFileWritingControlTokenMaximumRecordDurationRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphConnectNodeInput": {
+      "name": "CMIOGraphConnectNodeInput",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphConnectNodeInput(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyDeviceCompanionDeskcamDeviceUUID": {
+      "name": "CMIOExtensionPropertyDeviceCompanionDeskcamDeviceUUID",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyDeviceCompanionDeskcamDeviceUUID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamStudioLightingEnabled": {
+      "name": "CMIOExtensionPropertyStreamStudioLightingEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamStudioLightingEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOSampleBufferCreateForImageBuffer": {
+      "name": "CMIOSampleBufferCreateForImageBuffer",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOSampleBufferRef",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMIOSampleBufferRef CMIOSampleBufferCreateForImageBuffer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOSampleBufferRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOSampleBufferCreateNoDataMarker",
+        "CMIOSampleBufferCopyNonRequiredAttachments",
+        "CMIOSampleBufferCreate",
+        "CMIOSampleBufferCopySampleAttachments"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphCountNodeConnections": {
+      "name": "CMIOGraphCountNodeConnections",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphCountNodeConnections(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOAnalyticsGetPlugInInfo": {
+      "name": "CMIOAnalyticsGetPlugInInfo",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOAnalyticsRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOAnalyticsGetPlugInInfo(CMIOAnalyticsRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamReactionsInProgress": {
+      "name": "CMIOExtensionPropertyStreamReactionsInProgress",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamReactionsInProgress(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOUnitUtilityCreateAudioCompressionOptionsDictionary2": {
+      "name": "CMIOUnitUtilityCreateAudioCompressionOptionsDictionary2",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOUnitUtilityRef",
+      "parameters": [],
+      "capabilities": [
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMIOUnitUtilityRef CMIOUnitUtilityCreateAudioCompressionOptionsDictionary2(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOUnitUtilityRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOUnitUtilityCreateAudioCompressionOptionsDictionary"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphPause": {
+      "name": "CMIOGraphPause",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOGraphPause(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenGetSMPTETime": {
+      "name": "CMIOFileWritingControlTokenGetSMPTETime",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFileWritingControlTokenRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOFileWritingControlTokenGetSMPTETime(CMIOFileWritingControlTokenRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOFileWritingControlTokenUnitCanPauseAndResumeWriting": {
+      "name": "CMIOFileWritingControlTokenUnitCanPauseAndResumeWriting",
+      "framework": "CoreMediaIO",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOFileWritingControlTokenUnitRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CMIOFileWritingControlTokenUnitCanPauseAndResumeWriting(CMIOFileWritingControlTokenUnitRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamAsyncStillCaptureEnabled": {
+      "name": "CMIOExtensionPropertyStreamAsyncStillCaptureEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamAsyncStillCaptureEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOOutputCoordinatorGetMasterOutputDeviceLatency": {
+      "name": "CMIOOutputCoordinatorGetMasterOutputDeviceLatency",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOOutputCoordinatorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOOutputCoordinatorGetMasterOutputDeviceLatency(CMIOOutputCoordinatorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamMaxFrameDuration": {
+      "name": "CMIOExtensionPropertyStreamMaxFrameDuration",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamMaxFrameDuration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOUnitUtilityCreateAudioCompressionOptionsDictionary": {
+      "name": "CMIOUnitUtilityCreateAudioCompressionOptionsDictionary",
+      "framework": "CoreMediaIO",
+      "return_type": "CMIOUnitUtilityRef",
+      "parameters": [],
+      "capabilities": [
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CMIOUnitUtilityRef CMIOUnitUtilityCreateAudioCompressionOptionsDictionary(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CMIOUnitUtilityRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CMIOUnitUtilityCreateAudioCompressionOptionsDictionary2"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyFromControl": {
+      "name": "CMIOExtensionPropertyFromControl",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyFromControl(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOStreamCaptureAsyncStillImage": {
+      "name": "CMIOStreamCaptureAsyncStillImage",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOStreamCaptureAsyncStillImage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionControlFromProperty": {
+      "name": "CMIOExtensionControlFromProperty",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionControlFromProperty(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamSuppressedGesturesEnabled": {
+      "name": "CMIOExtensionPropertyStreamSuppressedGesturesEnabled",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamSuppressedGesturesEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOGraphGetNodeConnections": {
+      "name": "CMIOGraphGetNodeConnections",
+      "framework": "CoreMediaIO",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CMIOGraphRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CMIOGraphGetNodeConnections(CMIOGraphRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamActiveFormatIndex": {
+      "name": "CMIOExtensionPropertyStreamActiveFormatIndex",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamActiveFormatIndex(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyStreamSinkBufferQueueSize": {
+      "name": "CMIOExtensionPropertyStreamSinkBufferQueueSize",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyStreamSinkBufferQueueSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMIOExtensionPropertyDeviceTransportType": {
+      "name": "CMIOExtensionPropertyDeviceTransportType",
+      "framework": "CoreMediaIO",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreMediaIO"
+        }
+      ],
+      "signature": "void/*?*/ CMIOExtensionPropertyDeviceTransportType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "image_processing": [
+      "CMIOExtensionPropertyStreamBackgroundReplacementPixelBuffer",
+      "CMIOSampleBufferCreateForImageBuffer",
+      "CMIOStreamCaptureAsyncStillImage"
+    ],
+    "video_processing": [
+      "CMIOExtensionPropertyStreamFrameDuration",
+      "CMIOExtensionPropertyStreamMaxFrameDuration",
+      "CMIOExtensionPropertyStreamPerFrameExifDataEnabled",
+      "CMIOExtensionPropertyStreamSuppressVideoEffects",
+      "CMIOFormatDescriptionGetOnlyHasIFrames",
+      "CMIOOutputCoordinatorGetEarliestVideoPresentationTime",
+      "CMIOOutputCoordinatorGetNumberOfVideoOutputUnitsBeingCoordinated",
+      "CMIOOutputCoordinatorNoteVideoOutputPrimed",
+      "CMIOOutputCoordinatorNoteVideoOutputSynchronizerPrimed"
+    ],
+    "compression": [
+      "CMIOUnitUtilityCreateAudioCompressionOptionsDictionary",
+      "CMIOUnitUtilityCreateAudioCompressionOptionsDictionary2",
+      "CMIOUnitUtilityGetAudioCompressionOptionsDictionaryFields",
+      "CMIOUnitUtilityGetAudioCompressionOptionsDictionaryFields2"
+    ],
+    "memory_buffer": [
+      "CMIOExtensionPropertyStreamBackgroundReplacementPixelBuffer",
+      "CMIOExtensionPropertyStreamInputBufferQueueSize",
+      "CMIOExtensionPropertyStreamSinkBufferQueueSize",
+      "CMIOExtensionPropertyStreamSinkBufferUnderrunCount",
+      "CMIOExtensionPropertyStreamSinkBuffersRequiredForStartup",
+      "CMIOFileWritingControlTokenBufferIsIncompatibleWithCurrentFile",
+      "CMIOFileWritingControlTokenGetSampleBuffer",
+      "CMIOSampleBufferCopyNonRequiredAttachments",
+      "CMIOSampleBufferCopySampleAttachments",
+      "CMIOSampleBufferCreate",
+      "CMIOSampleBufferCreateForImageBuffer",
+      "CMIOSampleBufferCreateNoDataMarker",
+      "CMIOSampleBufferGetDiscontinuityFlags",
+      "CMIOSampleBufferGetSequenceNumber",
+      "CMIOSampleBufferSetDiscontinuityFlags",
+      "CMIOSampleBufferSetSequenceNumber",
+      "CMIOStreamCopyBufferQueue"
+    ],
+    "gpu_compute": [
+      "CMIODeviceProcessAVCCommand",
+      "CMIODeviceProcessRS422Command",
+      "CMIOGraphAddRenderNotify",
+      "CMIOGraphRemoveRenderNotify"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

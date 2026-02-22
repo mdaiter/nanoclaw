@@ -1,0 +1,3279 @@
+{
+  "framework": "AppSandbox",
+  "functions": {
+    "enum case for AppSandbox.ValidationCategory.none(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory": {
+      "name": "enum case for AppSandbox.ValidationCategory.none(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ enum case for AppSandbox.ValidationCategory.none(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBBinaryIdentity.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBBinaryIdentity": {
+      "name": "AppSandbox.ASBBinaryIdentity.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBBinaryIdentity.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for AppSandbox.ValidationCategory.local_signing(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory": {
+      "name": "enum case for AppSandbox.ValidationCategory.local_signing(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ enum case for AppSandbox.ValidationCategory.local_signing(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for AppSandbox.ASBBinaryIdentity.__allocating_init(coder: __C.NSCoder) -> AppSandbox.ASBBinaryIdentity?": {
+      "name": "method descriptor for AppSandbox.ASBBinaryIdentity.__allocating_init(coder: __C.NSCoder) -> AppSandbox.ASBBinaryIdentity?",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for AppSandbox.ASBBinaryIdentity.__allocating_init(coder: __C.NSCoder) -> AppSandbox.ASBBinaryIdentity?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for static AppSandbox.ASBBinaryIdentity.identity(code: __C.SecStaticCodeRef) throws -> AppSandbox.ASBBinaryIdentity": {
+      "name": "method descriptor for static AppSandbox.ASBBinaryIdentity.identity(code: __C.SecStaticCodeRef) throws -> AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for static AppSandbox.ASBBinaryIdentity.identity(code: __C.SecStaticCodeRef) throws -> AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for AppSandbox.ASBOwnerSet.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBOwnerSet": {
+      "name": "method descriptor for AppSandbox.ASBOwnerSet.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBOwnerSet",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "method descriptor for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for AppSandbox.ASBOwnerSet.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBOwnerSet(method descriptor for AppSandbox.ASBOwnerRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for static AppSandbox.ASBBinaryIdentity.identity(token: __C.audit_token_t) throws -> AppSandbox.ASBBinaryIdentity": {
+      "name": "method descriptor for static AppSandbox.ASBBinaryIdentity.identity(token: __C.audit_token_t) throws -> AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for static AppSandbox.ASBBinaryIdentity.identity(token: __C.audit_token_t) throws -> AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for AppSandbox.ASBOwnerSet.encode(to: Swift.Encoder) throws -> ()": {
+      "name": "method descriptor for AppSandbox.ASBOwnerSet.encode(to: Swift.Encoder) throws -> ()",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "method descriptor for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for AppSandbox.ASBOwnerSet.encode(to: Swift.Encoder) throws -> ()(method descriptor for AppSandbox.ASBOwnerRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandboxProfileSnippetPathKey": {
+      "name": "AppSandboxProfileSnippetPathKey",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandboxProfileSnippetPathKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandboxUtilAddressBookLockPathURL": {
+      "name": "AppSandboxUtilAddressBookLockPathURL",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandboxUtilAddressBookLockPathURL(void)",
+      "verb": "synchronize",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBOwnerSet.DeserializationError.hash(into: inout Swift.Hasher) -> ()": {
+      "name": "AppSandbox.ASBOwnerSet.DeserializationError.hash(into: inout Swift.Hasher) -> ()",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBOwnerSet.DeserializationError.hash(into: inout Swift.Hasher) -> ()(AppSandbox.ASBOwnerRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBBinaryIdentity.__allocating_init(coder: __C.NSCoder) -> AppSandbox.ASBBinaryIdentity?": {
+      "name": "AppSandbox.ASBBinaryIdentity.__allocating_init(coder: __C.NSCoder) -> AppSandbox.ASBBinaryIdentity?",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBBinaryIdentity.__allocating_init(coder: __C.NSCoder) -> AppSandbox.ASBBinaryIdentity?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBBinaryIdentity.__deallocating_deinit": {
+      "name": "AppSandbox.ASBBinaryIdentity.__deallocating_deinit",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBBinaryIdentity.__deallocating_deinit(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for AppSandbox.ASBBinaryIdentity.encode(with: __C.NSCoder) -> ()": {
+      "name": "method descriptor for AppSandbox.ASBBinaryIdentity.encode(with: __C.NSCoder) -> ()",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for AppSandbox.ASBBinaryIdentity.encode(with: __C.NSCoder) -> ()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandboxUtilCalendarLockPathURLWithError": {
+      "name": "AppSandboxUtilCalendarLockPathURLWithError",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandboxUtilCalendarLockPathURLWithError(void)",
+      "verb": "synchronize",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBOwnerSet.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBOwnerSet": {
+      "name": "AppSandbox.ASBOwnerSet.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBOwnerSet",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBOwnerSet.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBOwnerSet(AppSandbox.ASBOwnerRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of AppSandbox.ASBOwnerSet.count.getter : Swift.Int": {
+      "name": "dispatch thunk of AppSandbox.ASBOwnerSet.count.getter : Swift.Int",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "dispatch thunk of AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of AppSandbox.ASBOwnerSet.count.getter : Swift.Int(dispatch thunk of AppSandbox.ASBOwnerRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for AppSandbox.ASBOwnerSet.DeserializationError.localizedDescription : Swift.String": {
+      "name": "property descriptor for AppSandbox.ASBOwnerSet.DeserializationError.localizedDescription : Swift.String",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "property descriptor for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "const char *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for AppSandbox.ASBOwnerSet.DeserializationError.localizedDescription : Swift.String(property descriptor for AppSandbox.ASBOwnerRef *ref, const char * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "const char * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "dispatch thunk of static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet",
+        "AppSandbox.ASBOwnerSet.DeserializationError.localizedDescription.getter : Swift.String",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.serialize() -> Swift.String",
+        "method descriptor for AppSandbox.ASBOwnerSet.serialize() -> Swift.String",
+        "method descriptor for static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of AppSandbox.ASBOwnerSet.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBOwnerSet": {
+      "name": "dispatch thunk of AppSandbox.ASBOwnerSet.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBOwnerSet",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "dispatch thunk of AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer",
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of AppSandbox.ASBOwnerSet.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBOwnerSet(dispatch thunk of AppSandbox.ASBOwnerRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for AppSandbox.ASBOwnerSet.DeserializationError.hashValue : Swift.Int": {
+      "name": "property descriptor for AppSandbox.ASBOwnerSet.DeserializationError.hashValue : Swift.Int",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "property descriptor for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for AppSandbox.ASBOwnerSet.DeserializationError.hashValue : Swift.Int(property descriptor for AppSandbox.ASBOwnerRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()": {
+      "name": "dispatch thunk of AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "dispatch thunk of AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()(dispatch thunk of AppSandbox.ASBOwnerRef *ref, uint64_t value)",
+      "verb": "unknown",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "method descriptor for AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "method descriptor for AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.allowsBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for AppSandbox.ASBBinaryIdentity.validationCategory : AppSandbox.ValidationCategory": {
+      "name": "property descriptor for AppSandbox.ASBBinaryIdentity.validationCategory : AppSandbox.ValidationCategory",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for AppSandbox.ASBBinaryIdentity.validationCategory : AppSandbox.ValidationCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of AppSandbox.ASBBinaryIdentity.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBBinaryIdentity": {
+      "name": "dispatch thunk of AppSandbox.ASBBinaryIdentity.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of AppSandbox.ASBBinaryIdentity.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for AppSandbox.ValidationCategory.invalid(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory": {
+      "name": "enum case for AppSandbox.ValidationCategory.invalid(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ enum case for AppSandbox.ValidationCategory.invalid(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of AppSandbox.ASBBinaryIdentity.__allocating_init(coder: __C.NSCoder) -> AppSandbox.ASBBinaryIdentity?": {
+      "name": "dispatch thunk of AppSandbox.ASBBinaryIdentity.__allocating_init(coder: __C.NSCoder) -> AppSandbox.ASBBinaryIdentity?",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of AppSandbox.ASBBinaryIdentity.__allocating_init(coder: __C.NSCoder) -> AppSandbox.ASBBinaryIdentity?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for AppSandbox.ValidationCategory.development(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory": {
+      "name": "enum case for AppSandbox.ValidationCategory.development(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ enum case for AppSandbox.ValidationCategory.development(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for AppSandbox.ASBOwnerSet.isEmpty : Swift.Bool": {
+      "name": "property descriptor for AppSandbox.ASBOwnerSet.isEmpty : Swift.Bool",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "property descriptor for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for AppSandbox.ASBOwnerSet.isEmpty : Swift.Bool(property descriptor for AppSandbox.ASBOwnerRef *ref, bool value)",
+      "verb": "unknown",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for AppSandbox.ValidationCategory.enterprise(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory": {
+      "name": "enum case for AppSandbox.ValidationCategory.enterprise(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ enum case for AppSandbox.ValidationCategory.enterprise(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for AppSandbox.ValidationCategory.app_store(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory": {
+      "name": "enum case for AppSandbox.ValidationCategory.app_store(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ enum case for AppSandbox.ValidationCategory.app_store(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>": {
+      "name": "method descriptor for AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "method descriptor for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>(method descriptor for AppSandbox.ASBOwnerRef *ref, uint64_t value)",
+      "verb": "unknown",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "dispatch thunk of AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.allowsBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBBinaryIdentity.CodeSignatureError.localizedDescription.getter : Swift.String": {
+      "name": "AppSandbox.ASBBinaryIdentity.CodeSignatureError.localizedDescription.getter : Swift.String",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBBinaryIdentity.CodeSignatureError.localizedDescription.getter : Swift.String(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandboxUtilEntitlementsRequireSandboxForIdentity": {
+      "name": "AppSandboxUtilEntitlementsRequireSandboxForIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandboxUtilEntitlementsRequireSandboxForIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandboxUtilAddressBookLockPathURLWithError": {
+      "name": "AppSandboxUtilAddressBookLockPathURLWithError",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandboxUtilAddressBookLockPathURLWithError(void)",
+      "verb": "synchronize",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()": {
+      "name": "method descriptor for AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "method descriptor for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()(method descriptor for AppSandbox.ASBOwnerRef *ref, uint64_t value)",
+      "verb": "unknown",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "dispatch thunk of AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.allowsBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandboxUtilRealPathForUTF8StringPath": {
+      "name": "AppSandboxUtilRealPathForUTF8StringPath",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandboxUtilRealPathForUTF8StringPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>": {
+      "name": "method descriptor for AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "method descriptor for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>(method descriptor for AppSandbox.ASBOwnerRef *ref, uint64_t value)",
+      "verb": "unknown",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "dispatch thunk of AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "method descriptor for AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.allowsBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet": {
+      "name": "dispatch thunk of static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "dispatch thunk of static AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "const char *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet(dispatch thunk of static AppSandbox.ASBOwnerRef *ref, const char * *value)",
+      "verb": "write",
+      "input_formats": [
+        "const char * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "property descriptor for AppSandbox.ASBOwnerSet.DeserializationError.localizedDescription : Swift.String",
+        "AppSandbox.ASBOwnerSet.DeserializationError.localizedDescription.getter : Swift.String",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.serialize() -> Swift.String",
+        "method descriptor for AppSandbox.ASBOwnerSet.serialize() -> Swift.String",
+        "method descriptor for static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for AppSandbox.ASBBinaryIdentity.encode(to: Swift.Encoder) throws -> ()": {
+      "name": "method descriptor for AppSandbox.ASBBinaryIdentity.encode(to: Swift.Encoder) throws -> ()",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for AppSandbox.ASBBinaryIdentity.encode(to: Swift.Encoder) throws -> ()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for AppSandbox.ValidationCategory.other(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory": {
+      "name": "enum case for AppSandbox.ValidationCategory.other(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ enum case for AppSandbox.ValidationCategory.other(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>": {
+      "name": "dispatch thunk of AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "dispatch thunk of AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>(dispatch thunk of AppSandbox.ASBOwnerRef *ref, uint64_t value)",
+      "verb": "unknown",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "dispatch thunk of AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "method descriptor for AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.allowsBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ValidationCategory.init(token: __C.audit_token_t) -> AppSandbox.ValidationCategory?": {
+      "name": "AppSandbox.ValidationCategory.init(token: __C.audit_token_t) -> AppSandbox.ValidationCategory?",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ValidationCategory.init(token: __C.audit_token_t) -> AppSandbox.ValidationCategory?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBBinaryIdentity.validationCategory.getter : AppSandbox.ValidationCategory": {
+      "name": "AppSandbox.ASBBinaryIdentity.validationCategory.getter : AppSandbox.ValidationCategory",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBBinaryIdentity.validationCategory.getter : AppSandbox.ValidationCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ValidationCategory.init(rawValue: Swift.String) -> AppSandbox.ValidationCategory?": {
+      "name": "AppSandbox.ValidationCategory.init(rawValue: Swift.String) -> AppSandbox.ValidationCategory?",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ValidationCategory.init(rawValue: Swift.String) -> AppSandbox.ValidationCategory?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for AppSandbox.ASBBinaryIdentity.CodeSignatureError.localizedDescription : Swift.String": {
+      "name": "property descriptor for AppSandbox.ASBBinaryIdentity.CodeSignatureError.localizedDescription : Swift.String",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for AppSandbox.ASBBinaryIdentity.CodeSignatureError.localizedDescription : Swift.String(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBBinaryIdentity.init(from: Swift.Decoder) throws -> AppSandbox.ASBBinaryIdentity": {
+      "name": "AppSandbox.ASBBinaryIdentity.init(from: Swift.Decoder) throws -> AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBBinaryIdentity.init(from: Swift.Decoder) throws -> AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBBinaryIdentity.__allocating_init() -> AppSandbox.ASBBinaryIdentity": {
+      "name": "AppSandbox.ASBBinaryIdentity.__allocating_init() -> AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBBinaryIdentity.__allocating_init() -> AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBOwnerSet.DeserializationError.localizedDescription.getter : Swift.String": {
+      "name": "AppSandbox.ASBOwnerSet.DeserializationError.localizedDescription.getter : Swift.String",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "const char *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBOwnerSet.DeserializationError.localizedDescription.getter : Swift.String(AppSandbox.ASBOwnerRef *ref, const char * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "const char * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "property descriptor for AppSandbox.ASBOwnerSet.DeserializationError.localizedDescription : Swift.String",
+        "dispatch thunk of static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.serialize() -> Swift.String",
+        "method descriptor for AppSandbox.ASBOwnerSet.serialize() -> Swift.String",
+        "method descriptor for static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "class metadata base offset for AppSandbox.ASBBinaryIdentity": {
+      "name": "class metadata base offset for AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ class metadata base offset for AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of static AppSandbox.ASBBinaryIdentity.identity(code: __C.SecStaticCodeRef) throws -> AppSandbox.ASBBinaryIdentity": {
+      "name": "dispatch thunk of static AppSandbox.ASBBinaryIdentity.identity(code: __C.SecStaticCodeRef) throws -> AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of static AppSandbox.ASBBinaryIdentity.identity(code: __C.SecStaticCodeRef) throws -> AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandboxUtilCollectionScopedBookmarkSecurityPolicyPermitsPath": {
+      "name": "AppSandboxUtilCollectionScopedBookmarkSecurityPolicyPermitsPath",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandboxUtilCollectionScopedBookmarkSecurityPolicyPermitsPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of AppSandbox.ASBOwnerSet.serialize() -> Swift.String": {
+      "name": "dispatch thunk of AppSandbox.ASBOwnerSet.serialize() -> Swift.String",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "dispatch thunk of AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "const char *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of AppSandbox.ASBOwnerSet.serialize() -> Swift.String(dispatch thunk of AppSandbox.ASBOwnerRef *ref, const char * *value)",
+      "verb": "encode",
+      "input_formats": [
+        "const char * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "property descriptor for AppSandbox.ASBOwnerSet.DeserializationError.localizedDescription : Swift.String",
+        "dispatch thunk of static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet",
+        "AppSandbox.ASBOwnerSet.DeserializationError.localizedDescription.getter : Swift.String",
+        "method descriptor for AppSandbox.ASBOwnerSet.serialize() -> Swift.String",
+        "method descriptor for static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of AppSandbox.ASBOwnerSet.allowsBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool": {
+      "name": "dispatch thunk of AppSandbox.ASBOwnerSet.allowsBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "dispatch thunk of AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of AppSandbox.ASBOwnerSet.allowsBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool(dispatch thunk of AppSandbox.ASBOwnerRef *ref, uint64_t value)",
+      "verb": "unknown",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "dispatch thunk of AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "method descriptor for AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBOwnerSet.__allocating_init() -> AppSandbox.ASBOwnerSet": {
+      "name": "AppSandbox.ASBOwnerSet.__allocating_init() -> AppSandbox.ASBOwnerSet",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBOwnerSet.__allocating_init() -> AppSandbox.ASBOwnerSet(AppSandbox.ASBOwnerRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of static AppSandbox.ASBBinaryIdentity.identity(token: __C.audit_token_t) throws -> AppSandbox.ASBBinaryIdentity": {
+      "name": "dispatch thunk of static AppSandbox.ASBBinaryIdentity.identity(token: __C.audit_token_t) throws -> AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of static AppSandbox.ASBBinaryIdentity.identity(token: __C.audit_token_t) throws -> AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for AppSandbox.ASBOwnerSet.allowsBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool": {
+      "name": "method descriptor for AppSandbox.ASBOwnerSet.allowsBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "method descriptor for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for AppSandbox.ASBOwnerSet.allowsBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool(method descriptor for AppSandbox.ASBOwnerRef *ref, uint64_t value)",
+      "verb": "unknown",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "dispatch thunk of AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "method descriptor for AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for AppSandbox.ASBBinaryIdentity.teamIdentifier : Swift.String?": {
+      "name": "property descriptor for AppSandbox.ASBBinaryIdentity.teamIdentifier : Swift.String?",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for AppSandbox.ASBBinaryIdentity.teamIdentifier : Swift.String?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBOwnerSet.DeserializationError.hashValue.getter : Swift.Int": {
+      "name": "AppSandbox.ASBOwnerSet.DeserializationError.hashValue.getter : Swift.Int",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBOwnerSet.DeserializationError.hashValue.getter : Swift.Int(AppSandbox.ASBOwnerRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBBinaryIdentity.__allocating_init(validationCategory: AppSandbox.ValidationCategory, signingIdentifier: Swift.String?, teamIdentifier: Swift.String?) -> AppSandbox.ASBBinaryIdentity": {
+      "name": "AppSandbox.ASBBinaryIdentity.__allocating_init(validationCategory: AppSandbox.ValidationCategory, signingIdentifier: Swift.String?, teamIdentifier: Swift.String?) -> AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBBinaryIdentity.__allocating_init(validationCategory: AppSandbox.ValidationCategory, signingIdentifier: Swift.String?, teamIdentifier: Swift.String?) -> AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method lookup function for AppSandbox.ASBBinaryIdentity": {
+      "name": "method lookup function for AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ method lookup function for AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "static AppSandbox.ValidationCategory.allCases.getter : [AppSandbox.ValidationCategory]": {
+      "name": "static AppSandbox.ValidationCategory.allCases.getter : [AppSandbox.ValidationCategory]",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ static AppSandbox.ValidationCategory.allCases.getter : [AppSandbox.ValidationCategory](void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandboxUtilEntitlementsRequireSandbox": {
+      "name": "AppSandboxUtilEntitlementsRequireSandbox",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandboxUtilEntitlementsRequireSandbox(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of AppSandbox.ASBOwnerSet.allowsInternalEquivalentBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool": {
+      "name": "dispatch thunk of AppSandbox.ASBOwnerSet.allowsInternalEquivalentBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "dispatch thunk of AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of AppSandbox.ASBOwnerSet.allowsInternalEquivalentBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool(dispatch thunk of AppSandbox.ASBOwnerRef *ref, uint64_t value)",
+      "verb": "unknown",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "dispatch thunk of AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "method descriptor for AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandboxUtilRealPathForPath": {
+      "name": "AppSandboxUtilRealPathForPath",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandboxUtilRealPathForPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandboxUtilVersionStringToNumber": {
+      "name": "AppSandboxUtilVersionStringToNumber",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandboxUtilVersionStringToNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for static AppSandbox.ValidationCategory.allCases : [AppSandbox.ValidationCategory]": {
+      "name": "property descriptor for static AppSandbox.ValidationCategory.allCases : [AppSandbox.ValidationCategory]",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for static AppSandbox.ValidationCategory.allCases : [AppSandbox.ValidationCategory](void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of AppSandbox.ASBOwnerSet.isEmpty.getter : Swift.Bool": {
+      "name": "dispatch thunk of AppSandbox.ASBOwnerSet.isEmpty.getter : Swift.Bool",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "dispatch thunk of AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of AppSandbox.ASBOwnerSet.isEmpty.getter : Swift.Bool(dispatch thunk of AppSandbox.ASBOwnerRef *ref, bool value)",
+      "verb": "unknown",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method lookup function for AppSandbox.ASBOwnerSet": {
+      "name": "method lookup function for AppSandbox.ASBOwnerSet",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "method lookup function for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ method lookup function for AppSandbox.ASBOwnerSet(method lookup function for AppSandbox.ASBOwnerRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for AppSandbox.ASBOwnerSet.allowsInternalEquivalentBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool": {
+      "name": "method descriptor for AppSandbox.ASBOwnerSet.allowsInternalEquivalentBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "method descriptor for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for AppSandbox.ASBOwnerSet.allowsInternalEquivalentBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool(method descriptor for AppSandbox.ASBOwnerRef *ref, uint64_t value)",
+      "verb": "unknown",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "dispatch thunk of AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "method descriptor for AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for AppSandbox.ValidationCategory.testflight(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory": {
+      "name": "enum case for AppSandbox.ValidationCategory.testflight(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ enum case for AppSandbox.ValidationCategory.testflight(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for AppSandbox.ASBBinaryIdentity.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBBinaryIdentity": {
+      "name": "method descriptor for AppSandbox.ASBBinaryIdentity.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for AppSandbox.ASBBinaryIdentity.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBBinaryIdentity.__allocating_init(token: __C.audit_token_t) throws -> AppSandbox.ASBBinaryIdentity": {
+      "name": "AppSandbox.ASBBinaryIdentity.__allocating_init(token: __C.audit_token_t) throws -> AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBBinaryIdentity.__allocating_init(token: __C.audit_token_t) throws -> AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for AppSandbox.ASBOwnerSet.members : Swift.Set<AppSandbox.ASBBinaryIdentity>": {
+      "name": "property descriptor for AppSandbox.ASBOwnerSet.members : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "property descriptor for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for AppSandbox.ASBOwnerSet.members : Swift.Set<AppSandbox.ASBBinaryIdentity>(property descriptor for AppSandbox.ASBOwnerRef *ref, uint64_t value)",
+      "verb": "unknown",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "dispatch thunk of AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "method descriptor for AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "static AppSandbox.ASBOwnerSet.DeserializationError.== infix(AppSandbox.ASBOwnerSet.DeserializationError, AppSandbox.ASBOwnerSet.DeserializationError) -> Swift.Bool": {
+      "name": "static AppSandbox.ASBOwnerSet.DeserializationError.== infix(AppSandbox.ASBOwnerSet.DeserializationError, AppSandbox.ASBOwnerSet.DeserializationError) -> Swift.Bool",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "static AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ static AppSandbox.ASBOwnerSet.DeserializationError.== infix(AppSandbox.ASBOwnerSet.DeserializationError, AppSandbox.ASBOwnerSet.DeserializationError) -> Swift.Bool(static AppSandbox.ASBOwnerRef *ref, bool value)",
+      "verb": "unknown",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for AppSandbox.ASBOwnerSet.count.getter : Swift.Int": {
+      "name": "method descriptor for AppSandbox.ASBOwnerSet.count.getter : Swift.Int",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "method descriptor for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for AppSandbox.ASBOwnerSet.count.getter : Swift.Int(method descriptor for AppSandbox.ASBOwnerRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBOwnerSet.init() -> AppSandbox.ASBOwnerSet": {
+      "name": "AppSandbox.ASBOwnerSet.init() -> AppSandbox.ASBOwnerSet",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBOwnerSet.init() -> AppSandbox.ASBOwnerSet(AppSandbox.ASBOwnerRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "class metadata base offset for AppSandbox.ASBOwnerSet": {
+      "name": "class metadata base offset for AppSandbox.ASBOwnerSet",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "class metadata base offset for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ class metadata base offset for AppSandbox.ASBOwnerSet(class metadata base offset for AppSandbox.ASBOwnerRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>": {
+      "name": "dispatch thunk of AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "dispatch thunk of AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>(dispatch thunk of AppSandbox.ASBOwnerRef *ref, uint64_t value)",
+      "verb": "unknown",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "dispatch thunk of AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "method descriptor for AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for AppSandbox.ValidationCategory.rawValue : Swift.String": {
+      "name": "property descriptor for AppSandbox.ValidationCategory.rawValue : Swift.String",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for AppSandbox.ValidationCategory.rawValue : Swift.String(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for AppSandbox.ASBOwnerSet.isEmpty.getter : Swift.Bool": {
+      "name": "method descriptor for AppSandbox.ASBOwnerSet.isEmpty.getter : Swift.Bool",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "method descriptor for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for AppSandbox.ASBOwnerSet.isEmpty.getter : Swift.Bool(method descriptor for AppSandbox.ASBOwnerRef *ref, bool value)",
+      "verb": "unknown",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandboxProfileSnippetModificationDateKey": {
+      "name": "AppSandboxProfileSnippetModificationDateKey",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandboxProfileSnippetModificationDateKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBBinaryIdentity.init(coder: __C.NSCoder) -> AppSandbox.ASBBinaryIdentity?": {
+      "name": "AppSandbox.ASBBinaryIdentity.init(coder: __C.NSCoder) -> AppSandbox.ASBBinaryIdentity?",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBBinaryIdentity.init(coder: __C.NSCoder) -> AppSandbox.ASBBinaryIdentity?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for AppSandbox.ASBOwnerSet.serialize() -> Swift.String": {
+      "name": "method descriptor for AppSandbox.ASBOwnerSet.serialize() -> Swift.String",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "method descriptor for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "const char *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for AppSandbox.ASBOwnerSet.serialize() -> Swift.String(method descriptor for AppSandbox.ASBOwnerRef *ref, const char * *value)",
+      "verb": "encode",
+      "input_formats": [
+        "const char * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "property descriptor for AppSandbox.ASBOwnerSet.DeserializationError.localizedDescription : Swift.String",
+        "dispatch thunk of static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet",
+        "AppSandbox.ASBOwnerSet.DeserializationError.localizedDescription.getter : Swift.String",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.serialize() -> Swift.String",
+        "method descriptor for static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of AppSandbox.ASBBinaryIdentity.encode(with: __C.NSCoder) -> ()": {
+      "name": "dispatch thunk of AppSandbox.ASBBinaryIdentity.encode(with: __C.NSCoder) -> ()",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of AppSandbox.ASBBinaryIdentity.encode(with: __C.NSCoder) -> ()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet": {
+      "name": "method descriptor for static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "method descriptor for static AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "const char *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet(method descriptor for static AppSandbox.ASBOwnerRef *ref, const char * *value)",
+      "verb": "write",
+      "input_formats": [
+        "const char * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "property descriptor for AppSandbox.ASBOwnerSet.DeserializationError.localizedDescription : Swift.String",
+        "dispatch thunk of static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet",
+        "AppSandbox.ASBOwnerSet.DeserializationError.localizedDescription.getter : Swift.String",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.serialize() -> Swift.String",
+        "method descriptor for AppSandbox.ASBOwnerSet.serialize() -> Swift.String"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for AppSandbox.ValidationCategory.developer_id(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory": {
+      "name": "enum case for AppSandbox.ValidationCategory.developer_id(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ enum case for AppSandbox.ValidationCategory.developer_id(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBOwnerSet.__deallocating_deinit": {
+      "name": "AppSandbox.ASBOwnerSet.__deallocating_deinit",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBOwnerSet.__deallocating_deinit(AppSandbox.ASBOwnerRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for AppSandbox.ASBBinaryIdentity.__allocating_init(validationCategory: AppSandbox.ValidationCategory, signingIdentifier: Swift.String?, teamIdentifier: Swift.String?) -> AppSandbox.ASBBinaryIdentity": {
+      "name": "method descriptor for AppSandbox.ASBBinaryIdentity.__allocating_init(validationCategory: AppSandbox.ValidationCategory, signingIdentifier: Swift.String?, teamIdentifier: Swift.String?) -> AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for AppSandbox.ASBBinaryIdentity.__allocating_init(validationCategory: AppSandbox.ValidationCategory, signingIdentifier: Swift.String?, teamIdentifier: Swift.String?) -> AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of AppSandbox.ASBBinaryIdentity.__allocating_init(validationCategory: AppSandbox.ValidationCategory, signingIdentifier: Swift.String?, teamIdentifier: Swift.String?) -> AppSandbox.ASBBinaryIdentity": {
+      "name": "dispatch thunk of AppSandbox.ASBBinaryIdentity.__allocating_init(validationCategory: AppSandbox.ValidationCategory, signingIdentifier: Swift.String?, teamIdentifier: Swift.String?) -> AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of AppSandbox.ASBBinaryIdentity.__allocating_init(validationCategory: AppSandbox.ValidationCategory, signingIdentifier: Swift.String?, teamIdentifier: Swift.String?) -> AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBBinaryIdentity.init(validationCategory: AppSandbox.ValidationCategory, signingIdentifier: Swift.String?, teamIdentifier: Swift.String?) -> AppSandbox.ASBBinaryIdentity": {
+      "name": "AppSandbox.ASBBinaryIdentity.init(validationCategory: AppSandbox.ValidationCategory, signingIdentifier: Swift.String?, teamIdentifier: Swift.String?) -> AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBBinaryIdentity.init(validationCategory: AppSandbox.ValidationCategory, signingIdentifier: Swift.String?, teamIdentifier: Swift.String?) -> AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for AppSandbox.ASBBinaryIdentity.signingIdentifier : Swift.String?": {
+      "name": "property descriptor for AppSandbox.ASBBinaryIdentity.signingIdentifier : Swift.String?",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for AppSandbox.ASBBinaryIdentity.signingIdentifier : Swift.String?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of AppSandbox.ASBBinaryIdentity.encode(to: Swift.Encoder) throws -> ()": {
+      "name": "dispatch thunk of AppSandbox.ASBBinaryIdentity.encode(to: Swift.Encoder) throws -> ()",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of AppSandbox.ASBBinaryIdentity.encode(to: Swift.Encoder) throws -> ()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBBinaryIdentity.signingIdentifier.getter : Swift.String?": {
+      "name": "AppSandbox.ASBBinaryIdentity.signingIdentifier.getter : Swift.String?",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBBinaryIdentity.signingIdentifier.getter : Swift.String?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBBinaryIdentity.init() -> AppSandbox.ASBBinaryIdentity": {
+      "name": "AppSandbox.ASBBinaryIdentity.init() -> AppSandbox.ASBBinaryIdentity",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBBinaryIdentity.init() -> AppSandbox.ASBBinaryIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "static AppSandbox.ValidationCategory.from(Swift.UInt32) -> AppSandbox.ValidationCategory": {
+      "name": "static AppSandbox.ValidationCategory.from(Swift.UInt32) -> AppSandbox.ValidationCategory",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ static AppSandbox.ValidationCategory.from(Swift.UInt32) -> AppSandbox.ValidationCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for AppSandbox.ValidationCategory.platform(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory": {
+      "name": "enum case for AppSandbox.ValidationCategory.platform(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ enum case for AppSandbox.ValidationCategory.platform(AppSandbox.ValidationCategory.Type) -> AppSandbox.ValidationCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of AppSandbox.ASBOwnerSet.encode(to: Swift.Encoder) throws -> ()": {
+      "name": "dispatch thunk of AppSandbox.ASBOwnerSet.encode(to: Swift.Encoder) throws -> ()",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "dispatch thunk of AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of AppSandbox.ASBOwnerSet.encode(to: Swift.Encoder) throws -> ()(dispatch thunk of AppSandbox.ASBOwnerRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch thunk of AppSandbox.ASBOwnerSet.members.setter : Swift.Set<AppSandbox.ASBBinaryIdentity>": {
+      "name": "dispatch thunk of AppSandbox.ASBOwnerSet.members.setter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "dispatch thunk of AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ dispatch thunk of AppSandbox.ASBOwnerSet.members.setter : Swift.Set<AppSandbox.ASBBinaryIdentity>(dispatch thunk of AppSandbox.ASBOwnerRef *ref, uint64_t value)",
+      "verb": "unknown",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "dispatch thunk of AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "method descriptor for AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for AppSandbox.ASBOwnerSet.count : Swift.Int": {
+      "name": "property descriptor for AppSandbox.ASBOwnerSet.count : Swift.Int",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "property descriptor for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for AppSandbox.ASBOwnerSet.count : Swift.Int(property descriptor for AppSandbox.ASBOwnerRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "method descriptor for AppSandbox.ASBOwnerSet.members.setter : Swift.Set<AppSandbox.ASBBinaryIdentity>": {
+      "name": "method descriptor for AppSandbox.ASBOwnerSet.members.setter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "method descriptor for AppSandbox.ASBOwnerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ method descriptor for AppSandbox.ASBOwnerSet.members.setter : Swift.Set<AppSandbox.ASBBinaryIdentity>(method descriptor for AppSandbox.ASBOwnerRef *ref, uint64_t value)",
+      "verb": "unknown",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "dispatch thunk of AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "method descriptor for AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+        "method descriptor for AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+        "dispatch thunk of AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ValidationCategory.rawValue.getter : Swift.String": {
+      "name": "AppSandbox.ValidationCategory.rawValue.getter : Swift.String",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ValidationCategory.rawValue.getter : Swift.String(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandboxUtilCollectionScopedBookmarkSecurityPolicyPermitsFD": {
+      "name": "AppSandboxUtilCollectionScopedBookmarkSecurityPolicyPermitsFD",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandboxUtilCollectionScopedBookmarkSecurityPolicyPermitsFD(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppSandbox.ASBBinaryIdentity.teamIdentifier.getter : Swift.String?": {
+      "name": "AppSandbox.ASBBinaryIdentity.teamIdentifier.getter : Swift.String?",
+      "framework": "AppSandbox",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppSandbox"
+        }
+      ],
+      "signature": "void/*?*/ AppSandbox.ASBBinaryIdentity.teamIdentifier.getter : Swift.String?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "system_io": [
+      "dispatch thunk of static AppSandbox.ASBOwnerSet.ownerSet(serialization: Swift.String?) throws -> AppSandbox.ASBOwnerSet",
+      "dispatch thunk of AppSandbox.ASBOwnerSet.addIdentity(AppSandbox.ASBBinaryIdentity) -> ()",
+      "dispatch thunk of AppSandbox.ASBOwnerSet.allowsBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool",
+      "dispatch thunk of AppSandbox.ASBOwnerSet.allowsInternalEquivalentBinaryIdentity(AppSandbox.ASBBinaryIdentity) -> Swift.Bool",
+      "dispatch thunk of AppSandbox.ASBOwnerSet.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBOwnerSet",
+      "dispatch thunk of AppSandbox.ASBOwnerSet.count.getter : Swift.Int",
+      "dispatch thunk of AppSandbox.ASBOwnerSet.encode(to: Swift.Encoder) throws -> ()",
+      "dispatch thunk of AppSandbox.ASBOwnerSet.isEmpty.getter : Swift.Bool",
+      "dispatch thunk of AppSandbox.ASBOwnerSet.members.modify : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+      "dispatch thunk of AppSandbox.ASBOwnerSet.members.getter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+      "dispatch thunk of AppSandbox.ASBOwnerSet.members.setter : Swift.Set<AppSandbox.ASBBinaryIdentity>",
+      "dispatch thunk of AppSandbox.ASBOwnerSet.serialize() -> Swift.String",
+      "dispatch thunk of AppSandbox.ASBBinaryIdentity.__allocating_init(validationCategory: AppSandbox.ValidationCategory, signingIdentifier: Swift.String?, teamIdentifier: Swift.String?) -> AppSandbox.ASBBinaryIdentity",
+      "dispatch thunk of AppSandbox.ASBBinaryIdentity.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBBinaryIdentity",
+      "dispatch thunk of AppSandbox.ASBBinaryIdentity.__allocating_init(coder: __C.NSCoder) -> AppSandbox.ASBBinaryIdentity?",
+      "dispatch thunk of AppSandbox.ASBBinaryIdentity.encode(to: Swift.Encoder) throws -> ()",
+      "dispatch thunk of AppSandbox.ASBBinaryIdentity.encode(with: __C.NSCoder) -> ()",
+      "dispatch thunk of static AppSandbox.ASBBinaryIdentity.identity(code: __C.SecStaticCodeRef) throws -> AppSandbox.ASBBinaryIdentity",
+      "dispatch thunk of static AppSandbox.ASBBinaryIdentity.identity(token: __C.audit_token_t) throws -> AppSandbox.ASBBinaryIdentity"
+    ],
+    "memory_buffer": [
+      "AppSandbox.ASBOwnerSet.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBOwnerSet",
+      "dispatch thunk of AppSandbox.ASBOwnerSet.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBOwnerSet",
+      "method descriptor for AppSandbox.ASBOwnerSet.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBOwnerSet",
+      "AppSandbox.ASBOwnerSet.__allocating_init() -> AppSandbox.ASBOwnerSet",
+      "AppSandbox.ASBOwnerSet.__deallocating_deinit",
+      "AppSandbox.ASBBinaryIdentity.__allocating_init(validationCategory: AppSandbox.ValidationCategory, signingIdentifier: Swift.String?, teamIdentifier: Swift.String?) -> AppSandbox.ASBBinaryIdentity",
+      "dispatch thunk of AppSandbox.ASBBinaryIdentity.__allocating_init(validationCategory: AppSandbox.ValidationCategory, signingIdentifier: Swift.String?, teamIdentifier: Swift.String?) -> AppSandbox.ASBBinaryIdentity",
+      "method descriptor for AppSandbox.ASBBinaryIdentity.__allocating_init(validationCategory: AppSandbox.ValidationCategory, signingIdentifier: Swift.String?, teamIdentifier: Swift.String?) -> AppSandbox.ASBBinaryIdentity",
+      "AppSandbox.ASBBinaryIdentity.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBBinaryIdentity",
+      "dispatch thunk of AppSandbox.ASBBinaryIdentity.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBBinaryIdentity",
+      "method descriptor for AppSandbox.ASBBinaryIdentity.__allocating_init(from: Swift.Decoder) throws -> AppSandbox.ASBBinaryIdentity",
+      "AppSandbox.ASBBinaryIdentity.__allocating_init(coder: __C.NSCoder) -> AppSandbox.ASBBinaryIdentity?",
+      "dispatch thunk of AppSandbox.ASBBinaryIdentity.__allocating_init(coder: __C.NSCoder) -> AppSandbox.ASBBinaryIdentity?",
+      "method descriptor for AppSandbox.ASBBinaryIdentity.__allocating_init(coder: __C.NSCoder) -> AppSandbox.ASBBinaryIdentity?",
+      "AppSandbox.ASBBinaryIdentity.__allocating_init(token: __C.audit_token_t) throws -> AppSandbox.ASBBinaryIdentity",
+      "AppSandbox.ASBBinaryIdentity.__allocating_init() -> AppSandbox.ASBBinaryIdentity",
+      "AppSandbox.ASBBinaryIdentity.__deallocating_deinit"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

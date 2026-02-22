@@ -1,0 +1,4901 @@
+{
+  "framework": "ColorSync",
+  "functions": {
+    "ColorSyncNxMGetOptions": {
+      "name": "ColorSyncNxMGetOptions",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncNxMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncNxMGetOptions(ColorSyncNxMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileGetID": {
+      "name": "ColorSyncProfileGetID",
+      "framework": "ColorSync",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ ColorSyncProfileGetID(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncMatrixGetTypeID",
+        "ColorSyncGetMainDisplayID",
+        "CGDisplayGetDisplayIDFromUUID",
+        "ColorSyncProfileGetTypeID",
+        "ColorSyncCMMGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncDisplayServicesUpdateProfiles": {
+      "name": "ColorSyncDisplayServicesUpdateProfiles",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncDisplayServicesUpdateProfiles(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncMatrixGetTypeID": {
+      "name": "ColorSyncMatrixGetTypeID",
+      "framework": "ColorSync",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncMatrixRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "linear_algebra"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ ColorSyncMatrixGetTypeID(ColorSyncMatrixRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileGetID",
+        "ColorSyncGetMainDisplayID",
+        "CGDisplayGetDisplayIDFromUUID",
+        "ColorSyncProfileGetTypeID",
+        "ColorSyncCMMGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncNxMGetFunction": {
+      "name": "ColorSyncNxMGetFunction",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncNxMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncNxMGetFunction(ColorSyncNxMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateFlexGTCLookupData": {
+      "name": "ColorSyncProfileCreateFlexGTCLookupData",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateFlexGTCLookupData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID",
+        "ColorSyncProfileCopyTag"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileSetParametricTRCTag": {
+      "name": "ColorSyncProfileSetParametricTRCTag",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileSetParametricTRCTag(ColorSyncProfileRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncDeviceCopyDeviceInfo": {
+      "name": "ColorSyncDeviceCopyDeviceInfo",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncDeviceRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "ColorSyncDeviceRef/*?*/ ColorSyncDeviceCopyDeviceInfo(ColorSyncDeviceRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncDeviceRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncDeviceCopyDeviceRegistrationInfo"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncPrivateAPIVersion": {
+      "name": "ColorSyncPrivateAPIVersion",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncPrivateAPIVersion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncGetMainDisplayID": {
+      "name": "ColorSyncGetMainDisplayID",
+      "framework": "ColorSync",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ ColorSyncGetMainDisplayID(ColorSyncRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileGetID",
+        "ColorSyncMatrixGetTypeID",
+        "CGDisplayGetDisplayIDFromUUID",
+        "ColorSyncProfileGetTypeID",
+        "ColorSyncCMMGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncMatrixGetProperties": {
+      "name": "ColorSyncMatrixGetProperties",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncMatrixRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "linear_algebra"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncMatrixGetProperties(ColorSyncMatrixRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncCMMCopyLocalizedName": {
+      "name": "ColorSyncCMMCopyLocalizedName",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncCMMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncCMMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "ColorSyncCMMRef/*?*/ ColorSyncCMMCopyLocalizedName(ColorSyncCMMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncCMMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncCMMCopyCMMIdentifier",
+        "ColorSyncCMMCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncCMMCopyCMMIdentifier": {
+      "name": "ColorSyncCMMCopyCMMIdentifier",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncCMMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncCMMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "ColorSyncCMMRef/*?*/ ColorSyncCMMCopyCMMIdentifier(ColorSyncCMMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncCMMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncCMMCopyLocalizedName",
+        "ColorSyncCMMCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCopyDescriptionString": {
+      "name": "ColorSyncProfileCopyDescriptionString",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef/*?*/ ColorSyncProfileCopyDescriptionString(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID",
+        "ColorSyncProfileCopyTag"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateWithURLAndOptions": {
+      "name": "ColorSyncProfileCreateWithURLAndOptions",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateWithURLAndOptions(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID",
+        "ColorSyncProfileCopyTag"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileIsHLGBased": {
+      "name": "ColorSyncProfileIsHLGBased",
+      "framework": "ColorSync",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ColorSyncProfileIsHLGBased(ColorSyncProfileRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGDisplayGetDisplayIDFromUUID": {
+      "name": "CGDisplayGetDisplayIDFromUUID",
+      "framework": "ColorSync",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CGDisplayRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CGDisplayGetDisplayIDFromUUID(CGDisplayRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileGetID",
+        "ColorSyncMatrixGetTypeID",
+        "ColorSyncGetMainDisplayID",
+        "ColorSyncProfileGetTypeID",
+        "ColorSyncCMMGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileFindMatchingSystemProfile": {
+      "name": "ColorSyncProfileFindMatchingSystemProfile",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileFindMatchingSystemProfile(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileIsPQBased": {
+      "name": "ColorSyncProfileIsPQBased",
+      "framework": "ColorSync",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ColorSyncProfileIsPQBased(ColorSyncProfileRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileGetMD5": {
+      "name": "ColorSyncProfileGetMD5",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncProfileGetMD5(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileUsesCoreVideoGamma": {
+      "name": "ColorSyncProfileUsesCoreVideoGamma",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileUsesCoreVideoGamma(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncMatrixGetOutputRange": {
+      "name": "ColorSyncMatrixGetOutputRange",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncMatrixRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "linear_algebra"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncMatrixGetOutputRange(ColorSyncMatrixRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileContainsSupportedCICP": {
+      "name": "ColorSyncProfileContainsSupportedCICP",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileContainsSupportedCICP(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCopyISO5Metadata": {
+      "name": "ColorSyncProfileCopyISO5Metadata",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef/*?*/ ColorSyncProfileCopyISO5Metadata(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCreateWithDisplayID",
+        "ColorSyncProfileCopyTag"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncNxMGetProperties": {
+      "name": "ColorSyncNxMGetProperties",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncNxMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncNxMGetProperties(ColorSyncNxMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileGetTypeID": {
+      "name": "ColorSyncProfileGetTypeID",
+      "framework": "ColorSync",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ ColorSyncProfileGetTypeID(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileGetID",
+        "ColorSyncMatrixGetTypeID",
+        "ColorSyncGetMainDisplayID",
+        "CGDisplayGetDisplayIDFromUUID",
+        "ColorSyncCMMGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileUsesSRGBGamma": {
+      "name": "ColorSyncProfileUsesSRGBGamma",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileUsesSRGBGamma(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTRCGetFunction": {
+      "name": "ColorSyncTRCGetFunction",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncTRCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncTRCGetFunction(ColorSyncTRCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTransformCreateWithName": {
+      "name": "ColorSyncTransformCreateWithName",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncTransformRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncTransformRef ColorSyncTransformCreateWithName(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncTransformRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncTransformCreate",
+        "ColorSyncTransformCopyProperty"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncCreateInputPoppyProfile": {
+      "name": "ColorSyncCreateInputPoppyProfile",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncRef ColorSyncCreateInputPoppyProfile(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncCreateUUIDFromUInt32",
+        "ColorSyncCreateOutputPoppyProfile",
+        "ColorSyncCreateGammaTablesFromVCGT",
+        "ColorSyncCreateSignatureFromFourCharCode",
+        "ColorSyncCreateOutputPoppyProfileForRGBData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateWithDisplayID": {
+      "name": "ColorSyncProfileCreateWithDisplayID",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateWithDisplayID(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCopyTag"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCopyTag": {
+      "name": "ColorSyncProfileCopyTag",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef/*?*/ ColorSyncProfileCopyTag(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTRCGetOptions": {
+      "name": "ColorSyncTRCGetOptions",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncTRCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncTRCGetOptions(ColorSyncTRCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncGetAdaptationMtx": {
+      "name": "ColorSyncGetAdaptationMtx",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncGetAdaptationMtx(ColorSyncRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileInstall": {
+      "name": "ColorSyncProfileInstall",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileInstall(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateWithURL": {
+      "name": "ColorSyncProfileCreateWithURL",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateWithURL(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCopyTagSignatures": {
+      "name": "ColorSyncProfileCopyTagSignatures",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef/*?*/ ColorSyncProfileCopyTagSignatures(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncIterateInstalledProfiles": {
+      "name": "ColorSyncIterateInstalledProfiles",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncIterateInstalledProfiles(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileGetYCCtoRGBMatrix": {
+      "name": "ColorSyncProfileGetYCCtoRGBMatrix",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "linear_algebra"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncProfileGetYCCtoRGBMatrix(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileUninstall": {
+      "name": "ColorSyncProfileUninstall",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileUninstall(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncCreateUUIDFromUInt32": {
+      "name": "ColorSyncCreateUUIDFromUInt32",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncRef ColorSyncCreateUUIDFromUInt32(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncCreateInputPoppyProfile",
+        "ColorSyncCreateOutputPoppyProfile",
+        "ColorSyncCreateGammaTablesFromVCGT",
+        "ColorSyncCreateSignatureFromFourCharCode",
+        "ColorSyncCreateOutputPoppyProfileForRGBData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncConvertDoubleXYZToD50": {
+      "name": "ColorSyncConvertDoubleXYZToD50",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncConvertDoubleXYZToD50(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncCreateOutputPoppyProfile": {
+      "name": "ColorSyncCreateOutputPoppyProfile",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncRef ColorSyncCreateOutputPoppyProfile(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncCreateInputPoppyProfile",
+        "ColorSyncCreateUUIDFromUInt32",
+        "ColorSyncCreateGammaTablesFromVCGT",
+        "ColorSyncCreateSignatureFromFourCharCode",
+        "ColorSyncCreateOutputPoppyProfileForRGBData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncGetDisplayTransferFormulaFromVCGT": {
+      "name": "ColorSyncGetDisplayTransferFormulaFromVCGT",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncGetDisplayTransferFormulaFromVCGT(ColorSyncRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncAPIVersion": {
+      "name": "ColorSyncAPIVersion",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncAPIVersion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileFromCMProfile": {
+      "name": "ColorSyncProfileFromCMProfile",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileFromCMProfile(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileWriteToFile": {
+      "name": "ColorSyncProfileWriteToFile",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileWriteToFile(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncPureGammaOriginalTRC": {
+      "name": "ColorSyncPureGammaOriginalTRC",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncPureGammaOriginalTRC(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncCreateGammaTablesFromVCGT": {
+      "name": "ColorSyncCreateGammaTablesFromVCGT",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncRef ColorSyncCreateGammaTablesFromVCGT(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncCreateInputPoppyProfile",
+        "ColorSyncCreateUUIDFromUInt32",
+        "ColorSyncCreateOutputPoppyProfile",
+        "ColorSyncCreateSignatureFromFourCharCode",
+        "ColorSyncCreateOutputPoppyProfileForRGBData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileGetData": {
+      "name": "ColorSyncProfileGetData",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncProfileGetData(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileGetRGBtoYCCMatrix": {
+      "name": "ColorSyncProfileGetRGBtoYCCMatrix",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "linear_algebra"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncProfileGetRGBtoYCCMatrix(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncMatrixGetOptions": {
+      "name": "ColorSyncMatrixGetOptions",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncMatrixRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "linear_algebra"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncMatrixGetOptions(ColorSyncMatrixRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncRegisterDevice": {
+      "name": "ColorSyncRegisterDevice",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncRegisterDevice(ColorSyncRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncCMMGetTypeID": {
+      "name": "ColorSyncCMMGetTypeID",
+      "framework": "ColorSync",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncCMMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ ColorSyncCMMGetTypeID(ColorSyncCMMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileGetID",
+        "ColorSyncMatrixGetTypeID",
+        "ColorSyncGetMainDisplayID",
+        "CGDisplayGetDisplayIDFromUUID",
+        "ColorSyncProfileGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCopyLocalizedStringDictionary": {
+      "name": "ColorSyncProfileCopyLocalizedStringDictionary",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef/*?*/ ColorSyncProfileCopyLocalizedStringDictionary(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTransformCreate": {
+      "name": "ColorSyncTransformCreate",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncTransformRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncTransformRef ColorSyncTransformCreate(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncTransformRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncTransformCreateWithName",
+        "ColorSyncTransformCopyProperty"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCopyFlexGTCInfo": {
+      "name": "ColorSyncProfileCopyFlexGTCInfo",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef/*?*/ ColorSyncProfileCopyFlexGTCInfo(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncMakeProfile": {
+      "name": "ColorSyncMakeProfile",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncMakeProfile(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTRCGetOutputRange": {
+      "name": "ColorSyncTRCGetOutputRange",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncTRCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncTRCGetOutputRange(ColorSyncTRCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncDeviceCopyDeviceRegistrationInfo": {
+      "name": "ColorSyncDeviceCopyDeviceRegistrationInfo",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncDeviceRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "ColorSyncDeviceRef/*?*/ ColorSyncDeviceCopyDeviceRegistrationInfo(ColorSyncDeviceRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncDeviceRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncDeviceCopyDeviceInfo"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTRCGetProperties": {
+      "name": "ColorSyncTRCGetProperties",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncTRCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncTRCGetProperties(ColorSyncTRCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateLink": {
+      "name": "ColorSyncProfileCreateLink",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateLink(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncUnregisterDevice": {
+      "name": "ColorSyncUnregisterDevice",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncUnregisterDevice(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncNxMGetOutputRange": {
+      "name": "ColorSyncNxMGetOutputRange",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncNxMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncNxMGetOutputRange(ColorSyncNxMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncIterateInstalledCMMs": {
+      "name": "ColorSyncIterateInstalledCMMs",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncIterateInstalledCMMs(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTransformSetProperty": {
+      "name": "ColorSyncTransformSetProperty",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncTransformRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncTransformSetProperty(ColorSyncTransformRef *ref, void * *value)",
+      "verb": "transform",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileContainsTag": {
+      "name": "ColorSyncProfileContainsTag",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileContainsTag(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTransformGetSrcComponentCount": {
+      "name": "ColorSyncTransformGetSrcComponentCount",
+      "framework": "ColorSync",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncTransformRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ ColorSyncTransformGetSrcComponentCount(ColorSyncTransformRef *ref)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileGetTagCount",
+        "ColorSyncTransformGetDstComponentCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncGetFourCharCodeFromSignature": {
+      "name": "ColorSyncGetFourCharCodeFromSignature",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncGetFourCharCodeFromSignature(ColorSyncRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileSetDescriptionTag": {
+      "name": "ColorSyncProfileSetDescriptionTag",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileSetDescriptionTag(ColorSyncProfileRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileSetHeader": {
+      "name": "ColorSyncProfileSetHeader",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileSetHeader(ColorSyncProfileRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGDisplayCreateUUIDFromDisplayID": {
+      "name": "CGDisplayCreateUUIDFromDisplayID",
+      "framework": "ColorSync",
+      "return_type": "CGDisplayRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CGDisplayRef CGDisplayCreateUUIDFromDisplayID(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CGDisplayRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateDisplayTransferTablesFromVCGT": {
+      "name": "ColorSyncProfileCreateDisplayTransferTablesFromVCGT",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateDisplayTransferTablesFromVCGT(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTransformDumpStepsToFile": {
+      "name": "ColorSyncTransformDumpStepsToFile",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncTransformDumpStepsToFile(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTransformGetTypeID": {
+      "name": "ColorSyncTransformGetTypeID",
+      "framework": "ColorSync",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncTransformRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ ColorSyncTransformGetTypeID(ColorSyncTransformRef *ref)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileGetID",
+        "ColorSyncMatrixGetTypeID",
+        "ColorSyncGetMainDisplayID",
+        "CGDisplayGetDisplayIDFromUUID",
+        "ColorSyncProfileGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileIsMatrixBased": {
+      "name": "ColorSyncProfileIsMatrixBased",
+      "framework": "ColorSync",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "linear_algebra"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ColorSyncProfileIsMatrixBased(ColorSyncProfileRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncNxMGetVersion": {
+      "name": "ColorSyncNxMGetVersion",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncNxMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncNxMGetVersion(ColorSyncNxMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileGetLuminanceCoefficients": {
+      "name": "ColorSyncProfileGetLuminanceCoefficients",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncProfileGetLuminanceCoefficients(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileProducesMatrixTransform": {
+      "name": "ColorSyncProfileProducesMatrixTransform",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileProducesMatrixTransform(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncCodeFragmentGetMD5": {
+      "name": "ColorSyncCodeFragmentGetMD5",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncCodeFragmentRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncCodeFragmentGetMD5(ColorSyncCodeFragmentRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCopyLocalizedDescriptionString": {
+      "name": "ColorSyncProfileCopyLocalizedDescriptionString",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef/*?*/ ColorSyncProfileCopyLocalizedDescriptionString(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateWithID": {
+      "name": "ColorSyncProfileCreateWithID",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateWithID(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncIterateDeviceProfiles": {
+      "name": "ColorSyncIterateDeviceProfiles",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncIterateDeviceProfiles(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncIterateInstalledProfilesWithOptions": {
+      "name": "ColorSyncIterateInstalledProfilesWithOptions",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncIterateInstalledProfilesWithOptions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileSetTag": {
+      "name": "ColorSyncProfileSetTag",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileSetTag(ColorSyncProfileRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileVerify": {
+      "name": "ColorSyncProfileVerify",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileVerify(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncConvertDoubleXYZFromD50": {
+      "name": "ColorSyncConvertDoubleXYZFromD50",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncConvertDoubleXYZFromD50(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTRCGetGammaID": {
+      "name": "ColorSyncTRCGetGammaID",
+      "framework": "ColorSync",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncTRCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ ColorSyncTRCGetGammaID(ColorSyncTRCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileGetID",
+        "ColorSyncMatrixGetTypeID",
+        "ColorSyncGetMainDisplayID",
+        "CGDisplayGetDisplayIDFromUUID",
+        "ColorSyncProfileGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateCopyWithFlexGTC": {
+      "name": "ColorSyncProfileCreateCopyWithFlexGTC",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateCopyWithFlexGTC(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncDeviceSetCustomProfiles": {
+      "name": "ColorSyncDeviceSetCustomProfiles",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncDeviceRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncDeviceSetCustomProfiles(ColorSyncDeviceRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncMatrixGetFunction": {
+      "name": "ColorSyncMatrixGetFunction",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncMatrixRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "linear_algebra"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncMatrixGetFunction(ColorSyncMatrixRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncNxMGetTypeID": {
+      "name": "ColorSyncNxMGetTypeID",
+      "framework": "ColorSync",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncNxMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ ColorSyncNxMGetTypeID(ColorSyncNxMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileGetID",
+        "ColorSyncMatrixGetTypeID",
+        "ColorSyncGetMainDisplayID",
+        "CGDisplayGetDisplayIDFromUUID",
+        "ColorSyncProfileGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateImmutableCopy": {
+      "name": "ColorSyncProfileCreateImmutableCopy",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateImmutableCopy(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTransformGetProfileSequence": {
+      "name": "ColorSyncTransformGetProfileSequence",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncTransformRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncTransformGetProfileSequence(ColorSyncTransformRef *ref)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateWithName": {
+      "name": "ColorSyncProfileCreateWithName",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateWithName(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileGetCICPInfo": {
+      "name": "ColorSyncProfileGetCICPInfo",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncProfileGetCICPInfo(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileEstimateGammaWithDisplayID": {
+      "name": "ColorSyncProfileEstimateGammaWithDisplayID",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileEstimateGammaWithDisplayID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncCreateSignatureFromFourCharCode": {
+      "name": "ColorSyncCreateSignatureFromFourCharCode",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncRef ColorSyncCreateSignatureFromFourCharCode(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncCreateInputPoppyProfile",
+        "ColorSyncCreateUUIDFromUInt32",
+        "ColorSyncCreateOutputPoppyProfile",
+        "ColorSyncCreateGammaTablesFromVCGT",
+        "ColorSyncCreateOutputPoppyProfileForRGBData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileIsWideGamut": {
+      "name": "ColorSyncProfileIsWideGamut",
+      "framework": "ColorSync",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ColorSyncProfileIsWideGamut(ColorSyncProfileRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateMutable": {
+      "name": "ColorSyncProfileCreateMutable",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateMutable(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateCopyWithLUTBasedLumaScaling": {
+      "name": "ColorSyncProfileCreateCopyWithLUTBasedLumaScaling",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateCopyWithLUTBasedLumaScaling(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTransformConvertPlanar": {
+      "name": "ColorSyncTransformConvertPlanar",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncTransformConvertPlanar(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CMProfileFromColorSyncProfile": {
+      "name": "CMProfileFromColorSyncProfile",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ CMProfileFromColorSyncProfile(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileGetDisplayTransferFormulaFromVCGT": {
+      "name": "ColorSyncProfileGetDisplayTransferFormulaFromVCGT",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncProfileGetDisplayTransferFormulaFromVCGT(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncEvaluateConstrainedHeadroomForReferenceWhiteToneMapping": {
+      "name": "ColorSyncEvaluateConstrainedHeadroomForReferenceWhiteToneMapping",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncEvaluateConstrainedHeadroomForReferenceWhiteToneMapping(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCopyData": {
+      "name": "ColorSyncProfileCopyData",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef/*?*/ ColorSyncProfileCopyData(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreate": {
+      "name": "ColorSyncProfileCreate",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTransformCopyProperty": {
+      "name": "ColorSyncTransformCopyProperty",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncTransformRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncTransformRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "ColorSyncTransformRef/*?*/ ColorSyncTransformCopyProperty(ColorSyncTransformRef *ref)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncTransformRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncTransformCreateWithName",
+        "ColorSyncTransformCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCopyASCIIDescriptionString": {
+      "name": "ColorSyncProfileCopyASCIIDescriptionString",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef/*?*/ ColorSyncProfileCopyASCIIDescriptionString(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncMatrixGetInputRange": {
+      "name": "ColorSyncMatrixGetInputRange",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncMatrixRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "linear_algebra"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncMatrixGetInputRange(ColorSyncMatrixRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateLegacy2DisplayP3": {
+      "name": "ColorSyncProfileCreateLegacy2DisplayP3",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateLegacy2DisplayP3(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileEstimateGamma": {
+      "name": "ColorSyncProfileEstimateGamma",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileEstimateGamma(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncCreateOutputPoppyProfileForRGBData": {
+      "name": "ColorSyncCreateOutputPoppyProfileForRGBData",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncRef ColorSyncCreateOutputPoppyProfileForRGBData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncCreateInputPoppyProfile",
+        "ColorSyncCreateUUIDFromUInt32",
+        "ColorSyncCreateOutputPoppyProfile",
+        "ColorSyncCreateGammaTablesFromVCGT",
+        "ColorSyncCreateSignatureFromFourCharCode"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncDataCanBeIgnoredOnSRGBDevice": {
+      "name": "ColorSyncDataCanBeIgnoredOnSRGBDevice",
+      "framework": "ColorSync",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncDataRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ColorSyncDataCanBeIgnoredOnSRGBDevice(ColorSyncDataRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncCreateCodeFragment": {
+      "name": "ColorSyncCreateCodeFragment",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncRef ColorSyncCreateCodeFragment(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncCreateInputPoppyProfile",
+        "ColorSyncCreateUUIDFromUInt32",
+        "ColorSyncCreateOutputPoppyProfile",
+        "ColorSyncCreateGammaTablesFromVCGT",
+        "ColorSyncCreateSignatureFromFourCharCode"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncNxMGetInputRange": {
+      "name": "ColorSyncNxMGetInputRange",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncNxMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncNxMGetInputRange(ColorSyncNxMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTRCGetInputRange": {
+      "name": "ColorSyncTRCGetInputRange",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncTRCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncTRCGetInputRange(ColorSyncTRCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTransformShowSteps": {
+      "name": "ColorSyncTransformShowSteps",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncTransformShowSteps(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateDeviceProfile": {
+      "name": "ColorSyncProfileCreateDeviceProfile",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateDeviceProfile(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncConvertXYZToXYZWithChromaticAdaptationMatrix": {
+      "name": "ColorSyncConvertXYZToXYZWithChromaticAdaptationMatrix",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncConvertXYZToXYZWithChromaticAdaptationMatrix(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateWithURLWithoutSubstitution": {
+      "name": "ColorSyncProfileCreateWithURLWithoutSubstitution",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateWithURLWithoutSubstitution(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncSwapProfileHeader": {
+      "name": "ColorSyncSwapProfileHeader",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncSwapProfileHeader(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileGetURL": {
+      "name": "ColorSyncProfileGetURL",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncProfileGetURL(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncCreateCodeFragmentPriv": {
+      "name": "ColorSyncCreateCodeFragmentPriv",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncRef ColorSyncCreateCodeFragmentPriv(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncCreateInputPoppyProfile",
+        "ColorSyncCreateUUIDFromUInt32",
+        "ColorSyncCreateOutputPoppyProfile",
+        "ColorSyncCreateGammaTablesFromVCGT",
+        "ColorSyncCreateSignatureFromFourCharCode"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncCMMGetBundle": {
+      "name": "ColorSyncCMMGetBundle",
+      "framework": "ColorSync",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncCMMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ColorSyncCMMGetBundle(ColorSyncCMMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileStreamPS2Definition": {
+      "name": "ColorSyncProfileStreamPS2Definition",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileStreamPS2Definition(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCopyHeader": {
+      "name": "ColorSyncProfileCopyHeader",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef/*?*/ ColorSyncProfileCopyHeader(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTRCGetTypeID": {
+      "name": "ColorSyncTRCGetTypeID",
+      "framework": "ColorSync",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncTRCRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ ColorSyncTRCGetTypeID(ColorSyncTRCRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileGetID",
+        "ColorSyncMatrixGetTypeID",
+        "ColorSyncGetMainDisplayID",
+        "CGDisplayGetDisplayIDFromUUID",
+        "ColorSyncProfileGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateMutableCopy": {
+      "name": "ColorSyncProfileCreateMutableCopy",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateMutableCopy(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileGetTagCount": {
+      "name": "ColorSyncProfileGetTagCount",
+      "framework": "ColorSync",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ ColorSyncProfileGetTagCount(ColorSyncProfileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncTransformGetSrcComponentCount",
+        "ColorSyncTransformGetDstComponentCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileRemoveTag": {
+      "name": "ColorSyncProfileRemoveTag",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileRemoveTag(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTransformConvert": {
+      "name": "ColorSyncTransformConvert",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncTransformConvert(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncGetUInt32FromUUID": {
+      "name": "ColorSyncGetUInt32FromUUID",
+      "framework": "ColorSync",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ ColorSyncGetUInt32FromUUID(ColorSyncRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileGetID",
+        "ColorSyncMatrixGetTypeID",
+        "ColorSyncGetMainDisplayID",
+        "CGDisplayGetDisplayIDFromUUID",
+        "ColorSyncProfileGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTransformGetDstComponentCount": {
+      "name": "ColorSyncTransformGetDstComponentCount",
+      "framework": "ColorSync",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncTransformRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ ColorSyncTransformGetDstComponentCount(ColorSyncTransformRef *ref)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncTransformGetSrcComponentCount",
+        "ColorSyncProfileGetTagCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateWithAdaptiveSoftClipCurve": {
+      "name": "ColorSyncProfileCreateWithAdaptiveSoftClipCurve",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateWithAdaptiveSoftClipCurve(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateLegacyDisplayP3": {
+      "name": "ColorSyncProfileCreateLegacyDisplayP3",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateLegacyDisplayP3(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncTransformIterate": {
+      "name": "ColorSyncTransformIterate",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncTransformIterate(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileUsesITU_R709OETF": {
+      "name": "ColorSyncProfileUsesITU_R709OETF",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileUsesITU_R709OETF(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncCMMCreate": {
+      "name": "ColorSyncCMMCreate",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncCMMRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncCMMRef ColorSyncCMMCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncCMMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncCMMCopyLocalizedName",
+        "ColorSyncCMMCopyCMMIdentifier"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateSanitizedCopy": {
+      "name": "ColorSyncProfileCreateSanitizedCopy",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateSanitizedCopy(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileCreateCopyWithISO5Metadata": {
+      "name": "ColorSyncProfileCreateCopyWithISO5Metadata",
+      "framework": "ColorSync",
+      "return_type": "ColorSyncProfileRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ColorSyncProfileRef ColorSyncProfileCreateCopyWithISO5Metadata(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ColorSyncProfileRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ColorSyncProfileCreateFlexGTCLookupData",
+        "ColorSyncProfileCopyDescriptionString",
+        "ColorSyncProfileCreateWithURLAndOptions",
+        "ColorSyncProfileCopyISO5Metadata",
+        "ColorSyncProfileCreateWithDisplayID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ColorSyncProfileSetLocalizedStringDictionary": {
+      "name": "ColorSyncProfileSetLocalizedStringDictionary",
+      "framework": "ColorSync",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ColorSyncProfileRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "const char *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ColorSync"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ ColorSyncProfileSetLocalizedStringDictionary(ColorSyncProfileRef *ref, const char * *value)",
+      "verb": "write",
+      "input_formats": [
+        "const char * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "gpu_compute": [
+      "ColorSyncProfileStreamPS2Definition",
+      "ColorSyncTransformDumpStepsToFile"
+    ],
+    "video_processing": [
+      "ColorSyncProfileUsesCoreVideoGamma"
+    ],
+    "display_compositing": [
+      "CGDisplayCreateUUIDFromDisplayID",
+      "CGDisplayGetDisplayIDFromUUID",
+      "ColorSyncDisplayServicesUpdateProfiles",
+      "ColorSyncGetDisplayTransferFormulaFromVCGT",
+      "ColorSyncGetMainDisplayID",
+      "ColorSyncProfileCreateDisplayTransferTablesFromVCGT",
+      "ColorSyncProfileCreateLegacy2DisplayP3",
+      "ColorSyncProfileCreateLegacyDisplayP3",
+      "ColorSyncProfileCreateWithDisplayID",
+      "ColorSyncProfileEstimateGammaWithDisplayID",
+      "ColorSyncProfileGetDisplayTransferFormulaFromVCGT"
+    ],
+    "linear_algebra": [
+      "ColorSyncConvertXYZToXYZWithChromaticAdaptationMatrix",
+      "ColorSyncMatrixGetFunction",
+      "ColorSyncMatrixGetInputRange",
+      "ColorSyncMatrixGetOptions",
+      "ColorSyncMatrixGetOutputRange",
+      "ColorSyncMatrixGetProperties",
+      "ColorSyncMatrixGetTypeID",
+      "ColorSyncProfileGetRGBtoYCCMatrix",
+      "ColorSyncProfileGetYCCtoRGBMatrix",
+      "ColorSyncProfileIsMatrixBased",
+      "ColorSyncProfileProducesMatrixTransform"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

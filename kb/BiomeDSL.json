@@ -1,0 +1,169 @@
+{
+  "framework": "BiomeDSL",
+  "functions": {
+    "BMDSLValidateDictionary": {
+      "name": "BMDSLValidateDictionary",
+      "framework": "BiomeDSL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeDSL"
+        }
+      ],
+      "signature": "void/*?*/ BMDSLValidateDictionary(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BiomeDSLVersionNumber": {
+      "name": "BiomeDSLVersionNumber",
+      "framework": "BiomeDSL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeDSL"
+        }
+      ],
+      "signature": "void/*?*/ BiomeDSLVersionNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BMDSLValueForKeyPath": {
+      "name": "BMDSLValueForKeyPath",
+      "framework": "BiomeDSL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeDSL"
+        }
+      ],
+      "signature": "void/*?*/ BMDSLValueForKeyPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BMDSLRegisterJSONTransformerNameFromEncodingDescriptor": {
+      "name": "BMDSLRegisterJSONTransformerNameFromEncodingDescriptor",
+      "framework": "BiomeDSL",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BMDSLRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeDSL"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ BMDSLRegisterJSONTransformerNameFromEncodingDescriptor(BMDSLRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BiomeDSLVersionString": {
+      "name": "BiomeDSLVersionString",
+      "framework": "BiomeDSL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeDSL"
+        }
+      ],
+      "signature": "void/*?*/ BiomeDSLVersionString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BMDSLJSONTransformerNameFromEncodingDescriptor": {
+      "name": "BMDSLJSONTransformerNameFromEncodingDescriptor",
+      "framework": "BiomeDSL",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeDSL"
+        }
+      ],
+      "signature": "void/*?*/ BMDSLJSONTransformerNameFromEncodingDescriptor(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {},
+  "protocols": [],
+  "type_aliases": {}
+}

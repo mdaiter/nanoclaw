@@ -1,0 +1,2243 @@
+{
+  "framework": "Symbolication",
+  "functions": {
+    "VMUPlatformNameForTask": {
+      "name": "VMUPlatformNameForTask",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUPlatformNameForTask(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMULiteZoneIndex": {
+      "name": "VMULiteZoneIndex",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMULiteZoneIndex(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMURangeDescription": {
+      "name": "VMURangeDescription",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMURangeDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMURegionTypeDescriptionForTagShareProtAndPager": {
+      "name": "VMURegionTypeDescriptionForTagShareProtAndPager",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMURegionTypeDescriptionForTagShareProtAndPager(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUIsOwningReference": {
+      "name": "VMUIsOwningReference",
+      "framework": "Symbolication",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VMURef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool VMUIsOwningReference(VMURef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "task_peek_string": {
+      "name": "task_peek_string",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ task_peek_string(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUIntersectionRange": {
+      "name": "VMUIntersectionRange",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUIntersectionRange(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMURangeContainsRange": {
+      "name": "VMURangeContainsRange",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMURangeContainsRange(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "task_get_malloc_ptrs": {
+      "name": "task_get_malloc_ptrs",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ task_get_malloc_ptrs(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUunusedSharedLibDataLabel": {
+      "name": "VMUunusedSharedLibDataLabel",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUunusedSharedLibDataLabel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUmappedFileLabel": {
+      "name": "VMUmappedFileLabel",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUmappedFileLabel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "vmu_enumerate_backtrace_uniquing_table": {
+      "name": "vmu_enumerate_backtrace_uniquing_table",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ vmu_enumerate_backtrace_uniquing_table(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "vmu_enter_ptrSized_stack_in_backtrace_uniquing_table": {
+      "name": "vmu_enter_ptrSized_stack_in_backtrace_uniquing_table",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ vmu_enter_ptrSized_stack_in_backtrace_uniquing_table(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_VMUEnumerateMarkedObjects": {
+      "name": "_VMUEnumerateMarkedObjects",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ _VMUEnumerateMarkedObjects(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUVMRegionShareModeName": {
+      "name": "VMUVMRegionShareModeName",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUVMRegionShareModeName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUMarkObject": {
+      "name": "VMUMarkObject",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUMarkObject(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMURegisterNameForIndex": {
+      "name": "VMURegisterNameForIndex",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VMURef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ VMURegisterNameForIndex(VMURef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "VMUOptionParserRegisterFlagInternal",
+        "VMUOptionParserRegisterFlag"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "vmu_remove_stack_from_backtrace_uniquing_table": {
+      "name": "vmu_remove_stack_from_backtrace_uniquing_table",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ vmu_remove_stack_from_backtrace_uniquing_table(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "task_foreach_malloc_zone": {
+      "name": "task_foreach_malloc_zone",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ task_foreach_malloc_zone(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUProcessIsAnalyzable": {
+      "name": "VMUProcessIsAnalyzable",
+      "framework": "Symbolication",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VMUProcessRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool VMUProcessIsAnalyzable(VMUProcessRef *ref)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUSimplifyCPlusPlusSymbolName": {
+      "name": "VMUSimplifyCPlusPlusSymbolName",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUSimplifyCPlusPlusSymbolName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "vmu_enter_stack_in_backtrace_uniquing_table": {
+      "name": "vmu_enter_stack_in_backtrace_uniquing_table",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ vmu_enter_stack_in_backtrace_uniquing_table(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "vmu_stack_frames_for_uniqued_stack": {
+      "name": "vmu_stack_frames_for_uniqued_stack",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ vmu_stack_frames_for_uniqued_stack(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUOptionParserRegisterFlagInternal": {
+      "name": "VMUOptionParserRegisterFlagInternal",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VMUOptionParserRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ VMUOptionParserRegisterFlagInternal(VMUOptionParserRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "VMURegisterNameForIndex",
+        "VMUOptionParserRegisterFlag"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in Symbolication):__C.VMUAttributeGraphTypeIdentifier.init() -> __C.VMUAttributeGraphTypeIdentifier": {
+      "name": "(extension in Symbolication):__C.VMUAttributeGraphTypeIdentifier.init() -> __C.VMUAttributeGraphTypeIdentifier",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ (extension in Symbolication):__C.VMUAttributeGraphTypeIdentifier.init() -> __C.VMUAttributeGraphTypeIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in Symbolication):__C.VMUAttributeGraphRegionIdentifier.init() -> __C.VMUAttributeGraphRegionIdentifier": {
+      "name": "(extension in Symbolication):__C.VMUAttributeGraphRegionIdentifier.init() -> __C.VMUAttributeGraphRegionIdentifier",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ (extension in Symbolication):__C.VMUAttributeGraphRegionIdentifier.init() -> __C.VMUAttributeGraphRegionIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUGetFlagsForAllVMRegionStatistics": {
+      "name": "VMUGetFlagsForAllVMRegionStatistics",
+      "framework": "Symbolication",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VMURef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ VMUGetFlagsForAllVMRegionStatistics(VMURef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUmallocMetadataLabel": {
+      "name": "VMUmallocMetadataLabel",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUmallocMetadataLabel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "pidFromHint": {
+      "name": "pidFromHint",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ pidFromHint(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "task_get_malloc_ptrs_by_zone": {
+      "name": "task_get_malloc_ptrs_by_zone",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ task_get_malloc_ptrs_by_zone(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUGraphNodeTypeDescription": {
+      "name": "VMUGraphNodeTypeDescription",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUGraphNodeTypeDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUDirectedGraphCompatibilityVersionNumberInGraphKey": {
+      "name": "VMUDirectedGraphCompatibilityVersionNumberInGraphKey",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUDirectedGraphCompatibilityVersionNumberInGraphKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUBacktraceIsExcludedMarker": {
+      "name": "VMUBacktraceIsExcludedMarker",
+      "framework": "Symbolication",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VMUBacktraceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool VMUBacktraceIsExcludedMarker(VMUBacktraceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUPurgeableDisplayCharacter": {
+      "name": "VMUPurgeableDisplayCharacter",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUPurgeableDisplayCharacter(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "task_stop_peeking": {
+      "name": "task_stop_peeking",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ task_stop_peeking(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUOptionParserError": {
+      "name": "VMUOptionParserError",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUOptionParserError(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "vmu_destroy_backtrace_uniquing_table": {
+      "name": "vmu_destroy_backtrace_uniquing_table",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ vmu_destroy_backtrace_uniquing_table(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUmallocOtherRegionLabel": {
+      "name": "VMUmallocOtherRegionLabel",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUmallocOtherRegionLabel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUTask_foreach_malloc_zone": {
+      "name": "VMUTask_foreach_malloc_zone",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUTask_foreach_malloc_zone(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUEnumerateVMAnnotatedMallocObjectsWithBlock": {
+      "name": "VMUEnumerateVMAnnotatedMallocObjectsWithBlock",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUEnumerateVMAnnotatedMallocObjectsWithBlock(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUPlatformNameForPlatform": {
+      "name": "VMUPlatformNameForPlatform",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUPlatformNameForPlatform(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUMemorySizeString": {
+      "name": "VMUMemorySizeString",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUMemorySizeString(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "task_read_ptr_at": {
+      "name": "task_read_ptr_at",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ task_read_ptr_at(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUScanTypeScanDescription": {
+      "name": "VMUScanTypeScanDescription",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUScanTypeScanDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUUnionRange": {
+      "name": "VMUUnionRange",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUUnionRange(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMURangeIntersectsRange": {
+      "name": "VMURangeIntersectsRange",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMURangeIntersectsRange(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUGraphNodeType_IsVMRegion": {
+      "name": "VMUGraphNodeType_IsVMRegion",
+      "framework": "Symbolication",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VMUGraphNodeType_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool VMUGraphNodeType_IsVMRegion(VMUGraphNodeType_Ref *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUCreateRootNodeMarkingMap": {
+      "name": "VMUCreateRootNodeMarkingMap",
+      "framework": "Symbolication",
+      "return_type": "VMURef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "VMURef VMUCreateRootNodeMarkingMap(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "VMURef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUScanTypeAsString": {
+      "name": "VMUScanTypeAsString",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUScanTypeAsString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUScanningMaskForAllReferences": {
+      "name": "VMUScanningMaskForAllReferences",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUScanningMaskForAllReferences(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispositionDescription": {
+      "name": "dispositionDescription",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ dispositionDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUMallocRangeTypeString": {
+      "name": "VMUMallocRangeTypeString",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUMallocRangeTypeString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "task_enumerate_malloc_blocks": {
+      "name": "task_enumerate_malloc_blocks",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ task_enumerate_malloc_blocks(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "task_start_peeking": {
+      "name": "task_start_peeking",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ task_start_peeking(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUOptionParserRegisterFlag": {
+      "name": "VMUOptionParserRegisterFlag",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VMUOptionParserRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ VMUOptionParserRegisterFlag(VMUOptionParserRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "VMURegisterNameForIndex",
+        "VMUOptionParserRegisterFlagInternal"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUCallMallocEnumeratorWithAttributeGraphWorkaround": {
+      "name": "VMUCallMallocEnumeratorWithAttributeGraphWorkaround",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUCallMallocEnumeratorWithAttributeGraphWorkaround(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUDirectedGraphToolCompatibilityVersionKey": {
+      "name": "VMUDirectedGraphToolCompatibilityVersionKey",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUDirectedGraphToolCompatibilityVersionKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUGraphNodeIsRoot": {
+      "name": "VMUGraphNodeIsRoot",
+      "framework": "Symbolication",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VMUGraphNodeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool VMUGraphNodeIsRoot(VMUGraphNodeRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUunusedSharedLibLabelOrPathPrefix": {
+      "name": "VMUunusedSharedLibLabelOrPathPrefix",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUunusedSharedLibLabelOrPathPrefix(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUScanTypeKeywordDescription": {
+      "name": "VMUScanTypeKeywordDescription",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUScanTypeKeywordDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUOAHRuntimeLocation": {
+      "name": "VMUOAHRuntimeLocation",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUOAHRuntimeLocation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUScanningMaskForOwningReferences": {
+      "name": "VMUScanningMaskForOwningReferences",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUScanningMaskForOwningReferences(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUunusedSharedLibLabelPrefix": {
+      "name": "VMUunusedSharedLibLabelPrefix",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUunusedSharedLibLabelPrefix(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "task_peek": {
+      "name": "task_peek",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ task_peek(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "task_try_peek": {
+      "name": "task_try_peek",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ task_try_peek(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "task_peek_natural_size": {
+      "name": "task_peek_natural_size",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ task_peek_natural_size(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "task_read_unsigned_at": {
+      "name": "task_read_unsigned_at",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ task_read_unsigned_at(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "vmu_create_backtrace_uniquing_table": {
+      "name": "vmu_create_backtrace_uniquing_table",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ vmu_create_backtrace_uniquing_table(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUEnumerateMallocBlocksInZone": {
+      "name": "VMUEnumerateMallocBlocksInZone",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUEnumerateMallocBlocksInZone(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "vmu_print_backtrace_uniquing_table": {
+      "name": "vmu_print_backtrace_uniquing_table",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ vmu_print_backtrace_uniquing_table(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUGraphNodeType_IsRoot": {
+      "name": "VMUGraphNodeType_IsRoot",
+      "framework": "Symbolication",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VMUGraphNodeType_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool VMUGraphNodeType_IsRoot(VMUGraphNodeType_Ref *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUWithRootNodeMarkingMap": {
+      "name": "VMUWithRootNodeMarkingMap",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUWithRootNodeMarkingMap(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "vmu_context_for_uniqued_stack": {
+      "name": "vmu_context_for_uniqued_stack",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ vmu_context_for_uniqued_stack(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "psName": {
+      "name": "psName",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ psName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "withPeekFunctionForVMUTask": {
+      "name": "withPeekFunctionForVMUTask",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ withPeekFunctionForVMUTask(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMURangeIntersectsOrAbutsRange": {
+      "name": "VMURangeIntersectsOrAbutsRange",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMURangeIntersectsOrAbutsRange(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUGraphNodeType_IsAddressValid": {
+      "name": "VMUGraphNodeType_IsAddressValid",
+      "framework": "Symbolication",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VMUGraphNodeType_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool VMUGraphNodeType_IsAddressValid(VMUGraphNodeType_Ref *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUunusedSharedLibTextLabel": {
+      "name": "VMUunusedSharedLibTextLabel",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUunusedSharedLibTextLabel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "vmu_ptrSized_stack_frames_for_uniqued_stack": {
+      "name": "vmu_ptrSized_stack_frames_for_uniqued_stack",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ vmu_ptrSized_stack_frames_for_uniqued_stack(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUSortIndexForLibraryPath": {
+      "name": "VMUSortIndexForLibraryPath",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUSortIndexForLibraryPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUSanitizePath": {
+      "name": "VMUSanitizePath",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUSanitizePath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUExclaveOrDarwinRegionTypeDescriptionForTagShareProtAndPager": {
+      "name": "VMUExclaveOrDarwinRegionTypeDescriptionForTagShareProtAndPager",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUExclaveOrDarwinRegionTypeDescriptionForTagShareProtAndPager(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUuntaggedRegionLabel": {
+      "name": "VMUuntaggedRegionLabel",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUuntaggedRegionLabel(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUGraphNodeIsSpecialMallocNode": {
+      "name": "VMUGraphNodeIsSpecialMallocNode",
+      "framework": "Symbolication",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "VMUGraphNodeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool VMUGraphNodeIsSpecialMallocNode(VMUGraphNodeRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "VMUPlatformForTask": {
+      "name": "VMUPlatformForTask",
+      "framework": "Symbolication",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Symbolication"
+        }
+      ],
+      "signature": "void/*?*/ VMUPlatformForTask(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "memory_buffer": [
+      "VMUCallMallocEnumeratorWithAttributeGraphWorkaround",
+      "VMUEnumerateMallocBlocksInZone",
+      "VMUEnumerateVMAnnotatedMallocObjectsWithBlock",
+      "VMUGraphNodeIsSpecialMallocNode",
+      "VMUMallocRangeTypeString",
+      "VMUMemorySizeString",
+      "VMUTask_foreach_malloc_zone",
+      "VMUmallocMetadataLabel",
+      "VMUmallocOtherRegionLabel",
+      "task_enumerate_malloc_blocks",
+      "task_foreach_malloc_zone",
+      "task_get_malloc_ptrs",
+      "task_get_malloc_ptrs_by_zone"
+    ],
+    "cryptography": [
+      "VMUExclaveOrDarwinRegionTypeDescriptionForTagShareProtAndPager",
+      "VMURegionTypeDescriptionForTagShareProtAndPager",
+      "VMUVMRegionShareModeName",
+      "VMUunusedSharedLibDataLabel",
+      "VMUunusedSharedLibLabelOrPathPrefix",
+      "VMUunusedSharedLibLabelPrefix",
+      "VMUunusedSharedLibTextLabel"
+    ],
+    "video_processing": [
+      "vmu_ptrSized_stack_frames_for_uniqued_stack",
+      "vmu_stack_frames_for_uniqued_stack"
+    ],
+    "display_compositing": [
+      "VMUPurgeableDisplayCharacter"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

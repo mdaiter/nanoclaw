@@ -1,0 +1,4120 @@
+{
+  "framework": "BackBoardServices",
+  "functions": {
+    "BKSHIDEventGetZGradientFromDigitizerEventForPathEvent": {
+      "name": "BKSHIDEventGetZGradientFromDigitizerEventForPathEvent",
+      "framework": "BackBoardServices",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ BKSHIDEventGetZGradientFromDigitizerEventForPathEvent(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BKSHIDEventGetPrecisePointFromDigitizerEventForPathEvent",
+        "_BKSHIDEventGetSubEventInfoFromDigitierEventForPathEvent",
+        "BKSHIDEventGetHitTestPointFromDigitizerEventForPathEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDEventContextMove": {
+      "name": "NSStringFromBKSHIDEventContextMove",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDEventContextMove(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKSHIDEventGetConciseDescriptionVendorDefinedForceStageEvent": {
+      "name": "_BKSHIDEventGetConciseDescriptionVendorDefinedForceStageEvent",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _BKSHIDEventGetConciseDescriptionVendorDefinedForceStageEvent(_BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogKeyboard": {
+      "name": "BKLogKeyboard",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogKeyboard(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDEventBackBoardVendorSubtype": {
+      "name": "NSStringFromBKSHIDEventBackBoardVendorSubtype",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDEventBackBoardVendorSubtype(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKSHIDEventSetAttachment": {
+      "name": "_BKSHIDEventSetAttachment",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _BKSHIDEventSetAttachment(_BKSHIDEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKSHIDEventGetEventInfoDescription": {
+      "name": "_BKSHIDEventGetEventInfoDescription",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _BKSHIDEventGetEventInfoDescription(_BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDEventPointerAttributeOptions": {
+      "name": "NSStringFromBKSHIDEventPointerAttributeOptions",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDEventPointerAttributeOptions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetBaseAttributes": {
+      "name": "BKSHIDEventGetBaseAttributes",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetBaseAttributes(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventDeliveryObserverBSServiceName": {
+      "name": "BKSHIDEventDeliveryObserverBSServiceName",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventDeliveryObserverBSServiceName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDEventHardwareType": {
+      "name": "NSStringFromBKSHIDEventHardwareType",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDEventHardwareType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventSourceStringName": {
+      "name": "BKSHIDEventSourceStringName",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventSourceStringName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKMouseInterpolationPointer": {
+      "name": "BKMouseInterpolationPointer",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKMouseInterpolationPointer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSNSStringFromIOHIDProximityDetectionMask": {
+      "name": "BKSNSStringFromIOHIDProximityDetectionMask",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKSNSStringFromIOHIDProximityDetectionMask(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKMouseInterpolationTranslation": {
+      "name": "BKMouseInterpolationTranslation",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKMouseInterpolationTranslation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetRemoteTimestamp": {
+      "name": "BKSHIDEventGetRemoteTimestamp",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetRemoteTimestamp(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDDigitizerEventIsFirstTouchDown": {
+      "name": "BKSHIDDigitizerEventIsFirstTouchDown",
+      "framework": "BackBoardServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDDigitizerEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool BKSHIDDigitizerEventIsFirstTouchDown(BKSHIDDigitizerEventRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BSDescriptionStreamAppendBKSKeyModifierFlags": {
+      "name": "BSDescriptionStreamAppendBKSKeyModifierFlags",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BSDescriptionStreamAppendBKSKeyModifierFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventSetDigitizerInfo": {
+      "name": "BKSHIDEventSetDigitizerInfo",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventSetDigitizerInfo(BKSHIDEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventCopyDisplayIDFromDigitizerEvent": {
+      "name": "BKSHIDEventCopyDisplayIDFromDigitizerEvent",
+      "framework": "BackBoardServices",
+      "return_type": "BKSHIDEventRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "BKSHIDEventRef/*?*/ BKSHIDEventCopyDisplayIDFromDigitizerEvent(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "BKSHIDEventRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BKSHIDEventCopyDisplayIDFromEvent",
+        "BKSHIDEventCreateBackBoardVendorSubtypeEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSSceneHostTouchBehavior": {
+      "name": "NSStringFromBKSSceneHostTouchBehavior",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSSceneHostTouchBehavior(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKSHIDEventGetConciseDescriptionPointer": {
+      "name": "_BKSHIDEventGetConciseDescriptionPointer",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _BKSHIDEventGetConciseDescriptionPointer(_BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogEventDeliveryMatching": {
+      "name": "BKLogEventDeliveryMatching",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogEventDeliveryMatching(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventSetDigitizerAttributes": {
+      "name": "BKSHIDEventSetDigitizerAttributes",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventSetDigitizerAttributes(BKSHIDEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKSHIDEventGetConciseDescriptionGenericGesture": {
+      "name": "_BKSHIDEventGetConciseDescriptionGenericGesture",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _BKSHIDEventGetConciseDescriptionGenericGesture(_BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKNSStringFromIOHIDGenericGestureType": {
+      "name": "BKNSStringFromIOHIDGenericGestureType",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKNSStringFromIOHIDGenericGestureType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventMatchingPredicate": {
+      "name": "BKSHIDEventMatchingPredicate",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventMatchingPredicate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventAttributeDataWithExpectedClass": {
+      "name": "BKSHIDEventAttributeDataWithExpectedClass",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventAttributeDataWithExpectedClass(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventDigitizerGetTouchUserIdentifier": {
+      "name": "BKSHIDEventDigitizerGetTouchUserIdentifier",
+      "framework": "BackBoardServices",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventDigitizerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ BKSHIDEventDigitizerGetTouchUserIdentifier(BKSHIDEventDigitizerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BKSHIDEventGetContextIDFromEvent",
+        "BKSHIDEventDigitizerGetTouchIdentifier",
+        "BKSHIDEventSetDigitizerInfoWithSubEventInfoAndTouchStreamIdentifier",
+        "BKSHIDEventSetDigitizerInfoWithTouchStreamIdentifier",
+        "BKSHIDEventGetContextIDFromDigitizerEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetContextIDFromEvent": {
+      "name": "BKSHIDEventGetContextIDFromEvent",
+      "framework": "BackBoardServices",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ BKSHIDEventGetContextIDFromEvent(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BKSHIDEventDigitizerGetTouchUserIdentifier",
+        "BKSHIDEventDigitizerGetTouchIdentifier",
+        "BKSHIDEventSetDigitizerInfoWithSubEventInfoAndTouchStreamIdentifier",
+        "BKSHIDEventSetDigitizerInfoWithTouchStreamIdentifier",
+        "BKSHIDEventGetContextIDFromDigitizerEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventSetDigitizerInfoWithSubEventInfos": {
+      "name": "BKSHIDEventSetDigitizerInfoWithSubEventInfos",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventSetDigitizerInfoWithSubEventInfos(BKSHIDEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSTouchStreamIdentifier": {
+      "name": "NSStringFromBKSTouchStreamIdentifier",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSTouchStreamIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogAlternateSystemApp": {
+      "name": "BKLogAlternateSystemApp",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogAlternateSystemApp(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetPrecisePointFromDigitizerEventForPathEvent": {
+      "name": "BKSHIDEventGetPrecisePointFromDigitizerEventForPathEvent",
+      "framework": "BackBoardServices",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ BKSHIDEventGetPrecisePointFromDigitizerEventForPathEvent(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BKSHIDEventGetZGradientFromDigitizerEventForPathEvent",
+        "_BKSHIDEventGetSubEventInfoFromDigitierEventForPathEvent",
+        "BKSHIDEventGetHitTestPointFromDigitizerEventForPathEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDServicesOldModifierKeysRemappingPreferenceKey": {
+      "name": "BKSHIDServicesOldModifierKeysRemappingPreferenceKey",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDServicesOldModifierKeysRemappingPreferenceKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventDigitizerGetTouchLocus": {
+      "name": "BKSHIDEventDigitizerGetTouchLocus",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventDigitizerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventDigitizerGetTouchLocus(BKSHIDEventDigitizerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKSHIDEventGetConciseDescriptionButton": {
+      "name": "_BKSHIDEventGetConciseDescriptionButton",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _BKSHIDEventGetConciseDescriptionButton(_BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKSHIDEventGetConciseDescriptionVendorDefined": {
+      "name": "_BKSHIDEventGetConciseDescriptionVendorDefined",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _BKSHIDEventGetConciseDescriptionVendorDefined(_BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogTouchDeliveryObserver": {
+      "name": "BKLogTouchDeliveryObserver",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogTouchDeliveryObserver(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventCopyDisplayIDFromEvent": {
+      "name": "BKSHIDEventCopyDisplayIDFromEvent",
+      "framework": "BackBoardServices",
+      "return_type": "BKSHIDEventRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "BKSHIDEventRef/*?*/ BKSHIDEventCopyDisplayIDFromEvent(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "BKSHIDEventRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BKSHIDEventCopyDisplayIDFromDigitizerEvent",
+        "BKSHIDEventCreateBackBoardVendorSubtypeEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventEnumerateUpdatesWithBlock": {
+      "name": "BKSHIDEventEnumerateUpdatesWithBlock",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventEnumerateUpdatesWithBlock(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKDefaultKeyALSEnabled": {
+      "name": "BKDefaultKeyALSEnabled",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKDefaultKeyALSEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventDigitizerGetTouchIdentifier": {
+      "name": "BKSHIDEventDigitizerGetTouchIdentifier",
+      "framework": "BackBoardServices",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventDigitizerRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ BKSHIDEventDigitizerGetTouchIdentifier(BKSHIDEventDigitizerRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BKSHIDEventDigitizerGetTouchUserIdentifier",
+        "BKSHIDEventGetContextIDFromEvent",
+        "BKSHIDEventSetDigitizerInfoWithSubEventInfoAndTouchStreamIdentifier",
+        "BKSHIDEventSetDigitizerInfoWithTouchStreamIdentifier",
+        "BKSHIDEventGetContextIDFromDigitizerEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetProximityAttributes": {
+      "name": "BKSHIDEventGetProximityAttributes",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetProximityAttributes(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogEventDelivery": {
+      "name": "BKLogEventDelivery",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogEventDelivery(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDEventTeleportState": {
+      "name": "NSStringFromBKSHIDEventTeleportState",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDEventTeleportState(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetIsSystemGestureStateChangeFromDigitizerEvent": {
+      "name": "BKSHIDEventGetIsSystemGestureStateChangeFromDigitizerEvent",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetIsSystemGestureStateChangeFromDigitizerEvent(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSKeyModifierFlags": {
+      "name": "NSStringFromBKSKeyModifierFlags",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSKeyModifierFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventSetKeyboardAttributes": {
+      "name": "BKSHIDEventSetKeyboardAttributes",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventSetKeyboardAttributes(BKSHIDEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLoggingSubsystem": {
+      "name": "BKLoggingSubsystem",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLoggingSubsystem(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetSmartCoverStateFromEvent": {
+      "name": "BKSHIDEventGetSmartCoverStateFromEvent",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetSmartCoverStateFromEvent(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDServiceConnectionMachName": {
+      "name": "BKSHIDServiceConnectionMachName",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDServiceConnectionMachName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKSHIDEventSetRedirectInfo": {
+      "name": "_BKSHIDEventSetRedirectInfo",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _BKSHIDEventSetRedirectInfo(_BKSHIDEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDEventSecureNameStatus": {
+      "name": "NSStringFromBKSHIDEventSecureNameStatus",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDEventSecureNameStatus(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDServicesProximityDetectionMode": {
+      "name": "NSStringFromBKSHIDServicesProximityDetectionMode",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDServicesProximityDetectionMode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetInitialTouchTimestampFromDigitizerEvent": {
+      "name": "BKSHIDEventGetInitialTouchTimestampFromDigitizerEvent",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetInitialTouchTimestampFromDigitizerEvent(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventSetDigitizerInfoWithSubEventInfoAndTouchStreamIdentifier": {
+      "name": "BKSHIDEventSetDigitizerInfoWithSubEventInfoAndTouchStreamIdentifier",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventSetDigitizerInfoWithSubEventInfoAndTouchStreamIdentifier(BKSHIDEventRef *ref, uint64_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BKSHIDEventDigitizerGetTouchUserIdentifier",
+        "BKSHIDEventGetContextIDFromEvent",
+        "BKSHIDEventDigitizerGetTouchIdentifier",
+        "BKSHIDEventSetDigitizerInfoWithTouchStreamIdentifier",
+        "BKSHIDEventGetContextIDFromDigitizerEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogBacklight": {
+      "name": "BKLogBacklight",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogBacklight(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventContainsUpdates": {
+      "name": "BKSHIDEventContainsUpdates",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventContainsUpdates(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogTouchEvents": {
+      "name": "BKLogTouchEvents",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogTouchEvents(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDTouchLocus": {
+      "name": "NSStringFromBKSHIDTouchLocus",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDTouchLocus(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventSetDigitizerInfoWithTouchStreamIdentifier": {
+      "name": "BKSHIDEventSetDigitizerInfoWithTouchStreamIdentifier",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventSetDigitizerInfoWithTouchStreamIdentifier(BKSHIDEventRef *ref, uint64_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BKSHIDEventDigitizerGetTouchUserIdentifier",
+        "BKSHIDEventGetContextIDFromEvent",
+        "BKSHIDEventDigitizerGetTouchIdentifier",
+        "BKSHIDEventSetDigitizerInfoWithSubEventInfoAndTouchStreamIdentifier",
+        "BKSHIDEventGetContextIDFromDigitizerEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKSHIDEventGetSubEventInfoFromDigitierEventForPathEvent": {
+      "name": "_BKSHIDEventGetSubEventInfoFromDigitierEventForPathEvent",
+      "framework": "BackBoardServices",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ _BKSHIDEventGetSubEventInfoFromDigitierEventForPathEvent(_BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BKSHIDEventGetZGradientFromDigitizerEventForPathEvent",
+        "BKSHIDEventGetPrecisePointFromDigitizerEventForPathEvent",
+        "BKSHIDEventGetHitTestPointFromDigitizerEventForPathEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDServiceConnectionBSServiceDomainName": {
+      "name": "BKSHIDServiceConnectionBSServiceDomainName",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDServiceConnectionBSServiceDomainName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDEventAuthenticationStatus": {
+      "name": "NSStringFromBKSHIDEventAuthenticationStatus",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDEventAuthenticationStatus(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKSHIDEventGetConciseDescriptionScale": {
+      "name": "_BKSHIDEventGetConciseDescriptionScale",
+      "framework": "BackBoardServices",
+      "return_type": "double",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "double/*?*/ _BKSHIDEventGetConciseDescriptionScale(_BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "double"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetPointerAttributes": {
+      "name": "BKSHIDEventGetPointerAttributes",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetPointerAttributes(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKNSStringFromIOHIDEventPhase": {
+      "name": "BKNSStringFromIOHIDEventPhase",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKNSStringFromIOHIDEventPhase(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDEventSource": {
+      "name": "NSStringFromBKSHIDEventSource",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDEventSource(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventSetProximityAttributes": {
+      "name": "BKSHIDEventSetProximityAttributes",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventSetProximityAttributes(BKSHIDEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventSetSimpleInfo": {
+      "name": "BKSHIDEventSetSimpleInfo",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventSetSimpleInfo(BKSHIDEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventSetSimpleDeliveryInfo": {
+      "name": "BKSHIDEventSetSimpleDeliveryInfo",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventSetSimpleDeliveryInfo(BKSHIDEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHitTestRegionLocation": {
+      "name": "NSStringFromBKSHitTestRegionLocation",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHitTestRegionLocation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogUISensor": {
+      "name": "BKLogUISensor",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogUISensor(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSTouchHitTestContextCategory": {
+      "name": "NSStringFromBKSTouchHitTestContextCategory",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSTouchHitTestContextCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKSHIDEventGetConciseDescriptionTranslation": {
+      "name": "_BKSHIDEventGetConciseDescriptionTranslation",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _BKSHIDEventGetConciseDescriptionTranslation(_BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKMouseInterpolationRotation": {
+      "name": "BKMouseInterpolationRotation",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKMouseInterpolationRotation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogDisplay": {
+      "name": "BKLogDisplay",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogDisplay(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventDeliveryManagerBSServiceName": {
+      "name": "BKSHIDEventDeliveryManagerBSServiceName",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventDeliveryManagerBSServiceName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetIsSystemAppEventFromEvent": {
+      "name": "BKSHIDEventGetIsSystemAppEventFromEvent",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetIsSystemAppEventFromEvent(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventSetSmartCoverAttributes": {
+      "name": "BKSHIDEventSetSmartCoverAttributes",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventSetSmartCoverAttributes(BKSHIDEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDEventDeferringPolicyStatus": {
+      "name": "NSStringFromBKSHIDEventDeferringPolicyStatus",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDEventDeferringPolicyStatus(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSWindowServerHitTestOcclusionType": {
+      "name": "NSStringFromBKSWindowServerHitTestOcclusionType",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSWindowServerHitTestOcclusionType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventSetBaseAttributes": {
+      "name": "BKSHIDEventSetBaseAttributes",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventSetBaseAttributes(BKSHIDEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSKeyboardBSServiceName": {
+      "name": "BKSKeyboardBSServiceName",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKSKeyboardBSServiceName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogDetailed": {
+      "name": "BKLogDetailed",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogDetailed(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventDescription": {
+      "name": "BKSHIDEventDescription",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKSHIDEventGetConciseDescriptionScroll": {
+      "name": "_BKSHIDEventGetConciseDescriptionScroll",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _BKSHIDEventGetConciseDescriptionScroll(_BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetButtonIsCancelledFromButtonEvent": {
+      "name": "BKSHIDEventGetButtonIsCancelledFromButtonEvent",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetButtonIsCancelledFromButtonEvent(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKDefaultBrightness": {
+      "name": "BKDefaultBrightness",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKDefaultBrightness(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogMousePointer": {
+      "name": "BKLogMousePointer",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogMousePointer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDEventAttributeOptions": {
+      "name": "NSStringFromBKSHIDEventAttributeOptions",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDEventAttributeOptions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetBackBoardVendorSubtype": {
+      "name": "BKSHIDEventGetBackBoardVendorSubtype",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetBackBoardVendorSubtype(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetSystemGestureStatusFromDigitizerEvent": {
+      "name": "BKSHIDEventGetSystemGestureStatusFromDigitizerEvent",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetSystemGestureStatusFromDigitizerEvent(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDForceStageTransition": {
+      "name": "NSStringFromBKSHIDForceStageTransition",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDForceStageTransition(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetDigitizerAttributes": {
+      "name": "BKSHIDEventGetDigitizerAttributes",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetDigitizerAttributes(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDEventSmartCoverState": {
+      "name": "NSStringFromBKSHIDEventSmartCoverState",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDEventSmartCoverState(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogEndpointProvider": {
+      "name": "BKLogEndpointProvider",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogEndpointProvider(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKMouseInterpolationScale": {
+      "name": "BKMouseInterpolationScale",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKMouseInterpolationScale(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventEnumerateChildEvents": {
+      "name": "BKSHIDEventEnumerateChildEvents",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventEnumerateChildEvents(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogHapticFeedback": {
+      "name": "BKLogHapticFeedback",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogHapticFeedback(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetContextIDFromDigitizerEvent": {
+      "name": "BKSHIDEventGetContextIDFromDigitizerEvent",
+      "framework": "BackBoardServices",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ BKSHIDEventGetContextIDFromDigitizerEvent(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BKSHIDEventDigitizerGetTouchUserIdentifier",
+        "BKSHIDEventGetContextIDFromEvent",
+        "BKSHIDEventDigitizerGetTouchIdentifier",
+        "BKSHIDEventSetDigitizerInfoWithSubEventInfoAndTouchStreamIdentifier",
+        "BKSHIDEventSetDigitizerInfoWithTouchStreamIdentifier"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDEventPointerAttributeState": {
+      "name": "NSStringFromBKSHIDEventPointerAttributeState",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDEventPointerAttributeState(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKSHIDEventGetAttachment": {
+      "name": "_BKSHIDEventGetAttachment",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _BKSHIDEventGetAttachment(_BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetHitTestPointFromDigitizerEventForPathEvent": {
+      "name": "BKSHIDEventGetHitTestPointFromDigitizerEventForPathEvent",
+      "framework": "BackBoardServices",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ BKSHIDEventGetHitTestPointFromDigitizerEventForPathEvent(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BKSHIDEventGetZGradientFromDigitizerEventForPathEvent",
+        "BKSHIDEventGetPrecisePointFromDigitizerEventForPathEvent",
+        "_BKSHIDEventGetSubEventInfoFromDigitierEventForPathEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDEventScreenEdgeMask": {
+      "name": "NSStringFromBKSHIDEventScreenEdgeMask",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDEventScreenEdgeMask(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKSHIDEventGetConciseDescriptionKeyboard": {
+      "name": "_BKSHIDEventGetConciseDescriptionKeyboard",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _BKSHIDEventGetConciseDescriptionKeyboard(_BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetSourceFromKeyboardEvent": {
+      "name": "BKSHIDEventGetSourceFromKeyboardEvent",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetSourceFromKeyboardEvent(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetConciseDescription": {
+      "name": "BKSHIDEventGetConciseDescription",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetConciseDescription(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKMouseInterpolationScroll": {
+      "name": "BKMouseInterpolationScroll",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKMouseInterpolationScroll(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogSystemShell": {
+      "name": "BKLogSystemShell",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogSystemShell(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetMaximumForceFromDigitizerEvent": {
+      "name": "BKSHIDEventGetMaximumForceFromDigitizerEvent",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetMaximumForceFromDigitizerEvent(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventRegisterEventCallbackOnRunLoop": {
+      "name": "BKSHIDEventRegisterEventCallbackOnRunLoop",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventRegisterEventCallbackOnRunLoop(BKSHIDEventRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BKSHIDEventRegisterEventCallback"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventUsagePairDescriptorOmitNameStyleKey": {
+      "name": "BKSHIDEventUsagePairDescriptorOmitNameStyleKey",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventUsagePairDescriptorOmitNameStyleKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetPointFromDigitizerEvent": {
+      "name": "BKSHIDEventGetPointFromDigitizerEvent",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetPointFromDigitizerEvent(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDServicesProximityDetectionModeIsValid": {
+      "name": "BKSHIDServicesProximityDetectionModeIsValid",
+      "framework": "BackBoardServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDServicesProximityDetectionModeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool BKSHIDServicesProximityDetectionModeIsValid(BKSHIDServicesProximityDetectionModeRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDEventHitTestLayerInformationMask": {
+      "name": "NSStringFromBKSHIDEventHitTestLayerInformationMask",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDEventHitTestLayerInformationMask(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventSetRemoteTimestamp": {
+      "name": "BKSHIDEventSetRemoteTimestamp",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventSetRemoteTimestamp(BKSHIDEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogIdleTimer": {
+      "name": "BKLogIdleTimer",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogIdleTimer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogDisplayArchive": {
+      "name": "BKLogDisplayArchive",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogDisplayArchive(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetSmartCoverAttributes": {
+      "name": "BKSHIDEventGetSmartCoverAttributes",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetSmartCoverAttributes(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogCommon": {
+      "name": "BKLogCommon",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogCommon(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDServicesModifierKeysRemappingPreferenceKey": {
+      "name": "BKSHIDServicesModifierKeysRemappingPreferenceKey",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDServicesModifierKeysRemappingPreferenceKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogEventDeliveryBuffering": {
+      "name": "BKLogEventDeliveryBuffering",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogEventDeliveryBuffering(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKSHIDEventGetConciseDescriptionRotation": {
+      "name": "_BKSHIDEventGetConciseDescriptionRotation",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _BKSHIDEventGetConciseDescriptionRotation(_BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventSetAttributes": {
+      "name": "BKSHIDEventSetAttributes",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventSetAttributes(BKSHIDEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogTouchDeliveryPolicy": {
+      "name": "BKLogTouchDeliveryPolicy",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ BKLogTouchDeliveryPolicy(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventGetKeyboardAttributes": {
+      "name": "BKSHIDEventGetKeyboardAttributes",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ BKSHIDEventGetKeyboardAttributes(BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventSetSmartCoverInfo": {
+      "name": "BKSHIDEventSetSmartCoverInfo",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventSetSmartCoverInfo(BKSHIDEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventRegisterEventCallback": {
+      "name": "BKSHIDEventRegisterEventCallback",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventRegisterEventCallback(BKSHIDEventRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BKSHIDEventRegisterEventCallbackOnRunLoop"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKSHIDEventGetConciseDescriptionProximity": {
+      "name": "_BKSHIDEventGetConciseDescriptionProximity",
+      "framework": "BackBoardServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_BKSHIDEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _BKSHIDEventGetConciseDescriptionProximity(_BKSHIDEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBKSHIDEventContextType": {
+      "name": "NSStringFromBKSHIDEventContextType",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBKSHIDEventContextType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventCreateBackBoardVendorSubtypeEvent": {
+      "name": "BKSHIDEventCreateBackBoardVendorSubtypeEvent",
+      "framework": "BackBoardServices",
+      "return_type": "BKSHIDEventRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "BKSHIDEventRef BKSHIDEventCreateBackBoardVendorSubtypeEvent(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "BKSHIDEventRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "BKSHIDEventCopyDisplayIDFromDigitizerEvent",
+        "BKSHIDEventCopyDisplayIDFromEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKSHIDEventSetPointerAttributes": {
+      "name": "BKSHIDEventSetPointerAttributes",
+      "framework": "BackBoardServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BKSHIDEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BackBoardServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ BKSHIDEventSetPointerAttributes(BKSHIDEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "display_compositing": [
+      "BKLogDisplay",
+      "BKLogDisplayArchive",
+      "BKSHIDEventCopyDisplayIDFromDigitizerEvent",
+      "BKSHIDEventCopyDisplayIDFromEvent",
+      "NSStringFromBKSHIDEventScreenEdgeMask",
+      "NSStringFromBKSWindowServerHitTestOcclusionType"
+    ],
+    "memory_buffer": [
+      "BKLogEventDeliveryBuffering"
+    ],
+    "image_processing": [
+      "BKMouseInterpolationScale",
+      "_BKSHIDEventGetConciseDescriptionScale"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

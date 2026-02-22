@@ -1,0 +1,4656 @@
+{
+  "framework": "GraphicsServices",
+  "functions": {
+    "GSColorCreateColorWithDeviceRGBAInfo": {
+      "name": "GSColorCreateColorWithDeviceRGBAInfo",
+      "framework": "GraphicsServices",
+      "return_type": "GSColorRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GSColorRef GSColorCreateColorWithDeviceRGBAInfo(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GSColorRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSColorCreateColorWithDeviceRGBA",
+        "GSColorCreateWithDeviceWhite"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventFinishedActivating": {
+      "name": "GSEventFinishedActivating",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventFinishedActivating(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSSendWorkspaceEvent": {
+      "name": "GSSendWorkspaceEvent",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSSendWorkspaceEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventSendKeyEvent": {
+      "name": "GSEventSendKeyEvent",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventSendKeyEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventIsChordingHandEvent": {
+      "name": "GSEventIsChordingHandEvent",
+      "framework": "GraphicsServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool GSEventIsChordingHandEvent(GSEventRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventSetCharacters": {
+      "name": "GSEventSetCharacters",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSEventSetCharacters(GSEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventSetHardwareKeyboardAttached": {
+      "name": "GSEventSetHardwareKeyboardAttached",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSEventSetHardwareKeyboardAttached(GSEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventAccessoryAvailabilityChanged": {
+      "name": "GSEventAccessoryAvailabilityChanged",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventAccessoryAvailabilityChanged(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetWindow": {
+      "name": "GSEventGetWindow",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSEventGetWindow(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSGetPurpleApplicationPort": {
+      "name": "GSGetPurpleApplicationPort",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSGetPurpleApplicationPort(GSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventIsTabKeyEvent": {
+      "name": "GSEventIsTabKeyEvent",
+      "framework": "GraphicsServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool GSEventIsTabKeyEvent(GSEventRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventStopVibrator": {
+      "name": "GSEventStopVibrator",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventStopVibrator(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardTranslateKeyExtendedCommand": {
+      "name": "GSKeyboardTranslateKeyExtendedCommand",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSKeyboardTranslateKeyExtendedCommand(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardCreate": {
+      "name": "GSKeyboardCreate",
+      "framework": "GraphicsServices",
+      "return_type": "GSKeyboardRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GSKeyboardRef GSKeyboardCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GSKeyboardRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSKeyboardCreateWithCountryCode"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSMainScreenPositionTransform": {
+      "name": "GSMainScreenPositionTransform",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSMainScreenPositionTransform(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventAccelerometerAxisX": {
+      "name": "GSEventAccelerometerAxisX",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventAccelerometerAxisX(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventSendApplicationOpenURL": {
+      "name": "GSEventSendApplicationOpenURL",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventSendApplicationOpenURL(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventIsHandEvent": {
+      "name": "GSEventIsHandEvent",
+      "framework": "GraphicsServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool GSEventIsHandEvent(GSEventRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSSendSystemEvent": {
+      "name": "GSSendSystemEvent",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSSendSystemEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardSetHardwareKeyboardAttached": {
+      "name": "GSKeyboardSetHardwareKeyboardAttached",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSKeyboardRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSKeyboardSetHardwareKeyboardAttached(GSKeyboardRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSSendSystemAppEvent": {
+      "name": "GSSendSystemAppEvent",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSSendSystemAppEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventIsKeyRepeating": {
+      "name": "GSEventIsKeyRepeating",
+      "framework": "GraphicsServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool GSEventIsKeyRepeating(GSEventRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardGetLayoutContext": {
+      "name": "GSKeyboardGetLayoutContext",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSKeyboardRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSKeyboardGetLayoutContext(GSKeyboardRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventSetPathInfoAtIndex": {
+      "name": "GSEventSetPathInfoAtIndex",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint32_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSEventSetPathInfoAtIndex(GSEventRef *ref, uint32_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint32_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventGetClickCount",
+        "GSEventSetHardwareKeyboardAttachedWithCountryCodeAndType",
+        "GSEventGetPathInfoAtIndex",
+        "GSEventGetHardwareKeyboardCountry"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventInitializeAsExtension": {
+      "name": "GSEventInitializeAsExtension",
+      "framework": "GraphicsServices",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ GSEventInitializeAsExtension(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSInitialize",
+        "GSEventInitialize",
+        "GSEventInitializeWorkspaceWithQueue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSSendApplicationSuspendedSettingsUpdatedEvent": {
+      "name": "GSSendApplicationSuspendedSettingsUpdatedEvent",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSSendApplicationSuspendedRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSSendApplicationSuspendedSettingsUpdatedEvent(GSSendApplicationSuspendedRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSInitialize": {
+      "name": "GSInitialize",
+      "framework": "GraphicsServices",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ GSInitialize(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventInitializeAsExtension",
+        "GSEventInitialize",
+        "GSEventInitializeWorkspaceWithQueue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventSetBacklightLevel": {
+      "name": "GSEventSetBacklightLevel",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSEventSetBacklightLevel(GSEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardSetTranslationOptions": {
+      "name": "GSKeyboardSetTranslationOptions",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSKeyboardRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSKeyboardSetTranslationOptions(GSKeyboardRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetClickCount": {
+      "name": "GSEventGetClickCount",
+      "framework": "GraphicsServices",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ GSEventGetClickCount(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventSetPathInfoAtIndex",
+        "GSEventSetHardwareKeyboardAttachedWithCountryCodeAndType",
+        "GSEventGetPathInfoAtIndex",
+        "GSEventGetHardwareKeyboardCountry"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSSendAppPreferencesChanged": {
+      "name": "GSSendAppPreferencesChanged",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSSendAppPreferencesChanged(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetKeyFlags": {
+      "name": "GSEventGetKeyFlags",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSEventGetKeyFlags(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardGetLiveModifierState": {
+      "name": "GSKeyboardGetLiveModifierState",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSKeyboardRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSKeyboardGetLiveModifierState(GSKeyboardRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardSetLayoutContext": {
+      "name": "GSKeyboardSetLayoutContext",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSKeyboardRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSKeyboardSetLayoutContext(GSKeyboardRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventRemoveShouldRouteToFrontMost": {
+      "name": "GSEventRemoveShouldRouteToFrontMost",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventRemoveShouldRouteToFrontMost(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventInitialize": {
+      "name": "GSEventInitialize",
+      "framework": "GraphicsServices",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ GSEventInitialize(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventInitializeAsExtension",
+        "GSInitialize",
+        "GSEventInitializeWorkspaceWithQueue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardGetKeyCodeForChar": {
+      "name": "GSKeyboardGetKeyCodeForChar",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSKeyboardRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSKeyboardGetKeyCodeForChar(GSKeyboardRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSRegisterPurpleNamedPort": {
+      "name": "GSRegisterPurpleNamedPort",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSRegisterPurpleNamedPort(GSRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventRegisterEventCallBack",
+        "GSRegisterPurpleNamedPerPIDPort"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSCopyPurpleNamedPerPIDPort": {
+      "name": "GSCopyPurpleNamedPerPIDPort",
+      "framework": "GraphicsServices",
+      "return_type": "GSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "GSRef/*?*/ GSCopyPurpleNamedPerPIDPort(GSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "GSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSCopyPurpleNamedPort"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventReceiveRunLoopMode": {
+      "name": "GSEventReceiveRunLoopMode",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventReceiveRunLoopMode(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventCopyCharactersIgnoringModifiers": {
+      "name": "GSEventCopyCharactersIgnoringModifiers",
+      "framework": "GraphicsServices",
+      "return_type": "GSEventRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "GSEventRef/*?*/ GSEventCopyCharactersIgnoringModifiers(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "GSEventRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventCreatePlistRepresentation",
+        "GSEventCopy",
+        "GSEventCreateApplicationSuspendEvent",
+        "GSEventCreateKeyEvent",
+        "GSEventCreateWithPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardGetStickyLockModifierState": {
+      "name": "GSKeyboardGetStickyLockModifierState",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSKeyboardRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSKeyboardGetStickyLockModifierState(GSKeyboardRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSMainScreenPointSize": {
+      "name": "GSMainScreenPointSize",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSMainScreenPointSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventSetType": {
+      "name": "GSEventSetType",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSEventSetType(GSEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSColorGetRGBAComponents": {
+      "name": "GSColorGetRGBAComponents",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSColorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSColorGetRGBAComponents(GSColorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventDisableHandEventCoalescing": {
+      "name": "GSEventDisableHandEventCoalescing",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventDisableHandEventCoalescing(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSColorGetRGBAInfo": {
+      "name": "GSColorGetRGBAInfo",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSColorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSColorGetRGBAInfo(GSColorRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventSetLocationInWindow": {
+      "name": "GSEventSetLocationInWindow",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSEventSetLocationInWindow(GSEventRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSSendSimpleEventWithSubtype": {
+      "name": "GSSendSimpleEventWithSubtype",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSSendSimpleEventWithSubtype(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardGetTypeID": {
+      "name": "GSKeyboardGetTypeID",
+      "framework": "GraphicsServices",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSKeyboardRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ GSKeyboardGetTypeID(GSKeyboardRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventGetSenderPID",
+        "GSEventGetHIDTimestamp",
+        "GSEventGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventSetHardwareKeyboardAttachedWithCountryCodeAndType": {
+      "name": "GSEventSetHardwareKeyboardAttachedWithCountryCodeAndType",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint32_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSEventSetHardwareKeyboardAttachedWithCountryCodeAndType(GSEventRef *ref, uint32_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint32_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventSetPathInfoAtIndex",
+        "GSEventGetClickCount",
+        "GSEventGetPathInfoAtIndex",
+        "GSEventGetHardwareKeyboardCountry"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSSendApplicationFinishedBackgroundNotificationActionEvent": {
+      "name": "GSSendApplicationFinishedBackgroundNotificationActionEvent",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSSendApplicationFinishedBackgroundNotificationActionEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventStopModal": {
+      "name": "GSEventStopModal",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventStopModal(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_GSEventGetGSEventRecord": {
+      "name": "_GSEventGetGSEventRecord",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _GSEventGetGSEventRecord(_GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardTranslateKeyExtendedCommandWithUsagePage": {
+      "name": "GSKeyboardTranslateKeyExtendedCommandWithUsagePage",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSKeyboardTranslateKeyExtendedCommandWithUsagePage(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventDeviceOrientation": {
+      "name": "GSEventDeviceOrientation",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventDeviceOrientation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSCurrentEventTimestamp": {
+      "name": "GSCurrentEventTimestamp",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSCurrentEventTimestamp(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventCreatePlistRepresentation": {
+      "name": "GSEventCreatePlistRepresentation",
+      "framework": "GraphicsServices",
+      "return_type": "GSEventRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GSEventRef GSEventCreatePlistRepresentation(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GSEventRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventCopyCharactersIgnoringModifiers",
+        "GSEventCopy",
+        "GSEventCreateApplicationSuspendEvent",
+        "GSEventCreateKeyEvent",
+        "GSEventCreateWithPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventRunModal": {
+      "name": "GSEventRunModal",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventRunModal(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventRegisterEventCallBack": {
+      "name": "GSEventRegisterEventCallBack",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSEventRegisterEventCallBack(GSEventRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSRegisterPurpleNamedPort",
+        "GSRegisterPurpleNamedPerPIDPort"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardReset": {
+      "name": "GSKeyboardReset",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSKeyboardReset(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSSetMainScreenInfo": {
+      "name": "GSSetMainScreenInfo",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSSetMainScreenInfo(GSRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventCopy": {
+      "name": "GSEventCopy",
+      "framework": "GraphicsServices",
+      "return_type": "GSEventRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "GSEventRef/*?*/ GSEventCopy(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "GSEventRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventCopyCharactersIgnoringModifiers",
+        "GSEventCreatePlistRepresentation",
+        "GSEventCreateApplicationSuspendEvent",
+        "GSEventCreateKeyEvent",
+        "GSEventCreateWithPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSSystemRootDirectory": {
+      "name": "GSSystemRootDirectory",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSSystemRootDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventInitializeWorkspaceWithQueue": {
+      "name": "GSEventInitializeWorkspaceWithQueue",
+      "framework": "GraphicsServices",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ GSEventInitializeWorkspaceWithQueue(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventInitializeAsExtension",
+        "GSInitialize",
+        "GSEventInitialize"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventAccelerometerAxisY": {
+      "name": "GSEventAccelerometerAxisY",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventAccelerometerAxisY(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSSendApplicationSuspendEvent": {
+      "name": "GSSendApplicationSuspendEvent",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSSendApplicationSuspendEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardGetTranslationOptions": {
+      "name": "GSKeyboardGetTranslationOptions",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSKeyboardRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSKeyboardGetTranslationOptions(GSKeyboardRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventSourceIsHardware": {
+      "name": "GSEventSourceIsHardware",
+      "framework": "GraphicsServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventSourceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool GSEventSourceIsHardware(GSEventSourceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventCreateApplicationSuspendEvent": {
+      "name": "GSEventCreateApplicationSuspendEvent",
+      "framework": "GraphicsServices",
+      "return_type": "GSEventRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GSEventRef GSEventCreateApplicationSuspendEvent(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GSEventRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventCopyCharactersIgnoringModifiers",
+        "GSEventCreatePlistRepresentation",
+        "GSEventCopy",
+        "GSEventCreateKeyEvent",
+        "GSEventCreateWithPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetSenderPID": {
+      "name": "GSEventGetSenderPID",
+      "framework": "GraphicsServices",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ GSEventGetSenderPID(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSKeyboardGetTypeID",
+        "GSEventGetHIDTimestamp",
+        "GSEventGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetHIDTimestamp": {
+      "name": "GSEventGetHIDTimestamp",
+      "framework": "GraphicsServices",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ GSEventGetHIDTimestamp(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSKeyboardGetTypeID",
+        "GSEventGetSenderPID",
+        "GSEventGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventQueueContainsMouseEvent": {
+      "name": "GSEventQueueContainsMouseEvent",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventQueueContainsMouseEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetAccessoryKeyStateInfo": {
+      "name": "GSEventGetAccessoryKeyStateInfo",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSEventGetAccessoryKeyStateInfo(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventRun": {
+      "name": "GSEventRun",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventRun(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventCreateKeyEvent": {
+      "name": "GSEventCreateKeyEvent",
+      "framework": "GraphicsServices",
+      "return_type": "GSEventRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GSEventRef GSEventCreateKeyEvent(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GSEventRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventCopyCharactersIgnoringModifiers",
+        "GSEventCreatePlistRepresentation",
+        "GSEventCopy",
+        "GSEventCreateApplicationSuspendEvent",
+        "GSEventCreateWithPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSSendEvent": {
+      "name": "GSSendEvent",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSSendEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetModifierFlags": {
+      "name": "GSEventGetModifierFlags",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSEventGetModifierFlags(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardSetLayout": {
+      "name": "GSKeyboardSetLayout",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSKeyboardRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSKeyboardSetLayout(GSKeyboardRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardGetLocale": {
+      "name": "GSKeyboardGetLocale",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSKeyboardRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSKeyboardGetLocale(GSKeyboardRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetPathInfoAtIndex": {
+      "name": "GSEventGetPathInfoAtIndex",
+      "framework": "GraphicsServices",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ GSEventGetPathInfoAtIndex(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventSetPathInfoAtIndex",
+        "GSEventGetClickCount",
+        "GSEventSetHardwareKeyboardAttachedWithCountryCodeAndType",
+        "GSEventGetHardwareKeyboardCountry"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventShouldRouteToFrontMost": {
+      "name": "GSEventShouldRouteToFrontMost",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventShouldRouteToFrontMost(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSColorCreateColorWithDeviceRGBA": {
+      "name": "GSColorCreateColorWithDeviceRGBA",
+      "framework": "GraphicsServices",
+      "return_type": "GSColorRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GSColorRef GSColorCreateColorWithDeviceRGBA(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GSColorRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSColorCreateColorWithDeviceRGBAInfo",
+        "GSColorCreateWithDeviceWhite"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventPushRunLoopMode": {
+      "name": "GSEventPushRunLoopMode",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventPushRunLoopMode(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardHWKeyboardLayoutsPlist": {
+      "name": "GSKeyboardHWKeyboardLayoutsPlist",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSKeyboardHWKeyboardLayoutsPlist(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardRelease": {
+      "name": "GSKeyboardRelease",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSKeyboardRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void GSKeyboardRelease(GSKeyboardRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetDeltaY": {
+      "name": "GSEventGetDeltaY",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSEventGetDeltaY(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSSendApplicationFinishedBackgroundContentFetchingEventWithSequenceNumber": {
+      "name": "GSSendApplicationFinishedBackgroundContentFetchingEventWithSequenceNumber",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSSendApplicationFinishedBackgroundContentFetchingEventWithSequenceNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetDeltaX": {
+      "name": "GSEventGetDeltaX",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSEventGetDeltaX(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSSendApplicationFinishedBackgroundContentFetchingEvent": {
+      "name": "GSSendApplicationFinishedBackgroundContentFetchingEvent",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSSendApplicationFinishedBackgroundContentFetchingEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventIsHardwareKeyboardAttached": {
+      "name": "GSEventIsHardwareKeyboardAttached",
+      "framework": "GraphicsServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool GSEventIsHardwareKeyboardAttached(GSEventRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetInnerMostPathPosition": {
+      "name": "GSEventGetInnerMostPathPosition",
+      "framework": "GraphicsServices",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ GSEventGetInnerMostPathPosition(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventGetOuterMostPathPosition"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetHardwareKeyboardType": {
+      "name": "GSEventGetHardwareKeyboardType",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSEventGetHardwareKeyboardType(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardTranslateKeyExtended": {
+      "name": "GSKeyboardTranslateKeyExtended",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSKeyboardTranslateKeyExtended(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardHWKeyboardNormalizeInput": {
+      "name": "GSKeyboardHWKeyboardNormalizeInput",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSKeyboardHWKeyboardNormalizeInput(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetTypeID": {
+      "name": "GSEventGetTypeID",
+      "framework": "GraphicsServices",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ GSEventGetTypeID(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSKeyboardGetTypeID",
+        "GSEventGetSenderPID",
+        "GSEventGetHIDTimestamp"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetUsagePage": {
+      "name": "GSEventGetUsagePage",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSEventGetUsagePage(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSMainScreenScaleFactor": {
+      "name": "GSMainScreenScaleFactor",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSMainScreenScaleFactor(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventCreateWithPlist": {
+      "name": "GSEventCreateWithPlist",
+      "framework": "GraphicsServices",
+      "return_type": "GSEventRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GSEventRef GSEventCreateWithPlist(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GSEventRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventCopyCharactersIgnoringModifiers",
+        "GSEventCreatePlistRepresentation",
+        "GSEventCopy",
+        "GSEventCreateApplicationSuspendEvent",
+        "GSEventCreateKeyEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSMainScreenSize": {
+      "name": "GSMainScreenSize",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSMainScreenSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventIsHardwareKeyboardEvent": {
+      "name": "GSEventIsHardwareKeyboardEvent",
+      "framework": "GraphicsServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool GSEventIsHardwareKeyboardEvent(GSEventRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardGetLayout": {
+      "name": "GSKeyboardGetLayout",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSKeyboardRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSKeyboardGetLayout(GSKeyboardRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSSystemSetRequiresCapabilities": {
+      "name": "GSSystemSetRequiresCapabilities",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSSystemRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSSystemSetRequiresCapabilities(GSSystemRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetTimestamp": {
+      "name": "GSEventGetTimestamp",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSEventGetTimestamp(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetHandInfo": {
+      "name": "GSEventGetHandInfo",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSEventGetHandInfo(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSRegisterPurpleNamedPerPIDPort": {
+      "name": "GSRegisterPurpleNamedPerPIDPort",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ GSRegisterPurpleNamedPerPIDPort(GSRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSRegisterPurpleNamedPort",
+        "GSEventRegisterEventCallBack"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSGetPurpleSystemAppPort": {
+      "name": "GSGetPurpleSystemAppPort",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSGetPurpleSystemAppPort(GSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventCopyMarkedCharacters": {
+      "name": "GSEventCopyMarkedCharacters",
+      "framework": "GraphicsServices",
+      "return_type": "GSEventRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "GSEventRef/*?*/ GSEventCopyMarkedCharacters(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "GSEventRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventCopyCharactersIgnoringModifiers",
+        "GSEventCreatePlistRepresentation",
+        "GSEventCopy",
+        "GSEventCreateApplicationSuspendEvent",
+        "GSEventCreateKeyEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetOuterMostPathPosition": {
+      "name": "GSEventGetOuterMostPathPosition",
+      "framework": "GraphicsServices",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ GSEventGetOuterMostPathPosition(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventGetInnerMostPathPosition"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSGetPurpleWorkspacePort": {
+      "name": "GSGetPurpleWorkspacePort",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSGetPurpleWorkspacePort(GSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSMainScreenWindowTransform": {
+      "name": "GSMainScreenWindowTransform",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSMainScreenWindowTransform(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventCopyCharacters": {
+      "name": "GSEventCopyCharacters",
+      "framework": "GraphicsServices",
+      "return_type": "GSEventRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "GSEventRef/*?*/ GSEventCopyCharacters(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "GSEventRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventCopyCharactersIgnoringModifiers",
+        "GSEventCreatePlistRepresentation",
+        "GSEventCopy",
+        "GSEventCreateApplicationSuspendEvent",
+        "GSEventCreateKeyEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventCreateAccessoryKeyStateEvent": {
+      "name": "GSEventCreateAccessoryKeyStateEvent",
+      "framework": "GraphicsServices",
+      "return_type": "GSEventRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GSEventRef GSEventCreateAccessoryKeyStateEvent(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GSEventRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventCopyCharactersIgnoringModifiers",
+        "GSEventCreatePlistRepresentation",
+        "GSEventCopy",
+        "GSEventCreateApplicationSuspendEvent",
+        "GSEventCreateKeyEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSCopyPurpleNamedPort": {
+      "name": "GSCopyPurpleNamedPort",
+      "framework": "GraphicsServices",
+      "return_type": "GSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "GSRef/*?*/ GSCopyPurpleNamedPort(GSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "GSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSCopyPurpleNamedPerPIDPort"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardGetHWKeyboardType": {
+      "name": "GSKeyboardGetHWKeyboardType",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSKeyboardRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSKeyboardGetHWKeyboardType(GSKeyboardRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetLocationInWindow": {
+      "name": "GSEventGetLocationInWindow",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSEventGetLocationInWindow(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventAccelerometerAxisZ": {
+      "name": "GSEventAccelerometerAxisZ",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventAccelerometerAxisZ(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardTranslateKey": {
+      "name": "GSKeyboardTranslateKey",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSKeyboardTranslateKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetHardwareKeyboardCountry": {
+      "name": "GSEventGetHardwareKeyboardCountry",
+      "framework": "GraphicsServices",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ GSEventGetHardwareKeyboardCountry(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventSetPathInfoAtIndex",
+        "GSEventGetClickCount",
+        "GSEventSetHardwareKeyboardAttachedWithCountryCodeAndType",
+        "GSEventGetPathInfoAtIndex"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventPopRunLoopMode": {
+      "name": "GSEventPopRunLoopMode",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventPopRunLoopMode(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventQuitTopApplication": {
+      "name": "GSEventQuitTopApplication",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventQuitTopApplication(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventLockDevice": {
+      "name": "GSEventLockDevice",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventLockDevice(void)",
+      "verb": "synchronize",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventResetIdleTimer": {
+      "name": "GSEventResetIdleTimer",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventResetIdleTimer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetCharacterSet": {
+      "name": "GSEventGetCharacterSet",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSEventGetCharacterSet(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetSubType": {
+      "name": "GSEventGetSubType",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSEventGetSubType(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventCreateWithEventRecord": {
+      "name": "GSEventCreateWithEventRecord",
+      "framework": "GraphicsServices",
+      "return_type": "GSEventRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GSEventRef GSEventCreateWithEventRecord(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GSEventRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSEventCopyCharactersIgnoringModifiers",
+        "GSEventCreatePlistRepresentation",
+        "GSEventCopy",
+        "GSEventCreateApplicationSuspendEvent",
+        "GSEventCreateKeyEvent"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardGetModifierState": {
+      "name": "GSKeyboardGetModifierState",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSKeyboardRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSKeyboardGetModifierState(GSKeyboardRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSMainScreenPixelSize": {
+      "name": "GSMainScreenPixelSize",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSMainScreenPixelSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventVibrateForDuration": {
+      "name": "GSEventVibrateForDuration",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSEventVibrateForDuration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSGetPurpleSystemEventPort": {
+      "name": "GSGetPurpleSystemEventPort",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSGetPurpleSystemEventPort(GSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSSendSimpleEvent": {
+      "name": "GSSendSimpleEvent",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSSendSimpleEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardIsGlobeKeyUsagePair": {
+      "name": "GSKeyboardIsGlobeKeyUsagePair",
+      "framework": "GraphicsServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSKeyboardRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool GSKeyboardIsGlobeKeyUsagePair(GSKeyboardRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSMainScreenOrientation": {
+      "name": "GSMainScreenOrientation",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSMainScreenOrientation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetType": {
+      "name": "GSEventGetType",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSEventGetType(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardCreateWithCountryCode": {
+      "name": "GSKeyboardCreateWithCountryCode",
+      "framework": "GraphicsServices",
+      "return_type": "GSKeyboardRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GSKeyboardRef GSKeyboardCreateWithCountryCode(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GSKeyboardRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSKeyboardCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSSystemHasCapability": {
+      "name": "GSSystemHasCapability",
+      "framework": "GraphicsServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSSystemRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool GSSystemHasCapability(GSSystemRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSColorCreateWithDeviceWhite": {
+      "name": "GSColorCreateWithDeviceWhite",
+      "framework": "GraphicsServices",
+      "return_type": "GSColorRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GSColorRef GSColorCreateWithDeviceWhite(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GSColorRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GSColorCreateColorWithDeviceRGBAInfo",
+        "GSColorCreateColorWithDeviceRGBA"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventGetKeyCode": {
+      "name": "GSEventGetKeyCode",
+      "framework": "GraphicsServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GSEventGetKeyCode(GSEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSEventIsForceQuitEvent": {
+      "name": "GSEventIsForceQuitEvent",
+      "framework": "GraphicsServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GSEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool GSEventIsForceQuitEvent(GSEventRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GSKeyboardTranslateKeyWithModifiers": {
+      "name": "GSKeyboardTranslateKeyWithModifiers",
+      "framework": "GraphicsServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from GraphicsServices"
+        }
+      ],
+      "signature": "void/*?*/ GSKeyboardTranslateKeyWithModifiers(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "gpu_compute": [
+      "GSKeyboardTranslateKeyExtendedCommand",
+      "GSKeyboardTranslateKeyExtendedCommandWithUsagePage"
+    ],
+    "image_processing": [
+      "GSMainScreenPixelSize",
+      "GSMainScreenScaleFactor"
+    ],
+    "display_compositing": [
+      "GSEventGetLocationInWindow",
+      "GSEventGetWindow",
+      "GSEventSetLocationInWindow",
+      "GSMainScreenOrientation",
+      "GSMainScreenPixelSize",
+      "GSMainScreenPointSize",
+      "GSMainScreenPositionTransform",
+      "GSMainScreenScaleFactor",
+      "GSMainScreenSize",
+      "GSMainScreenWindowTransform",
+      "GSSetMainScreenInfo"
+    ],
+    "cryptography": [
+      "GSEventIsHandEvent",
+      "GSEventIsHardwareKeyboardAttached",
+      "GSEventIsHardwareKeyboardEvent",
+      "GSEventSourceIsHardware"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

@@ -1,0 +1,459 @@
+{
+  "framework": "PersonaUI",
+  "functions": {
+    "PersonaUIVersionString": {
+      "name": "PersonaUIVersionString",
+      "framework": "PersonaUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PersonaUI"
+        }
+      ],
+      "signature": "void/*?*/ PersonaUIVersionString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromPRLikenessCacheSize": {
+      "name": "NSStringFromPRLikenessCacheSize",
+      "framework": "PersonaUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PersonaUI"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromPRLikenessCacheSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PRLikenessSnapshotOptionForceDecode": {
+      "name": "PRLikenessSnapshotOptionForceDecode",
+      "framework": "PersonaUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PersonaUI"
+        }
+      ],
+      "signature": "void/*?*/ PRLikenessSnapshotOptionForceDecode(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PRRectGetMaxLength": {
+      "name": "PRRectGetMaxLength",
+      "framework": "PersonaUI",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PRRectRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PersonaUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ PRRectGetMaxLength(PRRectRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PRRectGetMinLength"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CGSizeFromPRLikenessCacheSize": {
+      "name": "CGSizeFromPRLikenessCacheSize",
+      "framework": "PersonaUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PersonaUI"
+        }
+      ],
+      "signature": "void/*?*/ CGSizeFromPRLikenessCacheSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PRSizeScale": {
+      "name": "PRSizeScale",
+      "framework": "PersonaUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PersonaUI"
+        }
+      ],
+      "signature": "void/*?*/ PRSizeScale(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PRImageCreateWithImageInRect": {
+      "name": "PRImageCreateWithImageInRect",
+      "framework": "PersonaUI",
+      "return_type": "PRImageRef",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PersonaUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "PRImageRef PRImageCreateWithImageInRect(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "PRImageRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PRImageCreateCircularImageInRect"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PRRectGetMinLength": {
+      "name": "PRRectGetMinLength",
+      "framework": "PersonaUI",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PRRectRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PersonaUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ PRRectGetMinLength(PRRectRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PRRectGetMaxLength"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PRImageCreateCircularImageInRect": {
+      "name": "PRImageCreateCircularImageInRect",
+      "framework": "PersonaUI",
+      "return_type": "PRImageRef",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PersonaUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "PRImageRef PRImageCreateCircularImageInRect(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "PRImageRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PRImageCreateWithImageInRect"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PRLikenessCacheSizeGetCost": {
+      "name": "PRLikenessCacheSizeGetCost",
+      "framework": "PersonaUI",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PRLikenessCacheSizeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PersonaUI"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ PRLikenessCacheSizeGetCost(PRLikenessCacheSizeRef *ref)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PRRectScale": {
+      "name": "PRRectScale",
+      "framework": "PersonaUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PersonaUI"
+        }
+      ],
+      "signature": "void/*?*/ PRRectScale(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_InvalidPRLikenessCacheSize": {
+      "name": "_InvalidPRLikenessCacheSize",
+      "framework": "PersonaUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PersonaUI"
+        }
+      ],
+      "signature": "void/*?*/ _InvalidPRLikenessCacheSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PersonaUIVersionNumber": {
+      "name": "PersonaUIVersionNumber",
+      "framework": "PersonaUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PersonaUI"
+        }
+      ],
+      "signature": "void/*?*/ PersonaUIVersionNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PRLikenessCacheSizeClosestToSize": {
+      "name": "PRLikenessCacheSizeClosestToSize",
+      "framework": "PersonaUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PersonaUI"
+        }
+      ],
+      "signature": "void/*?*/ PRLikenessCacheSizeClosestToSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PRImageForceDecompress": {
+      "name": "PRImageForceDecompress",
+      "framework": "PersonaUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PersonaUI"
+        }
+      ],
+      "signature": "void/*?*/ PRImageForceDecompress(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PRLikenessSnapshotOptionCircular": {
+      "name": "PRLikenessSnapshotOptionCircular",
+      "framework": "PersonaUI",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PersonaUI"
+        }
+      ],
+      "signature": "void/*?*/ PRLikenessSnapshotOptionCircular(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "image_processing": [
+      "PRImageCreateCircularImageInRect",
+      "PRImageCreateWithImageInRect",
+      "PRImageForceDecompress",
+      "PRRectScale",
+      "PRSizeScale"
+    ],
+    "compression": [
+      "PRImageForceDecompress"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

@@ -1,0 +1,5810 @@
+{
+  "framework": "MLCompute",
+  "functions": {
+    "CPU_SetOptimizerDataForConvolutionLayer": {
+      "name": "CPU_SetOptimizerDataForConvolutionLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CPU_Ref",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CPU_SetOptimizerDataForConvolutionLayer(CPU_Ref *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_GetDataType": {
+      "name": "GPU_GetDataType",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GPU_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GPU_GetDataType(GPU_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateInputViewUnit": {
+      "name": "ANE_ValidateInputViewUnit",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateInputViewUnit(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "convertTNCtoNC": {
+      "name": "convertTNCtoNC",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ convertTNCtoNC(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MLCSoftmaxOperationDebugDescription": {
+      "name": "MLCSoftmaxOperationDebugDescription",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ MLCSoftmaxOperationDebugDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "activationIsFusableWithMPSGraph": {
+      "name": "activationIsFusableWithMPSGraph",
+      "framework": "MLCompute",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "activationRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool activationIsFusableWithMPSGraph(activationRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateReductionLayer": {
+      "name": "ANE_CreateReductionLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateReductionLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer",
+        "ANE_CreateSelectionLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CreatePaddingLayer": {
+      "name": "CPU_CreatePaddingLayer",
+      "framework": "MLCompute",
+      "return_type": "CPU_Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CPU_Ref CPU_CreatePaddingLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CPU_CreateRMSPropOptimizer",
+        "CPU_CreateTransposeLayer",
+        "CPU_CreateSGDOptimizer",
+        "CPU_CreateOptimizerDeviceDataForTensor",
+        "CPU_CreateYOLOLossLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateComparisonLayer": {
+      "name": "ANE_CreateComparisonLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateComparisonLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer",
+        "ANE_CreateSelectionLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "convertDataLayout": {
+      "name": "convertDataLayout",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ convertDataLayout(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CanProgramANECConstantTensorUnit": {
+      "name": "ANE_CanProgramANECConstantTensorUnit",
+      "framework": "MLCompute",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ANE_CanProgramANECConstantTensorUnit(ANE_Ref *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateNormalizationLayer": {
+      "name": "ANE_CreateNormalizationLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateNormalizationLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer",
+        "ANE_CreateSelectionLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_GetTensorWidthAndHeightStrides": {
+      "name": "GPU_GetTensorWidthAndHeightStrides",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GPU_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GPU_GetTensorWidthAndHeightStrides(GPU_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "convertTNCtoNTC": {
+      "name": "convertTNCtoNTC",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ convertTNCtoNTC(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_clearTemporaryImageBatchReadCount": {
+      "name": "GPU_clearTemporaryImageBatchReadCount",
+      "framework": "MLCompute",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GPU_clearTemporaryImageBatchReadRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t GPU_clearTemporaryImageBatchReadCount(GPU_clearTemporaryImageBatchReadRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_GetTensorBatchSizeWithBatchFirst",
+        "ANE_GetTensorBatchSizeWithOnePrepended",
+        "ANE_GetANEElementByteCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_CreateYOLOLossLayer": {
+      "name": "GPU_CreateYOLOLossLayer",
+      "framework": "MLCompute",
+      "return_type": "GPU_Ref",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GPU_Ref GPU_CreateYOLOLossLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GPU_CreateRMSPropOptimizer",
+        "GPU_CreateSGDOptimizer",
+        "GPU_CreateLossLayer",
+        "GPU_CreateOptimizerDeviceVectorDataForTensor",
+        "GPU_CreateMPSMatrixDesc"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_AllocateExportableGammaBetaStatesWithDevice": {
+      "name": "GPU_AllocateExportableGammaBetaStatesWithDevice",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "memory_buffer",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ GPU_AllocateExportableGammaBetaStatesWithDevice(size_t size)",
+      "verb": "allocate",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GPU_AllocateMemoryForMomentum",
+        "GPU_AllocateExportableRunningMeanVariancetatesWithDevice",
+        "GPU_AllocateResourceForMultiGPUTraining"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CreateRMSPropOptimizer": {
+      "name": "CPU_CreateRMSPropOptimizer",
+      "framework": "MLCompute",
+      "return_type": "CPU_Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CPU_Ref CPU_CreateRMSPropOptimizer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CPU_CreatePaddingLayer",
+        "CPU_CreateTransposeLayer",
+        "CPU_CreateSGDOptimizer",
+        "CPU_CreateOptimizerDeviceDataForTensor",
+        "CPU_CreateYOLOLossLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_CreateRMSPropOptimizer": {
+      "name": "GPU_CreateRMSPropOptimizer",
+      "framework": "MLCompute",
+      "return_type": "GPU_Ref",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GPU_Ref GPU_CreateRMSPropOptimizer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GPU_CreateYOLOLossLayer",
+        "GPU_CreateSGDOptimizer",
+        "GPU_CreateLossLayer",
+        "GPU_CreateOptimizerDeviceVectorDataForTensor",
+        "GPU_CreateMPSMatrixDesc"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CreateTransposeLayer": {
+      "name": "CPU_CreateTransposeLayer",
+      "framework": "MLCompute",
+      "return_type": "CPU_Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CPU_Ref CPU_CreateTransposeLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CPU_CreatePaddingLayer",
+        "CPU_CreateRMSPropOptimizer",
+        "CPU_CreateSGDOptimizer",
+        "CPU_CreateOptimizerDeviceDataForTensor",
+        "CPU_CreateYOLOLossLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_WriteANEModelFiles": {
+      "name": "ANE_WriteANEModelFiles",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_WriteANEModelFiles(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateFullyConnectedLayer": {
+      "name": "ANE_CreateFullyConnectedLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateFullyConnectedLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreatePoolingLayer",
+        "ANE_CreateSelectionLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompressSparseKernel": {
+      "name": "ANE_CompressSparseKernel",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "gpu_compute",
+        "neural_network",
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompressSparseKernel(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ComputeLiveInputs": {
+      "name": "ANE_ComputeLiveInputs",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ComputeLiveInputs(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateGOCUnit": {
+      "name": "ANE_ValidateGOCUnit",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateGOCUnit(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_SetBatchStride": {
+      "name": "CPU_SetBatchStride",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CPU_Ref",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CPU_SetBatchStride(CPU_Ref *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MLCPredicateTypeDebugDescription": {
+      "name": "MLCPredicateTypeDebugDescription",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ MLCPredicateTypeDebugDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreatePoolingLayer": {
+      "name": "ANE_CreatePoolingLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreatePoolingLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreateSelectionLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateReductionUnit": {
+      "name": "ANE_ValidateReductionUnit",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateReductionUnit(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ConvertInputTensor": {
+      "name": "ANE_ConvertInputTensor",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ConvertInputTensor(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateSelectionLayer": {
+      "name": "ANE_CreateSelectionLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateSelectionLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_IsAneCompiledLayer": {
+      "name": "ANE_IsAneCompiledLayer",
+      "framework": "MLCompute",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ANE_IsAneCompiledLayer(ANE_Ref *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateUnitsWithNeuronLayer": {
+      "name": "ANE_CreateUnitsWithNeuronLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateUnitsWithNeuronLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "makeMPSNDArrayFromMTLBuffer": {
+      "name": "makeMPSNDArrayFromMTLBuffer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ makeMPSNDArrayFromMTLBuffer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "convertHiddenBNNStoMLC": {
+      "name": "convertHiddenBNNStoMLC",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ convertHiddenBNNStoMLC(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_GetTensorWidthAndHeight": {
+      "name": "GPU_GetTensorWidthAndHeight",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GPU_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GPU_GetTensorWidthAndHeight(GPU_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompileTransposeLayer": {
+      "name": "ANE_CompileTransposeLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompileTransposeLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MLCPaddingPolicyDebugDescription": {
+      "name": "MLCPaddingPolicyDebugDescription",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ MLCPaddingPolicyDebugDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CreateSGDOptimizer": {
+      "name": "CPU_CreateSGDOptimizer",
+      "framework": "MLCompute",
+      "return_type": "CPU_Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CPU_Ref CPU_CreateSGDOptimizer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CPU_CreatePaddingLayer",
+        "CPU_CreateRMSPropOptimizer",
+        "CPU_CreateTransposeLayer",
+        "CPU_CreateOptimizerDeviceDataForTensor",
+        "CPU_CreateYOLOLossLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateSliceLayer": {
+      "name": "ANE_CreateSliceLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateSliceLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_GetTensor4DShapeWithBatchFirst": {
+      "name": "ANE_GetTensor4DShapeWithBatchFirst",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ANE_GetTensor4DShapeWithBatchFirst(ANE_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CompileUpsampleLayer": {
+      "name": "CPU_CompileUpsampleLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_CompileUpsampleLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_AssociateDataSourceToTensors": {
+      "name": "GPU_AssociateDataSourceToTensors",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ GPU_AssociateDataSourceToTensors(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "missingMPSGraphActivationType": {
+      "name": "missingMPSGraphActivationType",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ missingMPSGraphActivationType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompilePoolingLayer": {
+      "name": "ANE_CompilePoolingLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompilePoolingLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_GetDataTypeFromMPSDataType": {
+      "name": "GPU_GetDataTypeFromMPSDataType",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GPU_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GPU_GetDataTypeFromMPSDataType(GPU_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateSoftmaxLayer": {
+      "name": "ANE_CreateSoftmaxLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateSoftmaxLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateLayerNormUnit": {
+      "name": "ANE_ValidateLayerNormUnit",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateLayerNormUnit(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_GetDeviceMemoryData": {
+      "name": "CPU_GetDeviceMemoryData",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CPU_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CPU_GetDeviceMemoryData(CPU_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_BuildBNNSNDArrayDescriptorRowMajor": {
+      "name": "CPU_BuildBNNSNDArrayDescriptorRowMajor",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_BuildBNNSNDArrayDescriptorRowMajor(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_BuildPermuteBNNSNDArrayDescriptor": {
+      "name": "CPU_BuildPermuteBNNSNDArrayDescriptor",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_BuildPermuteBNNSNDArrayDescriptor(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_GetTensorBatchSizeWithBatchFirst": {
+      "name": "ANE_GetTensorBatchSizeWithBatchFirst",
+      "framework": "MLCompute",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ ANE_GetTensorBatchSizeWithBatchFirst(ANE_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GPU_clearTemporaryImageBatchReadCount",
+        "ANE_GetTensorBatchSizeWithOnePrepended",
+        "ANE_GetANEElementByteCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_GetTensorWidthAndHeightWithOnePrepended": {
+      "name": "ANE_GetTensorWidthAndHeightWithOnePrepended",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ANE_GetTensorWidthAndHeightWithOnePrepended(ANE_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompileConvolutionLayer": {
+      "name": "ANE_CompileConvolutionLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompileConvolutionLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CompileNormalizationLayer": {
+      "name": "CPU_CompileNormalizationLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_CompileNormalizationLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_BuildBNNSNDArrayLastMajorDescriptor": {
+      "name": "CPU_BuildBNNSNDArrayLastMajorDescriptor",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_BuildBNNSNDArrayLastMajorDescriptor(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateNeuronUnit": {
+      "name": "ANE_ValidateNeuronUnit",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateNeuronUnit(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_GetTensorFeatureChannelsWithBatchFirst": {
+      "name": "ANE_GetTensorFeatureChannelsWithBatchFirst",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ANE_GetTensorFeatureChannelsWithBatchFirst(ANE_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CreateOptimizerDeviceDataForTensor": {
+      "name": "CPU_CreateOptimizerDeviceDataForTensor",
+      "framework": "MLCompute",
+      "return_type": "CPU_Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CPU_Ref CPU_CreateOptimizerDeviceDataForTensor(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CPU_CreatePaddingLayer",
+        "CPU_CreateRMSPropOptimizer",
+        "CPU_CreateTransposeLayer",
+        "CPU_CreateSGDOptimizer",
+        "CPU_CreateYOLOLossLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_BuildNeuronParams": {
+      "name": "ANE_BuildNeuronParams",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_BuildNeuronParams(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateTransposeLayer": {
+      "name": "ANE_CreateTransposeLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateTransposeLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CreateYOLOLossLayer": {
+      "name": "CPU_CreateYOLOLossLayer",
+      "framework": "MLCompute",
+      "return_type": "CPU_Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CPU_Ref CPU_CreateYOLOLossLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CPU_CreatePaddingLayer",
+        "CPU_CreateRMSPropOptimizer",
+        "CPU_CreateTransposeLayer",
+        "CPU_CreateSGDOptimizer",
+        "CPU_CreateOptimizerDeviceDataForTensor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_AllocateMemoryForMomentum": {
+      "name": "GPU_AllocateMemoryForMomentum",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "memory_buffer",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ GPU_AllocateMemoryForMomentum(size_t size)",
+      "verb": "allocate",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GPU_AllocateExportableGammaBetaStatesWithDevice",
+        "GPU_AllocateExportableRunningMeanVariancetatesWithDevice",
+        "GPU_AllocateResourceForMultiGPUTraining"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MLCGradientClippingTypeDebugDescription": {
+      "name": "MLCGradientClippingTypeDebugDescription",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ MLCGradientClippingTypeDebugDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "deviceParameterWithVectors": {
+      "name": "deviceParameterWithVectors",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ deviceParameterWithVectors(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompileSoftmaxLayer": {
+      "name": "ANE_CompileSoftmaxLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompileSoftmaxLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ApplyPaddingSizes": {
+      "name": "ANE_ApplyPaddingSizes",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ApplyPaddingSizes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateReshapeUnit": {
+      "name": "ANE_ValidateReshapeUnit",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateReshapeUnit(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CreateAdamOptimizer": {
+      "name": "CPU_CreateAdamOptimizer",
+      "framework": "MLCompute",
+      "return_type": "CPU_Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CPU_Ref CPU_CreateAdamOptimizer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CPU_CreatePaddingLayer",
+        "CPU_CreateRMSPropOptimizer",
+        "CPU_CreateTransposeLayer",
+        "CPU_CreateSGDOptimizer",
+        "CPU_CreateOptimizerDeviceDataForTensor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "encodeMPSImageBatchToMPSTemporaryNDArray": {
+      "name": "encodeMPSImageBatchToMPSTemporaryNDArray",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ encodeMPSImageBatchToMPSTemporaryNDArray(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_isAppleFamily": {
+      "name": "GPU_isAppleFamily",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ GPU_isAppleFamily(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "makeMPSNDArrayDescriptorFromTensor": {
+      "name": "makeMPSNDArrayDescriptorFromTensor",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ makeMPSNDArrayDescriptorFromTensor(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MLCComparisonOperationDebugDescription": {
+      "name": "MLCComparisonOperationDebugDescription",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ MLCComparisonOperationDebugDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "convertNCHWToWHCN": {
+      "name": "convertNCHWToWHCN",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ convertNCHWToWHCN(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CreateLossLayer": {
+      "name": "CPU_CreateLossLayer",
+      "framework": "MLCompute",
+      "return_type": "CPU_Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CPU_Ref CPU_CreateLossLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CPU_CreatePaddingLayer",
+        "CPU_CreateRMSPropOptimizer",
+        "CPU_CreateTransposeLayer",
+        "CPU_CreateSGDOptimizer",
+        "CPU_CreateOptimizerDeviceDataForTensor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateBroadcastUnit": {
+      "name": "ANE_ValidateBroadcastUnit",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateBroadcastUnit(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_BuildBNNSNormalizationParams": {
+      "name": "CPU_BuildBNNSNormalizationParams",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_BuildBNNSNormalizationParams(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_AllocateExportableRunningMeanVariancetatesWithDevice": {
+      "name": "GPU_AllocateExportableRunningMeanVariancetatesWithDevice",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "memory_buffer",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ GPU_AllocateExportableRunningMeanVariancetatesWithDevice(size_t size)",
+      "verb": "allocate",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GPU_AllocateExportableGammaBetaStatesWithDevice",
+        "GPU_AllocateMemoryForMomentum",
+        "GPU_AllocateResourceForMultiGPUTraining"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "convertTNCtoNCHW": {
+      "name": "convertTNCtoNCHW",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ convertTNCtoNCHW(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CreateFusedConvolutionNormalizationAndNeuronLayer": {
+      "name": "CPU_CreateFusedConvolutionNormalizationAndNeuronLayer",
+      "framework": "MLCompute",
+      "return_type": "CPU_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CPU_Ref CPU_CreateFusedConvolutionNormalizationAndNeuronLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CPU_CreatePaddingLayer",
+        "CPU_CreateRMSPropOptimizer",
+        "CPU_CreateTransposeLayer",
+        "CPU_CreateSGDOptimizer",
+        "CPU_CreateOptimizerDeviceDataForTensor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CalculateImageSizeForTensor": {
+      "name": "ANE_CalculateImageSizeForTensor",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CalculateImageSizeForTensor(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ReadOutputTensor": {
+      "name": "ANE_ReadOutputTensor",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ReadOutputTensor(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_CreateSGDOptimizer": {
+      "name": "GPU_CreateSGDOptimizer",
+      "framework": "MLCompute",
+      "return_type": "GPU_Ref",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GPU_Ref GPU_CreateSGDOptimizer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GPU_CreateYOLOLossLayer",
+        "GPU_CreateRMSPropOptimizer",
+        "GPU_CreateLossLayer",
+        "GPU_CreateOptimizerDeviceVectorDataForTensor",
+        "GPU_CreateMPSMatrixDesc"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateConcatLayer": {
+      "name": "ANE_CreateConcatLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateConcatLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_GetDimensionIn4DWithOnePrepended": {
+      "name": "ANE_GetDimensionIn4DWithOnePrepended",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ANE_GetDimensionIn4DWithOnePrepended(ANE_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MLCPoolingTypeDebugDescription": {
+      "name": "MLCPoolingTypeDebugDescription",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ MLCPoolingTypeDebugDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "convertNSEtoTNC": {
+      "name": "convertNSEtoTNC",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ convertNSEtoTNC(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_GetDataSourceFromTensors": {
+      "name": "GPU_GetDataSourceFromTensors",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GPU_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ GPU_GetDataSourceFromTensors(GPU_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_CreateLossLayer": {
+      "name": "GPU_CreateLossLayer",
+      "framework": "MLCompute",
+      "return_type": "GPU_Ref",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GPU_Ref GPU_CreateLossLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GPU_CreateYOLOLossLayer",
+        "GPU_CreateRMSPropOptimizer",
+        "GPU_CreateSGDOptimizer",
+        "GPU_CreateOptimizerDeviceVectorDataForTensor",
+        "GPU_CreateMPSMatrixDesc"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CalculateRowStrideForTensor": {
+      "name": "ANE_CalculateRowStrideForTensor",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CalculateRowStrideForTensor(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "encodeMPSTemporaryNDArrayToMPSImageBatch": {
+      "name": "encodeMPSTemporaryNDArrayToMPSImageBatch",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ encodeMPSTemporaryNDArrayToMPSImageBatch(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateArgMinMaxUnit": {
+      "name": "ANE_ValidateArgMinMaxUnit",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateArgMinMaxUnit(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateTransposeUnit": {
+      "name": "ANE_ValidateTransposeUnit",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateTransposeUnit(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CompileYOLOLossLayer": {
+      "name": "CPU_CompileYOLOLossLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_CompileYOLOLossLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_AllocateResourceForMultiGPUTraining": {
+      "name": "GPU_AllocateResourceForMultiGPUTraining",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "memory_buffer",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ GPU_AllocateResourceForMultiGPUTraining(size_t size)",
+      "verb": "allocate",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GPU_AllocateExportableGammaBetaStatesWithDevice",
+        "GPU_AllocateMemoryForMomentum",
+        "GPU_AllocateExportableRunningMeanVariancetatesWithDevice"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MLCLossTypeDebugDescription": {
+      "name": "MLCLossTypeDebugDescription",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ MLCLossTypeDebugDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompileReshapeLayer": {
+      "name": "ANE_CompileReshapeLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompileReshapeLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_BuildBNNSNDArrayDescriptor": {
+      "name": "CPU_BuildBNNSNDArrayDescriptor",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_BuildBNNSNDArrayDescriptor(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompileNeuronLayer": {
+      "name": "ANE_CompileNeuronLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompileNeuronLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateConcatLayer": {
+      "name": "ANE_ValidateConcatLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateConcatLayer(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyNDArrayToMTLBuffer": {
+      "name": "copyNDArrayToMTLBuffer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ copyNDArrayToMTLBuffer(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_BuildBNNSNDArrayDescriptorColMajor": {
+      "name": "CPU_BuildBNNSNDArrayDescriptorColMajor",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_BuildBNNSNDArrayDescriptorColMajor(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ConvertFp32ToFp16": {
+      "name": "ANE_ConvertFp32ToFp16",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ConvertFp32ToFp16(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateSoftmaxUnit": {
+      "name": "ANE_ValidateSoftmaxUnit",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateSoftmaxUnit(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_CreateOptimizerDeviceVectorDataForTensor": {
+      "name": "GPU_CreateOptimizerDeviceVectorDataForTensor",
+      "framework": "MLCompute",
+      "return_type": "GPU_Ref",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GPU_Ref GPU_CreateOptimizerDeviceVectorDataForTensor(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GPU_CreateYOLOLossLayer",
+        "GPU_CreateRMSPropOptimizer",
+        "GPU_CreateSGDOptimizer",
+        "GPU_CreateLossLayer",
+        "GPU_CreateMPSMatrixDesc"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_CreateMPSMatrixDesc": {
+      "name": "GPU_CreateMPSMatrixDesc",
+      "framework": "MLCompute",
+      "return_type": "GPU_Ref",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GPU_Ref GPU_CreateMPSMatrixDesc(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GPU_CreateYOLOLossLayer",
+        "GPU_CreateRMSPropOptimizer",
+        "GPU_CreateSGDOptimizer",
+        "GPU_CreateLossLayer",
+        "GPU_CreateOptimizerDeviceVectorDataForTensor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ComputeLiveOutputs": {
+      "name": "ANE_ComputeLiveOutputs",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ComputeLiveOutputs(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_GetTensorBatchSizeWithOnePrepended": {
+      "name": "ANE_GetTensorBatchSizeWithOnePrepended",
+      "framework": "MLCompute",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ ANE_GetTensorBatchSizeWithOnePrepended(ANE_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GPU_clearTemporaryImageBatchReadCount",
+        "ANE_GetTensorBatchSizeWithBatchFirst",
+        "ANE_GetANEElementByteCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MLCConvolutionTypeDebugDescription": {
+      "name": "MLCConvolutionTypeDebugDescription",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ MLCConvolutionTypeDebugDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_BuildTransposeParams": {
+      "name": "ANE_BuildTransposeParams",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_BuildTransposeParams(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_GetANEElementByteCount": {
+      "name": "ANE_GetANEElementByteCount",
+      "framework": "MLCompute",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ ANE_GetANEElementByteCount(ANE_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GPU_clearTemporaryImageBatchReadCount",
+        "ANE_GetTensorBatchSizeWithBatchFirst",
+        "ANE_GetTensorBatchSizeWithOnePrepended"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompileFullyConnectedLayer": {
+      "name": "ANE_CompileFullyConnectedLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompileFullyConnectedLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CalculateIOInterleave": {
+      "name": "ANE_CalculateIOInterleave",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CalculateIOInterleave(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompileConcatLayer": {
+      "name": "ANE_CompileConcatLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompileConcatLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateUnitsWithConvolutionLayer": {
+      "name": "ANE_CreateUnitsWithConvolutionLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateUnitsWithConvolutionLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateMatrixMultUnit": {
+      "name": "ANE_ValidateMatrixMultUnit",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateMatrixMultUnit(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_SetOptimizerDataForNormalizationLayer": {
+      "name": "CPU_SetOptimizerDataForNormalizationLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CPU_Ref",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CPU_SetOptimizerDataForNormalizationLayer(CPU_Ref *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_AlignForThreadGroupMemorySize": {
+      "name": "GPU_AlignForThreadGroupMemorySize",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ GPU_AlignForThreadGroupMemorySize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MLCActivationTypeDebugDescription": {
+      "name": "MLCActivationTypeDebugDescription",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ MLCActivationTypeDebugDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_GetTensor4DShapeWithOnePrepended": {
+      "name": "ANE_GetTensor4DShapeWithOnePrepended",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ANE_GetTensor4DShapeWithOnePrepended(ANE_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateArithmeticLayer": {
+      "name": "ANE_CreateArithmeticLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateArithmeticLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MLCLSTMResultModeDebugDescription": {
+      "name": "MLCLSTMResultModeDebugDescription",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ MLCLSTMResultModeDebugDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CreateUpsampleLayer": {
+      "name": "CPU_CreateUpsampleLayer",
+      "framework": "MLCompute",
+      "return_type": "CPU_Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CPU_Ref CPU_CreateUpsampleLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CPU_CreatePaddingLayer",
+        "CPU_CreateRMSPropOptimizer",
+        "CPU_CreateTransposeLayer",
+        "CPU_CreateSGDOptimizer",
+        "CPU_CreateOptimizerDeviceDataForTensor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "adjustBatchSizeForFC": {
+      "name": "adjustBatchSizeForFC",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ adjustBatchSizeForFC(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CreateNormalizationLayer": {
+      "name": "CPU_CreateNormalizationLayer",
+      "framework": "MLCompute",
+      "return_type": "CPU_Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CPU_Ref CPU_CreateNormalizationLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CPU_CreatePaddingLayer",
+        "CPU_CreateRMSPropOptimizer",
+        "CPU_CreateTransposeLayer",
+        "CPU_CreateSGDOptimizer",
+        "CPU_CreateOptimizerDeviceDataForTensor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "convertNCtoTNC": {
+      "name": "convertNCtoTNC",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ convertNCtoTNC(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "createArrayOfMPSMatrixSlicesFromBatch": {
+      "name": "createArrayOfMPSMatrixSlicesFromBatch",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ createArrayOfMPSMatrixSlicesFromBatch(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateConvolutionLayer": {
+      "name": "ANE_CreateConvolutionLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateConvolutionLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompileMatMulLayer": {
+      "name": "ANE_CompileMatMulLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompileMatMulLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rotateWeightsTensorBy180Degree": {
+      "name": "rotateWeightsTensorBy180Degree",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ rotateWeightsTensorBy180Degree(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateUpsampleLayer": {
+      "name": "ANE_CreateUpsampleLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateUpsampleLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_GetANECIRDataTypeWithMLCDataType": {
+      "name": "ANE_GetANECIRDataTypeWithMLCDataType",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ANE_GetANECIRDataTypeWithMLCDataType(ANE_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateInterleave": {
+      "name": "ANE_ValidateInterleave",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateInterleave(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateConvolutionLayer": {
+      "name": "ANE_ValidateConvolutionLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateConvolutionLayer(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_BuildBNNSNormalizationInputOutputParams": {
+      "name": "CPU_BuildBNNSNormalizationInputOutputParams",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_BuildBNNSNormalizationInputOutputParams(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CompileTransposeLayer": {
+      "name": "CPU_CompileTransposeLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_CompileTransposeLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateMatMulLayer": {
+      "name": "ANE_CreateMatMulLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateMatMulLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_AdjustFeatureChannelBeyondMax": {
+      "name": "GPU_AdjustFeatureChannelBeyondMax",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ GPU_AdjustFeatureChannelBeyondMax(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ANECDataTypeToMLCDataType": {
+      "name": "ANE_ANECDataTypeToMLCDataType",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ANECDataTypeToMLCDataType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_GetTensorFeatureChannelsWithOnePrepended": {
+      "name": "ANE_GetTensorFeatureChannelsWithOnePrepended",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ANE_GetTensorFeatureChannelsWithOnePrepended(ANE_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_IsPaddingLayerAndNotCompiledForANE": {
+      "name": "ANE_IsPaddingLayerAndNotCompiledForANE",
+      "framework": "MLCompute",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool ANE_IsPaddingLayerAndNotCompiledForANE(ANE_Ref *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ConvertFp32ToInt16": {
+      "name": "ANE_ConvertFp32ToInt16",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ConvertFp32ToInt16(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_GetTensorValueInFloat": {
+      "name": "ANE_GetTensorValueInFloat",
+      "framework": "MLCompute",
+      "return_type": "double",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "double/*?*/ ANE_GetTensorValueInFloat(ANE_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "double"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CalculatePlaneCountForTensor": {
+      "name": "ANE_CalculatePlaneCountForTensor",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CalculatePlaneCountForTensor(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompileNormalizationLayer": {
+      "name": "ANE_CompileNormalizationLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompileNormalizationLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidatePoolingLayer": {
+      "name": "ANE_ValidatePoolingLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidatePoolingLayer(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_BNNSDataTypeSizeInBytes": {
+      "name": "CPU_BNNSDataTypeSizeInBytes",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_BNNSDataTypeSizeInBytes(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidatePoolingUnit": {
+      "name": "ANE_ValidatePoolingUnit",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidatePoolingUnit(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompileComparisonLayer": {
+      "name": "ANE_CompileComparisonLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompileComparisonLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_GetANECIRDimension": {
+      "name": "ANE_GetANECIRDimension",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ANE_GetANECIRDimension(ANE_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_CreateMPSMatrixDescForNDArray": {
+      "name": "GPU_CreateMPSMatrixDescForNDArray",
+      "framework": "MLCompute",
+      "return_type": "GPU_Ref",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GPU_Ref GPU_CreateMPSMatrixDescForNDArray(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GPU_CreateYOLOLossLayer",
+        "GPU_CreateRMSPropOptimizer",
+        "GPU_CreateSGDOptimizer",
+        "GPU_CreateLossLayer",
+        "GPU_CreateOptimizerDeviceVectorDataForTensor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_CreateOptimizerDeviceDataForTensor": {
+      "name": "GPU_CreateOptimizerDeviceDataForTensor",
+      "framework": "MLCompute",
+      "return_type": "GPU_Ref",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GPU_Ref GPU_CreateOptimizerDeviceDataForTensor(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GPU_CreateYOLOLossLayer",
+        "GPU_CreateRMSPropOptimizer",
+        "GPU_CreateSGDOptimizer",
+        "GPU_CreateLossLayer",
+        "GPU_CreateOptimizerDeviceVectorDataForTensor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CompileFusedConvolutionNormalizationAndNeuronLayer": {
+      "name": "CPU_CompileFusedConvolutionNormalizationAndNeuronLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_CompileFusedConvolutionNormalizationAndNeuronLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CompilePaddingLayer": {
+      "name": "CPU_CompilePaddingLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_CompilePaddingLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompileUpsampleLayer": {
+      "name": "ANE_CompileUpsampleLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompileUpsampleLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateElementWiseUnit": {
+      "name": "ANE_ValidateElementWiseUnit",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateElementWiseUnit(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_SetPaddingPolicyForLayer": {
+      "name": "GPU_SetPaddingPolicyForLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "GPU_Ref",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ GPU_SetPaddingPolicyForLayer(GPU_Ref *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateNeuronLayer": {
+      "name": "ANE_CreateNeuronLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateNeuronLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MLCArithmeticOperationDebugDescription": {
+      "name": "MLCArithmeticOperationDebugDescription",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ MLCArithmeticOperationDebugDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateInstanceNormUnit": {
+      "name": "ANE_ValidateInstanceNormUnit",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateInstanceNormUnit(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_BuildReductionParams": {
+      "name": "ANE_BuildReductionParams",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_BuildReductionParams(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "setBNNSActivation": {
+      "name": "setBNNSActivation",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ setBNNSActivation(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompileSliceLayer": {
+      "name": "ANE_CompileSliceLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompileSliceLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_BuildArithmeticParams": {
+      "name": "ANE_BuildArithmeticParams",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_BuildArithmeticParams(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_ScaleMPSImageBatchWithKernel": {
+      "name": "GPU_ScaleMPSImageBatchWithKernel",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ GPU_ScaleMPSImageBatchWithKernel(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateUnitsWithArithmeticOpeartion": {
+      "name": "ANE_CreateUnitsWithArithmeticOpeartion",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateUnitsWithArithmeticOpeartion(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompileArithmeticLayer": {
+      "name": "ANE_CompileArithmeticLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompileArithmeticLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_BuildConvolutionParams": {
+      "name": "ANE_BuildConvolutionParams",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_BuildConvolutionParams(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_FindUnitWithType": {
+      "name": "ANE_FindUnitWithType",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_FindUnitWithType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_GetDeviceMemoryData": {
+      "name": "ANE_GetDeviceMemoryData",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "memory_buffer",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ANE_GetDeviceMemoryData(ANE_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_GetTensorWidthAndHeightWithBatchFirst": {
+      "name": "ANE_GetTensorWidthAndHeightWithBatchFirst",
+      "framework": "MLCompute",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ANE_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ANE_GetTensorWidthAndHeightWithBatchFirst(ANE_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateConcatUnit": {
+      "name": "ANE_ValidateConcatUnit",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateConcatUnit(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CreateReshapeLayer": {
+      "name": "ANE_CreateReshapeLayer",
+      "framework": "MLCompute",
+      "return_type": "ANE_Ref",
+      "parameters": [],
+      "capabilities": [
+        "neural_network",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ANE_Ref ANE_CreateReshapeLayer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ANE_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "ANE_CreateReductionLayer",
+        "ANE_CreateComparisonLayer",
+        "ANE_CreateNormalizationLayer",
+        "ANE_CreateFullyConnectedLayer",
+        "ANE_CreatePoolingLayer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_BNNSDataType": {
+      "name": "CPU_BNNSDataType",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_BNNSDataType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompileReductionLayer": {
+      "name": "ANE_CompileReductionLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompileReductionLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_BuildBNNSNDArrayDescriptorForBetaOrGammaDeltas": {
+      "name": "CPU_BuildBNNSNDArrayDescriptorForBetaOrGammaDeltas",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "linear_algebra",
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_BuildBNNSNDArrayDescriptorForBetaOrGammaDeltas(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CompileSelectionLayer": {
+      "name": "ANE_CompileSelectionLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CompileSelectionLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_CalculatePlaneStrideForTensor": {
+      "name": "ANE_CalculatePlaneStrideForTensor",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_CalculatePlaneStrideForTensor(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ANE_ValidateConvolutionUnit": {
+      "name": "ANE_ValidateConvolutionUnit",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ ANE_ValidateConvolutionUnit(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CPU_CompileLossLayer": {
+      "name": "CPU_CompileLossLayer",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ CPU_CompileLossLayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GPU_CreateAdamOptimizer": {
+      "name": "GPU_CreateAdamOptimizer",
+      "framework": "MLCompute",
+      "return_type": "GPU_Ref",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "GPU_Ref GPU_CreateAdamOptimizer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "GPU_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "GPU_CreateYOLOLossLayer",
+        "GPU_CreateRMSPropOptimizer",
+        "GPU_CreateSGDOptimizer",
+        "GPU_CreateLossLayer",
+        "GPU_CreateOptimizerDeviceVectorDataForTensor"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MLCPaddingTypeDebugDescription": {
+      "name": "MLCPaddingTypeDebugDescription",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ MLCPaddingTypeDebugDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MLCReductionTypeDebugDescription": {
+      "name": "MLCReductionTypeDebugDescription",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ MLCReductionTypeDebugDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MLCSampleModeDebugDescription": {
+      "name": "MLCSampleModeDebugDescription",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ MLCSampleModeDebugDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "convertNCHWtoTNC": {
+      "name": "convertNCHWtoTNC",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ convertNCHWtoTNC(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "makeMPSTemporaryNDArrayFromTensor": {
+      "name": "makeMPSTemporaryNDArrayFromTensor",
+      "framework": "MLCompute",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MLCompute"
+        }
+      ],
+      "signature": "void/*?*/ makeMPSTemporaryNDArrayFromTensor(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "neural_network": [
+      "ANE_ANECDataTypeToMLCDataType",
+      "ANE_ApplyPaddingSizes",
+      "ANE_BuildArithmeticParams",
+      "ANE_BuildConvolutionParams",
+      "ANE_BuildNeuronParams",
+      "ANE_BuildReductionParams",
+      "ANE_BuildTransposeParams",
+      "ANE_CalculateIOInterleave",
+      "ANE_CalculateImageSizeForTensor",
+      "ANE_CalculatePlaneCountForTensor",
+      "ANE_CalculatePlaneStrideForTensor",
+      "ANE_CalculateRowStrideForTensor",
+      "ANE_CanProgramANECConstantTensorUnit",
+      "ANE_CompileArithmeticLayer",
+      "ANE_CompileComparisonLayer",
+      "ANE_CompileConcatLayer",
+      "ANE_CompileConvolutionLayer",
+      "ANE_CompileFullyConnectedLayer",
+      "ANE_CompileMatMulLayer",
+      "ANE_CompileNeuronLayer",
+      "ANE_CompileNormalizationLayer",
+      "ANE_CompilePoolingLayer",
+      "ANE_CompileReductionLayer",
+      "ANE_CompileReshapeLayer",
+      "ANE_CompileSelectionLayer",
+      "ANE_CompileSliceLayer",
+      "ANE_CompileSoftmaxLayer",
+      "ANE_CompileTransposeLayer",
+      "ANE_CompileUpsampleLayer",
+      "ANE_CompressSparseKernel",
+      "ANE_ComputeLiveInputs",
+      "ANE_ComputeLiveOutputs",
+      "ANE_ConvertFp32ToFp16",
+      "ANE_ConvertFp32ToInt16",
+      "ANE_ConvertInputTensor",
+      "ANE_CreateArithmeticLayer",
+      "ANE_CreateComparisonLayer",
+      "ANE_CreateConcatLayer",
+      "ANE_CreateConvolutionLayer",
+      "ANE_CreateFullyConnectedLayer",
+      "ANE_CreateMatMulLayer",
+      "ANE_CreateNeuronLayer",
+      "ANE_CreateNormalizationLayer",
+      "ANE_CreatePoolingLayer",
+      "ANE_CreateReductionLayer",
+      "ANE_CreateReshapeLayer",
+      "ANE_CreateSelectionLayer",
+      "ANE_CreateSliceLayer",
+      "ANE_CreateSoftmaxLayer",
+      "ANE_CreateTransposeLayer",
+      "ANE_CreateUnitsWithArithmeticOpeartion",
+      "ANE_CreateUnitsWithConvolutionLayer",
+      "ANE_CreateUnitsWithNeuronLayer",
+      "ANE_CreateUpsampleLayer",
+      "ANE_FindUnitWithType",
+      "ANE_GetANECIRDataTypeWithMLCDataType",
+      "ANE_GetANECIRDimension",
+      "ANE_GetANEElementByteCount",
+      "ANE_GetDeviceMemoryData",
+      "ANE_GetDimensionIn4DWithOnePrepended",
+      "ANE_GetTensor4DShapeWithBatchFirst",
+      "ANE_GetTensor4DShapeWithOnePrepended",
+      "ANE_GetTensorBatchSizeWithBatchFirst",
+      "ANE_GetTensorBatchSizeWithOnePrepended",
+      "ANE_GetTensorFeatureChannelsWithBatchFirst",
+      "ANE_GetTensorFeatureChannelsWithOnePrepended",
+      "ANE_GetTensorValueInFloat",
+      "ANE_GetTensorWidthAndHeightWithBatchFirst",
+      "ANE_GetTensorWidthAndHeightWithOnePrepended",
+      "ANE_IsAneCompiledLayer",
+      "ANE_IsPaddingLayerAndNotCompiledForANE",
+      "ANE_ReadOutputTensor",
+      "ANE_ValidateArgMinMaxUnit",
+      "ANE_ValidateBroadcastUnit",
+      "ANE_ValidateConcatLayer",
+      "ANE_ValidateConcatUnit",
+      "ANE_ValidateConvolutionLayer",
+      "ANE_ValidateConvolutionUnit",
+      "ANE_ValidateElementWiseUnit",
+      "ANE_ValidateGOCUnit",
+      "ANE_ValidateInputViewUnit",
+      "ANE_ValidateInstanceNormUnit",
+      "ANE_ValidateInterleave",
+      "ANE_ValidateLayerNormUnit",
+      "ANE_ValidateMatrixMultUnit",
+      "ANE_ValidateNeuronUnit",
+      "ANE_ValidatePoolingLayer",
+      "ANE_ValidatePoolingUnit",
+      "ANE_ValidateReductionUnit",
+      "ANE_ValidateReshapeUnit",
+      "ANE_ValidateSoftmaxUnit",
+      "ANE_ValidateTransposeUnit",
+      "ANE_WriteANEModelFiles",
+      "CPU_BNNSDataType",
+      "CPU_BNNSDataTypeSizeInBytes",
+      "CPU_BuildBNNSNDArrayDescriptor",
+      "CPU_BuildBNNSNDArrayDescriptorColMajor",
+      "CPU_BuildBNNSNDArrayDescriptorForBetaOrGammaDeltas",
+      "CPU_BuildBNNSNDArrayDescriptorRowMajor",
+      "CPU_BuildBNNSNDArrayLastMajorDescriptor",
+      "CPU_BuildBNNSNormalizationInputOutputParams",
+      "CPU_BuildBNNSNormalizationParams",
+      "CPU_BuildPermuteBNNSNDArrayDescriptor",
+      "CPU_CompileFusedConvolutionNormalizationAndNeuronLayer",
+      "CPU_CreateFusedConvolutionNormalizationAndNeuronLayer",
+      "CPU_SetOptimizerDataForConvolutionLayer",
+      "MLCConvolutionTypeDebugDescription",
+      "convertHiddenBNNStoMLC",
+      "setBNNSActivation"
+    ],
+    "cryptography": [
+      "ANE_CompileReshapeLayer",
+      "ANE_CreateReshapeLayer",
+      "ANE_GetTensor4DShapeWithBatchFirst",
+      "ANE_GetTensor4DShapeWithOnePrepended",
+      "ANE_ValidateReshapeUnit"
+    ],
+    "linear_algebra": [
+      "ANE_CompressSparseKernel",
+      "ANE_ValidateMatrixMultUnit",
+      "CPU_BNNSDataType",
+      "CPU_BNNSDataTypeSizeInBytes",
+      "CPU_BuildBNNSNDArrayDescriptor",
+      "CPU_BuildBNNSNDArrayDescriptorColMajor",
+      "CPU_BuildBNNSNDArrayDescriptorForBetaOrGammaDeltas",
+      "CPU_BuildBNNSNDArrayDescriptorRowMajor",
+      "CPU_BuildBNNSNDArrayLastMajorDescriptor",
+      "CPU_BuildBNNSNormalizationInputOutputParams",
+      "CPU_BuildBNNSNormalizationParams",
+      "CPU_BuildPermuteBNNSNDArrayDescriptor",
+      "GPU_CreateMPSMatrixDesc",
+      "GPU_CreateMPSMatrixDescForNDArray",
+      "convertHiddenBNNStoMLC",
+      "createArrayOfMPSMatrixSlicesFromBatch",
+      "setBNNSActivation"
+    ],
+    "gpu_compute": [
+      "ANE_CompressSparseKernel",
+      "ANE_ComputeLiveInputs",
+      "ANE_ComputeLiveOutputs",
+      "GPU_AdjustFeatureChannelBeyondMax",
+      "GPU_AlignForThreadGroupMemorySize",
+      "GPU_AllocateExportableGammaBetaStatesWithDevice",
+      "GPU_AllocateExportableRunningMeanVariancetatesWithDevice",
+      "GPU_AllocateMemoryForMomentum",
+      "GPU_AllocateResourceForMultiGPUTraining",
+      "GPU_AssociateDataSourceToTensors",
+      "GPU_CreateAdamOptimizer",
+      "GPU_CreateLossLayer",
+      "GPU_CreateMPSMatrixDesc",
+      "GPU_CreateMPSMatrixDescForNDArray",
+      "GPU_CreateOptimizerDeviceDataForTensor",
+      "GPU_CreateOptimizerDeviceVectorDataForTensor",
+      "GPU_CreateRMSPropOptimizer",
+      "GPU_CreateSGDOptimizer",
+      "GPU_CreateYOLOLossLayer",
+      "GPU_GetDataSourceFromTensors",
+      "GPU_GetDataType",
+      "GPU_GetDataTypeFromMPSDataType",
+      "GPU_GetTensorWidthAndHeight",
+      "GPU_GetTensorWidthAndHeightStrides",
+      "GPU_ScaleMPSImageBatchWithKernel",
+      "GPU_SetPaddingPolicyForLayer",
+      "GPU_clearTemporaryImageBatchReadCount",
+      "GPU_isAppleFamily",
+      "activationIsFusableWithMPSGraph",
+      "copyNDArrayToMTLBuffer",
+      "createArrayOfMPSMatrixSlicesFromBatch",
+      "encodeMPSImageBatchToMPSTemporaryNDArray",
+      "encodeMPSTemporaryNDArrayToMPSImageBatch",
+      "makeMPSNDArrayDescriptorFromTensor",
+      "makeMPSNDArrayFromMTLBuffer",
+      "makeMPSTemporaryNDArrayFromTensor",
+      "missingMPSGraphActivationType"
+    ],
+    "image_processing": [
+      "ANE_CalculateImageSizeForTensor",
+      "GPU_ScaleMPSImageBatchWithKernel",
+      "GPU_clearTemporaryImageBatchReadCount",
+      "encodeMPSImageBatchToMPSTemporaryNDArray",
+      "encodeMPSTemporaryNDArrayToMPSImageBatch",
+      "rotateWeightsTensorBy180Degree"
+    ],
+    "compression": [
+      "ANE_CompressSparseKernel"
+    ],
+    "memory_buffer": [
+      "ANE_GetDeviceMemoryData",
+      "CPU_GetDeviceMemoryData",
+      "GPU_AlignForThreadGroupMemorySize",
+      "GPU_AllocateExportableGammaBetaStatesWithDevice",
+      "GPU_AllocateExportableRunningMeanVariancetatesWithDevice",
+      "GPU_AllocateMemoryForMomentum",
+      "GPU_AllocateResourceForMultiGPUTraining",
+      "copyNDArrayToMTLBuffer",
+      "makeMPSNDArrayFromMTLBuffer"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

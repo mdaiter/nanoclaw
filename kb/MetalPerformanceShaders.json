@@ -1,0 +1,150 @@
+{
+  "framework": "MetalPerformanceShaders",
+  "functions": {
+    "MPSSetHeapCacheDuration": {
+      "name": "MPSSetHeapCacheDuration",
+      "framework": "MetalPerformanceShaders",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MPSRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MetalPerformanceShaders"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MPSSetHeapCacheDuration(MPSRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MPSHintTemporaryMemoryHighWaterMark": {
+      "name": "MPSHintTemporaryMemoryHighWaterMark",
+      "framework": "MetalPerformanceShaders",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MetalPerformanceShaders"
+        }
+      ],
+      "signature": "void/*?*/ MPSHintTemporaryMemoryHighWaterMark(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MPSGetPreferredDevice": {
+      "name": "MPSGetPreferredDevice",
+      "framework": "MetalPerformanceShaders",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MPSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MetalPerformanceShaders"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MPSGetPreferredDevice(MPSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MPSSupportsMTLDevice": {
+      "name": "MPSSupportsMTLDevice",
+      "framework": "MetalPerformanceShaders",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MetalPerformanceShaders"
+        }
+      ],
+      "signature": "void/*?*/ MPSSupportsMTLDevice(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "gpu_compute": [
+      "MPSGetPreferredDevice",
+      "MPSHintTemporaryMemoryHighWaterMark",
+      "MPSSetHeapCacheDuration",
+      "MPSSupportsMTLDevice"
+    ],
+    "memory_buffer": [
+      "MPSHintTemporaryMemoryHighWaterMark"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

@@ -1,0 +1,617 @@
+{
+  "framework": "BiomeStorage",
+  "functions": {
+    "BMPBStoreBookmarkReadFrom": {
+      "name": "BMPBStoreBookmarkReadFrom",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ BMPBStoreBookmarkReadFrom(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BMPruningPolicyDescribeMaxStreamSize": {
+      "name": "BMPruningPolicyDescribeMaxStreamSize",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ BMPruningPolicyDescribeMaxStreamSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BMPruningPolicyMaxEventCountNoLimit": {
+      "name": "BMPruningPolicyMaxEventCountNoLimit",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ BMPruningPolicyMaxEventCountNoLimit(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "bm_frame_header_statusV1": {
+      "name": "bm_frame_header_statusV1",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ bm_frame_header_statusV1(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BiomeStorageVersionNumber": {
+      "name": "BiomeStorageVersionNumber",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ BiomeStorageVersionNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BMPBSubscriptionEventReadFrom": {
+      "name": "BMPBSubscriptionEventReadFrom",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ BMPBSubscriptionEventReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "bm_useAdler32": {
+      "name": "bm_useAdler32",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ bm_useAdler32(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "bm_useCrc32": {
+      "name": "bm_useCrc32",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ bm_useCrc32(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "bm_crc32WithInitValue": {
+      "name": "bm_crc32WithInitValue",
+      "framework": "BiomeStorage",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ bm_crc32WithInitValue(void *buf, size_t size)",
+      "verb": "create",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BMStreamHealthErrorDomain": {
+      "name": "BMStreamHealthErrorDomain",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ BMStreamHealthErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBMFrameStorePermission": {
+      "name": "NSStringFromBMFrameStorePermission",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBMFrameStorePermission(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BMFileAccessModeFromBMFrameStorePermission": {
+      "name": "BMFileAccessModeFromBMFrameStorePermission",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ BMFileAccessModeFromBMFrameStorePermission(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BMPBTombstoneEventReadFrom": {
+      "name": "BMPBTombstoneEventReadFrom",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ BMPBTombstoneEventReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BMPruningPolicyMaxStreamSizeNoLimit": {
+      "name": "BMPruningPolicyMaxStreamSizeNoLimit",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ BMPruningPolicyMaxStreamSizeNoLimit(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromBMFrameWriteStatus": {
+      "name": "NSStringFromBMFrameWriteStatus",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromBMFrameWriteStatus(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "bm_defaultStoreSegmentSize": {
+      "name": "bm_defaultStoreSegmentSize",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ bm_defaultStoreSegmentSize(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "bm_frame_bytesV1": {
+      "name": "bm_frame_bytesV1",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ bm_frame_bytesV1(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BMPruningPolicyMaxAgeNoLimit": {
+      "name": "BMPruningPolicyMaxAgeNoLimit",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ BMPruningPolicyMaxAgeNoLimit(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BiomeStorageVersionString": {
+      "name": "BiomeStorageVersionString",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ BiomeStorageVersionString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "bm_frame_header_infoV1": {
+      "name": "bm_frame_header_infoV1",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ bm_frame_header_infoV1(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "bm_generateChecksum": {
+      "name": "bm_generateChecksum",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ bm_generateChecksum(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BMPruningPolicyDescribeMaxAge": {
+      "name": "BMPruningPolicyDescribeMaxAge",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ BMPruningPolicyDescribeMaxAge(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "bm_frame_bytesV2": {
+      "name": "bm_frame_bytesV2",
+      "framework": "BiomeStorage",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        }
+      ],
+      "signature": "void/*?*/ bm_frame_bytesV2(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BMPruningPolicyDescribeMaxEventCount": {
+      "name": "BMPruningPolicyDescribeMaxEventCount",
+      "framework": "BiomeStorage",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "BMPruningPolicyDescribeMaxEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiomeStorage"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t BMPruningPolicyDescribeMaxEventCount(BMPruningPolicyDescribeMaxEventRef *ref)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "video_processing": [
+      "BMFileAccessModeFromBMFrameStorePermission",
+      "NSStringFromBMFrameStorePermission",
+      "NSStringFromBMFrameWriteStatus",
+      "bm_frame_bytesV1",
+      "bm_frame_bytesV2",
+      "bm_frame_header_infoV1",
+      "bm_frame_header_statusV1"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

@@ -1,0 +1,4236 @@
+{
+  "framework": "SoftwareUpdate",
+  "functions": {
+    "SUScanPrefAutomaticCheckEnabledKey": {
+      "name": "SUScanPrefAutomaticCheckEnabledKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUScanPrefAutomaticCheckEnabledKey(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUSoftwareUpdateMetadataKeyRestrictedToOOB": {
+      "name": "SUSoftwareUpdateMetadataKeyRestrictedToOOB",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUSoftwareUpdateMetadataKeyRestrictedToOOB(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallInstalledPrintersKey": {
+      "name": "SUPredicateInstallInstalledPrintersKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallInstalledPrintersKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPreferencesEventKeyVolumeGroupCount": {
+      "name": "SUTelemetryPreferencesEventKeyVolumeGroupCount",
+      "framework": "SoftwareUpdate",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUTelemetryPreferencesEventKeyVolumeGroupRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t SUTelemetryPreferencesEventKeyVolumeGroupCount(SUTelemetryPreferencesEventKeyVolumeGroupRef *ref)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SUTelemetryPreferencesEventKeyBootPolicyCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPrefsSkipAPFSSnapshot": {
+      "name": "SUPrefsSkipAPFSSnapshot",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPrefsSkipAPFSSnapshot(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryEventTypePreferences": {
+      "name": "SUTelemetryEventTypePreferences",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryEventTypePreferences(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadKeyMinutesSinceLastLoginWindowHarvest": {
+      "name": "SUTelemetryPayloadKeyMinutesSinceLastLoginWindowHarvest",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadKeyMinutesSinceLastLoginWindowHarvest(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ExternalUpdateProductKeyPrefix": {
+      "name": "ExternalUpdateProductKeyPrefix",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ ExternalUpdateProductKeyPrefix(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallPredicateKey": {
+      "name": "SUPredicateInstallPredicateKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallPredicateKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryAdvancedPreferencesEventKeyStartupManagerPolicyAllowAppleExternalDrive": {
+      "name": "SUTelemetryAdvancedPreferencesEventKeyStartupManagerPolicyAllowAppleExternalDrive",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryAdvancedPreferencesEventKeyStartupManagerPolicyAllowAppleExternalDrive(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUAppStoreUpdateStatusCurrentStateDownloading": {
+      "name": "SUAppStoreUpdateStatusCurrentStateDownloading",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUAppStoreUpdateStatusCurrentStateDownloading(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUAppStoreUpdateStatusInstallDetailKey": {
+      "name": "SUAppStoreUpdateStatusInstallDetailKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUAppStoreUpdateStatusInstallDetailKey(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryEventTypeNotifications": {
+      "name": "SUTelemetryEventTypeNotifications",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryEventTypeNotifications(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPreferencesEventKeyCustomCatalogURLIsManaged": {
+      "name": "SUTelemetryPreferencesEventKeyCustomCatalogURLIsManaged",
+      "framework": "SoftwareUpdate",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUTelemetryPreferencesEventKeyCustomCatalogURLRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SUTelemetryPreferencesEventKeyCustomCatalogURLIsManaged(SUTelemetryPreferencesEventKeyCustomCatalogURLRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryAdvancedPreferencesEventKeyBootPolicySIP0": {
+      "name": "SUTelemetryAdvancedPreferencesEventKeyBootPolicySIP0",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryAdvancedPreferencesEventKeyBootPolicySIP0(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPreferencesEventKeyDownloadUpdatesIsEnabled": {
+      "name": "SUTelemetryPreferencesEventKeyDownloadUpdatesIsEnabled",
+      "framework": "SoftwareUpdate",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUTelemetryPreferencesEventKeyDownloadUpdatesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SUTelemetryPreferencesEventKeyDownloadUpdatesIsEnabled(SUTelemetryPreferencesEventKeyDownloadUpdatesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryScanEventKeyTimeElapsed": {
+      "name": "SUTelemetryScanEventKeyTimeElapsed",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryScanEventKeyTimeElapsed(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUAppStoreUpdateErrorDomain": {
+      "name": "SUAppStoreUpdateErrorDomain",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUAppStoreUpdateErrorDomain(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryEventTypeQueueForInstallTonight": {
+      "name": "SUTelemetryEventTypeQueueForInstallTonight",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryEventTypeQueueForInstallTonight(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadKeyMinutesSinceLastHarvest": {
+      "name": "SUTelemetryPayloadKeyMinutesSinceLastHarvest",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadKeyMinutesSinceLastHarvest(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryAdvancedPreferencesEventKeyBootPolicySecurityMode": {
+      "name": "SUTelemetryAdvancedPreferencesEventKeyBootPolicySecurityMode",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryAdvancedPreferencesEventKeyBootPolicySecurityMode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryDownloadEventValueForeground": {
+      "name": "SUTelemetryDownloadEventValueForeground",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryDownloadEventValueForeground(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryScanEventKeyCatalogURL": {
+      "name": "SUTelemetryScanEventKeyCatalogURL",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryScanEventKeyCatalogURL(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallBusyMessageKey": {
+      "name": "SUPredicateInstallBusyMessageKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallBusyMessageKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryAdvancedPreferencesEventKeySecureBootPolicy": {
+      "name": "SUTelemetryAdvancedPreferencesEventKeySecureBootPolicy",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryAdvancedPreferencesEventKeySecureBootPolicy(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryEventTypeStartPostLogout": {
+      "name": "SUTelemetryEventTypeStartPostLogout",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryEventTypeStartPostLogout(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryDownloadEventKeyTimeElapsed": {
+      "name": "SUTelemetryDownloadEventKeyTimeElapsed",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryDownloadEventKeyTimeElapsed(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPreferencesEventKeyCustomCatalogURLIsSet": {
+      "name": "SUTelemetryPreferencesEventKeyCustomCatalogURLIsSet",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUTelemetryPreferencesEventKeyCustomCatalogURLIsRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPreferencesEventKeyCustomCatalogURLIsSet(SUTelemetryPreferencesEventKeyCustomCatalogURLIsRef *ref, void * *value)",
+      "verb": "predicate",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUJournalEntryVersion": {
+      "name": "SUJournalEntryVersion",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUJournalEntryVersion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUSoftwareUpdateErrorCatalogURLStringKey": {
+      "name": "SUSoftwareUpdateErrorCatalogURLStringKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUSoftwareUpdateErrorCatalogURLStringKey(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryDownloadEventKeyInitiatedBy": {
+      "name": "SUTelemetryDownloadEventKeyInitiatedBy",
+      "framework": "SoftwareUpdate",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ SUTelemetryDownloadEventKeyInitiatedBy(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SUTelemetryScanEventKeyInitiatedBy"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUUpdateTypeValueSafari": {
+      "name": "SUUpdateTypeValueSafari",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUUpdateTypeValueSafari(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallNoNetworkMessageKey": {
+      "name": "SUPredicateInstallNoNetworkMessageKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallNoNetworkMessageKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPrefsManagedDeferredInstallDelayKey": {
+      "name": "SUPrefsManagedDeferredInstallDelayKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPrefsManagedDeferredInstallDelayKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUScanPrefConfigDataInstallKey": {
+      "name": "SUScanPrefConfigDataInstallKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUScanPrefConfigDataInstallKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadValueResultFailure": {
+      "name": "SUTelemetryPayloadValueResultFailure",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadValueResultFailure(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUSoftwareUpdateErrorIsAppleCatalogKey": {
+      "name": "SUSoftwareUpdateErrorIsAppleCatalogKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUSoftwareUpdateErrorRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SUSoftwareUpdateErrorIsAppleCatalogKey(SUSoftwareUpdateErrorRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUSoftwareUpdateErrorTotalBytesRequiredKey": {
+      "name": "SUSoftwareUpdateErrorTotalBytesRequiredKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUSoftwareUpdateErrorTotalBytesRequiredKey(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUScanPrefAllowSameOrOlderMajorOSVersionKey": {
+      "name": "SUScanPrefAllowSameOrOlderMajorOSVersionKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUScanPrefAllowSameOrOlderMajorOSVersionKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadKeyProject": {
+      "name": "SUTelemetryPayloadKeyProject",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadKeyProject(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPrefsDeferredNonOSInstallEnabledKey": {
+      "name": "SUPrefsDeferredNonOSInstallEnabledKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPrefsDeferredNonOSInstallEnabledKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPrefsDeferredMajorOSInstallEnabledKey": {
+      "name": "SUPrefsDeferredMajorOSInstallEnabledKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPrefsDeferredMajorOSInstallEnabledKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryScanEventKeyTimeSinceLastScan": {
+      "name": "SUTelemetryScanEventKeyTimeSinceLastScan",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryScanEventKeyTimeSinceLastScan(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallConfirmKey": {
+      "name": "SUPredicateInstallConfirmKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallConfirmKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUUpdateServiceInterface": {
+      "name": "SUUpdateServiceInterface",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUUpdateServiceInterface(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPrefsManagedMinorOSDeferredInstallDelayKey": {
+      "name": "SUPrefsManagedMinorOSDeferredInstallDelayKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPrefsManagedMinorOSDeferredInstallDelayKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUAppStoreUpdateStatusCanCancelKey": {
+      "name": "SUAppStoreUpdateStatusCanCancelKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUAppStoreUpdateStatusRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SUAppStoreUpdateStatusCanCancelKey(SUAppStoreUpdateStatusRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUScanPrefAutomaticCheckOverrideKey": {
+      "name": "SUScanPrefAutomaticCheckOverrideKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUScanPrefAutomaticCheckOverrideKey(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUUpdateInfoIdentifier": {
+      "name": "SUUpdateInfoIdentifier",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUUpdateInfoIdentifier(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUAppStoreUpdateStatusBytesTotalKey": {
+      "name": "SUAppStoreUpdateStatusBytesTotalKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUAppStoreUpdateStatusBytesTotalKey(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUDebugSettingEnabled": {
+      "name": "SUDebugSettingEnabled",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUDebugRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ SUDebugSettingEnabled(SUDebugRef *ref, bool value)",
+      "verb": "unknown",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryAdvancedPreferencesEventKeyBootPolicySupported": {
+      "name": "SUTelemetryAdvancedPreferencesEventKeyBootPolicySupported",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryAdvancedPreferencesEventKeyBootPolicySupported(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUAppStoreUpdateStatusCurrentStateInstalling": {
+      "name": "SUAppStoreUpdateStatusCurrentStateInstalling",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUAppStoreUpdateStatusCurrentStateInstalling(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryEventTypeForcedEnrollment": {
+      "name": "SUTelemetryEventTypeForcedEnrollment",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryEventTypeForcedEnrollment(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadKeyEventSubtype": {
+      "name": "SUTelemetryPayloadKeyEventSubtype",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadKeyEventSubtype(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryAdvancedPreferencesEventKeyBootPolicySIP1": {
+      "name": "SUTelemetryAdvancedPreferencesEventKeyBootPolicySIP1",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryAdvancedPreferencesEventKeyBootPolicySIP1(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadKeyLastLoginWindowHarvestMode": {
+      "name": "SUTelemetryPayloadKeyLastLoginWindowHarvestMode",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadKeyLastLoginWindowHarvestMode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallErrorDomain": {
+      "name": "SUPredicateInstallErrorDomain",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUScanMacBuddyEligibleUpdateErrorDomain": {
+      "name": "SUScanMacBuddyEligibleUpdateErrorDomain",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUScanMacBuddyEligibleUpdateErrorDomain(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallHelpURLStringKey": {
+      "name": "SUPredicateInstallHelpURLStringKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallHelpURLStringKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPreferencesEventKeyDownloadUpdatesIsManaged": {
+      "name": "SUTelemetryPreferencesEventKeyDownloadUpdatesIsManaged",
+      "framework": "SoftwareUpdate",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUTelemetryPreferencesEventKeyDownloadUpdatesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SUTelemetryPreferencesEventKeyDownloadUpdatesIsManaged(SUTelemetryPreferencesEventKeyDownloadUpdatesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryAdvancedPreferencesEventKeyBootPolicyAUXI": {
+      "name": "SUTelemetryAdvancedPreferencesEventKeyBootPolicyAUXI",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryAdvancedPreferencesEventKeyBootPolicyAUXI(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPreferencesEventKeyInstallMacOSUpdatesIsEnabled": {
+      "name": "SUTelemetryPreferencesEventKeyInstallMacOSUpdatesIsEnabled",
+      "framework": "SoftwareUpdate",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUTelemetryPreferencesEventKeyInstallMacOSUpdatesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SUTelemetryPreferencesEventKeyInstallMacOSUpdatesIsEnabled(SUTelemetryPreferencesEventKeyInstallMacOSUpdatesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryEventTypeInstalls": {
+      "name": "SUTelemetryEventTypeInstalls",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryEventTypeInstalls(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadKeyStashState": {
+      "name": "SUTelemetryPayloadKeyStashState",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadKeyStashState(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPreferencesEventKeyInstallSplatIsEnabled": {
+      "name": "SUTelemetryPreferencesEventKeyInstallSplatIsEnabled",
+      "framework": "SoftwareUpdate",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUTelemetryPreferencesEventKeyInstallSplatRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SUTelemetryPreferencesEventKeyInstallSplatIsEnabled(SUTelemetryPreferencesEventKeyInstallSplatRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryScanEventValueBackground": {
+      "name": "SUTelemetryScanEventValueBackground",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryScanEventValueBackground(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUProductErrorDomain": {
+      "name": "SUProductErrorDomain",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUProductErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadKeyEventObject": {
+      "name": "SUTelemetryPayloadKeyEventObject",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadKeyEventObject(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUUpdateInfoIsMobileSoftwareUpdate": {
+      "name": "SUUpdateInfoIsMobileSoftwareUpdate",
+      "framework": "SoftwareUpdate",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUUpdateInfoRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SUUpdateInfoIsMobileSoftwareUpdate(SUUpdateInfoRef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SULoginWindowCookiePath": {
+      "name": "SULoginWindowCookiePath",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SULoginWindowCookiePath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUScanPrefBackgroundDownloadKey": {
+      "name": "SUScanPrefBackgroundDownloadKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUScanPrefBackgroundDownloadKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "su_firmware_updates_directory": {
+      "name": "su_firmware_updates_directory",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ su_firmware_updates_directory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryEventTypeCoreAnalyticsPreferences": {
+      "name": "SUTelemetryEventTypeCoreAnalyticsPreferences",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryEventTypeCoreAnalyticsPreferences(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadKeyCurrentBuildVersion": {
+      "name": "SUTelemetryPayloadKeyCurrentBuildVersion",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadKeyCurrentBuildVersion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallNoServerTitleKey": {
+      "name": "SUPredicateInstallNoServerTitleKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallNoServerTitleKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUJournalEntryIsMobileSoftwareUpdate": {
+      "name": "SUJournalEntryIsMobileSoftwareUpdate",
+      "framework": "SoftwareUpdate",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUJournalEntryRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SUJournalEntryIsMobileSoftwareUpdate(SUJournalEntryRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUSoftwareUpdateErrorDomain": {
+      "name": "SUSoftwareUpdateErrorDomain",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUSoftwareUpdateErrorDomain(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUSoftwareUpdateErrorOtherUserFullNameKey": {
+      "name": "SUSoftwareUpdateErrorOtherUserFullNameKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUSoftwareUpdateErrorOtherUserFullNameKey(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUSoftwareUpdateMetadataKeyProductTypeMacOS": {
+      "name": "SUSoftwareUpdateMetadataKeyProductTypeMacOS",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUSoftwareUpdateMetadataKeyProductTypeMacOS(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPrefSplatEnabled": {
+      "name": "SUPrefSplatEnabled",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPrefSplatEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUJournalEntryReleaseNotes": {
+      "name": "SUJournalEntryReleaseNotes",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUJournalEntryReleaseNotes(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUAppStoreUpdateStatusProgressKey": {
+      "name": "SUAppStoreUpdateStatusProgressKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUAppStoreUpdateStatusProgressKey(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadValueUnknown": {
+      "name": "SUTelemetryPayloadValueUnknown",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadValueUnknown(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "su_shared_updates_directory": {
+      "name": "su_shared_updates_directory",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ su_shared_updates_directory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUHelperProxyAvailableRightsDidChangeNotification": {
+      "name": "SUHelperProxyAvailableRightsDidChangeNotification",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUHelperProxyAvailableRightsDidChangeNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPrefsDisableSoftwareUpdateNotifications": {
+      "name": "SUPrefsDisableSoftwareUpdateNotifications",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPrefsDisableSoftwareUpdateNotifications(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryAdvancedPreferencesEventKeyBootPolicySIP2": {
+      "name": "SUTelemetryAdvancedPreferencesEventKeyBootPolicySIP2",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryAdvancedPreferencesEventKeyBootPolicySIP2(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUAppStoreCatalogURLChangedNotification": {
+      "name": "SUAppStoreCatalogURLChangedNotification",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUAppStoreCatalogURLChangedNotification(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadValueNewSystem": {
+      "name": "SUTelemetryPayloadValueNewSystem",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadValueNewSystem(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPrefsManagedNonOSDeferredInstallDelayKey": {
+      "name": "SUPrefsManagedNonOSDeferredInstallDelayKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPrefsManagedNonOSDeferredInstallDelayKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUSoftwareUpdateMetadataKeyProductKey": {
+      "name": "SUSoftwareUpdateMetadataKeyProductKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUSoftwareUpdateMetadataKeyProductKey(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUAppStoreUpdateStatusCurrentStatePreparing": {
+      "name": "SUAppStoreUpdateStatusCurrentStatePreparing",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUAppStoreUpdateStatusCurrentStatePreparing(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUJournalEntryIsSoftwareUpdate": {
+      "name": "SUJournalEntryIsSoftwareUpdate",
+      "framework": "SoftwareUpdate",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUJournalEntryRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SUJournalEntryIsSoftwareUpdate(SUJournalEntryRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallLegalTextTypeKey": {
+      "name": "SUPredicateInstallLegalTextTypeKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallLegalTextTypeKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryEventTypeBootstrapTokenError": {
+      "name": "SUTelemetryEventTypeBootstrapTokenError",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryEventTypeBootstrapTokenError(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUUpdateInfoDisplayVersion": {
+      "name": "SUUpdateInfoDisplayVersion",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUUpdateInfoDisplayVersion(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUUpdateTypeValueiTunes": {
+      "name": "SUUpdateTypeValueiTunes",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUUpdateTypeValueiTunes(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SULogObject": {
+      "name": "_SULogObject",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ _SULogObject(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallRequireSLAKey": {
+      "name": "SUPredicateInstallRequireSLAKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallRequireSLAKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallPrimaryTitleKey": {
+      "name": "SUPredicateInstallPrimaryTitleKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallPrimaryTitleKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallNoNetworkTitleKey": {
+      "name": "SUPredicateInstallNoNetworkTitleKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallNoNetworkTitleKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUUseFakePMVsKey": {
+      "name": "SUUseFakePMVsKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUUseFakePMVsKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryEventTypeSplatRevoked": {
+      "name": "SUTelemetryEventTypeSplatRevoked",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryEventTypeSplatRevoked(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryScanEventValueCustomCatalogURL": {
+      "name": "SUTelemetryScanEventValueCustomCatalogURL",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryScanEventValueCustomCatalogURL(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPreferencesEventKeyInstallMacOSUpdatesIsManaged": {
+      "name": "SUTelemetryPreferencesEventKeyInstallMacOSUpdatesIsManaged",
+      "framework": "SoftwareUpdate",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUTelemetryPreferencesEventKeyInstallMacOSUpdatesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SUTelemetryPreferencesEventKeyInstallMacOSUpdatesIsManaged(SUTelemetryPreferencesEventKeyInstallMacOSUpdatesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadKeyFailureCode": {
+      "name": "SUTelemetryPayloadKeyFailureCode",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadKeyFailureCode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallBusyTitleKey": {
+      "name": "SUPredicateInstallBusyTitleKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallBusyTitleKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPreferencesEventKeyInstallSplatIsManaged": {
+      "name": "SUTelemetryPreferencesEventKeyInstallSplatIsManaged",
+      "framework": "SoftwareUpdate",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUTelemetryPreferencesEventKeyInstallSplatRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SUTelemetryPreferencesEventKeyInstallSplatIsManaged(SUTelemetryPreferencesEventKeyInstallSplatRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadKeyProductID": {
+      "name": "SUTelemetryPayloadKeyProductID",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadKeyProductID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallIconPathKey": {
+      "name": "SUPredicateInstallIconPathKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallIconPathKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUScanCatalogURLKey": {
+      "name": "SUScanCatalogURLKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUScanCatalogURLKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUSoftwareUpdateMetadataKeyMacBuddyOptional": {
+      "name": "SUSoftwareUpdateMetadataKeyMacBuddyOptional",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUSoftwareUpdateMetadataKeyMacBuddyOptional(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryScanEventKeyInitiatedBy": {
+      "name": "SUTelemetryScanEventKeyInitiatedBy",
+      "framework": "SoftwareUpdate",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ SUTelemetryScanEventKeyInitiatedBy(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SUTelemetryDownloadEventKeyInitiatedBy"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUUpdateServiceDaemonManualBackgroundTriggerNotificationName": {
+      "name": "SUUpdateServiceDaemonManualBackgroundTriggerNotificationName",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUUpdateServiceDaemonManualBackgroundTriggerNotificationName(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUSoftwareUpdateProductDetailsKeyVersion": {
+      "name": "SUSoftwareUpdateProductDetailsKeyVersion",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUSoftwareUpdateProductDetailsKeyVersion(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallActivePIDKey": {
+      "name": "SUPredicateInstallActivePIDKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallActivePIDKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryAdvancedPreferencesEventKeyBootPolicyAUXR": {
+      "name": "SUTelemetryAdvancedPreferencesEventKeyBootPolicyAUXR",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryAdvancedPreferencesEventKeyBootPolicyAUXR(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MobileSoftwareUpdateProductKeyPrefix": {
+      "name": "MobileSoftwareUpdateProductKeyPrefix",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ MobileSoftwareUpdateProductKeyPrefix(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryDownloadEventValueBackground": {
+      "name": "SUTelemetryDownloadEventValueBackground",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryDownloadEventValueBackground(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryEventTypeInstallRestarts": {
+      "name": "SUTelemetryEventTypeInstallRestarts",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryEventTypeInstallRestarts(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPrefsManagedMajorOSDeferredInstallDelayKey": {
+      "name": "SUPrefsManagedMajorOSDeferredInstallDelayKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPrefsManagedMajorOSDeferredInstallDelayKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUAppStoreUpdateStatusBytesDownloadedKey": {
+      "name": "SUAppStoreUpdateStatusBytesDownloadedKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUAppStoreUpdateStatusBytesDownloadedKey(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUSoftwareUpdateProductDetailsKeyName": {
+      "name": "SUSoftwareUpdateProductDetailsKeyName",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUSoftwareUpdateProductDetailsKeyName(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryAdvancedPreferencesEventKeyStartupManagerPolicyAllowWindows": {
+      "name": "SUTelemetryAdvancedPreferencesEventKeyStartupManagerPolicyAllowWindows",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryAdvancedPreferencesEventKeyStartupManagerPolicyAllowWindows(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUUpdateInfoProductKey": {
+      "name": "SUUpdateInfoProductKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUUpdateInfoProductKey(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadKeyPreviousBuildVersion": {
+      "name": "SUTelemetryPayloadKeyPreviousBuildVersion",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadKeyPreviousBuildVersion(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUJournalEntryTitle": {
+      "name": "SUJournalEntryTitle",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUJournalEntryTitle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUSoftwareUpdateMetadataKeyProductTypeMacBuddyEligible": {
+      "name": "SUSoftwareUpdateMetadataKeyProductTypeMacBuddyEligible",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUSoftwareUpdateMetadataKeyProductTypeMacBuddyEligible(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUForcePostLogoutConfirmationKey": {
+      "name": "SUForcePostLogoutConfirmationKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUForcePostLogoutConfirmationKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUJournalEntryInstallDate": {
+      "name": "SUJournalEntryInstallDate",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUJournalEntryInstallDate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPrefDomain": {
+      "name": "SUPrefDomain",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPrefDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUUpdateInfoDisplayName": {
+      "name": "SUUpdateInfoDisplayName",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUUpdateInfoDisplayName(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallNoServerMessageKey": {
+      "name": "SUPredicateInstallNoServerMessageKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallNoServerMessageKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadKeyEvent": {
+      "name": "SUTelemetryPayloadKeyEvent",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadKeyEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPreferencesEventKeyInstallSecurityUpdatesIsManaged": {
+      "name": "SUTelemetryPreferencesEventKeyInstallSecurityUpdatesIsManaged",
+      "framework": "SoftwareUpdate",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUTelemetryPreferencesEventKeyInstallSecurityUpdatesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SUTelemetryPreferencesEventKeyInstallSecurityUpdatesIsManaged(SUTelemetryPreferencesEventKeyInstallSecurityUpdatesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPostLogoutCountdownIntervalOverrideKey": {
+      "name": "SUPostLogoutCountdownIntervalOverrideKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPostLogoutCountdownIntervalOverrideKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUScanPrefMacOSAutoUpdate": {
+      "name": "SUScanPrefMacOSAutoUpdate",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUScanPrefMacOSAutoUpdate(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryEventTypeDownloads": {
+      "name": "SUTelemetryEventTypeDownloads",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryEventTypeDownloads(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryAdvancedPreferencesEventKeyBootPolicySMB2": {
+      "name": "SUTelemetryAdvancedPreferencesEventKeyBootPolicySMB2",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryAdvancedPreferencesEventKeyBootPolicySMB2(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUAppStoreUpdatesQueuedForLaterChangedNotification": {
+      "name": "SUAppStoreUpdatesQueuedForLaterChangedNotification",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUAppStoreUpdatesQueuedForLaterChangedNotification(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryEventTypeScans": {
+      "name": "SUTelemetryEventTypeScans",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryEventTypeScans(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadKeyProductTitle": {
+      "name": "SUTelemetryPayloadKeyProductTitle",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadKeyProductTitle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPrefsDeferredInstallEnabledKey": {
+      "name": "SUPrefsDeferredInstallEnabledKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPrefsDeferredInstallEnabledKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadKeyFailureDescription": {
+      "name": "SUTelemetryPayloadKeyFailureDescription",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadKeyFailureDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUJournalEntryInstallState": {
+      "name": "SUJournalEntryInstallState",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUJournalEntryInstallState(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryScanEventValueForeground": {
+      "name": "SUTelemetryScanEventValueForeground",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "neural_network"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryScanEventValueForeground(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryEventTypeStartLogout": {
+      "name": "SUTelemetryEventTypeStartLogout",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryEventTypeStartLogout(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryEventTypeDoItLater": {
+      "name": "SUTelemetryEventTypeDoItLater",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryEventTypeDoItLater(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadValueResultSuccess": {
+      "name": "SUTelemetryPayloadValueResultSuccess",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadValueResultSuccess(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallHelpAnchorKey": {
+      "name": "SUPredicateInstallHelpAnchorKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallHelpAnchorKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUJournalEntryProductKey": {
+      "name": "SUJournalEntryProductKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUJournalEntryProductKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUAppStoreUpdateStatusCurrentStateKey": {
+      "name": "SUAppStoreUpdateStatusCurrentStateKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUAppStoreUpdateStatusCurrentStateKey(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPreferencesEventKeyInstallSecurityUpdatesIsEnabled": {
+      "name": "SUTelemetryPreferencesEventKeyInstallSecurityUpdatesIsEnabled",
+      "framework": "SoftwareUpdate",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUTelemetryPreferencesEventKeyInstallSecurityUpdatesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SUTelemetryPreferencesEventKeyInstallSecurityUpdatesIsEnabled(SUTelemetryPreferencesEventKeyInstallSecurityUpdatesRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUHelperDMachServiceName": {
+      "name": "SUHelperDMachServiceName",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUHelperDMachServiceName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryEventTypeUserInteraction": {
+      "name": "SUTelemetryEventTypeUserInteraction",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryEventTypeUserInteraction(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUAppStoreUpdateStatusEstimatedTimeRemainingKey": {
+      "name": "SUAppStoreUpdateStatusEstimatedTimeRemainingKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUAppStoreUpdateStatusEstimatedTimeRemainingKey(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUUpdateTypeValueMacOS": {
+      "name": "SUUpdateTypeValueMacOS",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUUpdateTypeValueMacOS(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUPredicateInstallNotFoundMessageKey": {
+      "name": "SUPredicateInstallNotFoundMessageKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUPredicateInstallNotFoundMessageKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryAdvancedPreferencesEventKeyBootPolicyCOIH": {
+      "name": "SUTelemetryAdvancedPreferencesEventKeyBootPolicyCOIH",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryAdvancedPreferencesEventKeyBootPolicyCOIH(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryAdvancedPreferencesEventKeyBootPolicyAUXP": {
+      "name": "SUTelemetryAdvancedPreferencesEventKeyBootPolicyAUXP",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryAdvancedPreferencesEventKeyBootPolicyAUXP(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryAdvancedPreferencesEventKeyBootPolicySMB3": {
+      "name": "SUTelemetryAdvancedPreferencesEventKeyBootPolicySMB3",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryAdvancedPreferencesEventKeyBootPolicySMB3(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryForcedEnrollmentEventSubtypeAutoCheckForUpdates": {
+      "name": "SUTelemetryForcedEnrollmentEventSubtypeAutoCheckForUpdates",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryForcedEnrollmentEventSubtypeAutoCheckForUpdates(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUDDMPersistedErrorKey": {
+      "name": "SUDDMPersistedErrorKey",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUDDMPersistedErrorKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUAppStoreForegroundUpdateStartedNotification": {
+      "name": "SUAppStoreForegroundUpdateStartedNotification",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUAppStoreForegroundUpdateStartedNotification(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryAdvancedPreferencesEventKeyStartupManagerPolicyAllowNetwork": {
+      "name": "SUTelemetryAdvancedPreferencesEventKeyStartupManagerPolicyAllowNetwork",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryAdvancedPreferencesEventKeyStartupManagerPolicyAllowNetwork(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPayloadKeyResult": {
+      "name": "SUTelemetryPayloadKeyResult",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryPayloadKeyResult(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryPreferencesEventKeyBootPolicyCount": {
+      "name": "SUTelemetryPreferencesEventKeyBootPolicyCount",
+      "framework": "SoftwareUpdate",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SUTelemetryPreferencesEventKeyBootPolicyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t SUTelemetryPreferencesEventKeyBootPolicyCount(SUTelemetryPreferencesEventKeyBootPolicyRef *ref)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SUTelemetryPreferencesEventKeyVolumeGroupCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SUTelemetryAdvancedPreferencesEventKeyBootPolicySIP3": {
+      "name": "SUTelemetryAdvancedPreferencesEventKeyBootPolicySIP3",
+      "framework": "SoftwareUpdate",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SoftwareUpdate"
+        }
+      ],
+      "signature": "void/*?*/ SUTelemetryAdvancedPreferencesEventKeyBootPolicySIP3(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "su_shared_updates_directory"
+    ],
+    "neural_network": [
+      "SUTelemetryScanEventKeyCatalogURL",
+      "SUTelemetryScanEventKeyInitiatedBy",
+      "SUTelemetryScanEventKeyTimeElapsed",
+      "SUTelemetryScanEventKeyTimeSinceLastScan",
+      "SUTelemetryScanEventValueBackground",
+      "SUTelemetryScanEventValueCustomCatalogURL",
+      "SUTelemetryScanEventValueForeground"
+    ],
+    "display_compositing": [
+      "SULoginWindowCookiePath",
+      "SUTelemetryAdvancedPreferencesEventKeyStartupManagerPolicyAllowWindows",
+      "SUTelemetryPayloadKeyLastLoginWindowHarvestMode",
+      "SUTelemetryPayloadKeyMinutesSinceLastLoginWindowHarvest",
+      "SUUpdateInfoDisplayName",
+      "SUUpdateInfoDisplayVersion"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

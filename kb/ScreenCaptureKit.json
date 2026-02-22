@@ -1,0 +1,2476 @@
+{
+  "framework": "ScreenCaptureKit",
+  "functions": {
+    "SLSWindowListIsDefaultScreenCapturableProxying": {
+      "name": "SLSWindowListIsDefaultScreenCapturableProxying",
+      "framework": "ScreenCaptureKit",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SLSWindowListRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SLSWindowListIsDefaultScreenCapturableProxying(SLSWindowListRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCStreamFrameInfoContentRect": {
+      "name": "SCStreamFrameInfoContentRect",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCStreamFrameInfoContentRect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCStreamErrorDomain": {
+      "name": "SCStreamErrorDomain",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCStreamErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCRemoteQueue_StopSenderQueue": {
+      "name": "SCRemoteQueue_StopSenderQueue",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCRemoteQueue_StopSenderQueue(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCRemoteQueue_CreateReceiverQueue": {
+      "name": "SCRemoteQueue_CreateReceiverQueue",
+      "framework": "ScreenCaptureKit",
+      "return_type": "SCRemoteQueue_Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "SCRemoteQueue_Ref SCRemoteQueue_CreateReceiverQueue(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "SCRemoteQueue_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SCRemoteQueue_CreateSenderQueue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCStream.pickerConfig.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "(extension in ScreenCaptureKit):__C.SCStream.pickerConfig.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCStream.pickerConfig.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes.setter : __C.SCContentSharingPickerMode": {
+      "name": "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes.setter : __C.SCContentSharingPickerMode",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes.setter : __C.SCContentSharingPickerMode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "__SLSWindowListCreateProxying": {
+      "name": "__SLSWindowListCreateProxying",
+      "framework": "ScreenCaptureKit",
+      "return_type": "__SLSWindowListRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "__SLSWindowListRef __SLSWindowListCreateProxying(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "__SLSWindowListRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "__SLSWindowListCreateDescriptionFromArrayProxying"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "__SLSCopyWindowDescriptionListProxying": {
+      "name": "__SLSCopyWindowDescriptionListProxying",
+      "framework": "ScreenCaptureKit",
+      "return_type": "__SLSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "__SLSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "__SLSRef/*?*/ __SLSCopyWindowDescriptionListProxying(__SLSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "__SLSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCStreamFrameInfoScaleFactor": {
+      "name": "SCStreamFrameInfoScaleFactor",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCStreamFrameInfoScaleFactor(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent.getter : Swift.Bool": {
+      "name": "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent.getter : Swift.Bool",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent.getter : Swift.Bool(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCStreamFrameInfoPresenterOverlayContentRect": {
+      "name": "SCStreamFrameInfoPresenterOverlayContentRect",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCStreamFrameInfoPresenterOverlayContentRect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RP_TimeFromTimestamp": {
+      "name": "RP_TimeFromTimestamp",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ RP_TimeFromTimestamp(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SLSWindowListCreateImageProxying": {
+      "name": "SLSWindowListCreateImageProxying",
+      "framework": "ScreenCaptureKit",
+      "return_type": "SLSWindowListRef",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "SLSWindowListRef SLSWindowListCreateImageProxying(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "SLSWindowListRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SLSWindowListCreateImageFromArrayProxying"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "__SLSWindowListCreateDescriptionFromArrayProxying": {
+      "name": "__SLSWindowListCreateDescriptionFromArrayProxying",
+      "framework": "ScreenCaptureKit",
+      "return_type": "__SLSWindowListRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "__SLSWindowListRef __SLSWindowListCreateDescriptionFromArrayProxying(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "__SLSWindowListRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "__SLSWindowListCreateProxying"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RP_TimestampFromTime": {
+      "name": "RP_TimestampFromTime",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ RP_TimestampFromTime(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SLSWindowListCreateImageFromArrayProxying": {
+      "name": "SLSWindowListCreateImageFromArrayProxying",
+      "framework": "ScreenCaptureKit",
+      "return_type": "SLSWindowListRef",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "SLSWindowListRef SLSWindowListCreateImageFromArrayProxying(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "SLSWindowListRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SLSWindowListCreateImageProxying"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCStreamFrameInfoBoundingRect": {
+      "name": "SCStreamFrameInfoBoundingRect",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCStreamFrameInfoBoundingRect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration?": {
+      "name": "(extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RP_RoundNumberToNearestMultiple": {
+      "name": "RP_RoundNumberToNearestMultiple",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ RP_RoundNumberToNearestMultiple(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount : Swift.Int?": {
+      "name": "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount : Swift.Int?",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount : Swift.Int?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent.setter : Swift.Bool": {
+      "name": "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent.setter : Swift.Bool",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent.setter : Swift.Bool(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration?": {
+      "name": "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCRemoteQueue_CreateSenderQueue": {
+      "name": "SCRemoteQueue_CreateSenderQueue",
+      "framework": "ScreenCaptureKit",
+      "return_type": "SCRemoteQueue_Ref",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "SCRemoteQueue_Ref SCRemoteQueue_CreateSenderQueue(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "SCRemoteQueue_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "SCRemoteQueue_CreateReceiverQueue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SLSDisplayStreamCreateProxying": {
+      "name": "SLSDisplayStreamCreateProxying",
+      "framework": "ScreenCaptureKit",
+      "return_type": "SLSDisplayStreamRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "SLSDisplayStreamRef SLSDisplayStreamCreateProxying(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "SLSDisplayStreamRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration : ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration : ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes : __C.SCContentSharingPickerMode": {
+      "name": "property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes : __C.SCContentSharingPickerMode",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes : __C.SCContentSharingPickerMode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs.getter : [Swift.String]": {
+      "name": "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs.getter : [Swift.String]",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs.getter : [Swift.String](void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPMathUtilityNewsroomPositionTransitionScreenRect": {
+      "name": "RPMathUtilityNewsroomPositionTransitionScreenRect",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ RPMathUtilityNewsroomPositionTransitionScreenRect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPStringUtility_FourccToCStr": {
+      "name": "RPStringUtility_FourccToCStr",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ RPStringUtility_FourccToCStr(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes.modify : __C.SCContentSharingPickerMode": {
+      "name": "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes.modify : __C.SCContentSharingPickerMode",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes.modify : __C.SCContentSharingPickerMode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration?": {
+      "name": "(extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCPrivacyHintDescription": {
+      "name": "SCPrivacyHintDescription",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCPrivacyHintDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCRemoteQueue_EnqueueSampleBuffer": {
+      "name": "SCRemoteQueue_EnqueueSampleBuffer",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCRemoteQueue_EnqueueSampleBuffer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCStreamFrameInfoContentScale": {
+      "name": "SCStreamFrameInfoContentScale",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCStreamFrameInfoContentScale(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCStreamFrameInfoScreenRect": {
+      "name": "SCStreamFrameInfoScreenRect",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing",
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCStreamFrameInfoScreenRect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration : ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration : ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCStream.pickerConfig.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "(extension in ScreenCaptureKit):__C.SCStream.pickerConfig.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCStream.pickerConfig.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RP_Micro": {
+      "name": "RP_Micro",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ RP_Micro(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCPrivacyHintBundleIdentifier": {
+      "name": "SCPrivacyHintBundleIdentifier",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCPrivacyHintBundleIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs : [Swift.Int]": {
+      "name": "property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs : [Swift.Int]",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs : [Swift.Int](void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ScreenCaptureKit.SCContentSharingPickerConfiguration.init() -> ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "ScreenCaptureKit.SCContentSharingPickerConfiguration.init() -> ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ ScreenCaptureKit.SCContentSharingPickerConfiguration.init() -> ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount.modify : Swift.Int?": {
+      "name": "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount.modify : Swift.Int?",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount.modify : Swift.Int?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration?": {
+      "name": "(extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for (extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration : ScreenCaptureKit.SCContentSharingPickerConfiguration?": {
+      "name": "property descriptor for (extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for (extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration : ScreenCaptureKit.SCContentSharingPickerConfiguration?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCPrivacyHintTitle": {
+      "name": "SCPrivacyHintTitle",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCPrivacyHintTitle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCRemoteQueue_Destroy": {
+      "name": "SCRemoteQueue_Destroy",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SCRemoteQueue_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void SCRemoteQueue_Destroy(SCRemoteQueue_Ref *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCRemoteQueue_UpdateReceiverQueue": {
+      "name": "SCRemoteQueue_UpdateReceiverQueue",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCRemoteQueue_UpdateReceiverQueue(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCStreamFrameInfoDisplayTime": {
+      "name": "SCStreamFrameInfoDisplayTime",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing",
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCStreamFrameInfoDisplayTime(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SLSHWCaptureDesktopProxying": {
+      "name": "SLSHWCaptureDesktopProxying",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SLSHWCaptureDesktopProxying(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for (extension in ScreenCaptureKit):__C.SCStream.pickerConfig : ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "property descriptor for (extension in ScreenCaptureKit):__C.SCStream.pickerConfig : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for (extension in ScreenCaptureKit):__C.SCStream.pickerConfig : ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RPStringUtility_CStrToFourcc": {
+      "name": "RPStringUtility_CStrToFourcc",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ RPStringUtility_CStrToFourcc(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SLSHWCaptureStreamCreateProxying": {
+      "name": "SLSHWCaptureStreamCreateProxying",
+      "framework": "ScreenCaptureKit",
+      "return_type": "SLSHWCaptureStreamRef",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "SLSHWCaptureStreamRef SLSHWCaptureStreamCreateProxying(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "SLSHWCaptureStreamRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes.getter : __C.SCContentSharingPickerMode": {
+      "name": "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes.getter : __C.SCContentSharingPickerMode",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes.getter : __C.SCContentSharingPickerMode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent.modify : Swift.Bool": {
+      "name": "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent.modify : Swift.Bool",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent.modify : Swift.Bool(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCStream.pickerConfig.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "(extension in ScreenCaptureKit):__C.SCStream.pickerConfig.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCStream.pickerConfig.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration : ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration : ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCRemoteQueue_StartSenderQueue": {
+      "name": "SCRemoteQueue_StartSenderQueue",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCRemoteQueue_StartSenderQueue(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs.modify : [Swift.String]": {
+      "name": "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs.modify : [Swift.String]",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs.modify : [Swift.String](void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCPrivacyHintAppIdentifier": {
+      "name": "SCPrivacyHintAppIdentifier",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCPrivacyHintAppIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs.setter : [Swift.Int]": {
+      "name": "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs.setter : [Swift.Int]",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs.setter : [Swift.Int](void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs.modify : [Swift.Int]": {
+      "name": "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs.modify : [Swift.Int]",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs.modify : [Swift.Int](void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount.getter : Swift.Int?": {
+      "name": "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount.getter : Swift.Int?",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount.getter : Swift.Int?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SLSWindowIDArrayIsDefaultScreenCapturableProxying": {
+      "name": "SLSWindowIDArrayIsDefaultScreenCapturableProxying",
+      "framework": "ScreenCaptureKit",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "SLSWindowIDArrayRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool SLSWindowIDArrayIsDefaultScreenCapturableProxying(SLSWindowIDArrayRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs.getter : [Swift.Int]": {
+      "name": "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs.getter : [Swift.Int]",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs.getter : [Swift.Int](void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs : [Swift.String]": {
+      "name": "property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs : [Swift.String]",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs : [Swift.String](void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs.setter : [Swift.String]": {
+      "name": "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs.setter : [Swift.String]",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs.setter : [Swift.String](void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCStreamFrameInfoStatus": {
+      "name": "SCStreamFrameInfoStatus",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCStreamFrameInfoStatus(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCStream_UpdateLatency": {
+      "name": "SCStream_UpdateLatency",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCStream_UpdateLatency(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SLSHWCaptureWindowListToIOSurfaceProxying": {
+      "name": "SLSHWCaptureWindowListToIOSurfaceProxying",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SLSHWCaptureWindowListToIOSurfaceProxying(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount.setter : Swift.Int?": {
+      "name": "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount.setter : Swift.Int?",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount.setter : Swift.Int?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent : Swift.Bool": {
+      "name": "property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent : Swift.Bool",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent : Swift.Bool(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration?": {
+      "name": "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.setConfiguration(_: ScreenCaptureKit.SCContentSharingPickerConfiguration?, for: __C.SCStream) -> ()": {
+      "name": "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.setConfiguration(_: ScreenCaptureKit.SCContentSharingPickerConfiguration?, for: __C.SCStream) -> ()",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCContentSharingPicker.setConfiguration(_: ScreenCaptureKit.SCContentSharingPickerConfiguration?, for: __C.SCStream) -> ()(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RP_RoundNumberWithSigFigs": {
+      "name": "RP_RoundNumberWithSigFigs",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ RP_RoundNumberWithSigFigs(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration": {
+      "name": "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SCStreamFrameInfoDirtyRects": {
+      "name": "SCStreamFrameInfoDirtyRects",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SCStreamFrameInfoDirtyRects(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration?": {
+      "name": "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ (extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SLSHWCaptureDisplayIntoIOSurfaceProxying": {
+      "name": "SLSHWCaptureDisplayIntoIOSurfaceProxying",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ SLSHWCaptureDisplayIntoIOSurfaceProxying(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration : ScreenCaptureKit.SCContentSharingPickerConfiguration?": {
+      "name": "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "framework": "ScreenCaptureKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ScreenCaptureKit"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration : ScreenCaptureKit.SCContentSharingPickerConfiguration?(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "video_processing": [
+      "SCStreamFrameInfoBoundingRect",
+      "SCStreamFrameInfoContentRect",
+      "SCStreamFrameInfoContentScale",
+      "SCStreamFrameInfoDirtyRects",
+      "SCStreamFrameInfoDisplayTime",
+      "SCStreamFrameInfoPresenterOverlayContentRect",
+      "SCStreamFrameInfoScaleFactor",
+      "SCStreamFrameInfoScreenRect",
+      "SCStreamFrameInfoStatus"
+    ],
+    "memory_buffer": [
+      "SCRemoteQueue_EnqueueSampleBuffer",
+      "SLSHWCaptureDisplayIntoIOSurfaceProxying",
+      "SLSHWCaptureWindowListToIOSurfaceProxying"
+    ],
+    "display_compositing": [
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes.modify : __C.SCContentSharingPickerMode",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes.getter : __C.SCContentSharingPickerMode",
+      "property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes : __C.SCContentSharingPickerMode",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes.setter : __C.SCContentSharingPickerMode",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs.modify : [Swift.String]",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs.getter : [Swift.String]",
+      "property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs : [Swift.String]",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs.setter : [Swift.String]",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs.modify : [Swift.Int]",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs.getter : [Swift.Int]",
+      "property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs : [Swift.Int]",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs.setter : [Swift.Int]",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent.modify : Swift.Bool",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent.getter : Swift.Bool",
+      "property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent : Swift.Bool",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent.setter : Swift.Bool",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.init() -> ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "(extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "property descriptor for (extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "(extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.setConfiguration(_: ScreenCaptureKit.SCContentSharingPickerConfiguration?, for: __C.SCStream) -> ()",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount.modify : Swift.Int?",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount.getter : Swift.Int?",
+      "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount : Swift.Int?",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount.setter : Swift.Int?",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCStream.pickerConfig.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCStream.pickerConfig.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "property descriptor for (extension in ScreenCaptureKit):__C.SCStream.pickerConfig : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCStream.pickerConfig.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "RPMathUtilityNewsroomPositionTransitionScreenRect",
+      "SCStreamFrameInfoDisplayTime",
+      "SCStreamFrameInfoScreenRect",
+      "SLSDisplayStreamCreateProxying",
+      "SLSHWCaptureDesktopProxying",
+      "SLSHWCaptureDisplayIntoIOSurfaceProxying",
+      "SLSHWCaptureStreamCreateProxying",
+      "SLSHWCaptureWindowListToIOSurfaceProxying",
+      "SLSWindowIDArrayIsDefaultScreenCapturableProxying",
+      "SLSWindowListCreateImageFromArrayProxying",
+      "SLSWindowListCreateImageProxying",
+      "SLSWindowListIsDefaultScreenCapturableProxying",
+      "__SLSCopyWindowDescriptionListProxying",
+      "__SLSWindowListCreateDescriptionFromArrayProxying",
+      "__SLSWindowListCreateProxying"
+    ],
+    "cryptography": [
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes.modify : __C.SCContentSharingPickerMode",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes.getter : __C.SCContentSharingPickerMode",
+      "property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes : __C.SCContentSharingPickerMode",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowedPickerModes.setter : __C.SCContentSharingPickerMode",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs.modify : [Swift.String]",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs.getter : [Swift.String]",
+      "property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs : [Swift.String]",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedBundleIDs.setter : [Swift.String]",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs.modify : [Swift.Int]",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs.getter : [Swift.Int]",
+      "property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs : [Swift.Int]",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.excludedWindowIDs.setter : [Swift.Int]",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent.modify : Swift.Bool",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent.getter : Swift.Bool",
+      "property descriptor for ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent : Swift.Bool",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.allowsChangingSelectedContent.setter : Swift.Bool",
+      "ScreenCaptureKit.SCContentSharingPickerConfiguration.init() -> ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "(extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "property descriptor for (extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "(extension in ScreenCaptureKit):__C.SCStreamInfo.pickerConfiguration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.configuration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration?",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.setConfiguration(_: ScreenCaptureKit.SCContentSharingPickerConfiguration?, for: __C.SCStream) -> ()",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount.modify : Swift.Int?",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount.getter : Swift.Int?",
+      "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount : Swift.Int?",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.maximumStreamCount.setter : Swift.Int?",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPicker.defaultConfiguration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.configuration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "property descriptor for (extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCContentSharingPickerInfo.defaultConfiguration.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCStream.pickerConfig.modify : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCStream.pickerConfig.getter : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "property descriptor for (extension in ScreenCaptureKit):__C.SCStream.pickerConfig : ScreenCaptureKit.SCContentSharingPickerConfiguration",
+      "(extension in ScreenCaptureKit):__C.SCStream.pickerConfig.setter : ScreenCaptureKit.SCContentSharingPickerConfiguration"
+    ],
+    "image_processing": [
+      "SCStreamFrameInfoContentScale",
+      "SCStreamFrameInfoScaleFactor",
+      "SLSWindowListCreateImageFromArrayProxying",
+      "SLSWindowListCreateImageProxying"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

@@ -1,0 +1,1033 @@
+{
+  "framework": "NotificationCenter",
+  "functions": {
+    "NCMaterialRegisterDelegate": {
+      "name": "NCMaterialRegisterDelegate",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NCMaterialRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ NCMaterialRegisterDelegate(NCMaterialRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NCRemoveNotificationHandler",
+        "NCMaterialUnRegisterDelegate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutAlignBottomWithPriority": {
+      "name": "NCViewLayoutAlignBottomWithPriority",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutAlignBottomWithPriority(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutMaxWidth": {
+      "name": "NCViewLayoutMaxWidth",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutMaxWidth(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCRemoveNotificationHandler": {
+      "name": "NCRemoveNotificationHandler",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ NCRemoveNotificationHandler(NCRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NCMaterialRegisterDelegate",
+        "NCMaterialUnRegisterDelegate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutWidthWithPriority": {
+      "name": "NCViewLayoutWidthWithPriority",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutWidthWithPriority(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCMaterialUnRegisterDelegate": {
+      "name": "NCMaterialUnRegisterDelegate",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NCMaterialUnRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ NCMaterialUnRegisterDelegate(NCMaterialUnRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NCMaterialRegisterDelegate",
+        "NCRemoveNotificationHandler"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutHeightWithPriority": {
+      "name": "NCViewLayoutHeightWithPriority",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutHeightWithPriority(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutSubview": {
+      "name": "NCViewLayoutSubview",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutSubview(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutAlignVerticalCenter": {
+      "name": "NCViewLayoutAlignVerticalCenter",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutAlignVerticalCenter(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutMinWidth": {
+      "name": "NCViewLayoutMinWidth",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutMinWidth(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutSubviewWithInsetsAndSize": {
+      "name": "NCViewLayoutSubviewWithInsetsAndSize",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutSubviewWithInsetsAndSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutAlignTrailingWithPriority": {
+      "name": "NCViewLayoutAlignTrailingWithPriority",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutAlignTrailingWithPriority(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutAlignTopWithPriority": {
+      "name": "NCViewLayoutAlignTopWithPriority",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutAlignTopWithPriority(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCPostNotification": {
+      "name": "NCPostNotification",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCPostNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCRemoveDistributedNotificationObserver": {
+      "name": "NCRemoveDistributedNotificationObserver",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCRemoveDistributedNotificationObserver(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutAlignLeading": {
+      "name": "NCViewLayoutAlignLeading",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutAlignLeading(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutAlignLeft": {
+      "name": "NCViewLayoutAlignLeft",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutAlignLeft(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutMinHeight": {
+      "name": "NCViewLayoutMinHeight",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutMinHeight(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCSetNotificationHandler": {
+      "name": "NCSetNotificationHandler",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NCSetNotificationHandler(NCRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCSetCocoaBinding": {
+      "name": "NCSetCocoaBinding",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NCSetCocoaBinding(NCRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCSetNotificationSelector": {
+      "name": "NCSetNotificationSelector",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NCSetNotificationSelector(NCRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutAlignMinTrailing": {
+      "name": "NCViewLayoutAlignMinTrailing",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutAlignMinTrailing(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCMaterialComputedStyle": {
+      "name": "NCMaterialComputedStyle",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCMaterialComputedStyle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCRemoveCocoaBindingsForObject": {
+      "name": "NCRemoveCocoaBindingsForObject",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCRemoveCocoaBindingsForObject(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCSetDistributedNotificationSelector": {
+      "name": "NCSetDistributedNotificationSelector",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NCSetDistributedNotificationSelector(NCRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutAlignCenter": {
+      "name": "NCViewLayoutAlignCenter",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutAlignCenter(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutBelowWithPriority": {
+      "name": "NCViewLayoutBelowWithPriority",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutBelowWithPriority(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutTrailingWithPriority": {
+      "name": "NCViewLayoutTrailingWithPriority",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutTrailingWithPriority(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutAlignHorizontalCenter": {
+      "name": "NCViewLayoutAlignHorizontalCenter",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutAlignHorizontalCenter(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutMaxHeight": {
+      "name": "NCViewLayoutMaxHeight",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutMaxHeight(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutSubviewWithInsets": {
+      "name": "NCViewLayoutSubviewWithInsets",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutSubviewWithInsets(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCSetDistributedNotificationSelectorWithBehavior": {
+      "name": "NCSetDistributedNotificationSelectorWithBehavior",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NCSetDistributedNotificationSelectorWithBehavior(NCRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCPostDistributedNotification": {
+      "name": "NCPostDistributedNotification",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCPostDistributedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutAlignMinLeading": {
+      "name": "NCViewLayoutAlignMinLeading",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutAlignMinLeading(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCRemoveNotificationObserver": {
+      "name": "NCRemoveNotificationObserver",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCRemoveNotificationObserver(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCMaterialUpdateMaterialStyle": {
+      "name": "NCMaterialUpdateMaterialStyle",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCMaterialUpdateMaterialStyle(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NCViewLayoutAlignRight": {
+      "name": "NCViewLayoutAlignRight",
+      "framework": "NotificationCenter",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NotificationCenter"
+        }
+      ],
+      "signature": "void/*?*/ NCViewLayoutAlignRight(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "gpu_compute": [
+      "NCMaterialComputedStyle"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

@@ -1,0 +1,4675 @@
+{
+  "framework": "MediaServices",
+  "functions": {
+    "MSVGetDeviceHardwarePlatform": {
+      "name": "MSVGetDeviceHardwarePlatform",
+      "framework": "MediaServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MSVGetDeviceHardwarePlatform(MSVRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromMSVHasherErrorCode": {
+      "name": "NSStringFromMSVHasherErrorCode",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NSStringFromMSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool NSStringFromMSVHasherErrorCode(NSStringFromMSVRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVSignedSubtractedRange": {
+      "name": "MSVSignedSubtractedRange",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVSignedSubtractedRange(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVErrorDomain": {
+      "name": "MSVErrorDomain",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVSQLDatabaseErrorDomain": {
+      "name": "MSVSQLDatabaseErrorDomain",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVSQLDatabaseErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceOSHasInternalDiagnostics": {
+      "name": "MSVDeviceOSHasInternalDiagnostics",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVDeviceOSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVDeviceOSHasInternalDiagnostics(MSVDeviceOSRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVGzipDecompressFile": {
+      "name": "MSVGzipDecompressFile",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVGzipDecompressFile(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceSupportsSideLoadedMediaContent": {
+      "name": "MSVDeviceSupportsSideLoadedMediaContent",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVDeviceSupportsSideLoadedMediaContent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVAutoBugCaptureDomainAirTraffic": {
+      "name": "MSVAutoBugCaptureDomainAirTraffic",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVAutoBugCaptureDomainAirTraffic(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVAutoBugCaptureDomainRadio": {
+      "name": "MSVAutoBugCaptureDomainRadio",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVAutoBugCaptureDomainRadio(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVKeychainCopyKeychainValue": {
+      "name": "MSVKeychainCopyKeychainValue",
+      "framework": "MediaServices",
+      "return_type": "MSVKeychainRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVKeychainRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MSVKeychainRef/*?*/ MSVKeychainCopyKeychainValue(MSVKeychainRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MSVKeychainRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVHasherErrorDomain": {
+      "name": "MSVHasherErrorDomain",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVHasherErrorDomain(MSVRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVMediaAssetFileExtensions": {
+      "name": "MSVMediaAssetFileExtensions",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVMediaAssetFileExtensions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVQRConnectionError": {
+      "name": "MSVQRConnectionError",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVQRConnectionError(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceSupportsMultipleLibraries": {
+      "name": "MSVDeviceSupportsMultipleLibraries",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVDeviceSupportsMultipleLibraries(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for (extension in MediaServices):__C.NSString.msv_symbol : Swift.String": {
+      "name": "property descriptor for (extension in MediaServices):__C.NSString.msv_symbol : Swift.String",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for (extension in MediaServices):__C.NSString.msv_symbol : Swift.String(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVWeakLinkClass": {
+      "name": "MSVWeakLinkClass",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVWeakLinkClass(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "msv_dispatch_sync_bool": {
+      "name": "msv_dispatch_sync_bool",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ msv_dispatch_sync_bool(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVCopySystemBuildVersion": {
+      "name": "MSVCopySystemBuildVersion",
+      "framework": "MediaServices",
+      "return_type": "MSVRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MSVRef/*?*/ MSVCopySystemBuildVersion(MSVRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MSVRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVCopyDeviceUniqueIdentifier",
+        "MSVCopyLocalizedModelName",
+        "MSVCreateTemporaryFileHandle"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVAutoBugCaptureDomainMediaPlayer": {
+      "name": "MSVAutoBugCaptureDomainMediaPlayer",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVAutoBugCaptureDomainMediaPlayer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVImageUtilitiesMakeBoundingBoxSize": {
+      "name": "MSVImageUtilitiesMakeBoundingBoxSize",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVImageUtilitiesMakeBoundingBoxSize(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVSignedIntersectionRange": {
+      "name": "MSVSignedIntersectionRange",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVSignedIntersectionRange(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVImageUtilitiesAddJPEGToDestination": {
+      "name": "MSVImageUtilitiesAddJPEGToDestination",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVImageUtilitiesAddJPEGToDestination(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVGetKernelBootTime": {
+      "name": "MSVGetKernelBootTime",
+      "framework": "MediaServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MSVGetKernelBootTime(MSVRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceSupportsLosslessMusic": {
+      "name": "MSVDeviceSupportsLosslessMusic",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVDeviceSupportsLosslessMusic(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVOPACKDecoderErrorDomain": {
+      "name": "MSVOPACKDecoderErrorDomain",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVOPACKDecoderErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVHasherCreate": {
+      "name": "MSVHasherCreate",
+      "framework": "MediaServices",
+      "return_type": "MSVHasherRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MSVHasherRef MSVHasherCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MSVHasherRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVNanoIDDefaultSize": {
+      "name": "MSVNanoIDDefaultSize",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVNanoIDDefaultSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "msv_dispatch_sync_uint32": {
+      "name": "msv_dispatch_sync_uint32",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ msv_dispatch_sync_uint32(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceSupportsMultiChannelMusic": {
+      "name": "MSVDeviceSupportsMultiChannelMusic",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVDeviceSupportsMultiChannelMusic(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVCopyDeviceUniqueIdentifier": {
+      "name": "MSVCopyDeviceUniqueIdentifier",
+      "framework": "MediaServices",
+      "return_type": "MSVRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MSVRef/*?*/ MSVCopyDeviceUniqueIdentifier(MSVRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MSVRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVCopySystemBuildVersion",
+        "MSVCopyLocalizedModelName",
+        "MSVCreateTemporaryFileHandle"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for (extension in MediaServices):__C.NSError.msv_treeDescription : Swift.String": {
+      "name": "property descriptor for (extension in MediaServices):__C.NSError.msv_treeDescription : Swift.String",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for (extension in MediaServices):__C.NSError.msv_treeDescription : Swift.String(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVHashZero": {
+      "name": "MSVHashZero",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVHashZero(MSVRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromMSVSignedRange": {
+      "name": "NSStringFromMSVSignedRange",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromMSVSignedRange(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVCryptoDigestForString": {
+      "name": "MSVCryptoDigestForString",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVCryptoDigestForString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceIsMac": {
+      "name": "MSVDeviceIsMac",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVDeviceIsMac(MSVDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceIsiPhone": {
+      "name": "MSVDeviceIsiPhone",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVDeviceIsiPhone(MSVDeviceRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVHasherDigestDataBlocksFromURL": {
+      "name": "MSVHasherDigestDataBlocksFromURL",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVHasherDigestDataBlocksFromURL(MSVRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVMediaLoggingDirectory": {
+      "name": "MSVMediaLoggingDirectory",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVMediaLoggingDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceIsWatch": {
+      "name": "MSVDeviceIsWatch",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVDeviceIsWatch(MSVDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVWeakLinkSymbol": {
+      "name": "MSVWeakLinkSymbol",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVWeakLinkSymbol(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVNanoIDCreateFourChar": {
+      "name": "MSVNanoIDCreateFourChar",
+      "framework": "MediaServices",
+      "return_type": "MSVNanoIDRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MSVNanoIDRef MSVNanoIDCreateFourChar(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MSVNanoIDRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVNanoIDCreateWithRandomSource",
+        "MSVNanoIDCreateEightChar",
+        "MSVNanoIDCreate",
+        "MSVNanoIDCreateWithCharacters",
+        "MSVNanoIDCreateTaggedPointer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVImageUtilitiesAddImageToDestination": {
+      "name": "MSVImageUtilitiesAddImageToDestination",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVImageUtilitiesAddImageToDestination(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVGzipDecompressData": {
+      "name": "MSVGzipDecompressData",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVGzipDecompressData(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVLaunchApplication": {
+      "name": "MSVLaunchApplication",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVLaunchApplication(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVTCCIdentityForBundleID": {
+      "name": "MSVTCCIdentityForBundleID",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVTCCIdentityForBundleID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVBackgroundTaskInvalid": {
+      "name": "MSVBackgroundTaskInvalid",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVBackgroundTaskInvalid(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "msv_dispatch_sync_uint": {
+      "name": "msv_dispatch_sync_uint",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ msv_dispatch_sync_uint(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVImageUtilitiesResizeSourceImageToJPEGDestination": {
+      "name": "MSVImageUtilitiesResizeSourceImageToJPEGDestination",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVImageUtilitiesResizeSourceImageToJPEGDestination(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVImageUtilitiesCreateImageSource": {
+      "name": "MSVImageUtilitiesCreateImageSource",
+      "framework": "MediaServices",
+      "return_type": "MSVImageUtilitiesRef",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MSVImageUtilitiesRef MSVImageUtilitiesCreateImageSource(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MSVImageUtilitiesRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVImageUtilitiesCreateFileImageDestination",
+        "MSVImageUtilitiesCreateDataImageDestination",
+        "MSVImageUtilitiesCopyUTTypeForImage",
+        "MSVImageUtilitiesCopyUTTypeForImageFormat",
+        "MSVImageUtilitiesCreateImageFromSource"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVPropertyListDataClasses": {
+      "name": "MSVPropertyListDataClasses",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVPropertyListDataClasses(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceHasCellularBaseband": {
+      "name": "MSVDeviceHasCellularBaseband",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVDeviceHasCellularBaseband(MSVDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVArtworkServiceErrorDomain": {
+      "name": "MSVArtworkServiceErrorDomain",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVArtworkServiceErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVOfflineHLSFileExtensions": {
+      "name": "MSVOfflineHLSFileExtensions",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVOfflineHLSFileExtensions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVNanoIDCreateWithRandomSource": {
+      "name": "MSVNanoIDCreateWithRandomSource",
+      "framework": "MediaServices",
+      "return_type": "MSVNanoIDRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MSVNanoIDRef MSVNanoIDCreateWithRandomSource(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MSVNanoIDRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVNanoIDCreateFourChar",
+        "MSVNanoIDCreateEightChar",
+        "MSVNanoIDCreate",
+        "MSVNanoIDCreateWithCharacters",
+        "MSVNanoIDCreateTaggedPointer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVGetDiskUsageForPath": {
+      "name": "MSVGetDiskUsageForPath",
+      "framework": "MediaServices",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ MSVGetDiskUsageForPath(MSVRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceOSIsInternalInstall": {
+      "name": "MSVDeviceOSIsInternalInstall",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVDeviceOSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVDeviceOSIsInternalInstall(MSVDeviceOSRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVLaunchApplicationWithOptions": {
+      "name": "MSVLaunchApplicationWithOptions",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVLaunchApplicationWithOptions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVAuditTokenForCurrentProcess": {
+      "name": "MSVAuditTokenForCurrentProcess",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVAuditTokenForCurrentProcess(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceIsAppleTV": {
+      "name": "MSVDeviceIsAppleTV",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVDeviceIsAppleTV(MSVDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVHasherSeedZero": {
+      "name": "MSVHasherSeedZero",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVHasherSeedZero(MSVRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVGetMaximumScreenSize": {
+      "name": "MSVGetMaximumScreenSize",
+      "framework": "MediaServices",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint32_t/*?*/ MSVGetMaximumScreenSize(MSVRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVStreamReaderErrorDomain": {
+      "name": "MSVStreamReaderErrorDomain",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVStreamReaderErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceIsInternalCarry": {
+      "name": "MSVDeviceIsInternalCarry",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVDeviceIsInternalCarry(MSVDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVImageUtilitiesDefaultImageCompressionQuality": {
+      "name": "MSVImageUtilitiesDefaultImageCompressionQuality",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing",
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVImageUtilitiesDefaultImageCompressionQuality(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVImageUtilitiesAddSourceImageToJPEGDestination": {
+      "name": "MSVImageUtilitiesAddSourceImageToJPEGDestination",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVImageUtilitiesAddSourceImageToJPEGDestination(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVAutoBugCaptureDomainMediaLibrary": {
+      "name": "MSVAutoBugCaptureDomainMediaLibrary",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVAutoBugCaptureDomainMediaLibrary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVGetCurrentThreadPriority": {
+      "name": "MSVGetCurrentThreadPriority",
+      "framework": "MediaServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MSVGetCurrentThreadPriority(MSVRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVProcessCopyUUID": {
+      "name": "MSVProcessCopyUUID",
+      "framework": "MediaServices",
+      "return_type": "MSVProcessRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVProcessRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MSVProcessRef/*?*/ MSVProcessCopyUUID(MSVProcessRef *ref)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [
+        "MSVProcessRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVProcessCopyMediaFrameworksDescriptions"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVGzipCompressData": {
+      "name": "MSVGzipCompressData",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVGzipCompressData(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVImageUtilitiesCreateFileImageDestination": {
+      "name": "MSVImageUtilitiesCreateFileImageDestination",
+      "framework": "MediaServices",
+      "return_type": "MSVImageUtilitiesRef",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MSVImageUtilitiesRef MSVImageUtilitiesCreateFileImageDestination(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MSVImageUtilitiesRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVImageUtilitiesCreateImageSource",
+        "MSVImageUtilitiesCreateDataImageDestination",
+        "MSVImageUtilitiesCopyUTTypeForImage",
+        "MSVImageUtilitiesCopyUTTypeForImageFormat",
+        "MSVImageUtilitiesCreateImageFromSource"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVCopyLocalizedModelName": {
+      "name": "MSVCopyLocalizedModelName",
+      "framework": "MediaServices",
+      "return_type": "MSVRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MSVRef/*?*/ MSVCopyLocalizedModelName(MSVRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MSVRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVCopySystemBuildVersion",
+        "MSVCopyDeviceUniqueIdentifier",
+        "MSVCreateTemporaryFileHandle"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromMSVErrorCode": {
+      "name": "NSStringFromMSVErrorCode",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromMSVErrorCode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "msv_dispatch_sync_int64": {
+      "name": "msv_dispatch_sync_int64",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ msv_dispatch_sync_int64(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVBundleIDForAuditToken": {
+      "name": "MSVBundleIDForAuditToken",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVBundleIDForAuditToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVEnableDirStatsForDirectory": {
+      "name": "MSVEnableDirStatsForDirectory",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVEnableDirStatsForDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVGetProcessLaunchTime": {
+      "name": "MSVGetProcessLaunchTime",
+      "framework": "MediaServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MSVGetProcessLaunchTime(MSVRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVUnarchivedObjectOfClass": {
+      "name": "MSVUnarchivedObjectOfClass",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVUnarchivedObjectOfClass(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVArtworkAssetFileExtensions": {
+      "name": "MSVArtworkAssetFileExtensions",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVArtworkAssetFileExtensions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVArchivedDataWithRootObject": {
+      "name": "MSVArchivedDataWithRootObject",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVArchivedDataWithRootObject(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceIsHomePod": {
+      "name": "MSVDeviceIsHomePod",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVDeviceIsHomePod(MSVDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVHasherSharedSeed": {
+      "name": "MSVHasherSharedSeed",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVHasherSharedSeed(MSVRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in MediaServices):__C.NSString.msv_symbol.getter : Swift.String": {
+      "name": "(extension in MediaServices):__C.NSString.msv_symbol.getter : Swift.String",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ (extension in MediaServices):__C.NSString.msv_symbol.getter : Swift.String(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVGetDeviceProductType": {
+      "name": "MSVGetDeviceProductType",
+      "framework": "MediaServices",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MSVGetDeviceProductType(MSVRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceIsiPad": {
+      "name": "MSVDeviceIsiPad",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVDeviceIsiPad(MSVDeviceRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "msv_dispatch_async_on_queue_with_qos": {
+      "name": "msv_dispatch_async_on_queue_with_qos",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ msv_dispatch_async_on_queue_with_qos(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceSupportsExtendedColorDisplay": {
+      "name": "MSVDeviceSupportsExtendedColorDisplay",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVDeviceSupportsExtendedColorDisplay(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVTrialExperimentDidReceiveUpdateNotification": {
+      "name": "MSVTrialExperimentDidReceiveUpdateNotification",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVTrialExperimentDidReceiveUpdateNotification(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "msv_dispatch_sync_uint64": {
+      "name": "msv_dispatch_sync_uint64",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ msv_dispatch_sync_uint64(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVImageUtilitiesAddSourceImageToDestination": {
+      "name": "MSVImageUtilitiesAddSourceImageToDestination",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVImageUtilitiesAddSourceImageToDestination(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "msv_dispatch_sync_on_queue": {
+      "name": "msv_dispatch_sync_on_queue",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ msv_dispatch_sync_on_queue(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVKeychainSetKeychainValue": {
+      "name": "MSVKeychainSetKeychainValue",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVKeychainRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MSVKeychainSetKeychainValue(MSVKeychainRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVWithCStringArray": {
+      "name": "MSVWithCStringArray",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVWithCStringArray(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVAutoBugCaptureDomainMusicLibrary": {
+      "name": "MSVAutoBugCaptureDomainMusicLibrary",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVAutoBugCaptureDomainMusicLibrary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVNanoIDCreateEightChar": {
+      "name": "MSVNanoIDCreateEightChar",
+      "framework": "MediaServices",
+      "return_type": "MSVNanoIDRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MSVNanoIDRef MSVNanoIDCreateEightChar(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MSVNanoIDRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVNanoIDCreateFourChar",
+        "MSVNanoIDCreateWithRandomSource",
+        "MSVNanoIDCreate",
+        "MSVNanoIDCreateWithCharacters",
+        "MSVNanoIDCreateTaggedPointer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceSupportsDelegatedIdentities": {
+      "name": "MSVDeviceSupportsDelegatedIdentities",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVDeviceSupportsDelegatedIdentities(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVMobileHomeDirectory": {
+      "name": "MSVMobileHomeDirectory",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVMobileHomeDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceIsHomePodMini": {
+      "name": "MSVDeviceIsHomePodMini",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVDeviceIsHomePodMini(MSVDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVImageUtilitiesCreateDataImageDestination": {
+      "name": "MSVImageUtilitiesCreateDataImageDestination",
+      "framework": "MediaServices",
+      "return_type": "MSVImageUtilitiesRef",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MSVImageUtilitiesRef MSVImageUtilitiesCreateDataImageDestination(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MSVImageUtilitiesRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVImageUtilitiesCreateImageSource",
+        "MSVImageUtilitiesCreateFileImageDestination",
+        "MSVImageUtilitiesCopyUTTypeForImage",
+        "MSVImageUtilitiesCopyUTTypeForImageFormat",
+        "MSVImageUtilitiesCreateImageFromSource"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVQRSessionServerError": {
+      "name": "MSVQRSessionServerError",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVQRSessionServerError(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "msv_dispatch_sync_object": {
+      "name": "msv_dispatch_sync_object",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ msv_dispatch_sync_object(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVNanoIDCreate": {
+      "name": "MSVNanoIDCreate",
+      "framework": "MediaServices",
+      "return_type": "MSVNanoIDRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MSVNanoIDRef MSVNanoIDCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MSVNanoIDRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVNanoIDCreateFourChar",
+        "MSVNanoIDCreateWithRandomSource",
+        "MSVNanoIDCreateEightChar",
+        "MSVNanoIDCreateWithCharacters",
+        "MSVNanoIDCreateTaggedPointer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "msv_dispatch_on_main_queue": {
+      "name": "msv_dispatch_on_main_queue",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ msv_dispatch_on_main_queue(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVNanoIDCreateWithCharacters": {
+      "name": "MSVNanoIDCreateWithCharacters",
+      "framework": "MediaServices",
+      "return_type": "MSVNanoIDRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MSVNanoIDRef MSVNanoIDCreateWithCharacters(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MSVNanoIDRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVNanoIDCreateFourChar",
+        "MSVNanoIDCreateWithRandomSource",
+        "MSVNanoIDCreateEightChar",
+        "MSVNanoIDCreate",
+        "MSVNanoIDCreateTaggedPointer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVLyricsTTMLParserErrorDomain": {
+      "name": "MSVLyricsTTMLParserErrorDomain",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVLyricsTTMLParserErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVAutoBugCaptureDomainStoreBookKeeper": {
+      "name": "MSVAutoBugCaptureDomainStoreBookKeeper",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVAutoBugCaptureDomainStoreBookKeeper(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVGzipCompressFile": {
+      "name": "MSVGzipCompressFile",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "compression"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVGzipCompressFile(void)",
+      "verb": "encode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVProcessHasInjectedFrameworks": {
+      "name": "MSVProcessHasInjectedFrameworks",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVProcessRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing",
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVProcessHasInjectedFrameworks(MSVProcessRef *ref)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVTimelineChartPrefix": {
+      "name": "MSVTimelineChartPrefix",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVTimelineChartPrefix(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceIsiPod": {
+      "name": "MSVDeviceIsiPod",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVDeviceIsiPod(MSVDeviceRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVProcessIsDebugging": {
+      "name": "MSVProcessIsDebugging",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVProcessRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVProcessIsDebugging(MSVProcessRef *ref)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSStringFromMSVSQLDatabaseErrorCode": {
+      "name": "NSStringFromMSVSQLDatabaseErrorCode",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ NSStringFromMSVSQLDatabaseErrorCode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "__MSVNanoIDSetTestingArc4StateSeed": {
+      "name": "__MSVNanoIDSetTestingArc4StateSeed",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "__MSVNanoIDRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ __MSVNanoIDSetTestingArc4StateSeed(__MSVNanoIDRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVHomeSharingCacheDirectory": {
+      "name": "MSVHomeSharingCacheDirectory",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVHomeSharingCacheDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceIsAudioAccessory": {
+      "name": "MSVDeviceIsAudioAccessory",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVDeviceIsAudioAccessory(MSVDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVImageUtilitiesCopyUTTypeForImage": {
+      "name": "MSVImageUtilitiesCopyUTTypeForImage",
+      "framework": "MediaServices",
+      "return_type": "MSVImageUtilitiesRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVImageUtilitiesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MSVImageUtilitiesRef/*?*/ MSVImageUtilitiesCopyUTTypeForImage(MSVImageUtilitiesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MSVImageUtilitiesRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVImageUtilitiesCreateImageSource",
+        "MSVImageUtilitiesCreateFileImageDestination",
+        "MSVImageUtilitiesCreateDataImageDestination",
+        "MSVImageUtilitiesCopyUTTypeForImageFormat",
+        "MSVImageUtilitiesCreateImageFromSource"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVTCCIdentityForAuditToken": {
+      "name": "MSVTCCIdentityForAuditToken",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVTCCIdentityForAuditToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVNanoIDTaggedPointerCharacters": {
+      "name": "MSVNanoIDTaggedPointerCharacters",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVNanoIDTaggedPointerCharacters(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "msv_dispatch_sync_float": {
+      "name": "msv_dispatch_sync_float",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ msv_dispatch_sync_float(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVSignedUnionRange": {
+      "name": "MSVSignedUnionRange",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVSignedUnionRange(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVSignedRangeZero": {
+      "name": "MSVSignedRangeZero",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVSignedRangeZero(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVGetMaximumScreenScale": {
+      "name": "MSVGetMaximumScreenScale",
+      "framework": "MediaServices",
+      "return_type": "double",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing",
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "double/*?*/ MSVGetMaximumScreenScale(MSVRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "double"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVAutoBugCaptureDomainiTunesCloud": {
+      "name": "MSVAutoBugCaptureDomainiTunesCloud",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVAutoBugCaptureDomainiTunesCloud(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVNanoIDCreateTaggedPointer": {
+      "name": "MSVNanoIDCreateTaggedPointer",
+      "framework": "MediaServices",
+      "return_type": "MSVNanoIDRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MSVNanoIDRef MSVNanoIDCreateTaggedPointer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MSVNanoIDRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVNanoIDCreateFourChar",
+        "MSVNanoIDCreateWithRandomSource",
+        "MSVNanoIDCreateEightChar",
+        "MSVNanoIDCreate",
+        "MSVNanoIDCreateWithCharacters"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVImageUtilitiesCopyUTTypeForImageFormat": {
+      "name": "MSVImageUtilitiesCopyUTTypeForImageFormat",
+      "framework": "MediaServices",
+      "return_type": "MSVImageUtilitiesRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVImageUtilitiesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MSVImageUtilitiesRef/*?*/ MSVImageUtilitiesCopyUTTypeForImageFormat(MSVImageUtilitiesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MSVImageUtilitiesRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVImageUtilitiesCreateImageSource",
+        "MSVImageUtilitiesCreateFileImageDestination",
+        "MSVImageUtilitiesCreateDataImageDestination",
+        "MSVImageUtilitiesCopyUTTypeForImage",
+        "MSVImageUtilitiesCreateImageFromSource"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVProcessLinkMediaFrameworks": {
+      "name": "MSVProcessLinkMediaFrameworks",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVProcessLinkMediaFrameworks(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVUnarchivedObjectOfClasses": {
+      "name": "MSVUnarchivedObjectOfClasses",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVUnarchivedObjectOfClasses(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVQRConnectionRPCError": {
+      "name": "MSVQRConnectionRPCError",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVQRConnectionRPCError(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVSignedRangeFromString": {
+      "name": "MSVSignedRangeFromString",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVSignedRangeFromString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "(extension in MediaServices):__C.NSError.msv_treeDescription.getter : Swift.String": {
+      "name": "(extension in MediaServices):__C.NSError.msv_treeDescription.getter : Swift.String",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ (extension in MediaServices):__C.NSError.msv_treeDescription.getter : Swift.String(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVNanoIDDefaultCharacters": {
+      "name": "MSVNanoIDDefaultCharacters",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVNanoIDDefaultCharacters(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVSignedRangeNotFound": {
+      "name": "MSVSignedRangeNotFound",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVSignedRangeNotFound(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVImageUtilitiesCreateImageFromSource": {
+      "name": "MSVImageUtilitiesCreateImageFromSource",
+      "framework": "MediaServices",
+      "return_type": "MSVImageUtilitiesRef",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MSVImageUtilitiesRef MSVImageUtilitiesCreateImageFromSource(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MSVImageUtilitiesRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVImageUtilitiesCreateImageSource",
+        "MSVImageUtilitiesCreateFileImageDestination",
+        "MSVImageUtilitiesCreateDataImageDestination",
+        "MSVImageUtilitiesCopyUTTypeForImage",
+        "MSVImageUtilitiesCopyUTTypeForImageFormat"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVLogAddStateHandler": {
+      "name": "MSVLogAddStateHandler",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ MSVLogAddStateHandler(MSVRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVLogRemoveStateHandler"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVAutoBugCaptureDomainMediaFoundation": {
+      "name": "MSVAutoBugCaptureDomainMediaFoundation",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVAutoBugCaptureDomainMediaFoundation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceSupportsVocalAttenuation": {
+      "name": "MSVDeviceSupportsVocalAttenuation",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVDeviceSupportsVocalAttenuation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVReplacementRangeForRanges": {
+      "name": "MSVReplacementRangeForRanges",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVReplacementRangeForRanges(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "msv_dispatch_sync_int": {
+      "name": "msv_dispatch_sync_int",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ msv_dispatch_sync_int(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVSegmentCodingPackageInfoKeyPackageTypeIdentifier": {
+      "name": "MSVSegmentCodingPackageInfoKeyPackageTypeIdentifier",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVSegmentCodingPackageInfoKeyPackageTypeIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVLogRemoveStateHandler": {
+      "name": "MSVLogRemoveStateHandler",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ MSVLogRemoveStateHandler(MSVRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVLogAddStateHandler"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVCreateTemporaryFileHandle": {
+      "name": "MSVCreateTemporaryFileHandle",
+      "framework": "MediaServices",
+      "return_type": "MSVRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MSVRef MSVCreateTemporaryFileHandle(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MSVRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVCopySystemBuildVersion",
+        "MSVCopyDeviceUniqueIdentifier",
+        "MSVCopyLocalizedModelName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "msv_dispatch_sync_int32": {
+      "name": "msv_dispatch_sync_int32",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ msv_dispatch_sync_int32(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVNanoIDTaggedPointerSize": {
+      "name": "MSVNanoIDTaggedPointerSize",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVNanoIDTaggedPointerSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVCurrentProcessIsNonUIPlaybackService": {
+      "name": "MSVCurrentProcessIsNonUIPlaybackService",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVCurrentProcessRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVCurrentProcessIsNonUIPlaybackService(MSVCurrentProcessRef *ref)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVNanoIDNoSimilarCharacters": {
+      "name": "MSVNanoIDNoSimilarCharacters",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVNanoIDNoSimilarCharacters(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVBundleIDForTCCIdentity": {
+      "name": "MSVBundleIDForTCCIdentity",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVBundleIDForTCCIdentity(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVProcessCopyMediaFrameworksDescriptions": {
+      "name": "MSVProcessCopyMediaFrameworksDescriptions",
+      "framework": "MediaServices",
+      "return_type": "MSVProcessRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVProcessRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MSVProcessRef/*?*/ MSVProcessCopyMediaFrameworksDescriptions(MSVProcessRef *ref)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [
+        "MSVProcessRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSVProcessCopyUUID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "msv_dispatch_async_on_queue": {
+      "name": "msv_dispatch_async_on_queue",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ msv_dispatch_async_on_queue(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceSupportsMediaDownloads": {
+      "name": "MSVDeviceSupportsMediaDownloads",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVDeviceSupportsMediaDownloads(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVImageUtilitiesImageFormatSupportsTransparency": {
+      "name": "MSVImageUtilitiesImageFormatSupportsTransparency",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVImageUtilitiesImageFormatSupportsTransparency(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVProcessIsUsingRoots": {
+      "name": "MSVProcessIsUsingRoots",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVProcessRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVProcessIsUsingRoots(MSVProcessRef *ref)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "msv_dispatch_sync_on_main_queue": {
+      "name": "msv_dispatch_sync_on_main_queue",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ msv_dispatch_sync_on_main_queue(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVAutoBugCaptureDomainMediaRemote": {
+      "name": "MSVAutoBugCaptureDomainMediaRemote",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVAutoBugCaptureDomainMediaRemote(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVLogDateFormatter": {
+      "name": "MSVLogDateFormatter",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVLogDateFormatter(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVStreamWriterErrorDomain": {
+      "name": "MSVStreamWriterErrorDomain",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVStreamWriterErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceIsROSDevice": {
+      "name": "MSVDeviceIsROSDevice",
+      "framework": "MediaServices",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MSVDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MSVDeviceIsROSDevice(MSVDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVDeviceSupportsEnhancedMusic": {
+      "name": "MSVDeviceSupportsEnhancedMusic",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVDeviceSupportsEnhancedMusic(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVImageUtilitiesResizeSourceImageToDestination": {
+      "name": "MSVImageUtilitiesResizeSourceImageToDestination",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVImageUtilitiesResizeSourceImageToDestination(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVTCCIdentityForCurrentProcess": {
+      "name": "MSVTCCIdentityForCurrentProcess",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVTCCIdentityForCurrentProcess(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "msv_dispatch_sync_double": {
+      "name": "msv_dispatch_sync_double",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ msv_dispatch_sync_double(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVWeakLinkStringConstant": {
+      "name": "MSVWeakLinkStringConstant",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVWeakLinkStringConstant(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSVSystemRootDirectory": {
+      "name": "MSVSystemRootDirectory",
+      "framework": "MediaServices",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaServices"
+        }
+      ],
+      "signature": "void/*?*/ MSVSystemRootDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "gpu_compute": [
+      "MSVGetKernelBootTime"
+    ],
+    "compression": [
+      "MSVGzipCompressData",
+      "MSVGzipCompressFile",
+      "MSVGzipDecompressData",
+      "MSVGzipDecompressFile",
+      "MSVImageUtilitiesDefaultImageCompressionQuality"
+    ],
+    "system_io": [
+      "msv_dispatch_async_on_queue",
+      "msv_dispatch_async_on_queue_with_qos",
+      "msv_dispatch_on_main_queue",
+      "msv_dispatch_sync_bool",
+      "msv_dispatch_sync_double",
+      "msv_dispatch_sync_float",
+      "msv_dispatch_sync_int",
+      "msv_dispatch_sync_int32",
+      "msv_dispatch_sync_int64",
+      "msv_dispatch_sync_object",
+      "msv_dispatch_sync_on_main_queue",
+      "msv_dispatch_sync_on_queue",
+      "msv_dispatch_sync_uint",
+      "msv_dispatch_sync_uint32",
+      "msv_dispatch_sync_uint64"
+    ],
+    "image_processing": [
+      "MSVGetMaximumScreenScale",
+      "MSVImageUtilitiesAddImageToDestination",
+      "MSVImageUtilitiesAddJPEGToDestination",
+      "MSVImageUtilitiesAddSourceImageToDestination",
+      "MSVImageUtilitiesAddSourceImageToJPEGDestination",
+      "MSVImageUtilitiesCopyUTTypeForImage",
+      "MSVImageUtilitiesCopyUTTypeForImageFormat",
+      "MSVImageUtilitiesCreateDataImageDestination",
+      "MSVImageUtilitiesCreateFileImageDestination",
+      "MSVImageUtilitiesCreateImageFromSource",
+      "MSVImageUtilitiesCreateImageSource",
+      "MSVImageUtilitiesDefaultImageCompressionQuality",
+      "MSVImageUtilitiesImageFormatSupportsTransparency",
+      "MSVImageUtilitiesMakeBoundingBoxSize",
+      "MSVImageUtilitiesResizeSourceImageToDestination",
+      "MSVImageUtilitiesResizeSourceImageToJPEGDestination"
+    ],
+    "display_compositing": [
+      "MSVDeviceSupportsExtendedColorDisplay",
+      "MSVGetMaximumScreenScale",
+      "MSVGetMaximumScreenSize"
+    ],
+    "cryptography": [
+      "MSVCryptoDigestForString",
+      "MSVDeviceOSHasInternalDiagnostics",
+      "MSVHasherDigestDataBlocksFromURL",
+      "MSVHasherSharedSeed",
+      "MSVHomeSharingCacheDirectory",
+      "MSVProcessHasInjectedFrameworks"
+    ],
+    "video_processing": [
+      "MSVProcessCopyMediaFrameworksDescriptions",
+      "MSVProcessHasInjectedFrameworks",
+      "MSVProcessLinkMediaFrameworks"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

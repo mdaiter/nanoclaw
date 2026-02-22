@@ -1,0 +1,382 @@
+{
+  "framework": "ThreadNetwork",
+  "functions": {
+    "DispatchXPCConnectionQueueIfNecessarySync": {
+      "name": "DispatchXPCConnectionQueueIfNecessarySync",
+      "framework": "ThreadNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ThreadNetwork"
+        }
+      ],
+      "signature": "void/*?*/ DispatchXPCConnectionQueueIfNecessarySync(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "THChannelNone": {
+      "name": "THChannelNone",
+      "framework": "ThreadNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ThreadNetwork"
+        }
+      ],
+      "signature": "void/*?*/ THChannelNone(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ThreadNetworkLoggingCategory": {
+      "name": "ThreadNetworkLoggingCategory",
+      "framework": "ThreadNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ThreadNetwork"
+        }
+      ],
+      "signature": "void/*?*/ ThreadNetworkLoggingCategory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "openlog": {
+      "name": "openlog",
+      "framework": "ThreadNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ThreadNetwork"
+        }
+      ],
+      "signature": "void/*?*/ openlog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DEFAULT_XPC_TIMEOUT": {
+      "name": "DEFAULT_XPC_TIMEOUT",
+      "framework": "ThreadNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ThreadNetwork"
+        }
+      ],
+      "signature": "void/*?*/ DEFAULT_XPC_TIMEOUT(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DispatchXPCConnectionQueueIfNecessaryAndWait": {
+      "name": "DispatchXPCConnectionQueueIfNecessaryAndWait",
+      "framework": "ThreadNetwork",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DispatchXPCConnectionQueueIfNecessaryAndRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "system_io",
+        "synchronization"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ThreadNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Synchronization pattern"
+        }
+      ],
+      "signature": "int/*?*/ DispatchXPCConnectionQueueIfNecessaryAndWait(DispatchXPCConnectionQueueIfNecessaryAndRef *ref)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CTCSXPCErrorDomain": {
+      "name": "CTCSXPCErrorDomain",
+      "framework": "ThreadNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ThreadNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CTCSXPCErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ThreadNetworkVersionString": {
+      "name": "ThreadNetworkVersionString",
+      "framework": "ThreadNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ThreadNetwork"
+        }
+      ],
+      "signature": "void/*?*/ ThreadNetworkVersionString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "syslog_is_the_mask_enabled": {
+      "name": "syslog_is_the_mask_enabled",
+      "framework": "ThreadNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ThreadNetwork"
+        }
+      ],
+      "signature": "void/*?*/ syslog_is_the_mask_enabled(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CTCSErrorDomain": {
+      "name": "CTCSErrorDomain",
+      "framework": "ThreadNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ThreadNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CTCSErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ThreadCredentialsStoreErrorDomain": {
+      "name": "ThreadCredentialsStoreErrorDomain",
+      "framework": "ThreadNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ThreadNetwork"
+        }
+      ],
+      "signature": "void/*?*/ ThreadCredentialsStoreErrorDomain(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dispatch_get_xpc_connection_queue": {
+      "name": "dispatch_get_xpc_connection_queue",
+      "framework": "ThreadNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "system_io"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ThreadNetwork"
+        }
+      ],
+      "signature": "void/*?*/ dispatch_get_xpc_connection_queue(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "setlogmask": {
+      "name": "setlogmask",
+      "framework": "ThreadNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ThreadNetwork"
+        }
+      ],
+      "signature": "void/*?*/ setlogmask(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CTCSXpcServiceName": {
+      "name": "CTCSXpcServiceName",
+      "framework": "ThreadNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ThreadNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CTCSXpcServiceName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ThreadNetworkVersionNumber": {
+      "name": "ThreadNetworkVersionNumber",
+      "framework": "ThreadNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from ThreadNetwork"
+        }
+      ],
+      "signature": "void/*?*/ ThreadNetworkVersionNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "synchronization": [
+      "DispatchXPCConnectionQueueIfNecessaryAndWait"
+    ],
+    "system_io": [
+      "DispatchXPCConnectionQueueIfNecessaryAndWait",
+      "DispatchXPCConnectionQueueIfNecessarySync",
+      "dispatch_get_xpc_connection_queue"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

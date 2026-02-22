@@ -1,0 +1,3608 @@
+{
+  "framework": "CrashReporterSupport",
+  "functions": {
+    "CRIsSeedBuild": {
+      "name": "CRIsSeedBuild",
+      "framework": "CrashReporterSupport",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CRIsSeedBuild(CRRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRIsSeedBuild": {
+      "name": "_CRIsSeedBuild",
+      "framework": "CrashReporterSupport",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _CRIsSeedBuild(_CRRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SubmitDiagnosticLogPathsWithIdentifier": {
+      "name": "SubmitDiagnosticLogPathsWithIdentifier",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ SubmitDiagnosticLogPathsWithIdentifier(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRSetXAttr": {
+      "name": "_CRSetXAttr",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _CRSetXAttr(_CRRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSAIterateSyncableLogsWithBlock": {
+      "name": "OSAIterateSyncableLogsWithBlock",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ OSAIterateSyncableLogsWithBlock(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSASubmittableLogs": {
+      "name": "OSASubmittableLogs",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ OSASubmittableLogs(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSAGetSubmittableLogs": {
+      "name": "OSAGetSubmittableLogs",
+      "framework": "CrashReporterSupport",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "OSARef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ OSAGetSubmittableLogs(OSARef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSACreateProblemReportDirectory": {
+      "name": "OSACreateProblemReportDirectory",
+      "framework": "CrashReporterSupport",
+      "return_type": "OSARef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "OSARef OSACreateProblemReportDirectory(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "OSARef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "OSACreateTempSubmittableLog",
+        "OSACreateRelPathInContainer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRLogStructuredData": {
+      "name": "CRLogStructuredData",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ CRLogStructuredData(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ConfigureInternalDebuggingWithPower": {
+      "name": "ConfigureInternalDebuggingWithPower",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ ConfigureInternalDebuggingWithPower(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSAPreferencesSetValue": {
+      "name": "OSAPreferencesSetValue",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "OSAPreferencesRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ OSAPreferencesSetValue(OSAPreferencesRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSAMoveFileForSyncing": {
+      "name": "OSAMoveFileForSyncing",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ OSAMoveFileForSyncing(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRGetUserUUID": {
+      "name": "CRGetUserUUID",
+      "framework": "CrashReporterSupport",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CRGetUserUUID(CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRGetAnonHostUUID",
+        "CRGetHostUUID",
+        "_CRSetAnonHostUUID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRCreateTimeStamp": {
+      "name": "_CRCreateTimeStamp",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CRRef _CRCreateTimeStamp(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies",
+        "_CRCopySanitizedProcessName",
+        "_CRCopyCrashHistoryURLForProcess",
+        "_CRCopyDiagnosticMessagesHistoryValue",
+        "_CRCopyStringXAttr"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSASetDATaskingValue": {
+      "name": "OSASetDATaskingValue",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "OSARef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ OSASetDATaskingValue(OSARef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRSaveProblemReport": {
+      "name": "CRSaveProblemReport",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ CRSaveProblemReport(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRIsAppleInternal": {
+      "name": "_CRIsAppleInternal",
+      "framework": "CrashReporterSupport",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _CRIsAppleInternal(_CRRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRProcessWillBeForceQuit": {
+      "name": "_CRProcessWillBeForceQuit",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ _CRProcessWillBeForceQuit(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetHardwareModel": {
+      "name": "GetHardwareModel",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ GetHardwareModel(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSAPreferencesGetIntegerValue": {
+      "name": "OSAPreferencesGetIntegerValue",
+      "framework": "CrashReporterSupport",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "OSAPreferencesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ OSAPreferencesGetIntegerValue(OSAPreferencesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "setDiagnosticLogSubmission": {
+      "name": "setDiagnosticLogSubmission",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ setDiagnosticLogSubmission(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies": {
+      "name": "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CRRef/*?*/ _CRCopyExecutablePathAndNameForPIDDetectingInconsistencies(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRCreateTimeStamp",
+        "_CRCopySanitizedProcessName",
+        "_CRCopyCrashHistoryURLForProcess",
+        "_CRCopyDiagnosticMessagesHistoryValue",
+        "_CRCopyStringXAttr"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRAutoSubmitEnabledIsSet": {
+      "name": "_CRAutoSubmitEnabledIsSet",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRAutoSubmitEnabledIsRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _CRAutoSubmitEnabledIsSet(_CRAutoSubmitEnabledIsRef *ref, void * *value)",
+      "verb": "execute",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRCopySanitizedProcessName": {
+      "name": "_CRCopySanitizedProcessName",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CRRef/*?*/ _CRCopySanitizedProcessName(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRCreateTimeStamp",
+        "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies",
+        "_CRCopyCrashHistoryURLForProcess",
+        "_CRCopyDiagnosticMessagesHistoryValue",
+        "_CRCopyStringXAttr"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "IsCarryDeviceWithHangtracerEnabled": {
+      "name": "IsCarryDeviceWithHangtracerEnabled",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ IsCarryDeviceWithHangtracerEnabled(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRWriteCrashHistoryForProcess": {
+      "name": "_CRWriteCrashHistoryForProcess",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ _CRWriteCrashHistoryForProcess(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CREnableCrashReporting": {
+      "name": "CREnableCrashReporting",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ CREnableCrashReporting(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSAContainerOTALoggingLibraryLocation": {
+      "name": "OSAContainerOTALoggingLibraryLocation",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ OSAContainerOTALoggingLibraryLocation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRCopyCrashHistoryURLForProcess": {
+      "name": "_CRCopyCrashHistoryURLForProcess",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CRRef/*?*/ _CRCopyCrashHistoryURLForProcess(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRCreateTimeStamp",
+        "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies",
+        "_CRCopySanitizedProcessName",
+        "_CRCopyDiagnosticMessagesHistoryValue",
+        "_CRCopyStringXAttr"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRCopyDiagnosticMessagesHistoryValue": {
+      "name": "_CRCopyDiagnosticMessagesHistoryValue",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CRRef/*?*/ _CRCopyDiagnosticMessagesHistoryValue(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRCreateTimeStamp",
+        "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies",
+        "_CRCopySanitizedProcessName",
+        "_CRCopyCrashHistoryURLForProcess",
+        "_CRCopyStringXAttr"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRDecodePanicTableOfContentsFromCFData": {
+      "name": "_CRDecodePanicTableOfContentsFromCFData",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ _CRDecodePanicTableOfContentsFromCFData(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SubmitDiagnosticLogs": {
+      "name": "SubmitDiagnosticLogs",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ SubmitDiagnosticLogs(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSAPreferencesSynchronize": {
+      "name": "OSAPreferencesSynchronize",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ OSAPreferencesSynchronize(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRAddBinaryImageHints": {
+      "name": "CRAddBinaryImageHints",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ CRAddBinaryImageHints(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRSetIsThirdPartyApplicationDataSubmissionEnabled": {
+      "name": "_CRSetIsThirdPartyApplicationDataSubmissionEnabled",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _CRSetIsThirdPartyApplicationDataSubmissionEnabled(_CRRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRHasBeenAppleInternal": {
+      "name": "CRHasBeenAppleInternal",
+      "framework": "CrashReporterSupport",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CRHasBeenAppleInternal(CRRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSAPreferencesGetValue": {
+      "name": "OSAPreferencesGetValue",
+      "framework": "CrashReporterSupport",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "OSAPreferencesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ OSAPreferencesGetValue(OSAPreferencesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSAInMultiUserMode": {
+      "name": "OSAInMultiUserMode",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ OSAInMultiUserMode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRAppendProblemReport": {
+      "name": "_CRAppendProblemReport",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ _CRAppendProblemReport(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRDisplayProblemReport": {
+      "name": "CRDisplayProblemReport",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ CRDisplayProblemReport(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dlca_sendEvent": {
+      "name": "dlca_sendEvent",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ dlca_sendEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRHasBeenAppleInternalRecently": {
+      "name": "CRHasBeenAppleInternalRecently",
+      "framework": "CrashReporterSupport",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CRHasBeenAppleInternalRecently(CRRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ConfigureInternalDebugging": {
+      "name": "ConfigureInternalDebugging",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ ConfigureInternalDebugging(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CopyExtensionForProblemType": {
+      "name": "CopyExtensionForProblemType",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ CopyExtensionForProblemType(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRCopyStringXAttr": {
+      "name": "_CRCopyStringXAttr",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CRRef/*?*/ _CRCopyStringXAttr(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRCreateTimeStamp",
+        "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies",
+        "_CRCopySanitizedProcessName",
+        "_CRCopyCrashHistoryURLForProcess",
+        "_CRCopyDiagnosticMessagesHistoryValue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRCreateProblemReportFromContentsOfURL": {
+      "name": "_CRCreateProblemReportFromContentsOfURL",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CRRef _CRCreateProblemReportFromContentsOfURL(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRCreateTimeStamp",
+        "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies",
+        "_CRCopySanitizedProcessName",
+        "_CRCopyCrashHistoryURLForProcess",
+        "_CRCopyDiagnosticMessagesHistoryValue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRCreateAssociatedReportPlistURL": {
+      "name": "_CRCreateAssociatedReportPlistURL",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CRRef _CRCreateAssociatedReportPlistURL(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRCreateTimeStamp",
+        "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies",
+        "_CRCopySanitizedProcessName",
+        "_CRCopyCrashHistoryURLForProcess",
+        "_CRCopyDiagnosticMessagesHistoryValue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSAWriteLogForSubmission": {
+      "name": "OSAWriteLogForSubmission",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ OSAWriteLogForSubmission(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRCopyProcessNameForPID": {
+      "name": "_CRCopyProcessNameForPID",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CRRef/*?*/ _CRCopyProcessNameForPID(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRCreateTimeStamp",
+        "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies",
+        "_CRCopySanitizedProcessName",
+        "_CRCopyCrashHistoryURLForProcess",
+        "_CRCopyDiagnosticMessagesHistoryValue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRCopyUTF8String": {
+      "name": "_CRCopyUTF8String",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CRRef/*?*/ _CRCopyUTF8String(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRCreateTimeStamp",
+        "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies",
+        "_CRCopySanitizedProcessName",
+        "_CRCopyCrashHistoryURLForProcess",
+        "_CRCopyDiagnosticMessagesHistoryValue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dlaggd_addScalarForKey": {
+      "name": "dlaggd_addScalarForKey",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ dlaggd_addScalarForKey(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSAGetDATaskingValue": {
+      "name": "OSAGetDATaskingValue",
+      "framework": "CrashReporterSupport",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "OSARef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ OSAGetDATaskingValue(OSARef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRIsObviouslyAppleInternal": {
+      "name": "_CRIsObviouslyAppleInternal",
+      "framework": "CrashReporterSupport",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _CRIsObviouslyAppleInternal(_CRRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRCreateDirectoryStructure": {
+      "name": "CRCreateDirectoryStructure",
+      "framework": "CrashReporterSupport",
+      "return_type": "CRRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CRRef CRCreateDirectoryStructure(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CRCopyCrashHistory",
+        "CRCopySanitizedPath"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSACreateTempSubmittableLog": {
+      "name": "OSACreateTempSubmittableLog",
+      "framework": "CrashReporterSupport",
+      "return_type": "OSARef",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "OSARef OSACreateTempSubmittableLog(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "OSARef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "OSACreateProblemReportDirectory",
+        "OSACreateRelPathInContainer"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRCopyCrashHistory": {
+      "name": "CRCopyCrashHistory",
+      "framework": "CrashReporterSupport",
+      "return_type": "CRRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CRRef/*?*/ CRCopyCrashHistory(CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CRCreateDirectoryStructure",
+        "CRCopySanitizedPath"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRMakeDirectory": {
+      "name": "_CRMakeDirectory",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ _CRMakeDirectory(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_migrateLegacyAutoSubmitEnabledSetting": {
+      "name": "_migrateLegacyAutoSubmitEnabledSetting",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_migrateLegacyAutoSubmitEnabledRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _migrateLegacyAutoSubmitEnabledSetting(_migrateLegacyAutoSubmitEnabledRef *ref, void * *value)",
+      "verb": "execute",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CROpenProblemReport": {
+      "name": "CROpenProblemReport",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ CROpenProblemReport(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRWritePropertyListWithPathAndMode": {
+      "name": "_CRWritePropertyListWithPathAndMode",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ _CRWritePropertyListWithPathAndMode(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "logEventForAppleCare": {
+      "name": "logEventForAppleCare",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ logEventForAppleCare(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSAPreferencesGetBoolValue": {
+      "name": "OSAPreferencesGetBoolValue",
+      "framework": "CrashReporterSupport",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "OSAPreferencesRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "bool/*?*/ OSAPreferencesGetBoolValue(OSAPreferencesRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRCopyExecutablePathForPID": {
+      "name": "_CRCopyExecutablePathForPID",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CRRef/*?*/ _CRCopyExecutablePathForPID(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRCreateTimeStamp",
+        "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies",
+        "_CRCopySanitizedProcessName",
+        "_CRCopyCrashHistoryURLForProcess",
+        "_CRCopyDiagnosticMessagesHistoryValue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRGetDiagnosticMessagesHistoryBooleanValue": {
+      "name": "_CRGetDiagnosticMessagesHistoryBooleanValue",
+      "framework": "CrashReporterSupport",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "bool/*?*/ _CRGetDiagnosticMessagesHistoryBooleanValue(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRSetIsAutoSubmitEnabled": {
+      "name": "_CRSetIsAutoSubmitEnabled",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _CRSetIsAutoSubmitEnabled(_CRRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRGetHostName": {
+      "name": "_CRGetHostName",
+      "framework": "CrashReporterSupport",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ _CRGetHostName(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRGetOSVersionString"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRSetDiagnosticMessagesHistoryValue": {
+      "name": "_CRSetDiagnosticMessagesHistoryValue",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _CRSetDiagnosticMessagesHistoryValue(_CRRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRThirdPartyApplicationDataSubmissionEnabledIsSet": {
+      "name": "_CRThirdPartyApplicationDataSubmissionEnabledIsSet",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRThirdPartyApplicationDataSubmissionEnabledIsRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _CRThirdPartyApplicationDataSubmissionEnabledIsSet(_CRThirdPartyApplicationDataSubmissionEnabledIsRef *ref, void * *value)",
+      "verb": "predicate",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetDeviceConfig": {
+      "name": "GetDeviceConfig",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ GetDeviceConfig(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRPrimeIsAppleInternal": {
+      "name": "CRPrimeIsAppleInternal",
+      "framework": "CrashReporterSupport",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CRPrimeRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CRPrimeIsAppleInternal(CRPrimeRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRGetDiagnosticMessagesHistoryUInt64Value": {
+      "name": "_CRGetDiagnosticMessagesHistoryUInt64Value",
+      "framework": "CrashReporterSupport",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _CRGetDiagnosticMessagesHistoryUInt64Value(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRGetPrimaryMACAddress": {
+      "name": "_CRGetPrimaryMACAddress",
+      "framework": "CrashReporterSupport",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _CRGetPrimaryMACAddress(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRCreateDictionaryWithPath": {
+      "name": "_CRCreateDictionaryWithPath",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CRRef _CRCreateDictionaryWithPath(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRCreateTimeStamp",
+        "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies",
+        "_CRCopySanitizedProcessName",
+        "_CRCopyCrashHistoryURLForProcess",
+        "_CRCopyDiagnosticMessagesHistoryValue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetThermalState": {
+      "name": "GetThermalState",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ GetThermalState(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRCopyCrashHistoryForProcess": {
+      "name": "_CRCopyCrashHistoryForProcess",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CRRef/*?*/ _CRCopyCrashHistoryForProcess(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRCreateTimeStamp",
+        "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies",
+        "_CRCopySanitizedProcessName",
+        "_CRCopyCrashHistoryURLForProcess",
+        "_CRCopyDiagnosticMessagesHistoryValue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRCreateCrashHistoryDirectory": {
+      "name": "_CRCreateCrashHistoryDirectory",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CRRef _CRCreateCrashHistoryDirectory(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRCreateTimeStamp",
+        "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies",
+        "_CRCopySanitizedProcessName",
+        "_CRCopyCrashHistoryURLForProcess",
+        "_CRCopyDiagnosticMessagesHistoryValue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRSecureOpen": {
+      "name": "_CRSecureOpen",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRSecureRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CRSecureRef _CRSecureOpen(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CRSecureRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRGetAnonHostUUID": {
+      "name": "_CRGetAnonHostUUID",
+      "framework": "CrashReporterSupport",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ _CRGetAnonHostUUID(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CRGetUserUUID",
+        "CRGetHostUUID",
+        "_CRSetAnonHostUUID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRGetOSVersionString": {
+      "name": "_CRGetOSVersionString",
+      "framework": "CrashReporterSupport",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ _CRGetOSVersionString(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRGetHostName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ConfigureCarrierDebuggingWithPower": {
+      "name": "ConfigureCarrierDebuggingWithPower",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ ConfigureCarrierDebuggingWithPower(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SubmitDiagnosticLogsIfFavorable": {
+      "name": "SubmitDiagnosticLogsIfFavorable",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ SubmitDiagnosticLogsIfFavorable(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSACreateRelPathInContainer": {
+      "name": "OSACreateRelPathInContainer",
+      "framework": "CrashReporterSupport",
+      "return_type": "OSARef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "OSARef OSACreateRelPathInContainer(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "OSARef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "OSACreateProblemReportDirectory",
+        "OSACreateTempSubmittableLog"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRGetOSVersionDictionary": {
+      "name": "_CRGetOSVersionDictionary",
+      "framework": "CrashReporterSupport",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ _CRGetOSVersionDictionary(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppAnalyticsEnabled": {
+      "name": "AppAnalyticsEnabled",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ AppAnalyticsEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "logForAppleCare": {
+      "name": "logForAppleCare",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ logForAppleCare(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRAutoSubmitPreferenceIsLocked": {
+      "name": "CRAutoSubmitPreferenceIsLocked",
+      "framework": "CrashReporterSupport",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CRAutoSubmitPreferenceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CRAutoSubmitPreferenceIsLocked(CRAutoSubmitPreferenceRef *ref)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_setPreference": {
+      "name": "_setPreference",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ _setPreference(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRDumpAllOldStructuredDataLogs": {
+      "name": "CRDumpAllOldStructuredDataLogs",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ CRDumpAllOldStructuredDataLogs(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSAGetSyncableLogs": {
+      "name": "OSAGetSyncableLogs",
+      "framework": "CrashReporterSupport",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "OSARef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ OSAGetSyncableLogs(OSARef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSAMoveFileForSubmissions": {
+      "name": "OSAMoveFileForSubmissions",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ OSAMoveFileForSubmissions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetIncidentID": {
+      "name": "GetIncidentID",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ GetIncidentID(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRCanSubmitLog": {
+      "name": "CRCanSubmitLog",
+      "framework": "CrashReporterSupport",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CRCanSubmitLog(CRRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DiagnosticLogSubmissionPreferenceExists": {
+      "name": "DiagnosticLogSubmissionPreferenceExists",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ DiagnosticLogSubmissionPreferenceExists(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRSubmitProblemReport": {
+      "name": "CRSubmitProblemReport",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ CRSubmitProblemReport(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRCreateInternalUUID": {
+      "name": "_CRCreateInternalUUID",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_CRRef _CRCreateInternalUUID(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRCreateTimeStamp",
+        "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies",
+        "_CRCopySanitizedProcessName",
+        "_CRCopyCrashHistoryURLForProcess",
+        "_CRCopyDiagnosticMessagesHistoryValue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_canModifyPreferences": {
+      "name": "_canModifyPreferences",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ _canModifyPreferences(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dlaggd_pushDistrubtionForKey": {
+      "name": "dlaggd_pushDistrubtionForKey",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ dlaggd_pushDistrubtionForKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSAIsSystemCreatedRoleUser": {
+      "name": "OSAIsSystemCreatedRoleUser",
+      "framework": "CrashReporterSupport",
+      "return_type": "OSAIsSystemRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "OSAIsSystemRef OSAIsSystemCreatedRoleUser(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "OSAIsSystemRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetSysIDWithDescription": {
+      "name": "GetSysIDWithDescription",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ GetSysIDWithDescription(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRIsAutoSubmitEnabled": {
+      "name": "CRIsAutoSubmitEnabled",
+      "framework": "CrashReporterSupport",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CRIsAutoSubmitEnabled(CRRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ConfigureCarrierDebugging": {
+      "name": "ConfigureCarrierDebugging",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ ConfigureCarrierDebugging(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GetNameForLogType": {
+      "name": "GetNameForLogType",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ GetNameForLogType(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRDateString": {
+      "name": "CRDateString",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ CRDateString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "__crashreporter_binary_image_hints__": {
+      "name": "__crashreporter_binary_image_hints__",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ __crashreporter_binary_image_hints__(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRGetHostUUID": {
+      "name": "CRGetHostUUID",
+      "framework": "CrashReporterSupport",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CRGetHostUUID(CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CRGetUserUUID",
+        "_CRGetAnonHostUUID",
+        "_CRSetAnonHostUUID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRSetAnonHostUUID": {
+      "name": "_CRSetAnonHostUUID",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _CRSetAnonHostUUID(_CRRef *ref, uint64_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CRGetUserUUID",
+        "_CRGetAnonHostUUID",
+        "CRGetHostUUID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRDisableCrashReporting": {
+      "name": "CRDisableCrashReporting",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ CRDisableCrashReporting(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DiagnosticLogSubmissionEnabled": {
+      "name": "DiagnosticLogSubmissionEnabled",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ DiagnosticLogSubmissionEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRIsAppleInternal": {
+      "name": "CRIsAppleInternal",
+      "framework": "CrashReporterSupport",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CRIsAppleInternal(CRRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_createAutoSubmitSettingObject": {
+      "name": "_createAutoSubmitSettingObject",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_createAutoSubmitRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _createAutoSubmitSettingObject(_createAutoSubmitRef *ref, void * *value)",
+      "verb": "create",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CRCopyAppleEmailAddress": {
+      "name": "_CRCopyAppleEmailAddress",
+      "framework": "CrashReporterSupport",
+      "return_type": "_CRRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_CRRef/*?*/ _CRCopyAppleEmailAddress(_CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CRCreateTimeStamp",
+        "_CRCopyExecutablePathAndNameForPIDDetectingInconsistencies",
+        "_CRCopySanitizedProcessName",
+        "_CRCopyCrashHistoryURLForProcess",
+        "_CRCopyDiagnosticMessagesHistoryValue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRCopySanitizedPath": {
+      "name": "CRCopySanitizedPath",
+      "framework": "CrashReporterSupport",
+      "return_type": "CRRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CRRef/*?*/ CRCopySanitizedPath(CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CRRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CRCreateDirectoryStructure",
+        "CRCopyCrashHistory"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRIsThirdPartyApplicationDataSubmissionEnabled": {
+      "name": "CRIsThirdPartyApplicationDataSubmissionEnabled",
+      "framework": "CrashReporterSupport",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CRIsThirdPartyApplicationDataSubmissionEnabled(CRRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "OSAIterateSubmittableLogsWithBlock": {
+      "name": "OSAIterateSubmittableLogsWithBlock",
+      "framework": "CrashReporterSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        }
+      ],
+      "signature": "void/*?*/ OSAIterateSubmittableLogsWithBlock(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CRGetReporterKey": {
+      "name": "CRGetReporterKey",
+      "framework": "CrashReporterSupport",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CRRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CrashReporterSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CRGetReporterKey(CRRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "gpu_compute": [
+      "OSACreateTempSubmittableLog"
+    ],
+    "display_compositing": [
+      "CRDisplayProblemReport"
+    ],
+    "image_processing": [
+      "CRAddBinaryImageHints",
+      "__crashreporter_binary_image_hints__"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

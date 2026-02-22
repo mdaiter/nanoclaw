@@ -1,0 +1,1856 @@
+{
+  "framework": "NetworkServiceProxy",
+  "functions": {
+    "NSPPrivacyProxyTransparencyTokenEntryReadFrom": {
+      "name": "NSPPrivacyProxyTransparencyTokenEntryReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyTransparencyTokenEntryReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetworkServiceProxyIsEnabled": {
+      "name": "NetworkServiceProxyIsEnabled",
+      "framework": "NetworkServiceProxy",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetworkServiceProxyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool NetworkServiceProxyIsEnabled(NetworkServiceProxyRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "nplog_large_obj": {
+      "name": "nplog_large_obj",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ nplog_large_obj(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "get_nsdictionary_from_xpc_object": {
+      "name": "get_nsdictionary_from_xpc_object",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ get_nsdictionary_from_xpc_object(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyTokenIssuerReadFrom": {
+      "name": "NSPPrivacyProxyTokenIssuerReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NSPPrivacyProxyTokenRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool NSPPrivacyProxyTokenIssuerReadFrom(NSPPrivacyProxyTokenRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyAuxiliaryAuthInfoReadFrom": {
+      "name": "NSPPrivacyProxyAuxiliaryAuthInfoReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyAuxiliaryAuthInfoReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetworkServiceProxySetFallbackTimeout": {
+      "name": "NetworkServiceProxySetFallbackTimeout",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetworkServiceProxyRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NetworkServiceProxySetFallbackTimeout(NetworkServiceProxyRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyTokenAttesterReadFrom": {
+      "name": "NSPPrivacyProxyTokenAttesterReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyTokenAttesterReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyProxiedContentMapReadFrom": {
+      "name": "NSPPrivacyProxyProxiedContentMapReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyProxiedContentMapReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxySignedConfigurationReadFrom": {
+      "name": "NSPPrivacyProxySignedConfigurationReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxySignedConfigurationReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyTokenActivationResponseReadFrom": {
+      "name": "NSPPrivacyProxyTokenActivationResponseReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyTokenActivationResponseReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyConfigurationRawConfig": {
+      "name": "NSPPrivacyProxyConfigurationRawConfig",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyConfigurationRawConfig(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetworkServiceProxySetCurrentLocation": {
+      "name": "NetworkServiceProxySetCurrentLocation",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetworkServiceProxyRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NetworkServiceProxySetCurrentLocation(NetworkServiceProxyRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "get_nsarray_from_xpc_object": {
+      "name": "get_nsarray_from_xpc_object",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ get_nsarray_from_xpc_object(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyQuotaServiceReadFrom": {
+      "name": "NSPPrivacyProxyQuotaServiceReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyQuotaServiceReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyTransparencyOHTTPEntryReadFrom": {
+      "name": "NSPPrivacyProxyTransparencyOHTTPEntryReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyTransparencyOHTTPEntryReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetworkServiceProxySetServiceNameForConnection": {
+      "name": "NetworkServiceProxySetServiceNameForConnection",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetworkServiceProxyRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "const char *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NetworkServiceProxySetServiceNameForConnection(NetworkServiceProxyRef *ref, const char * *value)",
+      "verb": "write",
+      "input_formats": [
+        "const char * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NetworkServiceProxySetServiceNameInParameters",
+        "NetworkServiceProxySetServiceNameForTask"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxySuccessResponseReadFrom": {
+      "name": "NSPPrivacyProxySuccessResponseReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxySuccessResponseReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "get_interval_for_mach_times": {
+      "name": "get_interval_for_mach_times",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ get_interval_for_mach_times(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyConfigurationReadFrom": {
+      "name": "NSPPrivacyProxyConfigurationReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyConfigurationReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyQuotaInfoReadFrom": {
+      "name": "NSPPrivacyProxyQuotaInfoReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyQuotaInfoReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetworkServiceProxyVersionNumber": {
+      "name": "NetworkServiceProxyVersionNumber",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NetworkServiceProxyVersionNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyOSBuildString": {
+      "name": "copyOSBuildString",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ copyOSBuildString(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "deviceClassIsHomepod": {
+      "name": "deviceClassIsHomepod",
+      "framework": "NetworkServiceProxy",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "deviceClassRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool deviceClassIsHomepod(deviceClassRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyErrorResponseReadFrom": {
+      "name": "NSPPrivacyProxyErrorResponseReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyErrorResponseReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetworkServiceProxySetRemoteAddressMapForSessionTask": {
+      "name": "NetworkServiceProxySetRemoteAddressMapForSessionTask",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetworkServiceProxyRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NetworkServiceProxySetRemoteAddressMapForSessionTask(NetworkServiceProxyRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetworkServiceProxySetRemoteEndpointsForSessionTask": {
+      "name": "NetworkServiceProxySetRemoteEndpointsForSessionTask",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetworkServiceProxyRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NetworkServiceProxySetRemoteEndpointsForSessionTask(NetworkServiceProxyRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyResolverInfoReadFrom": {
+      "name": "NSPPrivacyProxyResolverInfoReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyResolverInfoReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyGetQuotaRequestReadFrom": {
+      "name": "NSPPrivacyProxyGetQuotaRequestReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NSPPrivacyProxyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ NSPPrivacyProxyGetQuotaRequestReadFrom(NSPPrivacyProxyRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyCostReadFrom": {
+      "name": "NSPPrivacyProxyCostReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyCostReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyProxyPathWeightReadFrom": {
+      "name": "NSPPrivacyProxyProxyPathWeightReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyProxyPathWeightReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyPolicyTierMapReadFrom": {
+      "name": "NSPPrivacyProxyPolicyTierMapReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyPolicyTierMapReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "geohashToLatitudeLongitude": {
+      "name": "geohashToLatitudeLongitude",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ geohashToLatitudeLongitude(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getServerConnection": {
+      "name": "getServerConnection",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ getServerConnection(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "get_nsdata_from_xpc_object": {
+      "name": "get_nsdata_from_xpc_object",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ get_nsdata_from_xpc_object(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "nplog_obj": {
+      "name": "nplog_obj",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ nplog_obj(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "nsp_print_backtrace": {
+      "name": "nsp_print_backtrace",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ nsp_print_backtrace(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NPGetInternalQueue": {
+      "name": "NPGetInternalQueue",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NPRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ NPGetInternalQueue(NPRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetworkServiceProxyEnableInParameters": {
+      "name": "NetworkServiceProxyEnableInParameters",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NetworkServiceProxyEnableInParameters(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetworkServiceProxyVersionString": {
+      "name": "NetworkServiceProxyVersionString",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NetworkServiceProxyVersionString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyOSVersionString": {
+      "name": "copyOSVersionString",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ copyOSVersionString(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyQuotaServiceRequestReadFrom": {
+      "name": "NSPPrivacyProxyQuotaServiceRequestReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ NSPPrivacyProxyQuotaServiceRequestReadFrom(size_t size)",
+      "verb": "read",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetworkServiceProxyEnableForSessionTask": {
+      "name": "NetworkServiceProxyEnableForSessionTask",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NetworkServiceProxyEnableForSessionTask(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enable_timestamps": {
+      "name": "enable_timestamps",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ enable_timestamps(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyObliviousHTTPConfigReadFrom": {
+      "name": "NSPPrivacyProxyObliviousHTTPConfigReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyObliviousHTTPConfigReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyGetQuotaResponseReadFrom": {
+      "name": "NSPPrivacyProxyGetQuotaResponseReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NSPPrivacyProxyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ NSPPrivacyProxyGetQuotaResponseReadFrom(NSPPrivacyProxyRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyPolicyReadFrom": {
+      "name": "NSPPrivacyProxyPolicyReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyPolicyReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyQuotaReadFrom": {
+      "name": "NSPPrivacyProxyQuotaReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyQuotaReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyTokenInfoReadFrom": {
+      "name": "NSPPrivacyProxyTokenInfoReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyTokenInfoReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyOSNameString": {
+      "name": "copyOSNameString",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ copyOSNameString(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetworkServiceProxyStart": {
+      "name": "NetworkServiceProxyStart",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NetworkServiceProxyStart(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetworkServiceProxyGetStatus": {
+      "name": "NetworkServiceProxyGetStatus",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetworkServiceProxyRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ NetworkServiceProxyGetStatus(NetworkServiceProxyRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyTokenActivationQueryReadFrom": {
+      "name": "NSPPrivacyProxyTokenActivationQueryReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyTokenActivationQueryReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyAuthenticationInfoReadFrom": {
+      "name": "NSPPrivacyProxyAuthenticationInfoReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyAuthenticationInfoReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyObliviousTargetInfoReadFrom": {
+      "name": "NSPPrivacyProxyObliviousTargetInfoReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyObliviousTargetInfoReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyQuotaServiceResponseReadFrom": {
+      "name": "NSPPrivacyProxyQuotaServiceResponseReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyQuotaServiceResponseReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetworkServiceProxySetServiceNameInParameters": {
+      "name": "NetworkServiceProxySetServiceNameInParameters",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetworkServiceProxyRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "const char *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NetworkServiceProxySetServiceNameInParameters(NetworkServiceProxyRef *ref, const char * *value)",
+      "verb": "write",
+      "input_formats": [
+        "const char * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NetworkServiceProxySetServiceNameForConnection",
+        "NetworkServiceProxySetServiceNameForTask"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyTokenKeyReadFrom": {
+      "name": "NSPPrivacyProxyTokenKeyReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyTokenKeyReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "myIsEqual": {
+      "name": "myIsEqual",
+      "framework": "NetworkServiceProxy",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "myRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool myIsEqual(myRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetworkServiceProxySetCurrentConfiguration": {
+      "name": "NetworkServiceProxySetCurrentConfiguration",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetworkServiceProxyRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NetworkServiceProxySetCurrentConfiguration(NetworkServiceProxyRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "g_recordTimestamps": {
+      "name": "g_recordTimestamps",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ g_recordTimestamps(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyBAAValidationReadFrom": {
+      "name": "NSPPrivacyProxyBAAValidationReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyBAAValidationReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NSPPrivacyProxyProxyInfoReadFrom": {
+      "name": "NSPPrivacyProxyProxyInfoReadFrom",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ NSPPrivacyProxyProxyInfoReadFrom(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "NetworkServiceProxySetServiceNameForTask": {
+      "name": "NetworkServiceProxySetServiceNameForTask",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "NetworkServiceProxyRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "const char *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ NetworkServiceProxySetServiceNameForTask(NetworkServiceProxyRef *ref, const char * *value)",
+      "verb": "write",
+      "input_formats": [
+        "const char * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "NetworkServiceProxySetServiceNameForConnection",
+        "NetworkServiceProxySetServiceNameInParameters"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyProductTypeString": {
+      "name": "copyProductTypeString",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ copyProductTypeString(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "create_timestamps": {
+      "name": "create_timestamps",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ create_timestamps(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "latitudeLongitudeToGeohash": {
+      "name": "latitudeLongitudeToGeohash",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ latitudeLongitudeToGeohash(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copySystemVersionDictionary": {
+      "name": "copySystemVersionDictionary",
+      "framework": "NetworkServiceProxy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from NetworkServiceProxy"
+        }
+      ],
+      "signature": "void/*?*/ copySystemVersionDictionary(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "gpu_compute": [
+      "create_timestamps",
+      "enable_timestamps",
+      "g_recordTimestamps"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

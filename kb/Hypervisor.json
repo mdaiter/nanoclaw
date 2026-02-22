@@ -1,0 +1,2938 @@
+{
+  "framework": "Hypervisor",
+  "functions": {
+    "_hv_vm_space_config_set_ipa_granule": {
+      "name": "_hv_vm_space_config_set_ipa_granule",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vm_space_config_set_ipa_granule(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_config_create": {
+      "name": "hv_vcpu_config_create",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_config_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_run": {
+      "name": "hv_vcpu_run",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_run(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_get_reg": {
+      "name": "hv_vcpu_get_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_get_reg(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_get_ich_reg": {
+      "name": "hv_gic_get_ich_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_get_ich_reg(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_get_spi_interrupt_range": {
+      "name": "hv_gic_get_spi_interrupt_range",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_get_spi_interrupt_range(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_config_create": {
+      "name": "hv_vm_config_create",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_config_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vm_space_config_get_ipa_base": {
+      "name": "_hv_vm_space_config_get_ipa_base",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vm_space_config_get_ipa_base(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_state_get_data": {
+      "name": "hv_gic_state_get_data",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_state_get_data(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_get_trap_debug_exceptions": {
+      "name": "hv_vcpu_get_trap_debug_exceptions",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_get_trap_debug_exceptions(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_get_sme_z_reg": {
+      "name": "hv_vcpu_get_sme_z_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_get_sme_z_reg(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_config_get_default_ipa_size": {
+      "name": "hv_vm_config_get_default_ipa_size",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_config_get_default_ipa_size(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_config_get_el2_enabled": {
+      "name": "hv_vm_config_get_el2_enabled",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_config_get_el2_enabled(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_get_msi_region_size": {
+      "name": "hv_gic_get_msi_region_size",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_get_msi_region_size(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_get_redistributor_size": {
+      "name": "hv_gic_get_redistributor_size",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_get_redistributor_size(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_set_amx_state_t_el1": {
+      "name": "_hv_vcpu_set_amx_state_t_el1",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_set_amx_state_t_el1(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_get_ext_reg": {
+      "name": "_hv_vcpu_get_ext_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_get_ext_reg(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vm_stage1_tlb_op": {
+      "name": "_hv_vm_stage1_tlb_op",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vm_stage1_tlb_op(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_get_exec_time": {
+      "name": "hv_vcpu_get_exec_time",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_get_exec_time(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_get_msi_reg": {
+      "name": "hv_gic_get_msi_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_get_msi_reg(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_get_amx_y_space": {
+      "name": "_hv_vcpu_get_amx_y_space",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_get_amx_y_space(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_config_get_el2_supported": {
+      "name": "hv_vm_config_get_el2_supported",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_config_get_el2_supported(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_get_distributor_reg": {
+      "name": "hv_gic_get_distributor_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_get_distributor_reg(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_amx_query_active_context": {
+      "name": "_hv_vcpu_amx_query_active_context",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_amx_query_active_context(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_get_sme_p_reg": {
+      "name": "hv_vcpu_get_sme_p_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_get_sme_p_reg(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_config_set_ipa_granule": {
+      "name": "hv_vm_config_set_ipa_granule",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_config_set_ipa_granule(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_set_sme_state": {
+      "name": "hv_vcpu_set_sme_state",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_set_sme_state(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_config_set_ipa_size": {
+      "name": "hv_vm_config_set_ipa_size",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_config_set_ipa_size(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_protect": {
+      "name": "hv_vm_protect",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_protect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_set_distributor_reg": {
+      "name": "hv_gic_set_distributor_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_set_distributor_reg(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_set_ich_reg": {
+      "name": "hv_gic_set_ich_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_set_ich_reg(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_get_icc_reg": {
+      "name": "hv_gic_get_icc_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_get_icc_reg(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_set_sme_za_reg": {
+      "name": "hv_vcpu_set_sme_za_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_set_sme_za_reg(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_config_get_ipa_granule": {
+      "name": "hv_vm_config_get_ipa_granule",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_config_get_ipa_granule(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vm_space_config_get_ipa_size": {
+      "name": "_hv_vm_space_config_get_ipa_size",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vm_space_config_get_ipa_size(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_create": {
+      "name": "hv_gic_create",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_config_create": {
+      "name": "hv_gic_config_create",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_config_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_state_get_size": {
+      "name": "hv_gic_state_get_size",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_state_get_size(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_get_sys_reg": {
+      "name": "hv_vcpu_get_sys_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_get_sys_reg(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vm_space_config_set_ipa_size": {
+      "name": "_hv_vm_space_config_set_ipa_size",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vm_space_config_set_ipa_size(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vm_space_create": {
+      "name": "_hv_vm_space_create",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vm_space_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vm_protect_space": {
+      "name": "_hv_vm_protect_space",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vm_protect_space(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_get_pending_interrupt": {
+      "name": "hv_vcpu_get_pending_interrupt",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_get_pending_interrupt(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_set_sme_p_reg": {
+      "name": "hv_vcpu_set_sme_p_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_set_sme_p_reg(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_get_simd_fp_reg": {
+      "name": "hv_vcpu_get_simd_fp_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_get_simd_fp_reg(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_set_vtimer_mask": {
+      "name": "hv_vcpu_set_vtimer_mask",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_set_vtimer_mask(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_get_vtimer_offset": {
+      "name": "hv_vcpu_get_vtimer_offset",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_get_vtimer_offset(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_config_get_default_ipa_granule": {
+      "name": "hv_vm_config_get_default_ipa_granule",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_config_get_default_ipa_granule(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_config_set_fgt_enabled": {
+      "name": "_hv_vcpu_config_set_fgt_enabled",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_config_set_fgt_enabled(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_get_amx_z_space": {
+      "name": "_hv_vcpu_get_amx_z_space",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_get_amx_z_space(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_set_amx_y_space": {
+      "name": "_hv_vcpu_set_amx_y_space",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_set_amx_y_space(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_sme_config_get_max_svl_bytes": {
+      "name": "hv_sme_config_get_max_svl_bytes",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_sme_config_get_max_svl_bytes(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_config_set_el2_enabled": {
+      "name": "hv_vm_config_set_el2_enabled",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_config_set_el2_enabled(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_get_intid": {
+      "name": "hv_gic_get_intid",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_get_intid(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vm_map_space": {
+      "name": "_hv_vm_map_space",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vm_map_space(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_get_redistributor_region_size": {
+      "name": "hv_gic_get_redistributor_region_size",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_get_redistributor_region_size(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpus_exit": {
+      "name": "hv_vcpus_exit",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpus_exit(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_set_msi_reg": {
+      "name": "hv_gic_set_msi_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_set_msi_reg(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_set_control_field": {
+      "name": "_hv_vcpu_set_control_field",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_set_control_field(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_set_trap_debug_reg_accesses": {
+      "name": "hv_vcpu_set_trap_debug_reg_accesses",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_set_trap_debug_reg_accesses(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_config_get_tlbi_workaround_enabled": {
+      "name": "_hv_vcpu_config_get_tlbi_workaround_enabled",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_config_get_tlbi_workaround_enabled(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vm_space_config_get_ipa_granule": {
+      "name": "_hv_vm_space_config_get_ipa_granule",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vm_space_config_get_ipa_granule(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_config_get_feature_reg": {
+      "name": "hv_vcpu_config_get_feature_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_config_get_feature_reg(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_config_set_vmkey": {
+      "name": "_hv_vcpu_config_set_vmkey",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_config_set_vmkey(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_amx_prepare": {
+      "name": "_hv_vcpu_amx_prepare",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_amx_prepare(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_get_msi_region_base_alignment": {
+      "name": "hv_gic_get_msi_region_base_alignment",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_get_msi_region_base_alignment(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_get_amx_state_t_el1": {
+      "name": "_hv_vcpu_get_amx_state_t_el1",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_get_amx_state_t_el1(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_state_create": {
+      "name": "hv_gic_state_create",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_state_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_get_vtimer_mask": {
+      "name": "hv_vcpu_get_vtimer_mask",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_get_vtimer_mask(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vm_space_destroy": {
+      "name": "_hv_vm_space_destroy",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vm_space_destroy(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vm_config_set_isa": {
+      "name": "_hv_vm_config_set_isa",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vm_config_set_isa(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_config_set_msi_interrupt_range": {
+      "name": "hv_gic_config_set_msi_interrupt_range",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_config_set_msi_interrupt_range(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_set_amx_z_space": {
+      "name": "_hv_vcpu_set_amx_z_space",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_set_amx_z_space(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_get_sme_state": {
+      "name": "hv_vcpu_get_sme_state",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_get_sme_state(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_set_reg": {
+      "name": "hv_vcpu_set_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_set_reg(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_set_icc_reg": {
+      "name": "hv_gic_set_icc_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_set_icc_reg(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_set_vtimer_offset": {
+      "name": "hv_vcpu_set_vtimer_offset",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_set_vtimer_offset(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_config_set_redistributor_base": {
+      "name": "hv_gic_config_set_redistributor_base",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_config_set_redistributor_base(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_get_icv_reg": {
+      "name": "hv_gic_get_icv_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_get_icv_reg(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_get_sme_zt0_reg": {
+      "name": "hv_vcpu_get_sme_zt0_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_get_sme_zt0_reg(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_set_sys_reg": {
+      "name": "hv_vcpu_set_sys_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_set_sys_reg(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_config_set_tlbi_workaround_enabled": {
+      "name": "_hv_vcpu_config_set_tlbi_workaround_enabled",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_config_set_tlbi_workaround_enabled(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vm_get_isa": {
+      "name": "_hv_vm_get_isa",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vm_get_isa(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_set_icv_reg": {
+      "name": "hv_gic_set_icv_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_set_icv_reg(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_set_space": {
+      "name": "_hv_vcpu_set_space",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_set_space(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_get_distributor_base_alignment": {
+      "name": "hv_gic_get_distributor_base_alignment",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_get_distributor_base_alignment(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_config_set_distributor_base": {
+      "name": "hv_gic_config_set_distributor_base",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_config_set_distributor_base(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_get_distributor_size": {
+      "name": "hv_gic_get_distributor_size",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_get_distributor_size(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_set_redistributor_reg": {
+      "name": "hv_gic_set_redistributor_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_set_redistributor_reg(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_get_sme_za_reg": {
+      "name": "hv_vcpu_get_sme_za_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_get_sme_za_reg(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_get_redistributor_base_alignment": {
+      "name": "hv_gic_get_redistributor_base_alignment",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_get_redistributor_base_alignment(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_set_sme_z_reg": {
+      "name": "hv_vcpu_set_sme_z_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_set_sme_z_reg(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_set_sme_zt0_reg": {
+      "name": "hv_vcpu_set_sme_zt0_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_set_sme_zt0_reg(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_deallocate": {
+      "name": "hv_vm_deallocate",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_deallocate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_reset": {
+      "name": "hv_gic_reset",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_reset(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_send_msi": {
+      "name": "hv_gic_send_msi",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_send_msi(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vm_space_config_set_ipa_base": {
+      "name": "_hv_vm_space_config_set_ipa_base",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vm_space_config_set_ipa_base(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_allocate": {
+      "name": "hv_vm_allocate",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_allocate(void)",
+      "verb": "allocate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_set_trap_debug_exceptions": {
+      "name": "hv_vcpu_set_trap_debug_exceptions",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_set_trap_debug_exceptions(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_config_get_vmkey": {
+      "name": "_hv_vcpu_config_get_vmkey",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_config_get_vmkey(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_config_get_ccsidr_el1_sys_reg_values": {
+      "name": "hv_vcpu_config_get_ccsidr_el1_sys_reg_values",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_config_get_ccsidr_el1_sys_reg_values(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_destroy": {
+      "name": "hv_vcpu_destroy",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_destroy(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vm_config_get_isa": {
+      "name": "_hv_vm_config_get_isa",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vm_config_get_isa(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_get_trap_debug_reg_accesses": {
+      "name": "hv_vcpu_get_trap_debug_reg_accesses",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_get_trap_debug_reg_accesses(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_get_redistributor_reg": {
+      "name": "hv_gic_get_redistributor_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_get_redistributor_reg(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_get_control_field": {
+      "name": "_hv_vcpu_get_control_field",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_get_control_field(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_set_pending_interrupt": {
+      "name": "hv_vcpu_set_pending_interrupt",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_set_pending_interrupt(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vm_space_config_create": {
+      "name": "_hv_vm_space_config_create",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vm_space_config_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_get_context": {
+      "name": "_hv_vcpu_get_context",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_get_context(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_capability": {
+      "name": "_hv_capability",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_capability(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_get_amx_x_space": {
+      "name": "_hv_vcpu_get_amx_x_space",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_get_amx_x_space(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_create": {
+      "name": "hv_vcpu_create",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_create": {
+      "name": "hv_vm_create",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_create(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_destroy": {
+      "name": "hv_vm_destroy",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_destroy(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_config_get_max_ipa_size": {
+      "name": "hv_vm_config_get_max_ipa_size",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_config_get_max_ipa_size(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vcpu_set_simd_fp_reg": {
+      "name": "hv_vcpu_set_simd_fp_reg",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vcpu_set_simd_fp_reg(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_set_state": {
+      "name": "hv_gic_set_state",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_set_state(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_config_get_ipa_size": {
+      "name": "hv_vm_config_get_ipa_size",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_config_get_ipa_size(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_map": {
+      "name": "hv_vm_map",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_map(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vm_unmap_space": {
+      "name": "_hv_vm_unmap_space",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vm_unmap_space(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_config_set_msi_region_base": {
+      "name": "hv_gic_config_set_msi_region_base",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_config_set_msi_region_base(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_unmap": {
+      "name": "hv_vm_unmap",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_unmap(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_set_amx_x_space": {
+      "name": "_hv_vcpu_set_amx_x_space",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_set_amx_x_space(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_hv_vcpu_config_get_fgt_enabled": {
+      "name": "_hv_vcpu_config_get_fgt_enabled",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ _hv_vcpu_config_get_fgt_enabled(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_set_spi": {
+      "name": "hv_gic_set_spi",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_set_spi(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_vm_get_max_vcpu_count": {
+      "name": "hv_vm_get_max_vcpu_count",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_vm_get_max_vcpu_count(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hv_gic_get_redistributor_base": {
+      "name": "hv_gic_get_redistributor_base",
+      "framework": "Hypervisor",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from Hypervisor"
+        }
+      ],
+      "signature": "void/*?*/ hv_gic_get_redistributor_base(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "memory_buffer": [
+      "hv_vm_allocate",
+      "hv_vm_deallocate"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

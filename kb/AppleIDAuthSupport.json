@@ -1,0 +1,1365 @@
+{
+  "framework": "AppleIDAuthSupport",
+  "functions": {
+    "AppleIDAuthSupportSetOption": {
+      "name": "AppleIDAuthSupportSetOption",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AppleIDAuthSupportSetOption(AppleIDAuthSupportRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportDeterministicRandomCreate": {
+      "name": "AppleIDAuthSupportDeterministicRandomCreate",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportDeterministicRandomRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportDeterministicRandomRef AppleIDAuthSupportDeterministicRandomCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportDeterministicRandomRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportCopyAppTokens": {
+      "name": "AppleIDAuthSupportCopyAppTokens",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportRef/*?*/ AppleIDAuthSupportCopyAppTokens(AppleIDAuthSupportRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportCopyAppToken",
+        "AppleIDAuthSupportCopyString",
+        "AppleIDAuthSupportCopyContextAppTokens",
+        "AppleIDAuthSupportCopyToken",
+        "AppleIDAuthSupportCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportGSCopyAppTokens": {
+      "name": "AppleIDAuthSupportGSCopyAppTokens",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportGSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportGSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportGSRef/*?*/ AppleIDAuthSupportGSCopyAppTokens(AppleIDAuthSupportGSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportGSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportGSCreateContext",
+        "AppleIDAuthSupportGSCopyNewIdentityToken"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportGetOption": {
+      "name": "AppleIDAuthSupportGetOption",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AppleIDAuthSupportGetOption(AppleIDAuthSupportRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AppleIDAuthSupportCreateToken": {
+      "name": "_AppleIDAuthSupportCreateToken",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "_AppleIDAuthSupportRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_AppleIDAuthSupportRef _AppleIDAuthSupportCreateToken(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_AppleIDAuthSupportRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AppleIDAuthSupportCreateDecryptedData",
+        "_AppleIDAuthSupportCreateEncryptedData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportCopyAppToken": {
+      "name": "AppleIDAuthSupportCopyAppToken",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportRef/*?*/ AppleIDAuthSupportCopyAppToken(AppleIDAuthSupportRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportCopyAppTokens",
+        "AppleIDAuthSupportCopyString",
+        "AppleIDAuthSupportCopyContextAppTokens",
+        "AppleIDAuthSupportCopyToken",
+        "AppleIDAuthSupportCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportIsDone": {
+      "name": "AppleIDAuthSupportIsDone",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool AppleIDAuthSupportIsDone(AppleIDAuthSupportRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportSuccess": {
+      "name": "AppleIDAuthSupportSuccess",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        }
+      ],
+      "signature": "void/*?*/ AppleIDAuthSupportSuccess(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportTokenGetTypeID": {
+      "name": "AppleIDAuthSupportTokenGetTypeID",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportTokenRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ AppleIDAuthSupportTokenGetTypeID(AppleIDAuthSupportTokenRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportGetTypeID",
+        "AppleIDAuthSupportGSGetID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportTokenCopyExternalizedVersion": {
+      "name": "AppleIDAuthSupportTokenCopyExternalizedVersion",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportTokenRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportTokenRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportTokenRef/*?*/ AppleIDAuthSupportTokenCopyExternalizedVersion(AppleIDAuthSupportTokenRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportTokenRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportTokenCreateWithExternalizedVersion"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportGSRPC": {
+      "name": "AppleIDAuthSupportGSRPC",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        }
+      ],
+      "signature": "void/*?*/ AppleIDAuthSupportGSRPC(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportTokenCreateWithExternalizedVersion": {
+      "name": "AppleIDAuthSupportTokenCreateWithExternalizedVersion",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportTokenRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportTokenRef AppleIDAuthSupportTokenCreateWithExternalizedVersion(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportTokenRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportTokenCopyExternalizedVersion"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportCopyString": {
+      "name": "AppleIDAuthSupportCopyString",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportRef/*?*/ AppleIDAuthSupportCopyString(AppleIDAuthSupportRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportCopyAppTokens",
+        "AppleIDAuthSupportCopyAppToken",
+        "AppleIDAuthSupportCopyContextAppTokens",
+        "AppleIDAuthSupportCopyToken",
+        "AppleIDAuthSupportCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportAuthenticate": {
+      "name": "AppleIDAuthSupportAuthenticate",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        }
+      ],
+      "signature": "void/*?*/ AppleIDAuthSupportAuthenticate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportTokenUpdate": {
+      "name": "AppleIDAuthSupportTokenUpdate",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        }
+      ],
+      "signature": "void/*?*/ AppleIDAuthSupportTokenUpdate(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportGetTypeID": {
+      "name": "AppleIDAuthSupportGetTypeID",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ AppleIDAuthSupportGetTypeID(AppleIDAuthSupportRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportTokenGetTypeID",
+        "AppleIDAuthSupportGSGetID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportCopyContextAppTokens": {
+      "name": "AppleIDAuthSupportCopyContextAppTokens",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportRef/*?*/ AppleIDAuthSupportCopyContextAppTokens(AppleIDAuthSupportRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportCopyAppTokens",
+        "AppleIDAuthSupportCopyAppToken",
+        "AppleIDAuthSupportCopyString",
+        "AppleIDAuthSupportCopyToken",
+        "AppleIDAuthSupportCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportCopyToken": {
+      "name": "AppleIDAuthSupportCopyToken",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportRef/*?*/ AppleIDAuthSupportCopyToken(AppleIDAuthSupportRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportCopyAppTokens",
+        "AppleIDAuthSupportCopyAppToken",
+        "AppleIDAuthSupportCopyString",
+        "AppleIDAuthSupportCopyContextAppTokens",
+        "AppleIDAuthSupportCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportPBKDF2SRP": {
+      "name": "AppleIDAuthSupportPBKDF2SRP",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        }
+      ],
+      "signature": "void/*?*/ AppleIDAuthSupportPBKDF2SRP(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportCreate": {
+      "name": "AppleIDAuthSupportCreate",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportRef AppleIDAuthSupportCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportCopyAppTokens",
+        "AppleIDAuthSupportCopyAppToken",
+        "AppleIDAuthSupportCopyString",
+        "AppleIDAuthSupportCopyContextAppTokens",
+        "AppleIDAuthSupportCopyToken"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportGSCreateContext": {
+      "name": "AppleIDAuthSupportGSCreateContext",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportGSRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportGSRef AppleIDAuthSupportGSCreateContext(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportGSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportGSCopyAppTokens",
+        "AppleIDAuthSupportGSCopyNewIdentityToken"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportServerSetCallback": {
+      "name": "AppleIDAuthSupportServerSetCallback",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportServerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AppleIDAuthSupportServerSetCallback(AppleIDAuthSupportServerRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AppleIDAuthSupportGSSetRPC": {
+      "name": "_AppleIDAuthSupportGSSetRPC",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AppleIDAuthSupportGSRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _AppleIDAuthSupportGSSetRPC(_AppleIDAuthSupportGSRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AppleIDAuthSupportCreateDecryptedData": {
+      "name": "_AppleIDAuthSupportCreateDecryptedData",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "_AppleIDAuthSupportRef",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_AppleIDAuthSupportRef _AppleIDAuthSupportCreateDecryptedData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_AppleIDAuthSupportRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AppleIDAuthSupportCreateToken",
+        "_AppleIDAuthSupportCreateEncryptedData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportGSCopyNewIdentityToken": {
+      "name": "AppleIDAuthSupportGSCopyNewIdentityToken",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportGSRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportGSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportGSRef/*?*/ AppleIDAuthSupportGSCopyNewIdentityToken(AppleIDAuthSupportGSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportGSRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportGSCopyAppTokens",
+        "AppleIDAuthSupportGSCreateContext"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportGSGetID": {
+      "name": "AppleIDAuthSupportGSGetID",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportGSRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ AppleIDAuthSupportGSGetID(AppleIDAuthSupportGSRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportTokenGetTypeID",
+        "AppleIDAuthSupportGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportCopyAppTokensOptions": {
+      "name": "AppleIDAuthSupportCopyAppTokensOptions",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportRef/*?*/ AppleIDAuthSupportCopyAppTokensOptions(AppleIDAuthSupportRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportCopyAppTokens",
+        "AppleIDAuthSupportCopyAppToken",
+        "AppleIDAuthSupportCopyString",
+        "AppleIDAuthSupportCopyContextAppTokens",
+        "AppleIDAuthSupportCopyToken"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportCopyProvidedData": {
+      "name": "AppleIDAuthSupportCopyProvidedData",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportRef/*?*/ AppleIDAuthSupportCopyProvidedData(AppleIDAuthSupportRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportCopyAppTokens",
+        "AppleIDAuthSupportCopyAppToken",
+        "AppleIDAuthSupportCopyString",
+        "AppleIDAuthSupportCopyContextAppTokens",
+        "AppleIDAuthSupportCopyToken"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportGSOperation": {
+      "name": "AppleIDAuthSupportGSOperation",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        }
+      ],
+      "signature": "void/*?*/ AppleIDAuthSupportGSOperation(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportGetStatus": {
+      "name": "AppleIDAuthSupportGetStatus",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AppleIDAuthSupportGetStatus(AppleIDAuthSupportRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AppleIDAuthSupportCreateEncryptedData": {
+      "name": "_AppleIDAuthSupportCreateEncryptedData",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "_AppleIDAuthSupportRef",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "_AppleIDAuthSupportRef _AppleIDAuthSupportCreateEncryptedData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "_AppleIDAuthSupportRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_AppleIDAuthSupportCreateToken",
+        "_AppleIDAuthSupportCreateDecryptedData"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportCopySessionKey": {
+      "name": "AppleIDAuthSupportCopySessionKey",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportRef/*?*/ AppleIDAuthSupportCopySessionKey(AppleIDAuthSupportRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportCopyAppTokens",
+        "AppleIDAuthSupportCopyAppToken",
+        "AppleIDAuthSupportCopyString",
+        "AppleIDAuthSupportCopyContextAppTokens",
+        "AppleIDAuthSupportCopyToken"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportServerSetServerDataCallback": {
+      "name": "AppleIDAuthSupportServerSetServerDataCallback",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportServerRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AppleIDAuthSupportServerSetServerDataCallback(AppleIDAuthSupportServerRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportCreateVerifier": {
+      "name": "AppleIDAuthSupportCreateVerifier",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportRef AppleIDAuthSupportCreateVerifier(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportCopyAppTokens",
+        "AppleIDAuthSupportCopyAppToken",
+        "AppleIDAuthSupportCopyString",
+        "AppleIDAuthSupportCopyContextAppTokens",
+        "AppleIDAuthSupportCopyToken"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportGSRequestCopyResponse": {
+      "name": "AppleIDAuthSupportGSRequestCopyResponse",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ AppleIDAuthSupportGSRequestCopyResponse(size_t size)",
+      "verb": "read",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportCopyAppNewAppTokensWithAuthAttribute": {
+      "name": "AppleIDAuthSupportCopyAppNewAppTokensWithAuthAttribute",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "AppleIDAuthSupportRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AppleIDAuthSupportRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AppleIDAuthSupportRef/*?*/ AppleIDAuthSupportCopyAppNewAppTokensWithAuthAttribute(AppleIDAuthSupportRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AppleIDAuthSupportRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AppleIDAuthSupportCopyAppTokens",
+        "AppleIDAuthSupportCopyAppToken",
+        "AppleIDAuthSupportCopyString",
+        "AppleIDAuthSupportCopyContextAppTokens",
+        "AppleIDAuthSupportCopyToken"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppleIDAuthSupportStep": {
+      "name": "AppleIDAuthSupportStep",
+      "framework": "AppleIDAuthSupport",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AppleIDAuthSupport"
+        }
+      ],
+      "signature": "void/*?*/ AppleIDAuthSupportStep(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "_AppleIDAuthSupportCreateDecryptedData",
+      "_AppleIDAuthSupportCreateEncryptedData"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

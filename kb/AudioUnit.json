@@ -1,0 +1,1347 @@
+{
+  "framework": "AudioUnit",
+  "functions": {
+    "AudioUnitReset (from AudioToolbox)": {
+      "name": "AudioUnitReset (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioUnitReset (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioUnitScheduleParameters (from AudioToolbox)": {
+      "name": "AudioUnitScheduleParameters (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioUnitScheduleParameters (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioUnitSetProperty (from AudioToolbox)": {
+      "name": "AudioUnitSetProperty (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AudioUnitRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AudioUnitSetProperty (from AudioToolbox)(AudioUnitRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MusicDeviceStartNote (from AudioToolbox)": {
+      "name": "MusicDeviceStartNote (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ MusicDeviceStartNote (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioUnitUninitialize (from AudioToolbox)": {
+      "name": "AudioUnitUninitialize (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioUnitUninitialize (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioCodecProduceOutputBufferList (from AudioToolbox)": {
+      "name": "AudioCodecProduceOutputBufferList (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioCodecProduceOutputBufferList (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioComponentGetVersion (from AudioToolbox)": {
+      "name": "AudioComponentGetVersion (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AudioComponentRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AudioComponentGetVersion (from AudioToolbox)(AudioComponentRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioCodecGetProperty (from AudioToolbox)": {
+      "name": "AudioCodecGetProperty (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AudioCodecRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AudioCodecGetProperty (from AudioToolbox)(AudioCodecRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioCodecGetPropertyInfo (from AudioToolbox)": {
+      "name": "AudioCodecGetPropertyInfo (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AudioCodecRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AudioCodecGetPropertyInfo (from AudioToolbox)(AudioCodecRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioUnitInitialize (from AudioToolbox)": {
+      "name": "AudioUnitInitialize (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ AudioUnitInitialize (from AudioToolbox)(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AudioCodecInitialize (from AudioToolbox)"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioUnitRender (from AudioToolbox)": {
+      "name": "AudioUnitRender (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioUnitRender (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioUnitGetProperty (from AudioToolbox)": {
+      "name": "AudioUnitGetProperty (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AudioUnitRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AudioUnitGetProperty (from AudioToolbox)(AudioUnitRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioComponentFindNext (from AudioToolbox)": {
+      "name": "AudioComponentFindNext (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioComponentFindNext (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioCodecInitialize (from AudioToolbox)": {
+      "name": "AudioCodecInitialize (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ AudioCodecInitialize (from AudioToolbox)(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "AudioUnitInitialize (from AudioToolbox)"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioUnitRemoveRenderNotify (from AudioToolbox)": {
+      "name": "AudioUnitRemoveRenderNotify (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioUnitRemoveRenderNotify (from AudioToolbox)(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MusicDeviceReleaseInstrument (from AudioToolbox)": {
+      "name": "MusicDeviceReleaseInstrument (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ MusicDeviceReleaseInstrument (from AudioToolbox)(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioUnitGetParameter (from AudioToolbox)": {
+      "name": "AudioUnitGetParameter (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AudioUnitRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AudioUnitGetParameter (from AudioToolbox)(AudioUnitRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioComponentRegister (from AudioToolbox)": {
+      "name": "AudioComponentRegister (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AudioComponentRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ AudioComponentRegister (from AudioToolbox)(AudioComponentRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "unknown",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioUnitAddPropertyListener (from AudioToolbox)": {
+      "name": "AudioUnitAddPropertyListener (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioUnitAddPropertyListener (from AudioToolbox)(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioCodecSetProperty (from AudioToolbox)": {
+      "name": "AudioCodecSetProperty (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AudioCodecRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AudioCodecSetProperty (from AudioToolbox)(AudioCodecRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioComponentCount (from AudioToolbox)": {
+      "name": "AudioComponentCount (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioComponentCount (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioCodecAppendInputData (from AudioToolbox)": {
+      "name": "AudioCodecAppendInputData (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioCodecAppendInputData (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MusicDeviceMIDIEvent (from AudioToolbox)": {
+      "name": "MusicDeviceMIDIEvent (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ MusicDeviceMIDIEvent (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioUnitProcess (from AudioToolbox)": {
+      "name": "AudioUnitProcess (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioUnitProcess (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioComponentInstanceNew (from AudioToolbox)": {
+      "name": "AudioComponentInstanceNew (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioComponentInstanceNew (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioComponentInstanceGetComponent (from AudioToolbox)": {
+      "name": "AudioComponentInstanceGetComponent (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AudioComponentInstanceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AudioComponentInstanceGetComponent (from AudioToolbox)(AudioComponentInstanceRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioUnitSetParameter (from AudioToolbox)": {
+      "name": "AudioUnitSetParameter (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AudioUnitRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AudioUnitSetParameter (from AudioToolbox)(AudioUnitRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioOutputUnitStart (from AudioToolbox)": {
+      "name": "AudioOutputUnitStart (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioOutputUnitStart (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioCodecReset (from AudioToolbox)": {
+      "name": "AudioCodecReset (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioCodecReset (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioComponentInstanceCanDo (from AudioToolbox)": {
+      "name": "AudioComponentInstanceCanDo (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AudioComponentInstanceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool AudioComponentInstanceCanDo (from AudioToolbox)(AudioComponentInstanceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioUnitAddRenderNotify (from AudioToolbox)": {
+      "name": "AudioUnitAddRenderNotify (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioUnitAddRenderNotify (from AudioToolbox)(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioUnitComplexRender (from AudioToolbox)": {
+      "name": "AudioUnitComplexRender (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioUnitComplexRender (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioCodecAppendInputBufferList (from AudioToolbox)": {
+      "name": "AudioCodecAppendInputBufferList (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer",
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioCodecAppendInputBufferList (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioOutputUnitStop (from AudioToolbox)": {
+      "name": "AudioOutputUnitStop (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioOutputUnitStop (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MusicDevicePrepareInstrument (from AudioToolbox)": {
+      "name": "MusicDevicePrepareInstrument (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ MusicDevicePrepareInstrument (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioCodecProduceOutputPackets (from AudioToolbox)": {
+      "name": "AudioCodecProduceOutputPackets (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioCodecProduceOutputPackets (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioUnitGetPropertyInfo (from AudioToolbox)": {
+      "name": "AudioUnitGetPropertyInfo (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AudioUnitRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AudioUnitGetPropertyInfo (from AudioToolbox)(AudioUnitRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioComponentGetDescription (from AudioToolbox)": {
+      "name": "AudioComponentGetDescription (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AudioComponentRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AudioComponentGetDescription (from AudioToolbox)(AudioComponentRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioCodecUninitialize (from AudioToolbox)": {
+      "name": "AudioCodecUninitialize (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "video_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioCodecUninitialize (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioComponentCopyName (from AudioToolbox)": {
+      "name": "AudioComponentCopyName (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "AudioComponentRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AudioComponentRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "AudioComponentRef/*?*/ AudioComponentCopyName (from AudioToolbox)(AudioComponentRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "AudioComponentRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioUnitProcessMultiple (from AudioToolbox)": {
+      "name": "AudioUnitProcessMultiple (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioUnitProcessMultiple (from AudioToolbox)(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioComponentInstanceDispose (from AudioToolbox)": {
+      "name": "AudioComponentInstanceDispose (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioComponentInstanceDispose (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MusicDeviceSysEx (from AudioToolbox)": {
+      "name": "MusicDeviceSysEx (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ MusicDeviceSysEx (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AudioUnitRemovePropertyListenerWithUserData (from AudioToolbox)": {
+      "name": "AudioUnitRemovePropertyListenerWithUserData (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ AudioUnitRemovePropertyListenerWithUserData (from AudioToolbox)(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MusicDeviceStopNote (from AudioToolbox)": {
+      "name": "MusicDeviceStopNote (from AudioToolbox)",
+      "framework": "AudioUnit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AudioUnit"
+        }
+      ],
+      "signature": "void/*?*/ MusicDeviceStopNote (from AudioToolbox)(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "memory_buffer": [
+      "AudioCodecAppendInputBufferList (from AudioToolbox)",
+      "AudioCodecProduceOutputBufferList (from AudioToolbox)"
+    ],
+    "gpu_compute": [
+      "AudioUnitAddRenderNotify (from AudioToolbox)",
+      "AudioUnitComplexRender (from AudioToolbox)",
+      "AudioUnitRemoveRenderNotify (from AudioToolbox)",
+      "AudioUnitRender (from AudioToolbox)"
+    ],
+    "video_processing": [
+      "AudioCodecAppendInputBufferList (from AudioToolbox)",
+      "AudioCodecAppendInputData (from AudioToolbox)",
+      "AudioCodecGetProperty (from AudioToolbox)",
+      "AudioCodecGetPropertyInfo (from AudioToolbox)",
+      "AudioCodecInitialize (from AudioToolbox)",
+      "AudioCodecProduceOutputBufferList (from AudioToolbox)",
+      "AudioCodecProduceOutputPackets (from AudioToolbox)",
+      "AudioCodecReset (from AudioToolbox)",
+      "AudioCodecSetProperty (from AudioToolbox)",
+      "AudioCodecUninitialize (from AudioToolbox)"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}
