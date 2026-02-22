@@ -1,0 +1,2511 @@
+{
+  "framework": "SystemPolicy",
+  "functions": {
+    "isKernelExtensionShippedWithOS": {
+      "name": "isKernelExtensionShippedWithOS",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isKernelExtensionShippedWithOS(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyEntitlements": {
+      "name": "copyEntitlements",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyEntitlements(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isSIPDisabledMachine": {
+      "name": "isSIPDisabledMachine",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isSIPDisabledMachine(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "shouldFilterOutScanTarget": {
+      "name": "shouldFilterOutScanTarget",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ shouldFilterOutScanTarget(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyTeamIdentifierFromCertificates": {
+      "name": "copyTeamIdentifierFromCertificates",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyTeamIdentifierFromCertificates(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "systemUptime": {
+      "name": "systemUptime",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ systemUptime(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyFileHashForURL": {
+      "name": "copyFileHashForURL",
+      "framework": "SystemPolicy",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "copyFileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool copyFileHashForURL(copyFileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyTeamIdentifier": {
+      "name": "copyTeamIdentifier",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyTeamIdentifier(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SystemPolicyVersionNumber": {
+      "name": "SystemPolicyVersionNumber",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ SystemPolicyVersionNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SPReportScriptExecutionViaFallback": {
+      "name": "SPReportScriptExecutionViaFallback",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ SPReportScriptExecutionViaFallback(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "URLisDirectory": {
+      "name": "URLisDirectory",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ URLisDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyBundleID": {
+      "name": "copyBundleID",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyBundleID(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "createURLWithoutPrefix": {
+      "name": "createURLWithoutPrefix",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ createURLWithoutPrefix(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "fileExists": {
+      "name": "fileExists",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ fileExists(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "checkURLQuarantineState": {
+      "name": "checkURLQuarantineState",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ checkURLQuarantineState(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SPErrorDomain": {
+      "name": "SPErrorDomain",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ SPErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyLegacyDeveloperName": {
+      "name": "copyLegacyDeveloperName",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyLegacyDeveloperName(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "findOuterMostBundle": {
+      "name": "findOuterMostBundle",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ findOuterMostBundle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "findOuterMostBundleWithFilter": {
+      "name": "findOuterMostBundleWithFilter",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ findOuterMostBundleWithFilter(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "findTopAppBundle": {
+      "name": "findTopAppBundle",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ findTopAppBundle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hasCodeRequirementString": {
+      "name": "hasCodeRequirementString",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ hasCodeRequirementString(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "historyEntriesContainPolicyMatch": {
+      "name": "historyEntriesContainPolicyMatch",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ historyEntriesContainPolicyMatch(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isConnectionFromTrustedIdentifier": {
+      "name": "isConnectionFromTrustedIdentifier",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isConnectionFromTrustedIdentifier(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyCodeSigningInfo": {
+      "name": "copyCodeSigningInfo",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyCodeSigningInfo(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isNotarizedKext": {
+      "name": "isNotarizedKext",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isNotarizedKext(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isUnconditionalRevocationTicketLookupEnabled": {
+      "name": "isUnconditionalRevocationTicketLookupEnabled",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isUnconditionalRevocationTicketLookupEnabled(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isValidationCategoryPolicyEnabled": {
+      "name": "isValidationCategoryPolicyEnabled",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isValidationCategoryPolicyEnabled(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isAdhocSignature": {
+      "name": "isAdhocSignature",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isAdhocSignature(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyDeveloperName": {
+      "name": "copyDeveloperName",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyDeveloperName(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyAdhocSignatureHash": {
+      "name": "copyAdhocSignatureHash",
+      "framework": "SystemPolicy",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "copyAdhocSignatureRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool copyAdhocSignatureHash(copyAdhocSignatureRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isXProtectCloudKitUpdatesEnabledMachine": {
+      "name": "isXProtectCloudKitUpdatesEnabledMachine",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isXProtectCloudKitUpdatesEnabledMachine(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "scanForBundledKernelExtensions": {
+      "name": "scanForBundledKernelExtensions",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ scanForBundledKernelExtensions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SystemPolicyVersionString": {
+      "name": "SystemPolicyVersionString",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ SystemPolicyVersionString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isInstallerOrRecoveryEnvironment": {
+      "name": "isInstallerOrRecoveryEnvironment",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isInstallerOrRecoveryEnvironment(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyShippedThirdPartyKernelExtensions": {
+      "name": "copyShippedThirdPartyKernelExtensions",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyShippedThirdPartyKernelExtensions(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isCodelessKext": {
+      "name": "isCodelessKext",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isCodelessKext(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "doObjectXPCFunction": {
+      "name": "doObjectXPCFunction",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ doObjectXPCFunction(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "sSystemPolicySubsystem": {
+      "name": "sSystemPolicySubsystem",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ sSystemPolicySubsystem(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "opaqueSignCode": {
+      "name": "opaqueSignCode",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ opaqueSignCode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyCdhashFromKextURL": {
+      "name": "copyCdhashFromKextURL",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyCdhashFromKextURL(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyCdhash": {
+      "name": "copyCdhash",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyCdhash(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "createSecStaticCodeForURL": {
+      "name": "createSecStaticCodeForURL",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ createSecStaticCodeForURL(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "GKErrorDomain": {
+      "name": "GKErrorDomain",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ GKErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "checkPathQuarantineState": {
+      "name": "checkPathQuarantineState",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ checkPathQuarantineState(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copySigningID": {
+      "name": "copySigningID",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copySigningID(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getQuarantineFlagsForURL": {
+      "name": "getQuarantineFlagsForURL",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ getQuarantineFlagsForURL(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "checkNumberSetting": {
+      "name": "checkNumberSetting",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "checkNumberRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ checkNumberSetting(checkNumberRef *ref, void * *value)",
+      "verb": "predicate",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyBundleIDFromURL": {
+      "name": "copyBundleIDFromURL",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyBundleIDFromURL(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyUnstagedURL": {
+      "name": "copyUnstagedURL",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyUnstagedURL(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "createSystemPolicyDefaults": {
+      "name": "createSystemPolicyDefaults",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ createSystemPolicyDefaults(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "removePrefixPath": {
+      "name": "removePrefixPath",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ removePrefixPath(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "scanForBundles": {
+      "name": "scanForBundles",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ scanForBundles(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isKextAllowedWithoutNotarization": {
+      "name": "isKextAllowedWithoutNotarization",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isKextAllowedWithoutNotarization(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "checkBOOLSetting": {
+      "name": "checkBOOLSetting",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "checkBOOLRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ checkBOOLSetting(checkBOOLRef *ref, void * *value)",
+      "verb": "predicate",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isDeveloperIDKextSignedCode": {
+      "name": "isDeveloperIDKextSignedCode",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isDeveloperIDKextSignedCode(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isKextSecurityDisabledMachine": {
+      "name": "isKextSecurityDisabledMachine",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isKextSecurityDisabledMachine(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getDictionaryValue": {
+      "name": "getDictionaryValue",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ getDictionaryValue(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isResourceDirectorySlotPolicyEnabled": {
+      "name": "isResourceDirectorySlotPolicyEnabled",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isResourceDirectorySlotPolicyEnabled(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getQuarantineIdentifierForURL": {
+      "name": "getQuarantineIdentifierForURL",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ getQuarantineIdentifierForURL(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "doBooleanXPCFunction": {
+      "name": "doBooleanXPCFunction",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ doBooleanXPCFunction(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "fileIsSymlink": {
+      "name": "fileIsSymlink",
+      "framework": "SystemPolicy",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "fileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool fileIsSymlink(fileRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isKernelExtensionSystemRequired": {
+      "name": "isKernelExtensionSystemRequired",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isKernelExtensionSystemRequired(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isAppleInternalMachine": {
+      "name": "isAppleInternalMachine",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isAppleInternalMachine(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "urlLooksLikeBundle": {
+      "name": "urlLooksLikeBundle",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ urlLooksLikeBundle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isValidInfoPlist": {
+      "name": "isValidInfoPlist",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isValidInfoPlist(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "findScanTargetByPath": {
+      "name": "findScanTargetByPath",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ findScanTargetByPath(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "findBundleContainingSignedFile": {
+      "name": "findBundleContainingSignedFile",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ findBundleContainingSignedFile(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "scanForKernelExtensions": {
+      "name": "scanForKernelExtensions",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ scanForKernelExtensions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "cdResourceDirSlot": {
+      "name": "cdResourceDirSlot",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ cdResourceDirSlot(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "hasAppExtension": {
+      "name": "hasAppExtension",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ hasAppExtension(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyBundleVersionShort": {
+      "name": "copyBundleVersionShort",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyBundleVersionShort(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "createCodeReference": {
+      "name": "createCodeReference",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ createCodeReference(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyLegacyCdhashSHA256": {
+      "name": "copyLegacyCdhashSHA256",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyLegacyCdhashSHA256(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyTeamIdentifierFromSigningInformation": {
+      "name": "copyTeamIdentifierFromSigningInformation",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyTeamIdentifierFromSigningInformation(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "doBooleanXPCFunctionSilent": {
+      "name": "doBooleanXPCFunctionSilent",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ doBooleanXPCFunctionSilent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "findContainingBundle": {
+      "name": "findContainingBundle",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ findContainingBundle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "doWithoutImmutability": {
+      "name": "doWithoutImmutability",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ doWithoutImmutability(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "findFirstSubdirectoryURL": {
+      "name": "findFirstSubdirectoryURL",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ findFirstSubdirectoryURL(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getXattrData": {
+      "name": "getXattrData",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ getXattrData(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyBundleVersionShortFromURL": {
+      "name": "copyBundleVersionShortFromURL",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyBundleVersionShortFromURL(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "areGatekeeperOverridesDisabledByMDM": {
+      "name": "areGatekeeperOverridesDisabledByMDM",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ areGatekeeperOverridesDisabledByMDM(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "checkURLMountQuarantineState": {
+      "name": "checkURLMountQuarantineState",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ checkURLMountQuarantineState(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isConnectionEntitled": {
+      "name": "isConnectionEntitled",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isConnectionEntitled(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "calculateTotalPathSize": {
+      "name": "calculateTotalPathSize",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ calculateTotalPathSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isDeveloperIDSignedCode": {
+      "name": "isDeveloperIDSignedCode",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isDeveloperIDSignedCode(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isMacAppStoreSignedCode": {
+      "name": "isMacAppStoreSignedCode",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isMacAppStoreSignedCode(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyLegacyCdhash": {
+      "name": "copyLegacyCdhash",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyLegacyCdhash(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyFileHashForData": {
+      "name": "copyFileHashForData",
+      "framework": "SystemPolicy",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "copyFileRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool copyFileHashForData(copyFileRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyBootUUID": {
+      "name": "copyBootUUID",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyBootUUID(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isSkipXprotectScansOnSeenSoftwareEnabled": {
+      "name": "isSkipXprotectScansOnSeenSoftwareEnabled",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isSkipXprotectScansOnSeenSoftwareEnabled(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "setQuarantineFlagsForURL": {
+      "name": "setQuarantineFlagsForURL",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ setQuarantineFlagsForURL(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "normalizeURL": {
+      "name": "normalizeURL",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ normalizeURL(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "findTopBundle": {
+      "name": "findTopBundle",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ findTopBundle(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isQAAppStoreCertsAllowed": {
+      "name": "isQAAppStoreCertsAllowed",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isQAAppStoreCertsAllowed(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isSKELDisabledMachine": {
+      "name": "isSKELDisabledMachine",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isSKELDisabledMachine(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isTerminalLikePath": {
+      "name": "isTerminalLikePath",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isTerminalLikePath(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "createHexStringFromData": {
+      "name": "createHexStringFromData",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ createHexStringFromData(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getVolumePrefix": {
+      "name": "getVolumePrefix",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ getVolumePrefix(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyBundleVersion": {
+      "name": "copyBundleVersion",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copyBundleVersion(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copySecureTimestamp": {
+      "name": "copySecureTimestamp",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ copySecureTimestamp(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "historyEntryMatchesPolicyEntry": {
+      "name": "historyEntryMatchesPolicyEntry",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ historyEntryMatchesPolicyEntry(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "createCodeReferenceQuiet": {
+      "name": "createCodeReferenceQuiet",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ createCodeReferenceQuiet(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isAppleSignedCode": {
+      "name": "isAppleSignedCode",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isAppleSignedCode(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isDarwinOSEnvironment": {
+      "name": "isDarwinOSEnvironment",
+      "framework": "SystemPolicy",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from SystemPolicy"
+        }
+      ],
+      "signature": "void/*?*/ isDarwinOSEnvironment(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "copyLegacyCdhashSHA256"
+    ],
+    "gpu_compute": [
+      "copyShippedThirdPartyKernelExtensions",
+      "isKernelExtensionShippedWithOS",
+      "isKernelExtensionSystemRequired",
+      "scanForBundledKernelExtensions",
+      "scanForKernelExtensions"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

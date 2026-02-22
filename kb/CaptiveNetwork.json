@@ -1,0 +1,2258 @@
+{
+  "framework": "CaptiveNetwork",
+  "functions": {
+    "CNScanListFilterStart": {
+      "name": "CNScanListFilterStart",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNScanListFilterStart(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkGetInterfaceName": {
+      "name": "CNNetworkGetInterfaceName",
+      "framework": "CaptiveNetwork",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNNetworkRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ CNNetworkGetInterfaceName(CNNetworkRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNPluginCommandGetInterfaceName",
+        "CNNetworkGetSSIDString"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CaptiveNetworkVersionNumber": {
+      "name": "CaptiveNetworkVersionNumber",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CaptiveNetworkVersionNumber(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkIsChosenPlugin": {
+      "name": "CNNetworkIsChosenPlugin",
+      "framework": "CaptiveNetwork",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNNetworkRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CNNetworkIsChosenPlugin(CNNetworkRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkWasJustJoined": {
+      "name": "CNNetworkWasJustJoined",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNNetworkWasJustJoined(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkGetPassword": {
+      "name": "CNNetworkGetPassword",
+      "framework": "CaptiveNetwork",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNNetworkRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CNNetworkGetPassword(CNNetworkRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkSetCaptive": {
+      "name": "CNNetworkSetCaptive",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNNetworkRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CNNetworkSetCaptive(CNNetworkRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNScanListFilterStop": {
+      "name": "CNScanListFilterStop",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNScanListFilterStop(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CaptiveNetworkVersionString": {
+      "name": "CaptiveNetworkVersionString",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CaptiveNetworkVersionString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "__CNMarkPortalOnline": {
+      "name": "__CNMarkPortalOnline",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ __CNMarkPortalOnline(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkIsProtected": {
+      "name": "CNNetworkIsProtected",
+      "framework": "CaptiveNetwork",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNNetworkRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CNNetworkIsProtected(CNNetworkRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNDumpState": {
+      "name": "CNDumpState",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNDumpState(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNDebugLaunchWebsheet": {
+      "name": "CNDebugLaunchWebsheet",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNDebugLaunchWebsheet(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginCommandGetType": {
+      "name": "CNPluginCommandGetType",
+      "framework": "CaptiveNetwork",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNPluginCommandRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CNPluginCommandGetType(CNPluginCommandRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNSetCaptivePortalAuthenticationCredentials": {
+      "name": "CNSetCaptivePortalAuthenticationCredentials",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CNSetCaptivePortalAuthenticationCredentials(CNRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ServerConnectionCreate": {
+      "name": "ServerConnectionCreate",
+      "framework": "CaptiveNetwork",
+      "return_type": "ServerConnectionRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "ServerConnectionRef ServerConnectionCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "ServerConnectionRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginCommandGetTypeID": {
+      "name": "CNPluginCommandGetTypeID",
+      "framework": "CaptiveNetwork",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNPluginCommandRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CNPluginCommandGetTypeID(CNPluginCommandRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNNetworkGetTypeID",
+        "__CNSetSupportedSSIDs",
+        "CNNetworkGetBSSID",
+        "CNPluginResponseGetTypeID",
+        "CNProberGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginCommandCopyCurrentNetwork": {
+      "name": "CNPluginCommandCopyCurrentNetwork",
+      "framework": "CaptiveNetwork",
+      "return_type": "CNPluginCommandRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNPluginCommandRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CNPluginCommandRef/*?*/ CNPluginCommandCopyCurrentNetwork(CNPluginCommandRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CNPluginCommandRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNPluginCommandCopyNetworkList"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginCommandBindReadStream": {
+      "name": "CNPluginCommandBindReadStream",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNPluginCommandBindReadStream(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNAccountsResolve": {
+      "name": "CNAccountsResolve",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNAccountsResolve(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginCommandGetInterfaceName": {
+      "name": "CNPluginCommandGetInterfaceName",
+      "framework": "CaptiveNetwork",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNPluginCommandRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ CNPluginCommandGetInterfaceName(CNPluginCommandRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNNetworkGetInterfaceName",
+        "CNNetworkGetSSIDString"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginMonitorEventCopyDisplayIDs": {
+      "name": "CNPluginMonitorEventCopyDisplayIDs",
+      "framework": "CaptiveNetwork",
+      "return_type": "CNPluginMonitorEventRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNPluginMonitorEventRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CNPluginMonitorEventRef/*?*/ CNPluginMonitorEventCopyDisplayIDs(CNPluginMonitorEventRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CNPluginMonitorEventRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkGetTypeID": {
+      "name": "CNNetworkGetTypeID",
+      "framework": "CaptiveNetwork",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNNetworkRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CNNetworkGetTypeID(CNNetworkRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNPluginCommandGetTypeID",
+        "__CNSetSupportedSSIDs",
+        "CNNetworkGetBSSID",
+        "CNPluginResponseGetTypeID",
+        "CNProberGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginMonitorStop": {
+      "name": "CNPluginMonitorStop",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNPluginMonitorStop(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNWebsheetNotifyComplete": {
+      "name": "CNWebsheetNotifyComplete",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNWebsheetNotifyComplete(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ServerConnectionProvideResponse": {
+      "name": "ServerConnectionProvideResponse",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ ServerConnectionProvideResponse(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkCopyPluginNames": {
+      "name": "CNNetworkCopyPluginNames",
+      "framework": "CaptiveNetwork",
+      "return_type": "CNNetworkRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNNetworkRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CNNetworkRef/*?*/ CNNetworkCopyPluginNames(CNNetworkRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CNNetworkRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNNetworkCreateWithSSIDAndBSSID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "__CNSetSupportedSSIDs": {
+      "name": "__CNSetSupportedSSIDs",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "__CNRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "uint64_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ __CNSetSupportedSSIDs(__CNRef *ref, uint64_t value)",
+      "verb": "write",
+      "input_formats": [
+        "uint64_t"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNPluginCommandGetTypeID",
+        "CNNetworkGetTypeID",
+        "CNNetworkGetBSSID",
+        "CNPluginResponseGetTypeID",
+        "CNProberGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkGetBSSID": {
+      "name": "CNNetworkGetBSSID",
+      "framework": "CaptiveNetwork",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNNetworkRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CNNetworkGetBSSID(CNNetworkRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNPluginCommandGetTypeID",
+        "CNNetworkGetTypeID",
+        "__CNSetSupportedSSIDs",
+        "CNPluginResponseGetTypeID",
+        "CNProberGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNSClientCNSClient_subsystem": {
+      "name": "CNSClientCNSClient_subsystem",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNSClientCNSClient_subsystem(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNAuthenticateUsingTokenAccount": {
+      "name": "CNAuthenticateUsingTokenAccount",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNAuthenticateUsingTokenAccount(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkCreateWithSSIDAndBSSID": {
+      "name": "CNNetworkCreateWithSSIDAndBSSID",
+      "framework": "CaptiveNetwork",
+      "return_type": "CNNetworkRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CNNetworkRef CNNetworkCreateWithSSIDAndBSSID(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CNNetworkRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNNetworkCopyPluginNames"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginMonitorStart": {
+      "name": "CNPluginMonitorStart",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNPluginMonitorStart(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginResponseGetTypeID": {
+      "name": "CNPluginResponseGetTypeID",
+      "framework": "CaptiveNetwork",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNPluginResponseRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CNPluginResponseGetTypeID(CNPluginResponseRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNPluginCommandGetTypeID",
+        "CNNetworkGetTypeID",
+        "__CNSetSupportedSSIDs",
+        "CNNetworkGetBSSID",
+        "CNProberGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkSetPassword": {
+      "name": "CNNetworkSetPassword",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNNetworkRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CNNetworkSetPassword(CNNetworkRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "__CNCopyCurrentNetworkInfo": {
+      "name": "__CNCopyCurrentNetworkInfo",
+      "framework": "CaptiveNetwork",
+      "return_type": "__CNRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "__CNRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "__CNRef/*?*/ __CNCopyCurrentNetworkInfo(__CNRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "__CNRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "__CNCopySupportedInterfaces"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNProberGetTypeID": {
+      "name": "CNProberGetTypeID",
+      "framework": "CaptiveNetwork",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNProberRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CNProberGetTypeID(CNProberRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNPluginCommandGetTypeID",
+        "CNNetworkGetTypeID",
+        "__CNSetSupportedSSIDs",
+        "CNNetworkGetBSSID",
+        "CNPluginResponseGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginResponseCreate": {
+      "name": "CNPluginResponseCreate",
+      "framework": "CaptiveNetwork",
+      "return_type": "CNPluginResponseRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CNPluginResponseRef CNPluginResponseCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CNPluginResponseRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNEnableWebSheetLaunch": {
+      "name": "CNEnableWebSheetLaunch",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNEnableWebSheetLaunch(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginResponseSetNetworkList": {
+      "name": "CNPluginResponseSetNetworkList",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNPluginResponseRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CNPluginResponseSetNetworkList(CNPluginResponseRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNProberCreate": {
+      "name": "CNProberCreate",
+      "framework": "CaptiveNetwork",
+      "return_type": "CNProberRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CNProberRef CNProberCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CNProberRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNProberCreateRunLoopSource"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNScrapeCredentials": {
+      "name": "CNScrapeCredentials",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNScrapeCredentials(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPurgeCaptivePortalAuthenticationCredentials": {
+      "name": "CNPurgeCaptivePortalAuthenticationCredentials",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNPurgeCaptivePortalAuthenticationCredentials(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CaptiveCopyWiFiLandingPageURL": {
+      "name": "CaptiveCopyWiFiLandingPageURL",
+      "framework": "CaptiveNetwork",
+      "return_type": "CaptiveRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CaptiveRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CaptiveRef/*?*/ CaptiveCopyWiFiLandingPageURL(CaptiveRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CaptiveRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ServerConnectionResume": {
+      "name": "ServerConnectionResume",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ ServerConnectionResume(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkSetConfidence": {
+      "name": "CNNetworkSetConfidence",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNNetworkRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CNNetworkSetConfidence(CNNetworkRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginLogoffNetwork": {
+      "name": "CNPluginLogoffNetwork",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNPluginLogoffNetwork(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginCopySupportedInterfaces": {
+      "name": "CNPluginCopySupportedInterfaces",
+      "framework": "CaptiveNetwork",
+      "return_type": "CNPluginRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNPluginRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CNPluginRef/*?*/ CNPluginCopySupportedInterfaces(CNPluginRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CNPluginRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNIAmTheWebsheetApp2": {
+      "name": "CNIAmTheWebsheetApp2",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNIAmTheWebsheetApp2(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkWasAutoJoined": {
+      "name": "CNNetworkWasAutoJoined",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNNetworkWasAutoJoined(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ServerConnectionSendCmdAck": {
+      "name": "ServerConnectionSendCmdAck",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ ServerConnectionSendCmdAck(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "__CNCopySupportedInterfaces": {
+      "name": "__CNCopySupportedInterfaces",
+      "framework": "CaptiveNetwork",
+      "return_type": "__CNRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "__CNRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "__CNRef/*?*/ __CNCopySupportedInterfaces(__CNRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "__CNRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "__CNCopyCurrentNetworkInfo"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNProberCreateRunLoopSource": {
+      "name": "CNProberCreateRunLoopSource",
+      "framework": "CaptiveNetwork",
+      "return_type": "CNProberRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CNProberRef CNProberCreateRunLoopSource(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CNProberRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNProberCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ServerConnectionGetHandlerQueue": {
+      "name": "ServerConnectionGetHandlerQueue",
+      "framework": "CaptiveNetwork",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ServerConnectionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ ServerConnectionGetHandlerQueue(ServerConnectionRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginRegister": {
+      "name": "CNPluginRegister",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNPluginRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ CNPluginRegister(CNPluginRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkGetSSID": {
+      "name": "CNNetworkGetSSID",
+      "framework": "CaptiveNetwork",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNNetworkRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CNNetworkGetSSID(CNNetworkRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNPluginCommandGetTypeID",
+        "CNNetworkGetTypeID",
+        "__CNSetSupportedSSIDs",
+        "CNNetworkGetBSSID",
+        "CNPluginResponseGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkGetSignalStrength": {
+      "name": "CNNetworkGetSignalStrength",
+      "framework": "CaptiveNetwork",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNNetworkRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "synchronization"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ CNNetworkGetSignalStrength(CNNetworkRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ServerConnectionRelease": {
+      "name": "ServerConnectionRelease",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "ServerConnectionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.9,
+          "detail": "matched Destroy pattern"
+        }
+      ],
+      "signature": "void ServerConnectionRelease(ServerConnectionRef *ref)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginResponseSetNetwork": {
+      "name": "CNPluginResponseSetNetwork",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNPluginResponseRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ CNPluginResponseSetNetwork(CNPluginResponseRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNWebsheetNotifyCompleteWithOptions": {
+      "name": "CNWebsheetNotifyCompleteWithOptions",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNWebsheetNotifyCompleteWithOptions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNForgetSSID": {
+      "name": "CNForgetSSID",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNForgetSSID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkGetSSIDString": {
+      "name": "CNNetworkGetSSIDString",
+      "framework": "CaptiveNetwork",
+      "return_type": "const char *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNNetworkRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "const char */*?*/ CNNetworkGetSSIDString(CNNetworkRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "const char *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNNetworkGetInterfaceName",
+        "CNPluginCommandGetInterfaceName"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNUserInteractionIsRequired": {
+      "name": "CNUserInteractionIsRequired",
+      "framework": "CaptiveNetwork",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNUserInteractionRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool CNUserInteractionIsRequired(CNUserInteractionRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "__CNMarkPortalOffline": {
+      "name": "__CNMarkPortalOffline",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ __CNMarkPortalOffline(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginCommandCopyNetworkList": {
+      "name": "CNPluginCommandCopyNetworkList",
+      "framework": "CaptiveNetwork",
+      "return_type": "CNPluginCommandRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNPluginCommandRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CNPluginCommandRef/*?*/ CNPluginCommandCopyNetworkList(CNPluginCommandRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CNPluginCommandRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNPluginCommandCopyCurrentNetwork"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNPluginResponseDeliver": {
+      "name": "CNPluginResponseDeliver",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNPluginResponseDeliver(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNAccountsCopy": {
+      "name": "CNAccountsCopy",
+      "framework": "CaptiveNetwork",
+      "return_type": "CNAccountsRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNAccountsRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "CNAccountsRef/*?*/ CNAccountsCopy(CNAccountsRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "CNAccountsRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNNetworkGetPluginBundleID": {
+      "name": "CNNetworkGetPluginBundleID",
+      "framework": "CaptiveNetwork",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CNNetworkRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CNNetworkGetPluginBundleID(CNNetworkRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "CNPluginCommandGetTypeID",
+        "CNNetworkGetTypeID",
+        "__CNSetSupportedSSIDs",
+        "CNNetworkGetBSSID",
+        "CNPluginResponseGetTypeID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNAccountsUse": {
+      "name": "CNAccountsUse",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNAccountsUse(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CNLogoff": {
+      "name": "CNLogoff",
+      "framework": "CaptiveNetwork",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CaptiveNetwork"
+        }
+      ],
+      "signature": "void/*?*/ CNLogoff(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "synchronization": [
+      "CNNetworkGetSignalStrength"
+    ],
+    "gpu_compute": [
+      "CNDumpState",
+      "CNPluginCommandBindReadStream",
+      "CNPluginCommandCopyCurrentNetwork",
+      "CNPluginCommandCopyNetworkList",
+      "CNPluginCommandGetInterfaceName",
+      "CNPluginCommandGetType",
+      "CNPluginCommandGetTypeID"
+    ],
+    "display_compositing": [
+      "CNPluginMonitorEventCopyDisplayIDs"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

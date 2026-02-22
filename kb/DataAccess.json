@@ -1,0 +1,953 @@
+{
+  "framework": "DataAccess",
+  "functions": {
+    "DAReListenForAccounts": {
+      "name": "DAReListenForAccounts",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAReListenForAccounts(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAWeakLinkSymbol": {
+      "name": "DAWeakLinkSymbol",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAWeakLinkSymbol(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAUserAgent": {
+      "name": "DAUserAgent",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAUserAgent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAAccountFolderHierarchyNeedsUpdateRequireChangedFoldersNotification": {
+      "name": "DAAccountFolderHierarchyNeedsUpdateRequireChangedFoldersNotification",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAAccountFolderHierarchyNeedsUpdateRequireChangedFoldersNotification(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAAccountFolderUpdatedWithNoChangesNotification": {
+      "name": "DAAccountFolderUpdatedWithNoChangesNotification",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAAccountFolderUpdatedWithNoChangesNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAUpdateMigrationVersion": {
+      "name": "DAUpdateMigrationVersion",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAUpdateMigrationVersion(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_DASecCopyIdentityFromPersist": {
+      "name": "_DASecCopyIdentityFromPersist",
+      "framework": "DataAccess",
+      "return_type": "_DASecRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_DASecRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_DASecRef/*?*/ _DASecCopyIdentityFromPersist(_DASecRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_DASecRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "walkUpDAErrorChain": {
+      "name": "walkUpDAErrorChain",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ walkUpDAErrorChain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "statusAndErrorIndicateWeShouldTurnOnReachability": {
+      "name": "statusAndErrorIndicateWeShouldTurnOnReachability",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ statusAndErrorIndicateWeShouldTurnOnReachability(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "areDADiagnosticsEnabled": {
+      "name": "areDADiagnosticsEnabled",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ areDADiagnosticsEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAModelString": {
+      "name": "DAModelString",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAModelString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAAccountPushedFolderPreferencesChangedNotification": {
+      "name": "DAAccountPushedFolderPreferencesChangedNotification",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAAccountPushedFolderPreferencesChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "statusAndErrorIndicatePersistentFolderSyncFailure": {
+      "name": "statusAndErrorIndicatePersistentFolderSyncFailure",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ statusAndErrorIndicatePersistentFolderSyncFailure(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "appBundleIDsForDADataclasses": {
+      "name": "appBundleIDsForDADataclasses",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ appBundleIDsForDADataclasses(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAPhoneBundleIdentifier": {
+      "name": "DAPhoneBundleIdentifier",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAPhoneBundleIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "daDataclassesForACDataclasses": {
+      "name": "daDataclassesForACDataclasses",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ daDataclassesForACDataclasses(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAWeakLinkClass": {
+      "name": "DAWeakLinkClass",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAWeakLinkClass(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAProductString": {
+      "name": "DAProductString",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAProductString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "runLoopModesToPerformDelayedSelectorsIn": {
+      "name": "runLoopModesToPerformDelayedSelectorsIn",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ runLoopModesToPerformDelayedSelectorsIn(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "sharedDAAccountStore": {
+      "name": "sharedDAAccountStore",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ sharedDAAccountStore(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "setDAIsRunningInDataAccessD": {
+      "name": "setDAIsRunningInDataAccessD",
+      "framework": "DataAccess",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "setDARef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool setDAIsRunningInDataAccessD(setDARef *ref)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAStringFromCalEntityType": {
+      "name": "DAStringFromCalEntityType",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAStringFromCalEntityType(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_DASecDeleteIdentityByPersistentRef": {
+      "name": "_DASecDeleteIdentityByPersistentRef",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ _DASecDeleteIdentityByPersistentRef(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAAccountFolderHierarchyNeedsUpdateNotification": {
+      "name": "DAAccountFolderHierarchyNeedsUpdateNotification",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAAccountFolderHierarchyNeedsUpdateNotification(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "addNullRunLoopSourceForRunLoopAndModes": {
+      "name": "addNullRunLoopSourceForRunLoopAndModes",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ addNullRunLoopSourceForRunLoopAndModes(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAMigrationIsNeeded": {
+      "name": "DAMigrationIsNeeded",
+      "framework": "DataAccess",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DAMigrationRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool DAMigrationIsNeeded(DAMigrationRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAAccountValidationDomain": {
+      "name": "DAAccountValidationDomain",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAAccountValidationDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAAccountFolderContentsChangedNotification": {
+      "name": "DAAccountFolderContentsChangedNotification",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAAccountFolderContentsChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAPerformMigrationOnMacOS": {
+      "name": "DAPerformMigrationOnMacOS",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAPerformMigrationOnMacOS(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAContactsBundleIdentifier": {
+      "name": "DAContactsBundleIdentifier",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAContactsBundleIdentifier(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "daDataclassForACDataclass": {
+      "name": "daDataclassForACDataclass",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ daDataclassForACDataclass(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAIsRunningInDataAccessD": {
+      "name": "DAIsRunningInDataAccessD",
+      "framework": "DataAccess",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "DARef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool DAIsRunningInDataAccessD(DARef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "acDataclassesForDADataclasses": {
+      "name": "acDataclassesForDADataclasses",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ acDataclassesForDADataclasses(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "acDataclassForDADataclass": {
+      "name": "acDataclassForDADataclass",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ acDataclassForDADataclass(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_DASecIdentityCopySSLClientAuthenticationChain": {
+      "name": "_DASecIdentityCopySSLClientAuthenticationChain",
+      "framework": "DataAccess",
+      "return_type": "_DASecIdentityRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_DASecIdentityRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_DASecIdentityRef/*?*/ _DASecIdentityCopySSLClientAuthenticationChain(_DASecIdentityRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_DASecIdentityRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "daDeviceID": {
+      "name": "daDeviceID",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ daDeviceID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "DAAccountFolderHierarchyChangedNotification": {
+      "name": "DAAccountFolderHierarchyChangedNotification",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ DAAccountFolderHierarchyChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dataaccess_get_global_queue": {
+      "name": "dataaccess_get_global_queue",
+      "framework": "DataAccess",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from DataAccess"
+        }
+      ],
+      "signature": "void/*?*/ dataaccess_get_global_queue(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "sharedDAAccountStore"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

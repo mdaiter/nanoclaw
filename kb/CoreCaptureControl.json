@@ -1,0 +1,235 @@
+{
+  "framework": "CoreCaptureControl",
+  "functions": {
+    "CoreCaptureControlCapture": {
+      "name": "CoreCaptureControlCapture",
+      "framework": "CoreCaptureControl",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreCaptureControl"
+        }
+      ],
+      "signature": "void/*?*/ CoreCaptureControlCapture(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreCaptureControlCaptureWithComponentDirectory": {
+      "name": "CoreCaptureControlCaptureWithComponentDirectory",
+      "framework": "CoreCaptureControl",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreCaptureControl"
+        }
+      ],
+      "signature": "void/*?*/ CoreCaptureControlCaptureWithComponentDirectory(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreCaptureControlConfigurePipe": {
+      "name": "CoreCaptureControlConfigurePipe",
+      "framework": "CoreCaptureControl",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreCaptureControl"
+        }
+      ],
+      "signature": "void/*?*/ CoreCaptureControlConfigurePipe(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreCaptureControlGetTypeID": {
+      "name": "CoreCaptureControlGetTypeID",
+      "framework": "CoreCaptureControl",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "CoreCaptureControlRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreCaptureControl"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ CoreCaptureControlGetTypeID(CoreCaptureControlRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreCaptureControlConfigureProfile": {
+      "name": "CoreCaptureControlConfigureProfile",
+      "framework": "CoreCaptureControl",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreCaptureControl"
+        }
+      ],
+      "signature": "void/*?*/ CoreCaptureControlConfigureProfile(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreCaptureControlStop": {
+      "name": "CoreCaptureControlStop",
+      "framework": "CoreCaptureControl",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreCaptureControl"
+        }
+      ],
+      "signature": "void/*?*/ CoreCaptureControlStop(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreCaptureControlConfigureStream": {
+      "name": "CoreCaptureControlConfigureStream",
+      "framework": "CoreCaptureControl",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreCaptureControl"
+        }
+      ],
+      "signature": "void/*?*/ CoreCaptureControlConfigureStream(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreCaptureControlStart": {
+      "name": "CoreCaptureControlStart",
+      "framework": "CoreCaptureControl",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreCaptureControl"
+        }
+      ],
+      "signature": "void/*?*/ CoreCaptureControlStart(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CoreCaptureControlCreate": {
+      "name": "CoreCaptureControlCreate",
+      "framework": "CoreCaptureControl",
+      "return_type": "CoreCaptureControlRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from CoreCaptureControl"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "CoreCaptureControlRef CoreCaptureControlCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "CoreCaptureControlRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {},
+  "protocols": [],
+  "type_aliases": {}
+}

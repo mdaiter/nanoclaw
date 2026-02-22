@@ -1,0 +1,3093 @@
+{
+  "framework": "PhotoFoundation",
+  "functions": {
+    "PFRectNull": {
+      "name": "PFRectNull",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFRectNull(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PhotoFoundation.PhotosFeatureFlags.hash(into: inout Swift.Hasher) -> ()": {
+      "name": "PhotoFoundation.PhotosFeatureFlags.hash(into: inout Swift.Hasher) -> ()",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PhotoFoundation.PhotosFeatureFlags.hash(into: inout Swift.Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PhotoFoundation.PhotosFeatureFlags.hash(into: inout Swift.Hasher) -> ()(PhotoFoundation.PhotosFeatureFlags.hash(into: inout Swift.Ref *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFAbstractMethodException": {
+      "name": "PFAbstractMethodException",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFAbstractMethodException(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationPersonalEventsBeyondMeanings(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationPersonalEventsBeyondMeanings(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationPersonalEventsBeyondMeanings(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.Lemonade(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.Lemonade(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.Lemonade(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_PFAssertContinueHandler": {
+      "name": "_PFAssertContinueHandler",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_PFRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ _PFAssertContinueHandler(_PFRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "unknown",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_PFAssertFailHandler"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFIsPhotosMessagesApp": {
+      "name": "PFIsPhotosMessagesApp",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFIsPhotosMessagesApp(PFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for PhotoFoundation.PhotosFeatureFlags.domain : Swift.StaticString": {
+      "name": "property descriptor for PhotoFoundation.PhotosFeatureFlags.domain : Swift.StaticString",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for PhotoFoundation.PhotosFeatureFlags.domain : Swift.StaticString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFObjc_enumerateSubclassesForHeader": {
+      "name": "PFObjc_enumerateSubclassesForHeader",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFObjc_enumerateSubclassesForHeader(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFObjc_implementsClassMethod": {
+      "name": "PFObjc_implementsClassMethod",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFObjc_implementsClassMethod(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFRectIsNull": {
+      "name": "PFRectIsNull",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRectRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFRectIsNull(PFRectRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFRectIsValid": {
+      "name": "PFRectIsValid",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRectRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFRectIsValid(PFRectRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFStringVersionOfLinkTimeLibrary": {
+      "name": "PFStringVersionOfLinkTimeLibrary",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFStringVersionOfLinkTimeLibrary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFSizeWithAspectRatioFittingSize": {
+      "name": "PFSizeWithAspectRatioFittingSize",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFSizeWithAspectRatioFittingSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for PhotoFoundation.PhotosFeatureFlags.feature : Swift.StaticString": {
+      "name": "property descriptor for PhotoFoundation.PhotosFeatureFlags.feature : Swift.StaticString",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for PhotoFoundation.PhotosFeatureFlags.feature : Swift.StaticString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_PFThrowMethodIsAbstract": {
+      "name": "_PFThrowMethodIsAbstract",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_PFThrowMethodRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _PFThrowMethodIsAbstract(_PFThrowMethodRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFDeviceIsVirtualMachine": {
+      "name": "PFDeviceIsVirtualMachine",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFDeviceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFDeviceIsVirtualMachine(PFDeviceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PhotoFoundation.PhotosFeatureFlags.hashValue.getter : Swift.Int": {
+      "name": "PhotoFoundation.PhotosFeatureFlags.hashValue.getter : Swift.Int",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PhotoFoundation.PhotosFeatureFlags.hashValue.getter : Swift.Int(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFIsVisionCameraApp": {
+      "name": "PFIsVisionCameraApp",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFIsVisionCameraApp(PFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFFullMethodName": {
+      "name": "PFFullMethodName",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFFullMethodName(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_PFAssertFailHandler": {
+      "name": "_PFAssertFailHandler",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_PFRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ _PFAssertFailHandler(_PFRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "unknown",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_PFAssertContinueHandler"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFCount": {
+      "name": "PFCount",
+      "framework": "PhotoFoundation",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t PFCount(PFRef *ref)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PFScaleFactorForMaximumPixelCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFUIGetLog": {
+      "name": "PFUIGetLog",
+      "framework": "PhotoFoundation",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFUIRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ PFUIGetLog(PFUIRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_PFThrowMethodNotImplemented": {
+      "name": "_PFThrowMethodNotImplemented",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ _PFThrowMethodNotImplemented(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.LemonadeEventLabeling(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.LemonadeEventLabeling(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.LemonadeEventLabeling(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationWhimsicalPrompt(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationWhimsicalPrompt(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationWhimsicalPrompt(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFLocalizedStringWithValidatedFormat": {
+      "name": "PFLocalizedStringWithValidatedFormat",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFLocalizedStringWithValidatedFormat(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFPhotosUILogSubsystem": {
+      "name": "PFPhotosUILogSubsystem",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFPhotosUILogSubsystem(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationMini(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationMini(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationMini(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.AlbumListEditing(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.AlbumListEditing(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.AlbumListEditing(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationTimeEventDisambiguation(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationTimeEventDisambiguation(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationTimeEventDisambiguation(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFIsMacPhotosApp": {
+      "name": "PFIsMacPhotosApp",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFIsMacPhotosApp(PFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for static PhotoFoundation.PhotosFeatureFlags.isAnyAlchemistV2FeatureEnabled : Swift.Bool": {
+      "name": "property descriptor for static PhotoFoundation.PhotosFeatureFlags.isAnyAlchemistV2FeatureEnabled : Swift.Bool",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for static PhotoFoundation.PhotosFeatureFlags.isAnyAlchemistV2FeatureEnabled : Swift.Bool(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFIsPhotosPicker": {
+      "name": "PFIsPhotosPicker",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFIsPhotosPicker(PFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "property descriptor for PhotoFoundation.PhotosFeatureFlags.hashValue : Swift.Int": {
+      "name": "property descriptor for PhotoFoundation.PhotosFeatureFlags.hashValue : Swift.Int",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ property descriptor for PhotoFoundation.PhotosFeatureFlags.hashValue : Swift.Int(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationGenericLocation(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationGenericLocation(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationGenericLocation(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFKTraceSpatialPhotoCameraTransformsChanged": {
+      "name": "PFKTraceSpatialPhotoCameraTransformsChanged",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFKTraceSpatialPhotoCameraTransformsChanged(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationContextualPrompt(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationContextualPrompt(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationContextualPrompt(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFKTraceSpatialPhotoCameraTechniqueChanged": {
+      "name": "PFKTraceSpatialPhotoCameraTechniqueChanged",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFKTraceSpatialPhotoCameraTechniqueChanged(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFMethodNotImplementedException": {
+      "name": "PFMethodNotImplementedException",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFMethodNotImplementedException(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFMicrosecondAccurateStringFromDate": {
+      "name": "PFMicrosecondAccurateStringFromDate",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFMicrosecondAccurateStringFromDate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFIsMessagesApp": {
+      "name": "PFIsMessagesApp",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFIsMessagesApp(PFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFNilObjectDescription": {
+      "name": "PFNilObjectDescription",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFNilObjectDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFPhotoFoundationBinaryImageUUID": {
+      "name": "PFPhotoFoundationBinaryImageUUID",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFPhotoFoundationBinaryImageUUID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "static PhotoFoundation.PhotosFeatureFlags.== infix(PhotoFoundation.PhotosFeatureFlags, PhotoFoundation.PhotosFeatureFlags) -> Swift.Bool": {
+      "name": "static PhotoFoundation.PhotosFeatureFlags.== infix(PhotoFoundation.PhotosFeatureFlags, PhotoFoundation.PhotosFeatureFlags) -> Swift.Bool",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ static PhotoFoundation.PhotosFeatureFlags.== infix(PhotoFoundation.PhotosFeatureFlags, PhotoFoundation.PhotosFeatureFlags) -> Swift.Bool(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFScaleFactorForMaximumPixelCount": {
+      "name": "PFScaleFactorForMaximumPixelCount",
+      "framework": "PhotoFoundation",
+      "return_type": "uint32_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFScaleFactorForMaximumPixelRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.8,
+          "detail": "matched Count pattern"
+        }
+      ],
+      "signature": "uint32_t PFScaleFactorForMaximumPixelCount(PFScaleFactorForMaximumPixelRef *ref)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [
+        "uint32_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "PFCount"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFMapIndexes": {
+      "name": "PFMapIndexes",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFMapIndexes(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFIsiOSPhotosApp": {
+      "name": "PFIsiOSPhotosApp",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFIsiOSPhotosApp(PFRef *ref)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFIsSpotlight": {
+      "name": "PFIsSpotlight",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFIsSpotlight(PFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.PhotosPosterBackdrop(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.PhotosPosterBackdrop(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.PhotosPosterBackdrop(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.Gyro1Up(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.Gyro1Up(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.Gyro1Up(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFReduce": {
+      "name": "PFReduce",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFReduce(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationQU(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationQU(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationQU(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFBitmaskDescription": {
+      "name": "PFBitmaskDescription",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFBitmaskDescription(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFMap": {
+      "name": "PFMap",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFMap(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.LemonadeDocuments(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.LemonadeDocuments(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.LemonadeDocuments(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFRectUnit": {
+      "name": "PFRectUnit",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFRectUnit(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "static PhotoFoundation.PhotosFeatureFlags.isAnyAlchemistV2FeatureEnabled.getter : Swift.Bool": {
+      "name": "static PhotoFoundation.PhotosFeatureFlags.isAnyAlchemistV2FeatureEnabled.getter : Swift.Bool",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ static PhotoFoundation.PhotosFeatureFlags.isAnyAlchemistV2FeatureEnabled.getter : Swift.Bool(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFKTraceSpatialPhotoGyroFilter": {
+      "name": "PFKTraceSpatialPhotoGyroFilter",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFKTraceSpatialPhotoGyroFilter(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFOSVariantHasInternalDiagnostics": {
+      "name": "PFOSVariantHasInternalDiagnostics",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFOSVariantRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFOSVariantHasInternalDiagnostics(PFOSVariantRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFIsPhotosAppAnyPlatform": {
+      "name": "PFIsPhotosAppAnyPlatform",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFIsPhotosAppAnyPlatform(PFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFOSVariantHasInternalUI": {
+      "name": "PFOSVariantHasInternalUI",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFOSVariantRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFOSVariantHasInternalUI(PFOSVariantRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.SharedCollections(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.SharedCollections(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.SharedCollections(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PhotoFoundation.PhotosFeatureFlags.feature.getter : Swift.StaticString": {
+      "name": "PhotoFoundation.PhotosFeatureFlags.feature.getter : Swift.StaticString",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PhotoFoundation.PhotosFeatureFlags.feature.getter : Swift.StaticString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFFind": {
+      "name": "PFFind",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFFind(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFObjc_implementingClassForInstanceMethod": {
+      "name": "PFObjc_implementingClassForInstanceMethod",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFObjc_implementingClassForInstanceMethod(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFReduceF": {
+      "name": "PFReduceF",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFReduceF(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFObjc_implementsInstanceMethod": {
+      "name": "PFObjc_implementsInstanceMethod",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFObjc_implementsInstanceMethod(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFIsLockScreenCamera": {
+      "name": "PFIsLockScreenCamera",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFIsLockScreenCamera(PFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFSizeLargerThanSize": {
+      "name": "PFSizeLargerThanSize",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFSizeLargerThanSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFStringVersionOfRunTimeLibrary": {
+      "name": "PFStringVersionOfRunTimeLibrary",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFStringVersionOfRunTimeLibrary(void)",
+      "verb": "execute",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFTestAddressSanitizer": {
+      "name": "PFTestAddressSanitizer",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFTestAddressSanitizer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationInternationalization(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationInternationalization(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationInternationalization(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.GyroPoster(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.GyroPoster(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.GyroPoster(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFSizeNull": {
+      "name": "PFSizeNull",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFSizeNull(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFIsCamera": {
+      "name": "PFIsCamera",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFIsCamera(PFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.GyroWidget(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.GyroWidget(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.GyroWidget(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFKTraceSpatialPhotoSetCameraTechnique": {
+      "name": "PFKTraceSpatialPhotoSetCameraTechnique",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFKTraceSpatialPhotoRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ PFKTraceSpatialPhotoSetCameraTechnique(PFKTraceSpatialPhotoRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFIsVisionPhotosApp": {
+      "name": "PFIsVisionPhotosApp",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFIsVisionPhotosApp(PFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFKTraceSpatialPhotoSetNeedsRender": {
+      "name": "PFKTraceSpatialPhotoSetNeedsRender",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFKTraceSpatialPhotoRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ PFKTraceSpatialPhotoSetNeedsRender(PFKTraceSpatialPhotoRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFMapDictionary": {
+      "name": "PFMapDictionary",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFMapDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFIsTVPhotosApp": {
+      "name": "PFIsTVPhotosApp",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFIsTVPhotosApp(PFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.AppleMusicExportRestrictionByPass(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.AppleMusicExportRestrictionByPass(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.AppleMusicExportRestrictionByPass(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFObjc_classIsSubclassOfClass": {
+      "name": "PFObjc_classIsSubclassOfClass",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFObjc_classRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFObjc_classIsSubclassOfClass(PFObjc_classRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFStringWithValidatedFormat": {
+      "name": "PFStringWithValidatedFormat",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFStringWithValidatedFormat(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFStringWithValidatedFormatAndLocale": {
+      "name": "PFStringWithValidatedFormatAndLocale",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFStringWithValidatedFormatAndLocale(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PhotoFoundation.PhotosFeatureFlags.domain.getter : Swift.StaticString": {
+      "name": "PhotoFoundation.PhotosFeatureFlags.domain.getter : Swift.StaticString",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PhotoFoundation.PhotosFeatureFlags.domain.getter : Swift.StaticString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFTestThreadSanitizer": {
+      "name": "PFTestThreadSanitizer",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFTestThreadSanitizer(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFFloatNan": {
+      "name": "PFFloatNan",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFFloatNan(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFBackendGetLog": {
+      "name": "PFBackendGetLog",
+      "framework": "PhotoFoundation",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFBackendRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ PFBackendGetLog(PFBackendRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFIsCameraAppAnyPlatform": {
+      "name": "PFIsCameraAppAnyPlatform",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFIsCameraAppAnyPlatform(PFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFObjc_enumerateClassNamesForImageHeader": {
+      "name": "PFObjc_enumerateClassNamesForImageHeader",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFObjc_enumerateClassNamesForImageHeader(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFLargestSalientAspectFilledCropRect": {
+      "name": "PFLargestSalientAspectFilledCropRect",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFLargestSalientAspectFilledCropRect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFRectByFlippingHorizontallyInRect": {
+      "name": "PFRectByFlippingHorizontallyInRect",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFRectByFlippingHorizontallyInRect(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFKTraceSpatialPhotoInvalidateCamera": {
+      "name": "PFKTraceSpatialPhotoInvalidateCamera",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFKTraceSpatialPhotoInvalidateCamera(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFProcessIsLaunchedToExecuteTests": {
+      "name": "PFProcessIsLaunchedToExecuteTests",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFProcessRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFProcessIsLaunchedToExecuteTests(PFProcessRef *ref)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationPromptSuggestionDB(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationPromptSuggestionDB(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "memory_buffer"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationPromptSuggestionDB(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFIsCameraMessagesApp": {
+      "name": "PFIsCameraMessagesApp",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFIsCameraMessagesApp(PFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFStateCaptureGetLog": {
+      "name": "PFStateCaptureGetLog",
+      "framework": "PhotoFoundation",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFStateCaptureRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ PFStateCaptureGetLog(PFStateCaptureRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.RetailExperience(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.RetailExperience(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.RetailExperience(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.AssetResourceBackgroundUpload(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.AssetResourceBackgroundUpload(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.AssetResourceBackgroundUpload(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFExists": {
+      "name": "PFExists",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFExists(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFFilter": {
+      "name": "PFFilter",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFFilter(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFSizeWithAspectRatioFillingSize": {
+      "name": "PFSizeWithAspectRatioFillingSize",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFSizeWithAspectRatioFillingSize(void)",
+      "verb": "measure",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.Connections(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.Connections(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.Connections(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "enum case for PhotoFoundation.PhotosFeatureFlags.ShazamPublicEvents(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags": {
+      "name": "enum case for PhotoFoundation.PhotosFeatureFlags.ShazamPublicEvents(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ enum case for PhotoFoundation.PhotosFeatureFlags.ShazamPublicEvents(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFIsPreferences": {
+      "name": "PFIsPreferences",
+      "framework": "PhotoFoundation",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "PFRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool PFIsPreferences(PFRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFKTraceSpatialPhotoRenderStart": {
+      "name": "PFKTraceSpatialPhotoRenderStart",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFKTraceSpatialPhotoRenderStart(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFPhotosBackendLogSubsystem": {
+      "name": "PFPhotosBackendLogSubsystem",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFPhotosBackendLogSubsystem(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFKTraceSpatialPhotoRenderEnd": {
+      "name": "PFKTraceSpatialPhotoRenderEnd",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFKTraceSpatialPhotoRenderEnd(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "PFCrashWithErrno": {
+      "name": "PFCrashWithErrno",
+      "framework": "PhotoFoundation",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from PhotoFoundation"
+        }
+      ],
+      "signature": "void/*?*/ PFCrashWithErrno(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "gpu_compute": [
+      "PFKTraceSpatialPhotoRenderEnd",
+      "PFKTraceSpatialPhotoRenderStart",
+      "PFKTraceSpatialPhotoSetNeedsRender"
+    ],
+    "memory_buffer": [
+      "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationQU(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationMini(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationGenericLocation(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationWhimsicalPrompt(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationContextualPrompt(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationPromptSuggestionDB(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationInternationalization(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationTimeEventDisambiguation(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "enum case for PhotoFoundation.PhotosFeatureFlags.MemoryCreationPersonalEventsBeyondMeanings(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags"
+    ],
+    "cryptography": [
+      "enum case for PhotoFoundation.PhotosFeatureFlags.SharedCollections(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags",
+      "enum case for PhotoFoundation.PhotosFeatureFlags.ShazamPublicEvents(PhotoFoundation.PhotosFeatureFlags.Type) -> PhotoFoundation.PhotosFeatureFlags"
+    ],
+    "image_processing": [
+      "PFObjc_enumerateClassNamesForImageHeader",
+      "PFPhotoFoundationBinaryImageUUID",
+      "PFScaleFactorForMaximumPixelCount"
+    ],
+    "display_compositing": [
+      "PFIsLockScreenCamera"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

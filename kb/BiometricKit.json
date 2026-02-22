@@ -1,0 +1,854 @@
+{
+  "framework": "BiometricKit",
+  "functions": {
+    "RIESAdd": {
+      "name": "RIESAdd",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ RIESAdd(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "LoadRawImageAsPGM": {
+      "name": "LoadRawImageAsPGM",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ LoadRawImageAsPGM(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isTouchIDPlatform": {
+      "name": "isTouchIDPlatform",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ isTouchIDPlatform(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isTouchIDPlatformWithFailure": {
+      "name": "isTouchIDPlatformWithFailure",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ isTouchIDPlatformWithFailure(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RIESClear": {
+      "name": "RIESClear",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ RIESClear(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "absoluteToMiliseconds": {
+      "name": "absoluteToMiliseconds",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ absoluteToMiliseconds(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rotateBitmap90Data16": {
+      "name": "rotateBitmap90Data16",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ rotateBitmap90Data16(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dictionaryGetData": {
+      "name": "dictionaryGetData",
+      "framework": "BiometricKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "dictionaryRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ dictionaryGetData(dictionaryRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dictionaryGetBool": {
+      "name": "dictionaryGetBool",
+      "framework": "BiometricKit",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "dictionaryRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "bool/*?*/ dictionaryGetBool(dictionaryRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isInternalBuild": {
+      "name": "isInternalBuild",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ isInternalBuild(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AppendCommentToPGM": {
+      "name": "AppendCommentToPGM",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ AppendCommentToPGM(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RIESDelete": {
+      "name": "RIESDelete",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ RIESDelete(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isFaceIDPlatform": {
+      "name": "isFaceIDPlatform",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ isFaceIDPlatform(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RIESUpdate": {
+      "name": "RIESUpdate",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ RIESUpdate(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "roundMostSignificant": {
+      "name": "roundMostSignificant",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ roundMostSignificant(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dictionaryGetInteger": {
+      "name": "dictionaryGetInteger",
+      "framework": "BiometricKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "dictionaryRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ dictionaryGetInteger(dictionaryRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getCurrentUserID": {
+      "name": "getCurrentUserID",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ getCurrentUserID(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getSensorPatchVersion": {
+      "name": "getSensorPatchVersion",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ getSensorPatchVersion(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "isEphemeralMultiUser": {
+      "name": "isEphemeralMultiUser",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ isEphemeralMultiUser(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "nanosecondsToAbsolute": {
+      "name": "nanosecondsToAbsolute",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ nanosecondsToAbsolute(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "absoluteToNanoseconds": {
+      "name": "absoluteToNanoseconds",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ absoluteToNanoseconds(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RIESSave": {
+      "name": "RIESSave",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ RIESSave(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RIESInit": {
+      "name": "RIESInit",
+      "framework": "BiometricKit",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ RIESInit(void *buf, size_t size)",
+      "verb": "create",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_BKLogEventOrCode": {
+      "name": "_BKLogEventOrCode",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ _BKLogEventOrCode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogEvent": {
+      "name": "BKLogEvent",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ BKLogEvent(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SaveRawImageAsPGM": {
+      "name": "SaveRawImageAsPGM",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ SaveRawImageAsPGM(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "localizeAbsolute": {
+      "name": "localizeAbsolute",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ localizeAbsolute(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "rotateBitmap90Data8": {
+      "name": "rotateBitmap90Data8",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ rotateBitmap90Data8(void)",
+      "verb": "transform",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "dictionaryGetDouble": {
+      "name": "dictionaryGetDouble",
+      "framework": "BiometricKit",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "dictionaryRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ dictionaryGetDouble(dictionaryRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKErrorDomain": {
+      "name": "BKErrorDomain",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ BKErrorDomain(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "getBootArgs": {
+      "name": "getBootArgs",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ getBootArgs(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "BKLogCode": {
+      "name": "BKLogCode",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ BKLogCode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RIESLoad": {
+      "name": "RIESLoad",
+      "framework": "BiometricKit",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from BiometricKit"
+        }
+      ],
+      "signature": "void/*?*/ RIESLoad(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "image_processing": [
+      "LoadRawImageAsPGM",
+      "SaveRawImageAsPGM",
+      "rotateBitmap90Data16",
+      "rotateBitmap90Data8"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

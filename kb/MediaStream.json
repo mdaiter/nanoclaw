@@ -1,0 +1,296 @@
+{
+  "framework": "MediaStream",
+  "functions": {
+    "MSMediaStreamInitialize": {
+      "name": "MSMediaStreamInitialize",
+      "framework": "MediaStream",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaStream"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ MSMediaStreamInitialize(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSAlbumSharingInitialize"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "XPCSetLogBlocks": {
+      "name": "XPCSetLogBlocks",
+      "framework": "MediaStream",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "XPCRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaStream"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ XPCSetLogBlocks(XPCRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSMSLocalizedString": {
+      "name": "MSMSLocalizedString",
+      "framework": "MediaStream",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaStream"
+        }
+      ],
+      "signature": "void/*?*/ MSMSLocalizedString(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_XPCShouldLog": {
+      "name": "_XPCShouldLog",
+      "framework": "MediaStream",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaStream"
+        }
+      ],
+      "signature": "void/*?*/ _XPCShouldLog(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MSAlbumSharingInitialize": {
+      "name": "MSAlbumSharingInitialize",
+      "framework": "MediaStream",
+      "return_type": "int",
+      "parameters": [
+        {
+          "name": "buf",
+          "type_name": "void",
+          "is_pointer": true
+        },
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaStream"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Initialize pattern"
+        }
+      ],
+      "signature": "int/*?*/ MSAlbumSharingInitialize(void *buf, size_t size)",
+      "verb": "unknown",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "int"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MSMediaStreamInitialize"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_MSASSetDaemon": {
+      "name": "_MSASSetDaemon",
+      "framework": "MediaStream",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_MSASRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaStream"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _MSASSetDaemon(_MSASRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_MSSetDaemon": {
+      "name": "_MSSetDaemon",
+      "framework": "MediaStream",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_MSRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaStream"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _MSSetDaemon(_MSRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_XPCLog": {
+      "name": "_XPCLog",
+      "framework": "MediaStream",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from MediaStream"
+        }
+      ],
+      "signature": "void/*?*/ _XPCLog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "MSAlbumSharingInitialize"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

@@ -1,0 +1,4793 @@
+{
+  "framework": "AOSAccounts",
+  "functions": {
+    "MMAccountIsPaid": {
+      "name": "MMAccountIsPaid",
+      "framework": "AOSAccounts",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MMAccountIsPaid(MMAccountRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountSetProperty": {
+      "name": "MMAccountSetProperty",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMAccountRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountSetProperty(MMAccountRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopyLoggedInAccountFromAccounts": {
+      "name": "MMCopyLoggedInAccountFromAccounts",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopyLoggedInAccountFromAccounts(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyAccountUUID",
+        "MMCopyAccountAlternateDSID",
+        "MMCopyAccountIDFromMailAlias",
+        "MMCopyAccountIDInPlist",
+        "MMCopyAccountDSID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "iCloudHandlePushNotification": {
+      "name": "iCloudHandlePushNotification",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ iCloudHandlePushNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMSetACAccountTermsFlag": {
+      "name": "MMSetACAccountTermsFlag",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MMSetACAccountTermsFlag(MMRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMServiceSetProperty": {
+      "name": "MMServiceSetProperty",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMServiceRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MMServiceSetProperty(MMServiceRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "kiCloudAccountRenewCredentialsDSID": {
+      "name": "kiCloudAccountRenewCredentialsDSID",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ kiCloudAccountRenewCredentialsDSID(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountRefreshProperty": {
+      "name": "MMAccountRefreshProperty",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountRefreshProperty(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMIsServiceIDInBag": {
+      "name": "MMIsServiceIDInBag",
+      "framework": "AOSAccounts",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MMIsServiceIDInBag(MMRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountCopyGSRequestHeaders": {
+      "name": "MMAccountCopyGSRequestHeaders",
+      "framework": "AOSAccounts",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "size",
+          "type_name": "size_t",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Allocate pattern"
+        }
+      ],
+      "signature": "void */*?*/ MMAccountCopyGSRequestHeaders(size_t size)",
+      "verb": "read",
+      "input_formats": [
+        "size_t"
+      ],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_MMRemoteServiceSetEnabled": {
+      "name": "_MMRemoteServiceSetEnabled",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_MMRemoteServiceRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _MMRemoteServiceSetEnabled(_MMRemoteServiceRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMServiceSetPropertyOnACAccount": {
+      "name": "MMServiceSetPropertyOnACAccount",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMServiceRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MMServiceSetPropertyOnACAccount(MMServiceRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CopyAccountValue": {
+      "name": "_CopyAccountValue",
+      "framework": "AOSAccounts",
+      "return_type": "_Ref",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_Ref/*?*/ _CopyAccountValue(_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CopyAccountPrefs"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "kiCloudAccountTermsContext": {
+      "name": "kiCloudAccountTermsContext",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ kiCloudAccountTermsContext(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_RemoveAccountInfo": {
+      "name": "_RemoveAccountInfo",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _RemoveAccountInfo(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopyAccountUUID": {
+      "name": "MMCopyAccountUUID",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopyAccountUUID(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyLoggedInAccountFromAccounts",
+        "MMCopyAccountAlternateDSID",
+        "MMCopyAccountIDFromMailAlias",
+        "MMCopyAccountIDInPlist",
+        "MMCopyAccountDSID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CopyAOSValueFromMMDomain": {
+      "name": "CopyAOSValueFromMMDomain",
+      "framework": "AOSAccounts",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "void */*?*/ CopyAOSValueFromMMDomain(void * *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountIsManagedAppleID": {
+      "name": "MMAccountIsManagedAppleID",
+      "framework": "AOSAccounts",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MMAccountIsManagedAppleID(MMAccountRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountRefreshLoggedIn": {
+      "name": "MMAccountRefreshLoggedIn",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountRefreshLoggedIn(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSLogSafeDictionaryForDictionary": {
+      "name": "AOSLogSafeDictionaryForDictionary",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ AOSLogSafeDictionaryForDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMIsEnabledOnACAccount": {
+      "name": "MMIsEnabledOnACAccount",
+      "framework": "AOSAccounts",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MMIsEnabledOnACAccount(MMRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMValidateAccount": {
+      "name": "MMValidateAccount",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMValidateAccount(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ReportAuthErrorNotification": {
+      "name": "ReportAuthErrorNotification",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ ReportAuthErrorNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAOSAccountStatusLoginNotification": {
+      "name": "MMAOSAccountStatusLoginNotification",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAOSAccountStatusLoginNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMChangeSMSTarget": {
+      "name": "MMChangeSMSTarget",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMChangeSMSTarget(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopyAccountAlternateDSID": {
+      "name": "MMCopyAccountAlternateDSID",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopyAccountAlternateDSID(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyLoggedInAccountFromAccounts",
+        "MMCopyAccountUUID",
+        "MMCopyAccountIDFromMailAlias",
+        "MMCopyAccountIDInPlist",
+        "MMCopyAccountDSID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopyAccountIDFromMailAlias": {
+      "name": "MMCopyAccountIDFromMailAlias",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopyAccountIDFromMailAlias(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyLoggedInAccountFromAccounts",
+        "MMCopyAccountUUID",
+        "MMCopyAccountAlternateDSID",
+        "MMCopyAccountIDInPlist",
+        "MMCopyAccountDSID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAOSServiceStatusKey": {
+      "name": "MMAOSServiceStatusKey",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAOSServiceStatusKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMRetrieveQuotaStorageURL": {
+      "name": "MMRetrieveQuotaStorageURL",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMRetrieveQuotaStorageURL(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountUpdateName": {
+      "name": "MMAccountUpdateName",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountUpdateName(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopyAccountIDInPlist": {
+      "name": "MMCopyAccountIDInPlist",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopyAccountIDInPlist(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyLoggedInAccountFromAccounts",
+        "MMCopyAccountUUID",
+        "MMCopyAccountAlternateDSID",
+        "MMCopyAccountIDFromMailAlias",
+        "MMCopyAccountDSID"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAOSAccountStatusLogoutNotification": {
+      "name": "MMAOSAccountStatusLogoutNotification",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAOSAccountStatusLogoutNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountCopyPassword": {
+      "name": "MMAccountCopyPassword",
+      "framework": "AOSAccounts",
+      "return_type": "MMAccountRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMAccountRef/*?*/ MMAccountCopyPassword(MMAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMAccountCopyDisplayName",
+        "MMAccountCopyFormattedUsername",
+        "MMAccountCopyProperties",
+        "MMAccountCopyServiceIDs",
+        "MMAccountCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountCopyDisplayName": {
+      "name": "MMAccountCopyDisplayName",
+      "framework": "AOSAccounts",
+      "return_type": "MMAccountRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMAccountRef/*?*/ MMAccountCopyDisplayName(MMAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMAccountCopyPassword",
+        "MMAccountCopyFormattedUsername",
+        "MMAccountCopyProperties",
+        "MMAccountCopyServiceIDs",
+        "MMAccountCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMServiceIsAvailable": {
+      "name": "MMServiceIsAvailable",
+      "framework": "AOSAccounts",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMServiceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MMServiceIsAvailable(MMServiceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_kLoggedInKey": {
+      "name": "_kLoggedInKey",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _kLoggedInKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMServiceSetEnabledWithOption": {
+      "name": "MMServiceSetEnabledWithOption",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMServiceRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MMServiceSetEnabledWithOption(MMServiceRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountsReadShouldShowBeforeWebClientIsReady": {
+      "name": "_AOSAccountsReadShouldShowBeforeWebClientIsReady",
+      "framework": "AOSAccounts",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSAccountsReadShouldShowBeforeWebClientRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _AOSAccountsReadShouldShowBeforeWebClientIsReady(_AOSAccountsReadShouldShowBeforeWebClientRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMServiceRemoveProperty": {
+      "name": "MMServiceRemoveProperty",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMServiceRemoveProperty(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "createAEDescWithAEActionAndAccountID": {
+      "name": "createAEDescWithAEActionAndAccountID",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ createAEDescWithAEActionAndAccountID(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountCopyFormattedUsername": {
+      "name": "MMAccountCopyFormattedUsername",
+      "framework": "AOSAccounts",
+      "return_type": "MMAccountRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMAccountRef/*?*/ MMAccountCopyFormattedUsername(MMAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMAccountCopyPassword",
+        "MMAccountCopyDisplayName",
+        "MMAccountCopyProperties",
+        "MMAccountCopyServiceIDs",
+        "MMAccountCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSLogging": {
+      "name": "_AOSLogging",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _AOSLogging(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAOSServiceDisabled": {
+      "name": "MMAOSServiceDisabled",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAOSServiceDisabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountLogout": {
+      "name": "MMAccountLogout",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountLogout(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountIsVetted": {
+      "name": "MMAccountIsVetted",
+      "framework": "AOSAccounts",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MMAccountIsVetted(MMAccountRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountLogin": {
+      "name": "MMAccountLogin",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountLogin(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopyAccountDSID": {
+      "name": "MMCopyAccountDSID",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopyAccountDSID(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyLoggedInAccountFromAccounts",
+        "MMCopyAccountUUID",
+        "MMCopyAccountAlternateDSID",
+        "MMCopyAccountIDFromMailAlias",
+        "MMCopyAccountIDInPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_kFMMLostModeTokenKey": {
+      "name": "_kFMMLostModeTokenKey",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _kFMMLostModeTokenKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_updateFMMLostModeToken": {
+      "name": "_updateFMMLostModeToken",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _updateFMMLostModeToken(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "kiCloudAccountRenewCredentialsComplete": {
+      "name": "kiCloudAccountRenewCredentialsComplete",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ kiCloudAccountRenewCredentialsComplete(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMResendVerificationEmail": {
+      "name": "MMResendVerificationEmail",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMResendVerificationEmail(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountSetPassword": {
+      "name": "MMAccountSetPassword",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMAccountRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountSetPassword(MMAccountRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMShouldAccountBePrimary": {
+      "name": "MMShouldAccountBePrimary",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMShouldAccountBePrimary(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_kServicesKey": {
+      "name": "_kServicesKey",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _kServicesKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountsLog": {
+      "name": "_AOSAccountsLog",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountsLog(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMServiceCopyProperty": {
+      "name": "MMServiceCopyProperty",
+      "framework": "AOSAccounts",
+      "return_type": "MMServiceRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMServiceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMServiceRef/*?*/ MMServiceCopyProperty(MMServiceRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMServiceRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMServiceCopyProperties"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopyFamilyDetails": {
+      "name": "MMCopyFamilyDetails",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopyFamilyDetails(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyLoggedInAccountFromAccounts",
+        "MMCopyAccountUUID",
+        "MMCopyAccountAlternateDSID",
+        "MMCopyAccountIDFromMailAlias",
+        "MMCopyAccountIDInPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountsReadQuotaNotifyTime": {
+      "name": "_AOSAccountsReadQuotaNotifyTime",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountsReadQuotaNotifyTime(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_kEnabledKey": {
+      "name": "_kEnabledKey",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _kEnabledKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountAIDAToken": {
+      "name": "MMAccountAIDAToken",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountAIDAToken(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMUpdateiCloudAccountMgr": {
+      "name": "MMUpdateiCloudAccountMgr",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMUpdateiCloudAccountMgr(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountCopyProperties": {
+      "name": "MMAccountCopyProperties",
+      "framework": "AOSAccounts",
+      "return_type": "MMAccountRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMAccountRef/*?*/ MMAccountCopyProperties(MMAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMAccountCopyPassword",
+        "MMAccountCopyDisplayName",
+        "MMAccountCopyFormattedUsername",
+        "MMAccountCopyServiceIDs",
+        "MMAccountCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountCopyServiceIDs": {
+      "name": "MMAccountCopyServiceIDs",
+      "framework": "AOSAccounts",
+      "return_type": "MMAccountRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMAccountRef/*?*/ MMAccountCopyServiceIDs(MMAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMAccountCopyPassword",
+        "MMAccountCopyDisplayName",
+        "MMAccountCopyFormattedUsername",
+        "MMAccountCopyProperties",
+        "MMAccountCreate"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMRetrieveRampState": {
+      "name": "MMRetrieveRampState",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "gpu_compute"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMRetrieveRampState(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMVerifyAccountOLD": {
+      "name": "MMVerifyAccountOLD",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMVerifyAccountOLD(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "canLogAtLevel": {
+      "name": "canLogAtLevel",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ canLogAtLevel(void)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountCreate": {
+      "name": "MMAccountCreate",
+      "framework": "AOSAccounts",
+      "return_type": "MMAccountRef",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Create pattern"
+        }
+      ],
+      "signature": "MMAccountRef MMAccountCreate(void)",
+      "verb": "create",
+      "input_formats": [],
+      "output_formats": [
+        "MMAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMAccountCopyPassword",
+        "MMAccountCopyDisplayName",
+        "MMAccountCopyFormattedUsername",
+        "MMAccountCopyProperties",
+        "MMAccountCopyServiceIDs"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountRemoveProperty": {
+      "name": "MMAccountRemoveProperty",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountRemoveProperty(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCompleteSignUpByDictionaryNoSave": {
+      "name": "MMCompleteSignUpByDictionaryNoSave",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMCompleteSignUpByDictionaryNoSave(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCompleteSignUpByDictionaryOLD": {
+      "name": "MMCompleteSignUpByDictionaryOLD",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMCompleteSignUpByDictionaryOLD(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMRegisterWithICloud": {
+      "name": "MMRegisterWithICloud",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ MMRegisterWithICloud(MMRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMRegisterCredentials"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMServiceIsEnabledForDisplay": {
+      "name": "MMServiceIsEnabledForDisplay",
+      "framework": "AOSAccounts",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMServiceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MMServiceIsEnabledForDisplay(MMServiceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CopyAccountValueForAltDSID": {
+      "name": "CopyAccountValueForAltDSID",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ CopyAccountValueForAltDSID(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopyMailActivationInfo": {
+      "name": "MMCopyMailActivationInfo",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopyMailActivationInfo(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyLoggedInAccountFromAccounts",
+        "MMCopyAccountUUID",
+        "MMCopyAccountAlternateDSID",
+        "MMCopyAccountIDFromMailAlias",
+        "MMCopyAccountIDInPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountCopyPushToken": {
+      "name": "MMAccountCopyPushToken",
+      "framework": "AOSAccounts",
+      "return_type": "MMAccountRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMAccountRef/*?*/ MMAccountCopyPushToken(MMAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMAccountCopyPassword",
+        "MMAccountCopyDisplayName",
+        "MMAccountCopyFormattedUsername",
+        "MMAccountCopyProperties",
+        "MMAccountCopyServiceIDs"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AuthenticateAccount": {
+      "name": "AuthenticateAccount",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ AuthenticateAccount(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMIsDataclassAvailable": {
+      "name": "MMIsDataclassAvailable",
+      "framework": "AOSAccounts",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MMIsDataclassAvailable(MMRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "copyAccountInfoFromACAccount": {
+      "name": "copyAccountInfoFromACAccount",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ copyAccountInfoFromACAccount(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopyAccountIDs": {
+      "name": "MMCopyAccountIDs",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopyAccountIDs(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyLoggedInAccountFromAccounts",
+        "MMCopyAccountUUID",
+        "MMCopyAccountAlternateDSID",
+        "MMCopyAccountIDFromMailAlias",
+        "MMCopyAccountIDInPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_kMailKey": {
+      "name": "_kMailKey",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _kMailKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "renewCredentialsOnACAccount": {
+      "name": "renewCredentialsOnACAccount",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ renewCredentialsOnACAccount(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountLoginReAuthWithContext": {
+      "name": "MMAccountLoginReAuthWithContext",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountLoginReAuthWithContext(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMSendSMSChallenge": {
+      "name": "MMSendSMSChallenge",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMSendSMSChallenge(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountSetDisplayName": {
+      "name": "MMAccountSetDisplayName",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMAccountRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "const char *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "display_compositing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountSetDisplayName(MMAccountRef *ref, const char * *value)",
+      "verb": "write",
+      "input_formats": [
+        "const char * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AccountIsPrimary": {
+      "name": "_AccountIsPrimary",
+      "framework": "AOSAccounts",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _AccountIsPrimary(_AccountRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopyDSIDMap": {
+      "name": "MMCopyDSIDMap",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopyDSIDMap(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyLoggedInAccountFromAccounts",
+        "MMCopyAccountUUID",
+        "MMCopyAccountAlternateDSID",
+        "MMCopyAccountIDFromMailAlias",
+        "MMCopyAccountIDInPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopyMailAliasForAccount": {
+      "name": "MMCopyMailAliasForAccount",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopyMailAliasForAccount(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyLoggedInAccountFromAccounts",
+        "MMCopyAccountUUID",
+        "MMCopyAccountAlternateDSID",
+        "MMCopyAccountIDFromMailAlias",
+        "MMCopyAccountIDInPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMServiceIsEnabled": {
+      "name": "MMServiceIsEnabled",
+      "framework": "AOSAccounts",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMServiceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MMServiceIsEnabled(MMServiceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCompleteSignUp": {
+      "name": "MMCompleteSignUp",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMCompleteSignUp(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSAccountsSetLogLevel": {
+      "name": "AOSAccountsSetLogLevel",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSAccountsRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ AOSAccountsSetLogLevel(AOSAccountsRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountCopyGSToken": {
+      "name": "MMAccountCopyGSToken",
+      "framework": "AOSAccounts",
+      "return_type": "MMAccountRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMAccountRef/*?*/ MMAccountCopyGSToken(MMAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMAccountCopyPassword",
+        "MMAccountCopyDisplayName",
+        "MMAccountCopyFormattedUsername",
+        "MMAccountCopyProperties",
+        "MMAccountCopyServiceIDs"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CopyAOSValue": {
+      "name": "CopyAOSValue",
+      "framework": "AOSAccounts",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "void */*?*/ CopyAOSValue(void * *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountsReadIsFamilyAllowed": {
+      "name": "_AOSAccountsReadIsFamilyAllowed",
+      "framework": "AOSAccounts",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_AOSAccountsReadRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool _AOSAccountsReadIsFamilyAllowed(_AOSAccountsReadRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMServiceIsInactiveOrEnabled": {
+      "name": "MMServiceIsInactiveOrEnabled",
+      "framework": "AOSAccounts",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMServiceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MMServiceIsInactiveOrEnabled(MMServiceRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMEnableKeychainBackup": {
+      "name": "MMEnableKeychainBackup",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMEnableKeychainBackup(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "SetAccountValueForAltDSID": {
+      "name": "SetAccountValueForAltDSID",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ SetAccountValueForAltDSID(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMRecoverKeychainBackup": {
+      "name": "MMRecoverKeychainBackup",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMRecoverKeychainBackup(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSDebugUserDictValueForKey": {
+      "name": "AOSDebugUserDictValueForKey",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ AOSDebugUserDictValueForKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMServiceSetEnabledWithCompletion": {
+      "name": "MMServiceSetEnabledWithCompletion",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMServiceRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MMServiceSetEnabledWithCompletion(MMServiceRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ReportAuthError": {
+      "name": "ReportAuthError",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ ReportAuthError(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAOSAccountStatusConfigInfoUpdatedNotification": {
+      "name": "MMAOSAccountStatusConfigInfoUpdatedNotification",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAOSAccountStatusConfigInfoUpdatedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountUpdateGSTokens": {
+      "name": "MMAccountUpdateGSTokens",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountUpdateGSTokens(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_MMServiceSetEnabled": {
+      "name": "_MMServiceSetEnabled",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_MMServiceRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _MMServiceSetEnabled(_MMServiceRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopyFamilyEligibility": {
+      "name": "MMCopyFamilyEligibility",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopyFamilyEligibility(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyLoggedInAccountFromAccounts",
+        "MMCopyAccountUUID",
+        "MMCopyAccountAlternateDSID",
+        "MMCopyAccountIDFromMailAlias",
+        "MMCopyAccountIDInPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopySignUpInfoForMB": {
+      "name": "MMCopySignUpInfoForMB",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopySignUpInfoForMB(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyLoggedInAccountFromAccounts",
+        "MMCopyAccountUUID",
+        "MMCopyAccountAlternateDSID",
+        "MMCopyAccountIDFromMailAlias",
+        "MMCopyAccountIDInPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopyMeCardImageFromiCloud": {
+      "name": "MMCopyMeCardImageFromiCloud",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [
+        "image_processing"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopyMeCardImageFromiCloud(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyLoggedInAccountFromAccounts",
+        "MMCopyAccountUUID",
+        "MMCopyAccountAlternateDSID",
+        "MMCopyAccountIDFromMailAlias",
+        "MMCopyAccountIDInPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMRelayCookie": {
+      "name": "MMRelayCookie",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMRelayCookie(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountIsLoggedIn": {
+      "name": "MMAccountIsLoggedIn",
+      "framework": "AOSAccounts",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MMAccountIsLoggedIn(MMAccountRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountPostQuotaLimitUserNotification": {
+      "name": "MMAccountPostQuotaLimitUserNotification",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountPostQuotaLimitUserNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_CopyAccountPrefs": {
+      "name": "_CopyAccountPrefs",
+      "framework": "AOSAccounts",
+      "return_type": "_Ref",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_Ref",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "_Ref/*?*/ _CopyAccountPrefs(_Ref *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "_Ref"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "_CopyAccountValue"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMServiceCopyProperties": {
+      "name": "MMServiceCopyProperties",
+      "framework": "AOSAccounts",
+      "return_type": "MMServiceRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMServiceRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMServiceRef/*?*/ MMServiceCopyProperties(MMServiceRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMServiceRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMServiceCopyProperty"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountDeactivate": {
+      "name": "MMAccountDeactivate",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountDeactivate(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMSetMeCardToiCloud": {
+      "name": "MMSetMeCardToiCloud",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MMSetMeCardToiCloud(MMRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "ParseAccountInfo": {
+      "name": "ParseAccountInfo",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ ParseAccountInfo(void)",
+      "verb": "decode",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SetAccountValue": {
+      "name": "_SetAccountValue",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_Ref",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _SetAccountValue(_Ref *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "CopyAccountPrefsForAltDSID": {
+      "name": "CopyAccountPrefsForAltDSID",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ CopyAccountPrefsForAltDSID(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAOSAccountStatusVettingChangedNotification": {
+      "name": "MMAOSAccountStatusVettingChangedNotification",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAOSAccountStatusVettingChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMDisableKeychainBackup": {
+      "name": "MMDisableKeychainBackup",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMDisableKeychainBackup(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_AOSAccountsReadUseDemodLookMeUpByEmail": {
+      "name": "_AOSAccountsReadUseDemodLookMeUpByEmail",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _AOSAccountsReadUseDemodLookMeUpByEmail(void)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMInvokeDelegatesWithDictionary": {
+      "name": "MMInvokeDelegatesWithDictionary",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMInvokeDelegatesWithDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountLogoutWithOptions": {
+      "name": "MMAccountLogoutWithOptions",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountLogoutWithOptions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_kFMMTokenKey": {
+      "name": "_kFMMTokenKey",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _kFMMTokenKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_updateAuthKitOfDelete": {
+      "name": "_updateAuthKitOfDelete",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _updateAuthKitOfDelete(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMMBPostAquaSessionSetup": {
+      "name": "MMMBPostAquaSessionSetup",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMMBPostAquaSessionRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MMMBPostAquaSessionSetup(MMMBPostAquaSessionRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_kiDiskSyncKey": {
+      "name": "_kiDiskSyncKey",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _kiDiskSyncKey(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMGetDeviceUDID": {
+      "name": "MMGetDeviceUDID",
+      "framework": "AOSAccounts",
+      "return_type": "uint64_t",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "uint64_t/*?*/ MMGetDeviceUDID(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "uint64_t"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMServiceSetPropertyWithCompletion": {
+      "name": "MMServiceSetPropertyWithCompletion",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMServiceRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MMServiceSetPropertyWithCompletion(MMServiceRef *ref, void * *value)",
+      "verb": "write",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountCopyProperty": {
+      "name": "MMAccountCopyProperty",
+      "framework": "AOSAccounts",
+      "return_type": "MMAccountRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMAccountRef/*?*/ MMAccountCopyProperty(MMAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMAccountCopyPassword",
+        "MMAccountCopyDisplayName",
+        "MMAccountCopyFormattedUsername",
+        "MMAccountCopyProperties",
+        "MMAccountCopyServiceIDs"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopySignUpInfo": {
+      "name": "MMCopySignUpInfo",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopySignUpInfo(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyLoggedInAccountFromAccounts",
+        "MMCopyAccountUUID",
+        "MMCopyAccountAlternateDSID",
+        "MMCopyAccountIDFromMailAlias",
+        "MMCopyAccountIDInPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMRegisterCredentials": {
+      "name": "MMRegisterCredentials",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "callback",
+          "type_name": "void (*)(void *)",
+          "is_pointer": false
+        },
+        {
+          "name": "context",
+          "type_name": "void",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.6,
+          "detail": "matched Callback pattern"
+        }
+      ],
+      "signature": "void/*?*/ MMRegisterCredentials(MMRef *ref, void (*)(void *) callback, void *context)",
+      "verb": "observe",
+      "input_formats": [
+        "void (*)(void *)"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMRegisterWithICloud"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAOSServiceEnabled": {
+      "name": "MMAOSServiceEnabled",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAOSServiceEnabled(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMRemoveAccountFromDefaults": {
+      "name": "MMRemoveAccountFromDefaults",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMRemoveAccountFromDefaults(void)",
+      "verb": "observe",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SendServiceNotificationWithInfo": {
+      "name": "_SendServiceNotificationWithInfo",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _SendServiceNotificationWithInfo(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMGetMCXKeyForDataclass": {
+      "name": "MMGetMCXKeyForDataclass",
+      "framework": "AOSAccounts",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ MMGetMCXKeyForDataclass(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMDeleteUserAccount": {
+      "name": "MMDeleteUserAccount",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMDeleteUserAccount(void)",
+      "verb": "destroy",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMIsSignupAllowed": {
+      "name": "MMIsSignupAllowed",
+      "framework": "AOSAccounts",
+      "return_type": "bool",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.85,
+          "detail": "matched Predicate pattern"
+        }
+      ],
+      "signature": "bool MMIsSignupAllowed(MMRef *ref)",
+      "verb": "predicate",
+      "input_formats": [],
+      "output_formats": [
+        "bool"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCompleteSignUpByDictionary": {
+      "name": "MMCompleteSignUpByDictionary",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMCompleteSignUpByDictionary(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMServiceSetEnabled": {
+      "name": "MMServiceSetEnabled",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMServiceRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MMServiceSetEnabled(MMServiceRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMVerifyAccount": {
+      "name": "MMVerifyAccount",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMVerifyAccount(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMUpdateACAccount": {
+      "name": "MMUpdateACAccount",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMUpdateACAccount(void)",
+      "verb": "write",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountAIDAServiceList": {
+      "name": "MMAccountAIDAServiceList",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountAIDAServiceList(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountLoginReAuth": {
+      "name": "MMAccountLoginReAuth",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAccountLoginReAuth(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAccountCopyMembershipInfo": {
+      "name": "MMAccountCopyMembershipInfo",
+      "framework": "AOSAccounts",
+      "return_type": "MMAccountRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMAccountRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMAccountRef/*?*/ MMAccountCopyMembershipInfo(MMAccountRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMAccountRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMAccountCopyPassword",
+        "MMAccountCopyDisplayName",
+        "MMAccountCopyFormattedUsername",
+        "MMAccountCopyProperties",
+        "MMAccountCopyServiceIDs"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_kMacSettingSyncKey": {
+      "name": "_kMacSettingSyncKey",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "_kMacRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "void *",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ _kMacSettingSyncKey(_kMacRef *ref, void * *value)",
+      "verb": "unknown",
+      "input_formats": [
+        "void * *"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_SendServiceNotification": {
+      "name": "_SendServiceNotification",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _SendServiceNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMAOSServiceStatusChangedNotification": {
+      "name": "MMAOSServiceStatusChangedNotification",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMAOSServiceStatusChangedNotification(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "keychainErrorCodeFromSecureBackupErrorCode": {
+      "name": "keychainErrorCodeFromSecureBackupErrorCode",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ keychainErrorCodeFromSecureBackupErrorCode(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "_handlePreSignedOutActions": {
+      "name": "_handlePreSignedOutActions",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ _handlePreSignedOutActions(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopyLoggedInAccount": {
+      "name": "MMCopyLoggedInAccount",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopyLoggedInAccount(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyLoggedInAccountFromAccounts",
+        "MMCopyAccountUUID",
+        "MMCopyAccountAlternateDSID",
+        "MMCopyAccountIDFromMailAlias",
+        "MMCopyAccountIDInPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMSetEnabledOnACAccount": {
+      "name": "MMSetEnabledOnACAccount",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        },
+        {
+          "name": "value",
+          "type_name": "bool",
+          "is_pointer": false
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Set pattern"
+        }
+      ],
+      "signature": "void/*?*/ MMSetEnabledOnACAccount(MMRef *ref, bool value)",
+      "verb": "write",
+      "input_formats": [
+        "bool"
+      ],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMServiceReconcileStatus": {
+      "name": "MMServiceReconcileStatus",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ MMServiceReconcileStatus(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "AOSAccountsGetLogLevel": {
+      "name": "AOSAccountsGetLogLevel",
+      "framework": "AOSAccounts",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "AOSAccountsRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.7,
+          "detail": "matched Get pattern"
+        }
+      ],
+      "signature": "void */*?*/ AOSAccountsGetLogLevel(AOSAccountsRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "void *"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "MMCopyAccountType": {
+      "name": "MMCopyAccountType",
+      "framework": "AOSAccounts",
+      "return_type": "MMRef",
+      "parameters": [
+        {
+          "name": "ref",
+          "type_name": "MMRef",
+          "is_pointer": true
+        }
+      ],
+      "capabilities": [],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        },
+        {
+          "kind": "NamingInference",
+          "confidence": 0.75,
+          "detail": "matched Copy pattern"
+        }
+      ],
+      "signature": "MMRef/*?*/ MMCopyAccountType(MMRef *ref)",
+      "verb": "read",
+      "input_formats": [],
+      "output_formats": [
+        "MMRef"
+      ],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [
+        "MMCopyLoggedInAccountFromAccounts",
+        "MMCopyAccountUUID",
+        "MMCopyAccountAlternateDSID",
+        "MMCopyAccountIDFromMailAlias",
+        "MMCopyAccountIDInPlist"
+      ],
+      "async_pattern": false,
+      "semantic_hints": []
+    },
+    "RefreshAccount": {
+      "name": "RefreshAccount",
+      "framework": "AOSAccounts",
+      "return_type": "void",
+      "parameters": [],
+      "capabilities": [
+        "cryptography"
+      ],
+      "evidence": [
+        {
+          "kind": "DyldExport",
+          "confidence": 0.8,
+          "detail": "exported from AOSAccounts"
+        }
+      ],
+      "signature": "void/*?*/ RefreshAccount(void)",
+      "verb": "unknown",
+      "input_formats": [],
+      "output_formats": [],
+      "class_hierarchy": [],
+      "protocols": [],
+      "related": [],
+      "async_pattern": false,
+      "semantic_hints": []
+    }
+  },
+  "capabilities": {
+    "cryptography": [
+      "RefreshAccount"
+    ],
+    "display_compositing": [
+      "MMAccountCopyDisplayName",
+      "MMAccountSetDisplayName",
+      "MMServiceIsEnabledForDisplay"
+    ],
+    "gpu_compute": [
+      "MMRetrieveRampState"
+    ],
+    "image_processing": [
+      "MMCopyMeCardImageFromiCloud"
+    ]
+  },
+  "protocols": [],
+  "type_aliases": {}
+}

@@ -895,3 +895,156 @@
 - **AppSSOCore (11 functions)**: App Single Sign-On core - Authorization options (no UI), credential handling, response processing, impersonation credentials, error domains/subcodes
 - **ParsecSubscriptionServiceSupport (2 functions)**: Minimal subscription support - Version string/number only
 
+### Batch 44 (Current Session) ✅ - PHOTOS & TIPS FRAMEWORKS
+1. ✅ CoreSuggestions (278 functions) - **NEW** - Suggestions framework, event extraction, contact details
+2. ✅ PhotosImagingFoundation (382 functions) - **NEW** - **MASSIVE** - Photo adjustments, image processing, Smart Tone/Color
+3. ✅ PhotoFoundation (111 functions, 1 Swift type) - **NEW** - Photo foundation utilities, feature flags
+4. ✅ PhotosFormats (559 functions) - **NEW** - **MASSIVE** - Parallax, story recipes, client-side encryption, scene taxonomy
+5. ✅ MediaConversionService (103 functions) - **NEW** - Media format conversion, BlastDoor integration
+6. ❌ VoiceShortcutClient (error: undefined)
+7. ✅ TipsCore (0 functions, 55 Swift types, 2 protocols) - **NEW** - **MASSIVE** Swift-only - Tips framework, search, analytics
+8. ✅ Transparency (0 functions, 19 Swift types) - **NEW** - Key Transparency, opt-in validation, repair
+9. ✅ CoreParsec (0 functions, 35 Swift types, 20 protocols) - **NEW** - **ALREADY INDEXED** - Parsec search client (duplicate from Batch 43)
+10. ✅ SecureTransactionService (20 functions, 2 Swift types) - **NEW** - NFC transactions, TNEP, alternative carrier
+11. ✅ LocalAuthenticationCore (2,458 functions, 82 Swift types, 17 protocols) - **NEW** - **ENORMOUS** - Touch ID/Face ID core, user management, ACM contexts
+12. ✅ BiometricKit (33 functions) - **NEW** - Touch ID/Face ID platform detection, image rotation
+13. ✅ SystemPolicy (104 functions) - **NEW** - Code signing validation, quarantine, kernel extension checks
+14. ✅ UserManagement (2 functions) - **NEW** - User manager error domain
+
+## Statistics Update - AUTHENTICATION & PHOTOS MILESTONE!
+- **Total Frameworks Indexed:** ~407
+- **Total Functions Discovered:** ~263,334+
+- **Progress:** 16.7% of 2,439 total frameworks 🎉
+- **Largest Frameworks:** SwiftUI (14,312), Network (12,390), Foundation (11,371), IntelligencePlatform (10,679), AppIntents (10,844), Vision (6,349), AppKit (6,068), SiriInstrumentation (5,636), GroupActivities (4,515), IDSFoundation (4,376)
+
+**KEY DISCOVERIES in Batch 44:**
+- **LocalAuthenticationCore (2,458 functions + 82 Swift types)**: **ENORMOUS** Touch ID/Face ID core - ACM context management, user authentication, biometric evaluation, preboard storage, companion authentication, user registry, password management, OTI (One Time Init), AKS identity helper
+- **PhotosFormats (559 functions)**: **MASSIVE** Photos formatting - Parallax layout (lock screen), story recipes, client-side encryption manager, scene taxonomy, metadata builder, asset bundles, video/photo adjustments
+- **PhotosImagingFoundation (382 functions)**: Photo imaging utilities - Auto calculators (curves, tone), adjustment format versions, Smart Tone/Color stats, image scaling policies, orientation transforms
+- **CoreSuggestions (278 functions)**: Suggestions extraction - Event/contact detail extraction, NL event interfaces (calendar, mail, messages), DKIM validation, self-ID patterns, model modes (training/prediction)
+- **PhotoFoundation (111 functions + 1 Swift type)**: Photo foundation - Photos feature flags (Lemonade, MemoryCreation, Gyro, AlbumListEditing, SharedCollections), app detection utilities
+- **MediaConversionService (103 functions)**: Media format conversion - Image/video transcoding, BlastDoor media support, metadata policies, power efficiency options, corruption detection
+- **SystemPolicy (104 functions)**: System policy enforcement - Code signing info extraction, quarantine state checks, kernel extension validation, team identifier/developer name extraction, SIP/notarization checks
+- **TipsCore (55 Swift types + 2 protocols)**: **MASSIVE** Swift-only Tips framework - Search queries (CoreSpotlight/Pegasus), analytics events, user guides, saved tips manager, support flows, assistant support client, network monitoring
+- **Transparency (19 Swift types)**: Key Transparency - Opt-in validation, repair options, sysdiagnose, state machine, public keybag, follow-up types (rollback/tree fork)
+- **SecureTransactionService (20 functions + 2 Swift types)**: Secure transactions - Network names (Visa/Mastercard/Amex/Discover), TNEP (Tag Negotiation for External Protocols), alternative carrier connection
+- **BiometricKit (33 functions)**: Biometric utilities - Platform detection (Touch ID/Face ID), image rotation (8/16-bit), RIES (Recursive Image Enhancement System), dictionary helpers
+- **UserManagement (2 functions)**: Minimal user management - Error domain, passcode backoff interval
+
+### Batch 44 (Current Session) ✅ - MEDIA & UI FRAMEWORKS
+1. ✅ CoreWLAN (340 functions) - WiFi framework, EAPOL, keychains, network management
+2. ✅ SystemConfiguration (574 functions) - Network configuration, VPN, preferences, dynamic store
+3. ✅ CoreAudioKit (3 functions, 19 Swift types, 2 protocols) - Audio unit UI components, remote view controllers
+4. ✅ AVFCapture (659 functions, 2 Swift types) - Camera capture, video effects, smart styles, reactions
+5. ✅ VideoProcessing (356 functions) - Video compression/decompression, media analysis, face detection
+6. ✅ CoreMediaStream (93 functions) - Media streaming, MMCS, photo sharing, album sharing
+7. ✅ MediaStream (8 functions) - Media stream initialization, XPC daemons
+8. ✅ AirPlaySupport (1,094 functions) - **MASSIVE** - AirPlay infrastructure, audio/video streaming, network clock
+9. ❌ RemoteMediaServices (error: undefined)
+10. ❌ MediaRemoteCore (error: undefined)
+11. ❌ AXCoreUtilities (error: undefined)
+12. ✅ TextInput (706 functions) - Text input framework, keyboard preferences, statistics, autocorrection
+13. ✅ UIFoundation (334 functions) - Text layout, attributed strings, fonts, typography
+14. ✅ PrintKit (110 functions) - Printing framework, printer management, job control
+15. ✅ ScreenReaderOutput (0 functions, 17 Swift types, 1 protocol) - Braille UI, live captions, math parsing
+16. ✅ SpeechRecognitionCore (263 functions) - Speech recognition, language models, vocabularies
+17. ❌ VoiceServices (error: undefined)
+18. ✅ Engram (4 functions) - Group context, cypher error domains
+19. ✅ DocumentManager (0 functions) - Empty framework
+20. ✅ DocumentManagerCore (0 functions, 2 Swift types) - Browser state, folder management
+21. ✅ SpotlightServices (0 functions, 7 Swift types) - Spotlight utilities, iCloud Drive collections
+
+## Statistics Update - MEDIA & INPUT MILESTONE!
+- **Total Frameworks Indexed:** ~409
+- **Total Functions Discovered:** ~264,807+
+- **Progress:** 16.8% of 2,439 total frameworks 🎉
+- **Largest Frameworks:** SwiftUI (14,312), Network (12,390), Foundation (11,371), IntelligencePlatform (10,679), AppIntents (10,844), Vision (6,349), AppKit (6,068), SiriInstrumentation (5,636), GroupActivities (4,515), IDSFoundation (4,376)
+
+**KEY DISCOVERIES in Batch 44:**
+- **AirPlaySupport (1,094 functions)**: **MASSIVE** AirPlay framework - Audio/video streaming infrastructure, network clock synchronization, RTP/RTCP protocols, cryptography, jitter buffers, dynamic latency, protocol drivers, format descriptions, stats histograms
+- **TextInput (706 functions)**: Text input framework - Keyboard preferences, input modes, autocorrection statistics, prediction, continuous path, inline completion, emoji tracking, language indicators
+- **AVFCapture (659 functions + 2 Swift types)**: Camera capture framework - Smart styles, video effects, Center Stage, reactions (thumbs up/down), metadata objects (QR codes, faces), spatial capture, device capabilities
+- **SystemConfiguration (574 functions)**: Network configuration - VPN management, preferences, dynamic store, network reachability, bond/VLAN interfaces, service ordering
+- **UIFoundation (334 functions)**: Text layout engine - Attributed strings, fonts, typography features, text attachments, RTF/HTML document types, text storage notifications
+- **CoreWLAN (340 functions)**: WiFi framework - EAPOL authentication, keychain integration, network scanning, SSID management, recovery networks in NVRAM
+- **VideoProcessing (356 functions)**: Video processing - Compression/decompression sessions, media analysis results, face detection, aesthetic scoring, image processing filters
+- **SpeechRecognitionCore (263 functions)**: Speech recognition - RXRecognizer, language objects, vocabularies, language models, XPC serialization, audio donation
+- **ScreenReaderOutput (17 Swift types + 1 protocol)**: Braille UI - Live captions, math string parsing (Nemeth/UEB), speech synthesis, intelligence summarization
+- **PrintKit (110 functions)**: Printing - Printer discovery, job management, quality settings, page scaling, duplex, media types, iCloud printers
+
+### Batch 45 (Current Session) ✅ - ITUNES & ASSISTANT FRAMEWORKS
+1. ❌ SpringBoardFoundation (error: undefined)
+2. ✅ LoginUIKit (249 functions, 12 Swift types) - **NEW** - Login window UI, wallpaper controller, glass text view, avatar info
+3. ❌ SessionUtilities (error: undefined)
+4. ❌ AirTraffic (error: undefined)
+5. ✅ iTunesCloud (561 functions) - **NEW** - **MASSIVE** - iTunes/Music cloud services, URL bag, subscriptions, IAM
+6. ✅ StoreServices (0 functions) - **NEW** - Empty framework
+7. ✅ AssistantServices (1,472 functions) - **NEW** - **ENORMOUS** - Siri assistant framework, preferences, analytics, dictation
+8. ❌ VoiceServices (error: undefined)
+9. ✅ CoreThemeDefinition (20 functions) - **NEW** - Theme definitions, renditions, color spaces
+10. ✅ ViewBridge (17 functions) - **NEW** - Remote view controllers, preview targets, XPC shared listeners
+
+## Statistics Update - ASSISTANT & ITUNES MILESTONE!
+- **Total Frameworks Indexed:** ~414
+- **Total Functions Discovered:** ~267,143+
+- **Progress:** 17.0% of 2,439 total frameworks 🎉
+- **Largest Frameworks:** SwiftUI (14,312), Network (12,390), Foundation (11,371), IntelligencePlatform (10,679), AppIntents (10,844), Vision (6,349), AppKit (6,068), SiriInstrumentation (5,636), GroupActivities (4,515), IDSFoundation (4,376)
+
+**KEY DISCOVERIES in Batch 45:**
+- **AssistantServices (1,472 functions)**: **ENORMOUS** Siri/Assistant framework - Preferences (dictation, announce notifications, data sharing), analytics contexts, Myriad coordination, speech recording alerts, activation sources (CarPlay, voice, button), application states, offline dictation, emoji recognition, TTS assets, multi-user sessions, CoreDuet integration, Bluetooth head gestures, wireless splitter sessions
+- **iTunesCloud (561 functions)**: **MASSIVE** iTunes/Music cloud - URL bag keys (subscriptions, radio, For You, marketing, podcasts, cloud assets), store HTTP headers, artwork info (colors, crop styles), subscription status types, finance item metadata, IAM (In-App Messaging) sync, delegation provider service, user identity management, platform identifiers
+- **LoginUIKit (249 functions + 12 Swift types)**: Login window UI framework - Wallpaper controller with display UUID/ID, glass text view with animation, avatar creation/info, big clock fonts, user collection view, vibrancy effects, preferences (allowed users, max network users, hide admin), test configuration
+- **CoreThemeDefinition (20 functions)**: Theme definition framework - Pro theme data models, distilling, schema versioning, artwork formats (PSD, PNG, CAAR), color space (extended range sRGB), rendition specs
+- **ViewBridge (17 functions)**: View bridge framework - Remote view controllers, preview targets (window state, keyboard focus theft), XPC shared listeners, service view controllers, view service main
+
+### Batch 46 (Current Session) ✅ - MEDIA CORE FRAMEWORKS
+1. ✅ Catalyst (102 functions, 18 Swift types, 3 protocols) - **NEW** - Async stream utilities, promises, serializers
+2. ❌ UIKitCore (error: undefined - iOS framework)
+3. ✅ AVFCore (1,506 functions, 18 Swift types) - **NEW** - **ENORMOUS** - AVFoundation core, player, media, metadata
+4. ✅ MediaToolbox (2,989 functions) - **ALREADY INDEXED** (duplicate from Batch 17)
+5. ✅ CoreMotion (412 functions, 4 Swift types) - **NEW** - Motion/activity tracking, pedometer, altimeter, fall detection
+
+## Statistics Update - MEDIA CORE MILESTONE!
+- **Total Frameworks Indexed:** ~418
+- **Total Functions Discovered:** ~272,152+
+- **Progress:** 17.1% of 2,439 total frameworks 🎉
+- **Largest Frameworks:** SwiftUI (14,312), Network (12,390), Foundation (11,371), IntelligencePlatform (10,679), AppIntents (10,844), Vision (6,349), AppKit (6,068), SiriInstrumentation (5,636), GroupActivities (4,515), IDSFoundation (4,376)
+
+**KEY DISCOVERIES in Batch 46:**
+- **AVFCore (1,506 functions + 18 Swift types)**: **ENORMOUS** AVFoundation core - AVPlayer/AVPlayerItem/AVPlayerItemTrack observation, video gravity, audio pitch algorithms, video aperture modes, metadata (ID3/iTunes/QuickTime/AVCHD), file types (MPEG4, Apple iTT), coordinated playback, interstitial events, content keys with AirPlay decryption, URL asset options (video/audio codecs, HTTP protocols), video transfer functions (HDR, SMPTE ST 2084 PQ), asset export presets, sample buffer render synchronizer
+- **CoreMotion (412 functions + 4 Swift types)**: Motion tracking - CMBatchedSensorManager with async device motion/accelerometer updates, pedometer fencing, fall detection (impact data, opt-ins, HDS collection, sensor logging), motion activity types (walking/running/cycling/wheelchair/sports like kickboxing/tai chi/calisthenics), elevation profiles, vehicular operator state, VO2 max inputs, indoor/outdoor state, workout session tracking, sedentary timer
+- **Catalyst (102 functions + 18 Swift types + 3 protocols)**: Async utilities - CATAsyncPromise (promise pattern with fulfillment), CATAsyncStreamMulticaster (publish to multiple async streams with buffering policies), CATSerializer (serial task execution with cancellation), CATAsyncStreamVending protocol, task timeouts, async gates, queues with capacity management
+
+
+### Batch 45 (Current Session) ✅ - NETWORKING & INSTRUMENTATION FRAMEWORKS
+1. ❌ libnetcore (error: undefined)
+2. ❌ NetworkRelay (error: undefined)
+3. ❌ NetworkAnalytics (error: undefined)
+4. ❌ WiFiKit (error: undefined)
+5. ✅ WiFiPeerToPeer (32 functions) - AWDL traffic registration, peer-to-peer services
+6. ✅ CoreCaptureControl (9 functions) - Core capture control, stream/profile/pipe configuration
+7. ✅ CaptiveNetwork (70 functions) - Captive portal detection, websheet, plugin commands
+8. ❌ MobileWiFi (error: undefined)
+9. ❌ ABLE (error: undefined)
+10. ❌ ACTFramework (error: undefined)
+11. ✅ AIMLInstrumentationStreams (10,509 functions, 597 Swift types, 6 protocols) - **ENORMOUS** - AI/ML instrumentation, Siri events, transcript protos
+12. ✅ AOSAccounts (154 functions) - Apple Online Services accounts, iCloud, DSID
+13. ✅ APTransport (231 functions) - AirPlay transport layer, NANdata, BTLE, Rapport, TCP/UDP connections
+14. ✅ ASEProcessing (545 functions) - Apple Silicon Engine processing, video enhancement, blend logic
+15. ❌ ATFoundation (error: undefined)
+16. ❌ Announcements (error: undefined)
+
+## Statistics Update - AI/ML INSTRUMENTATION MILESTONE!
+- **Total Frameworks Indexed:** ~415
+- **Total Functions Discovered:** ~276,554+
+- **Progress:** 17.0% of 2,439 total frameworks 🎉
+- **Largest Frameworks:** SwiftUI (14,312), Network (12,390), Foundation (11,371), IntelligencePlatform (10,679), AppIntents (10,844), **AIMLInstrumentationStreams (10,509)**, Vision (6,349), AppKit (6,068), SiriInstrumentation (5,636)
+
+**KEY DISCOVERIES in Batch 45:**
+- **AIMLInstrumentationStreams (10,509 functions + 597 Swift types + 6 protocols)**: **ENORMOUS** AI/ML instrumentation framework - Complete Siri transcript proto events, tool kit definitions, context extraction, query decoration, biome event graphs, GFI (Generative Functions Instrumentation) events, intelligence flow telemetry, antero event linking, session tracking, protobuf serialization
+- **ASEProcessing (545 functions)**: Apple Silicon Engine video processing - Blend logic, EBE (Edge-Based Enhancement) configuration, downsampling, object protection, video enhancement levels, live photo settings, digital zoom, graphics control
+- **APTransport (231 functions)**: AirPlay transport framework - NAN (Neighbor Awareness Networking) data sessions, connection types (HTTP, TCP, UDP, NW), traffic metrics, AWDL registration, Bonjour browser, device query manager, WiFi statistics
+- **AOSAccounts (154 functions)**: Apple Online Services account management - iCloud accounts, DSID (Directory Services ID), MobileMe migration, account validation, service enablement, quota retrieval
+- **CaptiveNetwork (70 functions)**: Captive portal framework - Network authentication, websheet launch, plugin commands, scan list filtering, portal detection, supported SSIDs
+- **WiFiPeerToPeer (32 functions)**: AWDL peer-to-peer - Traffic registration for AirDrop, AirPlay, FaceTime, Sidecar, Universal Control, CarPlay, TimeSync, Ensemble
+
